@@ -257,3 +257,28 @@ npm install
 npm run dev     # dev server at http://localhost:3000/chinese-learning
 npm run build   # static export → out/
 ```
+
+---
+
+## Pre-Deploy Verification Checklist
+
+Test these critical flows manually on the deployed site (iPad Safari) after every significant change. A crash in any of these is a blocker.
+
+| # | Flow | Pass condition |
+|---|---|---|
+| 1 | Home page loads | Dashboard shows streak, due count, lesson list |
+| 2 | Từ vựng page loads | Setup screen shows lesson filter + mode + script toggle |
+| 3 | Trắc nghiệm — complete full session | "Hoàn thành phiên học!" appears without crash |
+| 4 | Trắc nghiệm — "Học lại từ đầu" | Session restarts cleanly from card 0 |
+| 5 | Luyện viết — write correct answer | Green ✓ banner + answer reveal + SRS rating buttons |
+| 6 | Luyện viết — complete full session | Done screen appears, restart works |
+| 7 | Script mode — Phồn thể | Choices show only traditional (e.g. `難`, not `难/難`) |
+| 8 | Script mode — Giản thể | Choices show only simplified (e.g. `难`) |
+| 9 | Script mode persists | Set in Từ vựng, navigate to Mẫu câu — same mode active |
+| 10 | Mẫu câu — complete a session | Done screen appears, no crash |
+| 11 | Hội thoại — complete a dialogue | "Hoàn thành hội thoại" reached, no crash |
+| 12 | Tiến độ page loads | Stats displayed, reset button visible |
+| 13 | Reset progress | Two-step confirm; streak resets to 0 |
+| 14 | Navigation bar | All 4 nav links work; correct tab highlighted |
+
+**Common pitfall:** React Rules of Hooks — never place a `useMemo`/`useState`/`useEffect` call after an early `return` inside a component. This crashes Safari when state transitions hit the early return for the first time.

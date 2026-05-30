@@ -33,6 +33,12 @@ export default function VocabSession({ cards, allCards, mode, scriptMode }: Prop
 
   const card = dueCards[index];
 
+  const choices = useMemo(() => {
+    if (!card) return [];
+    const distractors = getRandomDistractors(card, allCards, 3);
+    return [card, ...distractors].sort(() => Math.random() - 0.5);
+  }, [card?.id]);
+
   function handleRate(rating: ReviewRating) {
     if (!card) return;
     reviewCard(card.id, rating);
@@ -87,12 +93,6 @@ export default function VocabSession({ cards, allCards, mode, scriptMode }: Prop
       </div>
     );
   }
-
-  const choices = useMemo(() => {
-    if (!card) return [];
-    const distractors = getRandomDistractors(card, allCards, 3);
-    return [card, ...distractors].sort(() => Math.random() - 0.5);
-  }, [card?.id]);
 
   return (
     <div className="max-w-xl mx-auto">
