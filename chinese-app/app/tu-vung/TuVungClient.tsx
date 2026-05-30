@@ -18,7 +18,8 @@ export default function TuVungClient({ allCards }: Props) {
 
   const [selectedLesson, setSelectedLesson] = useState(initialLesson);
   const [mode, setMode] = useState<PracticeMode>("trac-nghiem");
-  const [sessionStarted, setSessionStarted] = useState(false);
+  const autostart = searchParams.get("autostart") === "1";
+  const [sessionStarted, setSessionStarted] = useState(autostart);
   const { scriptMode, setScriptMode } = useProgressStore();
 
   const filteredCards = useMemo(() => {

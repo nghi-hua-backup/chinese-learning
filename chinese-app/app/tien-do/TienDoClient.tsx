@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useProgressStore } from "@/lib/progress-store";
 import { daysUntilDue } from "@/lib/srs";
 
@@ -29,6 +30,20 @@ export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson,
         <h1 className="text-2xl font-bold text-gray-900">📊 Tiến độ học tập</h1>
         <p className="text-gray-500 text-sm mt-1">Theo dõi hành trình học tiếng Trung của bạn</p>
       </div>
+
+      {/* Quick practice CTA */}
+      {vocabStats.dueToday > 0 && (
+        <Link
+          href="/tu-vung?autostart=1"
+          className="flex items-center justify-between bg-indigo-600 text-white rounded-2xl p-5 shadow-sm active:scale-95 transition-all"
+        >
+          <div>
+            <p className="font-semibold text-lg">Ôn ngay</p>
+            <p className="text-indigo-200 text-sm mt-0.5">{vocabStats.dueToday} từ vựng cần ôn hôm nay</p>
+          </div>
+          <span className="text-3xl">→</span>
+        </Link>
+      )}
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-4">
