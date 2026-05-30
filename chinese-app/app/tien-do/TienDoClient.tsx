@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useProgressStore } from "@/lib/progress-store";
 import { daysUntilDue } from "@/lib/srs";
 
@@ -7,10 +8,12 @@ interface Props {
   allVocabIds: string[];
   allPhraseIds: string[];
   vocabByLesson: Record<number, string[]>;
+  cardLabels: Record<string, string>;
 }
 
-export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson }: Props) {
-  const { cards, streak, getStats } = useProgressStore();
+export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson, cardLabels }: Props) {
+  const { cards, streak, getStats, resetAll } = useProgressStore();
+  const [confirming, setConfirming] = useState(false);
 
   const vocabStats = getStats(allVocabIds);
   const phraseStats = getStats(allPhraseIds);
@@ -86,7 +89,7 @@ export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson 
                 const days = daysUntilDue(c);
                 return (
                   <div key={c.cardId} className="flex items-center justify-between text-sm">
-                    <span className="text-gray-600 font-mono text-xs truncate max-w-[180px]">{c.cardId.replace(/^vocab-|^phrase-|^practice-/, "")}</span>
+                    <span className="text-gray-800 font-medium truncate max-w-[180px]">{cardLabels[c.cardId] ?? c.cardId}</span>
                     <span className={`px-2 py-0.5 rounded-lg text-xs font-medium ${days <= 0 ? "bg-red-100 text-red-700" : days <= 1 ? "bg-orange-100 text-orange-700" : "bg-gray-100 text-gray-600"}`}>
                       {days <= 0 ? "Cần ôn ngay" : `+${days} ngày`}
                     </span>
@@ -96,6 +99,38 @@ export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson 
           </div>
         </div>
       )}
+
+      {/* Reset */}
+      <div className="bg-white rounded-2xl border border-red-100 p-5">
+        <h2 className="font-semibold text-gray-800 mb-1">Đặt lại tiến độ</h2>
+        <p className="text-sm text-gray-500 mb-4">Xóa toàn bộ lịch sử ôn tập và bắt đầu lại từ đầu. Không thể hoàn tác.</p>
+        {!confirming ? (
+          <button
+            onClick={() => setConfirming(true)}
+            className="w-full border border-red-300 text-red-600 rounded-xl py-3 font-semibold hover:bg-red-50 transition-all"
+          >
+            Đặt lại toàn bộ
+          </button>
+        ) : (
+          <div className="space-y-2">
+            <p className="text-sm font-medium text-red-700 text-center">Bạn có chắc chắn muốn xóa toàn bộ tiến độ?</p>
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={() => setConfirming(false)}
+                className="py-3 rounded-xl border border-gray-200 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
+              >
+                Hủy
+              </button>
+              <button
+                onClick={() => { resetAll(); setConfirming(false); }}
+                className="py-3 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-700 transition-all"
+              >
+                Xác nhận xóa
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

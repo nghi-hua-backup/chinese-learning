@@ -17,6 +17,7 @@ export default function WritingInput({ expected, expectedAlt, placeholder = "Viá
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(false);
+  const [focused, setFocused] = useState(false);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   function handleSubmit() {
@@ -42,12 +43,14 @@ export default function WritingInput({ expected, expectedAlt, placeholder = "Viá
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
         disabled={submitted}
         rows={3}
-        placeholder={placeholder}
+        placeholder={focused ? "" : placeholder}
         lang="zh-Hans"
         inputMode="text"
-        className={`w-full text-4xl text-center border-2 rounded-2xl p-4 outline-none transition-all resize-none
+        className={`w-full text-5xl text-center border-2 rounded-2xl p-4 outline-none transition-all resize-none
           ${submitted
             ? correct
               ? "border-green-500 bg-green-50 text-green-800"

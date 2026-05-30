@@ -18,6 +18,7 @@ interface ProgressState {
     dueToday: number;
     newCards: number;
   };
+  resetAll: () => void;
 }
 
 export const useProgressStore = create<ProgressState>()(
@@ -50,6 +51,10 @@ export const useProgressStore = create<ProgressState>()(
               ? state.streak + 1
               : 1,
         }));
+      },
+
+      resetAll() {
+        set({ cards: {}, streak: 0, lastStudyDate: null });
       },
 
       getDueCards(cardIds) {

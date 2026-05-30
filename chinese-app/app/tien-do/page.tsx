@@ -12,11 +12,23 @@ export default function TienDoPage() {
     return acc;
   }, {});
 
+  const cardLabels: Record<string, string> = {};
+  for (const c of vocab) {
+    cardLabels[c.id] = c.simplified === c.traditional ? c.simplified : `${c.simplified}/${c.traditional}`;
+  }
+  for (const c of phrases) {
+    cardLabels[c.id] = c.simplified === c.traditional ? c.simplified : `${c.simplified}/${c.traditional}`;
+  }
+  for (const c of practice) {
+    cardLabels[c.id] = c.simplified === c.traditional ? c.simplified : `${c.simplified}/${c.traditional}`;
+  }
+
   return (
     <TienDoClient
       allVocabIds={vocab.map((c) => c.id)}
       allPhraseIds={[...phrases.map((c) => c.id), ...practice.map((c) => c.id)]}
       vocabByLesson={vocabByLesson}
+      cardLabels={cardLabels}
     />
   );
 }
