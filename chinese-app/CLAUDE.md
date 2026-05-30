@@ -107,13 +107,15 @@ Dialogue        id, title, lesson, lines[]
 CardProgress    cardId, due, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, last_review
 ReviewRating    1 | 2 | 3 | 4   (Again / Hard / Good / Easy)
 PracticeMode    "trac-nghiem" | "luyen-viet"
+ScriptMode      "traditional" | "simplified"
 ```
 
 ### Simplified vs Traditional
 
-Every card carries both `simplified` and `traditional` fields. Display rules:
-- When showing a character as the answer, display as `simplified/traditional` (e.g. `难/難`) when both differ; show just one when they are the same.
-- Writing practice (`WritingInput`) accepts **either** form as a correct answer. Pass `expected={card.traditional}` and `expectedAlt={card.simplified}` (when they differ) to `WritingInput`.
+Every card carries both `simplified` and `traditional` fields. The active `ScriptMode` ("traditional" | "simplified") determines which form is shown everywhere. Display rules:
+- Use `getDisplayChar(card, scriptMode)` (`lib/utils.ts`) to get the single character form — returns `card.traditional` or `card.simplified` based on mode.
+- Never display `simplified/traditional` combined format during practice sessions — always one script per active mode.
+- Writing practice (`WritingInput`): pass `expected={getDisplayChar(card, scriptMode)}` as primary; `expectedAlt` as the other script form (when they differ). Both forms are accepted as correct.
 
 ---
 
@@ -128,6 +130,8 @@ Algorithm: **FSRS** (Free Spaced Repetition Scheduler) via `ts-fsrs`. More accur
 - 4 — Dễ (Easy) — recalled instantly
 
 **Progress persistence:** Zustand store persisted to `localStorage` under key `chinese-srs-progress`. Single-device only (iPad). No server sync.
+
+**Script mode:** `scriptMode` (`ScriptMode`, default `"traditional"`) is stored in the same Zustand store. Changing the toggle on any page affects all practice pages immediately — it persists across navigation and reloads.
 
 **Auto-rating:** Multiple choice (`trac-nghiem`) auto-rates — correct → Good (3), wrong → Again (1) — after a 1.4 s delay. Writing (`luyen-viet`) requires the user to manually rate via `SRSRating`.
 
@@ -155,12 +159,12 @@ Each page is split into a **server component** (`page.tsx` — parses markdown, 
 |---|---|
 | `NavBar.tsx` | Bottom navigation bar (iPad thumb-friendly) |
 | `Dashboard.tsx` | Home screen: streak, due count, lesson links |
-| `VocabSession.tsx` | Vocabulary flashcard session — card queue, progress, mode switching |
-| `MultipleChoice.tsx` | 4-option multiple choice for `trac-nghiem` mode |
+| `VocabSession.tsx` | Vocabulary flashcard session — card queue, progress, mode switching; accepts `scriptMode` prop |
+| `MultipleChoice.tsx` | 4-option multiple choice for `trac-nghiem` mode; accepts `scriptMode` prop |
 | `WritingInput.tsx` | Textarea for handwriting input + correct/wrong feedback |
 | `SRSRating.tsx` | 4-button rating bar (Lại / Khó / Tốt / Dễ) shown after writing |
-| `PhraseSession.tsx` | Phrase/sentence practice session |
-| `DialogueSession.tsx` | Dialogue line-by-line practice; shows `simplified/traditional` in chat history, current system turn, and answer reveal; placeholder clears on textarea focus |
+| `PhraseSession.tsx` | Phrase/sentence practice session; accepts `scriptMode` prop |
+| `DialogueSession.tsx` | Dialogue line-by-line practice; uses `getDisplayChar` with `scriptMode` throughout; placeholder clears on textarea focus |
 
 ---
 
@@ -168,18 +172,19 @@ Each page is split into a **server component** (`page.tsx` — parses markdown, 
 
 ### Từ vựng (Vocabulary) — `/tu-vung`
 
-1. User selects lesson filter (or "Tất cả") and practice mode.
+1. User selects lesson filter (or "Tất cả"), practice mode, and **script** (Phồn thể / Giản thể toggle).
 2. FSRS selects due cards from the filtered set.
 3. Each card shows the **Vietnamese meaning** as the question.
 
 **Trắc nghiệm mode:**
 - 4 multiple-choice options (1 correct + 3 distractors of the same word type).
+- Choices show only the active script form (e.g. `難` in Phồn thể mode, `难` in Giản thể mode).
 - Auto-rates after selection (correct = Good, wrong = Again) with 1.4 s delay.
 
 **Luyện viết mode:**
 - Large `<textarea>` for Apple Pencil handwriting input.
-- Accepts both simplified and traditional as correct.
-- After submission: shows green `✓ Chính xác!` or red `✗ Sai rồi` banner, then reveals the answer card with `simplified/traditional`, pinyin, meaning.
+- Accepts the active-script form as correct; the other script form is also accepted as `expectedAlt`.
+- After submission: shows green `✓ Chính xác!` or red `✗ Sai rồi` banner, then reveals the answer card with the character (active script, `text-8xl`), pinyin, meaning.
 - User manually rates with `SRSRating`.
 
 ### Mẫu câu (Phrases & Sentences) — `/mau-cau`
@@ -188,11 +193,11 @@ Two tabs:
 - **Câu thông dụng** — common everyday phrases from `§6` of `chinese-brain.md`
 - **Câu luyện tập** — practice sentences from `chinese-practice-bank.md`, filterable by lesson
 
-Practice uses `PhraseSession` (writing mode, self-assess).
+Setup screen has a Phồn thể / Giản thể script toggle (same Zustand `scriptMode`). Practice uses `PhraseSession` (writing mode, self-assess).
 
 ### Hội thoại (Dialogues) — `/hoi-thoai`
 
-Situation-based dialogues from `chinese-practice-bank.md`. User reads each line, reveals translation, then rates. No auto-check (self-assess only).
+Situation-based dialogues from `chinese-practice-bank.md`. Setup screen has a Phồn thể / Giản thể script toggle. User reads each line, reveals translation, then rates. No auto-check (self-assess only).
 
 ### Tiến độ (Progress) — `/tien-do`
 
@@ -207,7 +212,7 @@ Includes a **reset progress** button (red, at the bottom of the page) with a two
 ## Writing Input Rules (`WritingInput.tsx`)
 
 - Normalization before comparison: `trim()` + collapse whitespace + `toLowerCase()`
-- Accepts either `expected` or `expectedAlt` (for simplified/traditional flexibility)
+- Accepts either `expected` (active-script form) or `expectedAlt` (alternate script form) as correct — callers pass `getDisplayChar(card, scriptMode)` as `expected` and the other form as `expectedAlt`
 - `lang="zh-Hans"` on the textarea — hints iOS to offer Chinese keyboard
 - `autoComplete="off"`, `autoCorrect="off"`, `spellCheck={false}` to prevent iOS autocorrect interference
 - Submit on Enter key (without Shift) or tap "Kiểm tra" button
