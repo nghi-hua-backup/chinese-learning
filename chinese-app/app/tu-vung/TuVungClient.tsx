@@ -38,7 +38,7 @@ export default function TuVungClient({ allCards }: Props) {
         >
           ← Quay lại
         </button>
-        <VocabSession cards={filteredCards} allCards={allCards} mode={mode} scriptMode={scriptMode} />
+        <VocabSession cards={filteredCards} allCards={allCards} mode={mode} scriptMode={scriptMode} reviewOnly={autostart} />
       </div>
     );
   }

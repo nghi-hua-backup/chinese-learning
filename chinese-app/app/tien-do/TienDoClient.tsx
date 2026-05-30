@@ -9,15 +9,16 @@ interface Props {
   allVocabIds: string[];
   allPhraseIds: string[];
   vocabByLesson: Record<number, string[]>;
-  cardLabels: Record<string, string>;
+  cardLabels: Record<string, { simplified: string; traditional: string }>;
 }
 
 export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson, cardLabels }: Props) {
-  const { cards, streak, getStats, resetAll } = useProgressStore();
+  const { cards, streak, getStats, getOverdueReviewedCards, scriptMode, resetAll } = useProgressStore();
   const [confirming, setConfirming] = useState(false);
 
   const vocabStats = getStats(allVocabIds);
   const phraseStats = getStats(allPhraseIds);
+  const overdueVocabCount = getOverdueReviewedCards(allVocabIds).length;
 
   const totalReviews = Object.values(cards).reduce((sum, c) => sum + c.reps, 0);
   const totalLapses = Object.values(cards).reduce((sum, c) => sum + c.lapses, 0);
@@ -32,14 +33,14 @@ export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson,
       </div>
 
       {/* Quick practice CTA */}
-      {vocabStats.dueToday > 0 && (
+      {overdueVocabCount > 0 && (
         <Link
           href="/tu-vung?autostart=1"
           className="flex items-center justify-between bg-indigo-600 text-white rounded-2xl p-5 shadow-sm active:scale-95 transition-all"
         >
           <div>
             <p className="font-semibold text-lg">Ôn ngay</p>
-            <p className="text-indigo-200 text-sm mt-0.5">{vocabStats.dueToday} từ vựng cần ôn hôm nay</p>
+            <p className="text-indigo-200 text-sm mt-0.5">{overdueVocabCount} từ vựng cần ôn hôm nay</p>
           </div>
           <span className="text-3xl">→</span>
         </Link>
@@ -104,7 +105,11 @@ export default function TienDoClient({ allVocabIds, allPhraseIds, vocabByLesson,
                 const days = daysUntilDue(c);
                 return (
                   <div key={c.cardId} className="flex items-center justify-between text-sm">
-                    <span className="text-gray-800 font-medium truncate max-w-[180px]">{cardLabels[c.cardId] ?? c.cardId}</span>
+                    <span className="text-gray-800 font-medium truncate max-w-[180px]">
+                      {cardLabels[c.cardId]
+                        ? (scriptMode === "traditional" ? cardLabels[c.cardId].traditional : cardLabels[c.cardId].simplified)
+                        : c.cardId}
+                    </span>
                     <span className={`px-2 py-0.5 rounded-lg text-xs font-medium ${days <= 0 ? "bg-red-100 text-red-700" : days <= 1 ? "bg-orange-100 text-orange-700" : "bg-gray-100 text-gray-600"}`}>
                       {days <= 0 ? "Cần ôn ngay" : `+${days} ngày`}
                     </span>

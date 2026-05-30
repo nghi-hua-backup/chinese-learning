@@ -13,12 +13,16 @@ interface Props {
   allCards: VocabCard[];
   mode: PracticeMode;
   scriptMode: ScriptMode;
+  reviewOnly?: boolean;
 }
 
-export default function VocabSession({ cards, allCards, mode, scriptMode }: Props) {
-  const { getDueCards, reviewCard, getOrCreate } = useProgressStore();
+export default function VocabSession({ cards, allCards, mode, scriptMode, reviewOnly = false }: Props) {
+  const { getDueCards, getOverdueReviewedCards, reviewCard, getOrCreate } = useProgressStore();
 
-  const dueIds = useMemo(() => getDueCards(cards.map((c) => c.id)), [cards]);
+  const dueIds = useMemo(() => {
+    const ids = cards.map((c) => c.id);
+    return reviewOnly ? getOverdueReviewedCards(ids) : getDueCards(ids);
+  }, [cards, reviewOnly]);
   const dueCards = useMemo(() => {
     const idSet = new Set(dueIds);
     const result = cards.filter((c) => idSet.has(c.id));

@@ -14,6 +14,7 @@ interface ProgressState {
   reviewCard: (cardId: string, rating: ReviewRating) => void;
   getOrCreate: (cardId: string) => CardProgress;
   getDueCards: (cardIds: string[]) => string[];
+  getOverdueReviewedCards: (cardIds: string[]) => string[];
   getStats: (cardIds: string[]) => {
     total: number;
     learned: number;
@@ -70,6 +71,14 @@ export const useProgressStore = create<ProgressState>()(
           const progress = cards[id];
           if (!progress) return true; // new card = always due
           return isDue(progress);
+        });
+      },
+
+      getOverdueReviewedCards(cardIds) {
+        const { cards } = get();
+        return cardIds.filter((id) => {
+          const progress = cards[id];
+          return progress && progress.reps > 0 && isDue(progress);
         });
       },
 
