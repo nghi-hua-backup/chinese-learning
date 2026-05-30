@@ -137,6 +137,8 @@ Algorithm: **FSRS** (Free Spaced Repetition Scheduler) via `ts-fsrs`. More accur
 
 **Due logic:** New cards (never reviewed) are always due. Reviewed cards are due when `new Date(progress.due) <= new Date()`.
 
+**`getOverdueReviewedCards(cardIds)`** — returns only cards with `reps > 0` that are currently due (excludes new cards). Used by the Ôn ngay flow to skip new cards and only surface overdue reviews.
+
 ---
 
 ## Pages & Routing
@@ -159,7 +161,7 @@ Each page is split into a **server component** (`page.tsx` — parses markdown, 
 |---|---|
 | `NavBar.tsx` | Bottom navigation bar (iPad thumb-friendly) |
 | `Dashboard.tsx` | Home screen: streak, due count, lesson links |
-| `VocabSession.tsx` | Vocabulary flashcard session — card queue, progress, mode switching; accepts `scriptMode` prop |
+| `VocabSession.tsx` | Vocabulary flashcard session — card queue, progress, mode switching; accepts `scriptMode` and optional `reviewOnly` props |
 | `MultipleChoice.tsx` | 4-option multiple choice for `trac-nghiem` mode; accepts `scriptMode` prop |
 | `WritingInput.tsx` | Textarea for handwriting input + correct/wrong feedback |
 | `SRSRating.tsx` | 4-button rating bar (Lại / Khó / Tốt / Dễ) shown after writing |
@@ -175,6 +177,8 @@ Each page is split into a **server component** (`page.tsx` — parses markdown, 
 1. User selects lesson filter (or "Tất cả"), practice mode, and **script** (Phồn thể / Giản thể toggle).
 2. FSRS selects due cards from the filtered set.
 3. Each card shows the **Vietnamese meaning** as the question.
+
+**`?autostart=1` query param** — skips the setup screen and starts a session immediately using `reviewOnly=true` (only overdue reviewed cards, no new cards). Used by the "Ôn ngay" button on the Tiến độ page.
 
 **Trắc nghiệm mode:**
 - 4 multiple-choice options (1 correct + 3 distractors of the same word type).
@@ -203,7 +207,9 @@ Situation-based dialogues from `chinese-practice-bank.md`. Setup screen has a Ph
 
 Overview of total cards, learned, due today, streak. Reads from the Zustand/localStorage store.
 
-Upcoming review list displays cards by their character label (`simplified/traditional` format, e.g. `难/難`) rather than raw IDs.
+**Ôn ngay CTA** — when there are overdue *reviewed* vocab cards (reps > 0, not new cards), a prominent indigo banner shows the count and links to `/tu-vung?autostart=1`, jumping straight into a review-only session.
+
+Upcoming review list labels each card with its character in the active script (respects `scriptMode` — shows `simplified` or `traditional` based on current mode).
 
 Includes a **reset progress** button (red, at the bottom of the page) with a two-step confirmation dialog. Confirming calls `resetAll()` on the Zustand store, which clears all card history, streak, and last-study date.
 
