@@ -107,25 +107,6 @@ export default function TuVungClient({ allCards }: Props) {
         </button>
       </div>
 
-      {/* Word list preview */}
-      <div className="space-y-2">
-        <p className="text-sm font-medium text-gray-700">Danh sách từ</p>
-        <div className="space-y-2">
-          {filteredCards.slice(0, 20).map((card) => (
-            <div key={card.id} className="bg-white border border-gray-100 rounded-xl px-4 py-3 flex items-center gap-4">
-              <span className="text-2xl font-bold text-gray-800">{card.traditional}</span>
-              <div className="flex-1 min-w-0">
-                <p className="text-indigo-600 text-sm">{card.pinyin}</p>
-                <p className="text-gray-600 text-sm truncate">{card.meaning}</p>
-              </div>
-              <span className="text-xs text-gray-400 bg-gray-50 px-2 py-1 rounded-lg">{card.wordType}</span>
-            </div>
-          ))}
-          {filteredCards.length > 20 && (
-            <p className="text-center text-sm text-gray-400">...và {filteredCards.length - 20} từ nữa</p>
-          )}
-        </div>
-      </div>
     </div>
   );
 }

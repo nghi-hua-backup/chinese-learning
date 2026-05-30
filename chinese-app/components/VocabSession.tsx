@@ -28,6 +28,7 @@ export default function VocabSession({ cards, allCards, mode }: Props) {
   const [showAnswer, setShowAnswer] = useState(false);
   const [answered, setAnswered] = useState(false);
   const [sessionDone, setSessionDone] = useState(false);
+  const [writingCorrect, setWritingCorrect] = useState<boolean | null>(null);
 
   const card = dueCards[index];
 
@@ -56,6 +57,7 @@ export default function VocabSession({ cards, allCards, mode }: Props) {
       setIndex((i) => i + 1);
       setShowAnswer(false);
       setAnswered(false);
+      setWritingCorrect(null);
     }
   }
 
@@ -121,7 +123,9 @@ export default function VocabSession({ cards, allCards, mode }: Props) {
       {mode === "luyen-viet" && !showAnswer && (
         <WritingInput
           expected={card.traditional}
+          expectedAlt={card.simplified !== card.traditional ? card.simplified : undefined}
           onResult={(correct) => {
+            setWritingCorrect(correct);
             setAnswered(true);
             setShowAnswer(true);
           }}
@@ -130,11 +134,15 @@ export default function VocabSession({ cards, allCards, mode }: Props) {
 
       {mode === "luyen-viet" && showAnswer && (
         <>
-          <div className="mt-4 bg-white rounded-2xl border border-gray-100 p-6 text-center">
-            <p className="text-5xl font-bold mb-1">{card.traditional}</p>
-            {card.simplified !== card.traditional && (
-              <p className="text-gray-400 text-sm">Giản thể: {card.simplified}</p>
-            )}
+          {writingCorrect !== null && (
+            <div className={`mt-4 rounded-xl p-3 text-center font-semibold text-lg ${writingCorrect ? "bg-green-100 text-green-700" : "bg-red-100 text-red-600"}`}>
+              {writingCorrect ? "✓ Chính xác!" : "✗ Sai rồi"}
+            </div>
+          )}
+          <div className="mt-3 bg-white rounded-2xl border border-gray-100 p-6 text-center">
+            <p className="text-5xl font-bold mb-1">
+              {card.simplified === card.traditional ? card.simplified : `${card.simplified}/${card.traditional}`}
+            </p>
             <p className="text-indigo-600 text-lg mt-2">{card.pinyin}</p>
             <p className="text-gray-600 mt-1">{card.meaning}</p>
           </div>

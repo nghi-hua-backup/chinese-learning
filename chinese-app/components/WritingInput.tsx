@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 
 interface Props {
   expected: string;
+  expectedAlt?: string;
   placeholder?: string;
   onResult: (correct: boolean, input: string) => void;
 }
@@ -12,7 +13,7 @@ function normalize(text: string): string {
   return text.trim().replace(/\s+/g, "").toLowerCase();
 }
 
-export default function WritingInput({ expected, placeholder = "Viết chữ Trung ở đây...", onResult }: Props) {
+export default function WritingInput({ expected, expectedAlt, placeholder = "Viết chữ Trung ở đây...", onResult }: Props) {
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(false);
@@ -20,7 +21,8 @@ export default function WritingInput({ expected, placeholder = "Viết chữ Tru
 
   function handleSubmit() {
     if (submitted || !input.trim()) return;
-    const isCorrect = normalize(input) === normalize(expected);
+    const n = normalize(input);
+    const isCorrect = n === normalize(expected) || (!!expectedAlt && n === normalize(expectedAlt));
     setCorrect(isCorrect);
     setSubmitted(true);
     onResult(isCorrect, input.trim());

@@ -93,19 +93,6 @@ export default function MauCauClient({ phrases, practice }: Props) {
         <p className="text-xs text-gray-400 text-center mt-2">Dùng Apple Pencil → bàn phím tiếng Trung (手写)</p>
       </div>
 
-      {/* Preview */}
-      <div className="space-y-2">
-        {activeCards.slice(0, 15).map((card) => (
-          <div key={card.id} className="bg-white border border-gray-100 rounded-xl px-4 py-3">
-            <p className="text-gray-800 font-medium text-lg">{card.traditional}</p>
-            <p className="text-indigo-500 text-sm">{card.pinyin}</p>
-            <p className="text-gray-500 text-sm mt-0.5">{card.meaning}</p>
-          </div>
-        ))}
-        {activeCards.length > 15 && (
-          <p className="text-center text-sm text-gray-400">...và {activeCards.length - 15} câu nữa</p>
-        )}
-      </div>
     </div>
   );
 }
