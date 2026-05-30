@@ -160,7 +160,7 @@ Each page is split into a **server component** (`page.tsx` — parses markdown, 
 | `WritingInput.tsx` | Textarea for handwriting input + correct/wrong feedback |
 | `SRSRating.tsx` | 4-button rating bar (Lại / Khó / Tốt / Dễ) shown after writing |
 | `PhraseSession.tsx` | Phrase/sentence practice session |
-| `DialogueSession.tsx` | Dialogue line-by-line practice |
+| `DialogueSession.tsx` | Dialogue line-by-line practice; shows `simplified/traditional` in chat history, current system turn, and answer reveal; placeholder clears on textarea focus |
 
 ---
 
@@ -198,6 +198,10 @@ Situation-based dialogues from `chinese-practice-bank.md`. User reads each line,
 
 Overview of total cards, learned, due today, streak. Reads from the Zustand/localStorage store.
 
+Upcoming review list displays cards by their character label (`simplified/traditional` format, e.g. `难/難`) rather than raw IDs.
+
+Includes a **reset progress** button (red, at the bottom of the page) with a two-step confirmation dialog. Confirming calls `resetAll()` on the Zustand store, which clears all card history, streak, and last-study date.
+
 ---
 
 ## Writing Input Rules (`WritingInput.tsx`)
@@ -207,6 +211,8 @@ Overview of total cards, learned, due today, streak. Reads from the Zustand/loca
 - `lang="zh-Hans"` on the textarea — hints iOS to offer Chinese keyboard
 - `autoComplete="off"`, `autoCorrect="off"`, `spellCheck={false}` to prevent iOS autocorrect interference
 - Submit on Enter key (without Shift) or tap "Kiểm tra" button
+- Placeholder clears on focus so it doesn't obscure handwriting composition
+- Font size: `text-5xl` (large characters improve readability and handwriting recognition)
 
 ---
 
