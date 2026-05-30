@@ -34,7 +34,9 @@ export default function MultipleChoice({ question, choices, onResult }: Props) {
           className={`border-2 rounded-xl p-4 text-left transition-all ${getStyle(choice)}`}
         >
           <div className="flex items-center gap-4">
-            <span className="text-3xl font-bold text-gray-800">{choice.traditional}</span>
+            <span className="text-3xl font-bold text-gray-800">
+              {choice.simplified === choice.traditional ? choice.simplified : `${choice.simplified}/${choice.traditional}`}
+            </span>
             <div className="text-sm text-gray-500">
               <div>{choice.pinyin}</div>
               {selected && <div className="text-gray-700">{choice.meaning}</div>}
