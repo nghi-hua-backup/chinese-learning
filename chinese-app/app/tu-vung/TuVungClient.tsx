@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { VocabCard, PracticeMode } from "@/lib/types";
+import { useProgressStore } from "@/lib/progress-store";
 import VocabSession from "@/components/VocabSession";
 
 interface Props {
@@ -18,6 +19,7 @@ export default function TuVungClient({ allCards }: Props) {
   const [selectedLesson, setSelectedLesson] = useState(initialLesson);
   const [mode, setMode] = useState<PracticeMode>("trac-nghiem");
   const [sessionStarted, setSessionStarted] = useState(false);
+  const { scriptMode, setScriptMode } = useProgressStore();
 
   const filteredCards = useMemo(() => {
     if (selectedLesson === 0) return allCards;
@@ -35,7 +37,7 @@ export default function TuVungClient({ allCards }: Props) {
         >
           ← Quay lại
         </button>
-        <VocabSession cards={filteredCards} allCards={allCards} mode={mode} />
+        <VocabSession cards={filteredCards} allCards={allCards} mode={mode} scriptMode={scriptMode} />
       </div>
     );
   }
@@ -88,6 +90,29 @@ export default function TuVungClient({ allCards }: Props) {
             <p className="text-xl mb-1">✍️</p>
             <p className="font-semibold text-sm">Luyện viết</p>
             <p className="text-xs text-gray-500 mt-0.5">Dùng Apple Pencil</p>
+          </button>
+        </div>
+      </div>
+
+      {/* Script mode */}
+      <div className="space-y-2">
+        <p className="text-sm font-medium text-gray-700">Dạng chữ Hán</p>
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={() => setScriptMode("traditional")}
+            className={`p-4 rounded-2xl border-2 text-left transition-all ${scriptMode === "traditional" ? "border-indigo-500 bg-indigo-50" : "border-gray-200 bg-white"}`}
+          >
+            <p className="text-xl mb-1">繁</p>
+            <p className="font-semibold text-sm">Phồn thể</p>
+            <p className="text-xs text-gray-500 mt-0.5">繁體字</p>
+          </button>
+          <button
+            onClick={() => setScriptMode("simplified")}
+            className={`p-4 rounded-2xl border-2 text-left transition-all ${scriptMode === "simplified" ? "border-indigo-500 bg-indigo-50" : "border-gray-200 bg-white"}`}
+          >
+            <p className="text-xl mb-1">简</p>
+            <p className="font-semibold text-sm">Giản thể</p>
+            <p className="text-xs text-gray-500 mt-0.5">简体字</p>
           </button>
         </div>
       </div>

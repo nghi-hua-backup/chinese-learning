@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Dialogue } from "@/lib/types";
+import { useProgressStore } from "@/lib/progress-store";
 import DialogueSession from "@/components/DialogueSession";
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 export default function HoiThoaiClient({ dialogues }: Props) {
   const [selected, setSelected] = useState<Dialogue | null>(null);
   const [done, setDone] = useState<Set<string>>(new Set());
+  const { scriptMode, setScriptMode } = useProgressStore();
 
   if (selected) {
     return (
@@ -21,6 +23,7 @@ export default function HoiThoaiClient({ dialogues }: Props) {
         <h2 className="text-lg font-bold text-gray-900 mb-4">{selected.title}</h2>
         <DialogueSession
           dialogue={selected}
+          scriptMode={scriptMode}
           onDone={() => {
             setDone((prev) => new Set([...prev, selected.id]));
             setSelected(null);
@@ -46,6 +49,29 @@ export default function HoiThoaiClient({ dialogues }: Props) {
       <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 text-sm text-indigo-700">
         <p className="font-medium mb-1">Cách luyện tập</p>
         <p>Hệ thống sẽ đóng vai A, bạn đóng vai B. Dùng Apple Pencil để viết câu trả lời của bạn, sau đó so sánh với đáp án mẫu.</p>
+      </div>
+
+      {/* Script mode */}
+      <div className="space-y-2">
+        <p className="text-sm font-medium text-gray-700">Dạng chữ Hán</p>
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={() => setScriptMode("traditional")}
+            className={`p-4 rounded-2xl border-2 text-left transition-all ${scriptMode === "traditional" ? "border-indigo-500 bg-indigo-50" : "border-gray-200 bg-white"}`}
+          >
+            <p className="text-xl mb-1">繁</p>
+            <p className="font-semibold text-sm">Phồn thể</p>
+            <p className="text-xs text-gray-500 mt-0.5">繁體字</p>
+          </button>
+          <button
+            onClick={() => setScriptMode("simplified")}
+            className={`p-4 rounded-2xl border-2 text-left transition-all ${scriptMode === "simplified" ? "border-indigo-500 bg-indigo-50" : "border-gray-200 bg-white"}`}
+          >
+            <p className="text-xl mb-1">简</p>
+            <p className="font-semibold text-sm">Giản thể</p>
+            <p className="text-xs text-gray-500 mt-0.5">简体字</p>
+          </button>
+        </div>
       </div>
 
       {Object.entries(byLesson)

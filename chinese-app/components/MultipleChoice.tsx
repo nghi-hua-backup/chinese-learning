@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { VocabCard } from "@/lib/types";
+import { VocabCard, ScriptMode } from "@/lib/types";
+import { getDisplayChar } from "@/lib/utils";
 
 interface Props {
   question: VocabCard;
   choices: VocabCard[];
   onResult: (correct: boolean) => void;
+  scriptMode: ScriptMode;
 }
 
-export default function MultipleChoice({ question, choices, onResult }: Props) {
+export default function MultipleChoice({ question, choices, onResult, scriptMode }: Props) {
   const [selected, setSelected] = useState<string | null>(null);
 
   function handleSelect(id: string) {
@@ -34,8 +36,8 @@ export default function MultipleChoice({ question, choices, onResult }: Props) {
           className={`border-2 rounded-xl p-4 text-left transition-all ${getStyle(choice)}`}
         >
           <div className="flex items-center gap-4">
-            <span className="text-3xl font-bold text-gray-800">
-              {choice.simplified === choice.traditional ? choice.simplified : `${choice.simplified}/${choice.traditional}`}
+            <span className="text-5xl font-bold text-gray-800">
+              {getDisplayChar(choice, scriptMode)}
             </span>
             <div className="text-sm text-gray-500">
               <div>{choice.pinyin}</div>

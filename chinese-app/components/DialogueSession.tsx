@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { Dialogue } from "@/lib/types";
+import { Dialogue, ScriptMode } from "@/lib/types";
+import { getDisplayChar } from "@/lib/utils";
 
 interface Props {
   dialogue: Dialogue;
   onDone: () => void;
+  scriptMode: ScriptMode;
 }
 
-export default function DialogueSession({ dialogue, onDone }: Props) {
+export default function DialogueSession({ dialogue, onDone, scriptMode }: Props) {
   const [lineIndex, setLineIndex] = useState(0);
   const [input, setInput] = useState("");
   const [showAnswer, setShowAnswer] = useState(false);
@@ -52,7 +54,7 @@ export default function DialogueSession({ dialogue, onDone }: Props) {
           {dialogue.lines.slice(0, lineIndex).map((l, i) => (
             <div key={i} className={`flex gap-2 ${i % 2 === 0 ? "justify-start" : "justify-end"}`}>
               <div className={`rounded-2xl px-4 py-2 max-w-xs text-sm ${i % 2 === 0 ? "bg-gray-200 text-gray-700" : "bg-indigo-100 text-indigo-800"}`}>
-                <p className="font-medium">{l.simplified === l.traditional ? l.simplified : `${l.simplified}/${l.traditional}`}</p>
+                <p className="text-xl font-medium">{getDisplayChar(l, scriptMode)}</p>
                 <p className="text-xs text-gray-500 mt-0.5">{l.meaning}</p>
               </div>
             </div>
@@ -65,8 +67,8 @@ export default function DialogueSession({ dialogue, onDone }: Props) {
         {!isUserTurn ? (
           <>
             <p className="text-xs text-gray-400 mb-2 uppercase tracking-wide">Lượt hệ thống</p>
-            <p className="text-2xl font-bold text-gray-800 mb-1">
-              {line.simplified === line.traditional ? line.simplified : `${line.simplified}/${line.traditional}`}
+            <p className="text-6xl font-bold text-gray-800 mb-1">
+              {getDisplayChar(line, scriptMode)}
             </p>
             <p className="text-indigo-500">{line.pinyin}</p>
             <p className="text-gray-600 mt-1 text-sm">{line.meaning}</p>
@@ -95,7 +97,7 @@ export default function DialogueSession({ dialogue, onDone }: Props) {
                   inputMode="text"
                   autoCorrect="off"
                   spellCheck={false}
-                  className="w-full text-4xl border-2 border-gray-300 rounded-xl p-3 focus:border-indigo-500 outline-none resize-none"
+                  className="w-full text-5xl border-2 border-gray-300 rounded-xl p-3 focus:border-indigo-500 outline-none resize-none"
                 />
                 <button
                   onClick={handleCheck}
@@ -108,8 +110,8 @@ export default function DialogueSession({ dialogue, onDone }: Props) {
               <>
                 <div className="bg-indigo-50 rounded-xl p-4">
                   <p className="text-xs text-gray-500 mb-1">Đáp án mẫu:</p>
-                  <p className="text-2xl font-bold text-gray-800">
-                    {line.simplified === line.traditional ? line.simplified : `${line.simplified}/${line.traditional}`}
+                  <p className="text-5xl font-bold text-gray-800">
+                    {getDisplayChar(line, scriptMode)}
                   </p>
                   <p className="text-indigo-600 text-sm mt-1">{line.pinyin}</p>
                 </div>

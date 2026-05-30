@@ -2,13 +2,15 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { CardProgress, ReviewRating } from "./types";
+import { CardProgress, ReviewRating, ScriptMode } from "./types";
 import { createNewCard, reviewCard, isDue } from "./srs";
 
 interface ProgressState {
   cards: Record<string, CardProgress>;
   streak: number;
   lastStudyDate: string | null;
+  scriptMode: ScriptMode;
+  setScriptMode: (mode: ScriptMode) => void;
   reviewCard: (cardId: string, rating: ReviewRating) => void;
   getOrCreate: (cardId: string) => CardProgress;
   getDueCards: (cardIds: string[]) => string[];
@@ -27,6 +29,11 @@ export const useProgressStore = create<ProgressState>()(
       cards: {},
       streak: 0,
       lastStudyDate: null,
+      scriptMode: "traditional",
+
+      setScriptMode(mode) {
+        set({ scriptMode: mode });
+      },
 
       getOrCreate(cardId) {
         const existing = get().cards[cardId];

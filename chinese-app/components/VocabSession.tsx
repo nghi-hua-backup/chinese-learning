@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { VocabCard, PracticeMode, ReviewRating } from "@/lib/types";
+import { VocabCard, PracticeMode, ReviewRating, ScriptMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
-import { getRandomDistractors } from "@/lib/utils";
+import { getRandomDistractors, getDisplayChar } from "@/lib/utils";
 import SRSRating from "./SRSRating";
 import MultipleChoice from "./MultipleChoice";
 import WritingInput from "./WritingInput";
@@ -12,9 +12,10 @@ interface Props {
   cards: VocabCard[];
   allCards: VocabCard[];
   mode: PracticeMode;
+  scriptMode: ScriptMode;
 }
 
-export default function VocabSession({ cards, allCards, mode }: Props) {
+export default function VocabSession({ cards, allCards, mode, scriptMode }: Props) {
   const { getDueCards, reviewCard, getOrCreate } = useProgressStore();
 
   const dueIds = useMemo(() => getDueCards(cards.map((c) => c.id)), [cards]);
@@ -117,13 +118,13 @@ export default function VocabSession({ cards, allCards, mode }: Props) {
 
       {/* Answer section */}
       {mode === "trac-nghiem" && !answered && (
-        <MultipleChoice question={card} choices={choices} onResult={handleResult} />
+        <MultipleChoice question={card} choices={choices} onResult={handleResult} scriptMode={scriptMode} />
       )}
 
       {mode === "luyen-viet" && !showAnswer && (
         <WritingInput
-          expected={card.traditional}
-          expectedAlt={card.simplified !== card.traditional ? card.simplified : undefined}
+          expected={getDisplayChar(card, scriptMode)}
+          expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
           onResult={(correct) => {
             setWritingCorrect(correct);
             setAnswered(true);
@@ -140,8 +141,8 @@ export default function VocabSession({ cards, allCards, mode }: Props) {
             </div>
           )}
           <div className="mt-3 bg-white rounded-2xl border border-gray-100 p-6 text-center">
-            <p className="text-5xl font-bold mb-1">
-              {card.simplified === card.traditional ? card.simplified : `${card.simplified}/${card.traditional}`}
+            <p className="text-8xl font-bold mb-1">
+              {getDisplayChar(card, scriptMode)}
             </p>
             <p className="text-indigo-600 text-lg mt-2">{card.pinyin}</p>
             <p className="text-gray-600 mt-1">{card.meaning}</p>

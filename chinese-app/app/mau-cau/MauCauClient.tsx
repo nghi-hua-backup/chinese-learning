@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { PhraseCard, PracticeCard } from "@/lib/types";
+import { useProgressStore } from "@/lib/progress-store";
 import PhraseSession from "@/components/PhraseSession";
 
 interface Props {
@@ -15,6 +16,7 @@ export default function MauCauClient({ phrases, practice }: Props) {
   const [tab, setTab] = useState<Tab>("cau-thong-dung");
   const [selectedLesson, setSelectedLesson] = useState(0);
   const [sessionStarted, setSessionStarted] = useState(false);
+  const { scriptMode, setScriptMode } = useProgressStore();
 
   const lessons = useMemo(() => Array.from(new Set(practice.map((c) => c.lesson))).sort((a, b) => a - b), [practice]);
 
@@ -32,7 +34,7 @@ export default function MauCauClient({ phrases, practice }: Props) {
         <button onClick={() => setSessionStarted(false)} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-gray-700 text-sm">
           ← Quay lại
         </button>
-        <PhraseSession cards={activeCards} title={title} />
+        <PhraseSession cards={activeCards} title={title} scriptMode={scriptMode} />
       </div>
     );
   }
@@ -77,6 +79,29 @@ export default function MauCauClient({ phrases, practice }: Props) {
           ))}
         </div>
       )}
+
+      {/* Script mode */}
+      <div className="space-y-2">
+        <p className="text-sm font-medium text-gray-700">Dạng chữ Hán</p>
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={() => setScriptMode("traditional")}
+            className={`p-4 rounded-2xl border-2 text-left transition-all ${scriptMode === "traditional" ? "border-purple-500 bg-purple-50" : "border-gray-200 bg-white"}`}
+          >
+            <p className="text-xl mb-1">繁</p>
+            <p className="font-semibold text-sm">Phồn thể</p>
+            <p className="text-xs text-gray-500 mt-0.5">繁體字</p>
+          </button>
+          <button
+            onClick={() => setScriptMode("simplified")}
+            className={`p-4 rounded-2xl border-2 text-left transition-all ${scriptMode === "simplified" ? "border-purple-500 bg-purple-50" : "border-gray-200 bg-white"}`}
+          >
+            <p className="text-xl mb-1">简</p>
+            <p className="font-semibold text-sm">Giản thể</p>
+            <p className="text-xs text-gray-500 mt-0.5">简体字</p>
+          </button>
+        </div>
+      </div>
 
       {/* Start */}
       <div className="bg-white rounded-2xl border border-gray-100 p-5">

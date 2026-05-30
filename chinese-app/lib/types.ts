@@ -74,4 +74,5 @@ export interface CardProgress {
 export type ReviewRating = 1 | 2 | 3 | 4;
 
 export type PracticeMode = "trac-nghiem" | "luyen-viet";
+export type ScriptMode = "traditional" | "simplified";
 export type CardType = "vocab" | "phrase" | "practice";

@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { PhraseCard, PracticeCard, ReviewRating } from "@/lib/types";
+import { PhraseCard, PracticeCard, ReviewRating, ScriptMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
+import { getDisplayChar } from "@/lib/utils";
 import SRSRating from "./SRSRating";
 import WritingInput from "./WritingInput";
 
@@ -11,13 +12,14 @@ type Card = PhraseCard | PracticeCard;
 interface Props {
   cards: Card[];
   title: string;
+  scriptMode: ScriptMode;
 }
 
 function getCardId(c: Card): string {
   return c.id;
 }
 
-export default function PhraseSession({ cards, title }: Props) {
+export default function PhraseSession({ cards, title, scriptMode }: Props) {
   const { getDueCards, reviewCard } = useProgressStore();
 
   const dueIds = useMemo(() => getDueCards(cards.map(getCardId)), [cards]);
@@ -95,7 +97,8 @@ export default function PhraseSession({ cards, title }: Props) {
 
       {!showAnswer && (
         <WritingInput
-          expected={card.traditional}
+          expected={getDisplayChar(card, scriptMode)}
+          expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
           placeholder="Viết câu tiếng Trung..."
           onResult={() => setShowAnswer(true)}
         />
@@ -104,10 +107,7 @@ export default function PhraseSession({ cards, title }: Props) {
       {showAnswer && (
         <>
           <div className="mt-4 bg-white rounded-2xl border border-gray-100 p-6">
-            <p className="text-2xl font-bold text-center mb-2">{card.traditional}</p>
-            {card.simplified !== card.traditional && (
-              <p className="text-gray-400 text-center text-sm">Giản thể: {card.simplified}</p>
-            )}
+            <p className="text-6xl font-bold text-center mb-2">{getDisplayChar(card, scriptMode)}</p>
             <p className="text-indigo-600 text-center mt-1">{card.pinyin}</p>
             <p className="text-gray-600 text-center mt-1">{card.meaning}</p>
           </div>
