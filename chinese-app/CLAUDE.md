@@ -133,6 +133,8 @@ Algorithm: **FSRS** (Free Spaced Repetition Scheduler) via `ts-fsrs`. More accur
 
 **Script mode:** `scriptMode` (`ScriptMode`, default `"traditional"`) is stored in the same Zustand store. Changing the toggle on any page affects all practice pages immediately — it persists across navigation and reloads.
 
+**Dialogue completion:** `completedDialogues` (string array of dialogue IDs) is stored in the same Zustand store. `markDialogueDone(id)` appends an ID (idempotent). Completed dialogues show a ✅ icon on the Hội thoại list; incomplete ones show 🎯. Persists across reloads.
+
 **Auto-rating:** Multiple choice (`trac-nghiem`) auto-rates — correct → Good (3), wrong → Again (1) — after a 1.4 s delay. Writing (`luyen-viet`) requires the user to manually rate via `SRSRating`.
 
 **Due logic:** New cards (never reviewed) are always due. Reviewed cards are due when `new Date(progress.due) <= new Date()`.
@@ -202,6 +204,8 @@ Setup screen has a Phồn thể / Giản thể script toggle (same Zustand `scri
 ### Hội thoại (Dialogues) — `/hoi-thoai`
 
 Situation-based dialogues from `chinese-practice-bank.md`. Setup screen has a Phồn thể / Giản thể script toggle. User reads each line, reveals translation, then rates. No auto-check (self-assess only).
+
+Completed dialogues are marked with ✅ (persisted in Zustand); incomplete ones show 🎯. Completion state survives page reloads.
 
 ### Tiến độ (Progress) — `/tien-do`
 
