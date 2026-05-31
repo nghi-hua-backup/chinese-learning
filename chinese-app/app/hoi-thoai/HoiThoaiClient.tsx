@@ -11,8 +11,7 @@ interface Props {
 
 export default function HoiThoaiClient({ dialogues }: Props) {
   const [selected, setSelected] = useState<Dialogue | null>(null);
-  const [done, setDone] = useState<Set<string>>(new Set());
-  const { scriptMode, setScriptMode } = useProgressStore();
+  const { scriptMode, setScriptMode, completedDialogues, markDialogueDone } = useProgressStore();
 
   if (selected) {
     return (
@@ -25,7 +24,7 @@ export default function HoiThoaiClient({ dialogues }: Props) {
           dialogue={selected}
           scriptMode={scriptMode}
           onDone={() => {
-            setDone((prev) => new Set([...prev, selected.id]));
+            markDialogueDone(selected.id);
             setSelected(null);
           }}
         />
@@ -86,7 +85,7 @@ export default function HoiThoaiClient({ dialogues }: Props) {
                 className="w-full bg-white border border-gray-100 rounded-2xl p-4 text-left shadow-sm hover:shadow-md transition-all active:scale-98"
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{done.has(d.id) ? "✅" : "🎯"}</span>
+                  <span className="text-2xl">{completedDialogues.includes(d.id) ? "✅" : "🎯"}</span>
                   <div className="flex-1">
                     <p className="font-medium text-gray-900">{d.title}</p>
                     <p className="text-sm text-gray-500 mt-0.5">{d.lines.length} lượt thoại</p>

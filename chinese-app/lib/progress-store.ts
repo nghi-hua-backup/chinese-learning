@@ -13,6 +13,8 @@ interface ProgressState {
   setScriptMode: (mode: ScriptMode) => void;
   reviewCard: (cardId: string, rating: ReviewRating) => void;
   getOrCreate: (cardId: string) => CardProgress;
+  completedDialogues: string[];
+  markDialogueDone: (id: string) => void;
   getDueCards: (cardIds: string[]) => string[];
   getOverdueReviewedCards: (cardIds: string[]) => string[];
   getStats: (cardIds: string[]) => {
@@ -31,6 +33,15 @@ export const useProgressStore = create<ProgressState>()(
       streak: 0,
       lastStudyDate: null,
       scriptMode: "traditional",
+      completedDialogues: [],
+
+      markDialogueDone(id) {
+        set((state) => ({
+          completedDialogues: state.completedDialogues.includes(id)
+            ? state.completedDialogues
+            : [...state.completedDialogues, id],
+        }));
+      },
 
       setScriptMode(mode) {
         set({ scriptMode: mode });
