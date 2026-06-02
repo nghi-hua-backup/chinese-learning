@@ -93,4 +93,4 @@ Append an entry after each QA session.
 
 | Date | Tester | Items checked | Issues found |
 |---|---|---|---|
-| _(first entry goes here)_ | | | |
+| 2026-06-02 | QA (Claude) | P1–P3, 1, 11–15, 19 checked; items 2–10, 16–18 not browser-testable (JS-rendered) | none — reorganization touched only docs/skills/boilerplate, zero app code changed |
