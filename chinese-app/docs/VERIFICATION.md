@@ -94,3 +94,4 @@ Append an entry after each QA session.
 | Date | Tester | Items checked | Issues found |
 |---|---|---|---|
 | 2026-06-02 | QA (Claude) | P1–P3, 1, 11–15, 19 checked; items 2–10, 16–18 not browser-testable (JS-rendered) | none — reorganization touched only docs/skills/boilerplate, zero app code changed |
+| 2026-06-02 | QA (Claude) | P1, 5–7 (Luyện viết textarea font) — Playwright local dev run | PASS — textarea computed 72px / fontWeight 700 (text-7xl font-bold). Placeholder visually large and bold. No regressions on setup screen or session flow. |
