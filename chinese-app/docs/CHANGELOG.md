@@ -18,6 +18,17 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.1.2] - 2026-06-02
+
+### Added
+- KB: Bài 7 — 10 missing sentences + 3 corrections in chinese-practice-bank.md:
+  - Hội thoại Đi ăn cơm: added 好，我也去食堂。; fixed 好了→好的, 很好吃→很好喝, 我不喝→我不喝了
+  - Vị trí & Công việc: added 你做什么工作？, 我是学生。, 我现在有空儿。
+  - 会/知道: added 我知道这是什么！
+  - Luyện tập 2: added full block (5 sentences on 专业, 空儿, 知道, 玩儿, 住在)
+
+---
+
 ## [1.1.1] - 2026-06-02
 
 ### Fixed

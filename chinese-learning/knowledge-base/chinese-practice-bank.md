@@ -186,12 +186,13 @@
 | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
 |------|------|--------|--------------------|
 | 中午我去食堂吃饭，你去吗？ | 中午我去食堂吃飯，你去嗎？ | zhōngwǔ wǒ qù shítáng chīfàn, nǐ qù ma | Trưa nay tôi đi nhà ăn ăn cơm, bạn đi không? |
+| 好，我也去食堂。 | — | hǎo, wǒ yě qù shítáng | OK, tôi cũng đi nhà ăn. |
 | 你知道学校的食堂在哪儿吗？ | 你知道學校的食堂在哪兒嗎？ | nǐ zhīdào xuéxiào de shítáng zài nǎr ma | Bạn biết nhà ăn của trường ở đâu không? |
 | 我知道，食堂在学校的北边，图书馆的左边，宿舍的右边。 | 我知道，食堂在學校的北邊，圖書館的左邊，宿舍的右邊。 | wǒ zhīdào, shítáng zài xuéxiào de běibian, túshūguǎn de zuǒbian, sùshè de yòubian | Tôi biết, nhà ăn ở phía bắc trường, bên trái thư viện, bên phải ký túc xá. |
-| 好了，谢谢你。今天你吃什么？ | 好了，謝謝你。今天你吃什麼？ | hǎole, xièxie nǐ. jīntiān nǐ chī shénme | Được rồi, cảm ơn bạn. Hôm nay bạn ăn gì? |
+| 好的，谢谢你。今天你吃什么？ | 好的，謝謝你。今天你吃什麼？ | hǎode, xièxie nǐ. jīntiān nǐ chī shénme | Được rồi, cảm ơn bạn. Hôm nay bạn ăn gì? |
 | 我吃一碗米饭，喝一碗鸡蛋汤。 | 我吃一碗米飯，喝一碗雞蛋湯。 | wǒ chī yì wǎn mǐfàn, hē yì wǎn jīdàn tāng | Tôi ăn một bát cơm trắng, uống một bát canh trứng gà. |
-| 食堂的鸡蛋汤很好吃，你也喝吧。 | 食堂的雞蛋湯很好吃，你也喝吧。 | shítáng de jīdàn tāng hěn hǎochī, nǐ yě hē ba | Canh trứng ở nhà ăn rất ngon, bạn cũng uống đi. |
-| 谢谢你，我不喝，我吃面包。 | 謝謝你，我不喝，我吃麵包。 | xièxie nǐ, wǒ bù hē, wǒ chī miànbāo | Cảm ơn bạn, tôi không uống, tôi ăn bánh mì. |
+| 食堂的鸡蛋汤很好喝，你也喝吧。 | 食堂的雞蛋湯很好喝，你也喝吧。 | shítáng de jīdàn tāng hěn hǎohē, nǐ yě hē ba | Canh trứng ở nhà ăn rất ngon, bạn cũng uống đi. |
+| 谢谢你，我不喝了，我吃面包。 | 謝謝你，我不喝了，我吃麵包。 | xièxie nǐ, wǒ bù hēle, wǒ chī miànbāo | Cảm ơn bạn, tôi không uống nữa, tôi ăn bánh mì. |
 
 ### Bài 7 — Luyện tập: Vị trí & Công việc
 
@@ -203,9 +204,12 @@
 | 图书馆在教学楼东边。 | 圖書館在教學樓東邊。 | túshūguǎn zài jiàoxuélóu dōngbian | Thư viện ở phía đông tòa nhà dạy học. |
 | 你知道他家在哪儿吗？ | 你知道他家在哪兒嗎？ | nǐ zhīdào tā jiā zài nǎr ma | Bạn biết nhà anh ấy ở đâu không? |
 | 他家在学校的左边。 | 他家在學校的左邊。 | tā jiā zài xuéxiào de zuǒbian | Nhà anh ấy ở bên trái trường học. |
+| 你做什么工作？ | 你做什麼工作？ | nǐ zuò shénme gōngzuò | Bạn làm công việc gì? |
+| 我是学生。 | 我是學生。 | wǒ shì xuésheng | Tôi là học sinh. |
 | 你会说中文吗？ | 你會說中文嗎？ | nǐ huì shuō zhōngwén ma | Bạn biết nói tiếng Trung không? |
 | 我不会说中文。 | 我不會說中文。 | wǒ bú huì shuō zhōngwén | Tôi không biết nói tiếng Trung. |
 | 你现在有空儿吗？ | 你現在有空兒嗎？ | nǐ xiànzài yǒu kòngr ma | Bây giờ bạn có rảnh không? |
+| 我现在有空儿。 | 我現在有空兒。 | wǒ xiànzài yǒu kòngr | Bây giờ tôi có rảnh. |
 | 今天你有空儿吗？ | 今天你有空兒嗎？ | jīntiān nǐ yǒu kòngr ma | Hôm nay bạn có rảnh không? |
 | 今天我没空儿，明天我有空儿。 | 今天我沒空兒，明天我有空兒。 | jīntiān wǒ méiyǒu kòngr, míngtiān wǒ yǒu kòngr | Hôm nay tôi không rảnh, ngày mai tôi mới rảnh. |
 
@@ -252,6 +256,7 @@
 | 你知道他是谁吗？ | 你知道他是誰嗎？ | nǐ zhīdào tā shì shuí ma | Bạn biết ông ấy là ai không? |
 | — | 我不知道。 | wǒ bù zhīdào | Tôi không biết. |
 | 我知道他在哪儿！ | 我知道他在哪兒！ | wǒ zhīdào tā zài nǎr | Tôi biết anh ấy ở đâu! |
+| 我知道这是什么！ | 我知道這是什麼！ | wǒ zhīdào zhè shì shénme | Tôi biết đây là cái gì! |
 | 我妈妈会做饭。 | 我媽媽會做飯。 | wǒ māma huì zuò fàn | Mẹ tôi biết nấu cơm. |
 
 ### Bài 7 — Câu bổ trợ
@@ -266,6 +271,16 @@
 | 你住（在）哪儿？ | 你住（在）哪兒？ | nǐ zhù zài nǎr | Bạn sống ở đâu? |
 | 我住在宿舍。 | 我住在宿舍。 | wǒ zhù zài sùshè | Tôi sống ở ký túc xá. |
 | 我不住在宿舍，我住在家里。 | 我不住在宿舍，我住在家裡。 | wǒ bú zhù zài sùshè, wǒ zhù zài jiālǐ | Tôi không ở ký túc xá, tôi ở nhà. |
+
+### Bài 7 — Luyện tập 2
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 我的专业是英语。 | 我的專業是英語。 | wǒ de zhuānyè shì yīngyǔ | Chuyên ngành của tôi là tiếng Anh. |
+| 下午你有空儿吗？我们去图书馆学汉语吧。 | 下午你有空兒嗎？我們去圖書館學漢語吧。 | xiàwǔ nǐ yǒu kòngr ma? wǒmen qù túshūguǎn xué hànyǔ ba | Chiều nay bạn có rảnh không? Chúng mình đi thư viện học tiếng Trung đi. |
+| 你知道王老师的家在哪儿吗？ | 你知道王老師的家在哪兒嗎？ | nǐ zhīdào Wáng lǎoshī de jiā zài nǎr ma | Bạn có biết nhà thầy Vương ở đâu không? |
+| 昨天晚上我来国安的家玩儿。 | 昨天晚上我來國安的家玩兒。 | zuótiān wǎnshàng wǒ lái Guó'ān de jiā wánr | Buổi tối hôm qua tôi đến nhà Quốc An chơi. |
+| 我住在宿舍，我们学校的宿舍很大。 | 我住在宿舍，我們學校的宿舍很大。 | wǒ zhù zài sùshè, wǒmen xuéxiào de sùshè hěn dà | Tôi sống ở ký túc xá, ký túc xá của trường chúng tôi rất lớn. |
 
 ---
 
