@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 6 (2026-05-30)
+> **Cập nhật lần cuối:** Bài 7 (2026-06-02)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
 ---
@@ -181,6 +181,94 @@
 | A: 我在国家大学学汉语。很高兴认识你！ | A: 我在國家大學學漢語。很高興認識你！ | A: wǒ zài Guójiā dàxué xué Hànyǔ. hěn gāoxìng rènshi nǐ! | A: Tôi học tiếng Trung ở Đại học Quốc gia. Rất vui được quen biết bạn! |
 | B: 我也很高兴认识你。 | B: 我也很高興認識你。 | B: wǒ yě hěn gāoxìng rènshi nǐ. | B: Tôi cũng rất vui được quen biết bạn. |
 
+### Bài 7 — Hội thoại: Đi ăn cơm ở nhà ăn
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 中午我去食堂吃饭，你去吗？ | 中午我去食堂吃飯，你去嗎？ | zhōngwǔ wǒ qù shítáng chīfàn, nǐ qù ma | Trưa nay tôi đi nhà ăn ăn cơm, bạn đi không? |
+| 你知道学校的食堂在哪儿吗？ | 你知道學校的食堂在哪兒嗎？ | nǐ zhīdào xuéxiào de shítáng zài nǎr ma | Bạn biết nhà ăn của trường ở đâu không? |
+| 我知道，食堂在学校的北边，图书馆的左边，宿舍的右边。 | 我知道，食堂在學校的北邊，圖書館的左邊，宿舍的右邊。 | wǒ zhīdào, shítáng zài xuéxiào de běibian, túshūguǎn de zuǒbian, sùshè de yòubian | Tôi biết, nhà ăn ở phía bắc trường, bên trái thư viện, bên phải ký túc xá. |
+| 好了，谢谢你。今天你吃什么？ | 好了，謝謝你。今天你吃什麼？ | hǎole, xièxie nǐ. jīntiān nǐ chī shénme | Được rồi, cảm ơn bạn. Hôm nay bạn ăn gì? |
+| 我吃一碗米饭，喝一碗鸡蛋汤。 | 我吃一碗米飯，喝一碗雞蛋湯。 | wǒ chī yì wǎn mǐfàn, hē yì wǎn jīdàn tāng | Tôi ăn một bát cơm trắng, uống một bát canh trứng gà. |
+| 食堂的鸡蛋汤很好吃，你也喝吧。 | 食堂的雞蛋湯很好吃，你也喝吧。 | shítáng de jīdàn tāng hěn hǎochī, nǐ yě hē ba | Canh trứng ở nhà ăn rất ngon, bạn cũng uống đi. |
+| 谢谢你，我不喝，我吃面包。 | 謝謝你，我不喝，我吃麵包。 | xièxie nǐ, wǒ bù hē, wǒ chī miànbāo | Cảm ơn bạn, tôi không uống, tôi ăn bánh mì. |
+
+### Bài 7 — Luyện tập: Vị trí & Công việc
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 请问宿舍在哪儿？ | 請問宿舍在哪兒？ | qǐngwèn sùshè zài nǎr | Cho hỏi ký túc xá ở đâu? |
+| 宿舍在教学楼北边。 | 宿舍在教學樓北邊。 | sùshè zài jiàoxuélóu běibian | Ký túc xá ở phía bắc tòa nhà dạy học. |
+| 你知道图书馆在哪儿吗？ | 你知道圖書館在哪兒嗎？ | nǐ zhīdào túshūguǎn zài nǎr ma | Bạn biết thư viện ở đâu không? |
+| 图书馆在教学楼东边。 | 圖書館在教學樓東邊。 | túshūguǎn zài jiàoxuélóu dōngbian | Thư viện ở phía đông tòa nhà dạy học. |
+| 你知道他家在哪儿吗？ | 你知道他家在哪兒嗎？ | nǐ zhīdào tā jiā zài nǎr ma | Bạn biết nhà anh ấy ở đâu không? |
+| 他家在学校的左边。 | 他家在學校的左邊。 | tā jiā zài xuéxiào de zuǒbian | Nhà anh ấy ở bên trái trường học. |
+| 你会说中文吗？ | 你會說中文嗎？ | nǐ huì shuō zhōngwén ma | Bạn biết nói tiếng Trung không? |
+| 我不会说中文。 | 我不會說中文。 | wǒ bú huì shuō zhōngwén | Tôi không biết nói tiếng Trung. |
+| 你现在有空儿吗？ | 你現在有空兒嗎？ | nǐ xiànzài yǒu kòngr ma | Bây giờ bạn có rảnh không? |
+| 今天你有空儿吗？ | 今天你有空兒嗎？ | jīntiān nǐ yǒu kòngr ma | Hôm nay bạn có rảnh không? |
+| 今天我没空儿，明天我有空儿。 | 今天我沒空兒，明天我有空兒。 | jīntiān wǒ méiyǒu kòngr, míngtiān wǒ yǒu kòngr | Hôm nay tôi không rảnh, ngày mai tôi mới rảnh. |
+
+### Bài 7 — Luyện tập: Hỏi đáp địa điểm
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 银行在哪儿？ | 銀行在哪兒？ | yínháng zài nǎr | Ngân hàng ở đâu? |
+| 银行在西边 / 在学校的左边。 | 銀行在西邊 / 在學校的左邊。 | yínháng zài xībian / zài xuéxiào de zuǒbian | Ngân hàng ở phía tây / bên trái trường học. |
+| 学校在哪儿？ | 學校在哪兒？ | xuéxiào zài nǎr | Trường học ở đâu? |
+| 学校在北边 / 在银行的右边。 | 學校在北邊 / 在銀行的右邊。 | xuéxiào zài běibian / zài yínháng de yòubian | Trường ở phía bắc / bên phải ngân hàng. |
+| 饭馆在哪儿？ | 飯館在哪兒？ | fànguǎn zài nǎr | Quán cơm ở đâu? |
+| 饭馆在东北边 / 教学楼的北边。 | 飯館在東北邊 / 教學樓的北邊。 | fànguǎn zài dōngběibian / jiàoxuélóu de běibian | Quán cơm ở phía đông bắc / phía bắc tòa nhà dạy học. |
+| 图书馆在哪儿？ | 圖書館在哪兒？ | túshūguǎn zài nǎr | Thư viện ở đâu? |
+| 图书馆在西南边 / 食堂的左边。 | 圖書館在西南邊 / 食堂的左邊。 | túshūguǎn zài xīnánbian / shítáng de zuǒbian | Thư viện ở phía tây nam / bên trái nhà ăn. |
+| 教学楼在哪儿？ | 教學樓在哪兒？ | jiàoxuélóu zài nǎr | Tòa nhà dạy học ở đâu? |
+| 教学楼在东南边。 | 教學樓在東南邊。 | jiàoxuélóu zài dōngnánbian | Tòa nhà dạy học ở phía đông nam. |
+| 食堂在学校的北边。 | 食堂在學校的北邊。 | shítáng zài xuéxiào de běibian | Nhà ăn ở phía bắc trường học. |
+
+### Bài 7 — Thời gian & Đời sống
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 今天你回太早了！ | 今天你回太早了！ | jīntiān nǐ huí tài zǎo le | Hôm nay bạn về sớm quá! |
+| 明天早上你想去哪儿？ | 明天早上你想去哪兒？ | míngtiān zǎoshang nǐ xiǎng qù nǎr | Sáng mai bạn muốn đi đâu? |
+| 昨天我回家很晚。 | 昨天我回家很晚。 | zuótiān wǒ huí jiā hěn wǎn | Hôm qua tôi về nhà rất muộn. |
+| 昨天晚上我去王老师的家喝茶。 | 昨天晚上我去王老師的家喝茶。 | zuótiān wǎnshang wǒ qù Wáng lǎoshī de jiā hē chá | Tối qua tôi đến nhà thầy Vương uống trà. |
+| 今天下午你在哪儿学习汉语呢？ | 今天下午你在哪兒學習漢語呢？ | jīntiān xiàwǔ nǐ zài nǎr xuéxí hànyǔ ne | Chiều nay bạn học tiếng Trung ở đâu thế? |
+| 我在图书馆学习汉语。 | 我在圖書館學習漢語。 | wǒ zài túshūguǎn xuéxí hànyǔ | Tôi học tiếng Trung ở thư viện. |
+| — | 晚安！ | wǎn'ān | Chúc ngủ ngon! |
+| 欢迎你来越南玩儿！ | 歡迎你來越南玩兒！ | huānyíng nǐ lái Yuènán wánr | Chào mừng bạn đến Việt Nam chơi! |
+| 明天来我家玩儿吧。 | 明天來我家玩兒吧。 | míngtiān lái wǒ jiā wánr ba | Mai đến nhà tôi chơi đi. |
+| 你的儿子会吃饭了吗？ | 你的兒子會吃飯了嗎？ | nǐ de érzi huì chīfàn le ma | Con trai bạn đã biết ăn cơm chưa? |
+
+### Bài 7 — Luyện tập: 会 / 知道
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 我不知道他说什么。 | 我不知道他說什麼。 | wǒ bù zhīdào tā shuō shénme | Tôi không biết anh ấy nói gì. |
+| 你会做中国菜吗？ | 你會做中國菜嗎？ | nǐ huì zuò zhōngguó cài ma | Bạn biết nấu món Trung Quốc không? |
+| 她很聪明，什么都会知道。 | 她很聰明，什麼都會知道。 | tā hěn cōngmíng, shénme dōu huì zhīdào | Cô ấy rất thông minh, cái gì cũng biết. |
+| 我知道他叫王明。 | 我知道他叫王明。 | wǒ zhīdào tā jiào Wáng Míng | Tôi biết anh ấy tên là Vương Minh. |
+| 我们会说一点儿中文。 | 我們會說一點兒中文。 | wǒmen huì shuō yìdiǎnr zhōngwén | Chúng tôi biết nói một chút tiếng Trung. |
+| 你知道他是谁吗？ | 你知道他是誰嗎？ | nǐ zhīdào tā shì shuí ma | Bạn biết ông ấy là ai không? |
+| — | 我不知道。 | wǒ bù zhīdào | Tôi không biết. |
+| 我知道他在哪儿！ | 我知道他在哪兒！ | wǒ zhīdào tā zài nǎr | Tôi biết anh ấy ở đâu! |
+| 我妈妈会做饭。 | 我媽媽會做飯。 | wǒ māma huì zuò fàn | Mẹ tôi biết nấu cơm. |
+
+### Bài 7 — Câu bổ trợ
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 这些是什么？ | 這些是什麼？ | zhèxiē shì shénme | Những cái này là gì? |
+| 这些汉字我都不会。 | 這些漢字我都不會。 | zhèxiē hànzi wǒ dōu bú huì | Những chữ Hán này tôi đều không biết. |
+| 老师教什么？ | 老師教什麼？ | lǎoshī jiāo shénme | Thầy giáo dạy cái gì? |
+| 老师教汉语。 | 老師教漢語。 | lǎoshī jiāo hànyǔ | Thầy giáo dạy tiếng Trung. |
+| 我觉得教学很难。 | 我覺得教學很難。 | wǒ juéde jiàoxué hěn nán | Tôi cảm thấy việc dạy học rất khó. |
+| 你住（在）哪儿？ | 你住（在）哪兒？ | nǐ zhù zài nǎr | Bạn sống ở đâu? |
+| 我住在宿舍。 | 我住在宿舍。 | wǒ zhù zài sùshè | Tôi sống ở ký túc xá. |
+| 我不住在宿舍，我住在家里。 | 我不住在宿舍，我住在家裡。 | wǒ bú zhù zài sùshè, wǒ zhù zài jiālǐ | Tôi không ở ký túc xá, tôi ở nhà. |
+
+---
+
 ### Bài 6 — Cậu thích ăn cái gì?
 
 | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
@@ -259,6 +347,52 @@
 > Xem kiến thức gốc tại: `knowledge-base/chinese-brain.md`
 
 ---
+
+### Cập nhật sau Bài 7 — 2026-06-02
+
+**Kiến thức sử dụng:** Bài 1 (chào hỏi) + Bài 2 (gia đình, mức độ) + Bài 3 (địa điểm, chuỗi ĐT) + Bài 4 (是/有, quốc tịch) + Bài 5 (tên, công việc, 请/吧/了) + Bài 6 (ăn uống, 了吗/还没, 怎么样) + Bài 7 (phương vị từ, 知道/会, 住在, 有空儿, 欢迎/玩儿)
+
+#### Tình huống 1: Hỏi vị trí ký túc xá và thư viện
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你好，请问宿舍在哪儿？我是新来的留学生。 | 你好，請問宿舍在哪兒？我是新來的留學生。 | nǐ hǎo, qǐngwèn sùshè zài nǎr? wǒ shì xīn lái de liúxuéshēng. | Xin chào, cho hỏi ký túc xá ở đâu? Tôi là du học sinh mới đến. |
+| 宿舍在教学楼的北边，图书馆的右边。你知道图书馆吗？ | 宿舍在教學樓的北邊，圖書館的右邊。你知道圖書館嗎？ | sùshè zài jiàoxuélóu de běibian, túshūguǎn de yòubian. nǐ zhīdào túshūguǎn ma? | Ký túc xá ở phía bắc tòa nhà dạy học, bên phải thư viện. Bạn biết thư viện không? |
+| 我不知道，图书馆在哪儿？我想在那儿学习汉语。 | 我不知道，圖書館在哪兒？我想在那兒學習漢語。 | wǒ bù zhīdào, túshūguǎn zài nǎr? wǒ xiǎng zài nàr xuéxí hànyǔ. | Tôi không biết, thư viện ở đâu? Tôi muốn học tiếng Trung ở đó. |
+| 图书馆在学校的东边，很近。你住在宿舍吗？ | 圖書館在學校的東邊，很近。你住在宿舍嗎？ | túshūguǎn zài xuéxiào de dōngbian, hěn jìn. nǐ zhù zài sùshè ma? | Thư viện ở phía đông trường, rất gần. Bạn ở ký túc xá không? |
+| 是，我住在宿舍。谢谢你！ | 是，我住在宿舍。謝謝你！ | shì, wǒ zhù zài sùshè. xièxie nǐ! | Đúng, tôi ở ký túc xá. Cảm ơn bạn! |
+| 不用谢，很高兴认识你！ | 不用謝，很高興認識你！ | búyòng xiè, hěn gāoxìng rènshi nǐ! | Không cần cảm ơn, rất vui được quen biết bạn! |
+
+#### Tình huống 2: Rủ bạn đi chơi cuối tuần
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你好！这个星期天你有空儿吗？ | 你好！這個星期天你有空兒嗎？ | nǐ hǎo! zhège xīngqītiān nǐ yǒu kòngr ma? | Xin chào! Chủ Nhật này bạn có rảnh không? |
+| 星期天我有空儿，你想去哪儿玩儿？ | 星期天我有空兒，你想去哪兒玩兒？ | xīngqītiān wǒ yǒu kòngr, nǐ xiǎng qù nǎr wánr? | Chủ Nhật tôi rảnh, bạn muốn đi đâu chơi? |
+| 欢迎你来我家玩儿！我妈妈会做越南菜，你知道越南菜吗？ | 歡迎你來我家玩兒！我媽媽會做越南菜，你知道越南菜嗎？ | huānyíng nǐ lái wǒ jiā wánr! wǒ māma huì zuò Yuènán cài, nǐ zhīdào Yuènán cài ma? | Chào mừng bạn đến nhà tôi chơi! Mẹ tôi biết nấu món Việt, bạn biết món Việt không? |
+| 我知道，我很喜欢吃越南菜！你家在哪儿？ | 我知道，我很喜歡吃越南菜！你家在哪兒？ | wǒ zhīdào, wǒ hěn xǐhuan chī Yuènán cài! nǐ jiā zài nǎr? | Tôi biết, tôi rất thích ăn món Việt! Nhà bạn ở đâu? |
+| 我家在学校的西边，银行的左边。星期天早上你来吧！ | 我家在學校的西邊，銀行的左邊。星期天早上你來吧！ | wǒ jiā zài xuéxiào de xībian, yínháng de zuǒbian. xīngqītiān zǎoshang nǐ lái ba! | Nhà tôi ở phía tây trường, bên trái ngân hàng. Sáng Chủ Nhật bạn đến nhé! |
+| 太好了！你们家有几口人？ | 太好了！你們家有幾口人？ | tài hǎo le! nǐmen jiā yǒu jǐ kǒu rén? | Tốt quá! Nhà bạn có mấy người? |
+
+#### Tình huống 3: Nói chuyện về kỹ năng và việc học
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你会说中文吗？你学习怎么样了？ | 你會說中文嗎？你學習怎麼樣了？ | nǐ huì shuō zhōngwén ma? nǐ xuéxí zěnmeyàng le? | Bạn biết nói tiếng Trung không? Việc học của bạn thế nào rồi? |
+| 我会说一点儿中文，可是这些汉字我都不会！ | 我會說一點兒中文，可是這些漢字我都不會！ | wǒ huì shuō yìdiǎnr zhōngwén, kěshì zhèxiē hànzi wǒ dōu bú huì! | Tôi biết nói một chút tiếng Trung, nhưng những chữ Hán này tôi đều không biết! |
+| 我知道，汉字太难了！你知道学校的图书馆吗？那儿有很多汉语书。 | 我知道，漢字太難了！你知道學校的圖書館嗎？那兒有很多漢語書。 | wǒ zhīdào, hànzi tài nán le! nǐ zhīdào xuéxiào de túshūguǎn ma? nàr yǒu hěn duō hànyǔ shū. | Tôi biết, chữ Hán khó quá! Bạn biết thư viện của trường không? Ở đó có rất nhiều sách tiếng Trung. |
+| 我知道图书馆在哪儿，图书馆在教学楼的东边。你会教我学汉字吗？ | 我知道圖書館在哪兒，圖書館在教學樓的東邊。你會教我學漢字嗎？ | wǒ zhīdào túshūguǎn zài nǎr, túshūguǎn zài jiàoxuélóu de dōngbian. nǐ huì jiāo wǒ xué hànzi ma? | Tôi biết thư viện ở đâu, thư viện ở phía đông tòa nhà dạy học. Bạn có thể dạy tôi học chữ Hán không? |
+| 我也不太会，可是我们可以一起去图书馆学习！ | 我也不太會，可是我們可以一起去圖書館學習！ | wǒ yě bú tài huì, kěshì wǒmen kěyǐ yīqǐ qù túshūguǎn xuéxí! | Tôi cũng không giỏi lắm, nhưng chúng ta có thể cùng đến thư viện học! |
+
+#### Tình huống 4: Đón giáo viên đến thăm ký túc xá
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 欢迎老师来我们宿舍玩儿！请进，请坐！ | 歡迎老師來我們宿舍玩兒！請進，請坐！ | huānyíng lǎoshī lái wǒmen sùshè wánr! qǐng jìn, qǐng zuò! | Chào mừng thầy đến ký túc xá của chúng em chơi! Mời vào, mời ngồi! |
+| 谢谢！你们住在宿舍，食堂在宿舍的哪边？ | 謝謝！你們住在宿舍，食堂在宿舍的哪邊？ | xièxie! nǐmen zhù zài sùshè, shítáng zài sùshè de nǎ biān? | Cảm ơn! Các em ở ký túc xá, nhà ăn ở phía nào của ký túc xá? |
+| 食堂在宿舍的南边，饭馆在宿舍的东边。老师，您今天有空儿吗？ | 食堂在宿舍的南邊，飯館在宿舍的東邊。老師，您今天有空兒嗎？ | shítáng zài sùshè de nánbian, fànguǎn zài sùshè de dōngbian. lǎoshī, nín jīntiān yǒu kòngr ma? | Nhà ăn ở phía nam ký túc xá, quán cơm ở phía đông ký túc xá. Thầy hôm nay có rảnh không? |
+| 今天我有空儿。你们昨天晚上回宿舍很晚吗？ | 今天我有空兒。你們昨天晚上回宿舍很晚嗎？ | jīntiān wǒ yǒu kòngr. nǐmen zuótiān wǎnshang huí sùshè hěn wǎn ma? | Hôm nay tôi rảnh. Tối qua các em về ký túc xá muộn không? |
+| 是，昨天我们去王老师的家喝茶，回来很晚。老师，今天中午我们去食堂吃饭吧！ | 是，昨天我們去王老師的家喝茶，回來很晚。老師，今天中午我們去食堂吃飯吧！ | shì, zuótiān wǒmen qù Wáng lǎoshī de jiā hē chá, huílái hěn wǎn. lǎoshī, jīntiān zhōngwǔ wǒmen qù shítáng chīfàn ba! | Vâng, tối qua chúng em đi uống trà ở nhà thầy Vương, về muộn lắm. Thầy ơi, trưa nay chúng ta đi nhà ăn ăn cơm nhé! |
 
 <!-- future lessons will be prepended above this comment -->
 

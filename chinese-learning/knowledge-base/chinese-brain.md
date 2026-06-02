@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 6 (2026-05-30)
+> **Cập nhật lần cuối:** Bài 7 (2026-06-02)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -328,6 +328,51 @@ Khi một vần có nhiều nguyên âm, dấu thanh điệu đặt trên nguyê
 | — | 退休 | tuìxiū | Thoái Hưu | ĐT | về hưu, nghỉ hưu |
 | 职员 | 職員 | zhíyuán | Chức Viên | DT | nhân viên |
 
+### Bài 7 — Thư viện ở đâu?
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| 边 | 邊 | /biān/ | Biên | DT | phía, bên |
+| 上边 | 上邊 | /shàngbian/ | Thượng Biên | DT | phía trên |
+| 下边 | 下邊 | /xiàbian/ | Hạ Biên | DT | phía dưới |
+| 左边 | 左邊 | /zuǒbian/ | Tả Biên | DT | bên trái |
+| 右边 | 右邊 | /yòubian/ | Hữu Biên | DT | bên phải |
+| 东边 | 東邊 | /dōngbian/ | Đông Biên | DT | phía đông |
+| 西边 | 西邊 | /xībian/ | Tây Biên | DT | phía tây |
+| 南边 | 南邊 | /nánbian/ | Nam Biên | DT | phía nam |
+| 北边 | 北邊 | /běibian/ | Bắc Biên | DT | phía bắc |
+| — | 早 | /zǎo/ | Tảo | HDT | sớm |
+| — | 早上 | /zǎoshang/ | Tảo Thượng | DT | buổi sáng sớm (5:00–8:00) |
+| — | 晚 | /wǎn/ | Vãn | HDT | muộn |
+| — | 凌晨 | /língchén/ | Lăng Thần | DT | đêm khuya, rạng sáng (0:00–4:00) |
+| 现在 | 現在 | /xiànzài/ | Hiện Tại | DT | bây giờ, hiện tại |
+| 空儿 | 空兒 | /kòngr/ | Không Nhi | DT | thời gian rảnh |
+| 图书馆 | 圖書館 | /túshūguǎn/ | Đồ Thư Quán | DT | thư viện |
+| 教学楼 | 教學樓 | /jiàoxuélóu/ | Giáo Học Lâu | DT | tòa nhà dạy học |
+| — | 宿舍 | /sùshè/ | Túc Xá | DT | ký túc xá |
+| 楼 | 樓 | /lóu/ | Lâu | DT | tòa nhà, tầng |
+| 馆 | 館 | /guǎn/ | Quán | DT | quán, hàng, tiệm |
+| 茶馆 | 茶館 | /cháguǎn/ | Trà Quán | DT | quán trà |
+| 酒馆 | 酒館 | /jiǔguǎn/ | Tửu Quán | DT | quán rượu |
+| 饭馆 | 飯館 | /fànguǎn/ | Phạn Quán | DT | quán cơm, nhà hàng |
+| 面包 | 麵包 | /miànbāo/ | Miến Bao | DT | bánh mì |
+| — | 知道 | /zhīdào/ | Tri Đạo | ĐT | biết (thông tin, sự việc) |
+| 会 | 會 | /huì/ | Hội | ĐT năng nguyện | biết (qua rèn luyện); sẽ (tương lai) |
+| 欢迎 | 歡迎 | /huānyíng/ | Hoan Nghênh | ĐT | chào đón, hoan nghênh |
+| 玩儿 | 玩兒 | /wánr/ | Ngoạn Nhi | ĐT | chơi, vui chơi |
+| — | 住 | /zhù/ | Trú | ĐT | sống, ở (nơi cư trú) |
+| 教学 | 教學 | /jiàoxué/ | Giáo Học | ĐT/DT | dạy học, việc dạy học |
+| — | 教 | /jiāo/ | Giáo | ĐT | dạy |
+| 聪明 | 聰明 | /cōngmíng/ | Thông Minh | HDT | thông minh |
+| — | 些 | /xiē/ | — | Lượng từ | vài, một số |
+| — | 一些 | /yìxiē/ | — | Lượng từ | một ít, một vài |
+| 这些 | 這些 | /zhèxiē/ | — | Đại từ | những cái này |
+| — | 那些 | /nàxiē/ | — | Đại từ | những cái đó |
+| 专业 | 專業 | /zhuānyè/ | Chuyên Nghiệp | DT | chuyên ngành |
+| 系 | 繫 | /xì/ | Hệ | DT | khoa (trong trường học) |
+| 儿子 | 兒子 | /érzi/ | Nhi Tử | DT | con trai |
+| 女儿 | 女兒 | /nǚ'ér/ | Nữ Nhi | DT | con gái |
+
 ### Bài 6 — Cậu thích ăn cái gì?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -413,10 +458,12 @@ Ví dụ:
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa | Khoảng thời gian |
 |------|------|--------|----------|-------|-----------------|
-| — | 上午 | shàngwǔ | Thượng Ngọ | buổi sáng | 08:00–11:00 |
+| — | 凌晨 | língchén | Lăng Thần | đêm khuya, rạng sáng | 0:00–4:00 |
+| — | 早上 | zǎoshang | Tảo Thượng | buổi sáng sớm | 5:00–8:00 |
+| — | 上午 | shàngwǔ | Thượng Ngọ | buổi sáng | 8:00–11:00 |
 | — | 中午 | zhōngwǔ | Trung Ngọ | buổi trưa | 11:00–13:00 |
 | — | 下午 | xiàwǔ | Hạ Ngọ | buổi chiều | 13:00–17:00 |
-| — | 晚上 | wǎnshàng | Vãn Thượng | buổi tối | từ ~18:00 |
+| — | 晚上 | wǎnshàng | Vãn Thượng | buổi tối | 18:00–24:00 |
 
 ### 3.6 Đọc giờ
 
@@ -761,6 +808,58 @@ Ví dụ:
 
 ---
 
+### 知道 vs 会 — Hai cách "biết" khác nhau
+
+**Phân biệt:**
+- **知道** /zhīdào/: biết về một thông tin, sự kiện — không cần rèn luyện, chỉ cần được nghe/truyền đạt.
+- **会** /huì/: biết một kỹ năng — phải qua học tập, rèn luyện mới có được.
+
+**Ví dụ:**
+- 我知道他在哪儿。/ 我知道他在哪兒。 /wǒ zhīdào tā zài nǎr/ — Tôi biết anh ấy ở đâu. (biết thông tin)
+- 我知道食堂在哪儿。 /wǒ zhīdào shítáng zài nǎr/ — Tôi biết nhà ăn ở đâu. (biết thông tin)
+- 我会说中文。/ 我會說中文。 /wǒ huì shuō zhōngwén/ — Tôi biết nói tiếng Trung. (biết kỹ năng)
+- 你会做中国菜吗？/ 你會做中國菜嗎？ /nǐ huì zuò zhōngguó cài ma/ — Bạn biết nấu món Trung Quốc không? (kỹ năng)
+
+---
+
+### S + 住在 + Địa điểm — Sống/ở tại nơi nào
+
+**Cấu trúc:** S + 住 + 在 + Địa điểm
+
+**Giải thích:** Dùng để diễn tả nơi cư trú thường xuyên hoặc trong thời gian dài. 住 và 在 thường đi cùng nhau, có thể viết liền hoặc tách.
+
+**Ví dụ:**
+- 我住在宿舍。 /wǒ zhù zài sùshè/ — Tôi sống ở ký túc xá.
+- 你住在哪儿？/ 你住在哪兒？ /nǐ zhù zài nǎr/ — Bạn sống ở đâu?
+- 我不住在宿舍，我住在家里。/ 我不住在宿舍，我住在家裡。 /wǒ bú zhù zài sùshè, wǒ zhù zài jiālǐ/ — Tôi không ở ký túc xá, tôi ở nhà.
+
+---
+
+### A + 在 + B + (的) + Phương vị từ — Vị trí tương đối
+
+**Cấu trúc:** A + 在 + B + 的 + 方位词
+
+**Giải thích:** Diễn tả vị trí của A so với B bằng phương vị từ (边: trên/dưới/trái/phải/đông/tây/nam/bắc). Chữ 的 có thể lược bỏ.
+
+**Ví dụ:**
+- 饭馆在学校的左边。/ 飯館在學校的左邊。 /fànguǎn zài xuéxiào de zuǒbian/ — Quán cơm ở bên trái trường học.
+- 食堂在学校的北边。/ 食堂在學校的北邊。 /shítáng zài xuéxiào de běibian/ — Nhà ăn ở phía bắc trường học.
+- 图书馆在教学楼东边。/ 圖書館在教學樓東邊。 /túshūguǎn zài jiàoxuélóu dōngbian/ — Thư viện ở phía đông tòa nhà dạy học.
+
+---
+
+### 不用 + V — Không cần làm gì
+
+**Cấu trúc:** 不用 + ĐT
+
+**Giải thích:** Diễn đạt sự không cần thiết phải làm gì đó. Thường dùng để từ chối lịch sự hoặc cho phép ai đó không phải làm điều gì.
+
+**Ví dụ:**
+- 不用谢。 /búyòng xiè/ — Không cần cảm ơn. (= 不客气)
+- 不用去。 /búyòng qù/ — Không cần đi.
+
+---
+
 ## 6. Câu thông dụng (Common Phrases)
 
 ### Chào hỏi
@@ -800,6 +899,15 @@ Ví dụ:
 | — | 我的天啊！ | wǒ de tiān a | Ôi trời ơi! |
 | 你到底是谁！ | 你到底是誰！ | nǐ dàodǐ shì shéi | Rốt cuộc anh/bạn là ai vậy! |
 | 你觉得怎么样？ | 你覺得怎麼樣？ | nǐ juéde zěnmeyàng | Bạn cảm thấy thế nào? |
+
+### Hỏi thăm / Mời chào
+
+| 简体 | 繁體 | Pinyin | Nghĩa |
+|------|------|--------|-------|
+| 今天你有空儿吗？ | 今天你有空兒嗎？ | jīntiān nǐ yǒu kòngr ma | Hôm nay bạn có rảnh không? |
+| 欢迎你来越南玩儿！ | 歡迎你來越南玩兒！ | huānyíng nǐ lái Yuènán wánr | Chào mừng bạn đến Việt Nam chơi! |
+| — | 晚安！ | wǎn'ān | Chúc ngủ ngon! |
+| 不用谢。 | 不用謝。 | búyòng xiè | Không cần cảm ơn. |
 
 ### Ăn uống & Đặt món
 
