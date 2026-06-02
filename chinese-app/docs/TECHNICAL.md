@@ -150,7 +150,7 @@ Pattern: server component parses markdown + passes data as props → client comp
 - `autoComplete="off"`, `autoCorrect="off"`, `spellCheck={false}` — prevents iOS autocorrect interference
 - Submit on Enter (without Shift) or tap "Kiểm tra" button
 - Placeholder clears on focus (prevents obscuring handwriting composition)
-- Font size: `text-5xl` for input, `text-8xl` for answer reveal character
+- Font size: `text-7xl font-bold` for input, `text-8xl` for answer reveal character
 
 ---
 

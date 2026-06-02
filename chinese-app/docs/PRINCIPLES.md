@@ -14,7 +14,7 @@ This is a personal app for one person on one iPad. `localStorage` is the correct
 
 ## P3 — iPad-First, Touch-First
 
-All interactive elements must be thumb-reachable on iPad. The bottom `NavBar` is intentional. Font sizes during practice: `text-5xl` minimum for textarea input, `text-8xl` for answer reveal. No hover-only interactions.
+All interactive elements must be thumb-reachable on iPad. The bottom `NavBar` is intentional. Font sizes during practice: `text-7xl font-bold` for textarea input, `text-8xl` for answer reveal. No hover-only interactions.
 
 ## P4 — Vietnamese UI
 

@@ -50,7 +50,7 @@ export default function WritingInput({ expected, expectedAlt, placeholder = "Viá
         placeholder={focused ? "" : placeholder}
         lang="zh-Hans"
         inputMode="text"
-        className={`w-full text-5xl text-center border-2 rounded-2xl p-4 outline-none transition-all resize-none
+        className={`w-full text-7xl font-bold text-center border-2 rounded-2xl p-4 outline-none transition-all resize-none
           ${submitted
             ? correct
               ? "border-green-500 bg-green-50 text-green-800"
