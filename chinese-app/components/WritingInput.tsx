@@ -9,7 +9,8 @@ interface Props {
 }
 
 function normalize(text: string): string {
-  return text.trim().replace(/\s+/g, "").toLowerCase();
+  // Strip punctuation before comparing — stored phrases include ！？。 which users won't handwrite
+  return text.trim().replace(/[\s\p{P}\p{S}]/gu, "").toLowerCase();
 }
 
 export default function WritingInput({ expected, expectedAlt, onResult }: Props) {

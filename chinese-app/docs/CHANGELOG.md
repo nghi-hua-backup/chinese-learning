@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.1.1] - 2026-06-02
+
+### Fixed
+- `WritingInput`: correct answers flagged as wrong when stored phrase contains trailing punctuation (！？。，etc.). `normalize()` now strips all Unicode punctuation and symbols (`\p{P}\p{S}`) before comparing — users writing by hand on iPad won't append those characters.
+
+---
+
 ## [1.1.0] - 2026-06-02
 
 ### Added

@@ -144,7 +144,7 @@ Pattern: server component parses markdown + passes data as props → client comp
 
 ## Writing Input Rules (`WritingInput.tsx`)
 
-- Normalize before comparison: `trim()` + collapse whitespace + `toLowerCase()`
+- Normalize before comparison: `trim()` + strip Unicode punctuation/symbols (`\p{P}\p{S}`) + `toLowerCase()`
 - Accepts `expected` (active-script form) **or** `expectedAlt` (alternate script) as correct
 - `lang="zh-Hans"` on textarea — hints iOS to offer Chinese keyboard
 - `autoComplete="off"`, `autoCorrect="off"`, `spellCheck={false}` — prevents iOS autocorrect interference
@@ -177,3 +177,4 @@ If `简体` is `"—"` or empty → `simplified` falls back to `traditional` val
 | `—` sentinel in markdown | If simplified == traditional, the markdown uses `—` in the 简体 column. The parser must fall back to the 繁體 value in this case, not store `"—"` as the `simplified` field. |
 | `kb.json` in knowledge-base/ | This is a historical stub (107 bytes). It is not referenced by the build pipeline. Do not delete it, but do not add to it either. |
 | `chinese-learning/progress/` | Legacy directory from an earlier Notion/SM-2 design. Not used by the current build. `review-log.json` is empty. Do not delete. |
+| Punctuation in stored phrases | `chinese-brain.md` and `chinese-practice-bank.md` phrases include full-width punctuation (！？。，). `normalize()` must strip `\p{P}\p{S}` before comparing or users who omit trailing punctuation will always get "Sai rồi". |
