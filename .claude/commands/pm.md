@@ -50,3 +50,4 @@ Tell the user: "Requirement documented. Run `/dev` to implement PF-N, or `/featu
 - Never touch source code files (`.tsx`, `.ts`, `.css`)
 - Never touch `TECHNICAL.md` or `VERIFICATION.md`
 - Never approve a feature that contradicts a principle without explicit user override
+- **Do NOT update CHANGELOG.md** — the PM role documents intent, not shipped changes. The CHANGELOG entry is added by Dev when the feature is implemented and pushed. P11 applies to shipped commits, not planning commits.

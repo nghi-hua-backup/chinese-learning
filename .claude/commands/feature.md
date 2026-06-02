@@ -31,7 +31,7 @@ Example: `/feature Add audio pronunciation — tap a button to hear the characte
 
 ## Phase 2 — Developer
 
-**Read:** `chinese-app/docs/TECHNICAL.md` (PRINCIPLES.md already read in Phase 1)
+**Read:** `chinese-app/docs/TECHNICAL.md` + `chinese-app/docs/CHANGELOG.md` (PRINCIPLES.md and REQUIREMENTS.md already read in Phase 1)
 
 1. Identify which files need to change based on the feature.
 2. Implement the feature in `chinese-app/` only — never edit `chinese-learning/` source files.
@@ -41,33 +41,36 @@ Example: `/feature Add audio pronunciation — tap a button to hear the characte
    ```
    cd chinese-app && npm run build
    ```
-6. Move PF-N from "Pending Features" to "Functional Requirements — Implemented" in `REQUIREMENTS.md`. Assign the next FR-N number.
-7. Update `TECHNICAL.md` if any new components, data types, or architectural patterns were introduced.
-8. Commit all changes together (code + docs):
+6. **Update docs (P11 — required):**
+   - `REQUIREMENTS.md`: move PF-N from "Pending Features" to "Functional Requirements — Implemented"; assign the next FR-N number; update NFRs if affected
+   - `TECHNICAL.md`: add new components, data types, pitfalls, or architectural patterns introduced
+   - `CHANGELOG.md`: read the current top entry to get the latest version, bump MINOR (e.g. 1.0.0 → 1.1.0), prepend `## [x.y.0] - YYYY-MM-DD` with bullets under `### Added`
+7. Commit all changes together (code + docs):
    ```
    git add <specific files>
    git commit -m "feat: <feature description>"
    git push origin main
    ```
-9. Report: "Implementation complete. Pushed to main. Waiting for GitHub Actions deploy."
+8. Report: "Implementation complete. Pushed to main. Waiting for GitHub Actions deploy."
 
 ---
 
 ## Phase 3 — QA Tester
 
-**Read:** `chinese-app/docs/VERIFICATION.md`
+**Read:** `chinese-app/docs/VERIFICATION.md` + `chinese-app/docs/CHANGELOG.md`
 
 1. Check GitHub Actions status — confirm the deploy succeeded (green check on latest commit).
 2. Open the live URL: `https://nghi-hua-backup.github.io/chinese-learning/`
 3. Run the relevant BLOCKER flows from `VERIFICATION.md` that touch the new feature.
 4. Verify each acceptance criterion from PF-N (now in REQUIREMENTS.md as FR-N).
 5. Run the full BLOCKER list (items 1–19) to check for regressions.
-6. Add test scenarios for the new feature to `VERIFICATION.md` under the appropriate section.
-7. Append a Test Scenario Log entry in `VERIFICATION.md`.
-8. Commit `VERIFICATION.md`:
+6. **Confirm CHANGELOG.md has an entry for this release** — if Phase 2 (Dev) did not add one, add it now before proceeding. A missing CHANGELOG entry is a blocker.
+7. Add test scenarios for the new feature to `VERIFICATION.md` under the appropriate section.
+8. Append a Test Scenario Log entry in `VERIFICATION.md`.
+9. Commit `VERIFICATION.md`:
    ```
    git add chinese-app/docs/VERIFICATION.md
    git commit -m "docs(qa): add test scenarios for <feature name>"
    git push origin main
    ```
-9. Report pass/fail summary. If any BLOCKER fails: "Issue found: [description]. Run /fix to address."
+10. Report pass/fail summary. If any BLOCKER fails: "Issue found: [description]. Run /fix to address."

@@ -43,3 +43,15 @@ Never place a hook call (`useMemo`, `useState`, `useEffect`, etc.) after an earl
 ## P10 — Public Repo
 
 GitHub Pages free tier requires a public repo (`nghi-hua-backup/chinese-learning`). Never commit sensitive data, API keys, or private content to this repo. Private content lives in the separate private `personal-development` repo.
+
+## P11 — Every Shipped Change Must Be Versioned and Docs Must Be Current
+
+Any commit that changes code, content, or configuration must update **all** of the following that apply:
+
+- **`docs/CHANGELOG.md`** — always; bump MAJOR/MINOR/PATCH and prepend a dated entry
+- **`docs/REQUIREMENTS.md`** — always; must reflect what the app currently does and intentionally does not do (FR-N entries, Known Non-Bugs, NFRs)
+- **`docs/TECHNICAL.md`** — whenever implementation details change: new components, data types, pitfalls, parsing rules, or any detail that would mislead a future developer if left stale
+- **`docs/VERIFICATION.md`** — whenever observable behavior changes: update or add checklist items to match new expected behavior; append a test log entry after QA verifies
+- **Knowledge-base timestamps** (`> **Cập nhật lần cuối:**`) — whenever KB content is added or edited
+
+"No applicable changes" is not an acceptable reason to skip a doc — if a doc needs no update, that must be a conscious decision, not an oversight. No commit is complete without this review. All roles — Dev, PM, QA, KB Manager — are bound by this principle.

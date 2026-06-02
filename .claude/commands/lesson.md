@@ -18,6 +18,6 @@ If no filename is provided, ask the user which file(s) to process.
 
 ---
 
-This skill runs the full Knowledge Base Manager workflow defined in `/kb-update`. All rules, steps, and formatting from that skill apply here.
+This skill runs the full Knowledge Base Manager workflow defined in `/kb-update`. All rules, steps, and formatting from that skill apply here — including the mandatory CHANGELOG.md update in Bước 7 (P11).
 
 Please follow the `/kb-update` skill instructions exactly.

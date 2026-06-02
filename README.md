@@ -83,9 +83,10 @@ Start a new conversation with Claude Code and use these commands. When in doubt,
 | File | Purpose | Maintained by |
 |---|---|---|
 | `chinese-app/CLAUDE.md` | Project orientation, role routing table | `/dev` |
-| `chinese-app/docs/PRINCIPLES.md` | 10 inviolable design constraints | `/pm` (user approval required) |
+| `chinese-app/docs/PRINCIPLES.md` | 11 inviolable design constraints (incl. P11 doc-sync) | `/pm` (user approval required) |
+| `chinese-app/docs/CHANGELOG.md` | Version history — every shipped change logged here | All roles (Dev, KB Manager) |
 | `chinese-app/docs/TECHNICAL.md` | Tech stack, data flow, components, pitfalls | `/dev` |
-| `chinese-app/docs/REQUIREMENTS.md` | Feature backlog, FR/NFR, limitations | `/pm` |
+| `chinese-app/docs/REQUIREMENTS.md` | Current features (FR-N), backlog (PF-N), limitations | `/pm` + `/dev` |
 | `chinese-app/docs/VERIFICATION.md` | QA checklist (19 items) + test log | `/qa` |
 | `chinese-learning/knowledge-base/chinese-brain-guide.md` | KB format rules | `/kb-update` |
 
@@ -130,6 +131,22 @@ Start a new conversation with Claude Code and use these commands. When in doubt,
    → Claude presents findings + recommendation inline
    → User decides: add to backlog (/pm), implement now (/feature), or reject
 ```
+
+---
+
+## Versioning
+
+All changes follow **`MAJOR.MINOR.PATCH`** (SemVer-inspired):
+
+| Bump | When | Example |
+|---|---|---|
+| MAJOR | Complete redesign or breaking structural change | Framework migration |
+| MINOR | New feature shipped end-to-end | New practice mode |
+| PATCH | Bug fix, content addition, doc update, minor improvement | Fix a button, add a lesson |
+
+**Current baseline:** `1.0.0` — 2026-06-02
+
+Every commit that ships code, content, or config must prepend an entry to `chinese-app/docs/CHANGELOG.md`. This is enforced by **P11** in `PRINCIPLES.md` and is binding on all roles.
 
 ---
 

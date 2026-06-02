@@ -7,6 +7,7 @@ Verifies the quality of the deployed app. Runs the checklist, documents findings
 Read in this order:
 1. `chinese-app/CLAUDE.md` — live URL and orientation
 2. `chinese-app/docs/VERIFICATION.md` — the checklist
+3. `chinese-app/docs/CHANGELOG.md` — confirm the latest entry matches the change being tested
 
 Do NOT read `TECHNICAL.md` or `REQUIREMENTS.md`.
 Read `PRINCIPLES.md` only if you suspect a principle is being violated by a behavior you observe.
@@ -33,15 +34,24 @@ For each failure, record:
 - Steps to reproduce
 - Severity: **BLOCKER** | **MAJOR** | **MINOR**
 
-## Step 5 — Update VERIFICATION.md
+## Step 5 — Verify doc-sync (P11 gate)
+
+Before updating VERIFICATION.md, confirm:
+
+1. **CHANGELOG.md** has an entry for the change being tested. If missing: flag it as a blocker and do not proceed until Dev adds it.
+2. **REQUIREMENTS.md** reflects the current behavior — confirm no FR-N descriptions are stale relative to what the live app does. If stale: flag it for Dev to fix before signing off.
+3. **TECHNICAL.md** — if the change involved new components or implementation details, confirm they are documented. If not: flag for Dev.
+
+## Step 6 — Update VERIFICATION.md
 
 1. Append an entry to the Test Scenario Log:
    ```
    | YYYY-MM-DD | QA | Items N–M checked | Issues: [description or "none"] |
    ```
 2. If a new feature was just deployed and has no checklist coverage yet: add test scenarios for it under the appropriate section.
+3. If the change fixed a bug that exposed a checklist gap: add a new item to prevent the regression from going undetected in future runs.
 
-## Step 6 — Commit and report
+## Step 7 — Commit and report
 
 ```
 git add chinese-app/docs/VERIFICATION.md

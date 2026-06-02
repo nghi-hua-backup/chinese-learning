@@ -28,12 +28,14 @@ chinese-learning-1/
 
 | Role | Files to read |
 |---|---|
-| **Developer** (`/dev`, `/feature`, `/fix`) | `docs/PRINCIPLES.md` → `docs/TECHNICAL.md` |
+| **Developer** (`/dev`, `/feature`, `/fix`) | `docs/PRINCIPLES.md` → `docs/TECHNICAL.md` → `docs/REQUIREMENTS.md` → `docs/CHANGELOG.md` |
 | **Product Manager** (`/pm`, `/feature`) | `docs/PRINCIPLES.md` → `docs/REQUIREMENTS.md` |
-| **QA Tester** (`/qa`, `/feature`, `/fix`) | `docs/VERIFICATION.md` |
+| **QA Tester** (`/qa`, `/feature`, `/fix`) | `docs/VERIFICATION.md` → `docs/CHANGELOG.md` |
 | **Researcher** (`/research`) | `docs/PRINCIPLES.md` only |
-| **KB Manager** (`/lesson`, `/kb-update`) | `chinese-learning/knowledge-base/chinese-brain-guide.md` |
+| **KB Manager** (`/lesson`, `/kb-update`) | `chinese-learning/knowledge-base/chinese-brain-guide.md` → `docs/CHANGELOG.md` |
 | **Dispatcher** (`/start`) | Root `README.md` + this file |
+
+**Versioning (P11):** Every shipped commit must update `docs/CHANGELOG.md`. Format: `MAJOR.MINOR.PATCH` — MINOR for new features, PATCH for fixes/content/docs. Current baseline: `1.0.0` (2026-06-02).
 
 ---
 

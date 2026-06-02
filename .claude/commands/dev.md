@@ -6,9 +6,10 @@ Implements features, fixes bugs, refactors code, and keeps technical documentati
 
 Read in this order:
 1. `chinese-app/CLAUDE.md` — orientation (live URL, build commands, layout)
-2. `chinese-app/docs/PRINCIPLES.md` — constraints you cannot violate
+2. `chinese-app/docs/PRINCIPLES.md` — constraints you cannot violate (including P11 doc-sync)
 3. `chinese-app/docs/TECHNICAL.md` — implementation detail, data types, component contracts, known pitfalls
-4. `chinese-app/docs/REQUIREMENTS.md` — **only if building a new feature** (confirm it is approved as a PF-N entry)
+4. `chinese-app/docs/REQUIREMENTS.md` — confirm the task context and current FR-N state
+5. `chinese-app/docs/CHANGELOG.md` — read the top entry to get the current version number
 
 Do NOT read `VERIFICATION.md` — that is the QA role's domain.
 
@@ -29,12 +30,17 @@ Do NOT read `VERIFICATION.md` — that is the QA role's domain.
   cd chinese-app && npm run build
   ```
 
-## Step 4 — Update docs
+## Step 4 — Update docs (P11 — required before every commit)
 
-After every code change, update the relevant section(s). Do NOT rewrite whole files — make targeted edits only.
+After every code change, update ALL docs that apply. Do NOT rewrite whole files — make targeted edits only.
 
-- `chinese-app/docs/TECHNICAL.md` — if new components, data types, routing, or pitfalls were introduced
-- `chinese-app/docs/REQUIREMENTS.md` — if a PF-N is now implemented (move it to "Functional Requirements — Implemented" with the next FR-N number)
+- `chinese-app/docs/CHANGELOG.md` — **always**; determine bump type, compute new version from the current top entry, prepend a new `## [x.y.z] - YYYY-MM-DD` entry with bullets describing what changed
+  - New feature → MINOR bump (e.g. 1.0.0 → 1.1.0)
+  - Bug fix, improvement, or doc-only → PATCH bump (e.g. 1.0.0 → 1.0.1)
+- `chinese-app/docs/REQUIREMENTS.md` — **always**; update FR-N entries, NFRs, or Known Non-Bugs to reflect the current state of the app after this change
+  - If completing a feature: move PF-N to "Functional Requirements — Implemented" with the next FR-N number
+  - If fixing a bug: update the relevant FR-N description or Known Non-Bugs if expected behavior changed
+- `chinese-app/docs/TECHNICAL.md` — if new components, data types, routing, pitfalls, or parsing rules were introduced or changed
 - `chinese-app/CLAUDE.md` — only if the orientation info (live URL, build command, layout) changed
 
 ## Step 5 — Commit and push

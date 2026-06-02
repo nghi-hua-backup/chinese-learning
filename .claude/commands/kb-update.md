@@ -120,13 +120,27 @@ Sau khi Bước 4 hoàn tất, đọc toàn bộ `chinese-brain.md` đã cập n
 6. Cập nhật dòng `> **Cập nhật lần cuối:**` ở đầu `chinese-practice-bank.md` nếu chưa cập nhật ở Bước 4.
 7. Thêm vào báo cáo cuối: `- Luyện tập tổng hợp: X tình huống mới (Bài N)`
 
-### Bước 7 — Commit và push
+### Bước 7 — Cập nhật CHANGELOG.md (P11 — bắt buộc)
+
+Trước khi commit, cập nhật `chinese-app/docs/CHANGELOG.md`:
+
+1. Đọc entry đầu tiên trong CHANGELOG.md để lấy version hiện tại.
+2. Tăng PATCH version (ví dụ: 1.0.2 → 1.0.3).
+3. Thêm entry mới vào đầu file theo định dạng:
+   ```
+   ## [x.y.z] - YYYY-MM-DD
+   ### Added
+   - KB: Bài N — X từ vựng, Y pattern ngữ pháp, Z câu luyện tập
+   ```
+
+### Bước 8 — Commit và push
 
 Sau khi hoàn thành tất cả cập nhật và báo cáo kết quả:
 
 ```
 git add chinese-learning/knowledge-base/chinese-brain.md
 git add chinese-learning/knowledge-base/chinese-practice-bank.md
+git add chinese-app/docs/CHANGELOG.md
 git commit -m "kb: add Bài N content (X từ vựng, Y ngữ pháp, Z câu luyện tập)"
 git push origin main
 ```
