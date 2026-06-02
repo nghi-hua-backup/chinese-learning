@@ -5,7 +5,6 @@ import { useState, useRef } from "react";
 interface Props {
   expected: string;
   expectedAlt?: string;
-  placeholder?: string;
   onResult: (correct: boolean, input: string) => void;
 }
 
@@ -13,11 +12,10 @@ function normalize(text: string): string {
   return text.trim().replace(/\s+/g, "").toLowerCase();
 }
 
-export default function WritingInput({ expected, expectedAlt, placeholder = "Viết chữ Trung ở đây...", onResult }: Props) {
+export default function WritingInput({ expected, expectedAlt, onResult }: Props) {
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(false);
-  const [focused, setFocused] = useState(false);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   function handleSubmit() {
@@ -43,11 +41,8 @@ export default function WritingInput({ expected, expectedAlt, placeholder = "Vi�
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
-        onFocus={() => setFocused(true)}
-        onBlur={() => setFocused(false)}
         disabled={submitted}
         rows={3}
-        placeholder={focused ? "" : placeholder}
         lang="zh-Hans"
         inputMode="text"
         className={`w-full text-7xl font-bold text-center border-2 rounded-2xl p-4 outline-none transition-all resize-none

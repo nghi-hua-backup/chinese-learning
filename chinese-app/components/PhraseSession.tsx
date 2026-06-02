@@ -99,7 +99,6 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
         <WritingInput
           expected={getDisplayChar(card, scriptMode)}
           expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
-          placeholder="Viết câu tiếng Trung..."
           onResult={() => setShowAnswer(true)}
         />
       )}

@@ -14,8 +14,6 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
   const [lineIndex, setLineIndex] = useState(0);
   const [input, setInput] = useState("");
   const [showAnswer, setShowAnswer] = useState(false);
-  const [focused, setFocused] = useState(false);
-
   const line = dialogue.lines[lineIndex];
   const isLast = lineIndex >= dialogue.lines.length - 1;
   // Alternate: even lines = system says, odd lines = user writes
@@ -89,10 +87,8 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
                 <textarea
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  onFocus={() => setFocused(true)}
-                  onBlur={() => setFocused(false)}
                   rows={2}
-                  placeholder={focused ? "" : "Viết câu trả lời bằng chữ Trung..."}
+                  placeholder=""
                   lang="zh-Hans"
                   inputMode="text"
                   autoCorrect="off"
