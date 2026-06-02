@@ -84,6 +84,16 @@ This file is the authoritative record of all features, requirements, and scope d
 - Works in Safari/WebKit on iPad (Web Speech API is supported)
 - Button does not interfere with the handwriting input flow
 
+### PF-2: Correct/Incorrect Feedback Signal in Mẫu câu
+**Priority:** High
+**Description:** After submitting an answer in the Mẫu câu practice section, display a green/red feedback banner to signal whether the answer is correct or incorrect — matching the feedback pattern already implemented in the Từ vựng Luyện viết mode.
+**Acceptance criteria:**
+- Green banner appears when the submitted answer matches the correct sentence
+- Red banner appears when the submitted answer does not match
+- The correct sentence is revealed after submission (especially useful when the answer is wrong)
+- Feedback visual style matches the Từ vựng Luyện viết pattern (banner + answer reveal)
+- User can proceed to the next sentence after seeing the feedback
+
 ---
 
 ## Out of Scope (Unless Explicitly Added by User)
