@@ -78,6 +78,8 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 | E3 | Single-card session | Session completes after 1 card; done screen appears |
 | E4 | All cards mastered (none due) | Empty state message shown; no crash |
 | E5 | Dialogue already completed | ✅ shown on list; completing again doesn't duplicate in store |
+| E6 | Correct Chinese sentence typed without trailing punctuation (！？。) | Accepted as correct — `normalize()` strips punctuation before comparing |
+| E7 | Input contains only punctuation characters | Marked wrong — stripped input is empty, cannot match a non-empty answer |
 
 ---
 
@@ -99,3 +101,4 @@ Append an entry after each QA session.
 | 2026-06-02 | QA (Claude) | P1, 5–7 (Luyện viết textarea font) — Playwright local dev run | PASS — textarea computed 72px / fontWeight 700 (text-7xl font-bold). Placeholder visually large and bold. No regressions on setup screen or session flow. |
 | 2026-06-02 | QA (Claude) | P3, 1, 2, 5, 11, 13, 15, 19 — Playwright against live site | PASS — placeholder attr is null on textarea (removed). Home, tu-vung, mau-cau, hoi-thoai, tien-do all load. All 5 nav links present. No regressions. |
 | 2026-06-02 | QA (Claude) | Items 20–21 (Mẫu câu feedback banner), T3 (Từ vựng regression) — Playwright against live site | PASS — red "✗ Sai rồi" banner + answer reveal + SRS rating all visible after wrong answer; green "✓ Chính xác!" banner + answer reveal + SRS rating all visible after correct answer; Từ vựng Luyện viết red banner unaffected. |
+| 2026-06-02 | QA (Claude) | E6–E7 (punctuation-strip fix), T2 regression, T4 Từ vựng regression — Playwright against live site | PASS — typing "沒關係" (without ！) accepted as correct for stored "沒關係！"; punctuation-only input "！？。，" still marked wrong; genuinely wrong sentence still shows red; Từ vựng correct character still accepted. |
