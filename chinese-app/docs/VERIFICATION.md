@@ -45,6 +45,8 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 |---|---|---|
 | 11 | Complete a Câu thông dụng session | Done screen appears, no crash |
 | 12 | Complete a Câu luyện tập session | Done screen appears, no crash |
+| 20 | Mẫu câu — write wrong answer | Red "✗ Sai rồi" banner appears above answer reveal; answer reveal (character, pinyin, meaning) and SRS rating buttons visible |
+| 21 | Mẫu câu — write correct answer | Green "✓ Chính xác!" banner appears above answer reveal; answer reveal and SRS rating buttons still visible |
 
 ### Dialogues — `/hoi-thoai`
 | # | Flow | Pass condition |
@@ -96,3 +98,4 @@ Append an entry after each QA session.
 | 2026-06-02 | QA (Claude) | P1–P3, 1, 11–15, 19 checked; items 2–10, 16–18 not browser-testable (JS-rendered) | none — reorganization touched only docs/skills/boilerplate, zero app code changed |
 | 2026-06-02 | QA (Claude) | P1, 5–7 (Luyện viết textarea font) — Playwright local dev run | PASS — textarea computed 72px / fontWeight 700 (text-7xl font-bold). Placeholder visually large and bold. No regressions on setup screen or session flow. |
 | 2026-06-02 | QA (Claude) | P3, 1, 2, 5, 11, 13, 15, 19 — Playwright against live site | PASS — placeholder attr is null on textarea (removed). Home, tu-vung, mau-cau, hoi-thoai, tien-do all load. All 5 nav links present. No regressions. |
+| 2026-06-02 | QA (Claude) | Items 20–21 (Mẫu câu feedback banner), T3 (Từ vựng regression) — Playwright against live site | PASS — red "✗ Sai rồi" banner + answer reveal + SRS rating all visible after wrong answer; green "✓ Chính xác!" banner + answer reveal + SRS rating all visible after correct answer; Từ vựng Luyện viết red banner unaffected. |
