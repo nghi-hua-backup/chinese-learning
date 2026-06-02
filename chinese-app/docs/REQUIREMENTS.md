@@ -17,7 +17,7 @@ This file is the authoritative record of all features, requirements, and scope d
 - Two tabs: **Câu thông dụng** (common phrases from `§6` of `chinese-brain.md`) and **Câu luyện tập** (practice sentences from `chinese-practice-bank.md`)
 - Lesson filter on Câu luyện tập tab
 - Script toggle (same Zustand `scriptMode`)
-- Writing mode with self-assessment via `SRSRating`
+- Writing mode with correct/incorrect feedback banner (green ✓ / red ✗) after submission, followed by answer reveal and manual SRS rating
 
 ### FR-3: Dialogue Practice (`/hoi-thoai`)
 - Situation-based dialogues from `chinese-practice-bank.md`
@@ -83,16 +83,6 @@ This file is the authoritative record of all features, requirements, and scope d
 - Tapping the button reads the character aloud in Mandarin
 - Works in Safari/WebKit on iPad (Web Speech API is supported)
 - Button does not interfere with the handwriting input flow
-
-### PF-2: Correct/Incorrect Feedback Signal in Mẫu câu
-**Priority:** High
-**Description:** After submitting an answer in the Mẫu câu practice section, display a green/red feedback banner to signal whether the answer is correct or incorrect — matching the feedback pattern already implemented in the Từ vựng Luyện viết mode.
-**Acceptance criteria:**
-- Green banner appears when the submitted answer matches the correct sentence
-- Red banner appears when the submitted answer does not match
-- The correct sentence is revealed after submission (especially useful when the answer is wrong)
-- Feedback visual style matches the Từ vựng Luyện viết pattern (banner + answer reveal)
-- User can proceed to the next sentence after seeing the feedback
 
 ---
 

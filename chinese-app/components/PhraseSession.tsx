@@ -30,6 +30,7 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
 
   const [index, setIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [answerCorrect, setAnswerCorrect] = useState<boolean | null>(null);
   const [sessionDone, setSessionDone] = useState(false);
 
   const card = dueCards[index];
@@ -46,6 +47,7 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
     } else {
       setIndex((i) => i + 1);
       setShowAnswer(false);
+      setAnswerCorrect(null);
     }
   }
 
@@ -99,12 +101,21 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
         <WritingInput
           expected={getDisplayChar(card, scriptMode)}
           expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
-          onResult={() => setShowAnswer(true)}
+          onResult={(correct) => { setAnswerCorrect(correct); setShowAnswer(true); }}
         />
       )}
 
       {showAnswer && (
         <>
+          {answerCorrect !== null && (
+            <div className={`mt-4 rounded-xl p-4 text-center ${answerCorrect ? "bg-green-100" : "bg-red-50"}`}>
+              {answerCorrect ? (
+                <p className="text-green-700 font-semibold text-lg">✓ Chính xác!</p>
+              ) : (
+                <p className="text-red-600 font-semibold text-lg">✗ Sai rồi</p>
+              )}
+            </div>
+          )}
           <div className="mt-4 bg-white rounded-2xl border border-gray-100 p-6">
             <p className="text-6xl font-bold text-center mb-2">{getDisplayChar(card, scriptMode)}</p>
             <p className="text-indigo-600 text-center mt-1">{card.pinyin}</p>

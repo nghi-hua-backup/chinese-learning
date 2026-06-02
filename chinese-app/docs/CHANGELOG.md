@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.1.0] - 2026-06-02
+
+### Added
+- FR-2: Correct/incorrect feedback banner in Mẫu câu practice — green ✓ / red ✗ signal appears after answer submission, matching the Từ vựng Luyện viết pattern. Root cause: `WritingInput` unmounted before its internal feedback rendered; fixed by tracking `answerCorrect` in `PhraseSession` and rendering the banner in the answer-reveal phase.
+
+---
+
 ## [1.0.0] - 2026-06-02
 
 ### Baseline — Initial documented release
