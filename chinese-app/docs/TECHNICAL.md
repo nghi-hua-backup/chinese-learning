@@ -149,7 +149,7 @@ Pattern: server component parses markdown + passes data as props → client comp
 - `lang="zh-Hans"` on textarea — hints iOS to offer Chinese keyboard
 - `autoComplete="off"`, `autoCorrect="off"`, `spellCheck={false}` — prevents iOS autocorrect interference
 - Submit on Enter (without Shift) or tap "Kiểm tra" button
-- Placeholder clears on focus (prevents obscuring handwriting composition)
+- No placeholder text — textarea is intentionally blank so it doesn't interfere with handwriting composition
 - Font size: `text-7xl font-bold` for input, `text-8xl` for answer reveal character
 
 ---
