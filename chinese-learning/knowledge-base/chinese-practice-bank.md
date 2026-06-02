@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 7 (2026-06-02)
+> **Cập nhật lần cuối:** Ngữ pháp 的 (2026-06-02)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
 ---
@@ -356,6 +356,21 @@
 
 ---
 
+### Ngữ pháp 的 — Luyện tập
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 她是聪明的学生，我们都喜欢她。 | 她是聰明的學生，我們都喜歡她。 | tā shì cōngmíng de xuéshēng, wǒmen dōu xǐhuan tā. | Cô ấy là học sinh thông minh, chúng tôi đều thích cô ấy. |
+| 他是好人，也是好老师。 | 他是好人，也是好老師。 | tā shì hǎo rén, yě shì hǎo lǎoshī. | Anh ấy là người tốt, cũng là giáo viên tốt. |
+| 这是我的汉语书，是很好的书。 | 這是我的漢語書，是很好的書。 | zhè shì wǒ de hànyǔ shū, shì hěn hǎo de shū. | Đây là sách tiếng Trung của tôi, là cuốn sách rất hay. |
+| 妈妈做的饺子很好吃，你吃不吃？ | 媽媽做的餃子很好吃，你吃不吃？ | māma zuò de jiǎozi hěn hǎochī, nǐ chī bù chī? | Bánh sủi cảo mẹ làm rất ngon, bạn ăn không? |
+| 学汉语的学生都很聪明！ | 學漢語的學生都很聰明！ | xué hànyǔ de xuéshēng dōu hěn cōngmíng! | Học sinh học tiếng Trung đều rất thông minh! |
+| 这是吃的东西，你吃吗？ | 這是吃的東西，你吃嗎？ | zhè shì chī de dōngxi, nǐ chī ma? | Đây là đồ ăn, bạn ăn không? |
+| 我姐姐是汉语老师，她很聪明。 | 我姐姐是漢語老師，她很聰明。 | wǒ jiějie shì hànyǔ lǎoshī, tā hěn cōngmíng. | Chị gái tôi là giáo viên tiếng Trung, cô ấy rất thông minh. |
+| 这是中文书，不是英文书。 | 這是中文書，不是英文書。 | zhè shì zhōngwén shū, bú shì yīngwén shū. | Đây là sách tiếng Trung, không phải sách tiếng Anh. |
+
+---
+
 ## Luyện tập tổng hợp
 
 > Tự động tạo sau mỗi bài học mới. Kết hợp toàn bộ từ vựng và ngữ pháp đã học.
@@ -408,6 +423,41 @@
 | 食堂在宿舍的南边，饭馆在宿舍的东边。老师，您今天有空儿吗？ | 食堂在宿舍的南邊，飯館在宿舍的東邊。老師，您今天有空兒嗎？ | shítáng zài sùshè de nánbian, fànguǎn zài sùshè de dōngbian. lǎoshī, nín jīntiān yǒu kòngr ma? | Nhà ăn ở phía nam ký túc xá, quán cơm ở phía đông ký túc xá. Thầy hôm nay có rảnh không? |
 | 今天我有空儿。你们昨天晚上回宿舍很晚吗？ | 今天我有空兒。你們昨天晚上回宿舍很晚嗎？ | jīntiān wǒ yǒu kòngr. nǐmen zuótiān wǎnshang huí sùshè hěn wǎn ma? | Hôm nay tôi rảnh. Tối qua các em về ký túc xá muộn không? |
 | 是，昨天我们去王老师的家喝茶，回来很晚。老师，今天中午我们去食堂吃饭吧！ | 是，昨天我們去王老師的家喝茶，回來很晚。老師，今天中午我們去食堂吃飯吧！ | shì, zuótiān wǒmen qù Wáng lǎoshī de jiā hē chá, huílái hěn wǎn. lǎoshī, jīntiān zhōngwǔ wǒmen qù shítáng chīfàn ba! | Vâng, tối qua chúng em đi uống trà ở nhà thầy Vương, về muộn lắm. Thầy ơi, trưa nay chúng ta đi nhà ăn ăn cơm nhé! |
+
+### Cập nhật ngữ pháp 的 — 2026-06-02
+
+**Kiến thức sử dụng:** Bài 2 (gia đình) + Bài 3 (địa điểm, chuỗi ĐT) + Bài 5 (công việc, tên, 请/吧) + Bài 6 (ăn uống) + Bài 7 (住在, phương vị từ, 有空儿) + Ngữ pháp 的 (HDT + 的, ĐT/Cụm từ + 的, cụm cố định)
+
+#### Tình huống 1: Giới thiệu bạn học mới và nói về giáo viên
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 请问，你是新来的留学生吗？ | 請問，你是新來的留學生嗎？ | qǐngwèn, nǐ shì xīn lái de liúxuéshēng ma? | Xin hỏi, bạn có phải là du học sinh mới đến không? |
+| 对，我是学汉语的学生，我叫阮国安。 | 對，我是學漢語的學生，我叫阮國安。 | duì, wǒ shì xué hànyǔ de xuéshēng, wǒ jiào Ruǎn Guó'ān. | Đúng, tôi là học sinh học tiếng Trung, tên tôi là Nguyễn Quốc An. |
+| 很高兴认识你！你的汉语老师是谁？ | 很高興認識你！你的漢語老師是誰？ | hěn gāoxìng rènshi nǐ! nǐ de hànyǔ lǎoshī shì shuí? | Rất vui được quen biết bạn! Giáo viên tiếng Trung của bạn là ai? |
+| 是王老师，她是聪明的老师，也是好人。你住在哪儿？ | 是王老師，她是聰明的老師，也是好人。你住在哪兒？ | shì Wáng lǎoshī, tā shì cōngmíng de lǎoshī, yě shì hǎo rén. nǐ zhù zài nǎr? | Là thầy Vương, cô ấy là giáo viên thông minh, cũng là người tốt. Bạn sống ở đâu? |
+| 我住在宿舍，宿舍在教学楼的北边。你呢？ | 我住在宿舍，宿舍在教學樓的北邊。你呢？ | wǒ zhù zài sùshè, sùshè zài jiàoxuélóu de běibian. nǐ ne? | Tôi sống ở ký túc xá, ký túc xá ở phía bắc tòa nhà dạy học. Còn bạn? |
+| 我也住在宿舍，我们是同屋吧！ | 我也住在宿舍，我們是同屋吧！ | wǒ yě zhù zài sùshè, wǒmen shì tóngwū ba! | Tôi cũng sống ở ký túc xá, chúng ta là bạn cùng phòng nhỉ! |
+
+#### Tình huống 2: Ăn tối và nói về đồ ăn mẹ làm
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 今天晚上你吃什么？食堂的饭还是妈妈做的菜？ | 今天晚上你吃什麼？食堂的飯還是媽媽做的菜？ | jīntiān wǎnshang nǐ chī shénme? shítáng de fàn háishì māma zuò de cài? | Tối nay bạn ăn gì? Cơm ở nhà ăn hay món do mẹ làm? |
+| 我吃妈妈做的饺子！妈妈做的饺子太好吃了！ | 我吃媽媽做的餃子！媽媽做的餃子太好吃了！ | wǒ chī māma zuò de jiǎozi! māma zuò de jiǎozi tài hǎochī le! | Tôi ăn bánh sủi cảo mẹ làm! Bánh sủi cảo mẹ làm ngon quá! |
+| 好！我也很喜欢吃饺子，你妈妈做的是好吃的饺子！ | 好！我也很喜歡吃餃子，你媽媽做的是好吃的餃子！ | hǎo! wǒ yě hěn xǐhuan chī jiǎozi, nǐ māma zuò de shì hǎochī de jiǎozi! | Tốt! Tôi cũng rất thích ăn sủi cảo, bánh do mẹ bạn làm là bánh rất ngon! |
+| 你今天有空儿吗？你来我家吃饭吧！ | 你今天有空兒嗎？你來我家吃飯吧！ | nǐ jīntiān yǒu kòngr ma? nǐ lái wǒ jiā chīfàn ba! | Hôm nay bạn có rảnh không? Bạn đến nhà tôi ăn cơm đi! |
+| 太好了！谢谢你！今天晚上几点？ | 太好了！謝謝你！今天晚上幾點？ | tài hǎo le! xièxie nǐ! jīntiān wǎnshang jǐ diǎn? | Tốt quá! Cảm ơn bạn! Tối nay mấy giờ? |
+
+#### Tình huống 3: Hỏi về sách và chuyên ngành học
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 这是什么书？是汉语书吗？ | 這是什麼書？是漢語書嗎？ | zhè shì shénme shū? shì hànyǔ shū ma? | Đây là sách gì? Có phải sách tiếng Trung không? |
+| 是，这是我的汉语书，是很好的书，你看吗？ | 是，這是我的漢語書，是很好的書，你看嗎？ | shì, zhè shì wǒ de hànyǔ shū, shì hěn hǎo de shū, nǐ kàn ma? | Đúng, đây là sách tiếng Trung của tôi, là cuốn sách rất hay, bạn xem không? |
+| 谢谢！你是学汉语的留学生吗？你的专业是什么？ | 謝謝！你是學漢語的留學生嗎？你的專業是什麼？ | xièxie! nǐ shì xué hànyǔ de liúxuéshēng ma? nǐ de zhuānyè shì shénme? | Cảm ơn! Bạn có phải du học sinh học tiếng Trung không? Chuyên ngành của bạn là gì? |
+| 是，我是学汉语的学生，我的专业是汉语。汉语很有趣！ | 是，我是學漢語的學生，我的專業是漢語。漢語很有趣！ | shì, wǒ shì xué hànyǔ de xuéshēng, wǒ de zhuānyè shì hànyǔ. hànyǔ hěn yǒuqù! | Đúng, tôi là học sinh học tiếng Trung, chuyên ngành là tiếng Trung. Tiếng Trung rất thú vị! |
+| 我也觉得汉语很有趣！图书馆里有很多汉语书，我们一起去看吧！ | 我也覺得漢語很有趣！圖書館裡有很多漢語書，我們一起去看吧！ | wǒ yě juéde hànyǔ hěn yǒuqù! túshūguǎn lǐ yǒu hěn duō hànyǔ shū, wǒmen yīqǐ qù kàn ba! | Tôi cũng thấy tiếng Trung rất thú vị! Trong thư viện có rất nhiều sách tiếng Trung, chúng ta cùng đi xem nhé! |
 
 <!-- future lessons will be prepended above this comment -->
 

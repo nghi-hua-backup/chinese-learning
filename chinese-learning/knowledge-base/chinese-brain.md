@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 7 (2026-06-02)
+> **Cập nhật lần cuối:** Ngữ pháp 的 (2026-06-02)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -575,6 +575,64 @@ Ví dụ:
 - 你的爸爸 /nǐ de bàba/ — bố của bạn
 - 我爸爸 /wǒ bàba/ — bố tôi (bỏ 的 vì quan hệ thân thiết)
 - 这是我爸爸的银行。/ 這是我爸爸的銀行。 /zhè shì wǒ bàba de yínháng/ — Đây là ngân hàng của bố tôi.
+
+---
+
+### ĐT/Cụm từ + 的 + DT — Miêu tả mục đích hoặc nguồn gốc
+
+**Cấu trúc:** [ĐT hoặc Cụm từ] + 的 + DT
+
+**Giải thích:** Dùng 的 để kết nối động từ hoặc cụm từ phức tạp với danh từ phía sau, diễn đạt mục đích, chức năng, hoặc nguồn gốc của sự vật.
+
+**Ví dụ:**
+- 吃的东西 /chī de dōngxi/ — Đồ để ăn.
+- 学汉语的学生 /xué hànyǔ de xuéshēng/ — Học sinh học tiếng Trung.
+- 去上海的飞机 /qù shànghǎi de fēijī/ — Chuyến bay đi Thượng Hải.
+- 妈妈做的饺子 /māma zuò de jiǎozi/ — Bánh sủi cảo do mẹ làm.
+
+---
+
+### HDT + 的 + DT — Quy tắc âm tiết với 的
+
+**Cấu trúc:** HDT + 的 + DT
+
+**Giải thích:** Tính từ + 的 + danh từ để miêu tả tính chất. Quy tắc dùng hay lược bỏ 的:
+
+| Loại tính từ | Quy tắc | Ví dụ |
+|---|---|---|
+| Đơn âm tiết (1 chữ) | Thường **lược bỏ** 的 | 好人, 新书, 男老师 |
+| Đa âm tiết (2 chữ trở lên) | **Bắt buộc** có 的 | 漂亮的女老师, 聪明的学生 |
+| Có phó từ mức độ (很, 非常…) | **Bắt buộc** có 的 dù tính từ chỉ 1 âm tiết | 很小的房间, 非常好的地方 |
+
+**Ví dụ tính từ đơn âm tiết → lược bỏ 的:**
+- 好人 /hǎo rén/ — Người tốt.
+- 新书 /xīn shū/ — Sách mới.
+- 男老师 /nán lǎoshī/ — Giáo viên nam.
+- 白头发 /bái tóufa/ — Tóc bạc.
+
+**Ví dụ tính từ đa âm tiết → bắt buộc 的:**
+- 漂亮的女老师 /piàoliang de nǚ lǎoshī/ — Cô giáo xinh đẹp.
+- 聪明的学生 /cōngmíng de xuéshēng/ — Học sinh thông minh.
+- 干净的宿舍 /gānjìng de sùshè/ — Ký túc xá sạch sẽ.
+
+**Ví dụ có phó từ mức độ → bắt buộc 的:**
+- 很小的房间 /hěn xiǎo de fángjiān/ — Căn phòng rất nhỏ.
+- 非常好的地方 /fēicháng hǎo de dìfāng/ — Nơi cực kỳ tốt.
+- 很老的书 /hěn lǎo de shū/ — Cuốn sách rất cũ.
+
+---
+
+### Lược bỏ 的 trong cụm từ cố định
+
+**Cấu trúc:** [Thành phần bổ nghĩa] + DT (không có 的)
+
+**Giải thích:** Các cụm từ cố định — biểu thị nghề nghiệp, ngôn ngữ, thương hiệu, hoặc xuất xứ — thường lược bỏ 的. Chúng đã "đóng gói" thành từ ghép, thêm 的 nghe không tự nhiên.
+
+**Ví dụ:**
+- 汉语老师 /hànyǔ lǎoshī/ — Thầy giáo tiếng Trung (không nói 汉语的老师).
+- 中文书 /zhōngwén shū/ — Sách tiếng Trung.
+- 德国汽车 /déguó qìchē/ — Xe ô tô Đức.
+- 法国香水 /fǎguó xiāngshuǐ/ — Nước hoa Pháp.
 
 ---
 

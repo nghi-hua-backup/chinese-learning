@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.1.3] - 2026-06-02
+
+### Added
+- KB: Ngữ pháp 的 — 3 grammar patterns (ĐT/Cụm từ + 的 + DT, HDT + 的 + DT với quy tắc âm tiết, lược bỏ 的 trong cụm cố định), 8 câu luyện tập, 3 tình huống luyện tập tổng hợp
+
+---
+
 ## [1.1.2] - 2026-06-02
 
 ### Added
