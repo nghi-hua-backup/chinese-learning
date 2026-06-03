@@ -11,6 +11,7 @@ interface Props {
 }
 
 const HL = "bg-blue-100 rounded px-0.5";
+const PUNCT_RE = /[\p{P}\p{S}\s]/u;
 
 export default function ToneHighlight({
   chars,
@@ -21,25 +22,25 @@ export default function ToneHighlight({
 }: Props) {
   const segments = analyzeText(chars, pinyin);
 
-  // Build per-character highlight map (for non-punctuation chars in order)
-  const highlightMap: boolean[] = [];
-  for (const seg of segments) {
-    for (let i = 0; i < seg.chars.length; i++) {
-      highlightMap.push(seg.highlight);
-    }
-  }
+  // Build per-character segment index map (index into segments[])
+  // so we break char spans at compound boundaries, not just highlight boundaries
+  const segmentIndexMap: number[] = [];
+  segments.forEach((seg, i) => {
+    for (let j = 0; j < seg.chars.length; j++) segmentIndexMap.push(i);
+  });
 
-  // Render character line: walk original string, group same-highlight runs
+  // Render character line: group chars by segment index (one span per compound)
   const charSpans: React.ReactNode[] = [];
   let group = "";
-  let groupHl = false;
+  let groupSegIdx = -1;
   let mapIdx = 0;
   let key = 0;
 
   function flushGroup() {
     if (!group) return;
+    const seg = segments[groupSegIdx];
     charSpans.push(
-      <span key={key++} className={groupHl ? HL : undefined}>
+      <span key={key++} className={seg?.highlight ? HL : undefined}>
         {group}
       </span>
     );
@@ -47,16 +48,16 @@ export default function ToneHighlight({
   }
 
   for (const c of Array.from(chars)) {
-    const isPunct = /[\p{P}\p{S}\s]/u.test(c);
-    if (isPunct) {
+    if (PUNCT_RE.test(c)) {
       flushGroup();
       charSpans.push(<span key={key++}>{c}</span>);
+      groupSegIdx = -1;
     } else {
-      const hl = highlightMap[mapIdx] ?? false;
+      const sIdx = segmentIndexMap[mapIdx] ?? -1;
       mapIdx++;
-      if (group && hl !== groupHl) flushGroup();
+      if (group && sIdx !== groupSegIdx) flushGroup();
       group += c;
-      groupHl = hl;
+      groupSegIdx = sIdx;
     }
   }
   flushGroup();
