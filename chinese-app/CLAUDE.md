@@ -28,14 +28,19 @@ chinese-learning-1/
 
 | Role | Files to read |
 |---|---|
-| **Developer** (`/dev`, `/feature`, `/fix`) | `docs/PRINCIPLES.md` → `docs/TECHNICAL.md` → `docs/REQUIREMENTS.md` → `docs/CHANGELOG.md` |
-| **Product Manager** (`/pm`, `/feature`) | `docs/PRINCIPLES.md` → `docs/REQUIREMENTS.md` |
-| **QA Tester** (`/qa`, `/feature`, `/fix`) | `docs/VERIFICATION.md` → `docs/CHANGELOG.md` |
+| **Dispatcher** (`/start`) | Root `README.md` + this file + `docs/INTAKE.md` (if exists) |
+| **Intake** (`/intake`) | `docs/INTAKE.md` (if exists — conflict check first) |
+| **Product Manager** (`/pm`, `/feature` Phase 1) | `docs/INTAKE.md` → `docs/PRINCIPLES.md` → `docs/REQUIREMENTS.md` |
+| **Tech Lead** (`/feature` Phase 2) | `docs/PRINCIPLES.md` → `docs/TECHNICAL.md` → `docs/REQUIREMENTS.md` |
+| **Developer** (`/dev`, `/feature` Phase 3, `/fix`) | `docs/PRINCIPLES.md` → `docs/TECHNICAL.md` → `docs/REQUIREMENTS.md` → `docs/CHANGELOG.md` |
+| **QA Tester** (`/qa`, `/feature` Phase 4, `/fix`) | `docs/VERIFICATION.md` → `docs/CHANGELOG.md` |
+| **PM Sign-off / UAT** (`/feature` Phase 4) | `docs/REQUIREMENTS.md` → `docs/INTAKE.md` (scope check) |
 | **Researcher** (`/research`) | `docs/PRINCIPLES.md` only |
 | **KB Manager** (`/lesson`, `/kb-update`) | `chinese-learning/knowledge-base/chinese-brain-guide.md` → `docs/CHANGELOG.md` |
-| **Dispatcher** (`/start`) | Root `README.md` + this file |
 
 **Versioning (P11):** Every shipped commit must update `docs/CHANGELOG.md`. Format: `MAJOR.MINOR.PATCH` — MINOR for new features, PATCH for fixes/content/docs. Current baseline: `1.0.0` (2026-06-02).
+
+**INTAKE.md:** Living agreement log — append-only, updated by `/intake` skill. Read by `/start`, `/pm`, and `/feature` Phase 1 & 4 to detect conflicts with previous customer agreements. Never overwrite previous entries.
 
 ---
 
@@ -44,7 +49,8 @@ chinese-learning-1/
 | Command | What it does |
 |---|---|
 | `/start` | Don't know which skill? Start here — Claude routes you |
-| `/feature` | Full feature cycle: PM → Dev → QA in one session |
+| `/intake` | New idea or project? Start here — multi-role discovery, logs agreements to INTAKE.md |
+| `/feature` | Full feature cycle: PM → Tech Lead → Dev → QA + UAT in one session |
 | `/fix` | Bug fix cycle: Dev → QA in one session |
 | `/lesson` | Add a new lesson from image files |
 | `/dev` | Developer role only |

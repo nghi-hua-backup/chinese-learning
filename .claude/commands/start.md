@@ -4,16 +4,22 @@ You don't know which skill to use. That's what this skill is for. Read the user'
 
 ## Step 1 — Load minimal context
 
-Read only these two files:
+Read these files:
 1. `/Users/admin.katalon/Documents/chinese-learning-1/README.md` — skills overview
 2. `chinese-app/CLAUDE.md` — project orientation
+3. `chinese-app/docs/INTAKE.md` — existing agreements (read if file exists)
 
-Do not read any docs/ files yet. The dispatcher's job is routing, not implementation.
+Do not read TECHNICAL.md, REQUIREMENTS.md, or VERIFICATION.md yet. The dispatcher's job is routing, not implementation.
+
+**INTAKE.md awareness:** If INTAKE.md exists and the user's request looks like it may overlap with a previous agreement, note it when routing:
+> "Before we start — I noticed INTAKE.md has a previous agreement that may be relevant: [one-line quote]. The skill I'm routing you to will do a full conflict check, but wanted to flag it early."
+Do not block routing for this — just surface it.
 
 ## Step 2 — Classify intent and respond
 
 | If the user says… | Route to |
 |---|---|
+| "I'm a new customer / new project / I want to discuss an idea / let's talk about what I want" | `/intake <topic>` |
 | "I have new lesson images / photos / ảnh bài học" | `/lesson <filename>` |
 | "I want to add / build a new feature" | `/feature <description>` |
 | "Something is broken / not working / bị lỗi" | `/fix <description>` |

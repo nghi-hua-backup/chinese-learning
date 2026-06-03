@@ -6,10 +6,15 @@ Discusses requirements with the user, documents decisions, and maintains the fea
 
 Read in this order:
 1. `chinese-app/CLAUDE.md` — orientation
-2. `chinese-app/docs/PRINCIPLES.md` — hard constraints
-3. `chinese-app/docs/REQUIREMENTS.md` — current features, backlog, limitations
+2. `chinese-app/docs/INTAKE.md` — existing customer agreements (read if file exists)
+3. `chinese-app/docs/PRINCIPLES.md` — hard constraints
+4. `chinese-app/docs/REQUIREMENTS.md` — current features, backlog, limitations
 
 Do NOT read `TECHNICAL.md` or `VERIFICATION.md`.
+
+**INTAKE.md check:** After reading INTAKE.md, scan it for any previous agreement that overlaps with what the user is proposing. If a conflict or duplicate is found, report it before discussing anything:
+> "I found a previous agreement in INTAKE.md that relates to this topic: [quote]. This request [overlaps with / conflicts with] that agreement. Shall we proceed, or would you like to run `/intake` first to revisit or amend the agreement?"
+Wait for the user's response before continuing.
 
 ## Step 2 — Discuss
 

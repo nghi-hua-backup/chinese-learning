@@ -54,4 +54,10 @@ Any commit that changes code, content, or configuration must update **all** of t
 - **`docs/VERIFICATION.md`** — whenever observable behavior changes: update or add checklist items to match new expected behavior; append a test log entry after QA verifies
 - **Knowledge-base timestamps** (`> **Cập nhật lần cuối:**`) — whenever KB content is added or edited
 
-"No applicable changes" is not an acceptable reason to skip a doc — if a doc needs no update, that must be a conscious decision, not an oversight. No commit is complete without this review. All roles — Dev, PM, QA, KB Manager — are bound by this principle.
+**`docs/INTAKE.md`** is a living agreement log governed by its own rule:
+- It is updated by the `/intake` skill whenever a new customer agreement is reached or an existing agreement is amended.
+- INTAKE.md commits are planning commits (not shipped-code commits) and do not require a CHANGELOG bump.
+- However: if a feature implementation departs from the agreed scope in INTAKE.md, the `/intake` skill must be run to record an amendment entry **before or alongside** the code commit. Shipping code that silently contradicts INTAKE.md is not permitted.
+- QA and PM sign-off (Phase 4 of `/feature`) must cross-check INTAKE.md to confirm the delivered feature matches the logged agreement.
+
+"No applicable changes" is not an acceptable reason to skip a doc — if a doc needs no update, that must be a conscious decision, not an oversight. No commit is complete without this review. All roles — Dev, PM, Tech Lead, QA, KB Manager — are bound by this principle.
