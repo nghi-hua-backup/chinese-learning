@@ -29,6 +29,14 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.2.1] - 2026-06-03
+
+### Fixed
+- `ToneHighlight`: consecutive T4 compounds were merged into one highlight block — fixed by grouping character spans by segment index (compound boundary) instead of by highlight status
+- `tone-utils`: erhua (兒化) syllables like `nǎr` (哪兒) mapped 1 syllable → 1 char, causing all subsequent character-segment assignments to be off by one — fixed by detecting erhua compounds and counting +1 char for the 兒/儿 suffix
+
+---
+
 ## [1.1.3] - 2026-06-02
 
 ### Added

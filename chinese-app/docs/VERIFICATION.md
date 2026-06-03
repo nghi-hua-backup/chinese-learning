@@ -67,6 +67,19 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 |---|---|---|
 | 19 | All 4 nav bar links | Each link navigates correctly; active tab highlighted; no 404 |
 
+### Tone-4 Highlighting & Coaching Panel (FR-6)
+| # | Flow | Pass condition |
+|---|---|---|
+| 22 | Coaching panel — Từ vựng session | "Quy tắc phát âm Thanh 4" panel with both Vietnamese rules visible above progress bar |
+| 23 | Coaching panel — Mẫu câu session | Same panel visible above progress bar |
+| 24 | Coaching panel — Hội thoại session | Same panel visible after entering a dialogue |
+| 25 | Coaching panel — absent on non-practice screens | Panel NOT visible on Tổng quan and Tiến độ pages |
+| 26 | T4 character highlight | Characters with tone-4 pinyin (e.g. 去 qù, 是 shì, 宿舍 sùshè) show light blue background |
+| 27 | Neutral tone highlight | Characters with neutral-tone pinyin (e.g. 的 de, 们 men) show light blue background |
+| 28 | Compound boundary separation | Adjacent T4 compounds highlighted as SEPARATE blocks (e.g. 請問 + 宿舍 + 在 = 3 distinct blocks, not merged) |
+| 29 | Erhua (兒化) alignment | Erhua syllables (e.g. nǎr = 哪兒) correctly map 1 syllable → 2 chars; no offset error for subsequent characters |
+| 30 | T1/T2/T3 not highlighted | Non-T4, non-neutral syllables (e.g. 你好 nǐhǎo, 新 xīn, 来 lái) have no blue background |
+
 ---
 
 ## Edge Cases
@@ -102,3 +115,4 @@ Append an entry after each QA session.
 | 2026-06-02 | QA (Claude) | P3, 1, 2, 5, 11, 13, 15, 19 — Playwright against live site | PASS — placeholder attr is null on textarea (removed). Home, tu-vung, mau-cau, hoi-thoai, tien-do all load. All 5 nav links present. No regressions. |
 | 2026-06-02 | QA (Claude) | Items 20–21 (Mẫu câu feedback banner), T3 (Từ vựng regression) — Playwright against live site | PASS — red "✗ Sai rồi" banner + answer reveal + SRS rating all visible after wrong answer; green "✓ Chính xác!" banner + answer reveal + SRS rating all visible after correct answer; Từ vựng Luyện viết red banner unaffected. |
 | 2026-06-02 | QA (Claude) | E6–E7 (punctuation-strip fix), T2 regression, T4 Từ vựng regression — Playwright against live site | PASS — typing "沒關係" (without ！) accepted as correct for stored "沒關係！"; punctuation-only input "！？。，" still marked wrong; genuinely wrong sentence still shows red; Từ vựng correct character still accepted. |
+| 2026-06-03 | QA (Claude) | Items 22–30, AC-1–AC-6, home/tiến độ regression — Playwright against local dev server (localhost:3000) | PASS — coaching panel visible in all 3 practice modes, absent on home and tiến độ. T4 chars (請問, 宿舍, 在, 是, shì, qǐngwèn, sùshè, zài) and neutral 的/de highlighted. Compound boundary separation confirmed (3 separate spans, not merged). Erhua fix confirmed: 我 and 來 NOT highlighted after 哪兒; 是 and 的 correctly highlighted. T1/T2/T3 syllables (你, 好, 我, 新, 來) not highlighted. Two bugs found and fixed during QA: (1) char span merging across compound boundaries — fixed by grouping by segment index; (2) erhua char misalignment — fixed by counting +1 char for 兒/儿 suffix. |
