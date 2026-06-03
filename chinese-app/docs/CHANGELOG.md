@@ -29,6 +29,15 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.2.2] - 2026-06-03
+
+### Fixed
+- `tone-utils`: Removed neutral tone from highlight trigger — only compounds containing a tone-4 syllable (grave accent vowel) are now highlighted. Previously, words like 喜欢 (xǐhuan) and 包子 (bāozi) were highlighted because their second syllable had no tone mark; this created too many false positives.
+- `ToneHighlight`: Improved highlight styling — added `border border-blue-300`, increased horizontal/vertical padding (`px-1 py-0.5`), added `mx-px` gap between adjacent spans so highlights are visually distinct and don't bleed into each other.
+- `ToneCoachingPanel`: Updated first rule to "Thanh 4 + Thanh 0/1/2/3 → Rướn giọng đọc thanh 4" (added Thanh 0 / neutral tone to the rule text).
+
+---
+
 ## [1.2.1] - 2026-06-03
 
 ### Fixed

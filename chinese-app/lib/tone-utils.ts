@@ -21,7 +21,7 @@ function syllableIsNeutral(s: string): boolean {
 
 function compoundShouldHighlight(compound: string): boolean {
   const syllables = compound.match(SYLLABLE_RE) ?? [];
-  return syllables.some((s) => syllableHasTone4(s) || syllableIsNeutral(s));
+  return syllables.some((s) => syllableHasTone4(s));
 }
 
 // Returns the number of Chinese characters a pinyin compound spans.

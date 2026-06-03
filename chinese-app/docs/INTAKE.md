@@ -40,3 +40,23 @@ Thanh 4 (4th tone) is difficult to identify and pronounce correctly, especially 
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-03] — Amendment: Tone-4 Highlighting & Practice Coaching
+
+**Amends:** Section "[2026-06-03] — Tone-4 Highlighting & Practice Coaching"
+**Specific changes:**
+
+1. **Remove neutral tone highlighting (AC-2 revoked):** Original agreement highlighted neutral-tone syllables (no tone mark, e.g. `zi` in bāozi, `huan` in xǐhuan). Customer clarified that only tone-4 syllables should trigger a highlight. Neutral tones no longer cause a compound to be highlighted.
+
+2. **Highlight style:** Add a visible border (`border border-blue-300`) and more padding (`px-1 py-0.5 mx-px`) so highlights are easier to spot and don't bleed into adjacent text.
+
+3. **Coaching panel — first rule updated:** "Thanh 4 + Thanh 1/2/3" → "Thanh 4 + Thanh 0/1/2/3" to explicitly include the neutral tone in the pronunciation rule (even though neutral tone no longer triggers a highlight, T4 followed by T0 still has a specific pronunciation pattern).
+
+**New agreement:**
+- Highlighting triggers only when a compound contains at least one tone-4 syllable (grave accent vowel)
+- Neutral tone syllables alone do not cause highlighting
+- Coaching panel first rule reads: "Thanh 4 + Thanh 0/1/2/3 → Rướn giọng đọc thanh 4"
+
+**Reason for change:** Visual feedback was too broad — 喜欢 (xǐhuan) and 包子 (bāozi) appeared highlighted due to neutral second syllables, diluting the signal. The user wants highlights to unambiguously flag tone-4 syllables only.

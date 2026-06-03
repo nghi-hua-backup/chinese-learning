@@ -75,7 +75,7 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 | 24 | Coaching panel — Hội thoại session | Same panel visible after entering a dialogue |
 | 25 | Coaching panel — absent on non-practice screens | Panel NOT visible on Tổng quan and Tiến độ pages |
 | 26 | T4 character highlight | Characters with tone-4 pinyin (e.g. 去 qù, 是 shì, 宿舍 sùshè) show light blue background |
-| 27 | Neutral tone highlight | Characters with neutral-tone pinyin (e.g. 的 de, 们 men) show light blue background |
+| 27 | Neutral tone NOT highlighted | Neutral-tone syllables alone (e.g. 的 de, 们 men, 包子 bāozi, 喜欢 xǐhuan) do NOT receive a blue background — only tone-4 syllables trigger highlighting |
 | 28 | Compound boundary separation | Adjacent T4 compounds highlighted as SEPARATE blocks (e.g. 請問 + 宿舍 + 在 = 3 distinct blocks, not merged) |
 | 29 | Erhua (兒化) alignment | Erhua syllables (e.g. nǎr = 哪兒) correctly map 1 syllable → 2 chars; no offset error for subsequent characters |
 | 30 | T1/T2/T3 not highlighted | Non-T4, non-neutral syllables (e.g. 你好 nǐhǎo, 新 xīn, 来 lái) have no blue background |
