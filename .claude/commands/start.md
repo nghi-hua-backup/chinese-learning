@@ -17,17 +17,20 @@ Do not block routing for this — just surface it.
 
 ## Step 2 — Classify intent and respond
 
+**Rule: Any new feature idea or project discussion must go through `/intake` first.** The team needs to clarify the customer's requirements before any implementation begins — initial descriptions are almost always incomplete. `/intake` hands off to `/feature` automatically once the discovery is done.
+
 | If the user says… | Route to |
 |---|---|
-| "I'm a new customer / new project / I want to discuss an idea / let's talk about what I want" | `/intake <topic>` |
+| "I'm a new customer / new project / I want to discuss an idea / I want a new feature / let's talk about what I want" | `/intake <topic>` → then `/feature` |
 | "I have new lesson images / photos / ảnh bài học" | `/lesson <filename>` |
-| "I want to add / build a new feature" | `/feature <description>` |
 | "Something is broken / not working / bị lỗi" | `/fix <description>` |
-| "Is X possible? / Can we do Y? / Feasible?" | `/research <topic>`, then possibly `/feature` |
+| "Is X possible? / Can we do Y? / Feasible?" | `/research <topic>` → if approved, `/intake` → `/feature` |
 | "What features does the app have?" | `/pm` |
 | "Check if everything works / verify" | `/qa` |
-| "Implement / code / fix this specific thing" | `/dev <task>` |
+| "Implement / code / fix this specific thing" (explicit task, already agreed) | `/dev <task>` |
 | Unclear or mixed intent | Ask **one** clarifying question |
+
+**When to skip `/intake`:** Only skip it when the request is an operational task (fixing a known bug, uploading lesson images, verifying the app, implementing an already-documented PF-N). If there is any doubt about whether the customer's intent is fully understood, route to `/intake`.
 
 ## Step 3 — Offer to begin
 
@@ -36,7 +39,8 @@ After identifying the route, respond with:
 - One-line reason why
 - Offer: "Should I start as /[skill] now, or would you like to adjust the scope first?"
 
-If the user's intent clearly maps to an orchestration skill (`/feature`, `/fix`, `/lesson`), offer to begin immediately without asking — these are self-contained workflows.
+For new feature/idea requests, always explain the two-step flow:
+> "I'll start with `/intake` so the team can clarify your requirements, then hand off to `/feature` for implementation. This ensures we build exactly what you need."
 
 ## Rules
 

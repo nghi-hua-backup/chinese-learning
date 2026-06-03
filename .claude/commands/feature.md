@@ -12,6 +12,38 @@ Example: `/feature Add audio pronunciation — tap a button to hear the characte
 
 ---
 
+## Workflow State — Compaction Resilience
+
+Long workflows can span many tool calls. If the conversation context is compacted mid-workflow, key variables (feature name, PF-N number, commit hashes) may be summarised away. To handle this gracefully:
+
+**At the start of this skill**, write a state checkpoint file:
+
+```
+Write to: .claude/workflow-state.md
+---
+skill: /feature
+feature: <feature description>
+started: <YYYY-MM-DD>
+phase-1-pm: pending
+phase-2-techlead: pending
+phase-3-dev: pending
+phase-4-qa-uat: pending
+---
+```
+
+**After each phase completes**, update the relevant line in `.claude/workflow-state.md` with `✅ done — <key output>` (e.g. `✅ done — PF-5, commit abc1234`).
+
+**At the start of each phase**, read `.claude/workflow-state.md` first. If you are resuming after context compaction — i.e. you do not have clear recall of what the previous phase produced — the state file gives you the exact PF-N number, commit hash, and feature name needed to continue correctly.
+
+**After Phase 4 completes successfully**, delete `.claude/workflow-state.md`:
+```
+rm .claude/workflow-state.md
+```
+
+`.claude/workflow-state.md` is a temporary scratchpad — it is never committed to git.
+
+---
+
 ## Phase 1 — Product Manager
 
 **Read (in this order):**
@@ -35,7 +67,8 @@ Example: `/feature Add audio pronunciation — tap a button to hear the characte
    git add chinese-app/docs/REQUIREMENTS.md
    git commit -m "docs(pm): add PF-N: <feature name>"
    ```
-6. Report: "Requirement documented as PF-N. Starting technical analysis."
+6. Update `.claude/workflow-state.md`: set `phase-1-pm: ✅ done — <PF-N number>, commit <hash>`
+7. Report: "Requirement documented as PF-N. Starting technical analysis."
 
 ---
 
@@ -68,7 +101,8 @@ Before the developer writes a single line of code, analyze the PF-N requirement 
    git add chinese-app/docs/REQUIREMENTS.md chinese-app/docs/TECHNICAL.md
    git commit -m "docs(techlead): add tech analysis for PF-N: <feature name>"
    ```
-8. Report: "Technical approach documented. Starting implementation."
+8. Update `.claude/workflow-state.md`: set `phase-2-techlead: ✅ done — commit <hash>`
+9. Report: "Technical approach documented. Starting implementation."
 
 ---
 
@@ -94,7 +128,8 @@ Before the developer writes a single line of code, analyze the PF-N requirement 
    git commit -m "feat: <feature description>"
    git push origin main
    ```
-8. Report: "Implementation complete. Pushed to main. Waiting for GitHub Actions deploy."
+8. Update `.claude/workflow-state.md`: set `phase-3-dev: ✅ done — FR-N assigned, commit <hash>`
+9. Report: "Implementation complete. Pushed to main. Waiting for GitHub Actions deploy."
 
 ---
 
@@ -127,7 +162,12 @@ Once QA passes all BLOCKERs and acceptance criteria:
 3. Cross-check against `INTAKE.md` if the feature originated from a customer intake session — confirm the delivered feature matches the agreed scope.
 4. Produce a brief sign-off:
    > "UAT passed. All [N] acceptance criteria met. The feature matches the agreed scope in INTAKE.md (if applicable). Ready for customer use."
-5. Notify the customer:
+5. Update `.claude/workflow-state.md`: set `phase-4-qa-uat: ✅ done`
+6. Delete the state file — workflow completed successfully:
+   ```
+   rm .claude/workflow-state.md
+   ```
+7. Notify the customer:
    > "✅ **[Feature name] is live.**
    > Live URL: https://nghi-hua-backup.github.io/chinese-learning/
    > What was built: [1–2 sentence summary]

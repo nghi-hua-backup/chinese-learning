@@ -1,2 +1,3 @@
 .DS_Store
 scratch/research/*.md
+.claude/workflow-state.md
