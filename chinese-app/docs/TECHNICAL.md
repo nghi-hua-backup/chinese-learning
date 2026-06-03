@@ -168,6 +168,30 @@ If `简体` is `"—"` or empty → `simplified` falls back to `traditional` val
 
 ---
 
+## Tone-4 Highlighting System (FR-PF-2)
+
+### `lib/tone-utils.ts`
+Utilities for tone detection and text segmentation:
+- `hasTone4(compound: string)` — returns true if the compound contains a grave-accent vowel (`[àèìòùǜ]`)
+- `hasNeutralTone(compound: string)` — returns true if the compound has a vowel sequence with no tone mark (neutral tone syllable)
+- `countSyllables(compound: string)` — counts vowel groups in a pinyin compound; one vowel group = one syllable (reliable for standard pinyin)
+- `analyzeText(chars: string, pinyin: string): Segment[]` — strips punctuation from `chars`, splits `pinyin` by spaces, maps each compound to a character slice by syllable count; returns `{ chars, pinyin, highlight }[]`
+
+### `components/ToneHighlight.tsx`
+Renders a Chinese character string and its pinyin with compound-level light blue highlighting:
+- Props: `chars: string`, `pinyin: string`, `charClassName?: string`, `pinyinClassName?: string`
+- Uses `analyzeText` to get segments; renders character spans and pinyin spans with `bg-blue-100 rounded px-0.5` on highlighted groups
+- Punctuation stripped from alignment calculation but re-inserted for display
+
+### `components/ToneCoachingPanel.tsx`
+Static Vietnamese coaching panel, always visible in all practice screens:
+- No props, no state — purely presentational
+- Placed above the progress bar in `VocabSession`, `PhraseSession`, `DialogueSession`
+- Also included in `MultipleChoice` (rendered by `VocabSession` in trắc-nghiệm mode)
+- Displays two rules: T4+T1/2/3 and T4+T4
+
+---
+
 ## Known Pitfalls
 
 | Pitfall | Detail |

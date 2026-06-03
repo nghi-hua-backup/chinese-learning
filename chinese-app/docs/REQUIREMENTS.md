@@ -98,6 +98,14 @@ The panel always shows — no conditional logic based on card content.
 - AC-5: The coaching panel is always visible regardless of card content
 - AC-6: No highlighting or coaching panel appears outside practice mode screens
 
+**Tech approach (Tech Lead):**
+- Components affected: `VocabSession.tsx`, `MultipleChoice.tsx`, `PhraseSession.tsx`, `DialogueSession.tsx`
+- New components: `ToneHighlight.tsx` (character+pinyin rendering with compound-level highlighting), `ToneCoachingPanel.tsx` (static panel, always visible in practice)
+- New lib: `lib/tone-utils.ts` — utilities: `hasTone4(compound)` (grave-accent vowel regex), `hasNeutralTone(compound)` (no tone-mark vowel), `countSyllables(compound)` (vowel-group count), `analyzeText(chars, pinyin)` (returns segments with highlight flag + char slice)
+- Implementation strategy: `analyzeText` strips punctuation from chars, splits pinyin by space, maps syllable counts to char offsets, returns segments. `ToneHighlight` renders inline character spans + pinyin spans with `bg-blue-100 rounded` on highlighted groups. Coaching panel placed above progress bar in all session components.
+- Risks / pitfalls: syllable counting via vowel groups works for standard pinyin; punctuation in char strings must be stripped before offset mapping.
+- P-constraints to watch: P8 (hooks order) — no new hooks introduced; P3 (iPad-first) — coaching panel must not use fixed height
+
 ---
 
 ## Out of Scope (Unless Explicitly Added by User)
