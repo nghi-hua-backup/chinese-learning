@@ -106,6 +106,32 @@ Before the developer writes a single line of code, analyze the PF-N requirement 
 
 ---
 
+## ⚡ Context Health Check — Before Phase 3
+
+Estimate accumulated context load before entering the heaviest phase. Check each signal:
+
+- Did `/intake` run earlier in this same conversation? (multi-role Q&A is substantial)
+- Was INTAKE.md read (large agreements history)?
+- Was TECHNICAL.md read (architectural reference — often large)?
+- Did Phase 1 or Phase 2 involve several back-and-forth exchanges with the user?
+- Did any skill other than `/feature` run in this conversation before now (e.g. `/start`, `/pm`)?
+
+**If 3 or more signals apply** — pause and tell the user:
+
+> "⚠️ **Context check — before Phase 3 (Developer)**
+>
+> This session has read several large files and completed 2 phases. Phase 3 will read `CHANGELOG.md`, implement code, run the build, and update multiple docs — adding significantly more context.
+>
+> **Recommended: type `/compact` now** to compress earlier conversation history. No work is lost — Phase 1 and Phase 2 are committed to git and recorded in `.claude/workflow-state.md`. After compacting, reply **resume** (or re-run `/feature <description>`) and I will continue from Phase 3 automatically.
+>
+> Or reply **continue** to proceed without compacting."
+
+Wait for the user's reply before proceeding.
+
+**If fewer than 3 signals apply** — proceed directly to Phase 3 without interrupting.
+
+---
+
 ## Phase 3 — Developer
 
 **Read:** `chinese-app/docs/CHANGELOG.md` (PRINCIPLES.md, REQUIREMENTS.md, and TECHNICAL.md already read in Phases 1–2)
@@ -130,6 +156,24 @@ Before the developer writes a single line of code, analyze the PF-N requirement 
    ```
 8. Update `.claude/workflow-state.md`: set `phase-3-dev: ✅ done — FR-N assigned, commit <hash>`
 9. Report: "Implementation complete. Pushed to main. Waiting for GitHub Actions deploy."
+
+---
+
+## ⚡ Context Health Check — Before Phase 4
+
+By this point the session has run through intake, requirements, tech analysis, implementation, a build, and doc updates. Phase 4 adds `VERIFICATION.md`, `CHANGELOG.md`, live URL testing, and PM scope review. Context load is almost certainly high.
+
+**Always pause here and tell the user:**
+
+> "⚠️ **Context check — before Phase 4 (QA + UAT)**
+>
+> Three phases are now complete and this session has accumulated substantial context. Phase 4 will read `VERIFICATION.md` and `CHANGELOG.md`, run the full BLOCKER checklist against the live URL, and perform UAT sign-off.
+>
+> **Recommended: type `/compact` now** before continuing. All work is safe — Phase 3 is pushed to git and recorded in `.claude/workflow-state.md` (`phase-3-dev: [FR-N, commit hash]`). After compacting, reply **resume** (or re-run `/feature <description>`) and I will jump straight to Phase 4.
+>
+> Or reply **continue** to proceed without compacting."
+
+Wait for the user's reply before proceeding.
 
 ---
 

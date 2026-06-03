@@ -68,6 +68,30 @@ Each role asks its questions in turn. Only move to the next role when the curren
 
 ---
 
+## ⚡ Context Health Check — After Discovery Session
+
+The multi-role discovery in Step 2 can involve many exchanges. Before writing the agreement and handing off to `/feature`, estimate the session load:
+
+**Check each signal:**
+- Did Step 1 require reading a long existing INTAKE.md?
+- Did the Step 2 discovery session involve many back-and-forth rounds across multiple roles?
+- Did `/start` run earlier in this same conversation before `/intake`?
+- Is this the second or third intake session in this conversation (multiple topics discussed)?
+
+**If 2 or more signals apply** — pause and tell the customer:
+
+> "⚠️ **Context check — before I log the agreement**
+>
+> This discovery session has generated substantial conversation context. Before I write to INTAKE.md and hand off to `/feature`, it is a good time to compact.
+>
+> **Recommended: type `/compact` now.** Your agreement is summarized above — nothing is lost. After compacting, reply **continue** and I will write the agreement to INTAKE.md and hand off to `/feature`."
+
+Wait for the customer's reply.
+
+**If fewer than 2 signals apply** — proceed directly to Step 3.
+
+---
+
 ## Step 3 — Summarize and confirm
 
 After the session, produce a summary for the customer to review before anything is written:

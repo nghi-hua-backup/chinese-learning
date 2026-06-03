@@ -44,6 +44,18 @@ chinese-learning-1/
 
 ---
 
+## Context Management — `/compact`
+
+Long workflows (especially `/intake` → `/feature`) read many large files and span many tool calls. When the session becomes heavy, skills will pause and display a ⚠️ **Context check** warning.
+
+**What to do when you see a context warning:**
+1. Type `/compact` — Claude Code will compress the older parts of the conversation into a summary, freeing context for the remaining phases. No work is lost: all progress is committed to git and saved in `.claude/workflow-state.md`.
+2. After compacting, reply **resume** or re-run the skill (e.g. `/feature <description>`) — the workflow continues from where it left off.
+
+**You can also type `/compact` at any time proactively**, even without a warning, if you feel the session has been running long. It is always safe between phases because each phase ends with a git commit.
+
+---
+
 ## Available Skills
 
 | Command | What it does |
