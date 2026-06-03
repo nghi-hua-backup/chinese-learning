@@ -84,6 +84,20 @@ This file is the authoritative record of all features, requirements, and scope d
 - Works in Safari/WebKit on iPad (Web Speech API is supported)
 - Button does not interfere with the handwriting input flow
 
+### PF-2: Tone-4 Highlighting & Practice Coaching Panel
+**Priority:** High
+**Description:** In all practice mode screens, highlight any syllable with tone 4 (grave accent: à, è, ì, ò, ù, ǜ) or neutral tone (no tone mark) with a light blue background on both the Chinese character and its pinyin. Compound words (space-delimited pinyin groups) are highlighted as one block; different compounds are separate blocks. A permanent Vietnamese coaching panel is visible at the top or left of all practice screens showing two rules:
+- "Thanh 4 + Thanh 1/2/3 → Rướn giọng đọc thanh 4"
+- "Thanh 4 + Thanh 4 → Thanh 4 sau đọc nhanh dứt khoát"
+The panel always shows — no conditional logic based on card content.
+**Acceptance criteria:**
+- AC-1: In practice mode, any syllable with a tone-4 mark has a light blue background on both the Chinese character and its pinyin
+- AC-2: Neutral tone syllables (no tone mark) are also highlighted in light blue
+- AC-3: Tone-4/neutral syllables in the same space-delimited pinyin word are highlighted as one contiguous block; separate words are separate blocks
+- AC-4: All practice mode screens display a permanent coaching panel (top or left) showing both rules in Vietnamese
+- AC-5: The coaching panel is always visible regardless of card content
+- AC-6: No highlighting or coaching panel appears outside practice mode screens
+
 ---
 
 ## Out of Scope (Unless Explicitly Added by User)
