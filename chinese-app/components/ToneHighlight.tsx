@@ -10,7 +10,7 @@ interface Props {
   showPinyin?: boolean;
 }
 
-const HL = "bg-blue-100 border border-blue-300 rounded px-1 py-0.5 mx-px";
+const HL = "inline-block bg-blue-100 border border-blue-300 rounded px-1 py-0.5 mx-1";
 const PUNCT_RE = /[\p{P}\p{S}\s]/u;
 
 export default function ToneHighlight({

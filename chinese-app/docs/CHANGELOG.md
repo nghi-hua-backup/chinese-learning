@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.2.3] - 2026-06-03
+
+### Fixed
+- `ToneHighlight`: adjacent highlighted compound blocks visually overlapped at large font sizes (`text-6xl`, `text-8xl`) — changed `mx-px` to `mx-1` (4px each side) and added `inline-block` so bordered boxes are properly spaced and don't collide.
+
+---
+
 ## [1.2.0] - 2026-06-03
 
 ### Added
