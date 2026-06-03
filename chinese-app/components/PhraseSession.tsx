@@ -6,6 +6,8 @@ import { useProgressStore } from "@/lib/progress-store";
 import { getDisplayChar } from "@/lib/utils";
 import SRSRating from "./SRSRating";
 import WritingInput from "./WritingInput";
+import ToneCoachingPanel from "./ToneCoachingPanel";
+import ToneHighlight from "./ToneHighlight";
 
 type Card = PhraseCard | PracticeCard;
 
@@ -79,6 +81,7 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
 
   return (
     <div className="max-w-xl mx-auto">
+      <ToneCoachingPanel />
       {/* Progress */}
       <div className="flex items-center gap-3 mb-6">
         <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -116,10 +119,14 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
               )}
             </div>
           )}
-          <div className="mt-4 bg-white rounded-2xl border border-gray-100 p-6">
-            <p className="text-6xl font-bold text-center mb-2">{getDisplayChar(card, scriptMode)}</p>
-            <p className="text-indigo-600 text-center mt-1">{card.pinyin}</p>
-            <p className="text-gray-600 text-center mt-1">{card.meaning}</p>
+          <div className="mt-4 bg-white rounded-2xl border border-gray-100 p-6 text-center">
+            <ToneHighlight
+              chars={getDisplayChar(card, scriptMode)}
+              pinyin={card.pinyin}
+              charClassName="text-6xl font-bold mb-2"
+              pinyinClassName="text-indigo-600 mt-1"
+            />
+            <p className="text-gray-600 mt-1">{card.meaning}</p>
           </div>
           <SRSRating onRate={handleRate} />
         </>

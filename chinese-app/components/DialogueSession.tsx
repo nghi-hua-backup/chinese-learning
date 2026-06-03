@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Dialogue, ScriptMode } from "@/lib/types";
 import { getDisplayChar } from "@/lib/utils";
+import ToneCoachingPanel from "./ToneCoachingPanel";
+import ToneHighlight from "./ToneHighlight";
 
 interface Props {
   dialogue: Dialogue;
@@ -35,6 +37,7 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
 
   return (
     <div className="max-w-xl mx-auto space-y-4">
+      <ToneCoachingPanel />
       {/* Progress */}
       <div className="flex items-center gap-3 mb-2">
         <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -52,7 +55,12 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
           {dialogue.lines.slice(0, lineIndex).map((l, i) => (
             <div key={i} className={`flex gap-2 ${i % 2 === 0 ? "justify-start" : "justify-end"}`}>
               <div className={`rounded-2xl px-4 py-2 max-w-xs text-sm ${i % 2 === 0 ? "bg-gray-200 text-gray-700" : "bg-indigo-100 text-indigo-800"}`}>
-                <p className="text-xl font-medium">{getDisplayChar(l, scriptMode)}</p>
+                <ToneHighlight
+                  chars={getDisplayChar(l, scriptMode)}
+                  pinyin={l.pinyin}
+                  charClassName="text-xl font-medium"
+                  pinyinClassName="text-xs text-gray-500 mt-0.5"
+                />
                 <p className="text-xs text-gray-500 mt-0.5">{l.meaning}</p>
               </div>
             </div>
@@ -65,10 +73,12 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
         {!isUserTurn ? (
           <>
             <p className="text-xs text-gray-400 mb-2 uppercase tracking-wide">Lượt hệ thống</p>
-            <p className="text-6xl font-bold text-gray-800 mb-1">
-              {getDisplayChar(line, scriptMode)}
-            </p>
-            <p className="text-indigo-500">{line.pinyin}</p>
+            <ToneHighlight
+              chars={getDisplayChar(line, scriptMode)}
+              pinyin={line.pinyin}
+              charClassName="text-6xl font-bold text-gray-800 mb-1"
+              pinyinClassName="text-indigo-500"
+            />
             <p className="text-gray-600 mt-1 text-sm">{line.meaning}</p>
             <button
               onClick={handleNext}
@@ -106,10 +116,12 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
               <>
                 <div className="bg-indigo-50 rounded-xl p-4">
                   <p className="text-xs text-gray-500 mb-1">Đáp án mẫu:</p>
-                  <p className="text-5xl font-bold text-gray-800">
-                    {getDisplayChar(line, scriptMode)}
-                  </p>
-                  <p className="text-indigo-600 text-sm mt-1">{line.pinyin}</p>
+                  <ToneHighlight
+                    chars={getDisplayChar(line, scriptMode)}
+                    pinyin={line.pinyin}
+                    charClassName="text-5xl font-bold text-gray-800"
+                    pinyinClassName="text-indigo-600 text-sm mt-1"
+                  />
                 </div>
                 {input && (
                   <div className="mt-3 bg-gray-50 rounded-xl p-3">

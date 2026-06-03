@@ -18,6 +18,17 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.2.0] - 2026-06-03
+
+### Added
+- FR-6: Tone-4 highlighting — in all practice modes (Từ vựng, Mẫu câu, Hội thoại), any syllable with tone 4 (à/è/ì/ò/ù/ǜ) or neutral tone is highlighted with a light blue background on both the Chinese character and its pinyin. Compound words (space-delimited pinyin groups) are highlighted as one block; separate words are separate blocks.
+- FR-6: Permanent Vietnamese coaching panel at the top of all practice screens showing two rules: "Thanh 4 + Thanh 1/2/3 → Rướn giọng đọc thanh 4" and "Thanh 4 + Thanh 4 → Thanh 4 sau đọc nhanh dứt khoát".
+- New: `lib/tone-utils.ts` — syllable-level tone detection and text segmentation utilities
+- New: `components/ToneHighlight.tsx` — character + pinyin rendering with compound-level light blue highlights
+- New: `components/ToneCoachingPanel.tsx` — static Vietnamese coaching panel
+
+---
+
 ## [1.1.3] - 2026-06-02
 
 ### Added

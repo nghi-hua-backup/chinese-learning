@@ -32,6 +32,13 @@ This file is the authoritative record of all features, requirements, and scope d
 - Upcoming review list with character in active script mode
 - **Reset progress:** red button at page bottom; two-step confirmation; calls `resetAll()` on Zustand store (clears all card history, streak, last-study date)
 
+### FR-6: Tone-4 Highlighting & Practice Coaching Panel
+- In all practice mode screens (Từ vựng, Mẫu câu, Hội thoại): light blue background on both Chinese character and pinyin for any syllable with tone 4 (à/è/ì/ò/ù/ǜ) or neutral tone (no tone mark)
+- Compound words (space-delimited pinyin groups) highlighted as one block; separate compounds are separate blocks
+- Permanent coaching panel at top of all practice screens showing two Vietnamese rules: "Thanh 4 + Thanh 1/2/3 → Rướn giọng đọc thanh 4" and "Thanh 4 + Thanh 4 → Thanh 4 sau đọc nhanh dứt khoát"
+- Panel always visible — no conditional logic based on card content
+- No highlighting outside practice mode screens
+
 ### FR-5: Script Mode (Global)
 - Phồn thể / Giản thể toggle on setup screens
 - Persists across all pages and reloads via Zustand store → localStorage
@@ -83,28 +90,6 @@ This file is the authoritative record of all features, requirements, and scope d
 - Tapping the button reads the character aloud in Mandarin
 - Works in Safari/WebKit on iPad (Web Speech API is supported)
 - Button does not interfere with the handwriting input flow
-
-### PF-2: Tone-4 Highlighting & Practice Coaching Panel
-**Priority:** High
-**Description:** In all practice mode screens, highlight any syllable with tone 4 (grave accent: à, è, ì, ò, ù, ǜ) or neutral tone (no tone mark) with a light blue background on both the Chinese character and its pinyin. Compound words (space-delimited pinyin groups) are highlighted as one block; different compounds are separate blocks. A permanent Vietnamese coaching panel is visible at the top or left of all practice screens showing two rules:
-- "Thanh 4 + Thanh 1/2/3 → Rướn giọng đọc thanh 4"
-- "Thanh 4 + Thanh 4 → Thanh 4 sau đọc nhanh dứt khoát"
-The panel always shows — no conditional logic based on card content.
-**Acceptance criteria:**
-- AC-1: In practice mode, any syllable with a tone-4 mark has a light blue background on both the Chinese character and its pinyin
-- AC-2: Neutral tone syllables (no tone mark) are also highlighted in light blue
-- AC-3: Tone-4/neutral syllables in the same space-delimited pinyin word are highlighted as one contiguous block; separate words are separate blocks
-- AC-4: All practice mode screens display a permanent coaching panel (top or left) showing both rules in Vietnamese
-- AC-5: The coaching panel is always visible regardless of card content
-- AC-6: No highlighting or coaching panel appears outside practice mode screens
-
-**Tech approach (Tech Lead):**
-- Components affected: `VocabSession.tsx`, `MultipleChoice.tsx`, `PhraseSession.tsx`, `DialogueSession.tsx`
-- New components: `ToneHighlight.tsx` (character+pinyin rendering with compound-level highlighting), `ToneCoachingPanel.tsx` (static panel, always visible in practice)
-- New lib: `lib/tone-utils.ts` — utilities: `hasTone4(compound)` (grave-accent vowel regex), `hasNeutralTone(compound)` (no tone-mark vowel), `countSyllables(compound)` (vowel-group count), `analyzeText(chars, pinyin)` (returns segments with highlight flag + char slice)
-- Implementation strategy: `analyzeText` strips punctuation from chars, splits pinyin by space, maps syllable counts to char offsets, returns segments. `ToneHighlight` renders inline character spans + pinyin spans with `bg-blue-100 rounded` on highlighted groups. Coaching panel placed above progress bar in all session components.
-- Risks / pitfalls: syllable counting via vowel groups works for standard pinyin; punctuation in char strings must be stripped before offset mapping.
-- P-constraints to watch: P8 (hooks order) — no new hooks introduced; P3 (iPad-first) — coaching panel must not use fixed height
 
 ---
 

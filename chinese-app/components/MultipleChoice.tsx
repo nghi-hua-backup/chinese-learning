@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { VocabCard, ScriptMode } from "@/lib/types";
 import { getDisplayChar } from "@/lib/utils";
+import ToneHighlight from "./ToneHighlight";
 
 interface Props {
   question: VocabCard;
@@ -35,15 +36,13 @@ export default function MultipleChoice({ question, choices, onResult, scriptMode
           onClick={() => handleSelect(choice.id)}
           className={`border-2 rounded-xl p-4 text-left transition-all ${getStyle(choice)}`}
         >
-          <div className="flex items-center gap-4">
-            <span className="text-5xl font-bold text-gray-800">
-              {getDisplayChar(choice, scriptMode)}
-            </span>
-            <div className="text-sm text-gray-500">
-              <div>{choice.pinyin}</div>
-              {selected && <div className="text-gray-700">{choice.meaning}</div>}
-            </div>
-          </div>
+          <ToneHighlight
+            chars={getDisplayChar(choice, scriptMode)}
+            pinyin={choice.pinyin}
+            charClassName="text-5xl font-bold text-gray-800"
+            pinyinClassName="text-sm text-gray-500 mt-0.5"
+          />
+          {selected && <div className="text-sm text-gray-700 mt-1">{choice.meaning}</div>}
         </button>
       ))}
     </div>
