@@ -204,11 +204,13 @@ A reusable `components/Toast.tsx` client component handles auto-dismissing notif
 ## Lesson Completion Badge
 
 Computed entirely from Zustand SRS store at render time — no extra localStorage keys:
-- `app/page.tsx` groups vocab card IDs by lesson number into `lessonCardIds: Record<number, string[]>` and passes to `Dashboard`
-- `Dashboard.tsx` reads `cards: Record<string, CardProgress>` from `useProgressStore()`
-- Badge shows when: every card in the lesson has `reps > 0` AND `new Date(due) - now < 7 days` (not overdue by more than 7 days)
+- `isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>): boolean` lives in `lib/utils.ts` (shared by Dashboard and Từ vựng page)
+- Badge shows when: every card has `reps > 0` AND not overdue by more than 7 days (`now - new Date(due) <= 7 days`)
 - `cards[id] === undefined` means card never reviewed → treat as not completed
-- Rendered as a small absolute-positioned green ✓ on the top-right corner of each lesson card (requires `relative` on the Link container)
+- Do NOT check `scheduled_days >= 1` — FSRS sets this to 0 after the first review until the card graduates to Review state (see pitfall below)
+- Rendered as `absolute -top-1.5 -right-1.5 bg-green-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold` on the container (requires `relative` on the container)
+- **Dashboard:** `app/page.tsx` groups vocab card IDs by lesson → `lessonCardIds: Record<number, string[]>` passed as prop to `Dashboard.tsx`
+- **Từ vựng page:** `TuVungClient.tsx` builds the same map via `useMemo` from `allCards`; "Tất cả" button passes `allCards.map(c => c.id)` to `isLessonComplete`
 
 ---
 

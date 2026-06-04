@@ -98,6 +98,16 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-3: A badge disappears when any relevant card becomes overdue by more than 7 days
 - AC-4: Badges appear immediately after a session completes — no page reload required
 
+**Tech approach (Tech Lead):**
+- Components affected: `lib/utils.ts` (new export), `components/Dashboard.tsx` (import refactor), `app/tu-vung/TuVungClient.tsx` (badge render)
+- Implementation strategy:
+  1. Extract `isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>): boolean` from `Dashboard.tsx` into `lib/utils.ts` — existing logic: `reps > 0` AND not overdue > 7 days (do NOT use `scheduled_days >= 1`; see TECHNICAL.md pitfall on FSRS learning state)
+  2. Update `Dashboard.tsx` to import from `lib/utils.ts`
+  3. In `TuVungClient.tsx`: destructure `cards` from the `useProgressStore()` call already at the top; build a `lessonCardIds` map via `useMemo`; call `isLessonComplete` for each lesson button and for "Tất cả" (passing `allCards.map(c => c.id)`)
+  4. Wrap each filter button in `relative`; render badge span identically to Dashboard
+- Risks / pitfalls: All `useMemo` and `useProgressStore` destructuring must remain before the early `return` at line 39 of `TuVungClient.tsx` (P8 — hooks before conditional returns)
+- P-constraints to watch: P8 (hooks order), P1 (no server changes needed)
+
 ---
 
 ### PF-1: Audio Pronunciation
