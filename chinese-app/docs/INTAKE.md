@@ -60,3 +60,51 @@ Thanh 4 (4th tone) is difficult to identify and pronounce correctly, especially 
 - Coaching panel first rule reads: "Thanh 4 + Thanh 0/1/2/3 → Rướn giọng đọc thanh 4"
 
 **Reason for change:** Visual feedback was too broad — 喜欢 (xǐhuan) and 包子 (bāozi) appeared highlighted due to neutral second syllables, diluting the signal. The user wants highlights to unambiguously flag tone-4 syllables only.
+
+---
+
+## [2026-06-04] — Session Completion UX + Lesson Progress Flag + Quiz Loading State
+
+**Status:** Agreement reached
+
+### Problem
+The post-session completion screen is a dead end requiring manual action to continue. Lesson cards give no signal of practice progress. Quiz mode has a jarring jump between questions.
+
+### Agreed scope
+- **A — Session completion redirect + toast:**
+  - On session end, skip the completion screen entirely and navigate to the same destination as "Quay lại"
+  - A fly-out toast appears top-right showing "Hoàn thành phiên học! Đã ôn X từ.", stays 3 seconds then fades out
+  - No close button on the toast
+- **B — Lesson completion flag:**
+  - A green checkmark badge appears on each lesson card when all cards in that lesson have SRS interval ≥ 1 day
+  - The badge hides when any card in the lesson is overdue by more than 7 days
+  - Flag is computed purely from SRS state — no separate "session completed" tracking; interrupted sessions count proportionally via SRS updates
+  - New lesson, never practiced: no badge (0 cards at interval ≥ 1 day)
+- **C — Quiz loading state:**
+  - In Trắc nghiệm mode, show a centered inline spinner within the question card area while transitioning to the next question; the previous question content is not visible during this transition
+
+### Out of scope (agreed)
+- No "Học lại từ đầu" button (removed)
+- No session-completion gate for the lesson flag
+- No backend or cross-device sync (P2)
+
+### Acceptance criteria (draft)
+- AC-A1: After the last card in a practice session, the user is redirected to the destination of "Quay lại" — the completion screen is never shown
+- AC-A2: A toast appears top-right with "Hoàn thành phiên học! Đã ôn X từ.", visible for 3 seconds, then fades — present on both flashcard and quiz modes
+- AC-B1: A lesson card shows a green checkmark badge when every card in that lesson has SRS interval ≥ 1 day
+- AC-B2: The badge hides when any card in the lesson is overdue by more than 7 days
+- AC-B3: Badge state updates dynamically from localStorage SRS data — no full page reload required
+- AC-C1: In Trắc nghiệm mode, a spinner is shown in the question area while the next question is being prepared; the previous question content is not visible during this transition
+
+### Technical notes
+- SRS interval data lives in localStorage — read at render time for badge computation
+- Toast is a self-dismissing component (setTimeout 3 s)
+- P8 applies: all hooks declared before conditional returns in any modified component
+
+### Design notes
+- Badge: small green checkmark on top-right of each lesson card (Vietnamese UI, P4)
+- Toast: slides in top-right, fades out after 3 s, no close button
+- Spinner: centered inline within the quiz card, not a full overlay
+
+### Open questions
+- (none)
