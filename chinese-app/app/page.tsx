@@ -10,6 +10,11 @@ export default function HomePage() {
   const allPhraseIds = [...phrases.map((c) => c.id), ...practice.map((c) => c.id)];
   const lessons = Array.from(new Set(vocab.map((c) => c.lesson))).sort((a, b) => a - b);
 
+  const lessonCardIds: Record<number, string[]> = {};
+  lessons.forEach((lesson) => {
+    lessonCardIds[lesson] = vocab.filter((c) => c.lesson === lesson).map((c) => c.id);
+  });
+
   return (
     <Dashboard
       vocabCount={vocab.length}
@@ -17,6 +22,7 @@ export default function HomePage() {
       allVocabIds={allVocabIds}
       allPhraseIds={allPhraseIds}
       lessons={lessons}
+      lessonCardIds={lessonCardIds}
     />
   );
 }

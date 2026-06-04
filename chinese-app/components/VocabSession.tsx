@@ -16,9 +16,10 @@ interface Props {
   mode: PracticeMode;
   scriptMode: ScriptMode;
   reviewOnly?: boolean;
+  onSessionComplete: (count: number) => void;
 }
 
-export default function VocabSession({ cards, allCards, mode, scriptMode, reviewOnly = false }: Props) {
+export default function VocabSession({ cards, allCards, mode, scriptMode, reviewOnly = false, onSessionComplete }: Props) {
   const { getDueCards, getOverdueReviewedCards, reviewCard, getOrCreate } = useProgressStore();
 
   const dueIds = useMemo(() => {
@@ -34,7 +35,6 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
   const [index, setIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [answered, setAnswered] = useState(false);
-  const [sessionDone, setSessionDone] = useState(false);
   const [writingCorrect, setWritingCorrect] = useState<boolean | null>(null);
 
   const card = dueCards[index];
@@ -65,7 +65,7 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
 
   function advance() {
     if (index + 1 >= dueCards.length) {
-      setSessionDone(true);
+      onSessionComplete(dueCards.length);
     } else {
       setIndex((i) => i + 1);
       setShowAnswer(false);
@@ -80,22 +80,6 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
         <div className="text-5xl">🎉</div>
         <h2 className="text-2xl font-bold text-gray-800">Tuyệt vời!</h2>
         <p className="text-gray-600">Không còn thẻ nào cần ôn hôm nay.</p>
-      </div>
-    );
-  }
-
-  if (sessionDone) {
-    return (
-      <div className="text-center py-16 space-y-4">
-        <div className="text-5xl">✅</div>
-        <h2 className="text-2xl font-bold text-gray-800">Hoàn thành phiên học!</h2>
-        <p className="text-gray-600">Đã ôn {dueCards.length} từ.</p>
-        <button
-          onClick={() => { setIndex(0); setSessionDone(false); setShowAnswer(false); setAnswered(false); }}
-          className="mt-4 bg-indigo-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-all"
-        >
-          Học lại từ đầu
-        </button>
       </div>
     );
   }
@@ -126,6 +110,12 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
       {/* Answer section */}
       {mode === "trac-nghiem" && !answered && (
         <MultipleChoice question={card} choices={choices} onResult={handleResult} scriptMode={scriptMode} />
+      )}
+
+      {mode === "trac-nghiem" && answered && (
+        <div className="mt-6 flex justify-center items-center py-12">
+          <div className="w-10 h-10 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin" />
+        </div>
       )}
 
       {mode === "luyen-viet" && !showAnswer && (

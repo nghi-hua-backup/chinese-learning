@@ -32,6 +32,13 @@ This file is the authoritative record of all features, requirements, and scope d
 - Upcoming review list with character in active script mode
 - **Reset progress:** red button at page bottom; two-step confirmation; calls `resetAll()` on Zustand store (clears all card history, streak, last-study date)
 
+### FR-7: Session Completion UX + Lesson Progress Flag + Quiz Loading State
+- After the last card in a practice session, the completion screen is skipped; the user returns to the setup screen
+- A fly-out toast appears top-right with "Hoàn thành phiên học! Đã ôn X từ." — visible for 3 seconds then fades; present in both Trắc nghiệm and Luyện viết modes
+- Each lesson card on the home screen shows a green ✓ badge when every card in that lesson has `reps > 0`, `scheduled_days >= 1`, and is not overdue by more than 7 days
+- Badge state computed dynamically from Zustand/localStorage SRS data — no page reload needed
+- In Trắc nghiệm mode, a spinner appears in the question card area during the 1400ms transition between questions
+
 ### FR-6: Tone-4 Highlighting & Practice Coaching Panel
 - In all practice mode screens (Từ vựng, Mẫu câu, Hội thoại): light blue background on both Chinese character and pinyin for any syllable with tone 4 (à/è/ì/ò/ù/ǜ) or neutral tone (no tone mark)
 - Compound words (space-delimited pinyin groups) highlighted as one block; separate compounds are separate blocks
@@ -90,24 +97,6 @@ This file is the authoritative record of all features, requirements, and scope d
 - Tapping the button reads the character aloud in Mandarin
 - Works in Safari/WebKit on iPad (Web Speech API is supported)
 - Button does not interfere with the handwriting input flow
-
-### PF-2: Session Completion UX + Lesson Progress Flag + Quiz Loading State
-**Priority:** High
-**Description:** Three UX improvements to the practice session flow: (A) replace the completion screen with an auto-redirect + fly-out toast, (B) show a per-lesson completion badge driven by SRS data, (C) show a loading spinner in quiz mode between questions.
-
-**Acceptance criteria:**
-- AC-A1: After the last card in a practice session, the user is redirected to the destination of "Quay lại" — the completion screen is never shown
-- AC-A2: A toast appears top-right with "Hoàn thành phiên học! Đã ôn X từ.", visible for 3 seconds, then fades — present on both flashcard (Luyện viết) and quiz (Trắc nghiệm) modes
-- AC-B1: Each lesson card on the lesson list shows a green checkmark badge when every card in that lesson has SRS interval ≥ 1 day
-- AC-B2: The badge hides when any card in the lesson is overdue by more than 7 days
-- AC-B3: Badge state is computed dynamically from localStorage SRS data — no full page reload required
-- AC-C1: In Trắc nghiệm mode, a spinner is shown in the question area while the next question is being prepared; the previous question content is not visible during this transition
-
-**Tech approach (Tech Lead):**
-- Components affected: `VocabSession.tsx` (remove completion screen + `sessionDone` state, add `onSessionComplete` callback prop, add inline spinner during trac-nghiem transition), `TuVungClient.tsx` (add `toastMessage` state + `handleSessionComplete`, render Toast), `Dashboard.tsx` (add `lessonCardIds` prop, read `cards` from store, compute + render badge), `app/page.tsx` (compute and pass `lessonCardIds`). New file: `components/Toast.tsx`.
-- Implementation strategy: (A) `onSessionComplete(count)` callback threaded TuVungClient → VocabSession; toast state lives in TuVungClient above the `if (sessionStarted)` guard. (B) Badge reads `cards` directly from Zustand store (already in state, no new store fields); per-lesson card IDs passed from server component at build time. Badge condition: all cards have `reps > 0` AND `scheduled_days >= 1` AND none overdue by > 7 days. (C) `mode === "trac-nghiem" && answered` is the 1400 ms gap between MultipleChoice unmounting and `advance()` — render a spinner div in that window.
-- Risks / pitfalls: P8 — `toastMessage` useState must be declared before `if (sessionStarted)` early return in TuVungClient; `cards[id]` is undefined for never-reviewed cards — badge logic must treat undefined as "not completed".
-- P-constraints to watch: P1 (static export — no server code in components), P2 (localStorage only), P8 (hooks before all conditional returns).
 
 ---
 

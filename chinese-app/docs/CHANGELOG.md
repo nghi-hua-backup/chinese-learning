@@ -18,6 +18,16 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.3.0] - 2026-06-04
+
+### Added
+- FR-7: Session completion redirect + fly-out toast — after the last card in a practice session, the completion screen is skipped entirely; the user is redirected to the setup screen and a green toast appears top-right with "Hoàn thành phiên học! Đã ôn X từ." for 3 seconds then fades out. Works in both Trắc nghiệm and Luyện viết modes.
+- FR-7: Lesson completion badge — each lesson card on the home screen shows a green ✓ badge when every card in that lesson has been reviewed at least once, has SRS interval ≥ 1 day, and is not overdue by more than 7 days. Badge state is computed dynamically from localStorage SRS data with no page reload required.
+- FR-7: Quiz transition spinner — in Trắc nghiệm mode, a centered spinning indicator appears in the question area during the 1400ms gap between answering a question and advancing to the next one.
+- New: `components/Toast.tsx` — reusable auto-dismissing toast component (fixed top-right, 3s lifetime with 400ms fade-out)
+
+---
+
 ## [1.2.3] - 2026-06-03
 
 ### Fixed

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useProgressStore } from "@/lib/progress-store";
+import { CardProgress } from "@/lib/types";
 
 interface Props {
   vocabCount: number;
@@ -9,10 +10,23 @@ interface Props {
   allVocabIds: string[];
   allPhraseIds: string[];
   lessons: number[];
+  lessonCardIds: Record<number, string[]>;
 }
 
-export default function Dashboard({ vocabCount, phraseCount, allVocabIds, allPhraseIds, lessons }: Props) {
-  const { getStats, streak } = useProgressStore();
+function isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>): boolean {
+  if (cardIds.length === 0) return false;
+  const now = Date.now();
+  const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
+  return cardIds.every((id) => {
+    const c = cards[id];
+    if (!c || c.reps === 0 || c.scheduled_days < 1) return false;
+    const overdueMs = now - new Date(c.due).getTime();
+    return overdueMs <= sevenDaysMs;
+  });
+}
+
+export default function Dashboard({ vocabCount, phraseCount, allVocabIds, allPhraseIds, lessons, lessonCardIds }: Props) {
+  const { getStats, streak, cards } = useProgressStore();
 
   const vocabStats = getStats(allVocabIds);
   const phraseStats = getStats(allPhraseIds);
@@ -90,15 +104,23 @@ export default function Dashboard({ vocabCount, phraseCount, allVocabIds, allPhr
       <div className="space-y-3">
         <h2 className="font-semibold text-gray-700">Các bài học</h2>
         <div className="grid grid-cols-3 gap-3">
-          {lessons.map((lesson) => (
-            <Link
-              key={lesson}
-              href={`/tu-vung?lesson=${lesson}`}
-              className="bg-white border border-gray-100 rounded-xl p-3 text-center hover:bg-indigo-50 hover:border-indigo-200 transition-all"
-            >
-              <p className="text-sm font-medium text-gray-700">Bài {lesson}</p>
-            </Link>
-          ))}
+          {lessons.map((lesson) => {
+            const complete = isLessonComplete(lessonCardIds[lesson] ?? [], cards);
+            return (
+              <Link
+                key={lesson}
+                href={`/tu-vung?lesson=${lesson}`}
+                className="relative bg-white border border-gray-100 rounded-xl p-3 text-center hover:bg-indigo-50 hover:border-indigo-200 transition-all"
+              >
+                {complete && (
+                  <span className="absolute -top-1.5 -right-1.5 bg-green-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
+                    ✓
+                  </span>
+                )}
+                <p className="text-sm font-medium text-gray-700">Bài {lesson}</p>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>

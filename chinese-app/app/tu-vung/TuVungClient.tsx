@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { VocabCard, PracticeMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
 import VocabSession from "@/components/VocabSession";
+import Toast from "@/components/Toast";
 
 interface Props {
   allCards: VocabCard[];
@@ -20,7 +21,13 @@ export default function TuVungClient({ allCards }: Props) {
   const [mode, setMode] = useState<PracticeMode>("trac-nghiem");
   const autostart = searchParams.get("autostart") === "1";
   const [sessionStarted, setSessionStarted] = useState(autostart);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
   const { scriptMode, setScriptMode } = useProgressStore();
+
+  function handleSessionComplete(count: number) {
+    setSessionStarted(false);
+    setToastMessage(`Hoàn thành phiên học! Đã ôn ${count} từ.`);
+  }
 
   const filteredCards = useMemo(() => {
     if (selectedLesson === 0) return allCards;
@@ -38,12 +45,14 @@ export default function TuVungClient({ allCards }: Props) {
         >
           ← Quay lại
         </button>
-        <VocabSession cards={filteredCards} allCards={allCards} mode={mode} scriptMode={scriptMode} reviewOnly={autostart} />
+        <VocabSession cards={filteredCards} allCards={allCards} mode={mode} scriptMode={scriptMode} reviewOnly={autostart} onSessionComplete={handleSessionComplete} />
       </div>
     );
   }
 
   return (
+    <>
+    {toastMessage && <Toast message={toastMessage} onDismiss={() => setToastMessage(null)} />}
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold text-gray-900">📖 Từ vựng</h1>
@@ -134,5 +143,6 @@ export default function TuVungClient({ allCards }: Props) {
       </div>
 
     </div>
+    </>
   );
 }
