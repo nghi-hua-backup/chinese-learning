@@ -266,7 +266,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 取 | qǔ | Thủ | ĐT | lấy, rút |
 | 钱 | 錢 | qián | Tiền | DT | tiền |
 | 人民币 | 人民幣 | rénmínbì | Nhân Dân Tệ | DT | tiền nhân dân tệ (đồng RMB) |
-| — | 那 | nà | — | Đại từ nhân xưng | kia, đó (That/There) |
+| — | 那 | nà | — | Đại từ / Liên từ | kia, đó (That/There); vậy, thế thì (liên từ) |
 | 那儿 | 那兒 | nàr | — | Đại từ nhân xưng | chỗ kia, chỗ đó (over there) |
 | 哪儿 | 哪兒 | nǎr | — | Đại từ nghi vấn | đâu, chỗ nào? (where?) |
 
