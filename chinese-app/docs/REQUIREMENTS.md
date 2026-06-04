@@ -96,6 +96,20 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ## Pending Features (Backlog)
 
+### PF-2: Tone-4 Cleanup + Hội thoại Answer Diff
+**Priority:** High
+**Description:** Three agreed changes from INTAKE.md [2026-06-04]:
+1. **Remove ToneCoachingPanel** from all practice screens (Từ vựng Flashcard, Trắc nghiệm, Mẫu câu, Hội thoại) — reversal of FR-6 coaching panel sub-feature
+2. **Remove ToneHighlight** from Trắc nghiệm (quiz) mode only — keep ToneHighlight in Flashcard and Hội thoại
+3. **Hội thoại Answer Diff** — after tapping "Xem đáp án", compare input against KB answer using LCS character-level diff; show green match banner on exact match, or red/green diff spans on mismatch
+
+**Acceptance criteria:**
+- AC-1: No coaching panel appears on any practice screen
+- AC-2: ToneHighlight is absent from Trắc nghiệm (quiz); still present in Luyện viết (Flashcard) and Hội thoại
+- AC-3: Exact input match → green "Chính xác! ✓" banner in Hội thoại answer reveal
+- AC-4: Mismatch → user input shown character-by-character with wrong/extra chars in red; KB answer shown with missing chars in green
+- AC-5: Empty input → no diff, no banner (KB answer shown as before)
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
