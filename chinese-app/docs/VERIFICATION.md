@@ -78,6 +78,16 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 | 36 | Lesson badge — new lesson | Home screen shows NO badge on a lesson that has never been practiced |
 | 37 | Quiz transition spinner | In Trắc nghiệm, after selecting an answer, a centered spinning indicator appears in the question area during the ~1400ms gap before the next question |
 
+### Từ vựng Page — Lesson Completion Badges (FR-8)
+| # | Flow | Pass condition |
+|---|---|---|
+| 38 | Bài N badge — completed lesson | On the `/tu-vung` setup screen, a "Bài N" filter button shows a green ✓ badge when all cards in that lesson have `reps > 0` and none are overdue by more than 7 days |
+| 39 | Bài N badge — new lesson | A "Bài N" button shows NO badge if no cards in that lesson have been practiced (`reps = 0` for all) |
+| 40 | Tất cả badge — all lessons complete | The "Tất cả" button shows a green ✓ badge only when all lessons individually meet the completion criteria |
+| 41 | Tất cả badge — some lessons incomplete | The "Tất cả" button shows NO badge if any single lesson has at least one card not yet practiced or overdue by more than 7 days |
+| 42 | Badge disappears after overdue | After a card's due date passes by more than 7 days, its lesson's badge disappears (visible on next page load or store rehydration) |
+| 43 | Badge updates after session | Completing a practice session for a lesson causes the lesson's badge to appear immediately on the setup screen (no page reload required — badge state reads from Zustand store) |
+
 ### Tone-4 Highlighting & Coaching Panel (FR-6)
 | # | Flow | Pass condition |
 |---|---|---|
@@ -131,3 +141,4 @@ Append an entry after each QA session.
 | 2026-06-03 | QA (Claude) | Fix: adjacent highlight box overlap (1.2.3) — item 28 + visual check — Playwright local dev | PASS — bounding boxes confirm 8px gap between 請問/宿舍 and 宿舍/在 (right=584→left=592, right=715→left=723). No overlap. computedStyle marginLeft=4px confirms mx-1 applied. Vocab single-word highlight (坐/zuò, 叫/jiào) clean. Pinyin spans also non-overlapping. |
 | 2026-06-04 | QA (Claude) | FR-7 (1.3.0): P1 (build), P3 (live URL), BLOCKER 1 (home page), 31–37 (FR-7 flows), E8 (interrupted session) — P1/P3/BLOCKER-1 verified via build log + WebFetch. Items 31–37 require JS execution in live browser (client-rendered). BLOCKER items 3, 4, 7 updated in VERIFICATION.md to reflect FR-7 completion behavior (old completion screen removed). No regressions found in static-verifiable flows. | PASS (static checks). Items 31–37 require manual iPad Safari verification. |
 | 2026-06-04 | QA (Claude) | Fix 1.3.1: lesson badge `scheduled_days` bug — P1 (build ✓), P3 (live URL ✓), BLOCKER 1 (home page ✓). Root cause: FSRS `scheduled_days = 0` for first-reviewed (Learning state) cards; `scheduled_days >= 1` check removed. Item 35 in VERIFICATION.md updated to reflect corrected badge criterion. Items 31, 35–36 require manual iPad verification on live site after deploy. | PASS (static checks). Manual: verify ✓ badge appears on home screen after completing first practice session for a lesson. |
+| 2026-06-04 | QA (Claude) | FR-8 (1.4.0): lesson completion badges on Từ vựng page — P1 (build ✓ from Phase 3), P3 (live URL ✓ via WebFetch), BLOCKER 1 (home page content correct ✓). `/tu-vung` page loads (shows "Đang tải..." as expected for client-rendered app). Items 38–43 (FR-8 badge flows) require JS execution in live browser — cannot be verified via WebFetch. BLOCKER items 2–19 carry forward from prior sessions (no regressions in static-verifiable flows). Added test scenarios 38–43 to VERIFICATION.md. | PASS (static checks). Manual: verify ✓ badge appears on Bài N buttons and Tất cả button on the Từ vựng setup screen after completing a practice session. |
