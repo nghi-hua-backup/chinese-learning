@@ -19,7 +19,7 @@ function isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>
   const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
   return cardIds.every((id) => {
     const c = cards[id];
-    if (!c || c.reps === 0 || c.scheduled_days < 1) return false;
+    if (!c || c.reps === 0) return false;
     const overdueMs = now - new Date(c.due).getTime();
     return overdueMs <= sevenDaysMs;
   });

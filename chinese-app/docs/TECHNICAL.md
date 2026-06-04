@@ -206,7 +206,7 @@ A reusable `components/Toast.tsx` client component handles auto-dismissing notif
 Computed entirely from Zustand SRS store at render time — no extra localStorage keys:
 - `app/page.tsx` groups vocab card IDs by lesson number into `lessonCardIds: Record<number, string[]>` and passes to `Dashboard`
 - `Dashboard.tsx` reads `cards: Record<string, CardProgress>` from `useProgressStore()`
-- Badge shows when: every card in the lesson has `reps > 0` AND `scheduled_days >= 1` AND `new Date(due) - now < 7 days` (not overdue by more than 7 days)
+- Badge shows when: every card in the lesson has `reps > 0` AND `new Date(due) - now < 7 days` (not overdue by more than 7 days)
 - `cards[id] === undefined` means card never reviewed → treat as not completed
 - Rendered as a small absolute-positioned green ✓ on the top-right corner of each lesson card (requires `relative` on the Link container)
 
@@ -223,3 +223,4 @@ Computed entirely from Zustand SRS store at render time — no extra localStorag
 | `chinese-learning/progress/` | Legacy directory from an earlier Notion/SM-2 design. Not used by the current build. `review-log.json` is empty. Do not delete. |
 | Punctuation in stored phrases | `chinese-brain.md` and `chinese-practice-bank.md` phrases include full-width punctuation (！？。，). `normalize()` must strip `\p{P}\p{S}` before comparing or users who omit trailing punctuation will always get "Sai rồi". |
 | Inline `<span>` border overlap at large font sizes | In `ToneHighlight`, highlighted spans are inline elements. At `text-6xl`/`text-8xl`, adjacent highlighted spans with `border` and minimal `mx-*` appear to visually collide. Fix: use `inline-block` + `mx-1` (≥4px margin) on the HL class so bordered boxes have visible space between them. Do not reduce below `mx-1`. |
+| FSRS `scheduled_days` is 0 after first review | After a new card is first reviewed (even rated Good), FSRS puts it in **Learning** state with `scheduled_days = 0` — the next review is in minutes, not days. `scheduled_days >= 1` is only true once a card graduates to **Review** state (after passing the Learning phase). Do not use `scheduled_days >= 1` as a proxy for "has been practiced" — use `reps > 0` instead. |

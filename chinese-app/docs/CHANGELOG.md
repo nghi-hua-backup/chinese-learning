@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.3.1] - 2026-06-04
+
+### Fixed
+- `Dashboard`: lesson completion badge (✓) never appeared after a single practice session — `scheduled_days >= 1` was always false for Learning-state cards (FSRS puts first-reviewed cards into Learning with `scheduled_days = 0`). Removed the `scheduled_days` check; badge now shows when all cards have `reps > 0` and none are overdue by more than 7 days.
+
+---
+
 ## [1.3.0] - 2026-06-04
 
 ### Added
