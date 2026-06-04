@@ -88,14 +88,23 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 | 42 | Badge disappears after overdue | After a card's due date passes by more than 7 days, its lesson's badge disappears (visible on next page load or store rehydration) |
 | 43 | Badge updates after session | Completing a practice session for a lesson causes the lesson's badge to appear immediately on the setup screen (no page reload required — badge state reads from Zustand store) |
 
-### Tone-4 Highlighting & Coaching Panel (FR-6)
+### FR-9: Tone-4 Cleanup + Hội thoại Answer Diff
 | # | Flow | Pass condition |
 |---|---|---|
-| 22 | Coaching panel — Từ vựng session | "Quy tắc phát âm Thanh 4" panel with both Vietnamese rules visible above progress bar |
-| 23 | Coaching panel — Mẫu câu session | Same panel visible above progress bar |
-| 24 | Coaching panel — Hội thoại session | Same panel visible after entering a dialogue |
-| 25 | Coaching panel — absent on non-practice screens | Panel NOT visible on Tổng quan and Tiến độ pages |
-| 26 | T4 character highlight | Characters with tone-4 pinyin (e.g. 去 qù, 是 shì, 宿舍 sùshè) show light blue background |
+| 44 | Trắc nghiệm — MCQ choices plain text | In Trắc nghiệm mode, MCQ choice cards show the Chinese character as plain text (no light blue highlight on any choice, even for T4 chars like 去/是) |
+| 45 | Luyện viết — answer reveal still highlights | In Luyện viết mode, after reveal, T4 characters in the answer still show light blue background (ToneHighlight intact) |
+| 46 | Hội thoại — exact match banner | In a user-turn line: type the exact expected Chinese characters, tap "Xem đáp án" → green "Chính xác! ✓" banner shown; no diff row shown |
+| 47 | Hội thoại — mismatch diff | In a user-turn line: type a wrong/partial answer, tap "Xem đáp án" → "Đáp án mẫu:" block shows missing chars in green; "Bạn viết:" block shows extra/wrong chars in red; matched chars shown normally |
+| 48 | Hội thoại — empty input unchanged | In a user-turn line: leave textarea empty, tap "Xem đáp án" → "Đáp án mẫu:" shows KB answer as before (ToneHighlight); no diff block; no "Chính xác! ✓" banner |
+
+### Tone-4 Highlighting & Coaching Panel (FR-6, FR-9)
+| # | Flow | Pass condition |
+|---|---|---|
+| 22 | Coaching panel — absent from Từ vựng session | No "Quy tắc phát âm Thanh 4" panel visible in the Từ vựng practice screen (removed in FR-9) |
+| 23 | Coaching panel — absent from Mẫu câu session | No coaching panel visible in the Mẫu câu practice screen (removed in FR-9) |
+| 24 | Coaching panel — absent from Hội thoại session | No coaching panel visible after entering a dialogue (removed in FR-9) |
+| 25 | Coaching panel — absent everywhere | Panel NOT visible on any screen — Tổng quan, Tiến độ, and all three practice modes |
+| 26 | T4 character highlight — Luyện viết & Hội thoại | Characters with tone-4 pinyin (e.g. 去 qù, 是 shì, 宿舍 sùshè) show light blue background in Luyện viết answer reveal and Hội thoại (FR-9: scope restricted — Trắc nghiệm excluded) |
 | 27 | Neutral tone NOT highlighted | Neutral-tone syllables alone (e.g. 的 de, 们 men, 包子 bāozi, 喜欢 xǐhuan) do NOT receive a blue background — only tone-4 syllables trigger highlighting |
 | 28 | Compound boundary separation | Adjacent T4 compounds highlighted as SEPARATE blocks (e.g. 請問 + 宿舍 + 在 = 3 distinct blocks, not merged) with visible spacing between bordered boxes (no visual collision) |
 | 29 | Erhua (兒化) alignment | Erhua syllables (e.g. nǎr = 哪兒) correctly map 1 syllable → 2 chars; no offset error for subsequent characters |
@@ -142,3 +151,4 @@ Append an entry after each QA session.
 | 2026-06-04 | QA (Claude) | FR-7 (1.3.0): P1 (build), P3 (live URL), BLOCKER 1 (home page), 31–37 (FR-7 flows), E8 (interrupted session) — P1/P3/BLOCKER-1 verified via build log + WebFetch. Items 31–37 require JS execution in live browser (client-rendered). BLOCKER items 3, 4, 7 updated in VERIFICATION.md to reflect FR-7 completion behavior (old completion screen removed). No regressions found in static-verifiable flows. | PASS (static checks). Items 31–37 require manual iPad Safari verification. |
 | 2026-06-04 | QA (Claude) | Fix 1.3.1: lesson badge `scheduled_days` bug — P1 (build ✓), P3 (live URL ✓), BLOCKER 1 (home page ✓). Root cause: FSRS `scheduled_days = 0` for first-reviewed (Learning state) cards; `scheduled_days >= 1` check removed. Item 35 in VERIFICATION.md updated to reflect corrected badge criterion. Items 31, 35–36 require manual iPad verification on live site after deploy. | PASS (static checks). Manual: verify ✓ badge appears on home screen after completing first practice session for a lesson. |
 | 2026-06-04 | QA (Claude) | FR-8 (1.4.0): lesson completion badges on Từ vựng page — P1 (build ✓ from Phase 3), P3 (live URL ✓ via WebFetch), BLOCKER 1 (home page content correct ✓). `/tu-vung` page loads (shows "Đang tải..." as expected for client-rendered app). Items 38–43 (FR-8 badge flows) require JS execution in live browser — cannot be verified via WebFetch. BLOCKER items 2–19 carry forward from prior sessions (no regressions in static-verifiable flows). Added test scenarios 38–43 to VERIFICATION.md. | PASS (static checks). Manual: verify ✓ badge appears on Bài N buttons and Tất cả button on the Từ vựng setup screen after completing a practice session. |
+| 2026-06-04 | QA (Claude) | FR-9 (1.5.0): tone-4 cleanup + Hội thoại answer diff — P1 (build ✓ from Phase 3, all 8 pages generated), P2 (GitHub Actions deploy ✓ — commit 6658798, 58s), P3 (live URL ✓ — home page loads with all content). Code-level AC verification: ToneCoachingPanel absent from all 4 practice components (grep confirms 0 occurrences) ✓; ToneHighlight absent from MultipleChoice.tsx ✓; ToneHighlight retained in VocabSession, PhraseSession, DialogueSession ✓; computeLCSDiff in lib/utils.ts ✓; isExactMatch/diffResult derived consts guard `input.length > 0` (AC-4 empty-input path) ✓; "Chính xác! ✓" banner (AC-1) ✓; red inputChars / green expectedChars (AC-2, AC-3) ✓; LCS DP+backtrack algorithm (AC-5) ✓. Updated stale items 22–25 (coaching panel now "absent" not "visible"). Added test scenarios 44–48. Items 44–48 require JS execution in live browser — cannot be verified via WebFetch. | PASS (static + code checks). Manual: verify items 44–48 on live iPad Safari. |
