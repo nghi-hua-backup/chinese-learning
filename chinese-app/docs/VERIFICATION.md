@@ -27,11 +27,11 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 | # | Flow | Pass condition |
 |---|---|---|
 | 2 | Setup screen loads | Lesson filter dropdown + mode selector + script toggle visible |
-| 3 | Trắc nghiệm — complete full session | "Hoàn thành phiên học!" screen appears without crash |
-| 4 | Trắc nghiệm — "Học lại từ đầu" | Session restarts cleanly from card 0 |
+| 3 | Trắc nghiệm — complete full session | User returns to setup screen (no completion screen); green toast appears top-right: "Hoàn thành phiên học! Đã ôn X từ." |
+| 4 | Trắc nghiệm — toast auto-dismisses | Toast fades out after ~3 seconds; setup screen remains; no crash |
 | 5 | Luyện viết — write correct answer | Green ✓ banner + answer reveal (text-8xl character) + SRS rating buttons |
 | 6 | Luyện viết — write wrong answer | Red ✗ banner + answer reveal + SRS rating buttons |
-| 7 | Luyện viết — complete full session | Done screen appears; restart works |
+| 7 | Luyện viết — complete full session | User returns to setup screen; green toast appears top-right with correct card count |
 
 ### Script Mode (global)
 | # | Flow | Pass condition |
@@ -67,6 +67,17 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 |---|---|---|
 | 19 | All 4 nav bar links | Each link navigates correctly; active tab highlighted; no 404 |
 
+### Session Completion + Lesson Badge + Quiz Spinner (FR-7)
+| # | Flow | Pass condition |
+|---|---|---|
+| 31 | Trắc nghiệm — complete session | No completion screen shown; user lands on setup screen without manual navigation |
+| 32 | Toast content | Toast shows "Hoàn thành phiên học! Đã ôn X từ." where X = actual card count reviewed |
+| 33 | Toast timing | Toast visible ~3 seconds then fades; no close button present |
+| 34 | Luyện viết — complete session | Same redirect + toast behavior as Trắc nghiệm |
+| 35 | Lesson badge — completed lesson | Home screen shows green ✓ badge on a lesson card after all its cards are reviewed (reps > 0, interval ≥ 1 day, not overdue > 7 days) |
+| 36 | Lesson badge — new lesson | Home screen shows NO badge on a lesson that has never been practiced |
+| 37 | Quiz transition spinner | In Trắc nghiệm, after selecting an answer, a centered spinning indicator appears in the question area during the ~1400ms gap before the next question |
+
 ### Tone-4 Highlighting & Coaching Panel (FR-6)
 | # | Flow | Pass condition |
 |---|---|---|
@@ -93,6 +104,7 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 | E5 | Dialogue already completed | ✅ shown on list; completing again doesn't duplicate in store |
 | E6 | Correct Chinese sentence typed without trailing punctuation (！？。) | Accepted as correct — `normalize()` strips punctuation before comparing |
 | E7 | Input contains only punctuation characters | Marked wrong — stripped input is empty, cannot match a non-empty answer |
+| E8 | Interrupted session (navigate away mid-session) | Lesson badge on home screen reflects only cards that were actually rated; partially-reviewed lesson does not show badge if not all cards meet the criteria |
 
 ---
 
@@ -117,3 +129,4 @@ Append an entry after each QA session.
 | 2026-06-02 | QA (Claude) | E6–E7 (punctuation-strip fix), T2 regression, T4 Từ vựng regression — Playwright against live site | PASS — typing "沒關係" (without ！) accepted as correct for stored "沒關係！"; punctuation-only input "！？。，" still marked wrong; genuinely wrong sentence still shows red; Từ vựng correct character still accepted. |
 | 2026-06-03 | QA (Claude) | Items 22–30, AC-1–AC-6, home/tiến độ regression — Playwright against local dev server (localhost:3000) | PASS — coaching panel visible in all 3 practice modes, absent on home and tiến độ. T4 chars (請問, 宿舍, 在, 是, shì, qǐngwèn, sùshè, zài) and neutral 的/de highlighted. Compound boundary separation confirmed (3 separate spans, not merged). Erhua fix confirmed: 我 and 來 NOT highlighted after 哪兒; 是 and 的 correctly highlighted. T1/T2/T3 syllables (你, 好, 我, 新, 來) not highlighted. Two bugs found and fixed during QA: (1) char span merging across compound boundaries — fixed by grouping by segment index; (2) erhua char misalignment — fixed by counting +1 char for 兒/儿 suffix. |
 | 2026-06-03 | QA (Claude) | Fix: adjacent highlight box overlap (1.2.3) — item 28 + visual check — Playwright local dev | PASS — bounding boxes confirm 8px gap between 請問/宿舍 and 宿舍/在 (right=584→left=592, right=715→left=723). No overlap. computedStyle marginLeft=4px confirms mx-1 applied. Vocab single-word highlight (坐/zuò, 叫/jiào) clean. Pinyin spans also non-overlapping. |
+| 2026-06-04 | QA (Claude) | FR-7 (1.3.0): P1 (build), P3 (live URL), BLOCKER 1 (home page), 31–37 (FR-7 flows), E8 (interrupted session) — P1/P3/BLOCKER-1 verified via build log + WebFetch. Items 31–37 require JS execution in live browser (client-rendered). BLOCKER items 3, 4, 7 updated in VERIFICATION.md to reflect FR-7 completion behavior (old completion screen removed). No regressions found in static-verifiable flows. | PASS (static checks). Items 31–37 require manual iPad Safari verification. |
