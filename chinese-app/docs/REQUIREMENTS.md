@@ -91,6 +91,18 @@ This file is the authoritative record of all features, requirements, and scope d
 - Works in Safari/WebKit on iPad (Web Speech API is supported)
 - Button does not interfere with the handwriting input flow
 
+### PF-2: Session Completion UX + Lesson Progress Flag + Quiz Loading State
+**Priority:** High
+**Description:** Three UX improvements to the practice session flow: (A) replace the completion screen with an auto-redirect + fly-out toast, (B) show a per-lesson completion badge driven by SRS data, (C) show a loading spinner in quiz mode between questions.
+
+**Acceptance criteria:**
+- AC-A1: After the last card in a practice session, the user is redirected to the destination of "Quay lại" — the completion screen is never shown
+- AC-A2: A toast appears top-right with "Hoàn thành phiên học! Đã ôn X từ.", visible for 3 seconds, then fades — present on both flashcard (Luyện viết) and quiz (Trắc nghiệm) modes
+- AC-B1: Each lesson card on the lesson list shows a green checkmark badge when every card in that lesson has SRS interval ≥ 1 day
+- AC-B2: The badge hides when any card in the lesson is overdue by more than 7 days
+- AC-B3: Badge state is computed dynamically from localStorage SRS data — no full page reload required
+- AC-C1: In Trắc nghiệm mode, a spinner is shown in the question area while the next question is being prepared; the previous question content is not visible during this transition
+
 ---
 
 ## Out of Scope (Unless Explicitly Added by User)
