@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.4.1] - 2026-06-04
+
+### Added
+- KB: Bài 8 — 35 từ vựng, 1 quy tắc phát âm (đọc dãy số), 4 pattern ngữ pháp (快+V, 什么都/也, DTLH, 跟一起), 36 câu luyện tập, 4 tình huống tổng hợp
+
+---
+
 ## [1.4.0] - 2026-06-04
 
 ### Added

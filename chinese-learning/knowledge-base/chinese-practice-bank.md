@@ -4,8 +4,51 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Ngữ pháp 的 (2026-06-02)
+> **Cập nhật lần cuối:** Bài 8 — Thời gian & Giao tiếp (2026-06-04)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
+
+---
+
+### Bài 8 — Thời gian & Giao tiếp
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你看什么看？ | 你看什麼看？ | /nǐ kàn shénme kàn/ | Bạn nhìn cái gì mà nhìn? |
+| 我去电影院看电影。 | 我去電影院看電影。 | /wǒ qù diànyǐngyuàn kàn diànyǐng/ | Tôi đi rạp chiếu phim xem phim. |
+| 上午 8 点半我们上课。 | 上午 8 點半我們上課。 | /shàngwǔ bā diǎn bàn wǒmen shàngkè/ | 8 giờ rưỡi sáng chúng tôi vào lớp. |
+| 今天上午我和我的同屋走路去学校。 | 今天上午我和我的同屋走路去學校。 | /jīntiān shàngwǔ wǒ hé wǒde tóngwū zǒulù qù xuéxiào/ | Sáng nay tôi và bạn cùng phòng đi bộ đến trường. |
+| 晚上我常跟我弟弟看中国电影。 | 晚上我常跟我弟弟看中國電影。 | /wǎnshang wǒ cháng gēn wǒ dìdi kàn zhōngguó diànyǐng/ | Buổi tối tôi thường cùng em trai xem phim Trung Quốc. |
+| 周末我常在家学习汉语。 | 週末我常在家學習漢語。 | /zhōumò wǒ cháng zài jiā xuéxí hànyǔ/ | Cuối tuần tôi thường ở nhà học tiếng Trung. |
+| 我在图书馆的门口等你。 | 我在圖書館的門口等你。 | /wǒ zài túshūguǎn de ménkǒu děng nǐ/ | Tôi đợi bạn ở cổng thư viện. |
+| 他是谁？我们都知道。 | 他是誰？我們都知道。 | /tā shì shuí? wǒmen dōu zhīdào/ | Anh ấy là ai? Chúng tôi đều biết. |
+| 我什么都可以吃。 | 我什麼都可以吃。 | /wǒ shénme dōu kěyǐ chī/ | Tôi cái gì cũng ăn được. |
+| — | 到你了！ | /dào nǐ le/ | Đến lượt cậu rồi! |
+| — | 那你呢？ | /nà nǐ ne/ | Vậy còn cậu thì sao? |
+| — | 我是越南人呢！ | /wǒ shì yuènánrén ne/ | Tôi là người Việt Nam mà! |
+| 我住在 101 号。 | 我住在 101 號。 | /wǒ zhù zài yāo líng yāo hào/ | Tôi ở số phòng 101. |
+| 我和爸爸去河内。 | 我和爸爸去河內。 | /wǒ hé bàba qù hénèi/ | Tôi và bố đi Hà Nội. |
+| 中国和越南很大。 | 中國和越南很大。 | /zhōngguó hé yuènán hěn dà/ | Trung Quốc và Việt Nam rất lớn. |
+| 你们学校几点上课？ | 你們學校幾點上課？ | /nǐmen xuéxiào jǐ diǎn shàngkè/ | Trường các bạn mấy giờ vào lớp? |
+| — | 你是我的一半。 | /nǐ shì wǒ de yí bàn/ | Em là một nửa của anh. |
+| 现在你做什么工作？ | 現在你做什麼工作？ | /xiànzài nǐ zuò shénme gōngzuò/ | Bây giờ bạn làm công việc gì? |
+| — | 我也是！ | /wǒ yě shì/ | Tôi cũng vậy! |
+| 越南人常全家一起吃饭。 | 越南人常全家一起吃飯。 | /yuènánrén cháng quánjiā yìqǐ chīfàn/ | Người Việt Nam thường cả nhà cùng nhau ăn cơm. |
+| 周末你来我家玩儿吧！ | 週末你來我家玩兒吧！ | /zhōumò nǐ lái wǒjiā wánr ba/ | Cuối tuần bạn đến nhà tôi chơi nhé! |
+| — | 好啊！ | /hǎo a/ | Được thôi! |
+| 我很喜欢她，不过她不喜欢我。 | 我很喜歡她，不過她不喜歡我。 | /wǒ hěn xǐhuan tā, búguò tā bù xǐhuan wǒ/ | Tôi rất thích cô ấy, nhưng cô ấy không thích tôi. |
+| 去你的家怎么走呢？ | 去你的家怎麼走呢？ | /qù nǐ de jiā zěnme zǒu ne/ | Đến nhà bạn đi như thế nào nhỉ? |
+| 这个怎么吃呢？ | 這個怎麼吃呢？ | /zhège zěnme chī ne/ | Cái này ăn như thế nào nhỉ? |
+| 汉语怎么学呢？ | 漢語怎麼學呢？ | /hànyǔ zěnme xué ne/ | Tiếng Trung học như thế nào nhỉ? |
+| — | 我跟姐姐去吧。 | /wǒ gēn jiějie qù ba/ | Tôi đi cùng chị gái nhé. |
+| — | 我不想跟他玩儿。 | /wǒ bù xiǎng gēn tā wánr/ | Tôi không muốn chơi với anh ta. |
+| 现在很多越南人都想学汉语。 | 現在很多越南人都想學漢語。 | /xiànzài hěn duō yuènán rén dōu xiǎng xué hànyǔ/ | Hiện nay rất nhiều người Việt Nam đều muốn học tiếng Trung. |
+| 明天上午 9 点钟我们在你家见面。 | 明天上午 9 點鐘我們在你家見面。 | /míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn/ | 9 giờ sáng mai chúng ta gặp nhau ở nhà bạn nhé. |
+| 周末你喜欢做什么？ | 週末你喜歡做什麼？ | /zhōumò nǐ xǐhuan zuò shénme/ | Cuối tuần bạn thích làm gì? |
+| 等（我）一下儿！ | — | /děng wǒ yíxiàr/ | Đợi (tôi) một lát! |
+| — | 我看一下儿。 | /wǒ kàn yíxiàr/ | Tôi xem một chút. |
+| 快点儿走！ | — | /kuài diǎnr zǒu/ | Đi nhanh lên nào! |
+| — | 什么都好。 | /shénme dōu hǎo/ | Cái gì cũng tốt. |
+| — | 什么都可以。 | /shénme dōu kěyǐ/ | Cái gì cũng được. |
 
 ---
 
@@ -458,6 +501,47 @@
 | 谢谢！你是学汉语的留学生吗？你的专业是什么？ | 謝謝！你是學漢語的留學生嗎？你的專業是什麼？ | xièxie! nǐ shì xué hànyǔ de liúxuéshēng ma? nǐ de zhuānyè shì shénme? | Cảm ơn! Bạn có phải du học sinh học tiếng Trung không? Chuyên ngành của bạn là gì? |
 | 是，我是学汉语的学生，我的专业是汉语。汉语很有趣！ | 是，我是學漢語的學生，我的專業是漢語。漢語很有趣！ | shì, wǒ shì xué hànyǔ de xuéshēng, wǒ de zhuānyè shì hànyǔ. hànyǔ hěn yǒuqù! | Đúng, tôi là học sinh học tiếng Trung, chuyên ngành là tiếng Trung. Tiếng Trung rất thú vị! |
 | 我也觉得汉语很有趣！图书馆里有很多汉语书，我们一起去看吧！ | 我也覺得漢語很有趣！圖書館裡有很多漢語書，我們一起去看吧！ | wǒ yě juéde hànyǔ hěn yǒuqù! túshūguǎn lǐ yǒu hěn duō hànyǔ shū, wǒmen yīqǐ qù kàn ba! | Tôi cũng thấy tiếng Trung rất thú vị! Trong thư viện có rất nhiều sách tiếng Trung, chúng ta cùng đi xem nhé! |
+
+### Cập nhật sau Bài 8 — 2026-06-04
+
+**Kiến thức sử dụng:** Bài 4 (同屋) + Bài 5 (名字, 有空儿→Bài 7) + Bài 7 (有空儿, 知道, 门口) + Bài 8 (看, 电影, 电影院, 周末, 门口, 等, 手机, 号码, 见面, 上课, 下课, 点半, 点钟, 跟, 一起, 公共汽车, 走路, 可以, 快, 不过)
+
+#### Tình huống 1: Rủ bạn đi xem phim cuối tuần
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你好！这个周末你有空儿吗？我想跟你一起去看电影。 | 你好！這個週末你有空兒嗎？我想跟你一起去看電影。 | nǐ hǎo! zhège zhōumò nǐ yǒu kòngr ma? wǒ xiǎng gēn nǐ yìqǐ qù kàn diànyǐng. | Xin chào! Cuối tuần này bạn có rảnh không? Tôi muốn cùng bạn đi xem phim. |
+| 好啊！你想看什么电影？几点见面？ | 好啊！你想看什麼電影？幾點見面？ | hǎo a! nǐ xiǎng kàn shénme diànyǐng? jǐ diǎn jiànmiàn? | Được thôi! Bạn muốn xem phim gì? Mấy giờ gặp nhau? |
+| 我想看中国电影，下午三点半。电影院在学校的西边，我们在图书馆的门口见面吧！ | 我想看中國電影，下午三點半。電影院在學校的西邊，我們在圖書館的門口見面吧！ | wǒ xiǎng kàn zhōngguó diànyǐng, xiàwǔ sān diǎn bàn. diànyǐngyuàn zài xuéxiào de xībian, wǒmen zài túshūguǎn de ménkǒu jiànmiàn ba! | Tôi muốn xem phim Trung Quốc, 3 giờ rưỡi chiều. Rạp phim ở phía tây trường, chúng ta gặp nhau ở cổng thư viện nhé! |
+| 好！不过你的手机号码是什么？我的号码是一三八零一八一一。 | 好！不過你的手機號碼是什麼？我的號碼是一三八零一八一一。 | hǎo! búguò nǐ de shǒujī hàomǎ shì shénme? wǒ de hàomǎ shì yāo sān bā líng yāo bā yāo yāo. | Được! Nhưng số điện thoại di động của bạn là gì? Số tôi là 138-018-11. |
+| 我的号码是一三八零一八一零，到三点半我去门口等你！ | 我的號碼是一三八零一八一零，到三點半我去門口等你！ | wǒ de hàomǎ shì yāo sān bā líng yāo bā yāo líng, dào sān diǎn bàn wǒ qù ménkǒu děng nǐ! | Số tôi là 138-018-10, đến 3 giờ rưỡi tôi đến cổng đợi bạn! |
+
+#### Tình huống 2: Hỏi đường đi — xe buýt hay đi bộ?
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 请问，去图书馆怎么走？我可以走路去吗？ | 請問，去圖書館怎麼走？我可以走路去嗎？ | qǐngwèn, qù túshūguǎn zěnme zǒu? wǒ kěyǐ zǒulù qù ma? | Xin hỏi, đến thư viện đi thế nào? Tôi có thể đi bộ được không? |
+| 可以！图书馆在教学楼的东边，走路不太慢，也不太快。不过你可以坐公共汽车，坐 21 路，很快！ | 可以！圖書館在教學樓的東邊，走路不太慢，也不太快。不過你可以坐公共汽車，坐 21 路，很快！ | kěyǐ! túshūguǎn zài jiàoxuélóu de dōngbian, zǒulù bù tài màn, yě bù tài kuài. búguò nǐ kěyǐ zuò gōnggòng qìchē, zuò èr shí yī lù, hěn kuài! | Được! Thư viện ở phía đông tòa nhà dạy học, đi bộ không chậm lắm, cũng không nhanh lắm. Nhưng bạn có thể đi xe buýt, tuyến 21, rất nhanh! |
+| 谢谢！我今天跟同屋一起走路去。9 点钟我们在学校门口等老师，快点儿走吧！ | 謝謝！我今天跟同屋一起走路去。9 點鐘我們在學校門口等老師，快點兒走吧！ | xièxie! wǒ jīntiān gēn tóngwū yìqǐ zǒulù qù. jiǔ diǎnzhōng wǒmen zài xuéxiào ménkǒu děng lǎoshī, kuài diǎnr zǒu ba! | Cảm ơn! Hôm nay tôi cùng bạn cùng phòng đi bộ. 9 giờ đúng chúng tôi đợi thầy ở cổng trường, đi nhanh lên nào! |
+
+#### Tình huống 3: Hỏi giờ học và hẹn xem phim
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你们学校几点上课，几点下课？ | 你們學校幾點上課，幾點下課？ | nǐmen xuéxiào jǐ diǎn shàngkè, jǐ diǎn xiàkè? | Trường các bạn mấy giờ vào lớp, mấy giờ tan lớp? |
+| 上午 8 点半上课，中午 12 点钟下课。下午两点半再上课，5 点下课。你呢？ | 上午 8 點半上課，中午 12 點鐘下課。下午兩點半再上課，5 點下課。你呢？ | shàngwǔ bā diǎn bàn shàngkè, zhōngwǔ shí'èr diǎnzhōng xiàkè. xiàwǔ liǎng diǎn bàn zài shàngkè, wǔ diǎn xiàkè. nǐ ne? | 8 giờ rưỡi sáng vào lớp, 12 giờ đúng trưa tan lớp. 2 giờ rưỡi chiều học tiếp, 5 giờ tan lớp. Còn bạn? |
+| 我们 9 点钟上课，下午 4 点半下课。今天下课你有空儿吗？我们可以跟同学一起去看电影！ | 我們 9 點鐘上課，下午 4 點半下課。今天下課你有空兒嗎？我們可以跟同學一起去看電影！ | wǒmen jiǔ diǎnzhōng shàngkè, xiàwǔ sì diǎn bàn xiàkè. jīntiān xiàkè nǐ yǒu kòngr ma? wǒmen kěyǐ gēn tóngxué yìqǐ qù kàn diànyǐng! | Chúng tôi 9 giờ đúng vào lớp, 4 giờ rưỡi chiều tan lớp. Hôm nay sau tan lớp bạn có rảnh không? Chúng ta có thể cùng bạn học đi xem phim! |
+| 太好了！周末你喜欢做什么？ | 太好了！週末你喜歡做什麼？ | tài hǎo le! zhōumò nǐ xǐhuan zuò shénme? | Tốt quá! Cuối tuần bạn thích làm gì? |
+| 周末我常在家学习汉语，不过我也很喜欢跟同屋一起去看中国电影。 | 週末我常在家學習漢語，不過我也很喜歡跟同屋一起去看中國電影。 | zhōumò wǒ cháng zài jiā xuéxí hànyǔ, búguò wǒ yě hěn xǐhuan gēn tóngwū yìqǐ qù kàn zhōngguó diànyǐng. | Cuối tuần tôi thường ở nhà học tiếng Trung, nhưng tôi cũng rất thích cùng bạn cùng phòng đi xem phim Trung Quốc. |
+
+#### Tình huống 4: Hỏi số điện thoại và hẹn gặp mặt
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你好！你有国安的手机号码吗？我想跟他一起见面，在图书馆门口。 | 你好！你有國安的手機號碼嗎？我想跟他一起見面，在圖書館門口。 | nǐ hǎo! nǐ yǒu Guó'ān de shǒujī hàomǎ ma? wǒ xiǎng gēn tā yìqǐ jiànmiàn, zài túshūguǎn ménkǒu. | Xin chào! Bạn có số điện thoại di động của Quốc An không? Tôi muốn cùng anh ấy gặp mặt ở cổng thư viện. |
+| 有！他的号码是一三八零一八一一。他今天下午有空儿，你们想几点见面？ | 有！他的號碼是一三八零一八一一。他今天下午有空兒，你們想幾點見面？ | yǒu! tā de hàomǎ shì yāo sān bā líng yāo bā yāo yāo. tā jīntiān xiàwǔ yǒu kòngr, nǐmen xiǎng jǐ diǎn jiànmiàn? | Có! Số của anh ấy là 138-018-11. Chiều nay anh ấy rảnh, các bạn muốn gặp nhau lúc mấy giờ? |
+| 下午三点半，可以吗？我们在图书馆的门口等他。 | 下午三點半，可以嗎？我們在圖書館的門口等他。 | xiàwǔ sān diǎn bàn, kěyǐ ma? wǒmen zài túshūguǎn de ménkǒu děng tā. | 3 giờ rưỡi chiều, được không? Chúng tôi đợi anh ấy ở cổng thư viện. |
+| 可以！到三点半，他在门口等你们！ | 可以！到三點半，他在門口等你們！ | kěyǐ! dào sān diǎn bàn, tā zài ménkǒu děng nǐmen! | Được! Đến 3 giờ rưỡi, anh ấy đợi các bạn ở cổng! |
 
 <!-- future lessons will be prepended above this comment -->
 

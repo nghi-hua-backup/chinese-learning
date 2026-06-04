@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Ngữ pháp 的 (2026-06-02)
+> **Cập nhật lần cuối:** Bài 8 — Thời gian & Giao tiếp (2026-06-04)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -185,6 +185,16 @@ Khi một vần có nhiều nguyên âm, dấu thanh điệu đặt trên nguyê
 - Nếu vần có `a`: dấu đặt vào `a` (ví dụ: iao → iào)
 - Nếu vần có `o` hoặc `e`: dấu đặt vào đó (ví dụ: ou → òu)
 - Nếu vần kết thúc bằng `iu` hoặc `ui`: dấu đặt vào nguyên âm **đứng sau** (iu → iù, ui → uì)
+
+### 1.13 Quy tắc đọc dãy số
+
+Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã số...):
+- Số **1** đọc là /yāo/ thay vì /yī/. Số 2 vẫn đọc là /èr/.
+- **Ví dụ:** 101 → /yāo líng yāo/; số điện thoại 1381018 → /yāo sān bā yāo líng yāo bā/
+
+**Cách đọc năm:** Đọc từng chữ số một (dùng /yī/, không dùng /yāo/).
+- 2014 → /èr líng yī sì/
+- 1995 → /yī jiǔ jiǔ wǔ/
 
 ---
 
@@ -402,6 +412,46 @@ Khi một vần có nhiều nguyên âm, dấu thanh điệu đặt trên nguyê
 | 杂志 | 雜誌 | zázhì | Tạp Chí | DT | tạp chí |
 | — | 要 | yào | Yếu | ĐT năng nguyện | muốn, cần, phải |
 
+### Bài 8 — Thời gian & Giao tiếp
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| — | 看 | /kàn/ | Khán | ĐT | nhìn, xem, đọc |
+| 电影 | 電影 | /diànyǐng/ | Điện Ảnh | DT | phim |
+| 电影院 | 電影院 | /diànyǐngyuàn/ | Điện Ảnh Viện | DT | rạp chiếu phim |
+| 很有钱 | 很有錢 | /hěn yǒu qián/ | — | Cụm ĐT | rất giàu, có tiền |
+| — | 走路 | /zǒulù/ | Tẩu Lộ | ĐT | đi bộ |
+| — | 常 | /cháng/ | Thường | PT | thường, thường xuyên |
+| 周末 | 週末 | /zhōumò/ | Chu Mạt | DT | cuối tuần |
+| 门口 | 門口 | /ménkǒu/ | Môn Khẩu | DT | cổng, cửa, lối vào |
+| — | 等 | /děng/ | Đẳng | ĐT | đợi, chờ |
+| — | 到 | /dào/ | Đáo | ĐT | tới, đến |
+| — | 呢 | /ne/ | — | Trợ từ | ... thì sao?, ... nhỉ? (ngữ khí cuối câu) |
+| 电话 | 電話 | /diànhuà/ | Điện Thoại | DT | điện thoại bàn |
+| 手机 | 手機 | /shǒujī/ | Thủ Ký | DT | điện thoại di động |
+| 号 | 號 | /hào/ | Hiệu | DT | số |
+| 号码 | 號碼 | /hàomǎ/ | Hiệu Mã | DT | dãy số, số (điện thoại) |
+| — | 快 | /kuài/ | Khoái | HDT/PT | mau, nhanh |
+| — | 路 | /lù/ | Lộ | DT | đường, tuyến (xe buýt) |
+| 公共汽车 | 公共汽車 | /gōnggòng qìchē/ | Công Cộng Khí Xa | DT | xe buýt |
+| — | 公共 | /gōnggòng/ | Công Cộng | HDT | công cộng |
+| 汽车 | 汽車 | /qìchē/ | Khí Xa | DT | xe ô tô |
+| — | 可以 | /kěyǐ/ | Khả Dĩ | ĐT năng nguyện | có thể (đồng ý/cho phép) |
+| — | 都 | /dōu/ | Đô | PT | đều |
+| 上课 | 上課 | /shàngkè/ | Thượng Khóa | ĐT ly hợp | vào lớp, lên lớp |
+| 下课 | 下課 | /xiàkè/ | Hạ Khóa | ĐT ly hợp | tan lớp |
+| 小学 | 小學 | /xiǎoxué/ | Tiểu Học | DT | tiểu học |
+| — | 半 | /bàn/ | Bán | Số từ | một nửa, rưỡi |
+| — | 啊 | /a/ | — | Trợ từ | (ngữ khí cuối câu — biểu cảm) |
+| 不过 | 不過 | /búguò/ | Bất Quá | Liên từ | nhưng mà, nhưng |
+| 怎么 | 怎麼 | /zěnme/ | — | Đại từ | làm sao, như thế nào |
+| — | 跟 | /gēn/ | Cân | Giới từ | với, cùng |
+| — | 一起 | /yìqǐ/ | — | PT | cùng nhau |
+| 钟 | 鐘 | /zhōng/ | Chung | DT | giờ, đồng hồ |
+| 一下儿 | 一下兒 | /yíxiàr/ | — | Lượng từ | một chút, một lát |
+| 留学 | 留學 | /liúxué/ | Lưu Học | ĐT | du học |
+| 见面 | 見面 | /jiànmiàn/ | Kiến Diện | ĐT ly hợp | gặp mặt |
+
 ---
 
 ## 3. Số đếm & Thời gian
@@ -477,9 +527,16 @@ Ví dụ:
 
 **Công thức:** [Buổi] + [Số giờ] + 点 + [零 nếu phút <10] + [Số phút] + 分
 
+**点半 — Cách nói "rưỡi" (30 phút):** [Buổi] + [Số giờ] + 点半
+- 上午八点半 /shàngwǔ bā diǎn bàn/ — 8 giờ rưỡi sáng
+
+**钟 / 鐘 — Giờ tròn:** Thêm 钟 sau giờ để nhấn mạnh đúng giờ tròn (không phút).
+- 1h–10h: thường dùng 钟. 11h–12h: thường không cần 钟.
+- 上午九点钟 /shàngwǔ jiǔ diǎnzhōng/ — 9 giờ đúng sáng
+
 **Ví dụ:**
 - 08:05 → 八点零五分 /bā diǎn líng wǔ fēn/
-- 08:30 → 八点三十分 /bā diǎn sān shí fēn/
+- 08:30 → 八点三十分 /bā diǎn sān shí fēn/ hoặc 八点半 /bā diǎn bàn/
 - 13:25 → 下午一点二十五分 /xiàwǔ yī diǎn èr shí wǔ fēn/
 - 20:59 → 晚上八点五十九分 /wǎnshàng bā diǎn wǔ shí jiǔ fēn/
 
@@ -695,6 +752,63 @@ Ví dụ:
 
 **Ví dụ:**
 - 介绍一下儿 / 介紹一下兒 /jièshào yí xiàr/ — giới thiệu một chút
+- 等（我）一下儿！/ — /děng wǒ yíxiàr/ — Đợi (tôi) một lát!
+- 我看一下儿。/ — /wǒ kàn yíxiàr/ — Tôi xem một chút.
+
+---
+
+### 快 + (点儿) + V — Hối thúc làm nhanh
+
+**Cấu trúc:** 快 + (点儿) + ĐT
+
+**Giải thích:** Dùng để thúc giục ai đó làm gì đó nhanh hơn. 点儿 có thể thêm hoặc bỏ.
+
+**Ví dụ:**
+- 快走！/ — /kuài zǒu/ — Đi nhanh lên!
+- 快点儿走！/ — /kuài diǎnr zǒu/ — Đi nhanh lên nào!
+- 快点儿吃！/ — /kuài diǎnr chī/ — Ăn nhanh lên!
+
+---
+
+### 什么 + 都/也 + V — Cái gì cũng / đều
+
+**Cấu trúc:**
+- 什么 + 都 + V/HDT → "cái gì cũng (đều)..."
+- 什么 + 也 + V → "cái gì cũng (đều)..."
+
+**Giải thích:** Kết hợp đại từ nghi vấn 什么 với phó từ 都 hoặc 也 để diễn đạt "bất kỳ cái gì cũng...". Hai cấu trúc tương đương nhau về nghĩa.
+
+**Ví dụ:**
+- 什么都好。/ 什麼都好。 /shénme dōu hǎo/ — Cái gì cũng tốt.
+- 什么都可以。/ 什麼都可以。 /shénme dōu kěyǐ/ — Cái gì cũng được.
+- 我什么都可以吃。/ 我什麼都可以吃。 /wǒ shénme dōu kěyǐ chī/ — Tôi cái gì cũng ăn được.
+
+---
+
+### Động từ ly hợp (离合词) — Tách chèn từ khác
+
+**Giải thích:** Là dạng động từ 2 âm tiết có thể tách ra để chèn thêm từ khác vào giữa. Phần 1 mang nghĩa động từ, phần 2 mang nghĩa tân ngữ. Các ĐT ly hợp trong bài: 上课, 下课, 见面.
+
+**Ví dụ cấu trúc tách:**
+- 上课 (vào lớp) → 上汉语课 /shàng hànyǔ kè/ — học tiết tiếng Trung
+- 见面 (gặp mặt) → 见一面 /jiàn yī miàn/ — gặp nhau một lần
+- 我们上午上汉语课。/ 我們上午上漢語課。 /wǒmen shàngwǔ shàng hànyǔ kè/ — Buổi sáng chúng tôi học tiết tiếng Trung.
+- 明天上午 9 点钟我们在你家见面。/ 明天上午 9 點鐘我們在你家見面。 /míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn/ — 9 giờ sáng mai chúng ta gặp nhau ở nhà bạn.
+
+---
+
+### A 跟 B + V / A 跟 B 一起 + V — Với / Cùng nhau làm gì
+
+**Cấu trúc 1 (không nhấn mạnh):** A + 跟 + B + ĐT
+**Cấu trúc 2 (nhấn mạnh đồng hành):** A + 跟 + B + 一起 + ĐT
+
+**Giải thích:** Cả hai diễn đạt "A làm gì cùng với B". Cấu trúc 2 nhấn mạnh hơn vào việc cùng nhau hành động.
+
+**Ví dụ:**
+- 我跟你吃。/ — /wǒ gēn nǐ chī/ — Tôi ăn với bạn.
+- 晚上我常跟我弟弟看中国电影。/ 晚上我常跟我弟弟看中國電影。 /wǎnshang wǒ cháng gēn wǒ dìdi kàn zhōngguó diànyǐng/ — Buổi tối tôi thường cùng em trai xem phim Trung Quốc.
+- 我想跟你一起去中国留学。/ 我想跟你一起去中國留學。 /wǒ xiǎng gēn nǐ yìqǐ qù zhōngguó liúxué/ — Tôi muốn cùng bạn đi Trung Quốc du học.
+- 越南人常全家一起吃饭。/ 越南人常全家一起吃飯。 /yuènánrén cháng quánjiā yìqǐ chīfàn/ — Người Việt Nam thường cả nhà cùng nhau ăn cơm.
 
 ---
 
