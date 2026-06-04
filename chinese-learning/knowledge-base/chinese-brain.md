@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 8 — Thời gian & Giao tiếp (2026-06-04)
+> **Cập nhật lần cuối:** Bài 8 — Cuối tuần cậu thích làm gì? (2026-06-04)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -254,7 +254,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 我 | wǒ | Ngã | Đại từ nhân xưng | tôi, mình, tao, tớ |
 | 学 | 學 | xué | Học | ĐT | học |
 | — | 去 | qù | Khứ | ĐT | đi, đến |
-| — | 交 | jiāo | Giao | ĐT | dạy, giao |
+| — | 交 | jiāo | Giao | ĐT | giao |
 | 学校 | 學校 | xuéxiào | Học Hiệu | DT | trường học |
 | 学生 | 學生 | xuéshēng | Học Sinh | DT | học sinh |
 | 老师 | 老師 | lǎoshī | Lão Sư | DT | thầy/cô giáo, giáo viên |
@@ -412,7 +412,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 杂志 | 雜誌 | zázhì | Tạp Chí | DT | tạp chí |
 | — | 要 | yào | Yếu | ĐT năng nguyện | muốn, cần, phải |
 
-### Bài 8 — Thời gian & Giao tiếp
+### Bài 8 — Cuối tuần cậu thích làm gì?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
 |------|------|--------|----------|---------|---------------------|
