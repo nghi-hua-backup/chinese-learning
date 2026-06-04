@@ -110,6 +110,23 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-4: Mismatch → user input shown character-by-character with wrong/extra chars in red; KB answer shown with missing chars in green
 - AC-5: Empty input → no diff, no banner (KB answer shown as before)
 
+**Tech approach (Tech Lead):**
+- Components affected:
+  - `components/VocabSession.tsx` — remove `<ToneCoachingPanel />` (line 89) and its import (line 10); `ToneHighlight` stays (used in Luyện viết answer reveal at line 141)
+  - `components/PhraseSession.tsx` — remove `<ToneCoachingPanel />` (line 84) and its import (line 9); `ToneHighlight` stays (answer reveal at line 123)
+  - `components/MultipleChoice.tsx` — remove `<ToneHighlight>` wrapping each choice (lines 39–44); replace with plain `<p>` for char + pinyin; no `ToneCoachingPanel` present here already (confirmed by code read)
+  - `components/DialogueSession.tsx` — remove `<ToneCoachingPanel />` (line 40) and its import (line 6); add diff rendering in the `showAnswer && isUserTurn` branch (lines 115–131)
+  - `lib/utils.ts` — add `computeLCSDiff(input, expected)` returning `{ inputChars: DiffChar[], expectedChars: DiffChar[] }` where `DiffChar = { char: string; matched: boolean }`
+- Implementation strategy:
+  - Coaching panel removal: delete one JSX element + one import per file — minimal change
+  - MultipleChoice ToneHighlight replacement: swap `<ToneHighlight>` for two `<p>` elements (char + pinyin) with same font sizes (`text-5xl font-bold` / `text-sm text-gray-500`)
+  - LCS diff: standard O(n×m) table in `lib/utils.ts`; backtrack to assign matched/unmatched booleans; render inline `<span>` elements in `DialogueSession.tsx` — no new state, derived from existing `input` and `line`/`scriptMode`
+  - Match check: `input === getDisplayChar(line, scriptMode)` (no normalization per INTAKE agreement)
+- Risks / pitfalls:
+  - P8: DialogueSession.tsx has no early returns before hooks, so adding inline derived logic is safe. Verify P8 is still satisfied after edits.
+  - MultipleChoice.tsx currently has no ToneCoachingPanel (ToneHighlight only) — don't accidentally also remove ToneHighlight from VocabSession's Luyện viết reveal
+- P-constraints to watch: P4 (Vietnamese text in diff UI), P8 (hooks before all returns)
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
