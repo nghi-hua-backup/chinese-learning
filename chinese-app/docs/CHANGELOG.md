@@ -18,6 +18,18 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.5.0] - 2026-06-04
+
+### Added
+- Hội thoại answer diff: after "Xem đáp án", exact input match shows a green "Chính xác! ✓" banner; mismatch shows LCS character-level diff with wrong/extra chars in red and missing chars in green; empty input shows KB answer unchanged
+- `computeLCSDiff` helper in `lib/utils.ts` (O(n×m) LCS with backtrack)
+
+### Removed
+- Tone coaching panel (`ToneCoachingPanel`) removed from all practice screens (Từ vựng, Mẫu câu, Hội thoại)
+- Tone-4 character highlighting (`ToneHighlight`) removed from Trắc nghiệm quiz choices; retained in Luyện viết and Hội thoại
+
+---
+
 ## [1.4.1] - 2026-06-04
 
 ### Added

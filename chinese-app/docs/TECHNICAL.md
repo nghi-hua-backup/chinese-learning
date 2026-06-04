@@ -168,7 +168,7 @@ If `简体` is `"—"` or empty → `simplified` falls back to `traditional` val
 
 ---
 
-## Tone-4 Highlighting System (FR-PF-2)
+## Tone-4 Highlighting System (FR-6, FR-9)
 
 ### `lib/tone-utils.ts`
 Utilities for tone detection and text segmentation:
@@ -182,13 +182,18 @@ Renders a Chinese character string and its pinyin with compound-level light blue
 - Props: `chars: string`, `pinyin: string`, `charClassName?: string`, `pinyinClassName?: string`
 - Uses `analyzeText` to get segments; renders character spans and pinyin spans with `bg-blue-100 rounded px-0.5` on highlighted groups
 - Punctuation stripped from alignment calculation but re-inserted for display
+- **Used in:** Luyện viết answer reveal (`VocabSession`, `PhraseSession`), Hội thoại (previous lines + system turn + KB answer on empty input) — **not** in Trắc nghiệm (`MultipleChoice`)
 
 ### `components/ToneCoachingPanel.tsx`
-Static Vietnamese coaching panel, always visible in all practice screens:
+Static Vietnamese coaching panel — component exists but is **not rendered anywhere** (removed from all practice screens in FR-9):
 - No props, no state — purely presentational
-- Placed above the progress bar in `VocabSession`, `PhraseSession`, `DialogueSession`
-- Also included in `MultipleChoice` (rendered by `VocabSession` in trắc-nghiệm mode)
-- Displays two rules: T4+T1/2/3 and T4+T4
+- Do not re-add to any practice screen without a new INTAKE agreement
+
+### `lib/utils.ts` — `computeLCSDiff`
+- `DiffChar = { char: string; matched: boolean }`
+- `computeLCSDiff(input, expected): { inputChars: DiffChar[], expectedChars: DiffChar[] }`
+- Standard O(n×m) LCS DP table with backtrack; assigns `matched: true` to characters that are part of the LCS
+- Used in `DialogueSession.tsx` to render char-level diff after "Xem đáp án"
 
 ---
 

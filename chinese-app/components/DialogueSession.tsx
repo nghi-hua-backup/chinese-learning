@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { Dialogue, ScriptMode } from "@/lib/types";
-import { getDisplayChar } from "@/lib/utils";
-import ToneCoachingPanel from "./ToneCoachingPanel";
+import { getDisplayChar, computeLCSDiff } from "@/lib/utils";
 import ToneHighlight from "./ToneHighlight";
 
 interface Props {
@@ -20,6 +19,11 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
   const isLast = lineIndex >= dialogue.lines.length - 1;
   // Alternate: even lines = system says, odd lines = user writes
   const isUserTurn = lineIndex % 2 !== 0;
+  const expected = getDisplayChar(line, scriptMode);
+  const isExactMatch = showAnswer && isUserTurn && input.length > 0 && input === expected;
+  const diffResult = showAnswer && isUserTurn && input.length > 0 && input !== expected
+    ? computeLCSDiff(input, expected)
+    : null;
 
   function handleCheck() {
     setShowAnswer(true);
@@ -37,7 +41,6 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
 
   return (
     <div className="max-w-xl mx-auto space-y-4">
-      <ToneCoachingPanel />
       {/* Progress */}
       <div className="flex items-center gap-3 mb-2">
         <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -116,17 +119,34 @@ export default function DialogueSession({ dialogue, onDone, scriptMode }: Props)
               <>
                 <div className="bg-indigo-50 rounded-xl p-4">
                   <p className="text-xs text-gray-500 mb-1">Đáp án mẫu:</p>
-                  <ToneHighlight
-                    chars={getDisplayChar(line, scriptMode)}
-                    pinyin={line.pinyin}
-                    charClassName="text-5xl font-bold text-gray-800"
-                    pinyinClassName="text-indigo-600 text-sm mt-1"
-                  />
+                  {diffResult ? (
+                    <p className="text-5xl font-bold leading-relaxed">
+                      {diffResult.expectedChars.map((c, i) => (
+                        <span key={i} className={c.matched ? "text-gray-800" : "text-green-600"}>{c.char}</span>
+                      ))}
+                    </p>
+                  ) : (
+                    <ToneHighlight
+                      chars={getDisplayChar(line, scriptMode)}
+                      pinyin={line.pinyin}
+                      charClassName="text-5xl font-bold text-gray-800"
+                      pinyinClassName="text-indigo-600 text-sm mt-1"
+                    />
+                  )}
                 </div>
-                {input && (
+                {isExactMatch && (
+                  <div className="mt-3 bg-green-500 text-white rounded-xl p-4 text-center font-semibold text-lg">
+                    Chính xác! ✓
+                  </div>
+                )}
+                {diffResult && (
                   <div className="mt-3 bg-gray-50 rounded-xl p-3">
                     <p className="text-xs text-gray-500 mb-1">Bạn viết:</p>
-                    <p className="text-xl text-gray-700">{input}</p>
+                    <p className="text-xl leading-relaxed">
+                      {diffResult.inputChars.map((c, i) => (
+                        <span key={i} className={c.matched ? "text-gray-700" : "text-red-600"}>{c.char}</span>
+                      ))}
+                    </p>
                   </div>
                 )}
                 <button

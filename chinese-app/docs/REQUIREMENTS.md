@@ -32,6 +32,11 @@ This file is the authoritative record of all features, requirements, and scope d
 - Upcoming review list with character in active script mode
 - **Reset progress:** red button at page bottom; two-step confirmation; calls `resetAll()` on Zustand store (clears all card history, streak, last-study date)
 
+### FR-9: Tone-4 Cleanup + Hội thoại Answer Diff
+- `ToneCoachingPanel` removed from all practice screens (Từ vựng, Mẫu câu, Hội thoại)
+- `ToneHighlight` removed from Trắc nghiệm (quiz) mode; retained in Luyện viết (Flashcard) and Hội thoại
+- After tapping "Xem đáp án" in Hội thoại: exact input match → green "Chính xác! ✓" banner; mismatch → LCS character-level diff with wrong/extra chars in red (user input) and missing chars in green (KB answer); empty input → KB answer shown as before with no diff
+
 ### FR-8: Lesson Completion Badge on Từ vựng Page
 - Each "Bài N" filter button on the Từ vựng page shows a green ✓ badge when all cards in that lesson have `reps > 0` and none are overdue by more than 7 days
 - The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
@@ -95,37 +100,6 @@ This file is the authoritative record of all features, requirements, and scope d
 ---
 
 ## Pending Features (Backlog)
-
-### PF-2: Tone-4 Cleanup + Hội thoại Answer Diff
-**Priority:** High
-**Description:** Three agreed changes from INTAKE.md [2026-06-04]:
-1. **Remove ToneCoachingPanel** from all practice screens (Từ vựng Flashcard, Trắc nghiệm, Mẫu câu, Hội thoại) — reversal of FR-6 coaching panel sub-feature
-2. **Remove ToneHighlight** from Trắc nghiệm (quiz) mode only — keep ToneHighlight in Flashcard and Hội thoại
-3. **Hội thoại Answer Diff** — after tapping "Xem đáp án", compare input against KB answer using LCS character-level diff; show green match banner on exact match, or red/green diff spans on mismatch
-
-**Acceptance criteria:**
-- AC-1: No coaching panel appears on any practice screen
-- AC-2: ToneHighlight is absent from Trắc nghiệm (quiz); still present in Luyện viết (Flashcard) and Hội thoại
-- AC-3: Exact input match → green "Chính xác! ✓" banner in Hội thoại answer reveal
-- AC-4: Mismatch → user input shown character-by-character with wrong/extra chars in red; KB answer shown with missing chars in green
-- AC-5: Empty input → no diff, no banner (KB answer shown as before)
-
-**Tech approach (Tech Lead):**
-- Components affected:
-  - `components/VocabSession.tsx` — remove `<ToneCoachingPanel />` (line 89) and its import (line 10); `ToneHighlight` stays (used in Luyện viết answer reveal at line 141)
-  - `components/PhraseSession.tsx` — remove `<ToneCoachingPanel />` (line 84) and its import (line 9); `ToneHighlight` stays (answer reveal at line 123)
-  - `components/MultipleChoice.tsx` — remove `<ToneHighlight>` wrapping each choice (lines 39–44); replace with plain `<p>` for char + pinyin; no `ToneCoachingPanel` present here already (confirmed by code read)
-  - `components/DialogueSession.tsx` — remove `<ToneCoachingPanel />` (line 40) and its import (line 6); add diff rendering in the `showAnswer && isUserTurn` branch (lines 115–131)
-  - `lib/utils.ts` — add `computeLCSDiff(input, expected)` returning `{ inputChars: DiffChar[], expectedChars: DiffChar[] }` where `DiffChar = { char: string; matched: boolean }`
-- Implementation strategy:
-  - Coaching panel removal: delete one JSX element + one import per file — minimal change
-  - MultipleChoice ToneHighlight replacement: swap `<ToneHighlight>` for two `<p>` elements (char + pinyin) with same font sizes (`text-5xl font-bold` / `text-sm text-gray-500`)
-  - LCS diff: standard O(n×m) table in `lib/utils.ts`; backtrack to assign matched/unmatched booleans; render inline `<span>` elements in `DialogueSession.tsx` — no new state, derived from existing `input` and `line`/`scriptMode`
-  - Match check: `input === getDisplayChar(line, scriptMode)` (no normalization per INTAKE agreement)
-- Risks / pitfalls:
-  - P8: DialogueSession.tsx has no early returns before hooks, so adding inline derived logic is safe. Verify P8 is still satisfied after edits.
-  - MultipleChoice.tsx currently has no ToneCoachingPanel (ToneHighlight only) — don't accidentally also remove ToneHighlight from VocabSession's Luyện viết reveal
-- P-constraints to watch: P4 (Vietnamese text in diff UI), P8 (hooks before all returns)
 
 ### PF-1: Audio Pronunciation
 **Priority:** Medium

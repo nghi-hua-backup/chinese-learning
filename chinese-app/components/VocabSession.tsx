@@ -7,7 +7,6 @@ import { getRandomDistractors, getDisplayChar } from "@/lib/utils";
 import SRSRating from "./SRSRating";
 import MultipleChoice from "./MultipleChoice";
 import WritingInput from "./WritingInput";
-import ToneCoachingPanel from "./ToneCoachingPanel";
 import ToneHighlight from "./ToneHighlight";
 
 interface Props {
@@ -86,7 +85,6 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
 
   return (
     <div className="max-w-xl mx-auto">
-      <ToneCoachingPanel />
       {/* Progress bar */}
       <div className="flex items-center gap-3 mb-6">
         <div className="flex-1 bg-gray-200 rounded-full h-2">

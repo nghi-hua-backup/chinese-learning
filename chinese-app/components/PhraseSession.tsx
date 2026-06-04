@@ -6,7 +6,6 @@ import { useProgressStore } from "@/lib/progress-store";
 import { getDisplayChar } from "@/lib/utils";
 import SRSRating from "./SRSRating";
 import WritingInput from "./WritingInput";
-import ToneCoachingPanel from "./ToneCoachingPanel";
 import ToneHighlight from "./ToneHighlight";
 
 type Card = PhraseCard | PracticeCard;
@@ -81,7 +80,6 @@ export default function PhraseSession({ cards, title, scriptMode }: Props) {
 
   return (
     <div className="max-w-xl mx-auto">
-      <ToneCoachingPanel />
       {/* Progress */}
       <div className="flex items-center gap-3 mb-6">
         <div className="flex-1 bg-gray-200 rounded-full h-2">
