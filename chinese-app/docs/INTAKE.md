@@ -148,3 +148,74 @@ The Dashboard is rarely visited, so the existing lesson completion badge is rare
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-04] — Amendment: Remove ToneCoachingPanel from all practice modes
+
+**Amends:** Section "[2026-06-03] — Tone-4 Highlighting & Practice Coaching" (AC-4, AC-5)
+
+**Specific change:** Original agreement required a permanent coaching panel showing two Vietnamese pronunciation rules to be displayed at the top of all practice mode screens (Flashcard, Trắc nghiệm, Hội thoại). Customer has changed their mind and wants this panel removed everywhere it currently appears.
+
+**New agreement:** `<ToneCoachingPanel />` is removed from all practice screens. No coaching panel is shown in any practice mode. The component may be kept in the codebase but must not be rendered.
+
+**Reason for change:** Customer changed their mind — deliberate reversal of the original agreement.
+
+---
+
+## [2026-06-04] — Amendment: Remove ToneHighlight from Trắc nghiệm only
+
+**Amends:** Section "[2026-06-03] — Tone-4 Highlighting & Practice Coaching" (AC-1, AC-3) — scope narrowed for Trắc nghiệm
+
+**Specific change:** Original agreement applied tone-4 highlighting to all practice mode screens. Customer now wants tone-4 highlighting removed from Trắc nghiệm (quiz/multiple-choice) mode only. Highlighting remains in Flashcard and Hội thoại.
+
+**New agreement:**
+- Tone-4 highlighting (`ToneHighlight` component) is **removed** from Trắc nghiệm
+- Tone-4 highlighting **remains** in Flashcard and Hội thoại — no change to those screens
+
+**Reason for change:** Customer wants the quiz experience to be cleaner and not give tone hints during self-testing.
+
+---
+
+## [2026-06-04] — Hội thoại Answer Diff
+
+**Status:** Agreement reached
+
+### Problem
+When practicing Hội thoại (dialogue), after the user taps "Xem đáp án", the app shows the expected KB answer and the user's input side by side but gives no signal about whether they match or where they differ. The user must manually compare characters — this is slow and error-prone for Chinese characters.
+
+### Agreed scope
+- After tapping "Xem đáp án" in a user-turn line, compare the user's input against the KB expected answer (`getDisplayChar(line, scriptMode)`) at the **character level**
+- **Exact match:** display a green "Chính xác! ✓" banner instead of the diff view
+- **Mismatch:** show character-level diff using LCS (Longest Common Subsequence):
+  - In the user's input row: characters that do not match (wrong or extra) are shown in **red**
+  - In the KB answer row: characters that are missing from the user's input are shown in **green**; matched characters shown normally
+- **Empty input:** no diff shown, no match banner — just show the KB answer as before
+- Both the user input row and the KB answer row are always shown when `showAnswer = true` and input is non-empty
+
+### Out of scope (agreed)
+- No diff in Flashcard or Trắc nghiệm modes
+- No pinyin-level diff — character level only
+- No whitespace or punctuation normalization (exact character comparison)
+- No changes to the "Tiếp →" / "Hoàn thành hội thoại" flow
+
+### Acceptance criteria (draft)
+- AC-1: When user's input exactly matches the KB answer, a green "Chính xác! ✓" banner is shown instead of the diff
+- AC-2: When input differs from KB answer, the user's input is rendered character-by-character with mismatched/extra characters highlighted in red
+- AC-3: When input differs from KB answer, the KB answer is rendered character-by-character with characters missing from the user's input highlighted in green; matched characters shown normally
+- AC-4: When input is empty and user taps "Xem đáp án", no diff and no match banner are shown — KB answer block renders as before
+- AC-5: Diff is computed at character level using LCS algorithm
+
+### Technical notes
+- Expected answer: `getDisplayChar(line, scriptMode)` — always a single string, no ambiguity
+- Trigger: `handleCheck()` / "Xem đáp án" button in `DialogueSession.tsx`
+- LCS helper function added to `lib/utils.ts`; diff rendering logic in `DialogueSession.tsx`
+- Only `DialogueSession.tsx` and `lib/utils.ts` need changes
+
+### Design notes
+- Match banner: green background, white text, "Chính xác! ✓", full width, rendered above the "Tiếp →" button
+- Diff characters: inline `<span>` elements; red = `text-red-600` (wrong/extra in user input), green = `text-green-600` (missing in KB answer)
+- KB answer block and user input block retain existing visual styling
+
+### Open questions
+- (none)
