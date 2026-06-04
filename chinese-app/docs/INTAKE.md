@@ -108,3 +108,43 @@ The post-session completion screen is a dead end requiring manual action to cont
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-04] — Lesson Completion Badge on Từ vựng Page
+
+**Status:** Agreement reached
+
+### Problem
+The Dashboard is rarely visited, so the existing lesson completion badge is rarely seen. After finishing a practice session the user is returned to the Từ vựng page with no visual signal of which lessons are done or which to practice next.
+
+### Agreed scope
+- Show the same green ✓ badge (absolute circle, top-right corner) on each "Bài N" filter button and on the "Tất cả" button on the Từ vựng page
+- "Bài N" badge: all cards in that lesson have SRS interval ≥ 1 day and no card is overdue by more than 7 days
+- "Tất cả" badge: all cards across all lessons meet the same criteria (pass all card IDs to the same `isLessonComplete` function)
+- Badge updates dynamically from localStorage — no page reload needed
+- Extract `isLessonComplete` from `components/Dashboard.tsx` to `lib/utils.ts` so both Dashboard and Từ vựng share the same logic
+
+### Out of scope (agreed)
+- No badge on Mẫu câu or Hội thoại pages
+- No change to Dashboard badge (already implemented and working)
+- No change to completion logic or SRS rules
+
+### Acceptance criteria (draft)
+- AC-1: Each "Bài N" button on the Từ vựng page shows a green ✓ badge when all cards in that lesson have SRS interval ≥ 1 day and none are overdue by more than 7 days
+- AC-2: The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
+- AC-3: A badge disappears when any relevant card becomes overdue by more than 7 days
+- AC-4: Badges appear immediately after a session completes — no page reload required
+
+### Technical notes
+- `isLessonComplete(cardIds, cards)` already exists in Dashboard — extract to `lib/utils.ts`
+- `TuVungClient` already imports `useProgressStore`; just needs `cards` destructured
+- For "Tất cả": pass `allCards.map(c => c.id)` to `isLessonComplete`
+- P8 applies: all hooks declared before any conditional returns
+
+### Design notes
+- Badge: identical to Dashboard — `absolute -top-1.5 -right-1.5 bg-green-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold`
+- Each filter button needs `relative` positioning to anchor the badge
+
+### Open questions
+- (none)
