@@ -89,6 +89,17 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ## Pending Features (Backlog)
 
+### PF-8: Lesson Completion Badge on Từ vựng Page
+**Priority:** High
+**Description:** Show the same green ✓ badge that already appears on Dashboard lesson cards on the lesson filter buttons ("Tất cả" and "Bài N") of the Từ vựng page, so the user can see completion status without navigating away.
+**Acceptance criteria:**
+- AC-1: Each "Bài N" button shows a green ✓ badge when all cards in that lesson have SRS interval ≥ 1 day and none are overdue by more than 7 days
+- AC-2: The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
+- AC-3: A badge disappears when any relevant card becomes overdue by more than 7 days
+- AC-4: Badges appear immediately after a session completes — no page reload required
+
+---
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
