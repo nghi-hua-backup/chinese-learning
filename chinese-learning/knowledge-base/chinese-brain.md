@@ -447,7 +447,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 怎么 | 怎麼 | /zěnme/ | — | Đại từ | làm sao, như thế nào |
 | — | 跟 | /gēn/ | Cân | Giới từ | với, cùng |
 | — | 一起 | /yìqǐ/ | — | PT | cùng nhau |
-| 钟 | 鐘 | /zhōng/ | Chung | DT | giờ, đồng hồ |
+| 钟 | 鍾 | /zhōng/ | Chung | DT | giờ, đồng hồ |
 | 一下儿 | 一下兒 | /yíxiàr/ | — | Lượng từ | một chút, một lát |
 | 留学 | 留學 | /liúxué/ | Lưu Học | ĐT | du học |
 | 见面 | 見面 | /jiànmiàn/ | Kiến Diện | ĐT ly hợp | gặp mặt |
@@ -530,7 +530,7 @@ Ví dụ:
 **点半 — Cách nói "rưỡi" (30 phút):** [Buổi] + [Số giờ] + 点半
 - 上午八点半 /shàngwǔ bā diǎn bàn/ — 8 giờ rưỡi sáng
 
-**钟 / 鐘 — Giờ tròn:** Thêm 钟 sau giờ để nhấn mạnh đúng giờ tròn (không phút).
+**钟 / 鍾 — Giờ tròn:** Thêm 钟 sau giờ để nhấn mạnh đúng giờ tròn (không phút).
 - 1h–10h: thường dùng 钟. 11h–12h: thường không cần 钟.
 - 上午九点钟 /shàngwǔ jiǔ diǎnzhōng/ — 9 giờ đúng sáng
 
@@ -793,7 +793,7 @@ Ví dụ:
 - 上课 (vào lớp) → 上汉语课 /shàng hànyǔ kè/ — học tiết tiếng Trung
 - 见面 (gặp mặt) → 见一面 /jiàn yī miàn/ — gặp nhau một lần
 - 我们上午上汉语课。/ 我們上午上漢語課。 /wǒmen shàngwǔ shàng hànyǔ kè/ — Buổi sáng chúng tôi học tiết tiếng Trung.
-- 明天上午 9 点钟我们在你家见面。/ 明天上午 9 點鐘我們在你家見面。 /míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn/ — 9 giờ sáng mai chúng ta gặp nhau ở nhà bạn.
+- 明天上午 9 点钟我们在你家见面。/ 明天上午 9 點鍾我們在你家見面。 /míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn/ — 9 giờ sáng mai chúng ta gặp nhau ở nhà bạn.
 
 ---
 
