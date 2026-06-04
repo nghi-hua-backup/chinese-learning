@@ -32,6 +32,13 @@ This file is the authoritative record of all features, requirements, and scope d
 - Upcoming review list with character in active script mode
 - **Reset progress:** red button at page bottom; two-step confirmation; calls `resetAll()` on Zustand store (clears all card history, streak, last-study date)
 
+### FR-8: Lesson Completion Badge on Từ vựng Page
+- Each "Bài N" filter button on the Từ vựng page shows a green ✓ badge when all cards in that lesson have `reps > 0` and none are overdue by more than 7 days
+- The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
+- Badge disappears when any relevant card becomes overdue by more than 7 days
+- Badge state updates dynamically from Zustand/localStorage SRS data — no page reload required
+- `isLessonComplete` extracted from `Dashboard.tsx` to `lib/utils.ts` and shared by both Dashboard and Từ vựng page
+
 ### FR-7: Session Completion UX + Lesson Progress Flag + Quiz Loading State
 - After the last card in a practice session, the completion screen is skipped; the user returns to the setup screen
 - A fly-out toast appears top-right with "Hoàn thành phiên học! Đã ôn X từ." — visible for 3 seconds then fades; present in both Trắc nghiệm and Luyện viết modes
@@ -88,27 +95,6 @@ This file is the authoritative record of all features, requirements, and scope d
 ---
 
 ## Pending Features (Backlog)
-
-### PF-8: Lesson Completion Badge on Từ vựng Page
-**Priority:** High
-**Description:** Show the same green ✓ badge that already appears on Dashboard lesson cards on the lesson filter buttons ("Tất cả" and "Bài N") of the Từ vựng page, so the user can see completion status without navigating away.
-**Acceptance criteria:**
-- AC-1: Each "Bài N" button shows a green ✓ badge when all cards in that lesson have SRS interval ≥ 1 day and none are overdue by more than 7 days
-- AC-2: The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
-- AC-3: A badge disappears when any relevant card becomes overdue by more than 7 days
-- AC-4: Badges appear immediately after a session completes — no page reload required
-
-**Tech approach (Tech Lead):**
-- Components affected: `lib/utils.ts` (new export), `components/Dashboard.tsx` (import refactor), `app/tu-vung/TuVungClient.tsx` (badge render)
-- Implementation strategy:
-  1. Extract `isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>): boolean` from `Dashboard.tsx` into `lib/utils.ts` — existing logic: `reps > 0` AND not overdue > 7 days (do NOT use `scheduled_days >= 1`; see TECHNICAL.md pitfall on FSRS learning state)
-  2. Update `Dashboard.tsx` to import from `lib/utils.ts`
-  3. In `TuVungClient.tsx`: destructure `cards` from the `useProgressStore()` call already at the top; build a `lessonCardIds` map via `useMemo`; call `isLessonComplete` for each lesson button and for "Tất cả" (passing `allCards.map(c => c.id)`)
-  4. Wrap each filter button in `relative`; render badge span identically to Dashboard
-- Risks / pitfalls: All `useMemo` and `useProgressStore` destructuring must remain before the early `return` at line 39 of `TuVungClient.tsx` (P8 — hooks before conditional returns)
-- P-constraints to watch: P8 (hooks order), P1 (no server changes needed)
-
----
 
 ### PF-1: Audio Pronunciation
 **Priority:** Medium

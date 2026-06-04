@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { VocabCard, PracticeMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
+import { isLessonComplete } from "@/lib/utils";
 import VocabSession from "@/components/VocabSession";
 import Toast from "@/components/Toast";
 
@@ -22,7 +23,7 @@ export default function TuVungClient({ allCards }: Props) {
   const autostart = searchParams.get("autostart") === "1";
   const [sessionStarted, setSessionStarted] = useState(autostart);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const { scriptMode, setScriptMode } = useProgressStore();
+  const { scriptMode, setScriptMode, cards } = useProgressStore();
 
   function handleSessionComplete(count: number) {
     setSessionStarted(false);
@@ -35,6 +36,17 @@ export default function TuVungClient({ allCards }: Props) {
   }, [selectedLesson, allCards]);
 
   const lessons = useMemo(() => Array.from(new Set(allCards.map((c) => c.lesson))).sort((a, b) => a - b), [allCards]);
+
+  const lessonCardIds = useMemo(() => {
+    const map: Record<number, string[]> = {};
+    for (const c of allCards) {
+      if (!map[c.lesson]) map[c.lesson] = [];
+      map[c.lesson].push(c.id);
+    }
+    return map;
+  }, [allCards]);
+
+  const allCardIds = useMemo(() => allCards.map((c) => c.id), [allCards]);
 
   if (sessionStarted) {
     return (
@@ -65,16 +77,22 @@ export default function TuVungClient({ allCards }: Props) {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedLesson(0)}
-            className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${selectedLesson === 0 ? "bg-indigo-600 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"}`}
+            className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all ${selectedLesson === 0 ? "bg-indigo-600 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"}`}
           >
+            {isLessonComplete(allCardIds, cards) && (
+              <span className="absolute -top-1.5 -right-1.5 bg-green-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">✓</span>
+            )}
             Tất cả
           </button>
           {lessons.map((l) => (
             <button
               key={l}
               onClick={() => setSelectedLesson(l)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${selectedLesson === l ? "bg-indigo-600 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"}`}
+              className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all ${selectedLesson === l ? "bg-indigo-600 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"}`}
             >
+              {isLessonComplete(lessonCardIds[l] ?? [], cards) && (
+                <span className="absolute -top-1.5 -right-1.5 bg-green-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">✓</span>
+              )}
               Bài {l}
             </button>
           ))}

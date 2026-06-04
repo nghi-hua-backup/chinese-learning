@@ -18,6 +18,14 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.4.0] - 2026-06-04
+
+### Added
+- Lesson completion badges (green ✓) on the "Tất cả" and "Bài N" filter buttons on the Từ vựng page — same SRS-based logic as the Dashboard, updated dynamically from localStorage with no reload needed
+- Extracted `isLessonComplete` from `Dashboard.tsx` to `lib/utils.ts` so both Dashboard and Từ vựng share the same implementation
+
+---
+
 ## [1.3.1] - 2026-06-04
 
 ### Fixed

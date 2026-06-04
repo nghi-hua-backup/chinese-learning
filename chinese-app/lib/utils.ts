@@ -1,4 +1,16 @@
-import { VocabCard, ScriptMode } from "./types";
+import { VocabCard, ScriptMode, CardProgress } from "./types";
+
+export function isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>): boolean {
+  if (cardIds.length === 0) return false;
+  const now = Date.now();
+  const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
+  return cardIds.every((id) => {
+    const c = cards[id];
+    if (!c || c.reps === 0) return false;
+    const overdueMs = now - new Date(c.due).getTime();
+    return overdueMs <= sevenDaysMs;
+  });
+}
 
 export function getDisplayChar(
   card: { simplified: string; traditional: string },

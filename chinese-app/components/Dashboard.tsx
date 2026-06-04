@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useProgressStore } from "@/lib/progress-store";
-import { CardProgress } from "@/lib/types";
+import { isLessonComplete } from "@/lib/utils";
 
 interface Props {
   vocabCount: number;
@@ -11,18 +11,6 @@ interface Props {
   allPhraseIds: string[];
   lessons: number[];
   lessonCardIds: Record<number, string[]>;
-}
-
-function isLessonComplete(cardIds: string[], cards: Record<string, CardProgress>): boolean {
-  if (cardIds.length === 0) return false;
-  const now = Date.now();
-  const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
-  return cardIds.every((id) => {
-    const c = cards[id];
-    if (!c || c.reps === 0) return false;
-    const overdueMs = now - new Date(c.due).getTime();
-    return overdueMs <= sevenDaysMs;
-  });
 }
 
 export default function Dashboard({ vocabCount, phraseCount, allVocabIds, allPhraseIds, lessons, lessonCardIds }: Props) {
