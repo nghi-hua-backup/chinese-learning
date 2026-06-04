@@ -192,6 +192,26 @@ Static Vietnamese coaching panel, always visible in all practice screens:
 
 ---
 
+## Toast Notification Pattern
+
+A reusable `components/Toast.tsx` client component handles auto-dismissing notifications:
+- Props: `message: string`, `onDismiss: () => void`
+- Positioned `fixed top-4 right-4 z-50` — overlays all content
+- Auto-dismisses via `useEffect` + `setTimeout(3000 ms)`; cleanup on unmount
+- Caller controls visibility via conditional render (`toastMessage !== null`) and clears state in `onDismiss`
+- Toast state must be declared before any early `return` in the parent component (P8)
+
+## Lesson Completion Badge
+
+Computed entirely from Zustand SRS store at render time — no extra localStorage keys:
+- `app/page.tsx` groups vocab card IDs by lesson number into `lessonCardIds: Record<number, string[]>` and passes to `Dashboard`
+- `Dashboard.tsx` reads `cards: Record<string, CardProgress>` from `useProgressStore()`
+- Badge shows when: every card in the lesson has `reps > 0` AND `scheduled_days >= 1` AND `new Date(due) - now < 7 days` (not overdue by more than 7 days)
+- `cards[id] === undefined` means card never reviewed → treat as not completed
+- Rendered as a small absolute-positioned green ✓ on the top-right corner of each lesson card (requires `relative` on the Link container)
+
+---
+
 ## Known Pitfalls
 
 | Pitfall | Detail |

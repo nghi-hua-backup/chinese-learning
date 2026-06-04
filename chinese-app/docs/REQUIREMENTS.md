@@ -103,6 +103,12 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-B3: Badge state is computed dynamically from localStorage SRS data — no full page reload required
 - AC-C1: In Trắc nghiệm mode, a spinner is shown in the question area while the next question is being prepared; the previous question content is not visible during this transition
 
+**Tech approach (Tech Lead):**
+- Components affected: `VocabSession.tsx` (remove completion screen + `sessionDone` state, add `onSessionComplete` callback prop, add inline spinner during trac-nghiem transition), `TuVungClient.tsx` (add `toastMessage` state + `handleSessionComplete`, render Toast), `Dashboard.tsx` (add `lessonCardIds` prop, read `cards` from store, compute + render badge), `app/page.tsx` (compute and pass `lessonCardIds`). New file: `components/Toast.tsx`.
+- Implementation strategy: (A) `onSessionComplete(count)` callback threaded TuVungClient → VocabSession; toast state lives in TuVungClient above the `if (sessionStarted)` guard. (B) Badge reads `cards` directly from Zustand store (already in state, no new store fields); per-lesson card IDs passed from server component at build time. Badge condition: all cards have `reps > 0` AND `scheduled_days >= 1` AND none overdue by > 7 days. (C) `mode === "trac-nghiem" && answered` is the 1400 ms gap between MultipleChoice unmounting and `advance()` — render a spinner div in that window.
+- Risks / pitfalls: P8 — `toastMessage` useState must be declared before `if (sessionStarted)` early return in TuVungClient; `cards[id]` is undefined for never-reviewed cards — badge logic must treat undefined as "not completed".
+- P-constraints to watch: P1 (static export — no server code in components), P2 (localStorage only), P8 (hooks before all conditional returns).
+
 ---
 
 ## Out of Scope (Unless Explicitly Added by User)
