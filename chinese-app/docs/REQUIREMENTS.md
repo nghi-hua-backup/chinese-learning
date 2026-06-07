@@ -43,7 +43,7 @@ This file is the authoritative record of all features, requirements, and scope d
 - Recognition session: one random example sentence per pattern card; 4 MCQ choices (1 correct grammar pattern name + 3 random distractors from other patterns)
 - After picking: correct/wrong feedback banner + reveals correct pattern name and Vietnamese explanation
 - Correct → SRS rating Good (3); wrong → Again (1); 1s feedback delay, then next card
-- All 37 patterns practiced together (no lesson filter); SRS tracks per pattern using existing `cards` map with `grammar-<slug>` ID prefix (no namespace collision with vocab)
+- All 32 patterns practiced together (no lesson filter); SRS tracks per pattern using existing `cards` map with `grammar-<slug>` ID prefix (no namespace collision with vocab)
 - Session completion triggers existing "Hoàn thành phiên học!" toast + auto-redirect UX
 - Example sentences respect user's current script mode (simplified/traditional) via `getDisplayChar`
 

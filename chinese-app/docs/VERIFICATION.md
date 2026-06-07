@@ -65,7 +65,24 @@ A failure on any **BLOCKER** item = do not consider the change complete. Hand of
 ### Navigation
 | # | Flow | Pass condition |
 |---|---|---|
-| 19 | All 4 nav bar links | Each link navigates correctly; active tab highlighted; no 404 |
+| 19 | All 6 nav bar links | Each link navigates correctly; active tab highlighted; no 404. Links: Tổng quan, Từ vựng, Mẫu câu, Hội thoại, **Ngữ pháp**, Tiến độ |
+
+### Grammar Recognition Practice — `/ngu-phap` (FR-10)
+| # | Flow | Pass condition |
+|---|---|---|
+| 49 | Ngữ pháp tab in nav | "Ngữ pháp" with 📝 icon appears in bottom nav between Hội thoại and Tiến độ; navigates to `/ngu-phap/` without 404 |
+| 50 | Mode selection screen loads | Page shows pattern count ("32 mẫu ngữ pháp"), due count, and "Nhận diện" button |
+| 51 | Nhận diện button enabled when due cards exist | Button is enabled (no opacity-50, cursor-not-allowed) and shows due count when grammar cards are due |
+| 52 | Nhận diện button disabled when nothing due | After completing all patterns for the day, button shows "Không có mẫu nào cần ôn hôm nay" and is disabled |
+| 53 | Recognition session — example card shown | Chinese sentence in active script + pinyin + Vietnamese meaning displayed in card; "Ngữ pháp nào?" label visible |
+| 54 | Recognition session — 4 MCQ choices | Exactly 4 choices visible; one is the correct pattern name; 3 are distractors from other patterns |
+| 55 | Correct answer — green feedback | Tapping the correct pattern name: button turns green, "✓ Chính xác!" feedback banner appears with pattern name + explanation |
+| 56 | Wrong answer — red/green feedback | Tapping a wrong choice: selected button turns red, correct button turns green, "✗ Sai rồi!" banner appears |
+| 57 | 1s delay then next card | After selection (correct or wrong), 1 second passes then card advances automatically; counter decrements |
+| 58 | Session completion toast | After last card, "Hoàn thành phiên học! Đã ôn N mẫu." toast appears top-right and screen returns to mode selection |
+| 59 | Script mode respected | Switching between Phồn thể/Giản thể on another page → returning to Ngữ pháp shows example sentence in selected script |
+| 60 | SRS progress persists | After completing a session, grammar patterns have due dates in the future; next visit shows reduced due count |
+| 61 | Quay lại button exits session | Tapping "← Quay lại" during a session returns to mode selection without completing the session |
 
 ### Session Completion + Lesson Badge + Quiz Spinner (FR-7)
 | # | Flow | Pass condition |
@@ -152,3 +169,4 @@ Append an entry after each QA session.
 | 2026-06-04 | QA (Claude) | Fix 1.3.1: lesson badge `scheduled_days` bug — P1 (build ✓), P3 (live URL ✓), BLOCKER 1 (home page ✓). Root cause: FSRS `scheduled_days = 0` for first-reviewed (Learning state) cards; `scheduled_days >= 1` check removed. Item 35 in VERIFICATION.md updated to reflect corrected badge criterion. Items 31, 35–36 require manual iPad verification on live site after deploy. | PASS (static checks). Manual: verify ✓ badge appears on home screen after completing first practice session for a lesson. |
 | 2026-06-04 | QA (Claude) | FR-8 (1.4.0): lesson completion badges on Từ vựng page — P1 (build ✓ from Phase 3), P3 (live URL ✓ via WebFetch), BLOCKER 1 (home page content correct ✓). `/tu-vung` page loads (shows "Đang tải..." as expected for client-rendered app). Items 38–43 (FR-8 badge flows) require JS execution in live browser — cannot be verified via WebFetch. BLOCKER items 2–19 carry forward from prior sessions (no regressions in static-verifiable flows). Added test scenarios 38–43 to VERIFICATION.md. | PASS (static checks). Manual: verify ✓ badge appears on Bài N buttons and Tất cả button on the Từ vựng setup screen after completing a practice session. |
 | 2026-06-04 | QA (Claude) | FR-9 (1.5.0): tone-4 cleanup + Hội thoại answer diff — P1 (build ✓ from Phase 3, all 8 pages generated), P2 (GitHub Actions deploy ✓ — commit 6658798, 58s), P3 (live URL ✓ — home page loads with all content). Code-level AC verification: ToneCoachingPanel absent from all 4 practice components (grep confirms 0 occurrences) ✓; ToneHighlight absent from MultipleChoice.tsx ✓; ToneHighlight retained in VocabSession, PhraseSession, DialogueSession ✓; computeLCSDiff in lib/utils.ts ✓; isExactMatch/diffResult derived consts guard `input.length > 0` (AC-4 empty-input path) ✓; "Chính xác! ✓" banner (AC-1) ✓; red inputChars / green expectedChars (AC-2, AC-3) ✓; LCS DP+backtrack algorithm (AC-5) ✓. Updated stale items 22–25 (coaching panel now "absent" not "visible"). Added test scenarios 44–48. Items 44–48 require JS execution in live browser — cannot be verified via WebFetch. | PASS (static + code checks). Manual: verify items 44–48 on live iPad Safari. |
+| 2026-06-07 | QA (Claude) | FR-10 (1.6.0): Grammar Recognition Practice — P1 (build ✓ from Phase 3, 9 static pages generated incl. /ngu-phap/), P2 (GitHub Actions deploy ✓ — commit 838865e, status: success), P3 (live URL ✓ — /ngu-phap/ loads, shows "32 mẫu ngữ pháp · 32 cần ôn hôm nay"). BLOCKER-19 updated: all 6 nav links confirmed (added Ngữ pháp between Hội thoại and Tiến độ) ✓. Code-level AC verification: "Ngữ pháp" link in NavBar ✓; getAllGrammar() called in page.tsx ✓; getDueCards/dueCount in NguPhapClient ✓; "Nhận diện" button with disabled guard ✓; random example selection (Math.random) ✓; 4 MCQ choices (1 correct + 3 distractors, shuffled) ✓; reviewCard(id, isCorrect ? 3 : 1) ✓; setTimeout 1000ms ✓; onSessionComplete toast "Hoàn thành phiên học! Đã ôn N mẫu." ✓; getDisplayChar(currentExample, scriptMode) — no direct .simplified/.traditional access ✓; all hooks before early return (P8) ✓. Docs fix: corrected pattern count from "37" to "32" in CHANGELOG.md + REQUIREMENTS.md (parser filters by ---+Cấu trúc: blocks; 38 ### headers but only 32 pass filter). Added test scenarios 49–61. Items 50–61 require JS execution in live browser. | PASS (static + code checks). Manual: verify items 49–61 on live iPad Safari. |

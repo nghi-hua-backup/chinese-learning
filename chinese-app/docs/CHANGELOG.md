@@ -22,7 +22,7 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ### Added
 - Grammar Recognition Practice (FR-10): new "Ngữ pháp" tab in main navigation
-- `app/ngu-phap/page.tsx` — server component calling `getAllGrammar()` for all 37 patterns
+- `app/ngu-phap/page.tsx` — server component calling `getAllGrammar()` for all 32 patterns
 - `app/ngu-phap/NguPhapClient.tsx` — mode selection screen with "Nhận diện" mode and due-count stat
 - `components/GrammarSession.tsx` — recognition session: due-pattern queue, random example sentence, 4 MCQ choices (1 correct + 3 random distractors), correct/wrong feedback with pattern name + Vietnamese explanation, SRS auto-rating (correct = Good/3, wrong = Again/1), 1s delay between cards, toast + redirect on completion
 - Grammar SRS coexists in the existing `cards` map using `grammar-<slug>` ID prefix — no store changes required
