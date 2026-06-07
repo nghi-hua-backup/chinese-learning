@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.5.2] - 2026-06-07
+
+### Changed
+- KB: Bài 9 amendment — 17 câu thông dụng (PHẦN 3) thêm vào § 6 chinese-brain.md: 1 vào Chào hỏi, 4 vào Câu xã giao khác, 4 nhóm mới Mua bán, 8 nhóm mới Câu lệnh & Biểu đạt ngắn
+
+---
+
 ## [1.5.1] - 2026-06-07
 
 ### Changed
