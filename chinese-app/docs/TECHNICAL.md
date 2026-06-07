@@ -219,6 +219,24 @@ Computed entirely from Zustand SRS store at render time — no extra localStorag
 
 ---
 
+## Grammar Practice (FR-10 / PF-2)
+
+### Route and components
+- `app/ngu-phap/page.tsx` — server component; calls `getAllGrammar()` and passes `GrammarPattern[]` to client
+- `app/ngu-phap/NguPhapClient.tsx` — mode selection screen; shows "Nhận diện" as the only mode + due-count stat
+- `components/GrammarSession.tsx` — recognition session; manages due-pattern queue, card display, SRS rating
+
+### SRS namespace
+Grammar pattern IDs from `parseGrammar()` use the format `grammar-<slug>` (e.g., `grammar-太-hdt-了`). This prefix is distinct from all vocab card IDs (format: differs by lesson/word structure), so grammar progress safely coexists in the same `cards` map of `useProgressStore` with zero collision. No new store fields are needed — `reviewCard`, `getOrCreate`, and `getDueCards` all work with grammar IDs unchanged.
+
+### Recognition card mechanics
+Each session turn: pick one random example from `pattern.examples` → display `getDisplayChar(example, scriptMode)` + `example.pinyin` → generate 3 random distractors from the other 36 pattern names → show 4 shuffled choices. On pick: correct → `reviewCard(pattern.id, 3)` (Good), wrong → `reviewCard(pattern.id, 1)` (Again) → 1s feedback delay → next card. Empty queue → Toast + navigate back.
+
+### Script mode for grammar examples
+`GrammarExample` carries `simplified` and `traditional` fields. `getDisplayChar(example, scriptMode)` works directly (same shape as `VocabCard`).
+
+---
+
 ## Known Pitfalls
 
 | Pitfall | Detail |

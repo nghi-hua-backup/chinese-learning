@@ -114,6 +114,12 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-7: Session completion triggers the existing "Hoàn thành phiên học!" toast + auto-redirect UX
 - AC-8: Example sentences in grammar cards respect the user's current script mode (simplified/traditional)
 
+**Tech approach (Tech Lead):**
+- Components affected: `NavBar.tsx` (add link), new `app/ngu-phap/page.tsx` (server), new `app/ngu-phap/NguPhapClient.tsx` (mode selection), new `components/GrammarSession.tsx` (recognition session)
+- Implementation strategy: Grammar IDs from parser are already prefixed `grammar-<slug>` (e.g., `grammar-太-hdt-了`), so they naturally coexist in the existing `cards` map of `progress-store.ts` without namespace collision — no store changes required. `getAllGrammar()` from `lib/data.ts` already parses all 37 patterns. `getDisplayChar()` accepts any object with `simplified`/`traditional` fields, so `GrammarExample` is compatible. `GrammarSession` uses the existing `reviewCard(patternId, rating)` and `getDueCards(patternIds)` from `useProgressStore`. Each card picks one random example from `pattern.examples`, generates 3 random distractors from other pattern names, and auto-rates correct=Good(3) / wrong=Again(1) after a 1s feedback delay. Session completion reuses the existing `Toast.tsx` + navigate-back pattern from `VocabSession`.
+- Risks / pitfalls: P8 — all hooks in `GrammarSession` must appear before any early return (empty-queue guard). Distractor generation must handle edge cases: if fewer than 3 other patterns exist, use all available others (not an issue with 37 patterns, but defensive coding required).
+- P-constraints to watch: P1 (static export — grammar data parsed at build time in server component only), P7 (no runtime fetch), P8 (hooks before early returns), P4 (all UI labels in Vietnamese)
+
 ---
 
 ### PF-1: Audio Pronunciation
