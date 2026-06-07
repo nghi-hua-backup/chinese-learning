@@ -121,6 +121,7 @@ ScriptMode      "traditional" | "simplified"
 | `/tu-vung` | `app/tu-vung/page.tsx` | `app/tu-vung/TuVungClient.tsx` | Vocabulary practice |
 | `/mau-cau` | `app/mau-cau/page.tsx` | `app/mau-cau/MauCauClient.tsx` | Phrases + practice sentences |
 | `/hoi-thoai` | `app/hoi-thoai/page.tsx` | `app/hoi-thoai/HoiThoaiClient.tsx` | Dialogue practice |
+| `/ngu-phap` | `app/ngu-phap/page.tsx` | `app/ngu-phap/NguPhapClient.tsx` | Grammar recognition practice |
 | `/tien-do` | `app/tien-do/page.tsx` | `app/tien-do/TienDoClient.tsx` | Progress overview |
 
 Pattern: server component parses markdown + passes data as props → client component handles interaction, SRS, UI state.
@@ -139,6 +140,7 @@ Pattern: server component parses markdown + passes data as props → client comp
 | `SRSRating.tsx` | 4-button rating bar (Lại/Khó/Tốt/Dễ) | `onRate: (rating: ReviewRating) => void` |
 | `PhraseSession.tsx` | Phrase/sentence practice session; tracks `answerCorrect` state to display green/red feedback banner after `WritingInput` unmounts | `cards`, `scriptMode` |
 | `DialogueSession.tsx` | Dialogue line-by-line practice | `dialogue`, `scriptMode`, `onComplete` |
+| `GrammarSession.tsx` | Grammar recognition session — due-pattern queue, MCQ, SRS rating | `patterns`, `scriptMode`, `onSessionComplete` |
 
 ---
 

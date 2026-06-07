@@ -37,6 +37,16 @@ This file is the authoritative record of all features, requirements, and scope d
 - `ToneHighlight` removed from Trắc nghiệm (quiz) mode; retained in Luyện viết (Flashcard) and Hội thoại
 - After tapping "Xem đáp án" in Hội thoại: exact input match → green "Chính xác! ✓" banner; mismatch → LCS character-level diff with wrong/extra chars in red (user input) and missing chars in green (KB answer); empty input → KB answer shown as before with no diff
 
+### FR-10: Grammar Recognition Practice (`/ngu-phap`)
+- New "Ngữ pháp" tab in the main navigation alongside existing tabs
+- Mode selection screen with "Nhận diện" as the only available mode + due-count stat
+- Recognition session: one random example sentence per pattern card; 4 MCQ choices (1 correct grammar pattern name + 3 random distractors from other patterns)
+- After picking: correct/wrong feedback banner + reveals correct pattern name and Vietnamese explanation
+- Correct → SRS rating Good (3); wrong → Again (1); 1s feedback delay, then next card
+- All 37 patterns practiced together (no lesson filter); SRS tracks per pattern using existing `cards` map with `grammar-<slug>` ID prefix (no namespace collision with vocab)
+- Session completion triggers existing "Hoàn thành phiên học!" toast + auto-redirect UX
+- Example sentences respect user's current script mode (simplified/traditional) via `getDisplayChar`
+
 ### FR-8: Lesson Completion Badge on Từ vựng Page
 - Each "Bài N" filter button on the Từ vựng page shows a green ✓ badge when all cards in that lesson have `reps > 0` and none are overdue by more than 7 days
 - The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
@@ -100,27 +110,6 @@ This file is the authoritative record of all features, requirements, and scope d
 ---
 
 ## Pending Features (Backlog)
-
-### PF-2: Grammar Recognition Practice (Ngữ pháp Tab v1)
-**Priority:** High
-**Description:** A new "Ngữ pháp" tab in the main navigation with a single "Nhận diện" (Recognition) practice mode. The app shows a Chinese example sentence from § 5 of `chinese-brain.md` and the user picks the correct grammar pattern name from 4 multiple-choice options (1 correct + 3 random distractors). SRS (FSRS) tracks progress per grammar pattern in a separate localStorage namespace from vocabulary. Future versions will add fill-in-the-blank and translation drill modes.
-**Acceptance criteria:**
-- AC-1: "Ngữ pháp" tab appears in the main navigation alongside existing tabs
-- AC-2: Ngữ pháp tab shows a mode selection screen with "Nhận diện" as the only available mode
-- AC-3: Recognition session surfaces grammar pattern cards ordered by SRS schedule (due cards first), drawing from all 37 patterns with no lesson filter
-- AC-4: Each card shows one Chinese example sentence and 4 multiple-choice options for the grammar pattern name (1 correct + 3 random distractors)
-- AC-5: After picking, the app shows correct/wrong feedback and reveals the correct pattern name and its Vietnamese explanation
-- AC-6: Grammar SRS progress is tracked per pattern in localStorage under a separate key namespace from vocabulary (e.g., `grammar:<pattern-slug>`), using the same FSRS mechanism
-- AC-7: Session completion triggers the existing "Hoàn thành phiên học!" toast + auto-redirect UX
-- AC-8: Example sentences in grammar cards respect the user's current script mode (simplified/traditional)
-
-**Tech approach (Tech Lead):**
-- Components affected: `NavBar.tsx` (add link), new `app/ngu-phap/page.tsx` (server), new `app/ngu-phap/NguPhapClient.tsx` (mode selection), new `components/GrammarSession.tsx` (recognition session)
-- Implementation strategy: Grammar IDs from parser are already prefixed `grammar-<slug>` (e.g., `grammar-太-hdt-了`), so they naturally coexist in the existing `cards` map of `progress-store.ts` without namespace collision — no store changes required. `getAllGrammar()` from `lib/data.ts` already parses all 37 patterns. `getDisplayChar()` accepts any object with `simplified`/`traditional` fields, so `GrammarExample` is compatible. `GrammarSession` uses the existing `reviewCard(patternId, rating)` and `getDueCards(patternIds)` from `useProgressStore`. Each card picks one random example from `pattern.examples`, generates 3 random distractors from other pattern names, and auto-rates correct=Good(3) / wrong=Again(1) after a 1s feedback delay. Session completion reuses the existing `Toast.tsx` + navigate-back pattern from `VocabSession`.
-- Risks / pitfalls: P8 — all hooks in `GrammarSession` must appear before any early return (empty-queue guard). Distractor generation must handle edge cases: if fewer than 3 other patterns exist, use all available others (not an issue with 37 patterns, but defensive coding required).
-- P-constraints to watch: P1 (static export — grammar data parsed at build time in server component only), P7 (no runtime fetch), P8 (hooks before early returns), P4 (all UI labels in Vietnamese)
-
----
 
 ### PF-1: Audio Pronunciation
 **Priority:** Medium

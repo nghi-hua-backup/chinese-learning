@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/tu-vung", label: "Từ vựng", emoji: "📖" },
   { href: "/mau-cau", label: "Mẫu câu", emoji: "💬" },
   { href: "/hoi-thoai", label: "Hội thoại", emoji: "🗣️" },
+  { href: "/ngu-phap", label: "Ngữ pháp", emoji: "📝" },
   { href: "/tien-do", label: "Tiến độ", emoji: "📊" },
 ];
 
