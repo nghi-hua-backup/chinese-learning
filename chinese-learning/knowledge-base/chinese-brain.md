@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 8 — Cuối tuần cậu thích làm gì? (2026-06-04)
+> **Cập nhật lần cuối:** Bài 9 — Táo bán như thế nào? (2026-06-07)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -292,6 +292,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 在 | zài | Tại | ĐT / Giới từ | ở (vị trí); đang (hành động) |
 | — | 再 | zài | Tái | PT | nữa, lại (lặp lại) |
 | 对 | 對 | duì | Đối | ĐT/HDT | đúng, chính xác |
+| 对 | 對 | duì | Đối | Giới từ | với, đối với |
 | 对不起 | 對不起 | duìbuqǐ | Đối Bất Khởi | — | xin lỗi |
 | 没关系 | 沒關係 | méi guānxi | — | — | không sao đâu |
 
@@ -452,6 +453,54 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 留学 | 留學 | /liúxué/ | Lưu Học | ĐT | du học |
 | 见面 | 見面 | /jiànmiàn/ | Kiến Diện | ĐT ly hợp | gặp mặt |
 
+### Bài 9 — Táo bán như thế nào?
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| 买 | 買 | /mǎi/ | Mãi | ĐT | mua |
+| 卖 | 賣 | /mài/ | Mại | ĐT | bán |
+| 买卖 | 買賣 | /mǎimài/ | Mãi Mại | DT | việc kinh doanh, buôn bán |
+| 读 | 讀 | /dú/ | Độc | ĐT | đọc, xem (văn bản) |
+| 苹果 | 蘋果 | /píngguǒ/ | Bình Quả | DT | trái táo, quả táo |
+| — | 平安 | /píng'ān/ | Bình An | DT/HDT | bình an (lời chúc) |
+| — | 水果 | /shuǐguǒ/ | Thủy Quả | DT | trái cây, hoa quả |
+| — | 少 | /shǎo/ | Thiểu | HDT | ít |
+| — | 多少 | /duōshao/ | — | Đại từ | bao nhiêu |
+| — | 一共 | /yígòng/ | — | PT | tổng cộng |
+| — | 西瓜 | /xīguā/ | Tây Qua | DT | dưa hấu |
+| — | 多 | /duō/ | Đa | HDT | nhiều |
+| 售货员 | 售貨員 | /shòuhuòyuán/ | — | DT | nhân viên bán hàng |
+| 点儿 | 點兒 | /yìdiǎnr/ | — | Lượng từ | một ít (không đếm được) |
+| 有点儿 | 有點兒 | /yǒudiǎnr/ | — | PT | có một chút (thường tiêu cực) |
+| — | 零 | /líng/ | Linh | Số từ | số 0 |
+| 数 | 數 | /shǔ/ | Số | ĐT | đếm |
+| 零钱 | 零錢 | /língqián/ | Linh Tiền | DT | tiền lẻ |
+| 换 | 換 | /huàn/ | Hoán | ĐT | đổi, thay, trao đổi |
+| 换钱 | 換錢 | /huànqián/ | — | ĐT | đổi tiền |
+| 还钱 | 還錢 | /huánqián/ | — | ĐT | trả tiền (khi giao dịch mua bán) |
+| 找钱 | 找錢 | /zhǎoqián/ | — | ĐT | trả tiền thừa |
+| — | 人民 | /rénmín/ | Nhân Dân | DT | người dân, nhân dân |
+| 港币 | 港幣 | /gǎngbì/ | — | DT | đô la Hồng Kông |
+| — | 日元 | /rìyuán/ | — | DT | đồng Yên Nhật |
+| 欧元 | 歐元 | /ōuyuán/ | — | DT | đồng Euro |
+| — | 越南盾 | /yuènándùn/ | — | DT | đồng Việt Nam |
+| — | 小姐 | /xiǎojiě/ | Tiểu Thư | DT | tiểu thư, chị ơi (gọi) |
+| — | 先生 | /xiānsheng/ | Tiên Sinh | DT | ngài, ông, thầy |
+| — | 美元 | /měiyuán/ | — | DT | đô la Mỹ |
+| 别人 | 別人 | /biérén/ | Biệt Nhân | DT | người khác |
+| 别的 | 別的 | /biéde/ | — | Đại từ | cái khác |
+| 给 | 給 | /gěi/ | Cấp | Giới từ/ĐT | đưa, cho |
+| 还 | 還 | /hái/ | — | PT | còn, vẫn |
+| 还 | 還 | /huán/ | Hoàn | ĐT | trả, trả lại |
+| 别 | 別 | /bié/ | Biệt | PT/HDT | (cái gì đó) khác, đừng (làm gì đó) |
+| — | 走 | /zǒu/ | Tẩu | ĐT | đi bộ, rời đi |
+| 一会儿 | 一會兒 | /yíhuìr/ | — | Lượng từ | một lúc, một chốc |
+| — | 块 | /kuài/ | — | DT | đồng (tiền TQ, khẩu ngữ; = 元) |
+| — | 毛 | /máo/ | — | DT | hào (khẩu ngữ; = 角 = 0.1 元) |
+| — | 元 | /yuán/ | Nguyên | DT | đồng (đơn vị chính thức) |
+| — | 角 | /jiǎo/ | Giác | DT | hào (văn viết; = 0.1 元) |
+| — | 分 | /fēn/ | Phân | DT | xu, cent (= 0.01 元) |
+
 ---
 
 ## 3. Số đếm & Thời gian
@@ -462,6 +511,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 |------|------|--------|-------|
 | — | 一 | yī | 1 |
 | — | 二 | èr | 2 |
+| 两 | 兩 | liǎng | 2 (dùng trước lượng từ) |
 | — | 三 | sān | 3 |
 | — | 四 | sì | 4 |
 | — | 五 | wǔ | 5 |
@@ -573,6 +623,17 @@ Ví dụ:
 - 我吃一碗饭。/ 我吃一碗飯。 /wǒ chī yì wǎn fàn/ — Tôi ăn một bát cơm.
 - 我喝一杯水。 /wǒ hē yì bēi shuǐ/ — Tôi uống một cốc nước.
 - 我来一杯奶茶。 /wǒ lái yì bēi nǎichá/ — Cho tôi một ly trà sữa.
+
+### 斤 / 公斤 — Lượng từ đo trọng lượng
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa | Ghi chú |
+|------|------|--------|----------|-------|---------|
+| — | 斤 | /jīn/ | Cân | cân Trung Quốc | 1 斤 = 0.5 kg |
+| — | 公斤 | /gōngjīn/ | Công Cân | kilogram (kg) | đơn vị quốc tế |
+
+**Ví dụ:**
+- 苹果一公斤多少钱？/ 蘋果一公斤多少錢？ /píngguǒ yì gōngjīn duōshǎo qián/ — Táo một kg bao nhiêu tiền?
+- 我要买三斤西瓜。 /wǒ yào mǎi sān jīn xīguā/ — Tôi muốn mua 3 cân dưa hấu.
 
 ---
 
@@ -1029,6 +1090,87 @@ Ví dụ:
 **Ví dụ:**
 - 不用谢。 /búyòng xiè/ — Không cần cảm ơn. (= 不客气)
 - 不用去。 /búyòng qù/ — Không cần đi.
+
+---
+
+### 去 vs 走 — Phân biệt hai cách "đi"
+
+**Phân biệt:**
+- **去** /qù/: phải có địa điểm cụ thể theo sau — đi đến đâu đó.
+- **走** /zǒu/: không cần địa điểm, chỉ hành động rời đi hoặc đi bộ.
+
+**Ví dụ:**
+- 老师去买包子了！/ 老師去買包子了！ /lǎoshī qù mǎi bāozi le/ — Thầy đi mua bánh bao rồi! (có đích đến = 去)
+- 别走。/ 別走。 /bié zǒu/ — Đừng đi. (không cần đích = 走)
+- 我走别的路。/ 我走別的路。 /wǒ zǒu biéde lù/ — Tôi đi con đường khác. (đi bộ = 走)
+
+---
+
+### 两 vs 二 — Hai cách nói số 2
+
+**Quy tắc:** Khi số 2 đứng trước lượng từ, bắt buộc dùng **两** /liǎng/, không được dùng **二** /èr/.
+
+**Cấu trúc:** 两/兩 + 量词 + (名词)
+
+**Lưu ý:** 天 (ngày) và 年 (năm) tự thân đóng vai trò lượng từ: dùng 两天, 两年.
+
+**Ví dụ:**
+- 两个人。 /liǎng ge rén/ — Hai người. (✓ 两, ✗ 二个人)
+- 两碗饭。/ 兩碗飯。 /liǎng wǎn fàn/ — Hai bát cơm.
+- 两个星期。 /liǎng ge xīngqī/ — Hai tuần.
+- 两天 / 两年。 /liǎng tiān / liǎng nián/ — Hai ngày / Hai năm.
+- 两个人 = 俩。/ 兩個人 = 倆。 /liǎng ge rén = liǎ/ — Hai người = một cặp.
+
+---
+
+### 一下儿 vs 一会儿 — Phân biệt "một chút" và "một lúc"
+
+**Phân biệt:**
+- **一下儿** /yíxiàr/: thời gian rất ngắn, tức thời — "một chút, thử một cái".
+- **一会儿** /yíhuìr/: thời gian ngắn nhưng dài hơn 一下儿 — "một lúc, một chốc, chút nữa".
+
+**Ví dụ:**
+- 我看一下儿。 /wǒ kàn yíxiàr/ — Tôi xem thử một cái.
+- 等我一会儿。/ 等我一會兒。 /děng wǒ yíhuìr/ — Đợi tôi một lúc.
+
+---
+
+### A + 给 + B + V — Làm việc gì đó cho ai
+
+**Cấu trúc:** A + 给/給 + B + ĐT (+ O)
+
+**Giải thích:** A thực hiện hành động gì đó cho/đến B. 给 đóng vai trò giới từ chỉ người nhận hoặc đối tượng thụ hưởng.
+
+**Ví dụ:**
+- 我给妈妈买一公斤水果。/ 我給媽媽買一公斤水果。 /wǒ gěi māma mǎi yì gōngjīn shuǐguǒ/ — Tôi mua cho mẹ 1 kg trái cây.
+- 我给你钱吧。/ 我給你錢吧。 /wǒ gěi nǐ qián ba/ — Tôi đưa tiền cho bạn nhé.
+
+---
+
+### 还 (hái) + ĐT/HDT — Còn, vẫn
+
+**Cấu trúc:** 还/還 (hái) + ĐT/HDT
+
+**Giải thích:** 还 /hái/ diễn tả trạng thái tiếp diễn ("còn, vẫn") hoặc bổ sung ("còn... nữa"). Phân biệt với 还 /huán/ (trả lại) — xem Bài 9 vocab.
+
+**Ví dụ:**
+- 还有人吗？/ 還有人嗎？ /hái yǒu rén ma/ — Còn ai không?
+- 你还要买别的吗？/ 你還要買別的嗎？ /nǐ hái yào mǎi biéde ma/ — Bạn còn muốn mua gì khác nữa không?
+- 你还小。 /nǐ hái xiǎo/ — Bạn còn nhỏ.
+
+---
+
+### 别 + V / 别的 — Đừng / Khác
+
+**Cấu trúc:**
+- 别/別 + ĐT → đừng làm gì đó
+- 别的/別的 (+ DT) → cái/người/thứ khác
+
+**Ví dụ:**
+- 别走。/ 別走。 /bié zǒu/ — Đừng đi.
+- 别说了。/ 別說了。 /bié shuō le/ — Đừng nói nữa.
+- 你还要买别的吗？/ 你還要買別的嗎？ /nǐ hái yào mǎi biéde ma/ — Bạn còn muốn mua cái khác không?
+- 我走别的路。/ 我走別的路。 /wǒ zǒu biéde lù/ — Tôi đi con đường khác.
 
 ---
 
