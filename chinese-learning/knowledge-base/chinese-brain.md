@@ -1185,6 +1185,7 @@ Ví dụ:
 | 你们好！ | 你們好！ | nǐmen hǎo | Xin chào các bạn |
 | 你好吗？ | 你好嗎？ | nǐ hǎo ma | Bạn có khoẻ không? |
 | 你的身体好吗？ | 你的身體好嗎？ | nǐ de shēntǐ hǎo ma | Sức khoẻ bạn có tốt không? |
+| — | 先生，您好！ | xiānsheng, nín hǎo | Chào ông! |
 
 ### Tạm biệt
 
@@ -1213,6 +1214,10 @@ Ví dụ:
 | — | 我的天啊！ | wǒ de tiān a | Ôi trời ơi! |
 | 你到底是谁！ | 你到底是誰！ | nǐ dàodǐ shì shéi | Rốt cuộc anh/bạn là ai vậy! |
 | 你觉得怎么样？ | 你覺得怎麼樣？ | nǐ juéde zěnmeyàng | Bạn cảm thấy thế nào? |
+| 还有人吗？ | 還有人嗎？ | hái yǒu rén ma | Còn ai không? |
+| 你对我太好了！ | 你對我太好了！ | nǐ duì wǒ tài hǎo le | Bạn đối với tôi tốt quá! |
+| — | 吃瓜 | chī guā | Hóng drama (tiếng lóng). |
+| 吃水果对身体很好。 | 吃水果對身體很好。 | chī shuǐguǒ duì shēntǐ hěn hǎo | Ăn trái cây rất tốt cho sức khỏe. |
 
 ### Hỏi thăm / Mời chào
 
@@ -1231,6 +1236,28 @@ Ví dụ:
 | — | 太好吃了！ | tài hǎochī le | Ngon quá! |
 | 你吃什么？ | 你吃什麼？ | nǐ chī shénme | Bạn ăn gì? |
 | 我来一碗饭。 | 我來一碗飯。 | wǒ lái yì wǎn fàn | Cho tôi một bát cơm. |
+
+### Mua bán
+
+| 简体 | 繁體 | Pinyin | Nghĩa |
+|------|------|--------|-------|
+| 你卖什么？ | 你賣什麼？ | nǐ mài shénme | Bạn bán cái gì? |
+| 怎么卖？ | 怎麼賣？ | zěnme mài | Bán như thế nào? |
+| 一共多少钱？ | 一共多少錢？ | yígòng duōshao qián | Tổng cộng bao nhiêu tiền? |
+| 你还要买别的吗？ | 你還要買別的嗎？ | nǐ hái yào mǎi biéde ma | Bạn còn muốn mua gì khác nữa không? |
+
+### Câu lệnh & Biểu đạt ngắn
+
+| 简体 | 繁體 | Pinyin | Nghĩa |
+|------|------|--------|-------|
+| 大家跟我一起读。 | 大家跟我一起讀。 | dàjiā gēn wǒ yìqǐ dú | Mọi người đọc theo tôi. |
+| 等我一会儿。 | 等我一會兒。 | děng wǒ yíhuìr | Đợi tôi một lát. |
+| 一点点儿 | 一點點兒 | yìdiǎndiǎnr | Một chút thôi. |
+| 我会说中文一点点儿。 | 我會說中文一點點兒。 | wǒ huì shuō zhōngwén yìdiǎndiǎnr | Tôi biết nói tiếng Trung một chút thôi. |
+| 别说了。 | 別說了。 | bié shuō le | Đừng nói nữa. |
+| 别看了。 | 別看了。 | bié kàn le | Đừng nhìn nữa. |
+| 别走。 | 別走。 | bié zǒu | Đừng đi. |
+| 别问我。 | 別問我。 | bié wèn wǒ | Đừng hỏi tôi. |
 
 ---
 
