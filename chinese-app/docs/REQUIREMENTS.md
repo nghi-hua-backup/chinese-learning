@@ -101,6 +101,21 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ## Pending Features (Backlog)
 
+### PF-2: Grammar Recognition Practice (Ngữ pháp Tab v1)
+**Priority:** High
+**Description:** A new "Ngữ pháp" tab in the main navigation with a single "Nhận diện" (Recognition) practice mode. The app shows a Chinese example sentence from § 5 of `chinese-brain.md` and the user picks the correct grammar pattern name from 4 multiple-choice options (1 correct + 3 random distractors). SRS (FSRS) tracks progress per grammar pattern in a separate localStorage namespace from vocabulary. Future versions will add fill-in-the-blank and translation drill modes.
+**Acceptance criteria:**
+- AC-1: "Ngữ pháp" tab appears in the main navigation alongside existing tabs
+- AC-2: Ngữ pháp tab shows a mode selection screen with "Nhận diện" as the only available mode
+- AC-3: Recognition session surfaces grammar pattern cards ordered by SRS schedule (due cards first), drawing from all 37 patterns with no lesson filter
+- AC-4: Each card shows one Chinese example sentence and 4 multiple-choice options for the grammar pattern name (1 correct + 3 random distractors)
+- AC-5: After picking, the app shows correct/wrong feedback and reveals the correct pattern name and its Vietnamese explanation
+- AC-6: Grammar SRS progress is tracked per pattern in localStorage under a separate key namespace from vocabulary (e.g., `grammar:<pattern-slug>`), using the same FSRS mechanism
+- AC-7: Session completion triggers the existing "Hoàn thành phiên học!" toast + auto-redirect UX
+- AC-8: Example sentences in grammar cards respect the user's current script mode (simplified/traditional)
+
+---
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
