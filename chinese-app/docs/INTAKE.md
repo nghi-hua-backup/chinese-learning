@@ -219,3 +219,51 @@ When practicing Hội thoại (dialogue), after the user taps "Xem đáp án", t
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-07] — Grammar Recognition Practice (Ngữ pháp Tab v1)
+
+**Status:** Agreement reached
+
+### Problem
+Grammar patterns learned in each lesson are never surfaced again after the lesson ends. There is no dedicated practice mode for grammar — only vocabulary, quiz, and dialogue are available. Without re-surfacing, patterns are gradually forgotten.
+
+### Agreed scope
+- Add a new **"Ngữ pháp"** tab in the main navigation (alongside Từ vựng, Mẫu câu, Hội thoại)
+- The tab shows a mode selection screen with one mode: **Nhận diện (Recognition)**
+- Recognition session: app shows a Chinese example sentence → user picks the correct grammar pattern name from 4 multiple-choice options (1 correct + 3 random distractors from other patterns)
+- After answering: feedback shown (correct/wrong), correct pattern name + Vietnamese explanation revealed
+- All 37 patterns practiced together — no per-lesson filtering
+- SRS (FSRS) tracks grammar progress per pattern, in a separate namespace from vocabulary SRS, stored in the same Zustand + localStorage store
+- Script mode (simplified/traditional) follows the user's existing setting
+- Session completion uses the existing toast + auto-redirect UX
+
+### Out of scope (agreed — future versions)
+- Fill-in-the-blank mode
+- Translation drill mode
+- Per-lesson filtering for grammar
+
+### Acceptance criteria (draft)
+- AC-1: "Ngữ pháp" tab appears in the main navigation alongside existing tabs
+- AC-2: Ngữ pháp tab shows a mode selection screen with "Nhận diện" as the only available mode
+- AC-3: Recognition session surfaces grammar pattern cards ordered by SRS schedule (due cards first), drawing from all 37 patterns with no lesson filter
+- AC-4: Each card shows one Chinese example sentence and 4 multiple-choice options for the grammar pattern name (1 correct + 3 random distractors)
+- AC-5: After picking, the app shows correct/wrong feedback and reveals the correct pattern name and its Vietnamese explanation
+- AC-6: Grammar SRS progress is tracked per pattern in localStorage under a separate key namespace from vocabulary (e.g., `grammar:<pattern-slug>`), using the same FSRS mechanism
+- AC-7: Session completion triggers the existing "Hoàn thành phiên học!" toast + auto-redirect UX
+- AC-8: Example sentences in grammar cards respect the user's current script mode (simplified/traditional)
+
+### Technical notes
+- Source data: § 5 Ngữ pháp in `chinese-brain.md` — 37 patterns, each with a named structure, Vietnamese explanation, and 3–5 example sentences
+- Grammar SRS keys: pattern-slug format (e.g., `grammar:太_HDT_了`) — separate from vocab card IDs
+- Distractors: 3 randomly selected pattern names from the remaining 36 patterns
+- No new KB authoring required — existing example sentences are sufficient
+
+### Design notes
+- New tab: "Ngữ pháp" added to the main nav bar
+- Mode selection screen follows the same pattern as Từ vựng (which offers Flashcard / Trắc nghiệm / Hội thoại)
+- Card UI: multiple-choice style consistent with Trắc nghiệm
+
+### Open questions
+- (none)
