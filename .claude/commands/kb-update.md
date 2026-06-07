@@ -141,12 +141,16 @@ Trước khi commit, cập nhật `chinese-app/docs/CHANGELOG.md`:
 Sau khi hoàn thành tất cả cập nhật và báo cáo kết quả:
 
 ```
+# If the source file is a .md in chinese-learning/references/ (not an image), add it:
+git add chinese-learning/references/<source-file-if-applicable>
 git add chinese-learning/knowledge-base/chinese-brain.md
 git add chinese-learning/knowledge-base/chinese-practice-bank.md
 git add chinese-app/docs/CHANGELOG.md
 git commit -m "kb: add Bài N content (X từ vựng, Y ngữ pháp, Z câu luyện tập)"
 git push origin main
 ```
+
+> **Reference file rule:** Nếu input là file `.md` trong `chinese-learning/references/` (ví dụ `Bai-9.md`), luôn `git add` file đó cùng với các file KB để reference được commit cùng bài học. Bỏ qua nếu input là file ảnh (JPEG, PNG).
 
 GitHub Actions sẽ tự động rebuild và redeploy. Thông báo cho người dùng:
 "Nội dung Bài N đã được cập nhật và deploy tại: https://nghi-hua-backup.github.io/chinese-learning/"

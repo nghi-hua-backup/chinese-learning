@@ -246,6 +246,8 @@ Update CHANGELOG.md (KBP-8), then commit and push everything together:
 
 Then commit:
 ```
+# If the Phase 0 source is a file under chinese-learning/references/ (e.g. Bai-9.md), add it:
+git add chinese-learning/references/<source-file-if-applicable>
 git add chinese-learning/knowledge-base/chinese-brain.md
 git add chinese-learning/knowledge-base/chinese-practice-bank.md
 git add chinese-learning/docs/KB-INTAKE.md
@@ -253,6 +255,8 @@ git add chinese-app/docs/CHANGELOG.md
 git commit -m "kb: <summary of changes>"
 git push origin main
 ```
+
+> **Reference file rule:** If the input source is a `.md` file in `chinese-learning/references/` (e.g. `Bai-9.md`), always include it in the final `git add` so the lesson reference is committed together with the KB update. Skip this step only if the source is an image file or an external note with no corresponding reference file.
 
 Notify the customer:
 > "KB updated. [Summary from Checker report]. CHANGELOG bumped to x.y.z."
