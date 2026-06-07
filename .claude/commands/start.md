@@ -7,12 +7,13 @@ You don't know which skill to use. That's what this skill is for. Read the user'
 Read these files:
 1. `/Users/admin.katalon/Documents/chinese-learning-1/README.md` — skills overview
 2. `chinese-app/CLAUDE.md` — project orientation
-3. `chinese-app/docs/INTAKE.md` — existing agreements (read if file exists)
+3. `chinese-app/docs/INTAKE.md` — existing app agreements (read if file exists)
+4. `chinese-learning/docs/KB-INTAKE.md` — existing KB agreements (read if file exists)
 
 Do not read TECHNICAL.md, REQUIREMENTS.md, or VERIFICATION.md yet. The dispatcher's job is routing, not implementation.
 
-**INTAKE.md awareness:** If INTAKE.md exists and the user's request looks like it may overlap with a previous agreement, note it when routing:
-> "Before we start — I noticed INTAKE.md has a previous agreement that may be relevant: [one-line quote]. The skill I'm routing you to will do a full conflict check, but wanted to flag it early."
+**INTAKE.md awareness:** If either INTAKE.md or KB-INTAKE.md exists and the user's request looks like it may overlap with a previous agreement, note it when routing:
+> "Before we start — I noticed [INTAKE.md / KB-INTAKE.md] has a previous agreement that may be relevant: [one-line quote]. The skill I'm routing you to will do a full conflict check, but wanted to flag it early."
 Do not block routing for this — just surface it.
 
 ## Step 2 — Classify intent and respond
@@ -24,10 +25,15 @@ Do not block routing for this — just surface it.
 | "I'm a new customer / new project / I want to discuss an idea / I want a new feature / let's talk about what I want" | `/intake <topic>` → then `/feature` |
 | "I have new lesson images / photos / ảnh bài học" | `/lesson <filename>` |
 | "Something is broken / not working / bị lỗi" | `/fix <description>` |
-| "Is X possible? / Can we do Y? / Feasible?" | `/research <topic>` → if approved, `/intake` → `/feature` |
+| "Is X possible? / Can we do Y? / Feasible?" (app feature) | `/research <topic>` → if approved, `/intake` → `/feature` |
 | "What features does the app have?" | `/pm` |
 | "Check if everything works / verify" | `/qa` |
 | "Implement / code / fix this specific thing" (explicit task, already agreed) | `/dev <task>` |
+| KB correction / wrong entry / mistake in KB | `/kb-intake` |
+| KB input from teacher note / non-image source | `/kb-intake` |
+| Mixed KB update (new vocab + corrections together) | `/kb-intake` |
+| "What's in the KB?" / KB review request | `/kb-intake` (read-only analysis mode) |
+| KB research question (etymology, grammar, character comparison, pinyin explanation) | `/kb-research <question>` |
 | Unclear or mixed intent | Ask **one** clarifying question |
 
 **When to skip `/intake`:** Only skip it when the request is an operational task (fixing a known bug, uploading lesson images, verifying the app, implementing an already-documented PF-N). If there is any doubt about whether the customer's intent is fully understood, route to `/intake`.

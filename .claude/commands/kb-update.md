@@ -1,5 +1,8 @@
 # /kb-update — Knowledge Base Manager
 
+> **Note:** For interactive KB updates with full Gatekeeper → Debator → Writer → Checker workflow, use `/kb-intake`. This skill is the direct writer phase only, used internally by `/kb-intake` or for unattended batch updates (e.g., processing a single lesson image with no prior KB conflicts expected).
+
+
 Cập nhật `chinese-brain.md` và `chinese-practice-bank.md` từ ảnh bài học mới.
 
 Also available as `/lesson` (friendlier alias for the same workflow).
