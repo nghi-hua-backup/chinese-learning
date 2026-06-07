@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.5.1] - 2026-06-07
+
+### Changed
+- KB: Bài 9 — Táo bán như thế nào? — 43 từ vựng, 2 lượng từ (斤/公斤), 1 số đếm (两), 1 KBP-11 append (对 Giới từ), 6 pattern ngữ pháp (去 vs 走; 两 vs 二; 一下儿 vs 一会儿; A+给+B+V; 还 hái; 别/别的), 57 câu luyện tập + 13 dòng hội thoại BTVN
+
+---
+
 ## [1.5.0] - 2026-06-04
 
 ### Added

@@ -495,7 +495,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 别 | 別 | /bié/ | Biệt | PT/HDT | (cái gì đó) khác, đừng (làm gì đó) |
 | — | 走 | /zǒu/ | Tẩu | ĐT | đi bộ, rời đi |
 | 一会儿 | 一會兒 | /yíhuìr/ | — | Lượng từ | một lúc, một chốc |
-| — | 块 | /kuài/ | — | DT | đồng (tiền TQ, khẩu ngữ; = 元) |
+| 块 | 塊 | /kuài/ | — | DT | đồng (tiền TQ, khẩu ngữ; = 元) |
 | — | 毛 | /máo/ | — | DT | hào (khẩu ngữ; = 角 = 0.1 元) |
 | — | 元 | /yuán/ | Nguyên | DT | đồng (đơn vị chính thức) |
 | — | 角 | /jiǎo/ | Giác | DT | hào (văn viết; = 0.1 元) |
