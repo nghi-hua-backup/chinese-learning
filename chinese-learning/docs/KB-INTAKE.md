@@ -71,3 +71,39 @@ Full lesson content for Bài 9 "Táo bán như thế nào?" extracted from the s
 - Q3 (分 money meaning): Yes — add as new Bài 9 entry
 - Q4 (currency units 块/毛/元/角): Yes — add all 4 as individual vocab entries
 - Q5 (standalone 找): No — skip; 找钱 compound is sufficient
+
+---
+
+## [2026-06-07] — Bài 9 Amendment: Câu thông dụng → § 6 chinese-brain.md
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bai-9.md` PHẦN 3 — previously written only to chinese-practice-bank.md
+
+### Input summary
+The original Bài 9 Writer phase put all PHẦN 3 "Câu thông dụng" sentences into chinese-practice-bank.md but did not add them to chinese-brain.md § 6 "Câu thông dụng" as required by the brain guide ("Câu [xã giao]... → Câu thông dụng"). This amendment adds 17 of the 18 PHẦN 3 sentences to the appropriate groups in § 6.
+
+### Agreed scope
+
+**chinese-brain.md — § 6 Câu thông dụng:**
+
+Existing group **### Chào hỏi** — 1 entry:
+- 先生，您好！
+
+Existing group **### Câu xã giao khác** — 4 entries:
+- 还有人吗？, 你对我太好了！, 吃瓜, 吃水果对身体很好。
+
+New group **### Mua bán** — 4 entries:
+- 你卖什么？, 怎么卖？, 一共多少钱？, 你还要买别的吗？
+
+New group **### Câu lệnh & Biểu đạt ngắn** — 8 entries:
+- 大家跟我一起读。, 等我一会儿。, 一点点儿, 我会说中文一点点儿。, 别说了。, 别看了。, 别走。, 别问我。
+
+### Out of scope (agreed)
+- 两个人 = 俩 — language comparison note; already covered in Số đếm section and grammar patterns
+
+### Debator concerns resolved
+- No KBP violations: none of the 17 sentences are already in § 6; no duplicates found.
+- Source: Bai-9.md PHẦN 3, traceable (KBP-6).
+
+### Open questions resolved
+- 吃水果对身体很好。: include in Câu xã giao khác (customer confirmed, not skipped)
