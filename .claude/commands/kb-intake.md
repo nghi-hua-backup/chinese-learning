@@ -61,6 +61,7 @@ Challenge every item against these criteria:
 - Is the source traceable? (KBP-6)
 - Which Bài does this belong to? (KBP-4)
 - Does this item belong in `chinese-brain.md` or `chinese-practice-bank.md`? (KBP-9)
+- **If the source has a "Câu thông dụng" section (social phrases: chào hỏi, tạm biệt, xin lỗi, cảm ơn, xã giao):** these must go to § 6 of `chinese-brain.md`, not only to the practice bank — flag if this dual routing is missing (KBP-9 exception)
 - If the item exists but has a new meaning → flag as KBP-11 case, require customer confirmation before appending
 
 ---
@@ -162,6 +163,7 @@ Execute all agreed changes strictly per KB-PRINCIPLES.md:
 | Pronunciation rules | `chinese-brain.md` | **Phát âm** |
 | Corrections | `chinese-brain.md` | Add corrected row; comment old row `<!-- corrected YYYY-MM-DD -->` |
 | Additional meanings (KBP-11) | `chinese-brain.md` | Append to existing entry row |
+| **Câu thông dụng** — social phrases (chào hỏi, tạm biệt, xin lỗi, cảm ơn, xã giao) | `chinese-brain.md` | **§ 6 Câu thông dụng** — under the appropriate sub-group; add to existing group or create new group if none fits (KBP-9 exception) |
 | Practice sentences / dialogues | `chinese-practice-bank.md` | Under `### Bài N` |
 | Synthesis block (NEW_LESSON) | `chinese-practice-bank.md` | Under `## Luyện tập tổng hợp` |
 
@@ -210,6 +212,7 @@ Audit checklist:
 - [ ] KBP-6: Source traceable for all entries?
 - [ ] KBP-7: Timestamps updated on all touched files?
 - [ ] KBP-9: Nothing landed in the wrong file (brain vs practice bank)?
+- [ ] KBP-9 exception: If source had a "Câu thông dụng" section — were those social phrases written to § 6 of `chinese-brain.md`?
 - [ ] KBP-11: Additional meaning entries appended (not skipped), confirmed by customer?
 
 Output the report:
