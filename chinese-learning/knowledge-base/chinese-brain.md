@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 9 — Táo bán như thế nào? (2026-06-07)
+> **Cập nhật lần cuối:** Bổ sung số đếm — Hàng Trăm/Nghìn/Vạn/Ức (2026-06-08)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -500,6 +500,11 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 元 | /yuán/ | Nguyên | DT | đồng (đơn vị chính thức) |
 | — | 角 | /jiǎo/ | Giác | DT | hào (văn viết; = 0.1 元) |
 | — | 分 | /fēn/ | Phân | DT | xu, cent (= 0.01 元) |
+| — | 百 | /bǎi/ | Bách | Số từ | Trăm |
+| — | 千 | /qiān/ | Thiên | Số từ | Nghìn |
+| 万 | 萬 | /wàn/ | Vạn | Số từ | Mười ngàn |
+| 亿 | 億 | /yì/ | Ức | Số từ | Trăm triệu |
+| 两 | 兩 | /liǎng/ | Lưỡng | Số từ | 2 (dùng trước lượng từ) |
 
 ---
 
@@ -507,19 +512,63 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ### 3.1 Số đếm cơ bản
 
-| 简体 | 繁體 | Pinyin | Nghĩa |
-|------|------|--------|-------|
-| — | 一 | yī | 1 |
-| — | 二 | èr | 2 |
-| 两 | 兩 | liǎng | 2 (dùng trước lượng từ) |
-| — | 三 | sān | 3 |
-| — | 四 | sì | 4 |
-| — | 五 | wǔ | 5 |
-| — | 六 | liù | 6 |
-| — | 七 | qī | 7 |
-| — | 八 | bā | 8 |
-| — | 九 | jiǔ | 9 |
-| — | 十 | shí | 10 |
+#### Số 1–10
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa |
+|------|------|--------|----------|-------|
+| — | 一 | yī | Nhất | 1 |
+| — | 二 | èr | Nhị | 2 |
+| 两 | 兩 | liǎng | Lưỡng | 2 (dùng trước lượng từ) |
+| — | 三 | sān | Tam | 3 |
+| — | 四 | sì | Tứ | 4 |
+| — | 五 | wǔ | Ngũ | 5 |
+| — | 六 | liù | Lục | 6 |
+| — | 七 | qī | Thất | 7 |
+| — | 八 | bā | Bát | 8 |
+| — | 九 | jiǔ | Cửu | 9 |
+| — | 十 | shí | Thập | 10 |
+
+#### Hàng Trăm (百)
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa |
+|------|------|--------|----------|-------|
+| — | 百 | bǎi | Bách | Trăm |
+
+**Quy tắc:**
+- 100–109: 一百零 + số (零 là số placeholder; ví dụ: 105 → 一百零五)
+- 110–119: 一百一十 + số (ví dụ: 115 → 一百一十五)
+
+#### Hàng Nghìn (千)
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa |
+|------|------|--------|----------|-------|
+| — | 千 | qiān | Thiên | Nghìn |
+
+**Quy tắc:**
+- Khi hàng trăm là số 0: dùng 零, không thêm 百. Ví dụ: 1.010 → 一千零一十
+- Khi hàng nghìn là số 2: ưu tiên dùng 两千 hơn 二千. Ví dụ: 2.025 → 两千零二十五
+
+#### Hàng Vạn (万)
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa |
+|------|------|--------|----------|-------|
+| 万 | 萬 | wàn | Vạn | Mười ngàn |
+
+**Quy tắc:**
+- Tiếng Trung nhóm số theo hàng vạn (4 chữ số), khác với tiếng Việt (hàng nghìn, 3 chữ số):
+  - 13.456 → 一万三千四百五十六 /yí wàn sān qiān sì bǎi wǔ shí liù/
+  - 99.019 → 九万九千零一十九
+
+#### Hàng Ức (亿)
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa |
+|------|------|--------|----------|-------|
+| 亿 | 億 | yì | Ức | Trăm triệu |
+
+**Quy tắc:**
+- 100.000.000 = 一亿 /yí yì/
+- = 一个亿 /yí gè yì/ (cách dùng thông dụng hơn)
+- 1.000.000.000 = 十个亿 /shí gè yì/
 
 ### 3.2 Hỏi số lượng
 
@@ -1258,6 +1307,16 @@ Ví dụ:
 | 别看了。 | 別看了。 | bié kàn le | Đừng nhìn nữa. |
 | 别走。 | 別走。 | bié zǒu | Đừng đi. |
 | 别问我。 | 別問我。 | bié wèn wǒ | Đừng hỏi tôi. |
+
+### Số tiền thực tế (VND)
+
+| 简体 | 繁體 | Pinyin | Nghĩa |
+|------|------|--------|-------|
+| 十万越南盾 | 十萬越南盾 | shí wàn Yuènándùn | 100.000 VND |
+| 一百万越南盾 | 一百萬越南盾 | yì bǎi wàn Yuènándùn | 1.000.000 VND (1 triệu) |
+| 一千万越南盾 | 一千萬越南盾 | yì qiān wàn Yuènándùn | 10.000.000 VND (10 triệu) |
+| 一个亿越南盾 | 一個億越南盾 | yí gè yì Yuènándùn | 100.000.000 VND (100 triệu) |
+| 十个亿越南盾 | 十個億越南盾 | shí gè yì Yuènándùn | 1.000.000.000 VND (1 tỷ) |
 
 ---
 
