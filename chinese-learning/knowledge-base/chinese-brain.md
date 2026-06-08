@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bổ sung số đếm — đồng bộ ký hiệu Unicode ≥/≤ trong Hàng Trăm (2026-06-08)
+> **Cập nhật lần cuối:** Bổ sung số đếm — thêm định dạng kép (VN)/(CN) cho số từ 10.000 trở lên (2026-06-08)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -557,8 +557,8 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 **Quy tắc:**
 - Tiếng Trung nhóm số theo hàng vạn (4 chữ số), khác với tiếng Việt (hàng nghìn, 3 chữ số):
-  - 13.456 → 一万三千四百五十六 /yí wàn sān qiān sì bǎi wǔ shí liù/
-  - 99.019 → 九万九千零一十九
+  - 13.456 (VN) = 1.3456 (CN) → 一万三千四百五十六 /yí wàn sān qiān sì bǎi wǔ shí liù/
+  - 99.019 (VN) = 9.9019 (CN) → 九万九千零一十九
 
 #### Hàng Ức (亿)
 
@@ -567,9 +567,8 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 亿 | 億 | yì | Ức | Trăm triệu |
 
 **Quy tắc:**
-- 100.000.000 = 一亿 /yí yì/
-- = 一个亿 /yí gè yì/ (cách dùng thông dụng hơn)
-- 1.000.000.000 = 十个亿 /shí gè yì/
+- 100.000.000 (VN) = 1.0000.0000 (CN) = 一亿 /yí yì/ = 一个亿 /yí gè yì/ (thông dụng hơn)
+- 1.000.000.000 (VN) = 10.0000.0000 (CN) = 十个亿 /shí gè yì/
 
 ### 3.2 Hỏi số lượng
 
@@ -1313,11 +1312,11 @@ Ví dụ:
 
 | 简体 | 繁體 | Pinyin | Nghĩa |
 |------|------|--------|-------|
-| 十万越南盾 | 十萬越南盾 | shí wàn Yuènándùn | 100.000 VND |
-| 一百万越南盾 | 一百萬越南盾 | yì bǎi wàn Yuènándùn | 1.000.000 VND (1 triệu) |
-| 一千万越南盾 | 一千萬越南盾 | yì qiān wàn Yuènándùn | 10.000.000 VND (10 triệu) |
-| 一个亿越南盾 | 一個億越南盾 | yí gè yì Yuènándùn | 100.000.000 VND (100 triệu) |
-| 十个亿越南盾 | 十個億越南盾 | shí gè yì Yuènándùn | 1.000.000.000 VND (1 tỷ) |
+| 十万越南盾 | 十萬越南盾 | shí wàn Yuènándùn | 100.000 (VN) = 10.0000 (CN) VND |
+| 一百万越南盾 | 一百萬越南盾 | yì bǎi wàn Yuènándùn | 1.000.000 (VN) = 100.0000 (CN) VND (1 triệu) |
+| 一千万越南盾 | 一千萬越南盾 | yì qiān wàn Yuènándùn | 10.000.000 (VN) = 1000.0000 (CN) VND (10 triệu) |
+| 一个亿越南盾 | 一個億越南盾 | yí gè yì Yuènándùn | 100.000.000 (VN) = 1.0000.0000 (CN) VND (100 triệu) |
+| 十个亿越南盾 | 十個億越南盾 | shí gè yì Yuènándùn | 1.000.000.000 (VN) = 10.0000.0000 (CN) VND (1 tỷ) |
 
 ---
 
