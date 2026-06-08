@@ -107,3 +107,48 @@ New group **### Câu lệnh & Biểu đạt ngắn** — 8 entries:
 
 ### Open questions resolved
 - 吃水果对身体很好。: include in Câu xã giao khác (customer confirmed, not skipped)
+
+---
+
+## [2026-06-08] — Bổ sung số đếm: Hàng Trăm / Nghìn / Vạn / Ức (§ 3.1)
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bo-sung-so-dem.md` — structured reference document on large-number counting units and VND currency conversion
+
+### Input summary
+Reference file covering the four large-unit characters (百, 千, 万/萬, 亿/億), their composition rules (零 placeholder, 两 vs 二 at thousands place, 4-digit grouping vs Vietnamese 3-digit grouping), and a VND currency conversion table. Customer instruction: consolidate into § 3.1 Số đếm cơ bản and restructure to match the source's subsection format.
+
+### Agreed scope
+
+**chinese-brain.md — § 3.1 Số đếm cơ bản (restructure + expand):**
+- Reorganize into subsections: Số 1–10 / Hàng Trăm (百) / Hàng Nghìn (千) / Hàng Vạn (万) / Hàng Ức (亿)
+- Add Hán Việt column to all rows; backfill existing 一–十 entries: Nhất, Nhị, Lưỡng, Tam, Tứ, Ngũ, Lục, Thất, Bát, Cửu, Thập
+- New vocab rows: 百 (Bách / Trăm), 千 (Thiên / Nghìn), 万/萬 (Vạn / Mười ngàn), 亿/億 (Ức / Trăm triệu)
+- Formation rules under each subsection: Hàng Trăm (零 rule for 100–109, 一 rule for 110–119), Hàng Nghìn (零 without 百, 两千 preference), Hàng Vạn (4-digit grouping examples), Hàng Ức (一亿 / 一个亿 / 十个亿)
+- 零 appears only in formation rule notes — no new § 3.1 table row
+
+**chinese-brain.md — Bài 9 Từ vựng (new entries, 6-column format):**
+- 百 /bǎi/ | Bách | Số từ | Trăm
+- 千 /qiān/ | Thiên | Số từ | Nghìn
+- 万/萬 /wàn/ | Vạn | Số từ | Mười ngàn
+- 亿/億 /yì/ | Ức | Số từ | Trăm triệu
+- 两/兩 /liǎng/ | Lưỡng | Số từ | 2 (dùng trước lượng từ) — if not already present in Bài 9 Từ vựng
+
+**chinese-brain.md — § 6 Câu thông dụng (new group):**
+- New group "### Số tiền thực tế (VND)" with 5 entries: 十万越南盾, 一百万越南盾, 一千万越南盾, 一个亿越南盾, 十个亿越南盾
+
+### Out of scope (agreed)
+- 零 vocab row in § 3.1 — appears in formation rules notes only (customer confirmed)
+- 越南盾 — KBP-2 true duplicate, already in Bài 9 Từ vựng
+- 两/兩 § 3.1 row — already in § 3.1 (no change, only Hán Việt column added)
+
+### Debator concerns resolved
+- **零 (KBP-11):** Customer confirmed — 零 appears only in formation rules notes in § 3.1; no new table row. Existing Bài 9 entry and § 3.6 reference are sufficient.
+- **两/兩 source error:** Source lists Hán Việt as "Lạng" — customer corrected to "Lưỡng". Applied in § 3.1 Hán Việt backfill and Bài 9 entry.
+- **越南盾 (KBP-2):** Confirmed skip — already in Bài 9 Từ vựng.
+- **VND table placement:** Customer confirmed — add as new § 6 group (not a § 3.1 note).
+
+### Open questions resolved
+- Q1 (零 in § 3.1): In formation rules notes only — no separate table row
+- Q2 (Column format): Option A — add Hán Việt column; 两's Hán Việt = "Lưỡng"; new words not in Từ vựng sections → add to Bài 9 Từ vựng
+- Q3 (VND table): Add as new group "### Số tiền thực tế (VND)" in § 6 Câu thông dụng
