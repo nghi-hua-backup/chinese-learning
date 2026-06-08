@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bổ sung số đếm — thêm lưu ý hàng chục 10–19 trong Hàng Trăm (2026-06-08)
+> **Cập nhật lần cuối:** Bổ sung số đếm — đồng bộ ký hiệu Unicode ≥/≤ trong Hàng Trăm (2026-06-08)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -537,7 +537,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 **Quy tắc:**
 - 100–109: 一百零 + số (零 là số placeholder; ví dụ: 105 → 一百零五)
 - 110–119: 一百一十 + số (ví dụ: 115 → 一百一十五)
-  - (Lưu ý: Thêm 一 khi hàng chục >= 10 và <= 19)
+  - (Lưu ý: Thêm 一 khi hàng chục ≥ 10 và ≤ 19)
 
 #### Hàng Nghìn (千)
 
