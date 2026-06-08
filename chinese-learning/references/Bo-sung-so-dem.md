@@ -60,7 +60,7 @@ TỔNG HỢP TỪ VỰNG & KÝ HIỆU
 | 万         | 萬         | /wàn/       | Vạn            | Mười ngàn              |
 | 亿         | 億         | /yì/        | Ức             | Trăm triệu             |
 | —         | 零         | /líng/      | Linh           | Số 0                   |
-| 两         | 兩         | /liǎng/     | Lạng           | Số 2 (đi với lượng từ) |
+| 两         | 兩         | /liǎng/     | Lưỡng           | Số 2 (đi với lượng từ) |
 | —         | 越南盾       | /Yuènándùn/ | Việt Nam Thuẫn | Việt Nam Đồng          |
 
 Ghi chú định dạng: Nội dung tuân thủ theo cách phân nhóm hàng 4 chữ số của tiếng
