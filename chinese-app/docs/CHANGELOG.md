@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.6.1] - 2026-06-08
+
+### Changed
+- KB: Bổ sung số đếm — tái cấu trúc § 3.1, thêm 百/千/万/亿 với quy tắc tổ hợp; 5 entry Bài 9 Từ vựng (百/千/万/亿/两); nhóm mới "Số tiền thực tế (VND)" trong § 6
+
+---
+
 ## [1.6.0] - 2026-06-07
 
 ### Added
