@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bổ sung số đếm — thêm định dạng kép (VN)/(CN) cho số từ 10.000 trở lên (2026-06-08)
+> **Cập nhật lần cuối:** Bài 10 — Nhà bạn có mấy người? (2026-06-09)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -508,6 +508,45 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+### Bài 10 — Nhà bạn có mấy người?
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| — | 色 | /sè/ | Sắc | DT | màu sắc |
+| 红色 | 紅色 | /hóngsè/ | Hồng Sắc | DT | màu đỏ |
+| — | 黑色 | /hēisè/ | Hắc Sắc | DT | màu đen |
+| — | 高 | /gāo/ | Cao | HDT | cao |
+| 可爱 | 可愛 | /kě'ài/ | Khả Ái | HDT | đáng yêu |
+| 帅 | 帥 | /shuài/ | Soái | HDT | đẹp trai |
+| 帅哥 | 帥哥 | /shuàigē/ | Soái Ca | DT | anh chàng đẹp trai |
+| — | 漂亮 | /piàoliang/ | Phiêu Lượng | HDT | xinh gái, đẹp (nữ, cảnh, đồ) |
+| — | 最 | /zuì/ | Tối | PT | nhất (so sánh nhất) |
+| 什么时候 | 什麼時候 | /shénme shíhou/ | Thẩm Ma Thời Hậu | Đại từ | khi nào, bao giờ |
+| — | 衣服 | /yīfu/ | Y Phục | DT | quần áo |
+| — | 穿 | /chuān/ | Xuyên | ĐT | mặc (áo), đi (giày) |
+| 骑 | 騎 | /qí/ | Kỵ | ĐT | cưỡi (ngựa), đi (xe đạp/máy) |
+| 自行车 | 自行車 | /zìxíngchē/ | Tự Hành Xa | DT | xe đạp |
+| — | 狗 | /gǒu/ | Cẩu | DT | chó |
+| — | 拍 | /pāi/ | Phách | ĐT | vỗ, đập, chụp (ảnh) |
+| — | 照 | /zhào/ | Chiếu | ĐT | chiếu, soi, chụp (ảnh) |
+| — | 拍照 | /pāizhào/ | Phách Chiếu | ĐT | chụp ảnh |
+| — | 照片 | /zhàopiàn/ | Chiếu Phiến | DT | ảnh, bức ảnh |
+| 时候 | 時候 | /shíhou/ | Thời Hậu | DT | lúc, khi |
+| 总是 | 總是 | /zǒngshì/ | Tổng Thị | PT | lúc nào cũng, bao giờ cũng |
+| 唠叨 | 嘮叨 | /láodao/ | Lao Thao | ĐT | lải nhải, cằn nhằn |
+| 买东西 | 買東西 | /mǎi dōngxi/ | Mãi Đông Tây | Cụm ĐT | mua sắm |
+| 画画儿 | 畫畫兒 | /huà huàr/ | Họa Họa Nhi | Cụm ĐT | vẽ tranh |
+| 调皮 | 調皮 | /tiáopí/ | Điều Bì | HDT | nghịch ngợm, tinh nghịch |
+| 听话 | 聽話 | /tīng huà/ | Thính Thoại | HDT | nghe lời, ngoan |
+| 个性 | 個性 | /gèxìng/ | Cá Tính | DT | cá tính |
+| 爷爷 | 爺爺 | /yéye/ | Gia Gia | DT | ông nội |
+| — | 奶奶 | /nǎinai/ | Nãi Nãi | DT | bà nội |
+| — | 姐姐 | /jiějie/ | Tỷ Tỷ | DT | chị gái |
+| 房间 | 房間 | /fángjiān/ | Phòng Gian | DT | phòng, căn phòng |
+| 颜色 | 顏色 | /yánsè/ | Nhan Sắc | DT | màu sắc |
+
+---
+
 ## 3. Số đếm & Thời gian
 
 ### 3.1 Số đếm cơ bản
@@ -683,6 +722,15 @@ Ví dụ:
 **Ví dụ:**
 - 苹果一公斤多少钱？/ 蘋果一公斤多少錢？ /píngguǒ yì gōngjīn duōshǎo qián/ — Táo một kg bao nhiêu tiền?
 - 我要买三斤西瓜。 /wǒ yào mǎi sān jīn xīguā/ — Tôi muốn mua 3 cân dưa hấu.
+
+### 件 / 只 / 条 / 张 — Lượng từ Bài 10
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa | Dùng với |
+|------|------|--------|----------|-------|---------|
+| — | 件 | /jiàn/ | Kiện | bộ, chiếc | quần áo (衣服) |
+| 只 | 隻 | /zhī/ | Chích | con | động vật nhỏ (chó, mèo, chim...) |
+| 条 | 條 | /tiáo/ | Điều | cái, con | vật dài, hẹp; động vật dài (chó, cá...) |
+| 张 | 張 | /zhāng/ | Trương | tờ, tấm | vật mỏng, dẹt (ảnh, giấy, bàn...) |
 
 ---
 
@@ -936,14 +984,21 @@ Ví dụ:
 
 ### 数词 + 量词 + 名词 — Cấu trúc số lượng
 
-**Cấu trúc:** Số từ + Lượng từ + Danh từ
+**Cấu trúc:** Số từ / 这 / 那 / 几 + Lượng từ + Danh từ
 
-**Giải thích:** Khi đếm danh từ, phải có lượng từ giữa số và danh từ.
+**Giải thích:** Khi đếm danh từ, phải có lượng từ giữa số và danh từ. Quy tắc này cũng áp dụng với 这/這 (này), 那 (kia), 几/幾 (mấy).
 
 **Ví dụ:**
 - 一个人 / 一個人 /yí gè rén/ — một người
 - 三个中国朋友 / 三個中國朋友 /sān gè zhōngguó péngyou/ — ba người bạn Trung Quốc
 - 四口人 /sì kǒu rén/ — bốn người (trong gia đình)
+- 一张照片 / 一張照片 /yì zhāng zhàopiàn/ — một tấm ảnh
+- 这条狗 / 這條狗 /zhè tiáo gǒu/ — con chó này
+- 几件衣服 / 幾件衣服 /jǐ jiàn yīfu/ — mấy bộ quần áo
+
+**Lưu ý:** Không dùng 2 lượng từ trong cùng một cụm danh từ.
+- ✓ 一些书 / 一些書 hoặc 一本书 / 一本書
+- ✗ 一些本子 (phải bỏ 些 hoặc 本)
 
 ---
 
@@ -1223,6 +1278,48 @@ Ví dụ:
 
 ---
 
+### 最 + HDT/ĐT — So sánh nhất
+
+**Cấu trúc:** 最 + Hình dung từ / Động từ
+
+**Giải thích:** 最 (zuì) đặt trước tính từ hoặc động từ để diễn đạt mức độ cao nhất ("nhất").
+
+**Ví dụ:**
+- 最高 /zuì gāo/ — cao nhất
+- 最可爱 / 最可愛 /zuì kě'ài/ — đáng yêu nhất
+- 最帅 / 最帅 /zuì shuài/ — đẹp trai nhất
+- 我爷爷是最高和最帅的人。/ 我爺爺是最高和最帥的人。 /wǒ yéye shì zuì gāo hé zuì shuài de rén/ — Ông nội tôi là người cao nhất và đẹp trai nhất.
+- 妈妈是最好的。/ 媽媽是最好的。 /māma shì zuì hǎo de/ — Mẹ là người tốt nhất.
+
+---
+
+### …的时候 — Khi / Lúc
+
+**Cấu trúc:** ĐT / Cụm ĐT / HDT + 的时候/的時候
+
+**Giải thích:** 的时候 (de shíhou) đặt sau động từ hoặc cụm từ để diễn đạt "khi / lúc (đang làm gì)".
+
+**Ví dụ:**
+- 吃饭的时候 / 吃飯的時候 /chī fàn de shíhou/ — lúc ăn cơm
+- 小的时候 / 小的時候 /xiǎo de shíhou/ — lúc còn nhỏ (cũng nói: 小时候 / 小時候)
+- 学习汉语的时候 / 學習漢語的時候 /xuéxí hànyǔ de shíhou/ — lúc học tiếng Trung
+- 周末的时候 / 週末的時候 /zhōumò de shíhou/ — lúc cuối tuần
+
+---
+
+### Cụm danh từ rút gọn với 的 — Nominal 的
+
+**Cấu trúc:** DT / Đại từ / HDT / ĐT + 的
+
+**Giải thích:** Dùng 的 để thay thế danh từ đã được nhắc đến trước đó, tránh lặp lại. Nếu liên quan đến người → "của"; nếu liên quan đến vật → "cái ... của".
+
+**Ví dụ:**
+- 这本书是我的。/ 這本書是我的。 /zhè běn shū shì wǒ de/ — Quyển sách này là của tôi.
+- 大的是我的，小的是我朋友的。 /dà de shì wǒ de, xiǎo de shì wǒ péngyou de/ — Cái lớn là của tôi, cái nhỏ là của bạn tôi.
+- 谁的房间？/ 誰的房間？ /shéi de fángjiān/ — Phòng của ai?
+
+---
+
 ## 6. Câu thông dụng (Common Phrases)
 
 ### Chào hỏi
@@ -1267,6 +1364,12 @@ Ví dụ:
 | 你对我太好了！ | 你對我太好了！ | nǐ duì wǒ tài hǎo le | Bạn đối với tôi tốt quá! |
 | — | 吃瓜 | chī guā | Hóng drama (tiếng lóng). |
 | 吃水果对身体很好。 | 吃水果對身體很好。 | chī shuǐguǒ duì shēntǐ hěn hǎo | Ăn trái cây rất tốt cho sức khỏe. |
+| 你家有几口人？ | 你家有幾口人？ | nǐ jiā yǒu jǐ kǒu rén | Nhà bạn có bao nhiêu người? |
+| 你可以帮我拍一下儿吗？ | 你可以幫我拍一下兒嗎？ | nǐ kěyǐ bāng wǒ pāi yíxiàr ma | Bạn có thể giúp tôi chụp ảnh một chút không? |
+| — | 是的。 | shì de | Đúng vậy. (cấu trúc trả lời Có/Không) |
+| — | 是我的。 | shì wǒ de | Là của tôi. (cấu trúc trả lời Có/Không) |
+| — | 不是的。 | bú shì de | Không phải. (cấu trúc trả lời Có/Không) |
+| 黄沙和长沙群岛是越南的。 | 黃沙和長沙群島是越南的。 | Huángshā hé Chángshā qúndǎo shì Yuènán de | Hoàng Sa và Trường Sa là của Việt Nam. |
 
 ### Hỏi thăm / Mời chào
 

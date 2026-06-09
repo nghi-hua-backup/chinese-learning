@@ -4,8 +4,67 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 9 — Táo bán như thế nào? (2026-06-07)
+> **Cập nhật lần cuối:** Bài 10 — Nhà bạn có mấy người? (2026-06-09)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
+
+---
+
+### Bài 10 — Nhà bạn có mấy người?
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 我爷爷是最高和最帅的人。 | 我爺爺是最高和最帥的人。 | /wǒ yéye shì zuì gāo hé zuì shuài de rén/ | Ông nội tôi là người cao nhất và đẹp trai nhất. |
+| 我家有一条黑狗。 | 我家有一條黑狗。 | /wǒ jiā yǒu yì tiáo hēi gǒu/ | Nhà tôi có một con chó đen. |
+| 我很喜欢拍照。 | 我很喜歡拍照。 | /wǒ hěn xǐhuān pāizhào/ | Tôi rất thích chụp ảnh. |
+| 这两张是我小时候的照片。 | 這兩張是我小時候的照片。 | /zhè liǎng zhāng shì wǒ xiǎoshíhou de zhàopiàn/ | Hai tấm này là ảnh hồi nhỏ của tôi. |
+| 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
+| 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
+| 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
+| 你们觉得老师可爱吗？ | 你們覺得老師可愛嗎？ | /nǐmen juéde lǎoshī kě'ài ma/ | Các bạn thấy cô giáo có đáng yêu không? |
+| 你觉得她漂亮吗？ | 你覺得她漂亮嗎？ | /nǐ juéde tā piàoliang ma/ | Bạn thấy cô ấy có xinh không? |
+| 这个房间太漂亮了。 | 這個房間太漂亮了。 | /zhè ge fángjiān tài piàoliang le/ | Căn phòng này đẹp quá. |
+| 你什么时候回来啊？ | 你什麼時候回來啊？ | /nǐ shénme shíhou huílái a/ | Khi nào bạn về thế? |
+| 他买的衣服都很贵。 | 他買的衣服都很貴。 | /tā mǎi de yīfu dōu hěn guì/ | Quần áo anh ấy mua đều rất đắt. |
+| 我喜欢穿白衣服。 | 我喜歡穿白衣服。 | /wǒ xǐhuān chuān bái yīfu/ | Tôi thích mặc quần áo trắng. |
+| 学习汉语的时候，我觉得很累。 | 學習漢語的時候，我覺得很累。 | /xuéxí hànyǔ de shíhou, wǒ juéde hěn lèi/ | Lúc học tiếng Trung, tôi cảm thấy rất mệt. |
+| 妈妈常买水果。 | 媽媽常買水果。 | /māma cháng mǎi shuǐguǒ/ | Mẹ thường xuyên mua trái cây. |
+| 周末的时候，我喜欢去图书馆。 | 週末的時候，我喜歡去圖書館。 | /zhōumò de shíhou, wǒ xǐhuān qù túshūguǎn/ | Lúc cuối tuần, tôi thích đi thư viện. |
+| 我最喜欢吃苹果。 | 我最喜歡吃蘋果。 | /wǒ zuì xǐhuān chī píngguǒ/ | Tôi thích ăn táo nhất. |
+| 骑马 / 骑车 | 騎馬 / 騎車 | /qí mǎ / qí chē/ | Cưỡi ngựa / Đi xe. |
+| 你会骑自行车吗？ | 你會騎自行車嗎？ | /nǐ huì qí zìxíngchē ma/ | Bạn biết đi xe đạp không? |
+| 我姐姐很喜欢看电影。 | 我姐姐很喜歡看電影。 | /wǒ jiějie hěn xǐhuān kàn diànyǐng/ | Chị gái tôi rất thích xem phim. |
+| 谁的房间？ | 誰的房間？ | /shéi de fángjiān/ | Phòng của ai? |
+| 这个房间很大。 | 這個房間很大。 | /zhè ge fángjiān hěn dà/ | Căn phòng này rất lớn. |
+
+### Bài 10 — Luyện tập: Hội thoại
+
+| Nhân vật | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|:--------:|------|------|--------|--------------------|
+| **A** | 这是你的照片吗？ | 這是你的照片嗎？ | /zhè shì nǐ de zhàopiàn ma/ | Đây là ảnh của bạn à? |
+| **B** | 对，是我家的照片。 | 對，是我家的照片。 | /duì, shì wǒ jiā de zhàopiàn/ | Đúng, là ảnh của gia đình tôi. |
+| **A** | 你家有几口人？ | 你家有幾口人？ | /nǐ jiā yǒu jǐ kǒu rén/ | Nhà bạn có mấy người? |
+| **B** | 我家有五口人：爷爷，奶奶，爸爸，妈妈和我。 | 我家有五口人：爺爺，奶奶，爸爸，媽媽和我。 | /wǒ jiā yǒu wǔ kǒu rén: yéye, nǎinai, bàba, māma hé wǒ/ | Nhà tôi có 5 người: ông nội, bà nội, bố, mẹ và tôi. |
+| **A** | 你没有哥哥姐姐吗？ | 你沒有哥哥姐姐嗎？ | /nǐ méiyǒu gēge jiějie ma/ | Bạn không có anh trai, chị gái à? |
+| **B** | 没有，现在中国家庭一般只有一个孩子。 | 沒有，現在中國家庭一般只有一個孩子。 | /méiyǒu, xiànzài Zhōngguó jiātíng yìbān zhǐyǒu yígè háizi/ | Không có, hiện nay gia đình Trung Quốc thường chỉ có một con. |
+| **A** | 你家都有什么人？ | 你家都有什麼人？ | /nǐ jiā dōu yǒu shénme rén/ | Nhà bạn gồm có những ai? |
+| **B** | 我家有爸爸，妈妈，哥哥，弟弟，妹妹，还有一条狗。 | 我家有爸爸，媽媽，哥哥，弟弟，妹妹，還有一條狗。 | /wǒ jiā yǒu bàba, māma, gēge, dìdi, mèimei, hái yǒu yì tiáo gǒu/ | Nhà tôi có bố, mẹ, anh trai, em trai, em gái và còn có một con chó. |
+| **A** | 一共六口人？ | 一共六口人？ | /yígòng liù kǒu rén/ | Tổng cộng 6 người? |
+| **B** | 不，七口。 | 不，七口。 | /bù, qī kǒu/ | Không, 7 người. |
+| **A** | 爸爸，妈妈，一个哥哥，一个弟弟，一个妹妹和你，六口，对吧？ | 爸爸，媽媽，一個哥哥，一個弟弟，一個妹妹和你，六口，對吧？ | /bàba, māma, yígè gēge, yígè dìdi, yígè mèimei hé nǐ, liù kǒu, duì ba/ | Bố, mẹ, 1 anh trai, 1 em trai, 1 em gái và bạn, là 6 người, đúng không? |
+| **B** | 不对，还有一条狗。 | 不對，還有一條狗。 | /bú duì, hái yǒu yì tiáo gǒu/ | Không đúng, còn có một con chó nữa. |
+| **A** | 是这样... | 是這樣... | /shì zhè yàng/ | Là như vậy... |
+
+### Bài 10 — Luyện tập: Dịch sang tiếng Trung
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 我爷爷是最高和最帅的人。 | 我爺爺是最高和最帥的人。 | /wǒ yéye shì zuì gāo hé zuì shuài de rén/ | Ông nội tôi là người cao nhất và đẹp trai nhất. |
+| 我家有一条黑狗。 | 我家有一條黑狗。 | /wǒ jiā yǒu yì tiáo hēi gǒu/ | Nhà tôi có một con chó đen. |
+| 我很喜欢拍照。这两张是我小时候的照片。 | 我很喜歡拍照。這兩張是我小時候的照片。 | /wǒ hěn xǐhuān pāizhào. zhè liǎng zhāng shì wǒ xiǎoshíhou de zhàopiàn/ | Tôi rất thích chụp ảnh. Hai tấm này là ảnh hồi nhỏ của tôi. |
+| 你家有几口人？ | 你家有幾口人？ | /nǐ jiā yǒu jǐ kǒu rén/ | Nhà bạn có mấy người? |
+| 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
+| 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
+| 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
 
 ---
 
