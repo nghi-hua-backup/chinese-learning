@@ -1287,7 +1287,7 @@ Ví dụ:
 **Ví dụ:**
 - 最高 /zuì gāo/ — cao nhất
 - 最可爱 / 最可愛 /zuì kě'ài/ — đáng yêu nhất
-- 最帅 / 最帅 /zuì shuài/ — đẹp trai nhất
+- 最帅 / 最帥 /zuì shuài/ — đẹp trai nhất
 - 我爷爷是最高和最帅的人。/ 我爺爺是最高和最帥的人。 /wǒ yéye shì zuì gāo hé zuì shuài de rén/ — Ông nội tôi là người cao nhất và đẹp trai nhất.
 - 妈妈是最好的。/ 媽媽是最好的。 /māma shì zuì hǎo de/ — Mẹ là người tốt nhất.
 

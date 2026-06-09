@@ -18,6 +18,11 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [1.6.2] - 2026-06-09
+
+### Changed
+- KB: Bài 10 — Nhà bạn có mấy người? — 32 từ vựng, 4 lượng từ (件/只/条/张), 3 mẫu ngữ pháp mới + 1 mở rộng, 6 câu § 6, 22 câu ví dụ + 13 hội thoại + 7 dịch thuật trong practice bank
+
 ## [1.6.1] - 2026-06-08
 
 ### Changed
