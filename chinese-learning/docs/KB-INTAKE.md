@@ -152,3 +152,67 @@ Reference file covering the four large-unit characters (百, 千, 万/萬, 亿/�
 - Q1 (零 in § 3.1): In formation rules notes only — no separate table row
 - Q2 (Column format): Option A — add Hán Việt column; 两's Hán Việt = "Lưỡng"; new words not in Từ vựng sections → add to Bài 9 Từ vựng
 - Q3 (VND table): Add as new group "### Số tiền thực tế (VND)" in § 6 Câu thông dụng
+
+---
+
+## [2026-06-09] — Bài 10: Nhà bạn có mấy người?
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bai-10.md` — pre-structured lesson file
+
+### Input summary
+Full lesson content for Bài 10 "Nhà bạn có mấy người?" extracted from the structured reference file. Contains: 31 vocabulary items (colors, appearance adjectives, family members, action verbs, measure-word hints in parentheses) + 颜色 from Phần 5 = 32 total vocab entries; 4 new lượng từ entries (件/只/条/张); 3 new grammar patterns + 1 extension to existing pattern; 6 social phrases (Phần 4 Câu thông dụng) for § 6; Phần 5 example sentences and Phần 6 luyện tập for practice bank. Format correction applied: source uses `—` in 繁體 column for same-as-simplified entries — corrected to `—` in 简体 column per KB guide standard (same correction as Bài 9).
+
+### Agreed scope
+
+**chinese-brain.md — Từ vựng (### Bài 10): 32 entries**
+- 色, 红色/紅色, 黑色, 高, 可爱/可愛, 帅/帥, 帅哥/帥哥, 漂亮, 最
+- 什么时候/什麼時候, 衣服, 穿, 骑/騎, 自行车/自行車, 狗
+- 拍, 照, 拍照, 照片, 时候/時候, 总是/總是, 唠叨/嘮叨
+- 买东西/買東西, 画画儿/畫畫兒, 调皮/調皮, 听话/聽話, 个性/個性
+- 爷爷/爺爺, 奶奶, 姐姐, 房间/房間
+- 颜色/顏色 (from Phần 5 example sentence — Q1: Yes, add as Bài 10 entry)
+
+**chinese-brain.md — § 4 Lượng từ: 4 new entries**
+- 件 /jiàn/ Kiện — bộ, chiếc — quần áo
+- 只/隻 /zhī/ Chích — con — động vật nhỏ
+- 条/條 /tiáo/ Điều — cái, con — vật dài, hẹp, động vật dài
+- 张/張 /zhāng/ Trương — tờ, tấm — vật mỏng, dẹt
+
+**chinese-brain.md — § 5 Ngữ pháp: 3 new patterns + 1 extension**
+- NEW: 最 + HDT/ĐT — so sánh nhất
+- NEW: …的时候 (de shíhou) — khi / lúc
+- NEW: Cụm danh từ rút gọn với 的 (nominal 的 — 的 replaces previously mentioned noun)
+- EXTENSION (Q2: Option A): append 这/那/几 + 量词 + DT cases + no-double-measure-word rule to existing 数词+量词+名词 pattern
+
+**chinese-brain.md — § 6 Câu thông dụng (Câu xã giao khác group): 6 entries**
+- 你家有几口人？ (Q3: Câu xã giao khác)
+- 你可以帮我拍一下儿吗？ (one entry only — source has duplicate)
+- 是的。— with note: cấu trúc trả lời Có/Không (Q4)
+- 是我的。— with note: cấu trúc trả lời Có/Không (Q4)
+- 不是的。— with note: cấu trúc trả lời Có/Không (Q4)
+- 黄沙和长沙群岛是越南的。 (Q5: A — add to § 6 as cultural phrase)
+
+**chinese-practice-bank.md — ### Bài 10:**
+- Phần 5: 21 example sentences
+- Phần 6 §1: 12-line dialogue (Pinyin → Chinese characters)
+- Phần 6 §2: 7 translation sentence pairs
+
+### Out of scope (agreed)
+- 口 as lượng từ — KBP-2: already in § 4 with full entry
+- 个/個 as lượng từ — KBP-2: already in § 4 with comprehensive entry and rules
+
+### Debator concerns resolved
+- **漂亮, 姐姐, 房间:** Appeared in grammar examples but never formally added as vocab entries — adding under Bài 10 is correct (KBP-4 compliance, not KBP-2 duplication).
+- **颜色 (Q1):** Confirmed add — appears in Phần 5 example sentence; customer confirmed as Bài 10 vocab entry.
+- **买东西:** 买 already in Bài 9; 买东西 as Cụm ĐT (mua sắm) is distinct — KBP-2 not triggered.
+- **Grammar pattern extension (Q2):** Extend existing 数词+量词+名词 pattern (Option A) rather than create new entry.
+- **Source duplicate:** 你可以帮我拍一下儿吗？ appears twice in Phần 4 — only one entry written.
+- **Format correction:** Source `—` in 繁體 column corrected to `—` in 简体 column throughout (same as Bài 9 precedent).
+
+### Open questions resolved
+- Q1 (颜色): Yes — add as Bài 10 vocab entry
+- Q2 (Lượng từ grammar): Option A — extend existing 数词+量词+名词 pattern
+- Q3 (§6 group): Câu xã giao khác
+- Q4 (是的/是我的/不是的): All three to § 6 as Yes/No answer structure
+- Q5 (黄沙 sentence): A — add to § 6 Câu xã giao khác as cultural phrase
