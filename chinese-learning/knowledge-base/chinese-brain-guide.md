@@ -20,11 +20,11 @@
 | Viết tắt | Ý nghĩa đầy đủ | Ghi chú |
 |----------|---------------|---------|
 | DT | Danh từ | |
-| ĐT / V | Động từ | Dùng V trong công thức ngữ pháp |
+| ĐT | Động từ | Dùng trong cả từ vựng lẫn công thức ngữ pháp |
 | HDT | Hình dung từ | Tính từ/trạng từ mô tả |
 | PT | Phó từ | Trạng từ bổ nghĩa cho ĐT hoặc HDT |
-| S | Chủ ngữ | Subject |
-| O | Tân ngữ | Object |
+| CN | Chủ ngữ | Dùng trong công thức ngữ pháp (không dùng S) |
+| TN | Tân ngữ | Dùng trong công thức ngữ pháp (không dùng O) |
 | Trợ từ | Trợ từ | Không viết tắt |
 | Đại từ nhân xưng | Đại từ nhân xưng | Không viết tắt (tôi, bạn, anh ấy…) |
 | Đại từ nghi vấn | Đại từ nghi vấn | Không viết tắt (ai, đâu, mấy…) |
@@ -126,8 +126,66 @@
 ### Ngữ pháp — ĐÚNG
 ```
 ### Câu phủ định với 不
-**Cấu trúc:** S + 不 + HDT/V
+**Cấu trúc:** CN + 不 + HDT/ĐT
 **Giải thích:** Phủ định hình dung từ hoặc động từ
 **Ví dụ:**
 - 马不大。/ 馬不大。 /mǎ bù dà/ — Con ngựa không to.
 ```
+
+---
+
+## 8. Nguyên tắc bảo trì (Maintenance Principles)
+
+Đây là các quy tắc bắt buộc khi cập nhật `chinese-brain.md` và `chinese-practice-bank.md`. Claude phải tuân thủ những nguyên tắc này trong mọi lần cập nhật KB.
+
+---
+
+### P-KB1: Thứ tự chèn nội dung — Append xuống cuối, không Prepend lên đầu
+
+Nội dung bài học mới **luôn được thêm vào cuối** (append), không bao giờ chèn lên đầu (prepend):
+
+- **`chinese-brain.md` § 2 Từ vựng:** thêm `### Bài N` mới **sau** heading `### Bài` cuối cùng hiện có.
+- **`chinese-practice-bank.md`:** thêm block `### Bài N` mới **sau** block bài cuối cùng, ngay trước (hoặc sau) dấu `---` cuối.
+
+**Lý do:** Bug thứ tự Bài 7/6 trong `chinese-brain.md` và bug Bài 8/9/10 đứng đầu trong practice bank đều có cùng nguyên nhân — chèn sai vị trí.
+
+---
+
+### P-KB2: Không tạo "Luyện tập tổng hợp"
+
+**Không** sinh hoặc thêm section `## Luyện tập tổng hợp` vào `chinese-practice-bank.md`. Section này đã bị xóa vĩnh viễn. Lý do: nội dung tổng hợp (Tình huống, hội thoại tổng hợp) là nhân tạo, không bám sát giáo trình, và không hữu ích cho luyện tập thực tế.
+
+---
+
+### P-KB3: Chỉ dùng tiếng Trung và tiếng Việt
+
+Heading ngữ pháp và dòng **Cấu trúc:** chỉ dùng **chữ Hán và tiếng Việt**. Không dùng từ ngữ pháp tiếng Anh.
+
+| Thay bằng | Không dùng |
+|-----------|------------|
+| CN (Chủ ngữ) | S (Subject) |
+| TN (Tân ngữ) | O (Object) |
+| ĐT (Động từ) | V (Verb) |
+| Số từ, Lượng từ, Danh từ | 数词, 量词, 名词 |
+| Phương vị từ | 方位词 |
+
+**Ngoại lệ được chấp nhận:** thuật ngữ kỹ thuật trong ngoặc đơn như "Nominal 的" hoặc "Serial Verb" nếu cần giải thích thêm, và đã được khách hàng chấp nhận.
+
+---
+
+### P-KB4: Pattern ngữ pháp mới phải vào đúng nhóm
+
+`§ 5 Ngữ pháp` được tổ chức thành **10 nhóm chủ đề**. Pattern mới phải được đặt dưới heading nhóm phù hợp — không thêm vào cuối `§ 5` một cách tùy tiện.
+
+| Nhóm | Chủ đề |
+|------|--------|
+| 1 | Mô tả và mức độ |
+| 2 | Trợ từ kết cấu 的 |
+| 3 | Câu hỏi |
+| 4 | Phủ định và cấm đoán |
+| 5 | Cấu trúc động từ |
+| 6 | Thời gian và trạng thái tiếp diễn |
+| 7 | Địa điểm và vị trí |
+| 8 | Số từ và lượng từ |
+| 9 | Cấu trúc bổ sung |
+| 10 | Phân biệt từ dễ nhầm |

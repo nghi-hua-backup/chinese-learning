@@ -9,6 +9,17 @@
 
 ---
 
+## Mục lục
+
+- [1. Phát âm](#1-phát-âm-pronunciation) — 13 quy tắc pinyin và thanh điệu
+- [2. Từ vựng](#2-từ-vựng-vocabulary) — Bài 1–10 (170+ từ)
+- [3. Số đếm & Thời gian](#3-số-đếm--thời-gian)
+- [4. Lượng từ](#4-lượng-từ-measure-words)
+- [5. Ngữ pháp](#5-ngữ-pháp-grammar) — 41 patterns, 10 nhóm chủ đề
+- [6. Câu thông dụng](#6-câu-thông-dụng-common-phrases)
+
+---
+
 ## 1. Phát âm (Pronunciation)
 
 ### 1.1 Quy tắc viết Pinyin khi âm tiết đứng độc lập
@@ -339,6 +350,35 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 退休 | tuìxiū | Thoái Hưu | ĐT | về hưu, nghỉ hưu |
 | 职员 | 職員 | zhíyuán | Chức Viên | DT | nhân viên |
 
+### Bài 6 — Cậu thích ăn cái gì?
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| 饭 | 飯 | fàn | Phạn | DT | cơm, bữa ăn |
+| 米饭 | 米飯 | mǐfàn | Mễ Phạn | DT | cơm trắng |
+| 饿 | 餓 | è | Ngã | HDT | đói |
+| — | 食堂 | shítáng | Thực Đường | DT | nhà ăn, căng-tin |
+| 馒头 | 饅頭 | mántou | Man Đầu | DT | bánh màn thầu |
+| — | 慢 | màn | Mạn | HDT | chậm |
+| — | 包子 | bāozi | Bao Tử | DT | bánh bao |
+| — | 本子 | běnzi | Bản Tử | DT | quyển vở |
+| 饺子 | 餃子 | jiǎozi | Cảo Tử | DT | bánh sủi cảo |
+| 面条 | 麵條 | miàntiáo | Diện Điều | DT | mì, mì sợi |
+| 鸡蛋 | 雞蛋 | jīdàn | Kê Đản | DT | trứng gà |
+| 汤 | 湯 | tāng | Thang | DT | canh, súp |
+| — | 啤酒 | píjiǔ | — | DT | bia |
+| — | 酒 | jiǔ | Tửu | DT | rượu |
+| 怎么样 | 怎麼樣 | zěnmeyàng | — | Đại từ nghi vấn | thế nào, như thế nào |
+| 觉得 | 覺得 | juéde | Giác Đắc | ĐT | cảm thấy, thấy rằng |
+| 喜欢 | 喜歡 | xǐhuan | Hỷ Hoan | ĐT | thích |
+| — | 吃 | chī | Cật | ĐT | ăn |
+| 学习 | 學習 | xuéxí | Học Tập | ĐT/DT | học, học tập |
+| 汉字 | 漢字 | hànzi | Hán Tự | DT | chữ Hán |
+| 发音 | 發音 | fāyīn | Phát Âm | ĐT/DT | phát âm |
+| 书 | 書 | shū | Thư | DT | sách |
+| 杂志 | 雜誌 | zázhì | Tạp Chí | DT | tạp chí |
+| — | 要 | yào | Yếu | ĐT năng nguyện | muốn, cần, phải |
+
 ### Bài 7 — Thư viện ở đâu?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -383,35 +423,6 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 系 | 繫 | /xì/ | Hệ | DT | khoa (trong trường học) |
 | 儿子 | 兒子 | /érzi/ | Nhi Tử | DT | con trai |
 | 女儿 | 女兒 | /nǚ'ér/ | Nữ Nhi | DT | con gái |
-
-### Bài 6 — Cậu thích ăn cái gì?
-
-| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
-|------|------|--------|----------|---------|---------------------|
-| 饭 | 飯 | fàn | Phạn | DT | cơm, bữa ăn |
-| 米饭 | 米飯 | mǐfàn | Mễ Phạn | DT | cơm trắng |
-| 饿 | 餓 | è | Ngã | HDT | đói |
-| — | 食堂 | shítáng | Thực Đường | DT | nhà ăn, căng-tin |
-| 馒头 | 饅頭 | mántou | Man Đầu | DT | bánh màn thầu |
-| — | 慢 | màn | Mạn | HDT | chậm |
-| — | 包子 | bāozi | Bao Tử | DT | bánh bao |
-| — | 本子 | běnzi | Bản Tử | DT | quyển vở |
-| 饺子 | 餃子 | jiǎozi | Cảo Tử | DT | bánh sủi cảo |
-| 面条 | 麵條 | miàntiáo | Diện Điều | DT | mì, mì sợi |
-| 鸡蛋 | 雞蛋 | jīdàn | Kê Đản | DT | trứng gà |
-| 汤 | 湯 | tāng | Thang | DT | canh, súp |
-| — | 啤酒 | píjiǔ | — | DT | bia |
-| — | 酒 | jiǔ | Tửu | DT | rượu |
-| 怎么样 | 怎麼樣 | zěnmeyàng | — | Đại từ nghi vấn | thế nào, như thế nào |
-| 觉得 | 覺得 | juéde | Giác Đắc | ĐT | cảm thấy, thấy rằng |
-| 喜欢 | 喜歡 | xǐhuan | Hỷ Hoan | ĐT | thích |
-| — | 吃 | chī | Cật | ĐT | ăn |
-| 学习 | 學習 | xuéxí | Học Tập | ĐT/DT | học, học tập |
-| 汉字 | 漢字 | hànzi | Hán Tự | DT | chữ Hán |
-| 发音 | 發音 | fāyīn | Phát Âm | ĐT/DT | phát âm |
-| 书 | 書 | shū | Thư | DT | sách |
-| 杂志 | 雜誌 | zázhì | Tạp Chí | DT | tạp chí |
-| — | 要 | yào | Yếu | ĐT năng nguyện | muốn, cần, phải |
 
 ### Bài 8 — Cuối tuần cậu thích làm gì?
 
@@ -689,8 +700,8 @@ Ví dụ:
 | 个 | 個 | gè | Cá | cái, con, trái | Người và vật thể thông dụng |
 
 **Quy tắc:**
-- 数词 + 量词 + 名词 → 一个人 /yí gè rén/ (một người)
-- 哪 + 量词 + 名词 → để hỏi: 你吃哪个？ /nǐ chī nǎ gè/ (Bạn ăn cái nào?)
+- Số từ + Lượng từ + Danh từ → 一个人 /yí gè rén/ (một người)
+- 哪 + Lượng từ + Danh từ → để hỏi: 你吃哪个？ /nǐ chī nǎ gè/ (Bạn ăn cái nào?)
 - Khi 个 kết hợp với thanh 4 thì chữ 一 đọc là yí (thanh 2)
 - Khi 个 kết hợp với thanh 1, 2, 3 thì chữ 一 đọc là yì (thanh 4)
 
@@ -736,7 +747,9 @@ Ví dụ:
 
 ## 5. Ngữ pháp (Grammar)
 
-### S + PT + HDT — Câu miêu tả cơ bản
+### Nhóm 1: Mô tả và mức độ
+
+#### CN + PT + HDT — Câu miêu tả cơ bản
 
 **Cấu trúc:** Chủ ngữ + Phó từ + Hình dung từ
 
@@ -749,9 +762,9 @@ Ví dụ:
 
 ---
 
-### 很 + HDT — Mức độ "rất"
+#### 很 + HDT — Mức độ "rất"
 
-**Cấu trúc:** S + 很 + HDT
+**Cấu trúc:** CN + 很 + HDT
 
 **Giải thích:** 很 thường không thể bỏ khi không có PT mức độ nào khác; nếu bỏ 很 câu có hàm ý so sánh hoặc nghe lạ.
 
@@ -762,9 +775,9 @@ Ví dụ:
 
 ---
 
-### 太 + HDT + 了 — Mức độ "quá"
+#### 太 + HDT + 了 — Mức độ "quá"
 
-**Cấu trúc:** S + 太 + HDT + 了
+**Cấu trúc:** CN + 太 + HDT + 了
 
 **Giải thích:** Diễn đạt mức độ vượt quá giới hạn bình thường. 了 ở cuối làm mềm câu và biến âm.
 
@@ -779,7 +792,24 @@ Ví dụ:
 
 ---
 
-### DT/Đại từ + 的 + DT — Sở hữu
+#### 最 + HDT/ĐT — So sánh nhất
+
+**Cấu trúc:** 最 + Hình dung từ / Động từ
+
+**Giải thích:** 最 (zuì) đặt trước tính từ hoặc động từ để diễn đạt mức độ cao nhất ("nhất").
+
+**Ví dụ:**
+- 最高 /zuì gāo/ — cao nhất
+- 最可爱 / 最可愛 /zuì kě'ài/ — đáng yêu nhất
+- 最帅 / 最帅 /zuì shuài/ — đẹp trai nhất
+- 我爷爷是最高和最帅的人。/ 我爺爺是最高和最帥的人。 /wǒ yéye shì zuì gāo hé zuì shuài de rén/ — Ông nội tôi là người cao nhất và đẹp trai nhất.
+- 妈妈是最好的。/ 媽媽是最好的。 /māma shì zuì hǎo de/ — Mẹ là người tốt nhất.
+
+---
+
+### Nhóm 2: Trợ từ kết cấu 的
+
+#### DT/Đại từ + 的 + DT — Sở hữu
 
 **Cấu trúc:** Người sở hữu + 的 + Vật sở hữu
 
@@ -793,7 +823,7 @@ Ví dụ:
 
 ---
 
-### ĐT/Cụm từ + 的 + DT — Miêu tả mục đích hoặc nguồn gốc
+#### ĐT/Cụm từ + 的 + DT — Miêu tả mục đích hoặc nguồn gốc
 
 **Cấu trúc:** [ĐT hoặc Cụm từ] + 的 + DT
 
@@ -807,7 +837,7 @@ Ví dụ:
 
 ---
 
-### HDT + 的 + DT — Quy tắc âm tiết với 的
+#### HDT + 的 + DT — Quy tắc âm tiết với 的
 
 **Cấu trúc:** HDT + 的 + DT
 
@@ -837,7 +867,7 @@ Ví dụ:
 
 ---
 
-### Lược bỏ 的 trong cụm từ cố định
+#### Lược bỏ 的 trong cụm từ cố định
 
 **Cấu trúc:** [Thành phần bổ nghĩa] + DT (không có 的)
 
@@ -851,7 +881,22 @@ Ví dụ:
 
 ---
 
-### 吗 — Câu hỏi Yes/No
+#### Cụm danh từ rút gọn với 的 — Nominal 的
+
+**Cấu trúc:** DT / Đại từ / HDT / ĐT + 的
+
+**Giải thích:** Dùng 的 để thay thế danh từ đã được nhắc đến trước đó, tránh lặp lại. Nếu liên quan đến người → "của"; nếu liên quan đến vật → "cái ... của".
+
+**Ví dụ:**
+- 这本书是我的。/ 這本書是我的。 /zhè běn shū shì wǒ de/ — Quyển sách này là của tôi.
+- 大的是我的，小的是我朋友的。 /dà de shì wǒ de, xiǎo de shì wǒ péngyou de/ — Cái lớn là của tôi, cái nhỏ là của bạn tôi.
+- 谁的房间？/ 誰的房間？ /shéi de fángjiān/ — Phòng của ai?
+
+---
+
+### Nhóm 3: Câu hỏi
+
+#### 吗 — Câu hỏi Yes/No
 
 **Cấu trúc:** Câu khẳng định + 吗？
 
@@ -864,22 +909,132 @@ Ví dụ:
 
 ---
 
-### Serial Verb — Chuỗi động từ
+#### ĐT + 不 + ĐT — Câu hỏi chính phản
 
-**Cấu trúc:** S + V1 + Địa điểm + V2
+**Cấu trúc:** ĐT/HDT + 不 + ĐT/HDT？
 
-**Giải thích:** Hai động từ liên tiếp trong một câu, V1 là hành động di chuyển, V2 là mục đích.
+**Giải thích:** Lặp lại động từ hoặc hình dung từ với 不 ở giữa để hỏi Yes/No. Tương đương câu hỏi dùng 吗 nhưng nhấn mạnh hơn.
 
 **Ví dụ:**
-- 我去学校学汉语。/ 我去學校學漢語。 /wǒ qù xuéxiào, xué hànyǔ/ — Tôi đi trường học tiếng Trung.
-- 回家见妈妈。/ 回家見媽媽。 /huí jiā jiàn māma/ — Về nhà gặp mẹ.
-- 我去银行取钱。/ 我去銀行取錢。 /wǒ qù yínháng qǔ qián/ — Tôi đi ngân hàng rút tiền.
+- 你吃不吃？ /nǐ chī bù chī/ — Bạn ăn không? (= 你吃吗？)
+- 你喝不喝？ /nǐ hē bù hē/ — Bạn uống không?
+- 你忙不忙？ /nǐ máng bù máng/ — Bạn có bận không?
 
 ---
 
-### 是 — Câu định nghĩa/nhận dạng
+#### 什么 — Hỏi "gì?"
 
-**Cấu trúc:** S + 是 + O
+**Cấu trúc:**
+- ĐT + 什么 → hỏi tân ngữ là gì
+- 什么 + DT → hỏi đó là loại gì
+
+**Giải thích:** 什么 là đại từ nghi vấn "gì?", đứng ở vị trí của tân ngữ hoặc đứng trước danh từ để hỏi loại.
+
+**Ví dụ:**
+- 这是什么？/ 這是什麼？ /zhè shì shénme/ — Đây là cái gì?
+- 你的工作是什么？/ 你的工作是什麼？ /nǐ de gōngzuò shì shénme/ — Công việc của bạn là gì?
+- 你叫什么名字？/ 你叫什麼名字？ /nǐ jiào shénme míngzi/ — Bạn tên là gì?
+- 这是什么书？/ 這是什麼書？ /zhè shì shénme shū/ — Đây là sách gì?
+
+---
+
+#### 哪 + Lượng từ + Danh từ — Hỏi "nào?"
+
+**Cấu trúc:** 哪 + Lượng từ + Danh từ
+
+**Giải thích:** Dùng để hỏi "cái nào / người nào / nước nào…"
+
+**Ví dụ:**
+- 你是哪国人？/ 你是哪國人？ /nǐ shì nǎ guó rén/ — Bạn là người nước nào?
+- 你吃哪个？/ 你吃哪個？ /nǐ chī nǎ gè/ — Bạn ăn cái nào?
+
+---
+
+#### CN + 觉得 + 怎么样？ — Hỏi cảm nhận "Thế nào?"
+
+**Cấu trúc:** CN + 觉得/覺得 + 怎么样/怎麼樣？
+
+**Giải thích:** 怎么样 hỏi "thế nào / như thế nào". Thường đi kèm 觉得 (cảm thấy) hoặc đứng sau chủ đề cần đánh giá.
+
+**Ví dụ:**
+- 你觉得怎么样？/ 你覺得怎麼樣？ /nǐ juéde zěnmeyàng/ — Bạn cảm thấy thế nào?
+- 你学习怎么样了？/ 你學習怎麼樣了？ /nǐ xuéxí zěnmeyàng le/ — Việc học của bạn thế nào rồi?
+
+---
+
+#### 怎么 + ĐT — Hỏi cách thức
+
+**Cấu trúc:** 怎么/怎麼 + ĐT
+
+**Giải thích:** 怎么 hỏi "làm thế nào / bằng cách nào". Khác với 怎么样 (hỏi trạng thái), 怎么 hỏi phương thức hành động.
+
+**Ví dụ:**
+- 水怎么喝？ /shuǐ zěnme hē/ — Nước uống thế nào?
+- 怎么学好汉语？/ 怎麼學好漢語？ /zěnme xué hǎo hànyǔ/ — Làm sao để học tốt tiếng Trung?
+
+---
+
+#### CN + ĐT + 了 + 吗？ / 还没 + ĐT — Hỏi "Đã... chưa?"
+
+**Cấu trúc hỏi:** CN + ĐT + 了 + 吗？
+**Cấu trúc phủ định:** CN + 还没/還沒 + ĐT。
+
+**Giải thích:** Dùng 了 + 吗 để hỏi hành động đã xảy ra chưa. Trả lời phủ định dùng 还没 (vẫn chưa).
+
+**Ví dụ:**
+- 你吃饭了吗？/ 你吃飯了嗎？ /nǐ chīfàn le ma/ — Bạn ăn cơm chưa?
+- 我还没吃饭。 /wǒ hái méi chīfàn/ — Tôi vẫn chưa ăn cơm.
+- 你姐姐回国了吗？/ 你姐姐回國了嗎？ /nǐ jiějie huí guó le ma/ — Chị gái bạn về nước chưa?
+- 我姐姐还没回国。/ 我姐姐還沒回國。 /wǒ jiějie hái méi huí guó/ — Chị gái tôi vẫn chưa về nước.
+
+---
+
+### Nhóm 4: Phủ định và cấm đoán
+
+#### 有/没有 — Có/Không có
+
+**Cấu trúc:** CN + 有/没有 + TN
+
+**Giải thích:** 有 là có, 没有 là không có. Phủ định của 有 **không dùng 不有** mà dùng 没有.
+
+**Ví dụ:**
+- 你有中国朋友吗？/ 你有中國朋友嗎？ /nǐ yǒu zhōngguó péngyou ma/ — Bạn có bạn Trung Quốc không?
+- 我有一个中国朋友。/ 我有一個中國朋友。 /wǒ yǒu yī gè zhōngguó péngyou/ — Tôi có một người bạn Trung Quốc.
+- 我没有中国朋友。/ 我沒有中國朋友。 /wǒ méi yǒu zhōngguó péngyou/ — Tôi không có bạn Trung Quốc.
+
+---
+
+#### 不用 + ĐT — Không cần làm gì
+
+**Cấu trúc:** 不用 + ĐT
+
+**Giải thích:** Diễn đạt sự không cần thiết phải làm gì đó. Thường dùng để từ chối lịch sự hoặc cho phép ai đó không phải làm điều gì.
+
+**Ví dụ:**
+- 不用谢。 /búyòng xiè/ — Không cần cảm ơn. (= 不客气)
+- 不用去。 /búyòng qù/ — Không cần đi.
+
+---
+
+#### 别 + ĐT / 别的 — Đừng / Khác
+
+**Cấu trúc:**
+- 别/別 + ĐT → đừng làm gì đó
+- 别的/別的 (+ DT) → cái/người/thứ khác
+
+**Ví dụ:**
+- 别走。/ 別走。 /bié zǒu/ — Đừng đi.
+- 别说了。/ 別說了。 /bié shuō le/ — Đừng nói nữa.
+- 你还要买别的吗？/ 你還要買別的嗎？ /nǐ hái yào mǎi biéde ma/ — Bạn còn muốn mua cái khác không?
+- 我走别的路。/ 我走別的路。 /wǒ zǒu biéde lù/ — Tôi đi con đường khác.
+
+---
+
+### Nhóm 5: Cấu trúc động từ
+
+#### 是 + TN — Câu định nghĩa/nhận dạng
+
+**Cấu trúc:** CN + 是 + TN
 
 **Giải thích:** Động từ 是 (là) nối chủ ngữ với tân ngữ để định nghĩa hoặc nhận dạng. Phủ định dùng 不是.
 
@@ -891,7 +1046,20 @@ Ví dụ:
 
 ---
 
-### 我来 + ĐT — Để tôi làm gì
+#### Chuỗi động từ — ĐT1 + Địa điểm + ĐT2
+
+**Cấu trúc:** CN + ĐT1 + Địa điểm + ĐT2
+
+**Giải thích:** Hai động từ liên tiếp trong một câu, ĐT1 là hành động di chuyển, ĐT2 là mục đích.
+
+**Ví dụ:**
+- 我去学校学汉语。/ 我去學校學漢語。 /wǒ qù xuéxiào, xué hànyǔ/ — Tôi đi trường học tiếng Trung.
+- 回家见妈妈。/ 回家見媽媽。 /huí jiā jiàn māma/ — Về nhà gặp mẹ.
+- 我去银行取钱。/ 我去銀行取錢。 /wǒ qù yínháng qǔ qián/ — Tôi đi ngân hàng rút tiền.
+
+---
+
+#### 我来 + ĐT — Để tôi làm gì
 
 **Cấu trúc:** 我来 + ĐT
 
@@ -902,7 +1070,7 @@ Ví dụ:
 
 ---
 
-### ĐT + 一下儿 — Làm một chút
+#### ĐT + 一下儿 — Làm một chút
 
 **Cấu trúc:** ĐT + 一下儿
 
@@ -915,7 +1083,7 @@ Ví dụ:
 
 ---
 
-### 快 + (点儿) + V — Hối thúc làm nhanh
+#### 快 + (点儿) + ĐT — Hối thúc làm nhanh
 
 **Cấu trúc:** 快 + (点儿) + ĐT
 
@@ -928,22 +1096,7 @@ Ví dụ:
 
 ---
 
-### 什么 + 都/也 + V — Cái gì cũng / đều
-
-**Cấu trúc:**
-- 什么 + 都 + V/HDT → "cái gì cũng (đều)..."
-- 什么 + 也 + V → "cái gì cũng (đều)..."
-
-**Giải thích:** Kết hợp đại từ nghi vấn 什么 với phó từ 都 hoặc 也 để diễn đạt "bất kỳ cái gì cũng...". Hai cấu trúc tương đương nhau về nghĩa.
-
-**Ví dụ:**
-- 什么都好。/ 什麼都好。 /shénme dōu hǎo/ — Cái gì cũng tốt.
-- 什么都可以。/ 什麼都可以。 /shénme dōu kěyǐ/ — Cái gì cũng được.
-- 我什么都可以吃。/ 我什麼都可以吃。 /wǒ shénme dōu kěyǐ chī/ — Tôi cái gì cũng ăn được.
-
----
-
-### Động từ ly hợp (离合词) — Tách chèn từ khác
+#### Động từ ly hợp (离合词) — Tách chèn từ khác
 
 **Giải thích:** Là dạng động từ 2 âm tiết có thể tách ra để chèn thêm từ khác vào giữa. Phần 1 mang nghĩa động từ, phần 2 mang nghĩa tân ngữ. Các ĐT ly hợp trong bài: 上课, 下课, 见面.
 
@@ -955,7 +1108,7 @@ Ví dụ:
 
 ---
 
-### A 跟 B + V / A 跟 B 一起 + V — Với / Cùng nhau làm gì
+#### A 跟 B (+一起) + ĐT — Với / Cùng nhau làm gì
 
 **Cấu trúc 1 (không nhấn mạnh):** A + 跟 + B + ĐT
 **Cấu trúc 2 (nhấn mạnh đồng hành):** A + 跟 + B + 一起 + ĐT
@@ -970,19 +1123,126 @@ Ví dụ:
 
 ---
 
-### 哪 + 量词 + 名词 — Hỏi "nào?"
+#### A + 给 + B + ĐT — Làm việc gì đó cho ai
 
-**Cấu trúc:** 哪 + Lượng từ + Danh từ
+**Cấu trúc:** A + 给/給 + B + ĐT (+ TN)
 
-**Giải thích:** Dùng để hỏi "cái nào / người nào / nước nào…"
+**Giải thích:** A thực hiện hành động gì đó cho/đến B. 给 đóng vai trò giới từ chỉ người nhận hoặc đối tượng thụ hưởng.
 
 **Ví dụ:**
-- 你是哪国人？/ 你是哪國人？ /nǐ shì nǎ guó rén/ — Bạn là người nước nào?
-- 你吃哪个？/ 你吃哪個？ /nǐ chī nǎ gè/ — Bạn ăn cái nào?
+- 我给妈妈买一公斤水果。/ 我給媽媽買一公斤水果。 /wǒ gěi māma mǎi yì gōngjīn shuǐguǒ/ — Tôi mua cho mẹ 1 kg trái cây.
+- 我给你钱吧。/ 我給你錢吧。 /wǒ gěi nǐ qián ba/ — Tôi đưa tiền cho bạn nhé.
 
 ---
 
-### 数词 + 量词 + 名词 — Cấu trúc số lượng
+#### 请 + ĐT — Lời mời lịch sự
+
+**Cấu trúc:** 请 + ĐT (chủ ngữ ngầm là người nghe) hoặc CN + 请 + TN + ĐT
+
+**Giải thích:** 请 đặt trước động từ biến câu thành lời mời hoặc yêu cầu lịch sự. Tương đương "xin mời", "mời" trong tiếng Việt.
+
+**Ví dụ:**
+- 请进。/ 請進。 /qǐng jìn/ — Xin mời vào.
+- 请坐。/ 請坐。 /qǐng zuò/ — Xin mời ngồi.
+- 请喝茶。/ 請喝茶。 /qǐng hē chá/ — Xin mời uống trà.
+- 我请你回家见我爸妈。/ 我請你回家見我爸媽。 /wǒ qǐng nǐ huí jiā jiàn wǒ de bā māma/ — Tôi mời bạn về nhà gặp bố mẹ tôi.
+
+---
+
+### Nhóm 6: Thời gian và trạng thái tiếp diễn
+
+#### ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái
+
+**Cấu trúc:** CN + ĐT + 了
+
+**Giải thích:** 了 đặt ngay sau động từ diễn đạt hành động đã hoàn thành hoặc trạng thái vừa thay đổi. Phân biệt với 太…了 (mức độ): trong cấu trúc này 了 theo ngay sau ĐT.
+
+**Ví dụ:**
+- 老师回家了。/ 老師回家了。 /lǎoshī huí jiā le/ — Thầy giáo về nhà rồi.
+- 妈妈去哪儿了？/ 媽媽去哪兒了？ /māma qù nǎr le/ — Mẹ đi đâu rồi?
+- 我见他了。/ 我見他了。 /wǒ jiàn tā le/ — Tôi đã gặp anh ấy rồi.
+- 昨天我去银行取钱了。/ 昨天我去銀行取錢了。 /zuótiān wǒ qù yínháng qǔ qián le/ — Hôm qua tôi đã đi ngân hàng rút tiền rồi.
+- 爸妈退休了。/ 爸媽退休了。 /bàba māma tuìxiū le/ — Bố mẹ về hưu rồi.
+
+---
+
+#### …的时候 — Khi / Lúc
+
+**Cấu trúc:** ĐT / Cụm ĐT / HDT + 的时候/的時候
+
+**Giải thích:** 的时候 (de shíhou) đặt sau động từ hoặc cụm từ để diễn đạt "khi / lúc (đang làm gì)".
+
+**Ví dụ:**
+- 吃饭的时候 / 吃飯的時候 /chī fàn de shíhou/ — lúc ăn cơm
+- 小的时候 / 小的時候 /xiǎo de shíhou/ — lúc còn nhỏ (cũng nói: 小时候 / 小時候)
+- 学习汉语的时候 / 學習漢語的時候 /xuéxí hànyǔ de shíhou/ — lúc học tiếng Trung
+- 周末的时候 / 週末的時候 /zhōumò de shíhou/ — lúc cuối tuần
+
+---
+
+#### 还 (hái) + ĐT/HDT — Còn, vẫn
+
+**Cấu trúc:** 还/還 (hái) + ĐT/HDT
+
+**Giải thích:** 还 /hái/ diễn tả trạng thái tiếp diễn ("còn, vẫn") hoặc bổ sung ("còn... nữa"). Phân biệt với 还 /huán/ (trả lại) — xem Bài 9 vocab.
+
+**Ví dụ:**
+- 还有人吗？/ 還有人嗎？ /hái yǒu rén ma/ — Còn ai không?
+- 你还要买别的吗？/ 你還要買別的嗎？ /nǐ hái yào mǎi biéde ma/ — Bạn còn muốn mua gì khác nữa không?
+- 你还小。 /nǐ hái xiǎo/ — Bạn còn nhỏ.
+
+---
+
+### Nhóm 7: Địa điểm và vị trí
+
+#### 在 + Địa điểm + ĐT — Ở đâu làm gì
+
+**Cấu trúc:** 在 + Địa điểm + ĐT
+
+**Giải thích:** Diễn đạt hành động xảy ra tại một địa điểm.
+
+**Ví dụ:**
+
+| Địa điểm | Hành động |
+|---------|----------|
+| 在家 | 学汉语 |
+| 在银行 | 取钱 |
+| 在哪儿 | 见朋友 |
+
+- 你在哪儿学汉语呢？/ 你在哪兒學漢語呢？ /nǐ zài nǎr xué hànyǔ ne/ — Bạn học tiếng Trung ở đâu?
+- 你在哪个学校学汉语呢？/ 你在哪個學校學漢語呢？ /nǐ zài nǎ gè xuéxiào xué hànyǔ ne/ — Bạn học tiếng Trung ở trường nào?
+
+---
+
+#### CN + 住在 + Địa điểm — Sống/ở tại nơi nào
+
+**Cấu trúc:** CN + 住 + 在 + Địa điểm
+
+**Giải thích:** Dùng để diễn tả nơi cư trú thường xuyên hoặc trong thời gian dài. 住 và 在 thường đi cùng nhau, có thể viết liền hoặc tách.
+
+**Ví dụ:**
+- 我住在宿舍。 /wǒ zhù zài sùshè/ — Tôi sống ở ký túc xá.
+- 你住在哪儿？/ 你住在哪兒？ /nǐ zhù zài nǎr/ — Bạn sống ở đâu?
+- 我不住在宿舍，我住在家里。/ 我不住在宿舍，我住在家裡。 /wǒ bú zhù zài sùshè, wǒ zhù zài jiālǐ/ — Tôi không ở ký túc xá, tôi ở nhà.
+
+---
+
+#### A + 在 + B + (的) + Phương vị từ — Vị trí tương đối
+
+**Cấu trúc:** A + 在 + B + 的 + Phương vị từ
+
+**Giải thích:** Diễn tả vị trí của A so với B bằng phương vị từ (边: trên/dưới/trái/phải/đông/tây/nam/bắc). Chữ 的 có thể lược bỏ.
+
+**Ví dụ:**
+- 饭馆在学校的左边。/ 飯館在學校的左邊。 /fànguǎn zài xuéxiào de zuǒbian/ — Quán cơm ở bên trái trường học.
+- 食堂在学校的北边。/ 食堂在學校的北邊。 /shítáng zài xuéxiào de běibian/ — Nhà ăn ở phía bắc trường học.
+- 图书馆在教学楼东边。/ 圖書館在教學樓東邊。 /túshūguǎn zài jiàoxuélóu dōngbian/ — Thư viện ở phía đông tòa nhà dạy học.
+
+---
+
+### Nhóm 8: Số từ và lượng từ
+
+#### Số từ + Lượng từ + Danh từ — Cấu trúc số lượng
 
 **Cấu trúc:** Số từ / 这 / 那 / 几 + Lượng từ + Danh từ
 
@@ -1002,68 +1262,24 @@ Ví dụ:
 
 ---
 
-### 有/没有 — Có/Không có
+### Nhóm 9: Cấu trúc bổ sung
 
-**Cấu trúc:** S + 有/没有 + O
+#### 什么 + 都/也 + ĐT — Cái gì cũng / đều
 
-**Giải thích:** 有 là có, 没有 là không có. Phủ định của 有 **không dùng 不有** mà dùng 没有.
+**Cấu trúc:**
+- 什么 + 都 + ĐT/HDT → "cái gì cũng (đều)..."
+- 什么 + 也 + ĐT → "cái gì cũng (đều)..."
+
+**Giải thích:** Kết hợp đại từ nghi vấn 什么 với phó từ 都 hoặc 也 để diễn đạt "bất kỳ cái gì cũng...". Hai cấu trúc tương đương nhau về nghĩa.
 
 **Ví dụ:**
-- 你有中国朋友吗？/ 你有中國朋友嗎？ /nǐ yǒu zhōngguó péngyou ma/ — Bạn có bạn Trung Quốc không?
-- 我有一个中国朋友。/ 我有一個中國朋友。 /wǒ yǒu yī gè zhōngguó péngyou/ — Tôi có một người bạn Trung Quốc.
-- 我没有中国朋友。/ 我沒有中國朋友。 /wǒ méi yǒu zhōngguó péngyou/ — Tôi không có bạn Trung Quốc.
+- 什么都好。/ 什麼都好。 /shénme dōu hǎo/ — Cái gì cũng tốt.
+- 什么都可以。/ 什麼都可以。 /shénme dōu kěyǐ/ — Cái gì cũng được.
+- 我什么都可以吃。/ 我什麼都可以吃。 /wǒ shénme dōu kěyǐ chī/ — Tôi cái gì cũng ăn được.
 
 ---
 
-### 在 + Địa điểm + ĐT — Ở đâu làm gì
-
-**Cấu trúc:** 在 + Địa điểm + ĐT
-
-**Giải thích:** Diễn đạt hành động xảy ra tại một địa điểm.
-
-**Ví dụ:**
-
-| Địa điểm | Hành động |
-|---------|----------|
-| 在家 | 学汉语 |
-| 在银行 | 取钱 |
-| 在哪儿 | 见朋友 |
-
-- 你在哪儿学汉语呢？/ 你在哪兒學漢語呢？ /nǐ zài nǎr xué hànyǔ ne/ — Bạn học tiếng Trung ở đâu?
-- 你在哪个学校学汉语呢？/ 你在哪個學校學漢語呢？ /nǐ zài nǎ gè xuéxiào xué hànyǔ ne/ — Bạn học tiếng Trung ở trường nào?
-
----
-
-### 请 + ĐT — Lời mời lịch sự
-
-**Cấu trúc:** 请 + ĐT (chủ ngữ ngầm là người nghe) hoặc S + 请 + O + ĐT
-
-**Giải thích:** 请 đặt trước động từ biến câu thành lời mời hoặc yêu cầu lịch sự. Tương đương "xin mời", "mời" trong tiếng Việt.
-
-**Ví dụ:**
-- 请进。/ 請進。 /qǐng jìn/ — Xin mời vào.
-- 请坐。/ 請坐。 /qǐng zuò/ — Xin mời ngồi.
-- 请喝茶。/ 請喝茶。 /qǐng hē chá/ — Xin mời uống trà.
-- 我请你回家见我爸妈。/ 我請你回家見我爸媽。 /wǒ qǐng nǐ huí jiā jiàn wǒ de bā māma/ — Tôi mời bạn về nhà gặp bố mẹ tôi.
-
----
-
-### ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái
-
-**Cấu trúc:** S + ĐT + 了
-
-**Giải thích:** 了 đặt ngay sau động từ diễn đạt hành động đã hoàn thành hoặc trạng thái vừa thay đổi. Phân biệt với 太…了 (mức độ): trong cấu trúc này 了 theo ngay sau ĐT.
-
-**Ví dụ:**
-- 老师回家了。/ 老師回家了。 /lǎoshī huí jiā le/ — Thầy giáo về nhà rồi.
-- 妈妈去哪儿了？/ 媽媽去哪兒了？ /māma qù nǎr le/ — Mẹ đi đâu rồi?
-- 我见他了。/ 我見他了。 /wǒ jiàn tā le/ — Tôi đã gặp anh ấy rồi.
-- 昨天我去银行取钱了。/ 昨天我去銀行取錢了。 /zuótiān wǒ qù yínháng qǔ qián le/ — Hôm qua tôi đã đi ngân hàng rút tiền rồi.
-- 爸妈退休了。/ 爸媽退休了。 /bàba māma tuìxiū le/ — Bố mẹ về hưu rồi.
-
----
-
-### Câu + 吧 — Đề nghị hoặc xác nhận nhẹ
+#### Câu + 吧 — Đề nghị hoặc xác nhận nhẹ
 
 **Cấu trúc:** Câu + 吧
 
@@ -1077,75 +1293,9 @@ Ví dụ:
 
 ---
 
-### 什么 — Hỏi "gì?"
+### Nhóm 10: Phân biệt từ dễ nhầm
 
-**Cấu trúc:**
-- ĐT + 什么 → hỏi tân ngữ là gì
-- 什么 + DT → hỏi đó là loại gì
-
-**Giải thích:** 什么 là đại từ nghi vấn "gì?", đứng ở vị trí của tân ngữ hoặc đứng trước danh từ để hỏi loại.
-
-**Ví dụ:**
-- 这是什么？/ 這是什麼？ /zhè shì shénme/ — Đây là cái gì?
-- 你的工作是什么？/ 你的工作是什麼？ /nǐ de gōngzuò shì shénme/ — Công việc của bạn là gì?
-- 你叫什么名字？/ 你叫什麼名字？ /nǐ jiào shénme míngzi/ — Bạn tên là gì?
-- 这是什么书？/ 這是什麼書？ /zhè shì shénme shū/ — Đây là sách gì?
-
----
-
-### S + V + 了 + 吗？/ 还没 + V — Hỏi "Đã... chưa?"
-
-**Cấu trúc hỏi:** S + V + 了 + 吗？
-**Cấu trúc phủ định:** S + 还没/還沒 + V。
-
-**Giải thích:** Dùng 了 + 吗 để hỏi hành động đã xảy ra chưa. Trả lời phủ định dùng 还没 (vẫn chưa).
-
-**Ví dụ:**
-- 你吃饭了吗？/ 你吃飯了嗎？ /nǐ chīfàn le ma/ — Bạn ăn cơm chưa?
-- 我还没吃饭。 /wǒ hái méi chīfàn/ — Tôi vẫn chưa ăn cơm.
-- 你姐姐回国了吗？/ 你姐姐回國了嗎？ /nǐ jiějie huí guó le ma/ — Chị gái bạn về nước chưa?
-- 我姐姐还没回国。/ 我姐姐還沒回國。 /wǒ jiějie hái méi huí guó/ — Chị gái tôi vẫn chưa về nước.
-
----
-
-### V + 不 + V — Câu hỏi chính phản
-
-**Cấu trúc:** ĐT/HDT + 不 + ĐT/HDT？
-
-**Giải thích:** Lặp lại động từ hoặc hình dung từ với 不 ở giữa để hỏi Yes/No. Tương đương câu hỏi dùng 吗 nhưng nhấn mạnh hơn.
-
-**Ví dụ:**
-- 你吃不吃？ /nǐ chī bù chī/ — Bạn ăn không? (= 你吃吗？)
-- 你喝不喝？ /nǐ hē bù hē/ — Bạn uống không?
-- 你忙不忙？ /nǐ máng bù máng/ — Bạn có bận không?
-
----
-
-### S + 觉得 + 怎么样？ — Hỏi cảm nhận "Thế nào?"
-
-**Cấu trúc:** S + 觉得/覺得 + 怎么样/怎麼樣？
-
-**Giải thích:** 怎么样 hỏi "thế nào / như thế nào". Thường đi kèm 觉得 (cảm thấy) hoặc đứng sau chủ đề cần đánh giá.
-
-**Ví dụ:**
-- 你觉得怎么样？/ 你覺得怎麼樣？ /nǐ juéde zěnmeyàng/ — Bạn cảm thấy thế nào?
-- 你学习怎么样了？/ 你學習怎麼樣了？ /nǐ xuéxí zěnmeyàng le/ — Việc học của bạn thế nào rồi?
-
----
-
-### 怎么 + V — Hỏi cách thức
-
-**Cấu trúc:** 怎么/怎麼 + ĐT
-
-**Giải thích:** 怎么 hỏi "làm thế nào / bằng cách nào". Khác với 怎么样 (hỏi trạng thái), 怎么 hỏi phương thức hành động.
-
-**Ví dụ:**
-- 水怎么喝？ /shuǐ zěnme hē/ — Nước uống thế nào?
-- 怎么学好汉语？/ 怎麼學好漢語？ /zěnme xué hǎo hànyǔ/ — Làm sao để học tốt tiếng Trung?
-
----
-
-### 知道 vs 会 — Hai cách "biết" khác nhau
+#### 知道 vs 会 — Hai cách "biết" khác nhau
 
 **Phân biệt:**
 - **知道** /zhīdào/: biết về một thông tin, sự kiện — không cần rèn luyện, chỉ cần được nghe/truyền đạt.
@@ -1159,45 +1309,7 @@ Ví dụ:
 
 ---
 
-### S + 住在 + Địa điểm — Sống/ở tại nơi nào
-
-**Cấu trúc:** S + 住 + 在 + Địa điểm
-
-**Giải thích:** Dùng để diễn tả nơi cư trú thường xuyên hoặc trong thời gian dài. 住 và 在 thường đi cùng nhau, có thể viết liền hoặc tách.
-
-**Ví dụ:**
-- 我住在宿舍。 /wǒ zhù zài sùshè/ — Tôi sống ở ký túc xá.
-- 你住在哪儿？/ 你住在哪兒？ /nǐ zhù zài nǎr/ — Bạn sống ở đâu?
-- 我不住在宿舍，我住在家里。/ 我不住在宿舍，我住在家裡。 /wǒ bú zhù zài sùshè, wǒ zhù zài jiālǐ/ — Tôi không ở ký túc xá, tôi ở nhà.
-
----
-
-### A + 在 + B + (的) + Phương vị từ — Vị trí tương đối
-
-**Cấu trúc:** A + 在 + B + 的 + 方位词
-
-**Giải thích:** Diễn tả vị trí của A so với B bằng phương vị từ (边: trên/dưới/trái/phải/đông/tây/nam/bắc). Chữ 的 có thể lược bỏ.
-
-**Ví dụ:**
-- 饭馆在学校的左边。/ 飯館在學校的左邊。 /fànguǎn zài xuéxiào de zuǒbian/ — Quán cơm ở bên trái trường học.
-- 食堂在学校的北边。/ 食堂在學校的北邊。 /shítáng zài xuéxiào de běibian/ — Nhà ăn ở phía bắc trường học.
-- 图书馆在教学楼东边。/ 圖書館在教學樓東邊。 /túshūguǎn zài jiàoxuélóu dōngbian/ — Thư viện ở phía đông tòa nhà dạy học.
-
----
-
-### 不用 + V — Không cần làm gì
-
-**Cấu trúc:** 不用 + ĐT
-
-**Giải thích:** Diễn đạt sự không cần thiết phải làm gì đó. Thường dùng để từ chối lịch sự hoặc cho phép ai đó không phải làm điều gì.
-
-**Ví dụ:**
-- 不用谢。 /búyòng xiè/ — Không cần cảm ơn. (= 不客气)
-- 不用去。 /búyòng qù/ — Không cần đi.
-
----
-
-### 去 vs 走 — Phân biệt hai cách "đi"
+#### 去 vs 走 — Phân biệt hai cách "đi"
 
 **Phân biệt:**
 - **去** /qù/: phải có địa điểm cụ thể theo sau — đi đến đâu đó.
@@ -1210,24 +1322,7 @@ Ví dụ:
 
 ---
 
-### 两 vs 二 — Hai cách nói số 2
-
-**Quy tắc:** Khi số 2 đứng trước lượng từ, bắt buộc dùng **两** /liǎng/, không được dùng **二** /èr/.
-
-**Cấu trúc:** 两/兩 + 量词 + (名词)
-
-**Lưu ý:** 天 (ngày) và 年 (năm) tự thân đóng vai trò lượng từ: dùng 两天, 两年.
-
-**Ví dụ:**
-- 两个人。 /liǎng ge rén/ — Hai người. (✓ 两, ✗ 二个人)
-- 两碗饭。/ 兩碗飯。 /liǎng wǎn fàn/ — Hai bát cơm.
-- 两个星期。 /liǎng ge xīngqī/ — Hai tuần.
-- 两天 / 两年。 /liǎng tiān / liǎng nián/ — Hai ngày / Hai năm.
-- 两个人 = 俩。/ 兩個人 = 倆。 /liǎng ge rén = liǎ/ — Hai người = một cặp.
-
----
-
-### 一下儿 vs 一会儿 — Phân biệt "một chút" và "một lúc"
+#### 一下儿 vs 一会儿 — Phân biệt "một chút" và "một lúc"
 
 **Phân biệt:**
 - **一下儿** /yíxiàr/: thời gian rất ngắn, tức thời — "một chút, thử một cái".
@@ -1239,86 +1334,20 @@ Ví dụ:
 
 ---
 
-### A + 给 + B + V — Làm việc gì đó cho ai
+#### 两 vs 二 — Hai cách nói số 2
 
-**Cấu trúc:** A + 给/給 + B + ĐT (+ O)
+**Quy tắc:** Khi số 2 đứng trước lượng từ, bắt buộc dùng **两** /liǎng/, không được dùng **二** /èr/.
 
-**Giải thích:** A thực hiện hành động gì đó cho/đến B. 给 đóng vai trò giới từ chỉ người nhận hoặc đối tượng thụ hưởng.
+**Cấu trúc:** 两/兩 + Lượng từ + (Danh từ)
 
-**Ví dụ:**
-- 我给妈妈买一公斤水果。/ 我給媽媽買一公斤水果。 /wǒ gěi māma mǎi yì gōngjīn shuǐguǒ/ — Tôi mua cho mẹ 1 kg trái cây.
-- 我给你钱吧。/ 我給你錢吧。 /wǒ gěi nǐ qián ba/ — Tôi đưa tiền cho bạn nhé.
-
----
-
-### 还 (hái) + ĐT/HDT — Còn, vẫn
-
-**Cấu trúc:** 还/還 (hái) + ĐT/HDT
-
-**Giải thích:** 还 /hái/ diễn tả trạng thái tiếp diễn ("còn, vẫn") hoặc bổ sung ("còn... nữa"). Phân biệt với 还 /huán/ (trả lại) — xem Bài 9 vocab.
+**Lưu ý:** 天 (ngày) và 年 (năm) tự thân đóng vai trò lượng từ: dùng 两天, 两年.
 
 **Ví dụ:**
-- 还有人吗？/ 還有人嗎？ /hái yǒu rén ma/ — Còn ai không?
-- 你还要买别的吗？/ 你還要買別的嗎？ /nǐ hái yào mǎi biéde ma/ — Bạn còn muốn mua gì khác nữa không?
-- 你还小。 /nǐ hái xiǎo/ — Bạn còn nhỏ.
-
----
-
-### 别 + V / 别的 — Đừng / Khác
-
-**Cấu trúc:**
-- 别/別 + ĐT → đừng làm gì đó
-- 别的/別的 (+ DT) → cái/người/thứ khác
-
-**Ví dụ:**
-- 别走。/ 別走。 /bié zǒu/ — Đừng đi.
-- 别说了。/ 別說了。 /bié shuō le/ — Đừng nói nữa.
-- 你还要买别的吗？/ 你還要買別的嗎？ /nǐ hái yào mǎi biéde ma/ — Bạn còn muốn mua cái khác không?
-- 我走别的路。/ 我走別的路。 /wǒ zǒu biéde lù/ — Tôi đi con đường khác.
-
----
-
-### 最 + HDT/ĐT — So sánh nhất
-
-**Cấu trúc:** 最 + Hình dung từ / Động từ
-
-**Giải thích:** 最 (zuì) đặt trước tính từ hoặc động từ để diễn đạt mức độ cao nhất ("nhất").
-
-**Ví dụ:**
-- 最高 /zuì gāo/ — cao nhất
-- 最可爱 / 最可愛 /zuì kě'ài/ — đáng yêu nhất
-- 最帅 / 最帥 /zuì shuài/ — đẹp trai nhất
-- 我爷爷是最高和最帅的人。/ 我爺爺是最高和最帥的人。 /wǒ yéye shì zuì gāo hé zuì shuài de rén/ — Ông nội tôi là người cao nhất và đẹp trai nhất.
-- 妈妈是最好的。/ 媽媽是最好的。 /māma shì zuì hǎo de/ — Mẹ là người tốt nhất.
-
----
-
-### …的时候 — Khi / Lúc
-
-**Cấu trúc:** ĐT / Cụm ĐT / HDT + 的时候/的時候
-
-**Giải thích:** 的时候 (de shíhou) đặt sau động từ hoặc cụm từ để diễn đạt "khi / lúc (đang làm gì)".
-
-**Ví dụ:**
-- 吃饭的时候 / 吃飯的時候 /chī fàn de shíhou/ — lúc ăn cơm
-- 小的时候 / 小的時候 /xiǎo de shíhou/ — lúc còn nhỏ (cũng nói: 小时候 / 小時候)
-- 学习汉语的时候 / 學習漢語的時候 /xuéxí hànyǔ de shíhou/ — lúc học tiếng Trung
-- 周末的时候 / 週末的時候 /zhōumò de shíhou/ — lúc cuối tuần
-
----
-
-### Cụm danh từ rút gọn với 的 — Nominal 的
-
-**Cấu trúc:** DT / Đại từ / HDT / ĐT + 的
-
-**Giải thích:** Dùng 的 để thay thế danh từ đã được nhắc đến trước đó, tránh lặp lại. Nếu liên quan đến người → "của"; nếu liên quan đến vật → "cái ... của".
-
-**Ví dụ:**
-- 这本书是我的。/ 這本書是我的。 /zhè běn shū shì wǒ de/ — Quyển sách này là của tôi.
-- 大的是我的，小的是我朋友的。 /dà de shì wǒ de, xiǎo de shì wǒ péngyou de/ — Cái lớn là của tôi, cái nhỏ là của bạn tôi.
-- 谁的房间？/ 誰的房間？ /shéi de fángjiān/ — Phòng của ai?
-
----
+- 两个人。 /liǎng ge rén/ — Hai người. (✓ 两, ✗ 二个人)
+- 两碗饭。/ 兩碗飯。 /liǎng wǎn fàn/ — Hai bát cơm.
+- 两个星期。 /liǎng ge xīngqī/ — Hai tuần.
+- 两天 / 两年。 /liǎng tiān / liǎng nián/ — Hai ngày / Hai năm.
+- 两个人 = 俩。/ 兩個人 = 倆。 /liǎng ge rén = liǎ/ — Hai người = một cặp.
 
 ## 6. Câu thông dụng (Common Phrases)
 

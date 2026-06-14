@@ -18,6 +18,16 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.0.1] - 2026-06-14
+
+### Changed
+- KB: Tái cơ cấu `chinese-brain.md` và `chinese-practice-bank.md`:
+  - `chinese-brain.md` §5 Ngữ pháp: 41 pattern phẳng → 10 nhóm chủ đề với heading `### Nhóm N`; thay thuật ngữ S/O/V → CN/TN/ĐT; thay 数词/量词/名词/方位词 → tiếng Việt
+  - `chinese-practice-bank.md`: sắp xếp lại đúng thứ tự Bài 1→10 (trước đây Bài 10/9/8 đứng đầu, Bài 7 đứng trước Bài 6); thêm mục lục; xóa "Luyện tập tổng hợp" (282 dòng nội dung nhân tạo) và section "Ngữ pháp 的 — Luyện tập" orphaned; file thu gọn từ 832 → 567 dòng
+  - `chinese-brain-guide.md`: thêm P-KB1–P-KB4 (quy tắc bảo trì); cập nhật bảng viết tắt CN/TN/ĐT
+
+---
+
 ## [2.0.0] - 2026-06-14
 
 ### Changed (Breaking — complete structural refactor)

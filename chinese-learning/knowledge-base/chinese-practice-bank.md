@@ -7,189 +7,21 @@
 > **Cập nhật lần cuối:** Bài 10 — Nhà bạn có mấy người? (2026-06-09)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
----
-
-### Bài 10 — Nhà bạn có mấy người?
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 我爷爷是最高和最帅的人。 | 我爺爺是最高和最帥的人。 | /wǒ yéye shì zuì gāo hé zuì shuài de rén/ | Ông nội tôi là người cao nhất và đẹp trai nhất. |
-| 我家有一条黑狗。 | 我家有一條黑狗。 | /wǒ jiā yǒu yì tiáo hēi gǒu/ | Nhà tôi có một con chó đen. |
-| 我很喜欢拍照。 | 我很喜歡拍照。 | /wǒ hěn xǐhuān pāizhào/ | Tôi rất thích chụp ảnh. |
-| 这两张是我小时候的照片。 | 這兩張是我小時候的照片。 | /zhè liǎng zhāng shì wǒ xiǎoshíhou de zhàopiàn/ | Hai tấm này là ảnh hồi nhỏ của tôi. |
-| 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
-| 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
-| 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
-| 你们觉得老师可爱吗？ | 你們覺得老師可愛嗎？ | /nǐmen juéde lǎoshī kě'ài ma/ | Các bạn thấy cô giáo có đáng yêu không? |
-| 你觉得她漂亮吗？ | 你覺得她漂亮嗎？ | /nǐ juéde tā piàoliang ma/ | Bạn thấy cô ấy có xinh không? |
-| 这个房间太漂亮了。 | 這個房間太漂亮了。 | /zhè ge fángjiān tài piàoliang le/ | Căn phòng này đẹp quá. |
-| 你什么时候回来啊？ | 你什麼時候回來啊？ | /nǐ shénme shíhou huílái a/ | Khi nào bạn về thế? |
-| 他买的衣服都很贵。 | 他買的衣服都很貴。 | /tā mǎi de yīfu dōu hěn guì/ | Quần áo anh ấy mua đều rất đắt. |
-| 我喜欢穿白衣服。 | 我喜歡穿白衣服。 | /wǒ xǐhuān chuān bái yīfu/ | Tôi thích mặc quần áo trắng. |
-| 学习汉语的时候，我觉得很累。 | 學習漢語的時候，我覺得很累。 | /xuéxí hànyǔ de shíhou, wǒ juéde hěn lèi/ | Lúc học tiếng Trung, tôi cảm thấy rất mệt. |
-| 妈妈常买水果。 | 媽媽常買水果。 | /māma cháng mǎi shuǐguǒ/ | Mẹ thường xuyên mua trái cây. |
-| 周末的时候，我喜欢去图书馆。 | 週末的時候，我喜歡去圖書館。 | /zhōumò de shíhou, wǒ xǐhuān qù túshūguǎn/ | Lúc cuối tuần, tôi thích đi thư viện. |
-| 我最喜欢吃苹果。 | 我最喜歡吃蘋果。 | /wǒ zuì xǐhuān chī píngguǒ/ | Tôi thích ăn táo nhất. |
-| 骑马 / 骑车 | 騎馬 / 騎車 | /qí mǎ / qí chē/ | Cưỡi ngựa / Đi xe. |
-| 你会骑自行车吗？ | 你會騎自行車嗎？ | /nǐ huì qí zìxíngchē ma/ | Bạn biết đi xe đạp không? |
-| 我姐姐很喜欢看电影。 | 我姐姐很喜歡看電影。 | /wǒ jiějie hěn xǐhuān kàn diànyǐng/ | Chị gái tôi rất thích xem phim. |
-| 谁的房间？ | 誰的房間？ | /shéi de fángjiān/ | Phòng của ai? |
-| 这个房间很大。 | 這個房間很大。 | /zhè ge fángjiān hěn dà/ | Căn phòng này rất lớn. |
-
-### Bài 10 — Luyện tập: Hội thoại
-
-| Nhân vật | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|:--------:|------|------|--------|--------------------|
-| **A** | 这是你的照片吗？ | 這是你的照片嗎？ | /zhè shì nǐ de zhàopiàn ma/ | Đây là ảnh của bạn à? |
-| **B** | 对，是我家的照片。 | 對，是我家的照片。 | /duì, shì wǒ jiā de zhàopiàn/ | Đúng, là ảnh của gia đình tôi. |
-| **A** | 你家有几口人？ | 你家有幾口人？ | /nǐ jiā yǒu jǐ kǒu rén/ | Nhà bạn có mấy người? |
-| **B** | 我家有五口人：爷爷，奶奶，爸爸，妈妈和我。 | 我家有五口人：爺爺，奶奶，爸爸，媽媽和我。 | /wǒ jiā yǒu wǔ kǒu rén: yéye, nǎinai, bàba, māma hé wǒ/ | Nhà tôi có 5 người: ông nội, bà nội, bố, mẹ và tôi. |
-| **A** | 你没有哥哥姐姐吗？ | 你沒有哥哥姐姐嗎？ | /nǐ méiyǒu gēge jiějie ma/ | Bạn không có anh trai, chị gái à? |
-| **B** | 没有，现在中国家庭一般只有一个孩子。 | 沒有，現在中國家庭一般只有一個孩子。 | /méiyǒu, xiànzài Zhōngguó jiātíng yìbān zhǐyǒu yígè háizi/ | Không có, hiện nay gia đình Trung Quốc thường chỉ có một con. |
-| **A** | 你家都有什么人？ | 你家都有什麼人？ | /nǐ jiā dōu yǒu shénme rén/ | Nhà bạn gồm có những ai? |
-| **B** | 我家有爸爸，妈妈，哥哥，弟弟，妹妹，还有一条狗。 | 我家有爸爸，媽媽，哥哥，弟弟，妹妹，還有一條狗。 | /wǒ jiā yǒu bàba, māma, gēge, dìdi, mèimei, hái yǒu yì tiáo gǒu/ | Nhà tôi có bố, mẹ, anh trai, em trai, em gái và còn có một con chó. |
-| **A** | 一共六口人？ | 一共六口人？ | /yígòng liù kǒu rén/ | Tổng cộng 6 người? |
-| **B** | 不，七口。 | 不，七口。 | /bù, qī kǒu/ | Không, 7 người. |
-| **A** | 爸爸，妈妈，一个哥哥，一个弟弟，一个妹妹和你，六口，对吧？ | 爸爸，媽媽，一個哥哥，一個弟弟，一個妹妹和你，六口，對吧？ | /bàba, māma, yígè gēge, yígè dìdi, yígè mèimei hé nǐ, liù kǒu, duì ba/ | Bố, mẹ, 1 anh trai, 1 em trai, 1 em gái và bạn, là 6 người, đúng không? |
-| **B** | 不对，还有一条狗。 | 不對，還有一條狗。 | /bú duì, hái yǒu yì tiáo gǒu/ | Không đúng, còn có một con chó nữa. |
-| **A** | 是这样... | 是這樣... | /shì zhè yàng/ | Là như vậy... |
-
-### Bài 10 — Luyện tập: Dịch sang tiếng Trung
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 我爷爷是最高和最帅的人。 | 我爺爺是最高和最帥的人。 | /wǒ yéye shì zuì gāo hé zuì shuài de rén/ | Ông nội tôi là người cao nhất và đẹp trai nhất. |
-| 我家有一条黑狗。 | 我家有一條黑狗。 | /wǒ jiā yǒu yì tiáo hēi gǒu/ | Nhà tôi có một con chó đen. |
-| 我很喜欢拍照。这两张是我小时候的照片。 | 我很喜歡拍照。這兩張是我小時候的照片。 | /wǒ hěn xǐhuān pāizhào. zhè liǎng zhāng shì wǒ xiǎoshíhou de zhàopiàn/ | Tôi rất thích chụp ảnh. Hai tấm này là ảnh hồi nhỏ của tôi. |
-| 你家有几口人？ | 你家有幾口人？ | /nǐ jiā yǒu jǐ kǒu rén/ | Nhà bạn có mấy người? |
-| 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
-| 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
-| 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
 
 ---
 
-### Bài 9 — Táo bán như thế nào?
+## Mục lục
 
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 大家跟我一起读。 | 大家跟我一起讀。 | /dàjiā gēn wǒ yìqǐ dú/ | Mọi người đọc theo tôi. |
-| 你卖什么？ | 你賣什麼？ | /nǐ mài shénme/ | Bạn bán cái gì? |
-| 怎么卖？ | 怎麼賣？ | /zěnme mài/ | Bán như thế nào? |
-| 一共多少钱？ | 一共多少錢？ | /yígòng duōshao qián/ | Tổng cộng bao nhiêu tiền? |
-| 还有人吗？ | 還有人嗎？ | /hái yǒu rén ma/ | Còn ai không? |
-| 你还要买别的吗？ | 你還要買別的嗎？ | /nǐ hái yào mǎi biéde ma/ | Bạn còn muốn mua gì khác nữa không? |
-| 吃水果对身体很好。 | 吃水果對身體很好。 | /chī shuǐguǒ duì shēntǐ hěn hǎo/ | Ăn trái cây rất tốt cho sức khỏe. |
-| 你对我太好了！ | 你對我太好了！ | /nǐ duì wǒ tài hǎo le/ | Bạn đối với tôi tốt quá! |
-| — | 吃瓜 | /chī guā/ | Hóng drama (tiếng lóng Trung Quốc). |
-| 一点点儿 | 一點點兒 | /yìdiǎndiǎnr/ | Một chút thôi. |
-| 我会说中文一点点儿。 | 我會說中文一點點兒。 | /wǒ huì shuō zhōngwén yìdiǎndiǎnr/ | Tôi biết nói tiếng Trung một chút thôi. |
-| 等我一会儿。 | 等我一會兒。 | /děng wǒ yíhuìr/ | Đợi tôi một lát. |
-| 两个人 = 俩 | 兩個人 = 倆 | /liǎng ge rén = liǎ/ | Hai người. |
-| — | 先生，您好！ | /xiānsheng, nín hǎo/ | Chào ông! |
-| 别说了。 | 別說了。 | /bié shuō le/ | Đừng nói nữa. |
-| 别看了。 | 別看了。 | /bié kàn le/ | Đừng nhìn nữa / Đừng xem nữa. |
-| 别走。 | 別走。 | /bié zǒu/ | Đừng đi. |
-| 别问我。 | 別問我。 | /bié wèn wǒ/ | Đừng hỏi tôi. |
-| 做买卖 | 做買賣 | /zuò mǎimài/ | Làm kinh doanh. |
-| 老师去买包子了！ | 老師去買包子了！ | /lǎoshī qù mǎi bāozi le/ | Thầy giáo đi mua bánh bao rồi! |
-| 我想吃苹果。 | 我想吃蘋果。 | /wǒ xiǎng chī píngguǒ/ | Tôi muốn ăn táo. |
-| — | 水果很好吃。 | /shuǐguǒ hěn hǎochī/ | Trái cây rất ngon. |
-| 我妈妈不喜欢吃水果。 | 我媽媽不喜歡吃水果。 | /wǒ māma bù xǐhuān chī shuǐguǒ/ | Mẹ tôi không thích ăn trái cây. |
-| 我有很多中国朋友。 | 我有很多中國朋友。 | /wǒ yǒu hěn duō zhōngguó péngyǒu/ | Tôi có rất nhiều bạn Trung Quốc. |
-| — | 你吃太少了！ | /nǐ chī tài shǎo le/ | Bạn ăn quá ít rồi! |
-| 今天很少人去学校。 | 今天很少人去學校。 | /jīntiān hěn shǎo rén qù xuéxiào/ | Hôm nay rất ít người đến trường. |
-| — | 你吃多少？ | /nǐ chī duōshao/ | Bạn ăn bao nhiêu? |
-| 这儿有多少人？ | 這兒有多少人？ | /zhèr yǒu duōshao rén/ | Ở đây có bao nhiêu người? |
-| 苹果一公斤多少钱？ | 蘋果一公斤多少錢？ | /píngguǒ yì gōngjīn duōshao qián/ | Táo một cân (kg) bao nhiêu tiền? |
-| 苹果一公斤 5 块。 | 蘋果一公斤 5 塊。 | /píngguǒ yì gōngjīn wǔ kuài/ | Táo 5 đồng một cân. |
-| 我买 10 公斤苹果。 | 我買 10 公斤蘋果。 | /wǒ mǎi shí gōngjīn píngguǒ/ | Tôi mua 10 cân táo. |
-| 包子一个 1 块，6 个包子。 | 包子一個 1 塊，6 個包子。 | /bāozi yígè yíkuài, liù gè bāozi/ | Bánh bao 1 đồng 1 cái, 6 cái bánh bao. |
-| 我想买西瓜。 | 我想買西瓜。 | /wǒ xiǎng mǎi xīguā/ | Tôi muốn mua dưa hấu. |
-| 西瓜好吃吗？ | 西瓜好吃嗎？ | /xīguā hǎochī ma/ | Dưa hấu ngon không? |
-| 水果太贵了！ | 水果太貴了！ | /shuǐguǒ tài guì le/ | Trái cây đắt quá rồi! |
-| 面包不贵。 | 麵包不貴。 | /miànbāo bú guì/ | Bánh mì không đắt. |
-| 这儿有很多西瓜。 | 這兒有很多西瓜。 | /zhèr yǒu hěn duō xīguā/ | Ở đây có rất nhiều dưa hấu. |
-| 我有很多书。 | 我有很多書。 | /wǒ yǒu hěn duō shū/ | Tôi có rất nhiều sách. |
-| 我学校有很多学生。 | 我學校有很多學生。 | /wǒ xuéxiào yǒu hěn duō xuésheng/ | Trường tôi có rất nhiều học sinh. |
-| 那不是售货员。 | 那不是售貨員。 | /nà búshì shòuhuòyuán/ | Đó không phải là nhân viên bán hàng. |
-| 售货员很忙。 | 售貨員很忙。 | /shòuhuòyuán hěn máng/ | Nhân viên bán hàng rất bận. |
-| 一些钱 | 一些錢 | /yìxiē qián/ | Một ít tiền. |
-| 一点儿水 | 一點兒水 | /yìdiǎnr shuǐ/ | Một ít nước. |
-| 一点儿饭 | 一點兒飯 | /yìdiǎnr fàn/ | Một ít cơm. |
-| 我有零钱。 | 我有零錢。 | /wǒ yǒu língqián/ | Tôi có tiền lẻ. |
-| 两个人 / 两碗饭 / 两个星期 | 兩個人 / 兩碗飯 / 兩個星期 | /liǎng ge rén / liǎng wǎn fàn / liǎng ge xīngqī/ | Hai người / Hai bát cơm / Hai tuần. |
-| 两天 / 两年 | 兩天 / 兩年 | /liǎng tiān / liǎng nián/ | Hai ngày / Hai năm. |
-| 两本书 | 兩本書 | /liǎng běn shū/ | Hai quyển sách. |
-| 他们两个人 | 他們兩個人 | /tāmen liǎng ge rén/ | Hai người bọn họ. |
-| 我想换书。 | 我想換書。 | /wǒ xiǎng huàn shū/ | Tôi muốn đổi sách. |
-| 我不喜欢这本书了。 | 我不喜歡這本書了。 | /wǒ bù xǐhuān zhè běn shū le/ | Tôi không thích quyển sách này nữa rồi. |
-| 我吃别的。 | 我吃別的。 | /wǒ chī biéde/ | Tôi ăn cái khác. |
-| 我走别的路。 | 我走別的路。 | /wǒ zǒu biéde lù/ | Tôi đi con đường khác. |
-| 我给你钱吧。 | 我給你錢吧。 | /wǒ gěi nǐ qián ba/ | Tôi đưa tiền cho bạn nhé. |
-| 5 块一公斤 | 5 塊一公斤 | /wǔ kuài yì gōngjīn/ | 5 đồng một cân. |
-| 西瓜一公斤几块？ | 西瓜一公斤幾塊？ | /xīguā yì gōngjīn jǐ kuài/ | Dưa hấu mấy đồng một cân? |
-| 你还小，你不知道啊。 | 你還小，你不知道啊。 | /nǐ hái xiǎo, nǐ bù zhīdào a/ | Bạn còn nhỏ, bạn không biết đâu. |
-
-### Bài 9 — BTVN: Hội thoại mua bán
-
-| Nhân vật | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|:--------:|------|------|--------|--------------------|
-| **A** | 老板，我买水果。 | 老闆，我買水果。 | /lǎobǎn, wǒ mǎi shuǐguǒ/ | Ông chủ, tôi mua trái cây. |
-| **B** | 你买什么水果？ | 你買什麼水果？ | /nǐ mǎi shénme shuǐguǒ/ | Bạn mua trái cây gì? |
-| **A** | 这儿有西瓜吗？ | 這兒有西瓜嗎？ | /zhèr yǒu xīguā ma/ | Ở đây có dưa hấu không? |
-| **B** | 有，有西瓜和苹果。这儿还有很多水果，你看吧。 | 有，有西瓜和蘋果。這兒還有很多水果，你看吧。 | /yǒu, yǒu xīguā hé píngguǒ. zhèr hái yǒu hěnduō shuǐguǒ, nǐ kàn ba/ | Có, có dưa hấu và táo. Ở đây còn có rất nhiều trái cây, bạn xem đi. |
-| **A** | 西瓜怎么卖？ | 西瓜怎麼賣？ | /xīguā zěnme mài/ | Dưa hấu bán thế nào? |
-| **B** | 西瓜一斤 8 块钱。你要买几斤？ | 西瓜一斤 8 塊錢。你要買幾斤？ | /xīguā yìjīn bā kuài qián. nǐ yào mǎi jǐ jīn/ | Dưa hấu 8 đồng một cân. Bạn muốn mua mấy cân? |
-| **A** | 我要买三斤西瓜。 | 我要買三斤西瓜。 | /wǒ yào mǎi sān jīn xīguā/ | Tôi muốn mua 3 cân dưa hấu. |
-| **B** | 你还要买什么别的吗？ | 你還要買什麼別的嗎？ | /nǐ hái yào mǎi shénme biéde ma/ | Bạn còn muốn mua cái gì khác nữa không? |
-| **A** | 再来一斤苹果吧。 | 再來一斤蘋果吧。 | /zài lái yì jīn píngguǒ ba/ | Cho thêm một cân táo nữa đi. |
-| **B** | 好的，苹果 10 块钱一斤。你的一共是 34 块钱。 | 好的，蘋果 10 塊錢一斤。你的一共是 34 塊錢。 | /hǎo de, píngguǒ shí kuài qián yìjīn. nǐ de yígòng shì sānshísì kuài qián/ | Được, táo 10 đồng một cân. Của bạn tổng cộng là 34 đồng. |
-| **A** | 好的，我没有零钱，我给你 40 块钱。 | 好的，我沒有零錢，我給你 40 塊錢。 | /hǎo de, wǒ méiyǒu língqián, wǒ gěi nǐ sìshí kuài qián/ | Được, tôi không có tiền lẻ, tôi đưa bạn 40 đồng. |
-| **B** | 没关系，我有，找你 6 块钱。 | 沒關係，我有，找你 6 塊錢。 | /méi guānxi, wǒ yǒu, zhǎo nǐ liù kuài qián/ | Không sao, tôi có, trả lại bạn 6 đồng. |
-| **A** | 谢谢你！ | 謝謝你！ | /xièxie nǐ/ | Cảm ơn bạn! |
-
----
-
-### Bài 8 — Thời gian & Giao tiếp
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你看什么看？ | 你看什麼看？ | /nǐ kàn shénme kàn/ | Bạn nhìn cái gì mà nhìn? |
-| 我去电影院看电影。 | 我去電影院看電影。 | /wǒ qù diànyǐngyuàn kàn diànyǐng/ | Tôi đi rạp chiếu phim xem phim. |
-| 上午 8 点半我们上课。 | 上午 8 點半我們上課。 | /shàngwǔ bā diǎn bàn wǒmen shàngkè/ | 8 giờ rưỡi sáng chúng tôi vào lớp. |
-| 今天上午我和我的同屋走路去学校。 | 今天上午我和我的同屋走路去學校。 | /jīntiān shàngwǔ wǒ hé wǒde tóngwū zǒulù qù xuéxiào/ | Sáng nay tôi và bạn cùng phòng đi bộ đến trường. |
-| 晚上我常跟我弟弟看中国电影。 | 晚上我常跟我弟弟看中國電影。 | /wǎnshang wǒ cháng gēn wǒ dìdi kàn zhōngguó diànyǐng/ | Buổi tối tôi thường cùng em trai xem phim Trung Quốc. |
-| 周末我常在家学习汉语。 | 週末我常在家學習漢語。 | /zhōumò wǒ cháng zài jiā xuéxí hànyǔ/ | Cuối tuần tôi thường ở nhà học tiếng Trung. |
-| 我在图书馆的门口等你。 | 我在圖書館的門口等你。 | /wǒ zài túshūguǎn de ménkǒu děng nǐ/ | Tôi đợi bạn ở cổng thư viện. |
-| 他是谁？我们都知道。 | 他是誰？我們都知道。 | /tā shì shuí? wǒmen dōu zhīdào/ | Anh ấy là ai? Chúng tôi đều biết. |
-| 我什么都可以吃。 | 我什麼都可以吃。 | /wǒ shénme dōu kěyǐ chī/ | Tôi cái gì cũng ăn được. |
-| — | 到你了！ | /dào nǐ le/ | Đến lượt cậu rồi! |
-| — | 那你呢？ | /nà nǐ ne/ | Vậy còn cậu thì sao? |
-| — | 我是越南人呢！ | /wǒ shì yuènánrén ne/ | Tôi là người Việt Nam mà! |
-| 我住在 101 号。 | 我住在 101 號。 | /wǒ zhù zài yāo líng yāo hào/ | Tôi ở số phòng 101. |
-| 我和爸爸去河内。 | 我和爸爸去河內。 | /wǒ hé bàba qù hénèi/ | Tôi và bố đi Hà Nội. |
-| 中国和越南很大。 | 中國和越南很大。 | /zhōngguó hé yuènán hěn dà/ | Trung Quốc và Việt Nam rất lớn. |
-| 你们学校几点上课？ | 你們學校幾點上課？ | /nǐmen xuéxiào jǐ diǎn shàngkè/ | Trường các bạn mấy giờ vào lớp? |
-| — | 你是我的一半。 | /nǐ shì wǒ de yí bàn/ | Em là một nửa của anh. |
-| 现在你做什么工作？ | 現在你做什麼工作？ | /xiànzài nǐ zuò shénme gōngzuò/ | Bây giờ bạn làm công việc gì? |
-| — | 我也是！ | /wǒ yě shì/ | Tôi cũng vậy! |
-| 越南人常全家一起吃饭。 | 越南人常全家一起吃飯。 | /yuènánrén cháng quánjiā yìqǐ chīfàn/ | Người Việt Nam thường cả nhà cùng nhau ăn cơm. |
-| 周末你来我家玩儿吧！ | 週末你來我家玩兒吧！ | /zhōumò nǐ lái wǒjiā wánr ba/ | Cuối tuần bạn đến nhà tôi chơi nhé! |
-| — | 好啊！ | /hǎo a/ | Được thôi! |
-| 我很喜欢她，不过她不喜欢我。 | 我很喜歡她，不過她不喜歡我。 | /wǒ hěn xǐhuan tā, búguò tā bù xǐhuan wǒ/ | Tôi rất thích cô ấy, nhưng cô ấy không thích tôi. |
-| 去你的家怎么走呢？ | 去你的家怎麼走呢？ | /qù nǐ de jiā zěnme zǒu ne/ | Đến nhà bạn đi như thế nào nhỉ? |
-| 这个怎么吃呢？ | 這個怎麼吃呢？ | /zhège zěnme chī ne/ | Cái này ăn như thế nào nhỉ? |
-| 汉语怎么学呢？ | 漢語怎麼學呢？ | /hànyǔ zěnme xué ne/ | Tiếng Trung học như thế nào nhỉ? |
-| — | 我跟姐姐去吧。 | /wǒ gēn jiějie qù ba/ | Tôi đi cùng chị gái nhé. |
-| — | 我不想跟他玩儿。 | /wǒ bù xiǎng gēn tā wánr/ | Tôi không muốn chơi với anh ta. |
-| 现在很多越南人都想学汉语。 | 現在很多越南人都想學漢語。 | /xiànzài hěn duō yuènán rén dōu xiǎng xué hànyǔ/ | Hiện nay rất nhiều người Việt Nam đều muốn học tiếng Trung. |
-| 明天上午 9 点钟我们在你家见面。 | 明天上午 9 點鐘我們在你家見面。 | /míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn/ | 9 giờ sáng mai chúng ta gặp nhau ở nhà bạn nhé. |
-| 周末你喜欢做什么？ | 週末你喜歡做什麼？ | /zhōumò nǐ xǐhuan zuò shénme/ | Cuối tuần bạn thích làm gì? |
-| 等（我）一下儿！ | — | /děng wǒ yíxiàr/ | Đợi (tôi) một lát! |
-| — | 我看一下儿。 | /wǒ kàn yíxiàr/ | Tôi xem một chút. |
-| 快点儿走！ | — | /kuài diǎnr zǒu/ | Đi nhanh lên nào! |
-| — | 什么都好。 | /shénme dōu hǎo/ | Cái gì cũng tốt. |
-| — | 什么都可以。 | /shénme dōu kěyǐ/ | Cái gì cũng được. |
+- [Bài 1 — Xin chào!](#bài-1--xin-chào)
+- [Bài 2 — Cảm ơn cậu!](#bài-2--cảm-ơn-cậu)
+- [Bài 3 — Bạn đi đâu?](#bài-3--bạn-đi-đâu)
+- [Bài 4 — Tôi là người Việt Nam.](#bài-4--tôi-là-người-việt-nam)
+- [Bài 5 — Cậu tên gì?](#bài-5--cậu-tên-gì)
+- [Bài 6 — Cậu thích ăn cái gì?](#bài-6--cậu-thích-ăn-cái-gì)
+- [Bài 7 — Thư viện ở đâu?](#bài-7--thư-viện-ở-đâu)
+- [Bài 8 — Cuối tuần cậu thích làm gì?](#bài-8--cuối-tuần-cậu-thích-làm-gì)
+- [Bài 9 — Táo bán như thế nào?](#bài-9--táo-bán-như-thế-nào)
+- [Bài 10 — Nhà bạn có mấy người?](#bài-10--nhà-bạn-có-mấy-người)
 
 ---
 
@@ -207,6 +39,7 @@
 | 你们好吗？ | 你們好嗎？ | nǐmen hǎo ma | Các bạn có khoẻ không? |
 | 小马白吗？ | 小馬白嗎？ | xiǎo mǎ bái ma | Con ngựa nhỏ có trắng không? |
 | 小马不白。 | 小馬不白。 | xiǎo mǎ bù bái | Con ngựa nhỏ không trắng. |
+
 
 ---
 
@@ -230,6 +63,7 @@
 | 你妈妈的身体好吗？ | 你媽媽的身體好嗎？ | nǐ māma de shēntǐ hǎo ma | Sức khoẻ mẹ bạn có tốt không? |
 | — | 她哥哥太忙了。 | tā gēge tài máng le | Anh trai cô ấy bận quá. |
 | 白马不大。 | 白馬不大。 | bái mǎ bù dà | Con ngựa trắng không to. |
+
 
 ---
 
@@ -272,6 +106,7 @@
 | 明天你忙吗？A: 明天我不忙。 | 明天你忙嗎？A: 明天我不忙。 | míngtiān nǐ máng ma. A: míngtiān wǒ bù máng | Ngày mai bạn có bận không? A: Ngày mai tôi không bận. |
 | 明天见。 | 明天見。 | míngtiān jiàn | Hẹn gặp ngày mai. |
 
+
 ---
 
 ### Bài 4 — Tôi là người Việt Nam.
@@ -313,6 +148,7 @@
 | 这是我的同屋，也是我的同学。 | 這是我的同屋，也是我的同學。 | zhè shì wǒ de tóngwū, yě shì wǒ de tóngxué | Đây là bạn cùng phòng tôi, cũng là bạn cùng lớp tôi. |
 | 再见，星期日见。 | 再見，星期日見。 | zàijiàn, xīngqīrì jiàn | Tạm biệt, hẹn gặp Chủ Nhật. |
 | — | 明天是星期四，12月18日。 | míngtiān shì xīngqī sì, shí'èr yuè shíbā rì | Ngày mai là thứ Năm, ngày 18 tháng 12. |
+
 
 ---
 
@@ -364,6 +200,82 @@
 | B: 我在河内大学学越南语。 | B: 我在河內大學學越南語。 | B: wǒ zài Hànèi dàxué xué Yuènányǔ. | B: Tôi học tiếng Việt ở Đại học Hà Nội. |
 | A: 我在国家大学学汉语。很高兴认识你！ | A: 我在國家大學學漢語。很高興認識你！ | A: wǒ zài Guójiā dàxué xué Hànyǔ. hěn gāoxìng rènshi nǐ! | A: Tôi học tiếng Trung ở Đại học Quốc gia. Rất vui được quen biết bạn! |
 | B: 我也很高兴认识你。 | B: 我也很高興認識你。 | B: wǒ yě hěn gāoxìng rènshi nǐ. | B: Tôi cũng rất vui được quen biết bạn. |
+
+
+---
+
+### Bài 6 — Cậu thích ăn cái gì?
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你吃什么？ | 你吃什麼？ | nǐ chī shénme | Bạn ăn cái gì? |
+| — | 我吃饭。 | wǒ chī fàn | Tôi ăn cơm. |
+| 我吃一碗饭。 | 我吃一碗飯。 | wǒ chī yì wǎn fàn | Tôi ăn một bát cơm. |
+| — | 我喝一杯水。 | wǒ hē yì bēi shuǐ | Tôi uống một cốc nước. |
+| — | 我来一杯奶茶。 | wǒ lái yì bēi nǎichá | Cho tôi một ly trà sữa. |
+| 我要一碗鸡蛋汤。 | 我要一碗雞蛋湯。 | wǒ yào yì wǎn jīdàn tāng | Tôi muốn một bát canh trứng gà. |
+| — | 我很饿！ | wǒ hěn è | Tôi rất đói! |
+| — | 你饿吗？ | nǐ è ma | Bạn đói không? |
+| — | 去吃饭吧。 | qù chīfàn ba | Đi ăn cơm đi. |
+| 你去哪儿吃饭？ | 你去哪兒吃飯？ | nǐ qù nǎr chīfàn | Bạn đi đâu ăn cơm? |
+| — | 我去食堂吃饭。 | wǒ qù shítáng chīfàn | Tôi đi nhà ăn ăn cơm. |
+| 去食堂吃馒头吧。 | 去食堂吃饅頭吧。 | qù shítáng chī mántou ba | Đi nhà ăn ăn màn thầu đi. |
+| 饺子好吃吗？ | 餃子好吃嗎？ | jiǎozi hǎochī ma | Sủi cảo ngon không? |
+| 今天中午我想去食堂吃饺子。 | 今天中午我想去食堂吃餃子。 | jīntiān zhōngwǔ wǒ xiǎng qù shítáng chī jiǎozi | Trưa nay tôi muốn đi nhà ăn ăn sủi cảo. |
+| 北京鸡蛋汤很好吃。 | 北京雞蛋湯很好吃。 | běijīng jīdàn tāng hěn hǎochī | Canh trứng gà Bắc Kinh rất ngon. |
+| 越南鸡汤也很好吃。 | 越南雞湯也很好吃。 | yuènán jītāng yě hěn hǎochī | Canh gà Việt Nam cũng rất ngon. |
+| — | 太好吃了！ | tài hǎochī le | Ngon quá đi! |
+| — | 太渴了！我想喝啤酒。 | tài kě le! wǒ xiǎng hē píjiǔ | Khát quá rồi! Tôi muốn uống bia. |
+| — | 你吃不吃？ | nǐ chī bù chī | Bạn ăn không? |
+| — | 你喝不喝？ | nǐ hē bù hē | Bạn uống không? |
+
+### Bài 6 — Học tập & Đồ vật
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 老师吃饭了吗？ | 老師吃飯了嗎？ | lǎoshī chīfàn le ma | Thầy/Cô ăn cơm chưa? |
+| — | 老师还没吃饭。 | lǎoshī hái méi chīfàn | Thầy/Cô vẫn chưa ăn cơm. |
+| 你吃饭了吗？ | 你吃飯了嗎？ | nǐ chī fàn le ma | Bạn ăn cơm chưa? |
+| 你姐姐回国了吗？ | 你姐姐回國了嗎？ | nǐ jiějie huí guó le ma | Chị gái bạn về nước chưa? |
+| 我姐姐还没回国。 | 我姐姐還沒回國。 | wǒ jiějie hái méi huí guó | Chị gái tôi vẫn chưa về nước. |
+| 你觉得怎么样？ | 你覺得怎麼樣？ | nǐ juéde zěnmeyàng | Bạn cảm thấy thế nào? |
+| 你学习怎么样了？ | 你學習怎麼樣了？ | nǐ xuéxí zěnmeyàng le | Việc học của bạn thế nào rồi? |
+| — | 水怎么喝？ | shuǐ zěnme hē | Nước uống thế nào? |
+| 怎么学好汉语？ | 怎麼學好漢語？ | zěnme xué hǎo hànyǔ | Làm sao để học tốt tiếng Trung? |
+| 你喜欢什么？ | 你喜歡什麼？ | nǐ xǐhuan shénme | Bạn thích cái gì? |
+| 我喜欢学汉语。 | 我喜歡學漢語。 | wǒ xǐhuan xué hànyǔ | Tôi thích học tiếng Trung. |
+| 汉语不太难。汉字太难了。 | 漢語不太難。漢字太難了。 | hànyǔ bú tài nán. hànzi tài nán le | Tiếng Trung không khó lắm. Chữ Hán quá khó rồi. |
+| — | 这是什么？ | zhè shì shénme | Đây là cái gì? |
+| — | 这是我的书。 | zhè shì wǒ de shū | Đây là sách của tôi. |
+| 这是什么书？ | 這是什麼書？ | zhè shì shénme shū | Đây là sách gì? |
+| — | 这是中文书。 | zhè shì zhōngwén shū | Đây là sách tiếng Trung. |
+| 这是谁的杂志？ | 這是誰的雜誌？ | zhè shì shuí de zázhì | Đây là tạp chí của ai? |
+| — | 这是我的杂志。 | zhè shì wǒ de zázhì | Đây là tạp chí của tôi. |
+| 你学中文吗？ | 你學中文嗎？ | nǐ xué zhōngwén ma | Bạn học tiếng Trung không? |
+| 明天我要去学校。 | 明天我要去學校。 | míngtiān wǒ yào qù xuéxiào | Ngày mai tôi phải đi đến trường. |
+
+### Bài 6 — Thời gian
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| — | 八点零五分 | bā diǎn líng wǔ fēn | 8 giờ 5 phút |
+| — | 八点三十分 | bā diǎn sān shí fēn | 8 giờ 30 phút |
+| — | 下午一点二十五分 | xiàwǔ yī diǎn èr shí wǔ fēn | 1 giờ 25 phút chiều |
+| — | 晚上八点五十九分 | wǎnshàng bā diǎn wǔ shí jiǔ fēn | 8 giờ 59 phút tối |
+
+### Bài 6 — BTVN
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 上午我学汉字和发音。 | 上午我學漢字和發音。 | shàngwǔ wǒ xué hànzi hé fāyīn | Buổi sáng tôi học chữ Hán và phát âm. |
+| 你中午几点吃饭？ | 你中午幾點吃飯？ | nǐ zhōngwǔ jǐ diǎn chīfàn | Buổi trưa bạn mấy giờ ăn cơm? |
+| 我很喜欢吃包子，饺子和面条。 | 我很喜歡吃包子，餃子和麵條。 | wǒ hěn xǐhuan chī bāozi, jiǎozi hé miàntiáo | Tôi rất thích ăn bánh bao, sủi cảo và mì sợi. |
+| 我饿了，我想吃一碗饺子和一碗米饭。 | 我餓了，我想吃一碗餃子和一碗米飯。 | wǒ è le, wǒ xiǎng chī yì wǎn jiǎozi hé yì wǎn mǐfàn | Tôi đói rồi, tôi muốn ăn một bát sủi cảo và một bát cơm trắng. |
+| 你觉得这本中文书怎么样？ | 你覺得這本中文書怎麼樣？ | nǐ juéde zhè běn zhōngwén shū zěnmeyàng | Bạn thấy cuốn sách tiếng Trung này thế nào? |
+| 中午十二点三十分我去食堂吃一碗面条，喝一杯啤酒。 | 中午十二點三十分我去食堂吃一碗麵條，喝一杯啤酒。 | zhōngwǔ shí'èr diǎn sānshí fēn wǒ qù shítáng chī yì wǎn miàntiáo, hē yì bēi píjiǔ | 12 giờ 30 phút trưa tôi đi nhà ăn ăn một bát mì, uống một ly bia. |
+
+
+---
 
 ### Bài 7 — Hội thoại: Đi ăn cơm ở nhà ăn
 
@@ -466,366 +378,190 @@
 | 昨天晚上我来国安的家玩儿。 | 昨天晚上我來國安的家玩兒。 | zuótiān wǎnshàng wǒ lái Guó'ān de jiā wánr | Buổi tối hôm qua tôi đến nhà Quốc An chơi. |
 | 我住在宿舍，我们学校的宿舍很大。 | 我住在宿舍，我們學校的宿舍很大。 | wǒ zhù zài sùshè, wǒmen xuéxiào de sùshè hěn dà | Tôi sống ở ký túc xá, ký túc xá của trường chúng tôi rất lớn. |
 
----
-
-### Bài 6 — Cậu thích ăn cái gì?
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你吃什么？ | 你吃什麼？ | nǐ chī shénme | Bạn ăn cái gì? |
-| — | 我吃饭。 | wǒ chī fàn | Tôi ăn cơm. |
-| 我吃一碗饭。 | 我吃一碗飯。 | wǒ chī yì wǎn fàn | Tôi ăn một bát cơm. |
-| — | 我喝一杯水。 | wǒ hē yì bēi shuǐ | Tôi uống một cốc nước. |
-| — | 我来一杯奶茶。 | wǒ lái yì bēi nǎichá | Cho tôi một ly trà sữa. |
-| 我要一碗鸡蛋汤。 | 我要一碗雞蛋湯。 | wǒ yào yì wǎn jīdàn tāng | Tôi muốn một bát canh trứng gà. |
-| — | 我很饿！ | wǒ hěn è | Tôi rất đói! |
-| — | 你饿吗？ | nǐ è ma | Bạn đói không? |
-| — | 去吃饭吧。 | qù chīfàn ba | Đi ăn cơm đi. |
-| 你去哪儿吃饭？ | 你去哪兒吃飯？ | nǐ qù nǎr chīfàn | Bạn đi đâu ăn cơm? |
-| — | 我去食堂吃饭。 | wǒ qù shítáng chīfàn | Tôi đi nhà ăn ăn cơm. |
-| 去食堂吃馒头吧。 | 去食堂吃饅頭吧。 | qù shítáng chī mántou ba | Đi nhà ăn ăn màn thầu đi. |
-| 饺子好吃吗？ | 餃子好吃嗎？ | jiǎozi hǎochī ma | Sủi cảo ngon không? |
-| 今天中午我想去食堂吃饺子。 | 今天中午我想去食堂吃餃子。 | jīntiān zhōngwǔ wǒ xiǎng qù shítáng chī jiǎozi | Trưa nay tôi muốn đi nhà ăn ăn sủi cảo. |
-| 北京鸡蛋汤很好吃。 | 北京雞蛋湯很好吃。 | běijīng jīdàn tāng hěn hǎochī | Canh trứng gà Bắc Kinh rất ngon. |
-| 越南鸡汤也很好吃。 | 越南雞湯也很好吃。 | yuènán jītāng yě hěn hǎochī | Canh gà Việt Nam cũng rất ngon. |
-| — | 太好吃了！ | tài hǎochī le | Ngon quá đi! |
-| — | 太渴了！我想喝啤酒。 | tài kě le! wǒ xiǎng hē píjiǔ | Khát quá rồi! Tôi muốn uống bia. |
-| — | 你吃不吃？ | nǐ chī bù chī | Bạn ăn không? |
-| — | 你喝不喝？ | nǐ hē bù hē | Bạn uống không? |
-
-### Bài 6 — Học tập & Đồ vật
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 老师吃饭了吗？ | 老師吃飯了嗎？ | lǎoshī chīfàn le ma | Thầy/Cô ăn cơm chưa? |
-| — | 老师还没吃饭。 | lǎoshī hái méi chīfàn | Thầy/Cô vẫn chưa ăn cơm. |
-| 你吃饭了吗？ | 你吃飯了嗎？ | nǐ chī fàn le ma | Bạn ăn cơm chưa? |
-| 你姐姐回国了吗？ | 你姐姐回國了嗎？ | nǐ jiějie huí guó le ma | Chị gái bạn về nước chưa? |
-| 我姐姐还没回国。 | 我姐姐還沒回國。 | wǒ jiějie hái méi huí guó | Chị gái tôi vẫn chưa về nước. |
-| 你觉得怎么样？ | 你覺得怎麼樣？ | nǐ juéde zěnmeyàng | Bạn cảm thấy thế nào? |
-| 你学习怎么样了？ | 你學習怎麼樣了？ | nǐ xuéxí zěnmeyàng le | Việc học của bạn thế nào rồi? |
-| — | 水怎么喝？ | shuǐ zěnme hē | Nước uống thế nào? |
-| 怎么学好汉语？ | 怎麼學好漢語？ | zěnme xué hǎo hànyǔ | Làm sao để học tốt tiếng Trung? |
-| 你喜欢什么？ | 你喜歡什麼？ | nǐ xǐhuan shénme | Bạn thích cái gì? |
-| 我喜欢学汉语。 | 我喜歡學漢語。 | wǒ xǐhuan xué hànyǔ | Tôi thích học tiếng Trung. |
-| 汉语不太难。汉字太难了。 | 漢語不太難。漢字太難了。 | hànyǔ bú tài nán. hànzi tài nán le | Tiếng Trung không khó lắm. Chữ Hán quá khó rồi. |
-| — | 这是什么？ | zhè shì shénme | Đây là cái gì? |
-| — | 这是我的书。 | zhè shì wǒ de shū | Đây là sách của tôi. |
-| 这是什么书？ | 這是什麼書？ | zhè shì shénme shū | Đây là sách gì? |
-| — | 这是中文书。 | zhè shì zhōngwén shū | Đây là sách tiếng Trung. |
-| 这是谁的杂志？ | 這是誰的雜誌？ | zhè shì shuí de zázhì | Đây là tạp chí của ai? |
-| — | 这是我的杂志。 | zhè shì wǒ de zázhì | Đây là tạp chí của tôi. |
-| 你学中文吗？ | 你學中文嗎？ | nǐ xué zhōngwén ma | Bạn học tiếng Trung không? |
-| 明天我要去学校。 | 明天我要去學校。 | míngtiān wǒ yào qù xuéxiào | Ngày mai tôi phải đi đến trường. |
-
-### Bài 6 — Thời gian
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| — | 八点零五分 | bā diǎn líng wǔ fēn | 8 giờ 5 phút |
-| — | 八点三十分 | bā diǎn sān shí fēn | 8 giờ 30 phút |
-| — | 下午一点二十五分 | xiàwǔ yī diǎn èr shí wǔ fēn | 1 giờ 25 phút chiều |
-| — | 晚上八点五十九分 | wǎnshàng bā diǎn wǔ shí jiǔ fēn | 8 giờ 59 phút tối |
-
-### Bài 6 — BTVN
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 上午我学汉字和发音。 | 上午我學漢字和發音。 | shàngwǔ wǒ xué hànzi hé fāyīn | Buổi sáng tôi học chữ Hán và phát âm. |
-| 你中午几点吃饭？ | 你中午幾點吃飯？ | nǐ zhōngwǔ jǐ diǎn chīfàn | Buổi trưa bạn mấy giờ ăn cơm? |
-| 我很喜欢吃包子，饺子和面条。 | 我很喜歡吃包子，餃子和麵條。 | wǒ hěn xǐhuan chī bāozi, jiǎozi hé miàntiáo | Tôi rất thích ăn bánh bao, sủi cảo và mì sợi. |
-| 我饿了，我想吃一碗饺子和一碗米饭。 | 我餓了，我想吃一碗餃子和一碗米飯。 | wǒ è le, wǒ xiǎng chī yì wǎn jiǎozi hé yì wǎn mǐfàn | Tôi đói rồi, tôi muốn ăn một bát sủi cảo và một bát cơm trắng. |
-| 你觉得这本中文书怎么样？ | 你覺得這本中文書怎麼樣？ | nǐ juéde zhè běn zhōngwén shū zěnmeyàng | Bạn thấy cuốn sách tiếng Trung này thế nào? |
-| 中午十二点三十分我去食堂吃一碗面条，喝一杯啤酒。 | 中午十二點三十分我去食堂吃一碗麵條，喝一杯啤酒。 | zhōngwǔ shí'èr diǎn sānshí fēn wǒ qù shítáng chī yì wǎn miàntiáo, hē yì bēi píjiǔ | 12 giờ 30 phút trưa tôi đi nhà ăn ăn một bát mì, uống một ly bia. |
 
 ---
 
-### Ngữ pháp 的 — Luyện tập
+### Bài 8 — Thời gian & Giao tiếp
 
 | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
 |------|------|--------|--------------------|
-| 她是聪明的学生，我们都喜欢她。 | 她是聰明的學生，我們都喜歡她。 | tā shì cōngmíng de xuéshēng, wǒmen dōu xǐhuan tā. | Cô ấy là học sinh thông minh, chúng tôi đều thích cô ấy. |
-| 他是好人，也是好老师。 | 他是好人，也是好老師。 | tā shì hǎo rén, yě shì hǎo lǎoshī. | Anh ấy là người tốt, cũng là giáo viên tốt. |
-| 这是我的汉语书，是很好的书。 | 這是我的漢語書，是很好的書。 | zhè shì wǒ de hànyǔ shū, shì hěn hǎo de shū. | Đây là sách tiếng Trung của tôi, là cuốn sách rất hay. |
-| 妈妈做的饺子很好吃，你吃不吃？ | 媽媽做的餃子很好吃，你吃不吃？ | māma zuò de jiǎozi hěn hǎochī, nǐ chī bù chī? | Bánh sủi cảo mẹ làm rất ngon, bạn ăn không? |
-| 学汉语的学生都很聪明！ | 學漢語的學生都很聰明！ | xué hànyǔ de xuéshēng dōu hěn cōngmíng! | Học sinh học tiếng Trung đều rất thông minh! |
-| 这是吃的东西，你吃吗？ | 這是吃的東西，你吃嗎？ | zhè shì chī de dōngxi, nǐ chī ma? | Đây là đồ ăn, bạn ăn không? |
-| 我姐姐是汉语老师，她很聪明。 | 我姐姐是漢語老師，她很聰明。 | wǒ jiějie shì hànyǔ lǎoshī, tā hěn cōngmíng. | Chị gái tôi là giáo viên tiếng Trung, cô ấy rất thông minh. |
-| 这是中文书，不是英文书。 | 這是中文書，不是英文書。 | zhè shì zhōngwén shū, bú shì yīngwén shū. | Đây là sách tiếng Trung, không phải sách tiếng Anh. |
+| 你看什么看？ | 你看什麼看？ | /nǐ kàn shénme kàn/ | Bạn nhìn cái gì mà nhìn? |
+| 我去电影院看电影。 | 我去電影院看電影。 | /wǒ qù diànyǐngyuàn kàn diànyǐng/ | Tôi đi rạp chiếu phim xem phim. |
+| 上午 8 点半我们上课。 | 上午 8 點半我們上課。 | /shàngwǔ bā diǎn bàn wǒmen shàngkè/ | 8 giờ rưỡi sáng chúng tôi vào lớp. |
+| 今天上午我和我的同屋走路去学校。 | 今天上午我和我的同屋走路去學校。 | /jīntiān shàngwǔ wǒ hé wǒde tóngwū zǒulù qù xuéxiào/ | Sáng nay tôi và bạn cùng phòng đi bộ đến trường. |
+| 晚上我常跟我弟弟看中国电影。 | 晚上我常跟我弟弟看中國電影。 | /wǎnshang wǒ cháng gēn wǒ dìdi kàn zhōngguó diànyǐng/ | Buổi tối tôi thường cùng em trai xem phim Trung Quốc. |
+| 周末我常在家学习汉语。 | 週末我常在家學習漢語。 | /zhōumò wǒ cháng zài jiā xuéxí hànyǔ/ | Cuối tuần tôi thường ở nhà học tiếng Trung. |
+| 我在图书馆的门口等你。 | 我在圖書館的門口等你。 | /wǒ zài túshūguǎn de ménkǒu děng nǐ/ | Tôi đợi bạn ở cổng thư viện. |
+| 他是谁？我们都知道。 | 他是誰？我們都知道。 | /tā shì shuí? wǒmen dōu zhīdào/ | Anh ấy là ai? Chúng tôi đều biết. |
+| 我什么都可以吃。 | 我什麼都可以吃。 | /wǒ shénme dōu kěyǐ chī/ | Tôi cái gì cũng ăn được. |
+| — | 到你了！ | /dào nǐ le/ | Đến lượt cậu rồi! |
+| — | 那你呢？ | /nà nǐ ne/ | Vậy còn cậu thì sao? |
+| — | 我是越南人呢！ | /wǒ shì yuènánrén ne/ | Tôi là người Việt Nam mà! |
+| 我住在 101 号。 | 我住在 101 號。 | /wǒ zhù zài yāo líng yāo hào/ | Tôi ở số phòng 101. |
+| 我和爸爸去河内。 | 我和爸爸去河內。 | /wǒ hé bàba qù hénèi/ | Tôi và bố đi Hà Nội. |
+| 中国和越南很大。 | 中國和越南很大。 | /zhōngguó hé yuènán hěn dà/ | Trung Quốc và Việt Nam rất lớn. |
+| 你们学校几点上课？ | 你們學校幾點上課？ | /nǐmen xuéxiào jǐ diǎn shàngkè/ | Trường các bạn mấy giờ vào lớp? |
+| — | 你是我的一半。 | /nǐ shì wǒ de yí bàn/ | Em là một nửa của anh. |
+| 现在你做什么工作？ | 現在你做什麼工作？ | /xiànzài nǐ zuò shénme gōngzuò/ | Bây giờ bạn làm công việc gì? |
+| — | 我也是！ | /wǒ yě shì/ | Tôi cũng vậy! |
+| 越南人常全家一起吃饭。 | 越南人常全家一起吃飯。 | /yuènánrén cháng quánjiā yìqǐ chīfàn/ | Người Việt Nam thường cả nhà cùng nhau ăn cơm. |
+| 周末你来我家玩儿吧！ | 週末你來我家玩兒吧！ | /zhōumò nǐ lái wǒjiā wánr ba/ | Cuối tuần bạn đến nhà tôi chơi nhé! |
+| — | 好啊！ | /hǎo a/ | Được thôi! |
+| 我很喜欢她，不过她不喜欢我。 | 我很喜歡她，不過她不喜歡我。 | /wǒ hěn xǐhuan tā, búguò tā bù xǐhuan wǒ/ | Tôi rất thích cô ấy, nhưng cô ấy không thích tôi. |
+| 去你的家怎么走呢？ | 去你的家怎麼走呢？ | /qù nǐ de jiā zěnme zǒu ne/ | Đến nhà bạn đi như thế nào nhỉ? |
+| 这个怎么吃呢？ | 這個怎麼吃呢？ | /zhège zěnme chī ne/ | Cái này ăn như thế nào nhỉ? |
+| 汉语怎么学呢？ | 漢語怎麼學呢？ | /hànyǔ zěnme xué ne/ | Tiếng Trung học như thế nào nhỉ? |
+| — | 我跟姐姐去吧。 | /wǒ gēn jiějie qù ba/ | Tôi đi cùng chị gái nhé. |
+| — | 我不想跟他玩儿。 | /wǒ bù xiǎng gēn tā wánr/ | Tôi không muốn chơi với anh ta. |
+| 现在很多越南人都想学汉语。 | 現在很多越南人都想學漢語。 | /xiànzài hěn duō yuènán rén dōu xiǎng xué hànyǔ/ | Hiện nay rất nhiều người Việt Nam đều muốn học tiếng Trung. |
+| 明天上午 9 点钟我们在你家见面。 | 明天上午 9 點鐘我們在你家見面。 | /míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn/ | 9 giờ sáng mai chúng ta gặp nhau ở nhà bạn nhé. |
+| 周末你喜欢做什么？ | 週末你喜歡做什麼？ | /zhōumò nǐ xǐhuan zuò shénme/ | Cuối tuần bạn thích làm gì? |
+| 等（我）一下儿！ | — | /děng wǒ yíxiàr/ | Đợi (tôi) một lát! |
+| — | 我看一下儿。 | /wǒ kàn yíxiàr/ | Tôi xem một chút. |
+| 快点儿走！ | — | /kuài diǎnr zǒu/ | Đi nhanh lên nào! |
+| — | 什么都好。 | /shénme dōu hǎo/ | Cái gì cũng tốt. |
+| — | 什么都可以。 | /shénme dōu kěyǐ/ | Cái gì cũng được. |
+
 
 ---
 
-## Luyện tập tổng hợp
+### Bài 9 — Táo bán như thế nào?
 
-> Tự động tạo sau mỗi bài học mới. Kết hợp toàn bộ từ vựng và ngữ pháp đã học.
-> Xem kiến thức gốc tại: `knowledge-base/chinese-brain.md`
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 大家跟我一起读。 | 大家跟我一起讀。 | /dàjiā gēn wǒ yìqǐ dú/ | Mọi người đọc theo tôi. |
+| 你卖什么？ | 你賣什麼？ | /nǐ mài shénme/ | Bạn bán cái gì? |
+| 怎么卖？ | 怎麼賣？ | /zěnme mài/ | Bán như thế nào? |
+| 一共多少钱？ | 一共多少錢？ | /yígòng duōshao qián/ | Tổng cộng bao nhiêu tiền? |
+| 还有人吗？ | 還有人嗎？ | /hái yǒu rén ma/ | Còn ai không? |
+| 你还要买别的吗？ | 你還要買別的嗎？ | /nǐ hái yào mǎi biéde ma/ | Bạn còn muốn mua gì khác nữa không? |
+| 吃水果对身体很好。 | 吃水果對身體很好。 | /chī shuǐguǒ duì shēntǐ hěn hǎo/ | Ăn trái cây rất tốt cho sức khỏe. |
+| 你对我太好了！ | 你對我太好了！ | /nǐ duì wǒ tài hǎo le/ | Bạn đối với tôi tốt quá! |
+| — | 吃瓜 | /chī guā/ | Hóng drama (tiếng lóng Trung Quốc). |
+| 一点点儿 | 一點點兒 | /yìdiǎndiǎnr/ | Một chút thôi. |
+| 我会说中文一点点儿。 | 我會說中文一點點兒。 | /wǒ huì shuō zhōngwén yìdiǎndiǎnr/ | Tôi biết nói tiếng Trung một chút thôi. |
+| 等我一会儿。 | 等我一會兒。 | /děng wǒ yíhuìr/ | Đợi tôi một lát. |
+| 两个人 = 俩 | 兩個人 = 倆 | /liǎng ge rén = liǎ/ | Hai người. |
+| — | 先生，您好！ | /xiānsheng, nín hǎo/ | Chào ông! |
+| 别说了。 | 別說了。 | /bié shuō le/ | Đừng nói nữa. |
+| 别看了。 | 別看了。 | /bié kàn le/ | Đừng nhìn nữa / Đừng xem nữa. |
+| 别走。 | 別走。 | /bié zǒu/ | Đừng đi. |
+| 别问我。 | 別問我。 | /bié wèn wǒ/ | Đừng hỏi tôi. |
+| 做买卖 | 做買賣 | /zuò mǎimài/ | Làm kinh doanh. |
+| 老师去买包子了！ | 老師去買包子了！ | /lǎoshī qù mǎi bāozi le/ | Thầy giáo đi mua bánh bao rồi! |
+| 我想吃苹果。 | 我想吃蘋果。 | /wǒ xiǎng chī píngguǒ/ | Tôi muốn ăn táo. |
+| — | 水果很好吃。 | /shuǐguǒ hěn hǎochī/ | Trái cây rất ngon. |
+| 我妈妈不喜欢吃水果。 | 我媽媽不喜歡吃水果。 | /wǒ māma bù xǐhuān chī shuǐguǒ/ | Mẹ tôi không thích ăn trái cây. |
+| 我有很多中国朋友。 | 我有很多中國朋友。 | /wǒ yǒu hěn duō zhōngguó péngyǒu/ | Tôi có rất nhiều bạn Trung Quốc. |
+| — | 你吃太少了！ | /nǐ chī tài shǎo le/ | Bạn ăn quá ít rồi! |
+| 今天很少人去学校。 | 今天很少人去學校。 | /jīntiān hěn shǎo rén qù xuéxiào/ | Hôm nay rất ít người đến trường. |
+| — | 你吃多少？ | /nǐ chī duōshao/ | Bạn ăn bao nhiêu? |
+| 这儿有多少人？ | 這兒有多少人？ | /zhèr yǒu duōshao rén/ | Ở đây có bao nhiêu người? |
+| 苹果一公斤多少钱？ | 蘋果一公斤多少錢？ | /píngguǒ yì gōngjīn duōshao qián/ | Táo một cân (kg) bao nhiêu tiền? |
+| 苹果一公斤 5 块。 | 蘋果一公斤 5 塊。 | /píngguǒ yì gōngjīn wǔ kuài/ | Táo 5 đồng một cân. |
+| 我买 10 公斤苹果。 | 我買 10 公斤蘋果。 | /wǒ mǎi shí gōngjīn píngguǒ/ | Tôi mua 10 cân táo. |
+| 包子一个 1 块，6 个包子。 | 包子一個 1 塊，6 個包子。 | /bāozi yígè yíkuài, liù gè bāozi/ | Bánh bao 1 đồng 1 cái, 6 cái bánh bao. |
+| 我想买西瓜。 | 我想買西瓜。 | /wǒ xiǎng mǎi xīguā/ | Tôi muốn mua dưa hấu. |
+| 西瓜好吃吗？ | 西瓜好吃嗎？ | /xīguā hǎochī ma/ | Dưa hấu ngon không? |
+| 水果太贵了！ | 水果太貴了！ | /shuǐguǒ tài guì le/ | Trái cây đắt quá rồi! |
+| 面包不贵。 | 麵包不貴。 | /miànbāo bú guì/ | Bánh mì không đắt. |
+| 这儿有很多西瓜。 | 這兒有很多西瓜。 | /zhèr yǒu hěn duō xīguā/ | Ở đây có rất nhiều dưa hấu. |
+| 我有很多书。 | 我有很多書。 | /wǒ yǒu hěn duō shū/ | Tôi có rất nhiều sách. |
+| 我学校有很多学生。 | 我學校有很多學生。 | /wǒ xuéxiào yǒu hěn duō xuésheng/ | Trường tôi có rất nhiều học sinh. |
+| 那不是售货员。 | 那不是售貨員。 | /nà búshì shòuhuòyuán/ | Đó không phải là nhân viên bán hàng. |
+| 售货员很忙。 | 售貨員很忙。 | /shòuhuòyuán hěn máng/ | Nhân viên bán hàng rất bận. |
+| 一些钱 | 一些錢 | /yìxiē qián/ | Một ít tiền. |
+| 一点儿水 | 一點兒水 | /yìdiǎnr shuǐ/ | Một ít nước. |
+| 一点儿饭 | 一點兒飯 | /yìdiǎnr fàn/ | Một ít cơm. |
+| 我有零钱。 | 我有零錢。 | /wǒ yǒu língqián/ | Tôi có tiền lẻ. |
+| 两个人 / 两碗饭 / 两个星期 | 兩個人 / 兩碗飯 / 兩個星期 | /liǎng ge rén / liǎng wǎn fàn / liǎng ge xīngqī/ | Hai người / Hai bát cơm / Hai tuần. |
+| 两天 / 两年 | 兩天 / 兩年 | /liǎng tiān / liǎng nián/ | Hai ngày / Hai năm. |
+| 两本书 | 兩本書 | /liǎng běn shū/ | Hai quyển sách. |
+| 他们两个人 | 他們兩個人 | /tāmen liǎng ge rén/ | Hai người bọn họ. |
+| 我想换书。 | 我想換書。 | /wǒ xiǎng huàn shū/ | Tôi muốn đổi sách. |
+| 我不喜欢这本书了。 | 我不喜歡這本書了。 | /wǒ bù xǐhuān zhè běn shū le/ | Tôi không thích quyển sách này nữa rồi. |
+| 我吃别的。 | 我吃別的。 | /wǒ chī biéde/ | Tôi ăn cái khác. |
+| 我走别的路。 | 我走別的路。 | /wǒ zǒu biéde lù/ | Tôi đi con đường khác. |
+| 我给你钱吧。 | 我給你錢吧。 | /wǒ gěi nǐ qián ba/ | Tôi đưa tiền cho bạn nhé. |
+| 5 块一公斤 | 5 塊一公斤 | /wǔ kuài yì gōngjīn/ | 5 đồng một cân. |
+| 西瓜一公斤几块？ | 西瓜一公斤幾塊？ | /xīguā yì gōngjīn jǐ kuài/ | Dưa hấu mấy đồng một cân? |
+| 你还小，你不知道啊。 | 你還小，你不知道啊。 | /nǐ hái xiǎo, nǐ bù zhīdào a/ | Bạn còn nhỏ, bạn không biết đâu. |
+
+### Bài 9 — BTVN: Hội thoại mua bán
+
+| Nhân vật | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|:--------:|------|------|--------|--------------------|
+| **A** | 老板，我买水果。 | 老闆，我買水果。 | /lǎobǎn, wǒ mǎi shuǐguǒ/ | Ông chủ, tôi mua trái cây. |
+| **B** | 你买什么水果？ | 你買什麼水果？ | /nǐ mǎi shénme shuǐguǒ/ | Bạn mua trái cây gì? |
+| **A** | 这儿有西瓜吗？ | 這兒有西瓜嗎？ | /zhèr yǒu xīguā ma/ | Ở đây có dưa hấu không? |
+| **B** | 有，有西瓜和苹果。这儿还有很多水果，你看吧。 | 有，有西瓜和蘋果。這兒還有很多水果，你看吧。 | /yǒu, yǒu xīguā hé píngguǒ. zhèr hái yǒu hěnduō shuǐguǒ, nǐ kàn ba/ | Có, có dưa hấu và táo. Ở đây còn có rất nhiều trái cây, bạn xem đi. |
+| **A** | 西瓜怎么卖？ | 西瓜怎麼賣？ | /xīguā zěnme mài/ | Dưa hấu bán thế nào? |
+| **B** | 西瓜一斤 8 块钱。你要买几斤？ | 西瓜一斤 8 塊錢。你要買幾斤？ | /xīguā yìjīn bā kuài qián. nǐ yào mǎi jǐ jīn/ | Dưa hấu 8 đồng một cân. Bạn muốn mua mấy cân? |
+| **A** | 我要买三斤西瓜。 | 我要買三斤西瓜。 | /wǒ yào mǎi sān jīn xīguā/ | Tôi muốn mua 3 cân dưa hấu. |
+| **B** | 你还要买什么别的吗？ | 你還要買什麼別的嗎？ | /nǐ hái yào mǎi shénme biéde ma/ | Bạn còn muốn mua cái gì khác nữa không? |
+| **A** | 再来一斤苹果吧。 | 再來一斤蘋果吧。 | /zài lái yì jīn píngguǒ ba/ | Cho thêm một cân táo nữa đi. |
+| **B** | 好的，苹果 10 块钱一斤。你的一共是 34 块钱。 | 好的，蘋果 10 塊錢一斤。你的一共是 34 塊錢。 | /hǎo de, píngguǒ shí kuài qián yìjīn. nǐ de yígòng shì sānshísì kuài qián/ | Được, táo 10 đồng một cân. Của bạn tổng cộng là 34 đồng. |
+| **A** | 好的，我没有零钱，我给你 40 块钱。 | 好的，我沒有零錢，我給你 40 塊錢。 | /hǎo de, wǒ méiyǒu língqián, wǒ gěi nǐ sìshí kuài qián/ | Được, tôi không có tiền lẻ, tôi đưa bạn 40 đồng. |
+| **B** | 没关系，我有，找你 6 块钱。 | 沒關係，我有，找你 6 塊錢。 | /méi guānxi, wǒ yǒu, zhǎo nǐ liù kuài qián/ | Không sao, tôi có, trả lại bạn 6 đồng. |
+| **A** | 谢谢你！ | 謝謝你！ | /xièxie nǐ/ | Cảm ơn bạn! |
+
 
 ---
 
-### Cập nhật sau Bài 7 — 2026-06-02
-
-**Kiến thức sử dụng:** Bài 1 (chào hỏi) + Bài 2 (gia đình, mức độ) + Bài 3 (địa điểm, chuỗi ĐT) + Bài 4 (是/有, quốc tịch) + Bài 5 (tên, công việc, 请/吧/了) + Bài 6 (ăn uống, 了吗/还没, 怎么样) + Bài 7 (phương vị từ, 知道/会, 住在, 有空儿, 欢迎/玩儿)
-
-#### Tình huống 1: Hỏi vị trí ký túc xá và thư viện
+### Bài 10 — Nhà bạn có mấy người?
 
 | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
 |------|------|--------|--------------------|
-| 你好，请问宿舍在哪儿？我是新来的留学生。 | 你好，請問宿舍在哪兒？我是新來的留學生。 | nǐ hǎo, qǐngwèn sùshè zài nǎr? wǒ shì xīn lái de liúxuéshēng. | Xin chào, cho hỏi ký túc xá ở đâu? Tôi là du học sinh mới đến. |
-| 宿舍在教学楼的北边，图书馆的右边。你知道图书馆吗？ | 宿舍在教學樓的北邊，圖書館的右邊。你知道圖書館嗎？ | sùshè zài jiàoxuélóu de běibian, túshūguǎn de yòubian. nǐ zhīdào túshūguǎn ma? | Ký túc xá ở phía bắc tòa nhà dạy học, bên phải thư viện. Bạn biết thư viện không? |
-| 我不知道，图书馆在哪儿？我想在那儿学习汉语。 | 我不知道，圖書館在哪兒？我想在那兒學習漢語。 | wǒ bù zhīdào, túshūguǎn zài nǎr? wǒ xiǎng zài nàr xuéxí hànyǔ. | Tôi không biết, thư viện ở đâu? Tôi muốn học tiếng Trung ở đó. |
-| 图书馆在学校的东边，很近。你住在宿舍吗？ | 圖書館在學校的東邊，很近。你住在宿舍嗎？ | túshūguǎn zài xuéxiào de dōngbian, hěn jìn. nǐ zhù zài sùshè ma? | Thư viện ở phía đông trường, rất gần. Bạn ở ký túc xá không? |
-| 是，我住在宿舍。谢谢你！ | 是，我住在宿舍。謝謝你！ | shì, wǒ zhù zài sùshè. xièxie nǐ! | Đúng, tôi ở ký túc xá. Cảm ơn bạn! |
-| 不用谢，很高兴认识你！ | 不用謝，很高興認識你！ | búyòng xiè, hěn gāoxìng rènshi nǐ! | Không cần cảm ơn, rất vui được quen biết bạn! |
+| 我爷爷是最高和最帅的人。 | 我爺爺是最高和最帥的人。 | /wǒ yéye shì zuì gāo hé zuì shuài de rén/ | Ông nội tôi là người cao nhất và đẹp trai nhất. |
+| 我家有一条黑狗。 | 我家有一條黑狗。 | /wǒ jiā yǒu yì tiáo hēi gǒu/ | Nhà tôi có một con chó đen. |
+| 我很喜欢拍照。 | 我很喜歡拍照。 | /wǒ hěn xǐhuān pāizhào/ | Tôi rất thích chụp ảnh. |
+| 这两张是我小时候的照片。 | 這兩張是我小時候的照片。 | /zhè liǎng zhāng shì wǒ xiǎoshíhou de zhàopiàn/ | Hai tấm này là ảnh hồi nhỏ của tôi. |
+| 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
+| 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
+| 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
+| 你们觉得老师可爱吗？ | 你們覺得老師可愛嗎？ | /nǐmen juéde lǎoshī kě'ài ma/ | Các bạn thấy cô giáo có đáng yêu không? |
+| 你觉得她漂亮吗？ | 你覺得她漂亮嗎？ | /nǐ juéde tā piàoliang ma/ | Bạn thấy cô ấy có xinh không? |
+| 这个房间太漂亮了。 | 這個房間太漂亮了。 | /zhè ge fángjiān tài piàoliang le/ | Căn phòng này đẹp quá. |
+| 你什么时候回来啊？ | 你什麼時候回來啊？ | /nǐ shénme shíhou huílái a/ | Khi nào bạn về thế? |
+| 他买的衣服都很贵。 | 他買的衣服都很貴。 | /tā mǎi de yīfu dōu hěn guì/ | Quần áo anh ấy mua đều rất đắt. |
+| 我喜欢穿白衣服。 | 我喜歡穿白衣服。 | /wǒ xǐhuān chuān bái yīfu/ | Tôi thích mặc quần áo trắng. |
+| 学习汉语的时候，我觉得很累。 | 學習漢語的時候，我覺得很累。 | /xuéxí hànyǔ de shíhou, wǒ juéde hěn lèi/ | Lúc học tiếng Trung, tôi cảm thấy rất mệt. |
+| 妈妈常买水果。 | 媽媽常買水果。 | /māma cháng mǎi shuǐguǒ/ | Mẹ thường xuyên mua trái cây. |
+| 周末的时候，我喜欢去图书馆。 | 週末的時候，我喜歡去圖書館。 | /zhōumò de shíhou, wǒ xǐhuān qù túshūguǎn/ | Lúc cuối tuần, tôi thích đi thư viện. |
+| 我最喜欢吃苹果。 | 我最喜歡吃蘋果。 | /wǒ zuì xǐhuān chī píngguǒ/ | Tôi thích ăn táo nhất. |
+| 骑马 / 骑车 | 騎馬 / 騎車 | /qí mǎ / qí chē/ | Cưỡi ngựa / Đi xe. |
+| 你会骑自行车吗？ | 你會騎自行車嗎？ | /nǐ huì qí zìxíngchē ma/ | Bạn biết đi xe đạp không? |
+| 我姐姐很喜欢看电影。 | 我姐姐很喜歡看電影。 | /wǒ jiějie hěn xǐhuān kàn diànyǐng/ | Chị gái tôi rất thích xem phim. |
+| 谁的房间？ | 誰的房間？ | /shéi de fángjiān/ | Phòng của ai? |
+| 这个房间很大。 | 這個房間很大。 | /zhè ge fángjiān hěn dà/ | Căn phòng này rất lớn. |
 
-#### Tình huống 2: Rủ bạn đi chơi cuối tuần
+### Bài 10 — Luyện tập: Hội thoại
 
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！这个星期天你有空儿吗？ | 你好！這個星期天你有空兒嗎？ | nǐ hǎo! zhège xīngqītiān nǐ yǒu kòngr ma? | Xin chào! Chủ Nhật này bạn có rảnh không? |
-| 星期天我有空儿，你想去哪儿玩儿？ | 星期天我有空兒，你想去哪兒玩兒？ | xīngqītiān wǒ yǒu kòngr, nǐ xiǎng qù nǎr wánr? | Chủ Nhật tôi rảnh, bạn muốn đi đâu chơi? |
-| 欢迎你来我家玩儿！我妈妈会做越南菜，你知道越南菜吗？ | 歡迎你來我家玩兒！我媽媽會做越南菜，你知道越南菜嗎？ | huānyíng nǐ lái wǒ jiā wánr! wǒ māma huì zuò Yuènán cài, nǐ zhīdào Yuènán cài ma? | Chào mừng bạn đến nhà tôi chơi! Mẹ tôi biết nấu món Việt, bạn biết món Việt không? |
-| 我知道，我很喜欢吃越南菜！你家在哪儿？ | 我知道，我很喜歡吃越南菜！你家在哪兒？ | wǒ zhīdào, wǒ hěn xǐhuan chī Yuènán cài! nǐ jiā zài nǎr? | Tôi biết, tôi rất thích ăn món Việt! Nhà bạn ở đâu? |
-| 我家在学校的西边，银行的左边。星期天早上你来吧！ | 我家在學校的西邊，銀行的左邊。星期天早上你來吧！ | wǒ jiā zài xuéxiào de xībian, yínháng de zuǒbian. xīngqītiān zǎoshang nǐ lái ba! | Nhà tôi ở phía tây trường, bên trái ngân hàng. Sáng Chủ Nhật bạn đến nhé! |
-| 太好了！你们家有几口人？ | 太好了！你們家有幾口人？ | tài hǎo le! nǐmen jiā yǒu jǐ kǒu rén? | Tốt quá! Nhà bạn có mấy người? |
+| Nhân vật | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|:--------:|------|------|--------|--------------------|
+| **A** | 这是你的照片吗？ | 這是你的照片嗎？ | /zhè shì nǐ de zhàopiàn ma/ | Đây là ảnh của bạn à? |
+| **B** | 对，是我家的照片。 | 對，是我家的照片。 | /duì, shì wǒ jiā de zhàopiàn/ | Đúng, là ảnh của gia đình tôi. |
+| **A** | 你家有几口人？ | 你家有幾口人？ | /nǐ jiā yǒu jǐ kǒu rén/ | Nhà bạn có mấy người? |
+| **B** | 我家有五口人：爷爷，奶奶，爸爸，妈妈和我。 | 我家有五口人：爺爺，奶奶，爸爸，媽媽和我。 | /wǒ jiā yǒu wǔ kǒu rén: yéye, nǎinai, bàba, māma hé wǒ/ | Nhà tôi có 5 người: ông nội, bà nội, bố, mẹ và tôi. |
+| **A** | 你没有哥哥姐姐吗？ | 你沒有哥哥姐姐嗎？ | /nǐ méiyǒu gēge jiějie ma/ | Bạn không có anh trai, chị gái à? |
+| **B** | 没有，现在中国家庭一般只有一个孩子。 | 沒有，現在中國家庭一般只有一個孩子。 | /méiyǒu, xiànzài Zhōngguó jiātíng yìbān zhǐyǒu yígè háizi/ | Không có, hiện nay gia đình Trung Quốc thường chỉ có một con. |
+| **A** | 你家都有什么人？ | 你家都有什麼人？ | /nǐ jiā dōu yǒu shénme rén/ | Nhà bạn gồm có những ai? |
+| **B** | 我家有爸爸，妈妈，哥哥，弟弟，妹妹，还有一条狗。 | 我家有爸爸，媽媽，哥哥，弟弟，妹妹，還有一條狗。 | /wǒ jiā yǒu bàba, māma, gēge, dìdi, mèimei, hái yǒu yì tiáo gǒu/ | Nhà tôi có bố, mẹ, anh trai, em trai, em gái và còn có một con chó. |
+| **A** | 一共六口人？ | 一共六口人？ | /yígòng liù kǒu rén/ | Tổng cộng 6 người? |
+| **B** | 不，七口。 | 不，七口。 | /bù, qī kǒu/ | Không, 7 người. |
+| **A** | 爸爸，妈妈，一个哥哥，一个弟弟，一个妹妹和你，六口，对吧？ | 爸爸，媽媽，一個哥哥，一個弟弟，一個妹妹和你，六口，對吧？ | /bàba, māma, yígè gēge, yígè dìdi, yígè mèimei hé nǐ, liù kǒu, duì ba/ | Bố, mẹ, 1 anh trai, 1 em trai, 1 em gái và bạn, là 6 người, đúng không? |
+| **B** | 不对，还有一条狗。 | 不對，還有一條狗。 | /bú duì, hái yǒu yì tiáo gǒu/ | Không đúng, còn có một con chó nữa. |
+| **A** | 是这样... | 是這樣... | /shì zhè yàng/ | Là như vậy... |
 
-#### Tình huống 3: Nói chuyện về kỹ năng và việc học
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你会说中文吗？你学习怎么样了？ | 你會說中文嗎？你學習怎麼樣了？ | nǐ huì shuō zhōngwén ma? nǐ xuéxí zěnmeyàng le? | Bạn biết nói tiếng Trung không? Việc học của bạn thế nào rồi? |
-| 我会说一点儿中文，可是这些汉字我都不会！ | 我會說一點兒中文，可是這些漢字我都不會！ | wǒ huì shuō yìdiǎnr zhōngwén, kěshì zhèxiē hànzi wǒ dōu bú huì! | Tôi biết nói một chút tiếng Trung, nhưng những chữ Hán này tôi đều không biết! |
-| 我知道，汉字太难了！你知道学校的图书馆吗？那儿有很多汉语书。 | 我知道，漢字太難了！你知道學校的圖書館嗎？那兒有很多漢語書。 | wǒ zhīdào, hànzi tài nán le! nǐ zhīdào xuéxiào de túshūguǎn ma? nàr yǒu hěn duō hànyǔ shū. | Tôi biết, chữ Hán khó quá! Bạn biết thư viện của trường không? Ở đó có rất nhiều sách tiếng Trung. |
-| 我知道图书馆在哪儿，图书馆在教学楼的东边。你会教我学汉字吗？ | 我知道圖書館在哪兒，圖書館在教學樓的東邊。你會教我學漢字嗎？ | wǒ zhīdào túshūguǎn zài nǎr, túshūguǎn zài jiàoxuélóu de dōngbian. nǐ huì jiāo wǒ xué hànzi ma? | Tôi biết thư viện ở đâu, thư viện ở phía đông tòa nhà dạy học. Bạn có thể dạy tôi học chữ Hán không? |
-| 我也不太会，可是我们可以一起去图书馆学习！ | 我也不太會，可是我們可以一起去圖書館學習！ | wǒ yě bú tài huì, kěshì wǒmen kěyǐ yīqǐ qù túshūguǎn xuéxí! | Tôi cũng không giỏi lắm, nhưng chúng ta có thể cùng đến thư viện học! |
-
-#### Tình huống 4: Đón giáo viên đến thăm ký túc xá
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 欢迎老师来我们宿舍玩儿！请进，请坐！ | 歡迎老師來我們宿舍玩兒！請進，請坐！ | huānyíng lǎoshī lái wǒmen sùshè wánr! qǐng jìn, qǐng zuò! | Chào mừng thầy đến ký túc xá của chúng em chơi! Mời vào, mời ngồi! |
-| 谢谢！你们住在宿舍，食堂在宿舍的哪边？ | 謝謝！你們住在宿舍，食堂在宿舍的哪邊？ | xièxie! nǐmen zhù zài sùshè, shítáng zài sùshè de nǎ biān? | Cảm ơn! Các em ở ký túc xá, nhà ăn ở phía nào của ký túc xá? |
-| 食堂在宿舍的南边，饭馆在宿舍的东边。老师，您今天有空儿吗？ | 食堂在宿舍的南邊，飯館在宿舍的東邊。老師，您今天有空兒嗎？ | shítáng zài sùshè de nánbian, fànguǎn zài sùshè de dōngbian. lǎoshī, nín jīntiān yǒu kòngr ma? | Nhà ăn ở phía nam ký túc xá, quán cơm ở phía đông ký túc xá. Thầy hôm nay có rảnh không? |
-| 今天我有空儿。你们昨天晚上回宿舍很晚吗？ | 今天我有空兒。你們昨天晚上回宿舍很晚嗎？ | jīntiān wǒ yǒu kòngr. nǐmen zuótiān wǎnshang huí sùshè hěn wǎn ma? | Hôm nay tôi rảnh. Tối qua các em về ký túc xá muộn không? |
-| 是，昨天我们去王老师的家喝茶，回来很晚。老师，今天中午我们去食堂吃饭吧！ | 是，昨天我們去王老師的家喝茶，回來很晚。老師，今天中午我們去食堂吃飯吧！ | shì, zuótiān wǒmen qù Wáng lǎoshī de jiā hē chá, huílái hěn wǎn. lǎoshī, jīntiān zhōngwǔ wǒmen qù shítáng chīfàn ba! | Vâng, tối qua chúng em đi uống trà ở nhà thầy Vương, về muộn lắm. Thầy ơi, trưa nay chúng ta đi nhà ăn ăn cơm nhé! |
-
-### Cập nhật ngữ pháp 的 — 2026-06-02
-
-**Kiến thức sử dụng:** Bài 2 (gia đình) + Bài 3 (địa điểm, chuỗi ĐT) + Bài 5 (công việc, tên, 请/吧) + Bài 6 (ăn uống) + Bài 7 (住在, phương vị từ, 有空儿) + Ngữ pháp 的 (HDT + 的, ĐT/Cụm từ + 的, cụm cố định)
-
-#### Tình huống 1: Giới thiệu bạn học mới và nói về giáo viên
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 请问，你是新来的留学生吗？ | 請問，你是新來的留學生嗎？ | qǐngwèn, nǐ shì xīn lái de liúxuéshēng ma? | Xin hỏi, bạn có phải là du học sinh mới đến không? |
-| 对，我是学汉语的学生，我叫阮国安。 | 對，我是學漢語的學生，我叫阮國安。 | duì, wǒ shì xué hànyǔ de xuéshēng, wǒ jiào Ruǎn Guó'ān. | Đúng, tôi là học sinh học tiếng Trung, tên tôi là Nguyễn Quốc An. |
-| 很高兴认识你！你的汉语老师是谁？ | 很高興認識你！你的漢語老師是誰？ | hěn gāoxìng rènshi nǐ! nǐ de hànyǔ lǎoshī shì shuí? | Rất vui được quen biết bạn! Giáo viên tiếng Trung của bạn là ai? |
-| 是王老师，她是聪明的老师，也是好人。你住在哪儿？ | 是王老師，她是聰明的老師，也是好人。你住在哪兒？ | shì Wáng lǎoshī, tā shì cōngmíng de lǎoshī, yě shì hǎo rén. nǐ zhù zài nǎr? | Là thầy Vương, cô ấy là giáo viên thông minh, cũng là người tốt. Bạn sống ở đâu? |
-| 我住在宿舍，宿舍在教学楼的北边。你呢？ | 我住在宿舍，宿舍在教學樓的北邊。你呢？ | wǒ zhù zài sùshè, sùshè zài jiàoxuélóu de běibian. nǐ ne? | Tôi sống ở ký túc xá, ký túc xá ở phía bắc tòa nhà dạy học. Còn bạn? |
-| 我也住在宿舍，我们是同屋吧！ | 我也住在宿舍，我們是同屋吧！ | wǒ yě zhù zài sùshè, wǒmen shì tóngwū ba! | Tôi cũng sống ở ký túc xá, chúng ta là bạn cùng phòng nhỉ! |
-
-#### Tình huống 2: Ăn tối và nói về đồ ăn mẹ làm
+### Bài 10 — Luyện tập: Dịch sang tiếng Trung
 
 | 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
 |------|------|--------|--------------------|
-| 今天晚上你吃什么？食堂的饭还是妈妈做的菜？ | 今天晚上你吃什麼？食堂的飯還是媽媽做的菜？ | jīntiān wǎnshang nǐ chī shénme? shítáng de fàn háishì māma zuò de cài? | Tối nay bạn ăn gì? Cơm ở nhà ăn hay món do mẹ làm? |
-| 我吃妈妈做的饺子！妈妈做的饺子太好吃了！ | 我吃媽媽做的餃子！媽媽做的餃子太好吃了！ | wǒ chī māma zuò de jiǎozi! māma zuò de jiǎozi tài hǎochī le! | Tôi ăn bánh sủi cảo mẹ làm! Bánh sủi cảo mẹ làm ngon quá! |
-| 好！我也很喜欢吃饺子，你妈妈做的是好吃的饺子！ | 好！我也很喜歡吃餃子，你媽媽做的是好吃的餃子！ | hǎo! wǒ yě hěn xǐhuan chī jiǎozi, nǐ māma zuò de shì hǎochī de jiǎozi! | Tốt! Tôi cũng rất thích ăn sủi cảo, bánh do mẹ bạn làm là bánh rất ngon! |
-| 你今天有空儿吗？你来我家吃饭吧！ | 你今天有空兒嗎？你來我家吃飯吧！ | nǐ jīntiān yǒu kòngr ma? nǐ lái wǒ jiā chīfàn ba! | Hôm nay bạn có rảnh không? Bạn đến nhà tôi ăn cơm đi! |
-| 太好了！谢谢你！今天晚上几点？ | 太好了！謝謝你！今天晚上幾點？ | tài hǎo le! xièxie nǐ! jīntiān wǎnshang jǐ diǎn? | Tốt quá! Cảm ơn bạn! Tối nay mấy giờ? |
+| 我爷爷是最高和最帅的人。 | 我爺爺是最高和最帥的人。 | /wǒ yéye shì zuì gāo hé zuì shuài de rén/ | Ông nội tôi là người cao nhất và đẹp trai nhất. |
+| 我家有一条黑狗。 | 我家有一條黑狗。 | /wǒ jiā yǒu yì tiáo hēi gǒu/ | Nhà tôi có một con chó đen. |
+| 我很喜欢拍照。这两张是我小时候的照片。 | 我很喜歡拍照。這兩張是我小時候的照片。 | /wǒ hěn xǐhuān pāizhào. zhè liǎng zhāng shì wǒ xiǎoshíhou de zhàopiàn/ | Tôi rất thích chụp ảnh. Hai tấm này là ảnh hồi nhỏ của tôi. |
+| 你家有几口人？ | 你家有幾口人？ | /nǐ jiā yǒu jǐ kǒu rén/ | Nhà bạn có mấy người? |
+| 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
+| 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
+| 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
 
-#### Tình huống 3: Hỏi về sách và chuyên ngành học
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 这是什么书？是汉语书吗？ | 這是什麼書？是漢語書嗎？ | zhè shì shénme shū? shì hànyǔ shū ma? | Đây là sách gì? Có phải sách tiếng Trung không? |
-| 是，这是我的汉语书，是很好的书，你看吗？ | 是，這是我的漢語書，是很好的書，你看嗎？ | shì, zhè shì wǒ de hànyǔ shū, shì hěn hǎo de shū, nǐ kàn ma? | Đúng, đây là sách tiếng Trung của tôi, là cuốn sách rất hay, bạn xem không? |
-| 谢谢！你是学汉语的留学生吗？你的专业是什么？ | 謝謝！你是學漢語的留學生嗎？你的專業是什麼？ | xièxie! nǐ shì xué hànyǔ de liúxuéshēng ma? nǐ de zhuānyè shì shénme? | Cảm ơn! Bạn có phải du học sinh học tiếng Trung không? Chuyên ngành của bạn là gì? |
-| 是，我是学汉语的学生，我的专业是汉语。汉语很有趣！ | 是，我是學漢語的學生，我的專業是漢語。漢語很有趣！ | shì, wǒ shì xué hànyǔ de xuéshēng, wǒ de zhuānyè shì hànyǔ. hànyǔ hěn yǒuqù! | Đúng, tôi là học sinh học tiếng Trung, chuyên ngành là tiếng Trung. Tiếng Trung rất thú vị! |
-| 我也觉得汉语很有趣！图书馆里有很多汉语书，我们一起去看吧！ | 我也覺得漢語很有趣！圖書館裡有很多漢語書，我們一起去看吧！ | wǒ yě juéde hànyǔ hěn yǒuqù! túshūguǎn lǐ yǒu hěn duō hànyǔ shū, wǒmen yīqǐ qù kàn ba! | Tôi cũng thấy tiếng Trung rất thú vị! Trong thư viện có rất nhiều sách tiếng Trung, chúng ta cùng đi xem nhé! |
-
-### Cập nhật sau Bài 8 — 2026-06-04
-
-**Kiến thức sử dụng:** Bài 4 (同屋) + Bài 5 (名字, 有空儿→Bài 7) + Bài 7 (有空儿, 知道, 门口) + Bài 8 (看, 电影, 电影院, 周末, 门口, 等, 手机, 号码, 见面, 上课, 下课, 点半, 点钟, 跟, 一起, 公共汽车, 走路, 可以, 快, 不过)
-
-#### Tình huống 1: Rủ bạn đi xem phim cuối tuần
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！这个周末你有空儿吗？我想跟你一起去看电影。 | 你好！這個週末你有空兒嗎？我想跟你一起去看電影。 | nǐ hǎo! zhège zhōumò nǐ yǒu kòngr ma? wǒ xiǎng gēn nǐ yìqǐ qù kàn diànyǐng. | Xin chào! Cuối tuần này bạn có rảnh không? Tôi muốn cùng bạn đi xem phim. |
-| 好啊！你想看什么电影？几点见面？ | 好啊！你想看什麼電影？幾點見面？ | hǎo a! nǐ xiǎng kàn shénme diànyǐng? jǐ diǎn jiànmiàn? | Được thôi! Bạn muốn xem phim gì? Mấy giờ gặp nhau? |
-| 我想看中国电影，下午三点半。电影院在学校的西边，我们在图书馆的门口见面吧！ | 我想看中國電影，下午三點半。電影院在學校的西邊，我們在圖書館的門口見面吧！ | wǒ xiǎng kàn zhōngguó diànyǐng, xiàwǔ sān diǎn bàn. diànyǐngyuàn zài xuéxiào de xībian, wǒmen zài túshūguǎn de ménkǒu jiànmiàn ba! | Tôi muốn xem phim Trung Quốc, 3 giờ rưỡi chiều. Rạp phim ở phía tây trường, chúng ta gặp nhau ở cổng thư viện nhé! |
-| 好！不过你的手机号码是什么？我的号码是一三八零一八一一。 | 好！不過你的手機號碼是什麼？我的號碼是一三八零一八一一。 | hǎo! búguò nǐ de shǒujī hàomǎ shì shénme? wǒ de hàomǎ shì yāo sān bā líng yāo bā yāo yāo. | Được! Nhưng số điện thoại di động của bạn là gì? Số tôi là 138-018-11. |
-| 我的号码是一三八零一八一零，到三点半我去门口等你！ | 我的號碼是一三八零一八一零，到三點半我去門口等你！ | wǒ de hàomǎ shì yāo sān bā líng yāo bā yāo líng, dào sān diǎn bàn wǒ qù ménkǒu děng nǐ! | Số tôi là 138-018-10, đến 3 giờ rưỡi tôi đến cổng đợi bạn! |
-
-#### Tình huống 2: Hỏi đường đi — xe buýt hay đi bộ?
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 请问，去图书馆怎么走？我可以走路去吗？ | 請問，去圖書館怎麼走？我可以走路去嗎？ | qǐngwèn, qù túshūguǎn zěnme zǒu? wǒ kěyǐ zǒulù qù ma? | Xin hỏi, đến thư viện đi thế nào? Tôi có thể đi bộ được không? |
-| 可以！图书馆在教学楼的东边，走路不太慢，也不太快。不过你可以坐公共汽车，坐 21 路，很快！ | 可以！圖書館在教學樓的東邊，走路不太慢，也不太快。不過你可以坐公共汽車，坐 21 路，很快！ | kěyǐ! túshūguǎn zài jiàoxuélóu de dōngbian, zǒulù bù tài màn, yě bù tài kuài. búguò nǐ kěyǐ zuò gōnggòng qìchē, zuò èr shí yī lù, hěn kuài! | Được! Thư viện ở phía đông tòa nhà dạy học, đi bộ không chậm lắm, cũng không nhanh lắm. Nhưng bạn có thể đi xe buýt, tuyến 21, rất nhanh! |
-| 谢谢！我今天跟同屋一起走路去。9 点钟我们在学校门口等老师，快点儿走吧！ | 謝謝！我今天跟同屋一起走路去。9 點鐘我們在學校門口等老師，快點兒走吧！ | xièxie! wǒ jīntiān gēn tóngwū yìqǐ zǒulù qù. jiǔ diǎnzhōng wǒmen zài xuéxiào ménkǒu děng lǎoshī, kuài diǎnr zǒu ba! | Cảm ơn! Hôm nay tôi cùng bạn cùng phòng đi bộ. 9 giờ đúng chúng tôi đợi thầy ở cổng trường, đi nhanh lên nào! |
-
-#### Tình huống 3: Hỏi giờ học và hẹn xem phim
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你们学校几点上课，几点下课？ | 你們學校幾點上課，幾點下課？ | nǐmen xuéxiào jǐ diǎn shàngkè, jǐ diǎn xiàkè? | Trường các bạn mấy giờ vào lớp, mấy giờ tan lớp? |
-| 上午 8 点半上课，中午 12 点钟下课。下午两点半再上课，5 点下课。你呢？ | 上午 8 點半上課，中午 12 點鐘下課。下午兩點半再上課，5 點下課。你呢？ | shàngwǔ bā diǎn bàn shàngkè, zhōngwǔ shí'èr diǎnzhōng xiàkè. xiàwǔ liǎng diǎn bàn zài shàngkè, wǔ diǎn xiàkè. nǐ ne? | 8 giờ rưỡi sáng vào lớp, 12 giờ đúng trưa tan lớp. 2 giờ rưỡi chiều học tiếp, 5 giờ tan lớp. Còn bạn? |
-| 我们 9 点钟上课，下午 4 点半下课。今天下课你有空儿吗？我们可以跟同学一起去看电影！ | 我們 9 點鐘上課，下午 4 點半下課。今天下課你有空兒嗎？我們可以跟同學一起去看電影！ | wǒmen jiǔ diǎnzhōng shàngkè, xiàwǔ sì diǎn bàn xiàkè. jīntiān xiàkè nǐ yǒu kòngr ma? wǒmen kěyǐ gēn tóngxué yìqǐ qù kàn diànyǐng! | Chúng tôi 9 giờ đúng vào lớp, 4 giờ rưỡi chiều tan lớp. Hôm nay sau tan lớp bạn có rảnh không? Chúng ta có thể cùng bạn học đi xem phim! |
-| 太好了！周末你喜欢做什么？ | 太好了！週末你喜歡做什麼？ | tài hǎo le! zhōumò nǐ xǐhuan zuò shénme? | Tốt quá! Cuối tuần bạn thích làm gì? |
-| 周末我常在家学习汉语，不过我也很喜欢跟同屋一起去看中国电影。 | 週末我常在家學習漢語，不過我也很喜歡跟同屋一起去看中國電影。 | zhōumò wǒ cháng zài jiā xuéxí hànyǔ, búguò wǒ yě hěn xǐhuan gēn tóngwū yìqǐ qù kàn zhōngguó diànyǐng. | Cuối tuần tôi thường ở nhà học tiếng Trung, nhưng tôi cũng rất thích cùng bạn cùng phòng đi xem phim Trung Quốc. |
-
-#### Tình huống 4: Hỏi số điện thoại và hẹn gặp mặt
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！你有国安的手机号码吗？我想跟他一起见面，在图书馆门口。 | 你好！你有國安的手機號碼嗎？我想跟他一起見面，在圖書館門口。 | nǐ hǎo! nǐ yǒu Guó'ān de shǒujī hàomǎ ma? wǒ xiǎng gēn tā yìqǐ jiànmiàn, zài túshūguǎn ménkǒu. | Xin chào! Bạn có số điện thoại di động của Quốc An không? Tôi muốn cùng anh ấy gặp mặt ở cổng thư viện. |
-| 有！他的号码是一三八零一八一一。他今天下午有空儿，你们想几点见面？ | 有！他的號碼是一三八零一八一一。他今天下午有空兒，你們想幾點見面？ | yǒu! tā de hàomǎ shì yāo sān bā líng yāo bā yāo yāo. tā jīntiān xiàwǔ yǒu kòngr, nǐmen xiǎng jǐ diǎn jiànmiàn? | Có! Số của anh ấy là 138-018-11. Chiều nay anh ấy rảnh, các bạn muốn gặp nhau lúc mấy giờ? |
-| 下午三点半，可以吗？我们在图书馆的门口等他。 | 下午三點半，可以嗎？我們在圖書館的門口等他。 | xiàwǔ sān diǎn bàn, kěyǐ ma? wǒmen zài túshūguǎn de ménkǒu děng tā. | 3 giờ rưỡi chiều, được không? Chúng tôi đợi anh ấy ở cổng thư viện. |
-| 可以！到三点半，他在门口等你们！ | 可以！到三點半，他在門口等你們！ | kěyǐ! dào sān diǎn bàn, tā zài ménkǒu děng nǐmen! | Được! Đến 3 giờ rưỡi, anh ấy đợi các bạn ở cổng! |
-
-<!-- future lessons will be prepended above this comment -->
-
-### Cập nhật sau Bài 6 — 2026-05-29
-
-**Kiến thức sử dụng:** Bài 1 (chào hỏi) + Bài 2 (gia đình, mức độ) + Bài 3 (địa điểm, chuỗi ĐT) + Bài 4 (是/有, quốc tịch) + Bài 5 (tên, công việc, 请/吧/了) + Bài 6 (ăn uống, đồ vật, 了吗/还没, V不V, 怎么样/怎么)
-
-#### Tình huống 1: Rủ bạn đi ăn trưa ở nhà ăn
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好，你吃饭了吗？ | 你好，你吃飯了嗎？ | nǐ hǎo, nǐ chīfàn le ma? | Xin chào, bạn ăn cơm chưa? |
-| 还没，我很饿，你呢？ | 還沒，我很餓，你呢？ | hái méi, wǒ hěn è, nǐ ne? | Chưa, tôi rất đói, còn bạn? |
-| 我也还没吃，今天中午我们去食堂吃饭吧。 | 我也還沒吃，今天中午我們去食堂吃飯吧。 | wǒ yě hái méi chī, jīntiān zhōngwǔ wǒmen qù shítáng chīfàn ba. | Tôi cũng chưa ăn, trưa nay chúng ta đi nhà ăn ăn cơm nhé. |
-| 好！你喜欢吃什么？ | 好！你喜歡吃什麼？ | hǎo! nǐ xǐhuan chī shénme? | Được! Bạn thích ăn gì? |
-| 我喜欢吃饺子。北京饺子很好吃，你吃不吃？ | 我喜歡吃餃子。北京餃子很好吃，你吃不吃？ | wǒ xǐhuan chī jiǎozi. Běijīng jiǎozi hěn hǎochī, nǐ chī bù chī? | Tôi thích ăn sủi cảo. Sủi cảo Bắc Kinh rất ngon, bạn ăn không? |
-| 我也吃！我要一碗鸡蛋汤，太渴了！ | 我也吃！我要一碗雞蛋湯，太渴了！ | wǒ yě chī! wǒ yào yì wǎn jīdàn tāng, tài kě le! | Tôi cũng ăn! Tôi muốn một bát canh trứng gà, khát quá rồi! |
-
-#### Tình huống 2: Hỏi thăm việc học và mời uống trà
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 请进，请坐！你喝茶吗？ | 請進，請坐！你喝茶嗎？ | qǐng jìn, qǐng zuò! nǐ hē chá ma? | Mời vào, mời ngồi! Bạn uống trà không? |
-| 谢谢！你学习怎么样了？汉字很难吧？ | 謝謝！你學習怎麼樣了？漢字很難吧？ | xièxie! nǐ xuéxí zěnmeyàng le? hànzi hěn nán ba? | Cảm ơn! Việc học của bạn thế nào rồi? Chữ Hán khó lắm nhỉ? |
-| 汉语不太难，可是汉字太难了！怎么学好汉字？ | 漢語不太難，可是漢字太難了！怎麼學好漢字？ | hànyǔ bú tài nán, kěshì hànzi tài nán le! zěnme xué hǎo hànzi? | Tiếng Trung không khó lắm, nhưng chữ Hán quá khó! Làm sao để học tốt chữ Hán? |
-| 你要每天写汉字。我来一杯奶茶，你喝不喝？ | 你要每天寫漢字。我來一杯奶茶，你喝不喝？ | nǐ yào měitiān xiě hànzi. wǒ lái yì bēi nǎichá, nǐ hē bù hē? | Bạn phải viết chữ Hán mỗi ngày. Tôi gọi một ly trà sữa, bạn uống không? |
-| 好，谢谢！奶茶好喝吗？ | 好，謝謝！奶茶好喝嗎？ | hǎo, xièxie! nǎichá hǎo hē ma? | Được, cảm ơn! Trà sữa có ngon không? |
-| — | 奶茶很好喝！太好喝了！ | nǎichá hěn hǎo hē! tài hǎo hē le! | Trà sữa rất ngon! Ngon quá! |
-
-#### Tình huống 3: Gặp gỡ đồng nghiệp mới tại căng-tin
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好，我来介绍一下儿，我是新来的职员，我叫王一。 | 你好，我來介紹一下兒，我是新來的職員，我叫王一。 | nǐ hǎo, wǒ lái jièshào yí xiàr, wǒ shì xīn lái de zhíyuán, wǒ jiào Wáng Yī. | Xin chào, để tôi giới thiệu một chút, tôi là nhân viên mới, tên tôi là Vương Nhất. |
-| 很高兴认识你！你是哪国人？你吃饭了吗？ | 很高興認識你！你是哪國人？你吃飯了嗎？ | hěn gāoxìng rènshi nǐ! nǐ shì nǎ guó rén? nǐ chīfàn le ma? | Rất vui được quen biết bạn! Bạn là người nước nào? Bạn ăn cơm chưa? |
-| 我是越南人。还没，今天中午你去哪儿吃饭？ | 我是越南人。還沒，今天中午你去哪兒吃飯？ | wǒ shì Yuènán rén. hái méi, jīntiān zhōngwǔ nǐ qù nǎr chīfàn? | Tôi là người Việt Nam. Chưa ăn, trưa nay bạn đi đâu ăn cơm? |
-| 我去食堂，你喜欢吃面条吗？食堂的面条很好吃！ | 我去食堂，你喜歡吃麵條嗎？食堂的麵條很好吃！ | wǒ qù shítáng, nǐ xǐhuan chī miàntiáo ma? shítáng de miàntiáo hěn hǎochī! | Tôi đi nhà ăn, bạn thích ăn mì không? Mì ở nhà ăn rất ngon! |
-| 好，我们一起去吧！ | 好，我們一起去吧！ | hǎo, wǒmen yīqǐ qù ba! | Được, chúng ta cùng đi nhé! |
-
-#### Tình huống 4: Mừng sinh nhật và cạn ly
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 今天你回家吗？明天是我妹妹的生日！ | 今天你回家嗎？明天是我妹妹的生日！ | jīntiān nǐ huí jiā ma? míngtiān shì wǒ mèimei de shēngrì! | Hôm nay bạn về nhà không? Ngày mai là sinh nhật em gái tôi! |
-| 太好了！明天几月几日？我也来吧！ | 太好了！明天幾月幾日？我也來吧！ | tài hǎo le! míngtiān jǐ yuè jǐ rì? wǒ yě lái ba! | Tốt quá! Ngày mai mấy tháng mấy? Tôi cũng đến nhé! |
-| 明天晚上八点，你来我家吃饭吧。 | 明天晚上八點，你來我家吃飯吧。 | míngtiān wǎnshàng bā diǎn, nǐ lái wǒ jiā chīfàn ba. | Ngày mai tối 8 giờ, bạn đến nhà tôi ăn cơm nhé. |
-| 好！你妹妹喜欢吃什么？我来一瓶啤酒！ | 好！你妹妹喜歡吃什麼？我來一瓶啤酒！ | hǎo! nǐ mèimei xǐhuan chī shénme? wǒ lái yì píng píjiǔ! | Được! Em gái bạn thích ăn gì? Tôi mang một chai bia! |
-| 她喜欢吃饺子。太好了，谢谢你！干杯！ | 她喜歡吃餃子。太好了，謝謝你！乾杯！ | tā xǐhuan chī jiǎozi. tài hǎo le, xièxie nǐ! gānbēi! | Cô ấy thích ăn sủi cảo. Tốt quá, cảm ơn bạn! Cạn ly! |
-
-### Cập nhật sau Bài 5 — 2026-05-28
-
-**Kiến thức sử dụng:** Bài 1 (chào hỏi) + Bài 2 (gia đình, mức độ) + Bài 3 (địa điểm, chuỗi ĐT) + Bài 4 (quốc tịch, 是/有) + Bài 5 (tên, công việc, 请/吧/了/什么, các nước)
-
-#### Tình huống 1: Làm quen với du học sinh nước ngoài
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！我叫阮国安，你叫什么名字？ | 你好！我叫阮國安，你叫什麼名字？ | nǐ hǎo! wǒ jiào Ruǎn Guó'ān, nǐ jiào shénme míngzi? | Xin chào! Tôi tên Nguyễn Quốc An, bạn tên là gì? |
-| 我叫王一。请问你是哪国人？ | 我叫王一。請問你是哪國人？ | wǒ jiào Wáng Yī. qǐng wèn, nǐ shì nǎ guó rén? | Tôi tên Vương Nhất. Xin hỏi bạn là người nước nào? |
-| 我是越南人，我是留学生，我在国家大学学汉语。 | 我是越南人，我是留學生，我在國家大學學漢語。 | wǒ shì Yuènán rén, wǒ shì liúxuéshēng, wǒ zài Guójiā dàxué xué Hànyǔ. | Tôi là người Việt Nam, tôi là du học sinh, tôi học tiếng Trung ở Đại học Quốc gia. |
-| 我是中国人，也是留学生，我在河内大学学越南语。 | 我是中國人，也是留學生，我在河內大學學越南語。 | wǒ shì Zhōngguó rén, yě shì liúxuéshēng, wǒ zài Hànèi dàxué xué Yuènányǔ. | Tôi là người Trung Quốc, cũng là du học sinh, tôi học tiếng Việt ở Đại học Hà Nội. |
-| 认识你很高兴！你有中国朋友吗？ | 認識你很高興！你有中國朋友嗎？ | rènshi nǐ hěn gāoxìng! nǐ yǒu Zhōngguó péngyou ma? | Rất vui được quen biết bạn! Bạn có bạn Trung Quốc không? |
-| 我有三个中国朋友，他们是留学生。 | 我有三個中國朋友，他們是留學生。 | wǒ yǒu sān gè Zhōngguó péngyou, tāmen shì liúxuéshēng. | Tôi có ba người bạn Trung Quốc, họ là du học sinh. |
-
-#### Tình huống 2: Mời khách vào nhà uống trà
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好，请进，请坐！ | 你好，請進，請坐！ | nǐ hǎo, qǐng jìn, qǐng zuò! | Xin chào, mời vào, mời ngồi! |
-| 谢谢！你妈妈身体好吗？ | 謝謝！你媽媽身體好嗎？ | xièxie! nǐ māma shēntǐ hǎo ma? | Cảm ơn! Mẹ bạn có khoẻ không? |
-| 我妈妈不太好，她太忙了。你喝茶吗？ | 我媽媽不太好，她太忙了。你喝茶嗎？ | wǒ māma bù tài hǎo, tā tài máng le. nǐ hē chá ma? | Mẹ tôi không được tốt lắm, bà ấy quá bận. Bạn uống trà không? |
-| 好，谢谢！茶好喝吗？ | 好，謝謝！茶好喝嗎？ | hǎo, xièxie! chá hǎo hē ma? | Được, cảm ơn! Trà có ngon không? |
-| — | 茶很好喝！ | chá hěn hǎo hē! | Trà rất ngon! |
-| 你喝奶茶吗？ | 你喝奶茶嗎？ | nǐ hē nǎi chá ma? | Bạn có uống trà sữa không? |
-| — | 奶茶也好喝！ | nǎi chá yě hǎo hē! | Trà sữa cũng ngon! |
-
-#### Tình huống 3: Hỏi về công việc và giới thiệu gia đình
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！请问你的工作是什么？ | 你好！請問你的工作是什麼？ | nǐ hǎo! qǐng wèn, nǐ de gōngzuò shì shénme? | Xin chào! Xin hỏi công việc của bạn là gì? |
-| 我是银行职员，工作很忙。你呢？ | 我是銀行職員，工作很忙。你呢？ | wǒ shì yínháng zhíyuán, gōngzuò hěn máng. nǐ ne? | Tôi là nhân viên ngân hàng, công việc rất bận. Còn bạn? |
-| 我是大学汉语老师，我家有四口人。 | 我是大學漢語老師，我家有四口人。 | wǒ shì dàxué Hànyǔ lǎoshī, wǒ jiā yǒu sì kǒu rén. | Tôi là giáo viên tiếng Trung ở đại học, nhà tôi có bốn người. |
-| 你爸爸妈妈的工作是什么？ | 你爸爸媽媽的工作是什麼？ | nǐ bàba māma de gōngzuò shì shénme? | Công việc của bố mẹ bạn là gì? |
-| 他们退休了，我姐姐在大学做汉语老师。 | 他們退休了，我姐姐在大學做漢語老師。 | tāmen tuìxiū le, wǒ jiějie zài dàxué zuò Hànyǔ lǎoshī. | Họ về hưu rồi, chị gái tôi làm giáo viên tiếng Trung ở đại học. |
-| 认识你很高兴！ | 認識你很高興！ | rènshi nǐ hěn gāoxìng! | Rất vui được quen biết bạn! |
-| 我也很高兴认识你！ | 我也很高興認識你！ | wǒ yě hěn gāoxìng rènshi nǐ! | Tôi cũng rất vui được quen biết bạn! |
-
-#### Tình huống 4: Hỏi đường và nhờ giúp đỡ
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好，请问国家大学在哪儿？ | 你好，請問國家大學在哪兒？ | nǐ hǎo, qǐng wèn, Guójiā dàxué zài nǎr? | Xin chào, xin hỏi Đại học Quốc gia ở đâu? |
-| 国家大学在那儿，你去问那个老师吧。 | 國家大學在那兒，你去問那個老師吧。 | Guójiā dàxué zài nàr, nǐ qù wèn nà gè lǎoshī ba. | Đại học Quốc gia ở chỗ kia, bạn đi hỏi thầy giáo kia nhé. |
-| 谢谢！请问老师，这是什么学校？ | 謝謝！請問老師，這是什麼學校？ | xièxie! qǐng wèn lǎoshī, zhè shì shénme xuéxiào? | Cảm ơn! Xin hỏi thầy, đây là trường nào? |
-| 这是国家大学，你是哪国人？ | 這是國家大學，你是哪國人？ | zhè shì Guójiā dàxué, nǐ shì nǎ guó rén? | Đây là Đại học Quốc gia, bạn là người nước nào? |
-| 我是越南人，我来这儿学汉语。 | 我是越南人，我來這兒學漢語。 | wǒ shì Yuènán rén, wǒ lái zhèr xué Hànyǔ. | Tôi là người Việt Nam, tôi đến đây học tiếng Trung. |
-| 很高兴认识你，明天见！ | 很高興認識你，明天見！ | hěn gāoxìng rènshi nǐ, míngtiān jiàn! | Rất vui được quen biết bạn, hẹn gặp ngày mai! |
-
----
-
-### Cập nhật sau Bài 4 — 2026-05-27
-
-**Kiến thức sử dụng:** Bài 1 (chào hỏi, câu hỏi 吗) + Bài 2 (gia đình, 很/太…了, 不太) + Bài 3 (địa điểm, chuỗi ĐT, thời gian) + Bài 4 (quốc tịch, 是/有/没有, 在 + địa điểm, 这/那, số lượng)
-
-#### Tình huống 1: Gặp gỡ bạn cùng lớp người nước ngoài
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！你是哪国人？ | 你好！你是哪國人？ | nǐ hǎo! nǐ shì nǎ guó rén? | Xin chào! Bạn là người nước nào? |
-| 我是越南人，你是中国人吗？ | 我是越南人，你是中國人嗎？ | wǒ shì Yuènán rén, nǐ shì Zhōngguó rén ma? | Tôi là người Việt Nam, bạn có phải là người Trung Quốc không? |
-| 对，我是中国人。你在哪个学校学汉语？ | 對，我是中國人。你在哪個學校學漢語？ | duì, wǒ shì Zhōngguó rén. nǐ zài nǎ gè xuéxiào xué Hànyǔ? | Đúng, tôi là người Trung Quốc. Bạn học tiếng Trung ở trường nào? |
-| 我在这个学校学汉语，汉语太难了！ | 我在這個學校學漢語，漢語太難了！ | wǒ zài zhè gè xuéxiào xué Hànyǔ, Hànyǔ tài nán le! | Tôi học tiếng Trung ở trường này, tiếng Trung khó quá! |
-| 你有中国朋友吗？ | 你有中國朋友嗎？ | nǐ yǒu Zhōngguó péngyou ma? | Bạn có bạn Trung Quốc không? |
-| 我有一个中国朋友，他是我同学。 | 我有一個中國朋友，他是我同學。 | wǒ yǒu yī gè Zhōngguó péngyou, tā shì wǒ tóngxué. | Tôi có một người bạn Trung Quốc, anh ấy là bạn cùng lớp tôi. |
-
-#### Tình huống 2: Giới thiệu và hỏi thăm gia đình
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 我来介绍一下儿，这是我爸爸，他是老师。 | 我來介紹一下兒，這是我爸爸，他是老師。 | wǒ lái jièshào yí xiàr, zhè shì wǒ bàba, tā shì lǎoshī. | Để tôi giới thiệu một chút, đây là bố tôi, ông ấy là giáo viên. |
-| 你家有几口人？ | 你家有幾口人？ | nǐ jiā yǒu jǐ kǒu rén? | Nhà bạn có mấy người? |
-| 我家有五口人，爸爸妈妈很忙。 | 我家有五口人，爸爸媽媽很忙。 | wǒ jiā yǒu wǔ kǒu rén, bàba māma hěn máng. | Nhà tôi có năm người, bố mẹ rất bận. |
-| 你姐姐是谁？ | 你姐姐是誰？ | nǐ jiějie shì shuí? | Chị gái bạn là ai? |
-| 我姐姐是我汉语老师，她不忙，她很好。 | 我姐姐是我漢語老師，她不忙，她很好。 | wǒ jiějie shì wǒ Hànyǔ lǎoshī, tā bù máng, tā hěn hǎo. | Chị gái tôi là giáo viên tiếng Trung, chị ấy không bận, chị ấy rất tốt. |
-
-#### Tình huống 3: Hỏi thăm sức khoẻ và tạm biệt
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 你好！你爸爸妈妈身体好吗？ | 你好！你爸爸媽媽身體好嗎？ | nǐ hǎo! nǐ bàba māma shēntǐ hǎo ma? | Xin chào! Bố mẹ bạn có khoẻ không? |
-| 我爸爸很好，我妈妈不太好，她太忙了。 | 我爸爸很好，我媽媽不太好，她太忙了。 | wǒ bàba hěn hǎo, wǒ māma bù tài hǎo, tā tài máng le. | Bố tôi rất khoẻ, mẹ tôi không được tốt lắm, bà ấy bận quá. |
-| 你哥哥好吗？ | 你哥哥好嗎？ | nǐ gēge hǎo ma? | Anh trai bạn có khoẻ không? |
-| 我哥哥也很忙，他去银行取钱。 | 我哥哥也很忙，他去銀行取錢。 | wǒ gēge yě hěn máng, tā qù yínháng qǔ qián. | Anh trai tôi cũng rất bận, anh ấy đi ngân hàng rút tiền. |
-| 对不起，我太忙了，明天见！ | 對不起，我太忙了，明天見！ | duìbuqǐ, wǒ tài máng le, míngtiān jiàn! | Xin lỗi, tôi bận quá, hẹn gặp ngày mai! |
-
-#### Tình huống 4: Lên kế hoạch gặp nhau
-
-| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
-|------|------|--------|--------------------|
-| 明天你忙吗？我去银行取钱，你去吗？ | 明天你忙嗎？我去銀行取錢，你去嗎？ | míngtiān nǐ máng ma? wǒ qù yínháng qǔ qián, nǐ qù ma? | Ngày mai bạn có bận không? Tôi đi ngân hàng rút tiền, bạn đi không? |
-| 明天我不忙，我去学校见我的汉语老师。 | 明天我不忙，我去學校見我的漢語老師。 | míngtiān wǒ bù máng, wǒ qù xuéxiào jiàn wǒ de Hànyǔ lǎoshī. | Ngày mai tôi không bận, tôi đi trường gặp giáo viên tiếng Trung. |
-| 今天你去哪儿？ | 今天你去哪兒？ | jīntiān nǐ qù nǎr? | Hôm nay bạn đi đâu? |
-| 今天我回家见我弟弟，你呢？ | 今天我回家見我弟弟，你呢？ | jīntiān wǒ huí jiā jiàn wǒ dìdi, nǐ ne? | Hôm nay tôi về nhà gặp em trai, còn bạn thì sao? |
-| — | 昨天我去北京，今天我回家，很忙！ | zuótiān wǒ qù Běijīng, jīntiān wǒ huí jiā, hěn máng! | Hôm qua tôi đi Bắc Kinh, hôm nay tôi về nhà, bận lắm! |
-| 再见，星期日见！ | 再見，星期日見！ | zàijiàn, xīngqīrì jiàn! | Tạm biệt, hẹn gặp Chủ Nhật! |
