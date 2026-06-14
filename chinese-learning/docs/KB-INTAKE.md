@@ -216,3 +216,52 @@ Full lesson content for Bài 10 "Nhà bạn có mấy người?" extracted from 
 - Q3 (§6 group): Câu xã giao khác
 - Q4 (是的/是我的/不是的): All three to § 6 as Yes/No answer structure
 - Q5 (黄沙 sentence): A — add to § 6 Câu xã giao khác as cultural phrase
+
+---
+
+## [2026-06-14] — Bài 11: Mùa Đông Ở Bắc Kinh Khá Lạnh
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bai-11.md` — pre-structured lesson file
+
+### Input summary
+Full lesson content for Bài 11 "Mùa Đông Ở Bắc Kinh Khá Lạnh" extracted from the structured reference file. Contains: 32 vocabulary items (weather, seasons, conjunctions, Beijing, comparison adverbs); 9 common sentences (Section II); 5 subsections of example sentences in Section III (~32 sentences); and 4 grammar notes in Section IV (分钟/分, 一下/一会儿, 的 structure, 风风雨雨 idiom). Zero KBP-2 duplicates found — all 32 Section I vocab items are new to the KB.
+
+### Agreed scope
+
+**chinese-brain.md — Từ vựng (### Bài 11): 34 entries**
+- From Section I (32): 当然/當然, 时间/時間, 听说/聽說, 大部分, 比较/比較, 游泳, 可是, 但是, 放心, 爱好/愛好, 北京, 有名, 春天, 夏天, 秋天, 冬天, 季节/季節, 雪, 下雪, 冷, 热/熱, 舒服, 天气/天氣, 天气预报/天氣預報, 零下, 度, 风/風, 雨, 下雨, 差不多, 晴天, 旅行 (replacing 去旅行 per Q2-B)
+- 分钟/分鐘 /fēnzhōng/ — phút (khoảng thời gian) (Q3-A)
+- 风风雨雨/風風雨雨 /fēng fēng yǔ yǔ/ — nhiều thăng trầm, sóng gió — Thành ngữ (Q4-A)
+
+**chinese-brain.md — § 5 Ngữ pháp: 3 new patterns**
+- 分钟 vs 分 distinction → Nhóm 6 (Thời gian và trạng thái tiếp diễn) (Q3-A)
+- 很有名的 + DT → Nhóm 2 (Trợ từ kết cấu 的)
+- 零下 + [số] + 度 → Nhóm 8 (Số từ và lượng từ)
+
+**chinese-brain.md — § 6 Câu thông dụng: 4 entries**
+- Group Câu xã giao khác: 当然可以！, 没问题, 你放心，没问题的！
+- Group Câu lệnh & Biểu đạt ngắn: 人们常说... (Q5-A)
+
+**chinese-practice-bank.md — ### Bài 11:**
+- Section II: 9 common sentences
+- Section III: ~32 example sentences across 5 subsections
+
+### Out of scope (agreed)
+- 去旅行 as Cụm ĐT — Q2-B: replaced by standalone 旅行
+- 一下 vs 一会儿 distinction — KBP-2: already in KB (§ 5 Nhóm 6, added Bài 8)
+- Cấu trúc với 的 (general) — KBP-2: already in KB (§ 5 Nhóm 2)
+
+### Debator concerns resolved
+- **可是/但是 labels (Q1):** Kept as source — 可是 = nhưng (văn viết), 但是 = nhưng (trung tính). Customer confirmed to keep source exactly as-is.
+- **去旅行 vs 旅行 (Q2):** Customer chose B — add standalone 旅行/旅行 (DT/ĐT); skip 去旅行 compound.
+- **分钟/分鐘 (Q3):** Customer confirmed A — add as new Bài 11 vocab entry AND add 分钟 vs 分 grammar distinction to Nhóm 6.
+- **风风雨雨 (Q4):** Customer confirmed A — add as Bài 11 vocab entry (Thành ngữ type).
+- **人们常说... (Q5):** Customer confirmed A — add to § 6 Câu lệnh & Biểu đạt ngắn AND practice bank.
+
+### Open questions resolved
+- Q1 (可是/但是 labels): Keep source as-is
+- Q2 (去旅行 vs 旅行): B — add standalone 旅行, skip 去旅行
+- Q3 (分钟): A — add vocab entry + grammar pattern in Nhóm 6
+- Q4 (风风雨雨): A — add as Thành ngữ vocab entry
+- Q5 (人们常说...): A — add to § 6 + practice bank
