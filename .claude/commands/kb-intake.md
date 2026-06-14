@@ -171,6 +171,11 @@ Always:
 - Update `> **Cập nhật lần cuối:**` in every file touched (KBP-7)
 - Never delete old rows (KBP-3)
 - Never add an entry that was agreed to be out of scope
+- **Update the Mục lục (TOC) in `chinese-brain.md` for every structural addition:**
+  - New `### Bài N` vocab section → add line under `[2. Từ vựng]` in the TOC
+  - New `####` grammar pattern → add line under the matching `Nhóm N` in the TOC
+  - New `###` grammar Nhóm → add a new Nhóm block in the TOC
+  - Anchor format: lowercase, spaces→`-`, remove `+`/`"`/`(`/`)`/`/`, Chinese chars kept as-is
 
 After writing, commit to git (enables Checker to re-read from disk after any `/compact`):
 ```
@@ -214,6 +219,7 @@ Audit checklist:
 - [ ] KBP-9: Nothing landed in the wrong file (brain vs practice bank)?
 - [ ] KBP-9 exception: If source had a "Câu thông dụng" section — were those social phrases written to § 6 of `chinese-brain.md`?
 - [ ] KBP-11: Additional meaning entries appended (not skipped), confirmed by customer?
+- [ ] TOC: Every new `### Bài N` heading appears in the Mục lục § 2; every new `####` grammar pattern appears under its Nhóm in § 5
 
 Output the report:
 ```
