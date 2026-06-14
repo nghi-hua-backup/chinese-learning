@@ -7,7 +7,6 @@ import { getRandomDistractors, getDisplayChar } from "@/lib/utils";
 import SRSRating from "./SRSRating";
 import MultipleChoice from "./MultipleChoice";
 import WritingInput from "./WritingInput";
-import ToneHighlight from "./ToneHighlight";
 
 interface Props {
   cards: VocabCard[];
@@ -136,12 +135,8 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
             </div>
           )}
           <div className="mt-3 bg-white rounded-2xl border border-gray-100 p-6 text-center">
-            <ToneHighlight
-              chars={getDisplayChar(card, scriptMode)}
-              pinyin={card.pinyin}
-              charClassName="text-8xl font-bold mb-1"
-              pinyinClassName="text-indigo-600 text-lg mt-2"
-            />
+            <p className="text-8xl font-bold mb-1">{getDisplayChar(card, scriptMode)}</p>
+            <p className="text-indigo-600 text-lg mt-2">{card.pinyin}</p>
             <p className="text-gray-600 mt-1">{card.meaning}</p>
           </div>
           <SRSRating onRate={handleRate} />

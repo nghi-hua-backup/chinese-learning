@@ -1,28 +1,12 @@
-import { getAllVocab, getAllPhrases, getAllPractice } from "@/lib/data";
-import Dashboard from "@/components/Dashboard";
+import { Suspense } from "react";
+import { getAllVocab } from "@/lib/data";
+import TuVungClient from "./tu-vung/TuVungClient";
 
-export default function HomePage() {
-  const vocab = getAllVocab();
-  const phrases = getAllPhrases();
-  const practice = getAllPractice();
-
-  const allVocabIds = vocab.map((c) => c.id);
-  const allPhraseIds = [...phrases.map((c) => c.id), ...practice.map((c) => c.id)];
-  const lessons = Array.from(new Set(vocab.map((c) => c.lesson))).sort((a, b) => a - b);
-
-  const lessonCardIds: Record<number, string[]> = {};
-  lessons.forEach((lesson) => {
-    lessonCardIds[lesson] = vocab.filter((c) => c.lesson === lesson).map((c) => c.id);
-  });
-
+export default function Home() {
+  const allCards = getAllVocab();
   return (
-    <Dashboard
-      vocabCount={vocab.length}
-      phraseCount={phrases.length + practice.length}
-      allVocabIds={allVocabIds}
-      allPhraseIds={allPhraseIds}
-      lessons={lessons}
-      lessonCardIds={lessonCardIds}
-    />
+    <Suspense fallback={<div className="text-center py-16 text-gray-400">Đang tải...</div>}>
+      <TuVungClient allCards={allCards} />
+    </Suspense>
   );
 }

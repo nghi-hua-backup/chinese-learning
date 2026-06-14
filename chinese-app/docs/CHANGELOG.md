@@ -18,6 +18,16 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.0.0] - 2026-06-14
+
+### Changed (Breaking — complete structural refactor)
+- App simplified to Từ vựng-only: removed Mẫu câu, Hội thoại, Ngữ pháp, Tổng quan (Dashboard), and Tiến độ tabs and all their routes
+- Navigation bar removed entirely; app root (`/`) now lands directly on the Từ vựng lesson selection screen
+- Removed components: NavBar, Dashboard, DialogueSession, PhraseSession, GrammarSession, ToneHighlight, ToneCoachingPanel
+- Tone-4 highlighting removed from Writing (Luyện viết) mode — now absent from all screens
+- Added one-time SRS migration: on first load, prunes all non-vocab cards (`grammar-*`, phrase, dialogue, practice) from localStorage and resets `completedDialogues`; guarded by `migration-v2-vocab-only` key so it runs exactly once
+- Existing features preserved: Trắc nghiệm mode, Writing (Luyện viết) mode, lesson filter buttons, completion badges on filter buttons, session completion toast + auto-redirect (Part A), Trắc nghiệm transition spinner (Part C), traditional/simplified script toggle
+
 ## [1.6.2] - 2026-06-09
 
 ### Changed

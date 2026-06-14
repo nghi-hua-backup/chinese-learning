@@ -24,6 +24,7 @@ interface ProgressState {
     newCards: number;
   };
   resetAll: () => void;
+  pruneToVocabOnly: () => void;
 }
 
 export const useProgressStore = create<ProgressState>()(
@@ -74,6 +75,15 @@ export const useProgressStore = create<ProgressState>()(
 
       resetAll() {
         set({ cards: {}, streak: 0, lastStudyDate: null });
+      },
+
+      pruneToVocabOnly() {
+        set((state) => ({
+          cards: Object.fromEntries(
+            Object.entries(state.cards).filter(([id]) => id.startsWith("vocab-"))
+          ),
+          completedDialogues: [],
+        }));
       },
 
       getDueCards(cardIds) {

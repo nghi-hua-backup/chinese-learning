@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+import MigrationRunner from "@/components/MigrationRunner";
 
 export const metadata: Metadata = {
   title: "Học tiếng Trung",
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi" className="h-full">
       <body className="min-h-full flex flex-col bg-[#f8f9fb]">
-        <NavBar />
+        <MigrationRunner />
         <main className="flex-1 px-4 py-6 max-w-2xl mx-auto w-full">{children}</main>
       </body>
     </html>
