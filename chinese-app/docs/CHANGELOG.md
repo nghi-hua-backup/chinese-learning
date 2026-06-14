@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.0.2] - 2026-06-14
+
+### Changed
+- KB: Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh — 34 vocab entries, 3 grammar patterns, 4 social phrases (§ 6), 41 practice sentences
+
+---
+
 ## [2.0.1] - 2026-06-14
 
 ### Changed
