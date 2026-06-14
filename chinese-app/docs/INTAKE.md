@@ -267,3 +267,86 @@ Grammar patterns learned in each lesson are never surfaced again after the lesso
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-14] — Simplify to Từ vựng-Only
+
+**Status:** Agreement reached
+
+### Problem
+Multiple tabs (Từ vựng, Mẫu câu, Hội thoại, Ngữ pháp, Tổng quan) create an overwhelming practice experience. The SRS becomes messy and hard to understand when tracking multiple content types simultaneously.
+
+### Agreed scope
+- Remove Mẫu câu, Hội thoại, Ngữ pháp, and Tổng quan (Dashboard) tabs and all their routes entirely
+- Remove the navigation bar entirely from all screens
+- App lands directly on the Từ vựng lesson selection screen (no separate home screen, no nav)
+- Keep both existing Từ vựng practice modes unchanged: **Trắc nghiệm** (multiple choice) and **Writing** (existing handwriting-input mode — user writes with Apple Pencil, system checks correctness)
+- Traditional/simplified script toggle remains as-is (global, no change)
+- Remove tone-4 highlighting from the Writing mode — tone-4 highlighting is now absent from all screens app-wide
+- On first load after update: silently wipe all grammar SRS keys (`grammar:*`) and dialogue SRS keys from localStorage; SRS schedule surfaces only Từ vựng vocabulary cards going forward
+
+### Out of scope (agreed)
+- No changes to Trắc nghiệm or Writing mode functionality or UI (beyond removing tone-4 highlight from Writing)
+- No new handwriting recognition — existing mechanism unchanged
+- No changes to lesson filter buttons, completion badges (on Từ vựng filter buttons), or existing Từ vựng page layout
+
+### Acceptance criteria (draft)
+- AC-1: App root loads directly to the Từ vựng lesson selection screen — no nav bar on any screen
+- AC-2: No Mẫu câu, Hội thoại, Ngữ pháp, or Tổng quan routes or UI elements exist anywhere in the app
+- AC-3: Trắc nghiệm and Writing modes remain fully functional and unchanged (except tone-4 highlight removed from Writing)
+- AC-4: Tone-4 highlighting is absent from all screens in the app
+- AC-5: On first load after update, all `grammar:*` and dialogue SRS keys are silently wiped from localStorage
+- AC-6: SRS schedule surfaces only Từ vựng vocabulary cards
+- AC-7: Session completion toast ("Hoàn thành phiên học! Đã ôn X từ.") and auto-redirect remain in effect for both modes (Part A)
+- AC-8: Trắc nghiệm transition spinner remains in effect (Part C)
+
+### Technical notes
+- Remove tab/nav component from layout
+- Remove page routes: Mẫu câu, Hội thoại, Ngữ pháp, Tổng quan (Dashboard)
+- Update app root to render Từ vựng directly
+- One-time localStorage migration on init: clear `grammar:*` keys and dialogue SRS keys (exact dialogue key prefix to be confirmed by Dev reading the store)
+- Remove `ToneHighlight` component from Writing mode
+
+### Design notes
+- Existing Từ vựng page layout (lesson filters, completion badges on filter buttons, mode selection) unchanged
+- Existing Writing and Trắc nghiệm UI unchanged except tone-4 highlight removal
+
+### Open questions
+- Exact localStorage key prefix for dialogue SRS data — to be confirmed by Dev reading the store
+
+---
+
+## [2026-06-14] — Amendment: Grammar Recognition Practice voided
+
+**Amends:** Section "[2026-06-07] — Grammar Recognition Practice (Ngữ pháp Tab v1)"
+**Specific change:** The entire Ngữ pháp tab and all its routes, UI, and SRS data are removed as part of the Từ vựng-only refactor.
+**New agreement:** Feature is voided. Grammar SRS data (`grammar:*` keys) is wiped from localStorage on first load after the update.
+**Reason for change:** App simplified to Từ vựng-only — all other tabs removed.
+
+---
+
+## [2026-06-14] — Amendment: Hội thoại Answer Diff voided
+
+**Amends:** Section "[2026-06-04] — Hội thoại Answer Diff"
+**Specific change:** The entire Hội thoại tab and all its routes and UI are removed as part of the Từ vựng-only refactor.
+**New agreement:** Feature is voided. Dialogue SRS data is wiped from localStorage on first load after the update.
+**Reason for change:** App simplified to Từ vựng-only — all other tabs removed.
+
+---
+
+## [2026-06-14] — Amendment: Tone-4 Highlighting completely removed
+
+**Amends:** Section "[2026-06-03] — Tone-4 Highlighting & Practice Coaching" and all subsequent amendments
+**Specific change:** Previous amendments had removed tone-4 highlighting from Trắc nghiệm only, leaving it in Flashcard (Writing) and Hội thoại. Hội thoại is now removed entirely. Tone-4 highlighting is now also removed from the Writing mode.
+**New agreement:** Tone-4 highlighting (`ToneHighlight` component) is removed from all screens in the app. The feature is fully voided.
+**Reason for change:** App simplified to Từ vựng-only; customer wants a cleaner practice experience without tone hints.
+
+---
+
+## [2026-06-14] — Amendment: Session Completion UX — Part B voided (Dashboard removed)
+
+**Amends:** Section "[2026-06-04] — Session Completion UX + Lesson Progress Flag + Quiz Loading State" — Part B only
+**Specific change:** Part B specified a green checkmark badge on each lesson card on the Dashboard. The Dashboard (Tổng quan) is now removed entirely.
+**New agreement:** Part B is voided. Parts A (session completion toast + auto-redirect) and C (Trắc nghiệm transition spinner) remain fully in effect.
+**Reason for change:** Dashboard removed as part of the Từ vựng-only refactor.
