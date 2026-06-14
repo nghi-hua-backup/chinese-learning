@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 10 — Nhà bạn có mấy người? (2026-06-09)
+> **Cập nhật lần cuối:** Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh (2026-06-14)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
 
@@ -564,4 +564,57 @@
 | 我家有五口人：爸爸，妈妈，哥哥，姐姐和我。 | 我家有五口人：爸爸，媽媽，哥哥，姐姐和我。 | /wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, jiějie hé wǒ/ | Nhà tôi có 5 người: bố, mẹ, anh trai, chị gái và tôi. |
 | 你喜欢穿什么颜色的衣服？ | 你喜歡穿什麼顏色的衣服？ | /nǐ xǐhuān chuān shénme yánsè de yīfu/ | Bạn thích mặc quần áo màu gì? |
 | 红色和黑色我都很喜欢。 | 紅色和黑色我都很喜歡。 | /hóngsè hé hēisè wǒ dōu hěn xǐhuān/ | Màu đỏ và màu đen tôi đều rất thích. |
+
+---
+
+### Bài 11 — Câu thông dụng
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|---------------------|
+| 当然可以！ | 當然可以！ | /dāngrán kěyǐ/ | Đương nhiên là được! |
+| 人们常说... | 人們常說... | /rénmen cháng shuō/ | Người ta thường nói... |
+| 没问题 | 沒問題 | /méi wèntí/ | Không thành vấn đề |
+| 你放心，没问题的！ | 你放心，沒問題的！ | /nǐ fàngxīn, méi wèntí de/ | Bạn yên tâm, không vấn đề gì đâu! |
+| 春天的时候 | 春天的時候 | /chūntiān de shíhòu/ | Vào mùa xuân |
+| 春天来了！ | 春天來了！ | /chūntiān lái le/ | Mùa xuân đến rồi! |
+| — | 多穿衣服。 | /duō chuān yīfu/ | Mặc nhiều quần áo lên. |
+| 身体不太舒服。 | 身體不太舒服。 | /shēntǐ bú tài shūfu/ | Sức khỏe (cơ thể) không được tốt lắm. |
+| 你喜欢去哪儿旅行？ | 你喜歡去哪兒旅行？ | /nǐ xǐhuān qù nǎr lǚxíng/ | Bạn thích đi du lịch ở đâu? |
+
+### Bài 11 — Ví dụ & Luyện tập
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|---------------------|
+| 今天我没有时间。 | 今天我沒有時間。 | /jīntiān wǒ méiyǒu shíjiān/ | Hôm nay tôi không có thời gian. |
+| 听说你去北京旅行吗？ | 聽說你去北京旅行嗎？ | /tīngshuō nǐ qù Běijīng lǚxíng ma/ | Nghe nói bạn đi du lịch Bắc Kinh à? |
+| 我听说那个饭馆的菜很好吃。 | 我聽說那個飯館的菜很好吃。 | /wǒ tīngshuō nà ge fànguǎn de cài hěn hǎochī/ | Tôi nghe nói đồ ăn của nhà hàng đó rất ngon. |
+| 听说周末你很忙？ | 聽說週末你很忙？ | /tīngshuō zhōumò nǐ hěn máng/ | Nghe nói cuối tuần bạn rất bận? |
+| 大部分人都喜欢看电影。 | 大部分人都喜歡看電影。 | /dà bùfen rén dōu xǐhuān kàn diànyǐng/ | Phần lớn mọi người đều thích xem phim. |
+| 今天比较冷。 | 今天比較冷。 | /jīntiān bǐjiào lěng/ | Hôm nay khá lạnh. |
+| 夏天爸爸跟我（们）一起去游泳。 | 夏天爸爸跟我（們）一起去游泳。 | /xiàtiān bàba gēn wǒmen yìqǐ qù yóuyǒng/ | Mùa hè bố cùng chúng tôi đi bơi. |
+| 我想去旅行，可是我没有时间。 | 我想去旅行，可是我沒有時間。 | /wǒ xiǎng qù lǚxíng, kěshì wǒ méiyǒu shíjiān/ | Tôi muốn đi du lịch nhưng tôi không có thời gian. |
+| 今天很冷，可是我还想去游泳。 | 今天很冷，可是我還想去游泳。 | /jīntiān hěn lěng, kěshì wǒ hái xiǎng qù yóuyǒng/ | Hôm nay rất lạnh nhưng tôi vẫn muốn đi bơi. |
+| 我喜欢北京，可是冬天太冷了！ | 我喜歡北京，可是冬天太冷了！ | /wǒ xǐhuān Běijīng, kěshì dōngtiān tài lěng le/ | Tôi thích Bắc Kinh nhưng mùa đông lạnh quá! |
+| 我想去北京留学。 | 我想去北京留學。 | /wǒ xiǎng qù Běijīng liúxué/ | Tôi muốn đi du học Bắc Kinh. |
+| 北京怎么去？ | 北京怎麼去？ | /Běijīng zěnme qù/ | Đi Bắc Kinh đi như thế nào? |
+| — | 北京是很有名的城市。 | /Běijīng shì hěn yǒumíng de chéngshì/ | Bắc Kinh là một thành phố rất nổi tiếng. |
+| 他是很有名的老师。 | 他是很有名的老師。 | /tā shì hěn yǒumíng de lǎoshī/ | Thầy ấy là một giáo viên rất nổi tiếng. |
+| 春天的时候，大家都喜欢去玩儿。 | 春天的時候，大家都喜歡去玩兒。 | /chūntiān de shíhòu, dàjiā dōu xǐhuān qù wánr/ | Vào mùa xuân, mọi người đều thích đi chơi. |
+| 夏天，人们很喜欢吃西瓜。 | 夏天，人們很喜歡吃西瓜。 | /xiàtiān, rénmen hěn xǐhuān chī xīguā/ | Mùa hè, mọi người rất thích ăn dưa hấu. |
+| — | 秋天到了！ | /qiūtiān dào le/ | Mùa thu đến rồi! |
+| 秋天来了！ | 秋天來了！ | /qiūtiān lái le/ | Mùa thu đến rồi! (biến thể: 到了) |
+| 这里冬天下雪吗？ | 這裡冬天下雪嗎？ | /zhèlǐ dōngtiān xià xuě ma/ | Ở đây mùa đông có tuyết rơi không? |
+| 我觉得有点儿冷。 | 我覺得有點兒冷。 | /wǒ juéde yǒudiǎnr lěng/ | Tôi cảm thấy hơi lạnh một chút. |
+| 夏天的天气很热。 | 夏天的天氣很熱。 | /xiàtiān de tiānqì hěn rè/ | Thời tiết mùa hè rất nóng. |
+| 今天天气很舒服。 | 今天天氣很舒服。 | /jīntiān tiānqì hěn shūfu/ | Thời tiết hôm nay rất dễ chịu. |
+| 妈妈，我不太舒服。 | 媽媽，我不太舒服。 | /māma, wǒ bú tài shūfu/ | Mẹ ơi, con không được khỏe lắm. |
+| 北京冬天的天气很冷。 | 北京冬天的天氣很冷。 | /Běijīng dōngtiān de tiānqì hěn lěng/ | Thời tiết mùa đông ở Bắc Kinh rất lạnh. |
+| — | 今天很冷，零下五度。 | /jīntiān hěn lěng, língxià wǔ dù/ | Hôm nay rất lạnh, âm 5 độ. |
+| — | 下雨了！ | /xià yǔ le/ | Mưa rồi! |
+| 我不喜欢下雨天。 | 我不喜歡下雨天。 | /wǒ bù xǐhuān xià yǔ tiān/ | Tôi không thích những ngày mưa. |
+| 今天是个大晴天。 | 今天是個大晴天。 | /jīntiān shì gè dà qíngtiān/ | Hôm nay là một ngày nắng đẹp. |
+| 越南有四个季节：春天，夏天，秋天，冬天。 | 越南有四個季節：春天，夏天，秋天，冬天。 | /Yuènán yǒu sì gè jìjié: chūntiān, xiàtiān, qiūtiān, dōngtiān/ | Việt Nam có 4 mùa: Xuân, Hạ, Thu, Đông. |
+| 春天是我最喜欢的季节。 | 春天是我最喜歡的季節。 | /chūntiān shì wǒ zuì xǐhuān de jìjié/ | Mùa xuân là mùa tôi yêu thích nhất. |
+| 我们去旅行吧！ | 我們去旅行吧！ | /wǒmen qù lǚxíng ba/ | Chúng ta đi du lịch đi! |
+| 我喜欢跟我家去旅行。 | 我喜歡跟我家去旅行。 | /wǒ xǐhuān gēn wǒjiā qù lǚxíng/ | Tôi thích đi du lịch cùng gia đình tôi. |
 

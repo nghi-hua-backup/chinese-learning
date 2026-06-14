@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 10 — Nhà bạn có mấy người? (2026-06-09)
+> **Cập nhật lần cuối:** Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh (2026-06-14)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -658,6 +658,47 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+### Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| 当然 | 當然 | /dāngrán/ | Đương Nhiên | PT | đương nhiên, tất nhiên |
+| 时间 | 時間 | /shíjiān/ | Thời Gian | DT | thời gian |
+| 听说 | 聽說 | /tīngshuō/ | Thính Thuyết | ĐT | nghe nói |
+| — | 大部分 | /dà bùfen/ | Đại Bộ Phận | DT | phần lớn, hầu hết |
+| 比较 | 比較 | /bǐjiào/ | Tỷ Giao | PT/ĐT | khá, tương đối / so sánh |
+| — | 游泳 | /yóuyǒng/ | Du Vịnh | ĐT | bơi lội |
+| — | 可是 | /kěshì/ | Khả Thị | Liên từ | nhưng (văn viết) |
+| — | 但是 | /dànshì/ | Đản Thị | Liên từ | nhưng (trung tính) |
+| — | 放心 | /fàngxīn/ | Phóng Tâm | ĐT | yên tâm |
+| 爱好 | 愛好 | /àihào/ | Ái Hiếu | DT | sở thích |
+| — | 北京 | /běijīng/ | Bắc Kinh | DT riêng | Bắc Kinh |
+| — | 有名 | /yǒumíng/ | Hữu Danh | HDT | nổi tiếng |
+| — | 春天 | /chūntiān/ | Xuân Thiên | DT | mùa xuân |
+| — | 夏天 | /xiàtiān/ | Hạ Thiên | DT | mùa hè |
+| — | 秋天 | /qiūtiān/ | Thu Thiên | DT | mùa thu |
+| — | 冬天 | /dōngtiān/ | Đông Thiên | DT | mùa đông |
+| 季节 | 季節 | /jìjié/ | Quý Tiết | DT | mùa |
+| — | 雪 | /xuě/ | Tuyết | DT | tuyết |
+| — | 下雪 | /xià xuě/ | Hạ Tuyết | Cụm ĐT | tuyết rơi, trời tuyết |
+| — | 冷 | /lěng/ | Lãnh | HDT | lạnh, rét |
+| 热 | 熱 | /rè/ | Nhiệt | HDT | nóng |
+| — | 舒服 | /shūfu/ | Thư Phục | HDT | thoải mái, dễ chịu |
+| 天气 | 天氣 | /tiānqì/ | Thiên Khí | DT | thời tiết |
+| 天气预报 | 天氣預報 | /tiānqì yùbào/ | Thiên Khí Dự Báo | DT | dự báo thời tiết |
+| — | 零下 | /língxià/ | Linh Hạ | DT | âm (độ) |
+| — | 度 | /dù/ | Độ | DT | độ (nhiệt độ) |
+| 风 | 風 | /fēng/ | Phong | DT | gió |
+| — | 雨 | /yǔ/ | Vũ | DT | mưa |
+| — | 下雨 | /xià yǔ/ | Hạ Vũ | Cụm ĐT | trời mưa, mưa rơi |
+| — | 差不多 | /chàbuduō/ | Sai Bất Đa | PT | gần như, xấp xỉ |
+| — | 晴天 | /qíngtiān/ | Tình Thiên | DT | ngày nắng |
+| — | 旅行 | /lǚxíng/ | Lữ Hành | DT/ĐT | du lịch, đi du lịch |
+| 分钟 | 分鐘 | /fēnzhōng/ | Phân Chung | DT | phút (khoảng thời gian) |
+| 风风雨雨 | 風風雨雨 | /fēng fēng yǔ yǔ/ | Phong Phong Vũ Vũ | Thành ngữ | nhiều thăng trầm, sóng gió |
+
+---
+
 ## 3. Số đếm & Thời gian
 
 ### 3.1 Số đếm cơ bản
@@ -994,6 +1035,18 @@ Ví dụ:
 
 ---
 
+#### 很有名的 + DT — Cấu trúc miêu tả "nổi tiếng"
+
+**Cấu trúc:** 很有名的 + DT
+
+**Giải thích:** Ứng dụng của quy tắc HDT + 的 + DT khi có phó từ mức độ 很. Dùng để giới thiệu "một [DT] rất nổi tiếng". 有名 là tính từ 2 âm tiết, kết hợp với 很 bắt buộc phải có 的 trước danh từ.
+
+**Ví dụ:**
+- 北京是很有名的城市。/ 北京是很有名的城市。 /běijīng shì hěn yǒumíng de chéngshì/ — Bắc Kinh là một thành phố rất nổi tiếng.
+- 他是很有名的老师。/ 他是很有名的老師。 /tā shì hěn yǒumíng de lǎoshī/ — Thầy ấy là một giáo viên rất nổi tiếng.
+
+---
+
 ### Nhóm 3: Câu hỏi
 
 #### 吗 — Câu hỏi Yes/No
@@ -1293,6 +1346,18 @@ Ví dụ:
 
 ---
 
+#### 分钟 vs 分 — Phân biệt khoảng thời gian và mốc thời gian
+
+**Phân biệt:**
+- **分钟/分鐘** /fēnzhōng/: khoảng thời gian — "X phút" (thời lượng).
+- **分** /fēn/: mốc thời gian cụ thể — "X giờ Y phút" (điểm thời gian).
+
+**Ví dụ:**
+- 五分钟 / 五分鐘 /wǔ fēnzhōng/ — 5 phút (khoảng thời gian).
+- 八点五分 /bā diǎn wǔ fēn/ — 8 giờ 5 phút (mốc thời gian).
+
+---
+
 ### Nhóm 7: Địa điểm và vị trí
 
 #### 在 + Địa điểm + ĐT — Ở đâu làm gì
@@ -1359,6 +1424,18 @@ Ví dụ:
 **Lưu ý:** Không dùng 2 lượng từ trong cùng một cụm danh từ.
 - ✓ 一些书 / 一些書 hoặc 一本书 / 一本書
 - ✗ 一些本子 (phải bỏ 些 hoặc 本)
+
+---
+
+#### 零下 + [số] + 度 — Nhiệt độ âm
+
+**Cấu trúc:** 零下 + Số từ + 度
+
+**Giải thích:** Dùng để diễn đạt nhiệt độ dưới 0 (âm độ). 零下 /língxià/ nghĩa là "dưới không", 度 /dù/ nghĩa là "độ".
+
+**Ví dụ:**
+- 今天很冷，零下五度。/ 今天很冷，零下五度。 /jīntiān hěn lěng, língxià wǔ dù/ — Hôm nay rất lạnh, âm 5 độ.
+- 零下十度 /língxià shí dù/ — Âm 10 độ.
 
 ---
 
@@ -1499,6 +1576,9 @@ Ví dụ:
 | — | 是我的。 | shì wǒ de | Là của tôi. (cấu trúc trả lời Có/Không) |
 | — | 不是的。 | bú shì de | Không phải. (cấu trúc trả lời Có/Không) |
 | 黄沙和长沙群岛是越南的。 | 黃沙和長沙群島是越南的。 | Huángshā hé Chángshā qúndǎo shì Yuènán de | Hoàng Sa và Trường Sa là của Việt Nam. |
+| 当然可以！ | 當然可以！ | dāngrán kěyǐ | Đương nhiên là được! |
+| 没问题 | 沒問題 | méi wèntí | Không thành vấn đề |
+| 你放心，没问题的！ | 你放心，沒問題的！ | nǐ fàngxīn, méi wèntí de | Bạn yên tâm, không vấn đề gì đâu! |
 
 ### Hỏi thăm / Mời chào
 
@@ -1539,6 +1619,7 @@ Ví dụ:
 | 别看了。 | 別看了。 | bié kàn le | Đừng nhìn nữa. |
 | 别走。 | 別走。 | bié zǒu | Đừng đi. |
 | 别问我。 | 別問我。 | bié wèn wǒ | Đừng hỏi tôi. |
+| 人们常说... | 人們常說... | rénmen cháng shuō | Người ta thường nói... |
 
 ### Số tiền thực tế (VND)
 
