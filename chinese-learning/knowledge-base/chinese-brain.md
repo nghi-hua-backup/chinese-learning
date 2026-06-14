@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh (2026-06-14)
+> **Cập nhật lần cuối:** Nhóm 2 — thêm quy tắc cốt lõi 的 (2026-06-14)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -62,6 +62,7 @@
     - [太 + HDT + 了 — Mức độ "quá"](#太-hdt-了-mức-độ-quá)
     - [最 + HDT/ĐT — So sánh nhất](#最-hdtđt-so-sánh-nhất)
   - [Nhóm 2: Trợ từ kết cấu 的](#nhóm-2-trợ-từ-kết-cấu-的)
+    - [[Bổ nghĩa] + 的 + DT — Quy tắc cốt lõi](#bổ-nghĩa-的-dt-quy-tắc-cốt-lõi)
     - [DT/Đại từ + 的 + DT — Sở hữu](#dtđại-từ-的-dt-sở-hữu)
     - [ĐT/Cụm từ + 的 + DT — Miêu tả mục đích hoặc nguồn gốc](#đtcụm-từ-的-dt-miêu-tả-mục-đích-hoặc-nguồn-gốc)
     - [HDT + 的 + DT — Quy tắc âm tiết với 的](#hdt-的-dt-quy-tắc-âm-tiết-với-的)
@@ -953,6 +954,21 @@ Ví dụ:
 ---
 
 ### Nhóm 2: Trợ từ kết cấu 的
+
+#### [Bổ nghĩa] + 的 + DT — Quy tắc cốt lõi
+
+> **Quy tắc cốt lõi:** Đặc điểm, tính chất (để trước 的) + **的** + Trung tâm ngữ (Danh từ đứng sau 的).
+>
+> Tất cả các pattern trong Nhóm 2 đều là ứng dụng của quy tắc này.
+
+**Giải thích:** Phần đứng trước 的 là bổ nghĩa (tính từ, cụm từ, đại từ…); phần đứng sau 的 là danh từ chính. Lưu ý cho người học tiếng Việt: tiếng Việt đặt tính từ **sau** danh từ ("mùa yêu thích nhất"), còn tiếng Trung đặt tính từ **trước** danh từ rồi thêm 的 ("最喜欢**的**季节").
+
+**Ví dụ:**
+- **最喜欢的季节** /zuì xǐhuān de jìjié/ — mùa yêu thích nhất
+- **我的书** /wǒ de shū/ — sách của tôi
+- **漂亮的老师** /piàoliang de lǎoshī/ — giáo viên xinh đẹp
+
+---
 
 #### DT/Đại từ + 的 + DT — Sở hữu
 
