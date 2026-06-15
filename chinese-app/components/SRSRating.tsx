@@ -1,13 +1,11 @@
 "use client";
 
-import { ReviewRating } from "@/lib/types";
-
 interface Props {
-  onRate: (rating: ReviewRating) => void;
+  onRate: (rating: number) => void;
   disabled?: boolean;
 }
 
-const RATINGS: { label: string; sublabel: string; rating: ReviewRating; color: string }[] = [
+const RATINGS: { label: string; sublabel: string; rating: number; color: string }[] = [
   { label: "Lại", sublabel: "< 1 phút", rating: 1, color: "bg-red-500 hover:bg-red-600" },
   { label: "Khó", sublabel: "< 10 phút", rating: 2, color: "bg-orange-500 hover:bg-orange-600" },
   { label: "Tốt", sublabel: "vài ngày", rating: 3, color: "bg-green-500 hover:bg-green-600" },

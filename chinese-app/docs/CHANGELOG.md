@@ -18,6 +18,22 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.2.0] - 2026-06-15
+
+### Added
+- Binary Right/Wrong SRS rating across all vocab practice modes (FR-12)
+- Luyện viết: single "Kiểm tra" button (always enabled); empty input auto-scores Wrong; non-empty input triggers string comparison, auto-advances after 1.5 s
+- Trắc nghiệm: correct answer auto-Right; wrong answer auto-Wrong, correct shown briefly, card re-queues at end; 1.4 s auto-advance
+- Wrong cards re-queue at END of session queue (mutable queue model replaces fixed index); session ends only when all cards Right
+- FSRS always called with Rating.Good (3) on Right — guarantees ≥ 1 day next review; never called on Wrong
+- Progress bar now tracks resolved/total unique cards; re-queued Wrong cards don't inflate the denominator
+
+### Removed
+- Four-level SRS rating buttons (Lại/Khó/Tốt/Dễ) removed from Luyện viết
+- `ReviewRating` type removed from `lib/types.ts`; `SRSRating` component retained but no longer rendered
+
+---
+
 ## [2.1.1] - 2026-06-15
 
 ### Fixed

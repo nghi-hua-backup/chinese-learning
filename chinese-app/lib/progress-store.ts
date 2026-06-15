@@ -2,7 +2,7 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { CardProgress, ReviewRating, ScriptMode } from "./types";
+import { CardProgress, ScriptMode } from "./types";
 import { createNewCard, reviewCard, isDue } from "./srs";
 
 interface ProgressState {
@@ -11,7 +11,7 @@ interface ProgressState {
   lastStudyDate: string | null;
   scriptMode: ScriptMode;
   setScriptMode: (mode: ScriptMode) => void;
-  reviewCard: (cardId: string, rating: ReviewRating) => void;
+  reviewCard: (cardId: string) => void;
   getOrCreate: (cardId: string) => CardProgress;
   completedDialogues: string[];
   markDialogueDone: (id: string) => void;
@@ -60,9 +60,9 @@ export const useProgressStore = create<ProgressState>()(
         return createNewCard(cardId);
       },
 
-      reviewCard(cardId, rating) {
+      reviewCard(cardId) {
         const existing = get().getOrCreate(cardId);
-        const updated = reviewCard(existing, rating);
+        const updated = reviewCard(existing, 3);
         const today = new Date().toISOString().slice(0, 10);
         const lastDate = get().lastStudyDate;
         const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);

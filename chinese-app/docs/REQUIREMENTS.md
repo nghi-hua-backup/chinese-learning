@@ -47,6 +47,14 @@ This file is the authoritative record of all features, requirements, and scope d
 - Session completion triggers existing "Hoàn thành phiên học!" toast + auto-redirect UX
 - Example sentences respect user's current script mode (simplified/traditional) via `getDisplayChar`
 
+### FR-12: Binary Right/Wrong SRS Rating
+- All practice modes (Trắc nghiệm, Luyện viết) use binary Right/Wrong — no Lại/Khó/Tốt/Dễ buttons anywhere
+- Luyện viết: single "Kiểm tra" button (always enabled); no input → auto-Wrong; input → string comparison → Right/Wrong with 1.5s auto-advance
+- Trắc nghiệm: correct answer = auto-Right; wrong answer = auto-Wrong, correct briefly shown, card re-queues at end of session; 1.4s auto-advance
+- Wrong cards re-queue at the END of the remaining session queue (mutable queue model)
+- FSRS called once per card on final Right (Rating.Good = 3 always); not called on Wrong; guarantees ≥ 1 day next review
+- Session ends only when all cards Right; exiting mid-session leaves unresolved cards due in Ôn tập lobby
+
 ### FR-11: SRS Enhancement — Ôn Tập (Due-Word Review)
 - Home screen shows an orange badge with due-review count on each lesson button where count > 0; badge is absent when count = 0
 - Green ✓ and orange due-count badge coexist (green at `-top-1.5 -right-1.5`, orange at `-bottom-1.5 -right-1.5`) without overlap
@@ -125,31 +133,6 @@ This file is the authoritative record of all features, requirements, and scope d
 ---
 
 ## Pending Features (Backlog)
-
-### PF-2: Binary Right/Wrong SRS Rating
-**Priority:** High
-**Description:** Replace the 4-level SRS rating (Lại/Khó/Tốt/Dễ = Again/Hard/Good/Easy) with binary Right/Wrong across all practice modes (Trắc nghiệm and Luyện viết). Wrong cards re-queue at the end of the current session queue; Right cards are resolved and FSRS schedules the next review (≥ 1 day). Session ends only when all cards are Right.
-**Acceptance criteria:**
-- AC-1: No Lại/Khó/Tốt/Dễ buttons anywhere in the app.
-- AC-2: Luyện viết shows a single "Kiểm tra" button (always enabled). Tapping with no input → auto-Wrong. Tapping with input → string comparison against expected answer → auto-Right or auto-Wrong.
-- AC-3: Trắc nghiệm — correct answer selected = auto-Right, auto-advance. Wrong answer selected = auto-Wrong, correct answer briefly shown, card re-queues at end of session. No extra button needed.
-- AC-4: Wrong card re-queues at the END of the remaining session cards (not immediately next).
-- AC-5: FSRS is called once per card on final Right only (Rating.Good = 3). FSRS is NOT called on Wrong attempts. All Right resolutions schedule the next review ≥ 1 day.
-- AC-6: Session ends (completion toast fires) only when all cards have been marked Right.
-- AC-7: After a complete session, the Ôn tập lobby shows 0 due cards.
-- AC-8: Exiting mid-session leaves unresolved cards due in the lobby (appear in count on next visit).
-- AC-9: A card that went through ≥1 Wrong attempt before final Right is still scheduled ≥ 1 day in the future (no sub-day interval).
-
-**Tech approach (Tech Lead):**
-- **Components affected:** `VocabSession.tsx` (major), `WritingInput.tsx` (minor), `lib/types.ts`, `lib/progress-store.ts`. `SRSRating.tsx` becomes unused (keep file, remove import).
-- **Implementation strategy:**
-  1. `lib/types.ts` — remove `ReviewRating = 1|2|3|4`.
-  2. `lib/progress-store.ts` — remove `rating` param from `reviewCard(cardId)`; internalize `Rating.Good (3)` always.
-  3. `WritingInput.tsx` — remove `disabled={!input.trim()}` from button; remove `|| !input.trim()` guard from `handleSubmit`; empty submit → `onResult(false, '')` (auto-Wrong).
-  4. `VocabSession.tsx` — replace `index + dueCards[]` with mutable `queue: VocabCard[]` state; `queue[0]` = current card; Right → `reviewCard(id)`, `completeSessionCard`, `queue.shift()`; Wrong → `queue.push(queue.shift())`, no FSRS call; track `resolved` count for progress bar; session complete when `queue.length === 0 && resolved > 0`; add `key={card.id}` to `MultipleChoice` and `WritingInput` to force remount on card change; remove `SRSRating` render and `showAnswer` state; Luyện viết auto-advances after 1.5s timeout post-result.
-- **Risks / pitfalls:** P8 — all hooks (useState, useMemo, useEffect, useRef) must appear before the `if (queue.length === 0)` early return. The queue initializer calls `getDueCards`/`getOverdueReviewedCards` from the store — these are synchronous reads, safe in a `useState` lazy initializer. Choices `useMemo` depends on `card?.id` (= `queue[0]?.id`) — recomputes correctly when queue rotates.
-  - `activeSessions` in the store tracks in-progress cards: `completeSessionCard` called only on Right (correct behavior — unresolved Wrong cards remain in the store's cardIds list, so they stay due on exit).
-- **P-constraints to watch:** P8 (hooks order), P3 (touch target sizes — buttons must remain thumb-friendly after removing SRSRating row).
 
 ### PF-1: Audio Pronunciation
 **Priority:** Medium

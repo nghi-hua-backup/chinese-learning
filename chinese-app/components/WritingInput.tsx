@@ -20,7 +20,12 @@ export default function WritingInput({ expected, expectedAlt, onResult }: Props)
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   function handleSubmit() {
-    if (submitted || !input.trim()) return;
+    if (submitted) return;
+    if (!input.trim()) {
+      setSubmitted(true);
+      onResult(false, "");
+      return;
+    }
     const n = normalize(input);
     const isCorrect = n === normalize(expected) || (!!expectedAlt && n === normalize(expectedAlt));
     setCorrect(isCorrect);
@@ -61,8 +66,7 @@ export default function WritingInput({ expected, expectedAlt, onResult }: Props)
       {!submitted && (
         <button
           onClick={handleSubmit}
-          disabled={!input.trim()}
-          className="w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl py-4 text-lg font-semibold transition-all active:scale-95 disabled:opacity-40"
+          className="w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl py-4 text-lg font-semibold transition-all active:scale-95"
         >
           Kiểm tra
         </button>

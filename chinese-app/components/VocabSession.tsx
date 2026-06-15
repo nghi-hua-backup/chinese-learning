@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
-import { VocabCard, PracticeMode, ReviewRating, ScriptMode } from "@/lib/types";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { VocabCard, PracticeMode, ScriptMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
 import { getRandomDistractors, getDisplayChar } from "@/lib/utils";
-import SRSRating from "./SRSRating";
 import MultipleChoice from "./MultipleChoice";
 import WritingInput from "./WritingInput";
 
@@ -19,24 +18,21 @@ interface Props {
 }
 
 export default function VocabSession({ cards, allCards, mode, scriptMode, reviewOnly = false, lesson, onSessionComplete }: Props) {
-  const { getDueCards, getOverdueReviewedCards, reviewCard, getOrCreate, startSession, completeSessionCard, clearSession } = useProgressStore();
+  const { getDueCards, getOverdueReviewedCards, reviewCard, startSession, completeSessionCard, clearSession } = useProgressStore();
 
-  const dueIds = useMemo(() => {
+  // P8: all hooks before early return
+  const [queue, setQueue] = useState<VocabCard[]>(() => {
     const ids = cards.map((c) => c.id);
-    return reviewOnly ? getOverdueReviewedCards(ids) : getDueCards(ids);
-  }, [cards, reviewOnly]);
-  const dueCards = useMemo(() => {
-    const idSet = new Set(dueIds);
-    const result = cards.filter((c) => idSet.has(c.id));
-    return result.sort(() => Math.random() - 0.5);
-  }, [dueIds]);
+    const dueIds = new Set(reviewOnly ? getOverdueReviewedCards(ids) : getDueCards(ids));
+    const due = cards.filter((c) => dueIds.has(c.id));
+    return due.sort(() => Math.random() - 0.5);
+  });
 
-  const [index, setIndex] = useState(0);
-  const [showAnswer, setShowAnswer] = useState(false);
+  const [resolved, setResolved] = useState(0);
   const [answered, setAnswered] = useState(false);
-  const [writingCorrect, setWritingCorrect] = useState<boolean | null>(null);
 
-  const card = dueCards[index];
+  const totalCards = useRef(queue.length);
+  const card = queue[0] as VocabCard | undefined;
 
   const choices = useMemo(() => {
     if (!card) return [];
@@ -45,44 +41,12 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
   }, [card?.id]);
 
   useEffect(() => {
-    if (lesson === undefined || dueCards.length === 0) return;
-    startSession(lesson, dueCards.map((c) => c.id));
+    if (lesson === undefined || totalCards.current === 0) return;
+    startSession(lesson, queue.map((c) => c.id));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function handleRate(rating: ReviewRating) {
-    if (!card) return;
-    reviewCard(card.id, rating);
-    if (lesson !== undefined) completeSessionCard(lesson, card.id);
-    advance();
-  }
-
-  function handleResult(correct: boolean) {
-    setAnswered(true);
-    // Auto-rate for multiple choice: correct=Good(3), wrong=Again(1)
-    if (mode === "trac-nghiem") {
-      const rating: ReviewRating = correct ? 3 : 1;
-      setTimeout(() => {
-        reviewCard(card.id, rating);
-        if (lesson !== undefined) completeSessionCard(lesson, card.id);
-        advance();
-      }, 1400);
-    }
-  }
-
-  function advance() {
-    if (index + 1 >= dueCards.length) {
-      if (lesson !== undefined) clearSession(lesson);
-      onSessionComplete(dueCards.length);
-    } else {
-      setIndex((i) => i + 1);
-      setShowAnswer(false);
-      setAnswered(false);
-      setWritingCorrect(null);
-    }
-  }
-
-  if (dueCards.length === 0) {
+  if (queue.length === 0 && resolved === 0) {
     return (
       <div className="text-center py-16 space-y-4">
         <div className="text-5xl">🎉</div>
@@ -92,6 +56,37 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
     );
   }
 
+  function markRight() {
+    if (!card) return;
+    reviewCard(card.id);
+    if (lesson !== undefined) completeSessionCard(lesson, card.id);
+    const newResolved = resolved + 1;
+    const newQueue = queue.slice(1);
+    setResolved(newResolved);
+    setQueue(newQueue);
+    setAnswered(false);
+    if (newQueue.length === 0) {
+      if (lesson !== undefined) clearSession(lesson);
+      onSessionComplete(newResolved);
+    }
+  }
+
+  function markWrong() {
+    const newQueue = [...queue.slice(1), queue[0]];
+    setQueue(newQueue);
+    setAnswered(false);
+  }
+
+  function handleResult(correct: boolean) {
+    setAnswered(true);
+    const delay = mode === "trac-nghiem" ? 1400 : 1500;
+    setTimeout(() => {
+      if (correct) markRight(); else markWrong();
+    }, delay);
+  }
+
+  const progress = totalCards.current > 0 ? (resolved / totalCards.current) * 100 : 0;
+
   return (
     <div className="max-w-xl mx-auto">
       {/* Progress bar */}
@@ -99,24 +94,32 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
         <div className="flex-1 bg-gray-200 rounded-full h-2">
           <div
             className="bg-indigo-500 h-2 rounded-full transition-all"
-            style={{ width: `${((index) / dueCards.length) * 100}%` }}
+            style={{ width: `${progress}%` }}
           />
         </div>
-        <span className="text-sm text-gray-500 font-medium">{index + 1}/{dueCards.length}</span>
+        <span className="text-sm text-gray-500 font-medium">{resolved + 1}/{totalCards.current}</span>
       </div>
 
       {/* Question card */}
-      <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 text-center">
-        <p className="text-sm text-gray-400 mb-2 uppercase tracking-wide">
-          {card.lessonTitle} · {card.wordType}
-        </p>
-        <p className="text-2xl font-bold text-gray-800 mb-2">{card.meaning}</p>
-        {card.hanViet && <p className="text-gray-400 text-sm italic">(Hán Việt: {card.hanViet})</p>}
-      </div>
+      {card && (
+        <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 text-center">
+          <p className="text-sm text-gray-400 mb-2 uppercase tracking-wide">
+            {card.lessonTitle} · {card.wordType}
+          </p>
+          <p className="text-2xl font-bold text-gray-800 mb-2">{card.meaning}</p>
+          {card.hanViet && <p className="text-gray-400 text-sm italic">(Hán Việt: {card.hanViet})</p>}
+        </div>
+      )}
 
-      {/* Answer section */}
-      {mode === "trac-nghiem" && !answered && (
-        <MultipleChoice question={card} choices={choices} onResult={handleResult} scriptMode={scriptMode} />
+      {/* Trắc nghiệm */}
+      {mode === "trac-nghiem" && !answered && card && (
+        <MultipleChoice
+          key={card.id}
+          question={card}
+          choices={choices}
+          onResult={handleResult}
+          scriptMode={scriptMode}
+        />
       )}
 
       {mode === "trac-nghiem" && answered && (
@@ -125,32 +128,14 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
         </div>
       )}
 
-      {mode === "luyen-viet" && !showAnswer && (
+      {/* Luyện viết — WritingInput shows its own result when submitted; key forces remount on card change */}
+      {mode === "luyen-viet" && card && (
         <WritingInput
+          key={card.id}
           expected={getDisplayChar(card, scriptMode)}
           expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
-          onResult={(correct) => {
-            setWritingCorrect(correct);
-            setAnswered(true);
-            setShowAnswer(true);
-          }}
+          onResult={(correct) => handleResult(correct)}
         />
-      )}
-
-      {mode === "luyen-viet" && showAnswer && (
-        <>
-          {writingCorrect !== null && (
-            <div className={`mt-4 rounded-xl p-3 text-center font-semibold text-lg ${writingCorrect ? "bg-green-100 text-green-700" : "bg-red-100 text-red-600"}`}>
-              {writingCorrect ? "✓ Chính xác!" : "✗ Sai rồi"}
-            </div>
-          )}
-          <div className="mt-3 bg-white rounded-2xl border border-gray-100 p-6 text-center">
-            <p className="text-8xl font-bold mb-1">{getDisplayChar(card, scriptMode)}</p>
-            <p className="text-indigo-600 text-lg mt-2">{card.pinyin}</p>
-            <p className="text-gray-600 mt-1">{card.meaning}</p>
-          </div>
-          <SRSRating onRate={handleRate} />
-        </>
       )}
     </div>
   );

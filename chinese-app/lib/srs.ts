@@ -1,5 +1,5 @@
 import { createEmptyCard, fsrs, generatorParameters, Rating, Card, RecordLog } from "ts-fsrs";
-import { CardProgress, ReviewRating } from "./types";
+import { CardProgress } from "./types";
 
 const f = fsrs(generatorParameters({ enable_fuzz: true }));
 
@@ -8,12 +8,11 @@ export function createNewCard(cardId: string): CardProgress {
   return toProgress(cardId, card, new Date().toISOString());
 }
 
-export function reviewCard(progress: CardProgress, rating: ReviewRating): CardProgress {
+export function reviewCard(progress: CardProgress, rating: number): CardProgress {
   const card = fromProgress(progress);
   const now = new Date();
   const log: RecordLog = f.repeat(card, now);
 
-  // Map our 4-level rating to FSRS Rating
   const fsrsRating =
     rating === 1 ? Rating.Again : rating === 2 ? Rating.Hard : rating === 3 ? Rating.Good : Rating.Easy;
 
