@@ -111,6 +111,26 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ## Pending Features (Backlog)
 
+### PF-2: SRS Enhancement — Ôn Tập (Due-Word Review)
+**Priority:** High
+**Description:** Surfaces which reviewed vocabulary words are due for re-practice, provides a dedicated `/on-tap` review screen with lesson filtering, and tracks in-progress sessions so an interrupted session can be resumed.
+**Acceptance criteria:**
+- AC-1: Home screen shows an orange badge with due-review count on each lesson button where count > 0; badge is absent when count = 0.
+- AC-2: Green ✓ and orange due-count badge coexist on the same button without overlap.
+- AC-3: "Ôn tập" button appears at the top of the home screen and navigates to `/on-tap`.
+- AC-4: Tapping a lesson button (or its orange badge) navigates to `/on-tap?lesson=N` pre-filtered to that lesson.
+- AC-5: Ôn tập screen has its own lesson filter buttons; selecting a filter updates the word list without a page reload.
+- AC-6: Ôn tập word list shows only reviewed words that are due (not new cards); each row shows Chinese character + Vietnamese meaning.
+- AC-7: "Bắt đầu ôn" launches VocabSession with only the filtered due reviewed cards.
+- AC-8: Completing all cards in an Ôn tập session clears the in-progress state and fires the session completion toast.
+- AC-9: Closing mid-session (back-navigate or hard reload) leaves remaining cards stored in Zustand persist store.
+- AC-10: After an interrupted session, the home screen shows amber styling (`border-amber-400 bg-amber-50`) on the affected lesson button(s).
+- AC-11: After an interrupted "Tất cả" session, amber styling appears per individual lesson button, based on which lessons still have remaining cards.
+- AC-12: When no words are due, Ôn tập screen shows a simple Vietnamese empty-state message.
+- AC-13: Build passes with no TypeScript errors; all existing Từ vựng modes work end-to-end after changes.
+
+---
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
