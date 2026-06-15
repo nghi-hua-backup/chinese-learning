@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.1.1] - 2026-06-15
+
+### Fixed
+- Ôn tập session crash: when a card was rated, the Zustand store update caused `OntapClient.dueCards` to recompute (shrink), propagating a smaller `cards` prop to `VocabSession`, making `index` out of bounds and crashing with a TypeError. Fix: snapshot the due cards into `frozenSessionCards` state when the session starts; `VocabSession` now receives a stable array that doesn't change during the session.
+
+---
+
 ## [2.1.0] - 2026-06-15
 
 ### Added

@@ -20,6 +20,7 @@ export default function OntapClient({ allCards }: Props) {
   const [sessionStarted, setSessionStarted] = useState(false);
   const [mode, setMode] = useState<PracticeMode>("trac-nghiem");
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [frozenSessionCards, setFrozenSessionCards] = useState<VocabCard[] | null>(null);
 
   const { scriptMode, cards, getOverdueReviewedCards } = useProgressStore();
 
@@ -51,21 +52,22 @@ export default function OntapClient({ allCards }: Props) {
   }, [cards, filteredCardIds, allCards]);
 
   function handleSessionComplete(count: number) {
+    setFrozenSessionCards(null);
     setSessionStarted(false);
     setToastMessage(`Hoàn thành phiên học! Đã ôn ${count} từ.`);
   }
 
-  if (sessionStarted) {
+  if (sessionStarted && frozenSessionCards) {
     return (
       <div>
         <button
-          onClick={() => setSessionStarted(false)}
+          onClick={() => { setFrozenSessionCards(null); setSessionStarted(false); }}
           className="mb-6 flex items-center gap-2 text-gray-500 hover:text-gray-700 text-sm"
         >
           ← Quay lại
         </button>
         <VocabSession
-          cards={dueCards}
+          cards={frozenSessionCards}
           allCards={allCards}
           mode={mode}
           scriptMode={scriptMode}
@@ -159,7 +161,7 @@ export default function OntapClient({ allCards }: Props) {
             </div>
 
             <button
-              onClick={() => setSessionStarted(true)}
+              onClick={() => { setFrozenSessionCards([...dueCards]); setSessionStarted(true); }}
               className="w-full bg-orange-500 hover:bg-orange-600 text-white rounded-xl py-4 text-lg font-semibold transition-all active:scale-95"
             >
               Bắt đầu ôn ({dueCards.length} từ)
