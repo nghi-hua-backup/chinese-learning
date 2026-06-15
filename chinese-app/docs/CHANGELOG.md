@@ -18,6 +18,17 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.1.0] - 2026-06-15
+
+### Added
+- FR-11: Ôn tập (Due-Word Review) — new `/on-tap` route with lesson filter, flat due-word list (Chinese + Vietnamese meaning), mode selector, and VocabSession integration
+- Orange due-count badges on Từ vựng lesson filter buttons (bottom-right corner, distinct from green ✓ at top-right); badge absent when count = 0
+- "Ôn tập" link button at top of Từ vựng screen navigates to `/on-tap`; orange badge on lesson buttons navigates to `/on-tap?lesson=N`
+- Amber styling (`border-amber-400 bg-amber-50`) on Từ vựng lesson buttons when a session for that lesson was interrupted mid-way
+- `activeSessions` in Zustand persist store tracks in-progress Ôn tập sessions; survives page close/reload; cleared on session completion
+
+---
+
 ## [2.0.2] - 2026-06-14
 
 ### Changed

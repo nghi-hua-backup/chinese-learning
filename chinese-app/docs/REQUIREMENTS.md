@@ -47,6 +47,21 @@ This file is the authoritative record of all features, requirements, and scope d
 - Session completion triggers existing "Hoàn thành phiên học!" toast + auto-redirect UX
 - Example sentences respect user's current script mode (simplified/traditional) via `getDisplayChar`
 
+### FR-11: SRS Enhancement — Ôn Tập (Due-Word Review)
+- Home screen shows an orange badge with due-review count on each lesson button where count > 0; badge is absent when count = 0
+- Green ✓ and orange due-count badge coexist (green at `-top-1.5 -right-1.5`, orange at `-bottom-1.5 -right-1.5`) without overlap
+- "Ôn tập" button at the top of the Từ vựng screen links to `/on-tap`; shows total due count inline
+- Tapping an orange badge on a lesson button navigates to `/on-tap?lesson=N` pre-filtered to that lesson
+- `/on-tap` screen has its own lesson filter buttons; selecting a filter updates the word list without a page reload
+- Word list shows only reviewed words that are due (not new cards); each row shows Chinese character + Vietnamese meaning
+- "Bắt đầu ôn" launches VocabSession with only the filtered due reviewed cards
+- Completing all cards clears the in-progress state and fires the session completion toast
+- Closing mid-session (back-navigate or hard reload) leaves remaining cards stored in Zustand persist store
+- After an interrupted session, the Từ vựng screen shows amber styling (`border-amber-400 bg-amber-50`) on the affected individual lesson button(s)
+- After an interrupted "Tất cả" session, amber is distributed per individual lesson button based on remaining card lessons
+- When no words are due, Ôn tập screen shows a Vietnamese empty-state message
+- `activeSessions: Record<number, { cardIds: string[], startedAt: string }>` persisted in Zustand store (key 0 = Tất cả, key N = specific lesson)
+
 ### FR-8: Lesson Completion Badge on Từ vựng Page
 - Each "Bài N" filter button on the Từ vựng page shows a green ✓ badge when all cards in that lesson have `reps > 0` and none are overdue by more than 7 days
 - The "Tất cả" button shows a green ✓ badge when all cards across all lessons meet the same criteria
@@ -110,37 +125,6 @@ This file is the authoritative record of all features, requirements, and scope d
 ---
 
 ## Pending Features (Backlog)
-
-### PF-3: SRS Enhancement — Ôn Tập (Due-Word Review)
-**Priority:** High
-**Description:** Surfaces which reviewed vocabulary words are due for re-practice, provides a dedicated `/on-tap` review screen with lesson filtering, and tracks in-progress sessions so an interrupted session can be resumed.
-**Acceptance criteria:**
-- AC-1: Home screen shows an orange badge with due-review count on each lesson button where count > 0; badge is absent when count = 0.
-- AC-2: Green ✓ and orange due-count badge coexist on the same button without overlap.
-- AC-3: "Ôn tập" button appears at the top of the home screen and navigates to `/on-tap`.
-- AC-4: Tapping a lesson button (or its orange badge) navigates to `/on-tap?lesson=N` pre-filtered to that lesson.
-- AC-5: Ôn tập screen has its own lesson filter buttons; selecting a filter updates the word list without a page reload.
-- AC-6: Ôn tập word list shows only reviewed words that are due (not new cards); each row shows Chinese character + Vietnamese meaning.
-- AC-7: "Bắt đầu ôn" launches VocabSession with only the filtered due reviewed cards.
-- AC-8: Completing all cards in an Ôn tập session clears the in-progress state and fires the session completion toast.
-- AC-9: Closing mid-session (back-navigate or hard reload) leaves remaining cards stored in Zustand persist store.
-- AC-10: After an interrupted session, the home screen shows amber styling (`border-amber-400 bg-amber-50`) on the affected lesson button(s).
-- AC-11: After an interrupted "Tất cả" session, amber styling appears per individual lesson button, based on which lessons still have remaining cards.
-- AC-12: When no words are due, Ôn tập screen shows a simple Vietnamese empty-state message.
-- AC-13: Build passes with no TypeScript errors; all existing Từ vựng modes work end-to-end after changes.
-
-**Tech approach (Tech Lead):**
-- Components affected: `TuVungClient.tsx` (add orange badges + amber in-progress styling + "Ôn tập" button + onClick→`/on-tap?lesson=N`), `VocabSession.tsx` (add `startSession`/`completeSessionCard`/`clearSession` calls), `lib/progress-store.ts` (add `activeSessions` state + 4 new actions), new `app/on-tap/page.tsx` (server), new `app/on-tap/OntapClient.tsx` (client).
-- Implementation strategy:
-  1. Extend `ProgressState` in `progress-store.ts` with `activeSessions: Record<number, { cardIds: string[], startedAt: string }>` (persisted). Add `startSession(lesson, cardIds)`, `completeSessionCard(lesson, cardId)`, `clearSession(lesson)`, `getInProgressLessons(): number[]`.
-  2. In `TuVungClient.tsx`: derive `dueCountByLesson` via `getOverdueReviewedCards` for each lesson's cardIds; render orange badge `absolute -bottom-1.5 -right-1.5` (distinct from green ✓ at `-top-1.5 -right-1.5`); derive `inProgressLessons` from `getInProgressLessons()` + remaining card grouping by `VocabCard.lesson`; apply amber style when lesson is in-progress; add "Ôn tập" `<Link>` button at top; make lesson buttons link to `/on-tap?lesson=N`.
-  3. Create `app/on-tap/page.tsx`: server component calling `getAllVocab()`, wrapping `OntapClient` in `<Suspense>`.
-  4. Create `app/on-tap/OntapClient.tsx`: reads `?lesson=N` from `useSearchParams()`; lesson filter buttons; builds `dueCards` via `getOverdueReviewedCards`; flat word list (Chinese + meaning); "Bắt đầu ôn" → mode selector → `<VocabSession cards={dueCards} reviewOnly={false} onSessionComplete={...} />`.
-  5. In `VocabSession.tsx`: accept optional `lesson?: number` prop; call `startSession(lesson, dueIds)` in `useEffect` on mount; call `completeSessionCard(lesson, card.id)` after each rating in `handleRate`/`handleResult`; call `clearSession(lesson)` in `onSessionComplete` callback path.
-- Risks / pitfalls: (1) P8 — all new hooks (`useMemo` for due counts, `useEffect` for session start) must appear before early returns. (2) `getInProgressLessons` must group remaining cardIds by `VocabCard.lesson` — requires passing `allCards` or a lookup map to the store or computing the grouping in the component. Prefer computing in the component (store only stores raw cardIds). (3) Amber styling for a "Tất cả" interrupted session must distribute across individual lesson buttons — derive by filtering remaining card IDs against each lesson's card set. (4) `useSearchParams()` requires `<Suspense>` boundary (P1 static export).
-- P-constraints to watch: P1 (static export + Suspense), P8 (hooks before returns), P9 (use `<Link>` for `/on-tap` navigation), P4 (all new labels in Vietnamese).
-
----
 
 ### PF-1: Audio Pronunciation
 **Priority:** Medium

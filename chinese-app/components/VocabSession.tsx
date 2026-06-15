@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { VocabCard, PracticeMode, ReviewRating, ScriptMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
 import { getRandomDistractors, getDisplayChar } from "@/lib/utils";
@@ -14,11 +14,12 @@ interface Props {
   mode: PracticeMode;
   scriptMode: ScriptMode;
   reviewOnly?: boolean;
+  lesson?: number;
   onSessionComplete: (count: number) => void;
 }
 
-export default function VocabSession({ cards, allCards, mode, scriptMode, reviewOnly = false, onSessionComplete }: Props) {
-  const { getDueCards, getOverdueReviewedCards, reviewCard, getOrCreate } = useProgressStore();
+export default function VocabSession({ cards, allCards, mode, scriptMode, reviewOnly = false, lesson, onSessionComplete }: Props) {
+  const { getDueCards, getOverdueReviewedCards, reviewCard, getOrCreate, startSession, completeSessionCard, clearSession } = useProgressStore();
 
   const dueIds = useMemo(() => {
     const ids = cards.map((c) => c.id);
@@ -43,9 +44,16 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
     return [card, ...distractors].sort(() => Math.random() - 0.5);
   }, [card?.id]);
 
+  useEffect(() => {
+    if (lesson === undefined || dueCards.length === 0) return;
+    startSession(lesson, dueCards.map((c) => c.id));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function handleRate(rating: ReviewRating) {
     if (!card) return;
     reviewCard(card.id, rating);
+    if (lesson !== undefined) completeSessionCard(lesson, card.id);
     advance();
   }
 
@@ -56,6 +64,7 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
       const rating: ReviewRating = correct ? 3 : 1;
       setTimeout(() => {
         reviewCard(card.id, rating);
+        if (lesson !== undefined) completeSessionCard(lesson, card.id);
         advance();
       }, 1400);
     }
@@ -63,6 +72,7 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
 
   function advance() {
     if (index + 1 >= dueCards.length) {
+      if (lesson !== undefined) clearSession(lesson);
       onSessionComplete(dueCards.length);
     } else {
       setIndex((i) => i + 1);

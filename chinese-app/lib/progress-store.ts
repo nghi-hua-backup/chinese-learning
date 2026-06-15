@@ -25,6 +25,11 @@ interface ProgressState {
   };
   resetAll: () => void;
   pruneToVocabOnly: () => void;
+  activeSessions: Record<number, { cardIds: string[]; startedAt: string }>;
+  startSession: (lesson: number, cardIds: string[]) => void;
+  completeSessionCard: (lesson: number, cardId: string) => void;
+  clearSession: (lesson: number) => void;
+  getInProgressLessons: () => number[];
 }
 
 export const useProgressStore = create<ProgressState>()(
@@ -35,6 +40,7 @@ export const useProgressStore = create<ProgressState>()(
       lastStudyDate: null,
       scriptMode: "traditional",
       completedDialogues: [],
+      activeSessions: {},
 
       markDialogueDone(id) {
         set((state) => ({
@@ -84,6 +90,43 @@ export const useProgressStore = create<ProgressState>()(
           ),
           completedDialogues: [],
         }));
+      },
+
+      startSession(lesson, cardIds) {
+        set((state) => ({
+          activeSessions: {
+            ...state.activeSessions,
+            [lesson]: { cardIds, startedAt: new Date().toISOString() },
+          },
+        }));
+      },
+
+      completeSessionCard(lesson, cardId) {
+        set((state) => {
+          const session = state.activeSessions[lesson];
+          if (!session) return state;
+          return {
+            activeSessions: {
+              ...state.activeSessions,
+              [lesson]: { ...session, cardIds: session.cardIds.filter((id) => id !== cardId) },
+            },
+          };
+        });
+      },
+
+      clearSession(lesson) {
+        set((state) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          const { [lesson]: _removed, ...rest } = state.activeSessions;
+          return { activeSessions: rest };
+        });
+      },
+
+      getInProgressLessons() {
+        const { activeSessions } = get();
+        return Object.keys(activeSessions)
+          .map(Number)
+          .filter((l) => (activeSessions[l]?.cardIds.length ?? 0) > 0);
       },
 
       getDueCards(cardIds) {
