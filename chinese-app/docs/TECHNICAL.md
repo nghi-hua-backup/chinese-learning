@@ -70,9 +70,9 @@ GrammarPattern  id, name, structure, explanation, examples[]
 DialogueLine    simplified, traditional, pinyin, meaning, speaker?
 Dialogue        id, title, lesson, lines[]
 CardProgress    cardId, due, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, last_review
-ReviewRating    1 | 2 | 3 | 4   (Again / Hard / Good / Easy)
 PracticeMode    "trac-nghiem" | "luyen-viet"
 ScriptMode      "traditional" | "simplified"
+// ReviewRating removed — binary Right/Wrong system always uses Good (3) internally
 ```
 
 ---
@@ -90,11 +90,12 @@ ScriptMode      "traditional" | "simplified"
 
 **Algorithm:** FSRS via `ts-fsrs` (more accurate than SM-2)
 
-**Rating scale:**
-- 1 — Lại (Again) — complete blank
-- 2 — Khó (Hard) — recalled with effort
-- 3 — Tốt (Good) — recalled correctly
-- 4 — Dễ (Easy) — recalled instantly
+**Rating:** Always `Rating.Good (3)` — the 4-level scale (Again/Hard/Good/Easy) is no longer exposed. `ReviewRating` type has been removed from `types.ts`. `progress-store.reviewCard(cardId)` takes no rating parameter and always calls FSRS with Good (3), guaranteeing a next review interval ≥ 1 day in all card states.
+
+**Binary Right/Wrong session model (PF-2):**
+- **Right** → `reviewCard(cardId)` called, card removed from session queue, FSRS schedules next review ≥ 1 day.
+- **Wrong** → card moved to end of session queue, FSRS NOT called. Card remains due (due date unchanged) — if session is exited, it re-appears in the Ôn tập lobby.
+- Session ends when queue is empty (all cards resolved as Right).
 
 **Zustand store** (persisted to `localStorage` key `chinese-srs-progress`):
 - `cards: Record<string, CardProgress>` — per-card SRS state
@@ -103,11 +104,10 @@ ScriptMode      "traditional" | "simplified"
 
 **Key functions:**
 - `isDue(progress)` — returns true if `new Date(progress.due) <= new Date()`
-- `getOverdueReviewedCards(cardIds)` — returns only cards with `reps > 0` that are currently due (excludes new cards); used by Ôn ngay flow
+- `getOverdueReviewedCards(cardIds)` — returns only cards with `reps > 0` that are currently due (excludes new cards); used by Ôn tập flow
+- `reviewCard(cardId)` — always applies Good (3); updates card in store; updates streak
 - `markDialogueDone(id)` — appends dialogue ID (idempotent)
 - `resetAll()` — clears all card history, streak, and last-study date
-
-**Auto-rating:** Multiple choice auto-rates — correct → Good (3), wrong → Again (1) — after 1.4s delay. Writing mode requires manual rating via `SRSRating`.
 
 **Due logic:** New cards (never reviewed, `reps === 0`) are always due. Reviewed cards are due when `new Date(progress.due) <= new Date()`.
 
@@ -134,10 +134,10 @@ Pattern: server component parses markdown + passes data as props → client comp
 |---|---|---|
 | `NavBar.tsx` | Bottom navigation bar | `active: string` |
 | `Dashboard.tsx` | Home screen: streak, due count, lesson links | `vocabCards`, `progress` |
-| `VocabSession.tsx` | Vocabulary flashcard session — card queue, mode switching | `cards`, `scriptMode`, `reviewOnly?` |
+| `VocabSession.tsx` | Vocabulary flashcard session — mutable queue, binary Right/Wrong rating, mode switching. Right → FSRS + remove from queue. Wrong → move to end of queue (no FSRS). Session ends when queue is empty. | `cards`, `scriptMode`, `reviewOnly?`, `lesson?`, `onSessionComplete` |
 | `MultipleChoice.tsx` | 4-option MCQ for trắc nghiệm mode | `card`, `allCards`, `scriptMode`, `onRate` |
 | `WritingInput.tsx` | Textarea for handwriting input + feedback | `expected`, `expectedAlt?`, `onSubmit` |
-| `SRSRating.tsx` | 4-button rating bar (Lại/Khó/Tốt/Dễ) | `onRate: (rating: ReviewRating) => void` |
+| `SRSRating.tsx` | 4-button rating bar — **unused** since PF-2 (binary Right/Wrong). File retained but not rendered anywhere. | `onRate: (rating: number) => void` |
 | `PhraseSession.tsx` | Phrase/sentence practice session; tracks `answerCorrect` state to display green/red feedback banner after `WritingInput` unmounts | `cards`, `scriptMode` |
 | `DialogueSession.tsx` | Dialogue line-by-line practice | `dialogue`, `scriptMode`, `onComplete` |
 | `GrammarSession.tsx` | Grammar recognition session — due-pattern queue, MCQ, SRS rating | `patterns`, `scriptMode`, `onSessionComplete` |

@@ -140,6 +140,17 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-8: Exiting mid-session leaves unresolved cards due in the lobby (appear in count on next visit).
 - AC-9: A card that went through ≥1 Wrong attempt before final Right is still scheduled ≥ 1 day in the future (no sub-day interval).
 
+**Tech approach (Tech Lead):**
+- **Components affected:** `VocabSession.tsx` (major), `WritingInput.tsx` (minor), `lib/types.ts`, `lib/progress-store.ts`. `SRSRating.tsx` becomes unused (keep file, remove import).
+- **Implementation strategy:**
+  1. `lib/types.ts` — remove `ReviewRating = 1|2|3|4`.
+  2. `lib/progress-store.ts` — remove `rating` param from `reviewCard(cardId)`; internalize `Rating.Good (3)` always.
+  3. `WritingInput.tsx` — remove `disabled={!input.trim()}` from button; remove `|| !input.trim()` guard from `handleSubmit`; empty submit → `onResult(false, '')` (auto-Wrong).
+  4. `VocabSession.tsx` — replace `index + dueCards[]` with mutable `queue: VocabCard[]` state; `queue[0]` = current card; Right → `reviewCard(id)`, `completeSessionCard`, `queue.shift()`; Wrong → `queue.push(queue.shift())`, no FSRS call; track `resolved` count for progress bar; session complete when `queue.length === 0 && resolved > 0`; add `key={card.id}` to `MultipleChoice` and `WritingInput` to force remount on card change; remove `SRSRating` render and `showAnswer` state; Luyện viết auto-advances after 1.5s timeout post-result.
+- **Risks / pitfalls:** P8 — all hooks (useState, useMemo, useEffect, useRef) must appear before the `if (queue.length === 0)` early return. The queue initializer calls `getDueCards`/`getOverdueReviewedCards` from the store — these are synchronous reads, safe in a `useState` lazy initializer. Choices `useMemo` depends on `card?.id` (= `queue[0]?.id`) — recomputes correctly when queue rotates.
+  - `activeSessions` in the store tracks in-progress cards: `completeSessionCard` called only on Right (correct behavior — unresolved Wrong cards remain in the store's cardIds list, so they stay due on exit).
+- **P-constraints to watch:** P8 (hooks order), P3 (touch target sizes — buttons must remain thumb-friendly after removing SRSRating row).
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
