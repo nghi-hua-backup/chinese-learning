@@ -126,6 +126,20 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ## Pending Features (Backlog)
 
+### PF-2: Binary Right/Wrong SRS Rating
+**Priority:** High
+**Description:** Replace the 4-level SRS rating (Lại/Khó/Tốt/Dễ = Again/Hard/Good/Easy) with binary Right/Wrong across all practice modes (Trắc nghiệm and Luyện viết). Wrong cards re-queue at the end of the current session queue; Right cards are resolved and FSRS schedules the next review (≥ 1 day). Session ends only when all cards are Right.
+**Acceptance criteria:**
+- AC-1: No Lại/Khó/Tốt/Dễ buttons anywhere in the app.
+- AC-2: Luyện viết shows a single "Kiểm tra" button (always enabled). Tapping with no input → auto-Wrong. Tapping with input → string comparison against expected answer → auto-Right or auto-Wrong.
+- AC-3: Trắc nghiệm — correct answer selected = auto-Right, auto-advance. Wrong answer selected = auto-Wrong, correct answer briefly shown, card re-queues at end of session. No extra button needed.
+- AC-4: Wrong card re-queues at the END of the remaining session cards (not immediately next).
+- AC-5: FSRS is called once per card on final Right only (Rating.Good = 3). FSRS is NOT called on Wrong attempts. All Right resolutions schedule the next review ≥ 1 day.
+- AC-6: Session ends (completion toast fires) only when all cards have been marked Right.
+- AC-7: After a complete session, the Ôn tập lobby shows 0 due cards.
+- AC-8: Exiting mid-session leaves unresolved cards due in the lobby (appear in count on next visit).
+- AC-9: A card that went through ≥1 Wrong attempt before final Right is still scheduled ≥ 1 day in the future (no sub-day interval).
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
