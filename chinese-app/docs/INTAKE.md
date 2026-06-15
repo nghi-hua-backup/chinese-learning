@@ -350,3 +350,76 @@ Multiple tabs (Từ vựng, Mẫu câu, Hội thoại, Ngữ pháp, Tổng quan)
 **Specific change:** Part B specified a green checkmark badge on each lesson card on the Dashboard. The Dashboard (Tổng quan) is now removed entirely.
 **New agreement:** Part B is voided. Parts A (session completion toast + auto-redirect) and C (Trắc nghiệm transition spinner) remain fully in effect.
 **Reason for change:** Dashboard removed as part of the Từ vựng-only refactor.
+
+---
+
+## [2026-06-15] — SRS Enhancement: Ôn Tập (Due-Word Review)
+
+**Status:** Agreement reached
+
+### Problem
+After the Từ vựng-only simplification, users have no visibility into which words the SRS algorithm has scheduled for re-practice. There is no dedicated flow to review only the words that are due today, and no way to resume an interrupted practice session.
+
+### Agreed scope
+
+**1. Due-count badges on lesson buttons (TuVungClient home screen)**
+- Each lesson button ("Tất cả" + "Bài N") shows an orange badge with the count of **reviewed words that are due for re-practice** (i.e. `getOverdueReviewedCards` — reps > 0 and isDue).
+- Badge coexists with the existing green ✓ badge; they appear simultaneously at different positions on the same button.
+- Badge is hidden when count = 0.
+
+**2. "Ôn tập" button on the home screen**
+- A dedicated button at the top of TuVungClient navigates to `/on-tap`.
+- Tapping a lesson button (or its orange badge area) can also open `/on-tap?lesson=N` pre-filtered to that lesson.
+
+**3. Ôn tập screen (`/on-tap` route)**
+- Layout matches TuVungClient: lesson filter buttons ("Tất cả" + "Bài N") at top.
+- Below the filter: a flat list of due reviewed words for the selected lesson — each row shows the Chinese character + Vietnamese meaning (minimal, no pinyin, no word type).
+- A "Bắt đầu ôn" button below the list opens the mode selector, then launches VocabSession with only those due reviewed cards.
+- Empty state: simple Vietnamese message if no words are due (e.g. "Không có từ nào cần ôn hôm nay.").
+- Uses `useSearchParams()` + `<Suspense>` (P1 static export requirement).
+
+**4. In-progress / resume tracking**
+- When a session is interrupted (closed, crashed, or left mid-session), the remaining card IDs are persisted in the Zustand store under a per-lesson key (0 = "Tất cả", 1–N = specific lesson).
+- VocabSession calls `startSession` on mount, `completeSessionCard` after each card is rated, and `clearSession` on normal completion.
+- On the home screen, lesson buttons for lessons with remaining in-progress cards turn amber: `border-amber-400 bg-amber-50`.
+- If a "Tất cả" (lesson=0) session is interrupted, the amber style appears on each individual lesson button that still has remaining cards (not just the "Tất cả" button), using the `VocabCard.lesson` field to group remaining cards by lesson.
+- Normal session completion clears the in-progress state for that lesson.
+
+### Out of scope (agreed)
+- New/unseen words are not included in the Ôn tập due list (only reviewed words that are due).
+- No audio, no pinyin in the word list rows.
+- No explicit "Resume" screen or separate route — in-progress is surfaced only through the amber button color change on the home screen.
+- No per-word "last reviewed" timestamp display.
+- All existing Từ vựng practice behavior (modes, toast, green ✓ badge, completion redirect, Trắc nghiệm spinner) is unchanged.
+
+### Acceptance criteria (draft)
+- AC-1: Home screen shows an orange badge with due-review count on each lesson button where count > 0; badge is absent when count = 0.
+- AC-2: Green ✓ and orange due-count badge coexist on the same button without overlap.
+- AC-3: "Ôn tập" button appears at the top of the home screen and navigates to `/on-tap`.
+- AC-4: Tapping a lesson button (or its orange badge) navigates to `/on-tap?lesson=N` pre-filtered to that lesson.
+- AC-5: Ôn tập screen has its own lesson filter buttons; selecting a filter updates the word list without a page reload.
+- AC-6: Ôn tập word list shows only reviewed words that are due (not new cards); each row shows Chinese character + Vietnamese meaning.
+- AC-7: "Bắt đầu ôn" launches VocabSession with only the filtered due reviewed cards (not all due cards).
+- AC-8: Completing all cards in an Ôn tập session clears the in-progress state and fires the session completion toast.
+- AC-9: Closing mid-session (back-navigate or hard reload) leaves remaining cards stored in Zustand persist store.
+- AC-10: After an interrupted session, the home screen shows amber styling (`border-amber-400 bg-amber-50`) on the affected lesson button(s).
+- AC-11: After an interrupted "Tất cả" session, amber styling appears per individual lesson button (not just "Tất cả"), based on which lessons still have remaining cards.
+- AC-12: When no words are due, Ôn tập screen shows a simple Vietnamese empty-state message.
+- AC-13: Build passes with no TypeScript errors; all existing Từ vựng modes (Trắc nghiệm, Luyện viết) work end-to-end after changes.
+
+### Technical notes
+- `getOverdueReviewedCards(cardIds)` already exists in `progress-store.ts` — use as-is for both badge counts and session card filtering.
+- New Zustand state: `activeSessions: Record<number, { cardIds: string[], startedAt: string }>` with `startSession(lesson, cardIds)`, `completeSessionCard(lesson, cardId)`, `clearSession(lesson)`, `getInProgressLessons()`.
+- `/on-tap/page.tsx` — server component calling `getAllVocab()`, wrapping `OntapClient` in `<Suspense>`.
+- `/on-tap/OntapClient.tsx` — client component; uses `useSearchParams()` for `?lesson=N` pre-filter.
+- P1 (static export), P8 (hooks before returns), P9 (basePath via Link), P4 (Vietnamese UI) all apply.
+- Badge positions: green ✓ at `absolute -top-1.5 -right-1.5`; orange due-count at a different corner (e.g. `-bottom-1.5 -right-1.5`) to avoid overlap.
+
+### Design notes
+- Device: iPad-first (P3).
+- Ôn tập word list: flat, minimal — Chinese character (large) + Vietnamese meaning. No pinyin, no word type.
+- In-progress visual: amber border + background on lesson button only (no banner or separate UI element).
+- Empty state: single line of text centered on screen.
+
+### Open questions
+- (none)
