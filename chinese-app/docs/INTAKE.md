@@ -439,3 +439,80 @@ After the Từ vựng-only simplification, users have no visibility into which w
 
 **New agreement:** The `/on-tap` screen shows lesson filter buttons, a due count number, and the "Bắt đầu ôn" button. No per-word list is rendered. All other AC (1–4, 7–13) and in-progress tracking are unchanged.
 **Reason for change:** Word list adds visual weight without value — the user does not need to preview individual words before starting the session.
+
+---
+
+## [2026-06-15] — Binary Right/Wrong SRS Rating
+
+**Status:** Agreement reached
+
+### Problem
+The 4-level rating system (Lại/Khó/Tốt/Dễ) creates confusing UX and an "unlimited practicing" loop: cards rated Lại/Again receive very short FSRS intervals (sub-day), causing them to re-appear in the Ôn tập lobby immediately after a session ends — giving the impression of never being done.
+
+### Agreed scope
+
+**1. Remove 4-level rating from all practice modes**
+- Lại/Khó/Tốt/Dễ buttons are removed from everywhere in the app (Trắc nghiệm and Luyện viết, in both Từ vựng and Ôn tập flows).
+- Replaced with binary Right/Wrong — auto-determined by the app in both modes.
+
+**2. "Right" behavior**
+- Card is resolved for the current session.
+- FSRS is called once with `Good (3)`, scheduling the next review ≥ 1 day from today.
+- Card is removed from the session queue.
+
+**3. "Wrong" behavior**
+- Card is re-queued at the **end** of the remaining session cards (not immediately next).
+- FSRS is NOT called on Wrong — only called once on the final Right.
+
+**4. Session ends** only when all cards have been marked Right (or the user exits manually).
+
+**5. Trắc nghiệm specifics**
+- Selecting the correct multiple-choice answer = auto-Right; card is removed from the queue, auto-advance to next card.
+- Selecting a wrong answer = auto-Wrong; the correct answer is briefly highlighted, then auto-advance. Card silently re-queues at the end. No explicit Right/Wrong button needed.
+
+**6. Luyện viết specifics**
+- A single "Kiểm tra" button replaces the 4-button rating row.
+- The button is always enabled, even if there is no input on the writing pad.
+- Auto-check is performed by **string comparison**: the text the user typed/wrote is compared against the expected character/word.
+- No input on the pad → auto-Wrong (card re-queues at end).
+- Input matches the expected answer → auto-Right (card resolved, FSRS called).
+- Input does not match → auto-Wrong (card re-queues at end).
+
+**7. Session exit mid-session**
+- Cards not yet resolved as Right remain due and appear in the Ôn tập lobby count on the next visit (natural behavior — their FSRS due date is unchanged).
+
+**8. After a complete session**
+- All cards are resolved as Right → FSRS schedules each for a future date (≥ 1 day) → Ôn tập lobby shows 0.
+
+### Out of scope (agreed)
+- No change to which cards are included (`getDueCards` / `getOverdueReviewedCards` logic unchanged).
+- No change to session freeze-at-start logic (`frozenSessionCards` retained).
+- No change to Ôn tập lobby layout, session completion toast, or completion redirect.
+- No change to mid-session exit behavior — unresolved cards staying due is the natural result of FSRS not being called on Wrong.
+
+### Acceptance criteria (draft)
+- AC-1: No Lại/Khó/Tốt/Dễ buttons anywhere in the app.
+- AC-2: Luyện viết shows a single "Kiểm tra" button that is always enabled (replaces the 4-button row).
+- AC-3: "Kiểm tra" with NO text input → card auto-marked Wrong; re-queued at end of session.
+- AC-4: "Kiểm tra" with text input → string comparison against expected answer → auto-Right (card resolved) or auto-Wrong (card re-queued at end).
+- AC-5: In Trắc nghiệm, selecting the correct answer = auto-Right, auto-advance. Selecting a wrong answer = auto-Wrong, correct answer briefly highlighted, card re-queues at end of session. No extra button.
+- AC-6: Session ends (completion toast fires) only when all cards have been marked Right.
+- AC-7: After a complete session, the Ôn tập lobby shows 0 due cards.
+- AC-8: Exiting mid-session leaves unresolved cards due in the lobby (appear in count on next visit).
+- AC-9: All Right resolutions (including Wrong-then-Right within a session) schedule the next review ≥ 1 day from today — no sub-day interval.
+
+### Technical notes
+- Session queue management: `frozenSessionCards` array; Wrong → move card to end of array (do not remove); Right → remove card from array. Session ends when array is empty.
+- `completeSessionCard` (Zustand) is called only on Right, not on Wrong.
+- `reviewCard` (FSRS) is called once per card per session, on final Right, with `Rating.Good (3)`. This guarantees ≥ 1 day interval across all card states (Learning and Review).
+- Luyện viết auto-check: simple string equality check between the text input value and `getDisplayChar(card, scriptMode)`. Dev to handle trimming and any normalisation (e.g., full-width vs half-width characters) during implementation.
+- No card ever receives `Rating.Again (1)` through this flow → no sub-day FSRS interval → Ôn tập lobby is always clean after a complete session.
+- P4 (Vietnamese UI), P8 (hooks before returns), P1 (static export) all apply.
+
+### Design notes
+- "Kiểm tra" button: primary styling, full-width, always enabled.
+- Trắc nghiệm: existing correct-answer highlight feedback retained; auto-advance after wrong pick (no extra tap required).
+- No explicit "Đúng"/"Sai" labels shown to the user — the result is communicated by the auto-advance and session queue behavior.
+
+### Open questions
+- (none)
