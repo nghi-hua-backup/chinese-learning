@@ -239,6 +239,41 @@ Each session turn: pick one random example from `pattern.examples` → display `
 
 ---
 
+## Ôn Tập — Due-Word Review (PF-3)
+
+### Overview
+Surfaces due reviewed vocabulary, provides a dedicated `/on-tap` review screen, and tracks in-progress sessions across page closes/crashes.
+
+### Route and components
+- `app/on-tap/page.tsx` — server component; calls `getAllVocab()`, wraps `OntapClient` in `<Suspense>` (required because `OntapClient` uses `useSearchParams()`)
+- `app/on-tap/OntapClient.tsx` — client component; reads `?lesson=N` param; lesson filter buttons; flat due-word list; "Bắt đầu ôn" → mode selector → `VocabSession`
+
+### Session tracking (progress-store.ts)
+New Zustand state persisted to `chinese-srs-progress`:
+- `activeSessions: Record<number, { cardIds: string[], startedAt: string }>` — keyed by lesson number (0 = "Tất cả", 1–N = specific lesson)
+- `startSession(lesson: number, cardIds: string[])` — records the full card list at session start
+- `completeSessionCard(lesson: number, cardId: string)` — removes one card from the active session
+- `clearSession(lesson: number)` — removes the entry entirely on normal completion
+- `getInProgressLessons(): number[]` — returns lesson keys with non-empty cardId arrays
+
+### In-progress amber styling on home screen
+- `TuVungClient` computes amber lesson set from `activeSessions`: for each active session entry, group its remaining `cardIds` by `VocabCard.lesson` (using an `allCards` lookup map) to get the set of affected lesson numbers.
+- Lesson button style: `border-amber-400 bg-amber-50` when the lesson is in that set.
+- A "Tất cả" (lesson=0) interrupted session distributes amber across individual lesson buttons, not the "Tất cả" button itself.
+
+### Due-count badge positions (coexistence with green ✓)
+- Green ✓ badge: `absolute -top-1.5 -right-1.5`
+- Orange due-count badge: `absolute -bottom-1.5 -right-1.5`
+- Both require `relative` on the button container.
+
+### VocabSession integration
+- `VocabSession` accepts an optional `lesson?: number` prop (defaults to `undefined` / not tracked when used from normal Từ vựng flow).
+- On mount (`useEffect`): if `lesson !== undefined`, call `startSession(lesson, dueIds)`.
+- After each card rating in `handleRate` / `handleResult` callback: if `lesson !== undefined`, call `completeSessionCard(lesson, card.id)`.
+- On normal session completion (`onSessionComplete`): call `clearSession(lesson)` before invoking the callback.
+
+---
+
 ## Known Pitfalls
 
 | Pitfall | Detail |
