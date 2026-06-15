@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { VocabCard, PracticeMode } from "@/lib/types";
 import { useProgressStore } from "@/lib/progress-store";
-import { getDisplayChar } from "@/lib/utils";
 import VocabSession from "@/components/VocabSession";
 import Toast from "@/components/Toast";
 
@@ -145,7 +144,7 @@ export default function OntapClient({ allCards }: Props) {
           </div>
         </div>
 
-        {/* Due word list or empty state */}
+        {/* Count or empty state */}
         {dueCards.length === 0 ? (
           <div className="text-center py-12 space-y-3">
             <div className="text-4xl">✅</div>
@@ -154,16 +153,9 @@ export default function OntapClient({ allCards }: Props) {
           </div>
         ) : (
           <>
-            <div className="space-y-2">
-              <p className="text-sm font-medium text-gray-700">{dueCards.length} từ cần ôn</p>
-              <div className="bg-white rounded-2xl border border-gray-100 divide-y divide-gray-50">
-                {dueCards.map((card) => (
-                  <div key={card.id} className="px-4 py-3 flex items-center justify-between">
-                    <span className="text-2xl font-bold">{getDisplayChar(card, scriptMode)}</span>
-                    <span className="text-gray-600 text-sm">{card.meaning}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="text-center py-8 space-y-2">
+              <p className="text-5xl font-bold text-orange-500">{dueCards.length}</p>
+              <p className="text-gray-500 text-sm">từ cần ôn hôm nay</p>
             </div>
 
             <button
