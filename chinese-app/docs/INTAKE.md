@@ -423,3 +423,19 @@ After the Từ vựng-only simplification, users have no visibility into which w
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-15] — Amendment: Ôn Tập — Remove word list
+
+**Amends:** Section "[2026-06-15] — SRS Enhancement: Ôn Tập (Due-Word Review)"
+**Specific change:**
+- AC-5 (original): "Ôn tập screen has its own lesson filter buttons; selecting a filter updates the word list without a page reload."
+  **New:** "Selecting a filter updates the due count without a page reload."
+- AC-6 (original): "Ôn tập word list shows only reviewed words that are due (not new cards); each row shows Chinese character + Vietnamese meaning."
+  **New:** "No word list — the due count is displayed as a number only (e.g. '5 từ cần ôn hôm nay')."
+- Design note (original): "Ôn tập word list: flat, minimal — Chinese character (large) + Vietnamese meaning. No pinyin, no word type."
+  **New:** Removed entirely.
+
+**New agreement:** The `/on-tap` screen shows lesson filter buttons, a due count number, and the "Bắt đầu ôn" button. No per-word list is rendered. All other AC (1–4, 7–13) and in-progress tracking are unchanged.
+**Reason for change:** Word list adds visual weight without value — the user does not need to preview individual words before starting the session.
