@@ -30,6 +30,7 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
 
   const [resolved, setResolved] = useState(0);
   const [answered, setAnswered] = useState(false);
+  const [attempt, setAttempt] = useState(0);
 
   const totalCards = useRef(queue.length);
   const card = queue[0] as VocabCard | undefined;
@@ -75,6 +76,7 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
     const newQueue = [...queue.slice(1), queue[0]];
     setQueue(newQueue);
     setAnswered(false);
+    setAttempt((a) => a + 1);
   }
 
   function handleResult(correct: boolean) {
@@ -128,10 +130,10 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
         </div>
       )}
 
-      {/* Luyện viết — WritingInput shows its own result when submitted; key forces remount on card change */}
+      {/* Luyện viết — WritingInput shows its own result when submitted; key forces remount on card change or re-queue */}
       {mode === "luyen-viet" && card && (
         <WritingInput
-          key={card.id}
+          key={`${card.id}-${attempt}`}
           expected={getDisplayChar(card, scriptMode)}
           expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
           onResult={(correct) => handleResult(correct)}

@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.2.1] - 2026-06-16
+
+### Fixed
+- Luyện viết: "Kiểm tra" button disappears when the last card in a session is answered Wrong. Root cause: `WritingInput` uses `key={card.id}`; when the same card re-queues to position 0, the key is unchanged so React preserves `submitted=true` state, hiding the button. Fix: added `attempt` counter to `VocabSession` that increments on every Wrong; key changed to `` `${card.id}-${attempt}` `` to force a clean remount.
+
+---
+
 ## [2.2.0] - 2026-06-15
 
 ### Added
