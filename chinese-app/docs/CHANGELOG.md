@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.2.3] - 2026-06-18
+
+### Changed
+- KB: Nhóm 7 — bảng tổng hợp phương vị từ (16 từ: 上/下/前/后/里/外/左/右/东/南/西/北/旁/这/那边 + 中间, với cột Dạng 面)
+
+---
+
 ## [2.2.2] - 2026-06-18
 
 ### Changed
