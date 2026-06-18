@@ -265,3 +265,61 @@ Full lesson content for Bài 11 "Mùa Đông Ở Bắc Kinh Khá Lạnh" extract
 - Q3 (分钟): A — add vocab entry + grammar pattern in Nhóm 6
 - Q4 (风风雨雨): A — add as Thành ngữ vocab entry
 - Q5 (人们常说...): A — add to § 6 + practice bank
+
+---
+
+## [2026-06-18] — Bổ sung 方位词 (Phương vị từ)
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/phuong-vi-tu.md` — supplementary reference on directional/positional words
+
+### Input summary
+Supplementary reference covering 13 positional word entries (most with both 边 and 面 variants), a 边 vs 面 usage distinction rule, 5 grammar patterns using positional words, time expressions extending § 3.4 (前天/后天) and a new 上/下 time-unit subsection, and 5 miscellaneous vocab items from the pinyin practice section.
+
+### Agreed scope
+
+**chinese-brain.md — Từ vựng (### Bài 7): 10 new entries**
+- 中间/中間 /zhōngjiān/ — Trung Gian — Phương vị từ — ở giữa
+- 旁边/旁邊 /pángbiān/ — Bàng Biên — Phương vị từ — bên cạnh
+- 这边/這邊 /zhèbiān/ — — — Phương vị từ — bên này
+- 那边/那邊 /nàbiān/ — — — Phương vị từ — bên đó
+- —/上面 /shàngmiàn/ — Thượng Diện — Phương vị từ — phía trên
+- —/下面 /xiàmiàn/ — Hạ Diện — Phương vị từ — phía dưới
+- 外国人/外國人 /wàiguórén/ — Ngoại Quốc Nhân — DT — người nước ngoài
+- 外语/外語 /wàiyǔ/ — Ngoại Ngữ — DT — ngoại ngữ
+- —/孩子 /háizi/ — Hài Tử — DT — con cái (trẻ em nói chung)
+- 地铁/地鐵 /dìtiě/ — Địa Thiết — DT — tàu điện ngầm
+
+**chinese-brain.md — § 5 Ngữ pháp (Nhóm 7): 5 new #### patterns**
+1. 边 (biān) vs 面 (miàn) — phân biệt cách dùng (includes all variant pairs; includes 上面/下面 as formal variants of 上边/下边 already in KB)
+2. 在 A 和 B 中间 — ở giữa A và B
+3. DT + phương vị từ đơn (单字) — DT + 上/下/里/外/前/后 to express location (在车上, 家里, 地上, etc.)
+4. Phương vị từ + DT (prefix modifier) — 外国人, 外国公司, 外语 as examples
+5. 上/下 + DT → ĐT (directional verb) — 上车, 下车, 上楼, 下楼 (remains in Nhóm 7 per customer)
+
+**chinese-brain.md — § 3 Số đếm & Thời gian:**
+- Extend § 3.4: add 前天 (hôm kia) and 后天/後天 (ngày kia)
+- New subsection (上/下 + lượng từ + thời gian): 上个月/上個月, 下个月/下個月, 上星期/下星期, 上次/下次
+
+### Out of scope (agreed)
+- 上边, 下边, 左边, 右边, 东边, 西边, 南边, 北边 — KBP-2: all already in KB Bài 7
+- 前边/前面, 后边/后面, 里边/里面, 外边/外面 as standalone vocab — Q2: appear only as examples in Nhóm 7 patterns
+- 车/車 standalone vocab — Q4a: not added
+- 外公司 standalone — Q5: replaced by 外国公司 as grammar example in Nhóm 7 only
+- 上面/下面 as standalone vocab only — Q3b: added as vocab rows AND explained in Nhóm 7 边 vs 面 pattern
+- Practice bank: no complete practice sentences in source
+
+### Debator concerns resolved
+- **外公司 (non-standard term):** Customer replaced with 外国公司 (standard form) as grammar example in Nhóm 7 only — no vocab entry.
+- **边/面 form pairs (前边/前面 etc.):** Customer confirmed these appear only in Nhóm 7 explanations, not as standalone vocab rows.
+- **上面/下面 (near-synonym of existing 上边/下边):** Not KBP-2 violations (different characters); confirmed add as vocab rows + explain in Nhóm 7.
+- **上/下 + DT verb pattern:** Customer assigned to Nhóm 7 (not Nhóm 5).
+
+### Open questions resolved
+- Q1 (Bài assignment): Bài 7
+- Q2 (边/面 pairs as vocab): No — Nhóm 7 only
+- Q3 (上面/下面): Add as vocab rows + explain in Nhóm 7
+- Q4a (车/車 vocab): No — not added
+- Q4b (上/下 verb pattern group): Nhóm 7
+- Q5 (外公司): Use 外国公司 as grammar example in Nhóm 7 only
+- Q6 (孩子, 地铁): Yes — add both as vocab entries
