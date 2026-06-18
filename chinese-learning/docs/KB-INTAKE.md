@@ -323,3 +323,33 @@ Supplementary reference covering 13 positional word entries (most with both 边 
 - Q4b (上/下 verb pattern group): Nhóm 7
 - Q5 (外公司): Use 外国公司 as grammar example in Nhóm 7 only
 - Q6 (孩子, 地铁): Yes — add both as vocab entries
+
+---
+
+## [2026-06-18] — Nhóm 7 bảng tổng hợp phương vị từ
+
+**Status:** Agreement reached
+**Source:** Customer-noticed gap — follow-up to 方位词 supplement (2026-06-18); no new reference file
+
+### Input summary
+Customer observed that 旁边 and the compass/directional/demonstrative 边 words (东边, 南边, 西边, 北边, 这边, 那边, 左边, 右边) were missing as an explicit group in Nhóm 7. All words already exist as vocab in Bài 7. Request is to add a comprehensive reference table as a new `####` pattern at the start of Nhóm 7.
+
+### Agreed scope
+- New `####` "Danh sách phương vị từ cơ bản — Bảng tổng hợp" at the START of Nhóm 7 (before existing pattern 1)
+- Table columns: Dạng 边 (简体 / 繁體) | Dạng 面 | Pinyin (边) | Nghĩa
+- 16 rows: 上/下/前/后/里/外边 (with 面 variants) + 左/右/东/南/西/北/旁/这/那边 + 中间 (面 = —)
+- TOC updated with new pattern link under Nhóm 7
+- Timestamp updated (KBP-7)
+
+### Out of scope (agreed)
+- No new vocab entries (all 9 words already in Bài 7)
+- No practice bank changes
+
+### Debator concerns resolved
+- KBP-2: Adding to grammar patterns ≠ vocab duplicate — not a violation
+- KBP-6: Source traceable to phuong-vi-tu.md supplement + existing Bài 7 vocab
+- Pinyin tone inconsistency noted: existing vocab entries for 左/右/东/南/西/北边 use neutral "bian"; new table uses toned "biān". Checker will flag; user may standardize vocab later.
+
+### Open questions resolved
+- Q1 (structure): New `####` reference table at start of Nhóm 7 (not expanding existing pattern)
+- Q1 (面 column): Words with no 面 variant use `—`
