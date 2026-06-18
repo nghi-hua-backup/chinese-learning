@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Nhóm 2 — thêm quy tắc cốt lõi 的 (2026-06-14)
+> **Cập nhật lần cuối:** Phương vị từ — thêm 10 từ vựng Bài 7 + 5 ngữ pháp Nhóm 7 + § 3.7 (2026-06-18)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -49,6 +49,7 @@
   - [3.4 Hôm nay / Ngày mai / Hôm qua](#34-hôm-nay-ngày-mai-hôm-qua)
   - [3.5 Các buổi trong ngày](#35-các-buổi-trong-ngày)
   - [3.6 Đọc giờ](#36-đọc-giờ)
+  - [3.7 上/下 + Lượng từ + Thời gian](#37-上下-lượng-từ-thời-gian)
 - [4. Lượng từ (Measure Words)](#4-lượng-từ-measure-words)
   - [个 / 個 (gè)](#个-個-gè)
   - [口 (kǒu) — dùng đếm người trong gia đình](#口-kǒu-dùng-đếm-người-trong-gia-đình)
@@ -100,6 +101,11 @@
     - [在 + Địa điểm + ĐT — Ở đâu làm gì](#在-địa-điểm-đt-ở-đâu-làm-gì)
     - [CN + 住在 + Địa điểm — Sống/ở tại nơi nào](#cn-住在-địa-điểm-sốngở-tại-nơi-nào)
     - [A + 在 + B + (的) + Phương vị từ — Vị trí tương đối](#a-在-b-的-phương-vị-từ-vị-trí-tương-đối)
+    - [边 vs 面 — Phân biệt cách dùng](#边-vs-面-phân-biệt-cách-dùng)
+    - [在 A 和 B 中间 — Ở giữa A và B](#在-a-和-b-中间-ở-giữa-a-và-b)
+    - [DT + phương vị từ đơn — Vị trí rút gọn](#dt-phương-vị-từ-đơn-vị-trí-rút-gọn)
+    - [Phương vị từ + DT — Bổ nghĩa cho DT](#phương-vị-từ-dt-bổ-nghĩa-cho-dt)
+    - [上/下 + DT → ĐT — Hành động di chuyển](#上下-dt-đt-hành-động-di-chuyển)
   - [Nhóm 8: Số từ và lượng từ](#nhóm-8-số-từ-và-lượng-từ)
     - [Số từ + Lượng từ + Danh từ — Cấu trúc số lượng](#số-từ-lượng-từ-danh-từ-cấu-trúc-số-lượng)
     - [零下 + [số] + 度 — Nhiệt độ âm](#零下-số-度-nhiệt-độ-âm)
@@ -528,6 +534,16 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 系 | 繫 | /xì/ | Hệ | DT | khoa (trong trường học) |
 | 儿子 | 兒子 | /érzi/ | Nhi Tử | DT | con trai |
 | 女儿 | 女兒 | /nǚ'ér/ | Nữ Nhi | DT | con gái |
+| 中间 | 中間 | /zhōngjiān/ | Trung Gian | Phương vị từ | ở giữa |
+| 旁边 | 旁邊 | /pángbiān/ | Bàng Biên | Phương vị từ | bên cạnh |
+| 这边 | 這邊 | /zhèbiān/ | — | Phương vị từ | bên này |
+| 那边 | 那邊 | /nàbiān/ | — | Phương vị từ | bên đó |
+| — | 上面 | /shàngmiàn/ | Thượng Diện | Phương vị từ | phía trên |
+| — | 下面 | /xiàmiàn/ | Hạ Diện | Phương vị từ | phía dưới |
+| 外国人 | 外國人 | /wàiguórén/ | Ngoại Quốc Nhân | DT | người nước ngoài |
+| 外语 | 外語 | /wàiyǔ/ | Ngoại Ngữ | DT | ngoại ngữ |
+| — | 孩子 | /háizi/ | Hài Tử | DT | con cái (trẻ em nói chung) |
+| 地铁 | 地鐵 | /dìtiě/ | Địa Thiết | DT | tàu điện ngầm |
 
 ### Bài 8 — Cuối tuần cậu thích làm gì?
 
@@ -798,6 +814,8 @@ Ví dụ:
 | — | 明天 | míngtiān | Minh Thiên | ngày mai |
 | — | 昨天 | zuótiān | Tác Thiên | hôm qua |
 | — | 天 | tiān | Thiên | ngày, hôm; trời |
+| — | 前天 | qiántiān | Tiền Thiên | hôm kia |
+| 后天 | 後天 | hòutiān | Hậu Thiên | ngày kia |
 
 ### 3.5 Các buổi trong ngày
 
@@ -834,6 +852,19 @@ Ví dụ:
 - 08:30 → 八点三十分 /bā diǎn sān shí fēn/ hoặc 八点半 /bā diǎn bàn/
 - 13:25 → 下午一点二十五分 /xiàwǔ yī diǎn èr shí wǔ fēn/
 - 20:59 → 晚上八点五十九分 /wǎnshàng bā diǎn wǔ shí jiǔ fēn/
+
+### 3.7 上/下 + Lượng từ + Thời gian
+
+Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lượng từ thời gian để chỉ kỳ trước và kỳ sau.
+
+| 简体 | 繁體 | Pinyin | Nghĩa |
+|------|------|--------|-------|
+| 上个月 | 上個月 | shàng gè yuè | tháng trước |
+| 下个月 | 下個月 | xià gè yuè | tháng sau |
+| — | 上星期 | shàng xīngqī | tuần trước |
+| — | 下星期 | xià xīngqī | tuần sau |
+| — | 上次 | shàng cì | lần trước |
+| — | 下次 | xià cì | lần sau |
 
 ---
 
@@ -1422,6 +1453,83 @@ Ví dụ:
 - 饭馆在学校的左边。/ 飯館在學校的左邊。 /fànguǎn zài xuéxiào de zuǒbian/ — Quán cơm ở bên trái trường học.
 - 食堂在学校的北边。/ 食堂在學校的北邊。 /shítáng zài xuéxiào de běibian/ — Nhà ăn ở phía bắc trường học.
 - 图书馆在教学楼东边。/ 圖書館在教學樓東邊。 /túshūguǎn zài jiàoxuélóu dōngbian/ — Thư viện ở phía đông tòa nhà dạy học.
+
+---
+
+#### 边 (biān) vs 面 (miàn) — Phân biệt cách dùng
+
+**Giải thích:**
+- **面 (miàn)**: dùng cho vật thể có "mặt" (bề mặt phẳng) như sách, màn hình TV, bàn, ghế; dùng trong cả văn nói và văn viết.
+- **边 (biān)**: dùng nhiều hơn trong văn nói; một số địa phương dùng chuyên biệt.
+- Trong thực tế, hai dạng thường có thể thay thế nhau.
+
+**Các cặp tương đương:**
+
+| Dạng 边 | Dạng 面 | Nghĩa |
+|---------|---------|-------|
+| 上边 / 上邊 | 上面 | phía trên |
+| 下边 / 下邊 | 下面 | phía dưới |
+| 前边 / 前邊 | 前面 | phía trước |
+| 后边 / 後邊 | 后面 / 後面 | phía sau |
+| 里边 / 裡邊 | 里面 / 裡面 | bên trong |
+| 外边 / 外邊 | 外面 | bên ngoài |
+
+---
+
+#### 在 A 和 B 中间 — Ở giữa A và B
+
+**Cấu trúc:** 在 + A + 和 + B + 中间 / 中間
+
+**Giải thích:** Diễn tả vị trí ở giữa hai đối tượng A và B.
+
+**Ví dụ:**
+- 图书馆在教学楼和宿舍中间。/ 圖書館在教學樓和宿舍中間。 /túshūguǎn zài jiàoxuélóu hé sùshè zhōngjiān/ — Thư viện ở giữa tòa nhà dạy học và ký túc xá.
+- 我坐在他和她中间。/ 我坐在他和她中間。 /wǒ zuò zài tā hé tā zhōngjiān/ — Tôi ngồi ở giữa anh ấy và cô ấy.
+
+---
+
+#### DT + phương vị từ đơn — Vị trí rút gọn
+
+**Cấu trúc:** DT + 上 / 下 / 里 / 外 / 前 / 后
+
+**Giải thích:** Phương vị từ đơn (một chữ) đứng ngay sau danh từ tạo thành cụm chỉ vị trí rút gọn, thường gặp trong văn nói.
+
+**Ví dụ:**
+- 在车上 / 在車上 /zài chē shàng/ — ở trên xe
+- 家里 / 家裡 /jiā lǐ/ — trong nhà
+- 地上 /dì shàng/ — trên mặt đất
+- 在楼下 / 在樓下 /zài lóu xià/ — ở dưới lầu
+- 地下 /dì xià/ — dưới mặt đất (ngầm)
+- 马路上 / 馬路上 /mǎlù shàng/ — trên đường
+
+---
+
+#### Phương vị từ + DT — Bổ nghĩa cho DT
+
+**Cấu trúc:** Phương vị từ + DT
+
+**Giải thích:** Phương vị từ (như 外, 里, 前, 后) đứng trước danh từ đóng vai trò tiền tố bổ nghĩa, tạo thành danh từ ghép mang nghĩa liên quan đến phía đó.
+
+**Ví dụ:**
+- 外国人 / 外國人 /wàiguórén/ — người nước ngoài (外 + 国 + 人)
+- 外国公司 / 外國公司 /wàiguó gōngsī/ — công ty nước ngoài
+- 外语 / 外語 /wàiyǔ/ — ngoại ngữ (外 + 语)
+- 在国外工作 / 在國外工作 /zài guówài gōngzuò/ — làm việc ở nước ngoài
+- 在国外留学 / 在國外留學 /zài guówài liúxué/ — du học ở nước ngoài
+
+---
+
+#### 上/下 + DT → ĐT — Hành động di chuyển
+
+**Cấu trúc:** 上 / 下 + DT (phương tiện hoặc địa điểm)
+
+**Giải thích:** 上 và 下 đứng trước danh từ chỉ phương tiện hoặc địa điểm, đóng vai trò như động từ chỉ hướng di chuyển: 上 = lên vào; 下 = xuống ra.
+
+**Ví dụ:**
+- 上车 / 上車 /shàng chē/ — lên xe
+- 下车 / 下車 /xià chē/ — xuống xe
+- 上楼 / 上樓 /shàng lóu/ — lên lầu
+- 下楼 / 下樓 /xià lóu/ — xuống lầu
 
 ---
 
