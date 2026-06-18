@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.2.2] - 2026-06-18
+
+### Changed
+- KB: 方位词 phương vị từ — 10 vocab entries (Bài 7), 5 grammar patterns (Nhóm 7), § 3.7 上/下 + lượng từ thời gian (6 entries), § 3.4 前天/后天 extension
+
+---
+
 ## [2.2.1] - 2026-06-16
 
 ### Fixed
