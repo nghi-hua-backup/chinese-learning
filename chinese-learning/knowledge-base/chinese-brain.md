@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Phương vị từ — thêm 10 từ vựng Bài 7 + 5 ngữ pháp Nhóm 7 + § 3.7 (2026-06-18)
+> **Cập nhật lần cuối:** Nhóm 7 — thêm bảng tổng hợp phương vị từ (2026-06-18)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -98,6 +98,7 @@
     - [还 (hái) + ĐT/HDT — Còn, vẫn](#还-hái-đthdt-còn-vẫn)
     - [分钟 vs 分 — Phân biệt khoảng thời gian và mốc thời gian](#分钟-vs-分-phân-biệt-khoảng-thời-gian-và-mốc-thời-gian)
   - [Nhóm 7: Địa điểm và vị trí](#nhóm-7-địa-điểm-và-vị-trí)
+    - [Danh sách phương vị từ cơ bản — Bảng tổng hợp](#danh-sách-phương-vị-từ-cơ-bản-bảng-tổng-hợp)
     - [在 + Địa điểm + ĐT — Ở đâu làm gì](#在-địa-điểm-đt-ở-đâu-làm-gì)
     - [CN + 住在 + Địa điểm — Sống/ở tại nơi nào](#cn-住在-địa-điểm-sốngở-tại-nơi-nào)
     - [A + 在 + B + (的) + Phương vị từ — Vị trí tương đối](#a-在-b-的-phương-vị-từ-vị-trí-tương-đối)
@@ -1410,6 +1411,29 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 ---
 
 ### Nhóm 7: Địa điểm và vị trí
+
+#### Danh sách phương vị từ cơ bản — Bảng tổng hợp
+
+| Dạng 边 (简体 / 繁體) | Dạng 面 | Pinyin (边) | Nghĩa |
+|---------------------|---------|------------|-------|
+| 上边 / 上邊 | 上面 | shàngbiān | phía trên |
+| 下边 / 下邊 | 下面 | xiàbiān | phía dưới |
+| 前边 / 前邊 | 前面 | qiánbiān | phía trước |
+| 后边 / 後邊 | 后面 / 後面 | hòubiān | phía sau |
+| 里边 / 裡邊 | 里面 / 裡面 | lǐbiān | bên trong |
+| 外边 / 外邊 | 外面 | wàibiān | bên ngoài |
+| 左边 / 左邊 | — | zuǒbiān | bên trái |
+| 右边 / 右邊 | — | yòubiān | bên phải |
+| 东边 / 東邊 | — | dōngbiān | phía đông |
+| 南边 / 南邊 | — | nánbiān | phía nam |
+| 西边 / 西邊 | — | xībiān | phía tây |
+| 北边 / 北邊 | — | běibiān | phía bắc |
+| 旁边 / 旁邊 | — | pángbiān | bên cạnh |
+| 这边 / 這邊 | — | zhèbiān | bên này |
+| 那边 / 那邊 | — | nàbiān | bên đó |
+| 中间 / 中間 | — | zhōngjiān | ở giữa |
+
+---
 
 #### 在 + Địa điểm + ĐT — Ở đâu làm gì
 
