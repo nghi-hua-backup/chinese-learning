@@ -136,15 +136,22 @@ Trước khi commit, cập nhật `chinese-app/docs/CHANGELOG.md`:
    - KB: Bài N — X từ vựng, Y pattern ngữ pháp, Z câu luyện tập
    ```
 
-### Bước 8 — Commit và push
+### Bước 8 — Regenerate grammar reference + Commit và push
 
-Sau khi hoàn thành tất cả cập nhật và báo cáo kết quả:
+Trước khi commit, luôn tái tạo `grammar-reference.html` từ KB đã cập nhật:
+
+```
+node scripts/generate-grammar-html.js
+```
+
+Sau đó commit tất cả:
 
 ```
 # If the source file is a .md in chinese-learning/references/ (not an image), add it:
 git add chinese-learning/references/<source-file-if-applicable>
 git add chinese-learning/knowledge-base/chinese-brain.md
 git add chinese-learning/knowledge-base/chinese-practice-bank.md
+git add chinese-learning/grammar-reference.html
 git add chinese-app/docs/CHANGELOG.md
 git commit -m "kb: add Bài N content (X từ vựng, Y ngữ pháp, Z câu luyện tập)"
 git push origin main

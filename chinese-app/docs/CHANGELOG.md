@@ -18,6 +18,14 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.3.0] - 2026-06-19
+
+### Added
+- Grammar Reference HTML (FR-13): standalone `chinese-learning/grammar-reference.html` — 51 patterns across 10 Nhóm, book-style cards with colored formula chips, SVG fan arrows, Phồn thể ⇄ Giản thể toggle
+- Generator script `scripts/generate-grammar-html.js` — Node.js, no external dependencies; auto-invoked in `/kb-update` Bước 8
+
+---
+
 ## [2.2.3] - 2026-06-18
 
 ### Changed

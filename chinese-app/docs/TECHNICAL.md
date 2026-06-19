@@ -274,16 +274,18 @@ New Zustand state persisted to `chinese-srs-progress`:
 
 ---
 
-## Grammar Reference HTML (PF-2)
+## Grammar Reference HTML (FR-13)
 
 Standalone reference file — entirely outside the Next.js app. No P1–P10 constraints apply.
 
 - **Generator:** `scripts/generate-grammar-html.js` — Node.js, zero npm dependencies, run with `node scripts/generate-grammar-html.js` from the repo root
-- **Output:** `chinese-learning/grammar-reference.html` — open locally in any browser
-- **Input:** `chinese-learning/knowledge-base/chinese-brain.md` §5 Ngữ pháp section
-- **Formula color mapping:** `CN` → purple; `了`/`的` → blue; `HDT`/`HĐT` → gold/brown; `DT` → green; `ĐT` → teal; pure Chinese chars → red; anything else → neutral
-- **Auto-sync:** script is called at the end of every `/lesson` and `/kb-update` skill run; the generated HTML is committed in the same git commit as the KB update
-- **SVG arrows:** drawn at runtime via `getBoundingClientRect()` in inline `<script>`; redrawn on `load` + `resize`
+- **Output:** `chinese-learning/grammar-reference.html` — open locally in any browser; 51 patterns across 10 Nhóm as of 2026-06-19
+- **Input:** `chinese-learning/knowledge-base/chinese-brain.md` §5 Ngữ pháp section (between `## 5.` and `## 6.` headings)
+- **Parsing:** `#### ` → pattern; `**Cấu trúc[^:]*:**` → formula chips; `**Giải thích:**` first sentence → amber note; all `- Chinese /pinyin/ — Vietnamese` bullets → examples
+- **Formula color mapping:** `CN` → purple; `了`/`的`/`吗`/`吧` → blue particle; `HDT`/`HĐT` → gold/brown; `DT`/`TN` → green; `ĐT` → teal; pure Chinese chars → red key; anything else → neutral
+- **Key char sizing:** `data-len` attribute on `.key-char`; CSS `[data-len="3"]` → 42px, `[data-len="4"]` → 34px, ≥5 → 26px
+- **Auto-sync:** invoked in Bước 8 of `/kb-update` (and `/lesson` which follows the same steps); the generated HTML is `git add`ed and committed in the same KB commit
+- **SVG arrows:** drawn at runtime via `getBoundingClientRect()` in inline `<script>`; redrawn on `load` + `resize`; unique `markerId` per card avoids SVG `id` collisions
 
 ---
 

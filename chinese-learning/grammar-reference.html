@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngữ pháp Tiếng Trung — Tài liệu tham khảo</title>
+  <!-- Generated 2026-06-19 by scripts/generate-grammar-html.js — 51 patterns — do not edit by hand -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background: #f5f3ef;
+      color: #1a1a1a;
+      padding: 36px 32px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 40px;
+      padding-bottom: 18px;
+      border-bottom: 2px solid #ddd9d2;
+    }
+
+    .title-zh {
+      font-size: 32px;
+      font-weight: 800;
+      color: #111;
+      letter-spacing: -0.5px;
+    }
+
+    .title-vi {
+      font-size: 14px;
+      color: #999;
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    .toggle-btn {
+      background: white;
+      border: 1.5px solid #c9c4bc;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #555;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .toggle-btn:hover {
+      border-color: #7c3aed;
+      color: #7c3aed;
+      background: #faf8ff;
+    }
+
+    /* ── Group header ── */
+    .group-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #4b5563;
+      margin-bottom: 20px;
+      padding: 10px 16px;
+      background: linear-gradient(90deg, #ede9fe 0%, transparent 100%);
+      border-left: 4px solid #7c3aed;
+      border-radius: 4px;
+    }
+
+    .lesson-section { margin-bottom: 48px; }
+
+    /* ── Pattern card ── */
+    .pattern-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 6px 20px rgba(0,0,0,0.04);
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+
+    /* ── Formula header ── */
+    .formula-header {
+      padding: 24px 32px 20px;
+      border-bottom: 2px solid #f0ede8;
+      background: #fefefe;
+    }
+
+    .formula-meta {
+      font-size: 11px;
+      font-weight: 700;
+      color: #bbb5ad;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .formula-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .fc {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .fc-subject   { color: #2563eb; }
+    .fc-key       { color: #dc2626; }
+    .fc-adjective { color: #92400e; }
+    .fc-particle  { color: #1d4ed8; }
+    .fc-noun      { color: #16a34a; }
+    .fc-verb      { color: #0d9488; }
+    .fc-place     { color: #d97706; }
+    .fc-neutral   { color: #374151; }
+
+    .fc-op {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ccc5bb;
+      line-height: 1;
+    }
+
+    .formula-vi {
+      font-size: 18px;
+      color: #6d28d9;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .formula-note {
+      font-size: 18px;
+      color: #b45309;
+      font-style: italic;
+    }
+
+    /* ── Card body ── */
+    .card-body {
+      display: flex;
+      position: relative;
+      min-height: 200px;
+    }
+
+    /* ── Left panel ── */
+    .left-panel {
+      width: 200px;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      background: #fdfcfb;
+      border-right: 2px solid #f0ede8;
+      position: relative;
+      z-index: 1;
+      gap: 8px;
+    }
+
+    .key-pinyin {
+      font-size: 13px;
+      color: #a0998e;
+      font-style: italic;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .key-char {
+      font-size: 56px;
+      font-weight: 900;
+      color: #dc2626;
+      text-align: center;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    /* Smaller font for 3-char key elements (e.g. 太…了) */
+    .key-char[data-len="3"] { font-size: 42px; }
+    .key-char[data-len="4"] { font-size: 34px; }
+    .key-char[data-len="5"],
+    .key-char[data-len="6"] { font-size: 26px; }
+
+    .key-meaning {
+      font-size: 13px;
+      color: #6b6560;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* ── Examples panel ── */
+    .examples-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 52px; /* room for SVG fan arrows */
+      position: relative;
+      z-index: 1;
+    }
+
+    .example-row {
+      padding: 18px 28px 18px 0;
+      border-bottom: 1px solid #f7f5f3;
+    }
+
+    .example-row:last-child { border-bottom: none; }
+
+    .no-examples {
+      padding: 32px;
+      color: #ccc5bb;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .pinyin {
+      font-size: 14px;
+      color: #b8b0a6;
+      margin-bottom: 2px;
+      font-style: italic;
+      letter-spacing: 0.4px;
+    }
+
+    .chinese {
+      font-size: 36px;
+      font-weight: 600;
+      color: #111827;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    /* Keyword spans in examples */
+    .kw      { color: #dc2626; font-weight: 900; }
+    .kw-blue { color: #1d4ed8; font-weight: 900; }
+    .kw-subj { color: #2563eb; font-weight: 700; }
+    .kw-noun { color: #16a34a; font-weight: 700; }
+
+    .translation {
+      font-size: 15px;
+      color: #6b6560;
+    }
+
+    /* ── Script toggle ── */
+    .trad { display: none; }
+    body.traditional .simp { display: none; }
+    body.traditional .trad { display: inline; }
+
+    /* ── SVG arrow canvas ── */
+    svg.arrows {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: visible;
+      z-index: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <div class="title-zh">语法参考</div>
+      <div class="title-vi">Tài liệu tham khảo Ngữ pháp Tiếng Trung</div>
+    </div>
+    <button class="toggle-btn" onclick="toggleScript(this)">Phồn thể ⇄ Giản thể</button>
+  </header>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 1: Mô tả và mức độ</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 1.1</div>
+        <div class="formula-row"><span class="fc fc-neutral">Chủ ngữ</span><span class="fc-op">+</span><span class="fc fc-neutral">Phó từ</span><span class="fc-op">+</span><span class="fc fc-neutral">Hình dung từ</span></div>
+        <div class="formula-vi">Chủ ngữ + Phó từ + Hình dung từ</div>
+        <div class="formula-note">Cấu trúc cơ bản để miêu tả tính chất.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">—</div>
+          <div class="key-meaning">Câu miêu tả cơ bản</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">hǎo mǎ bù dà</div>
+            <div class="chinese">
+              <span class="simp">好马不大。</span>
+              <span class="trad">好馬不大。</span>
+            </div>
+            <div class="translation">Con ngựa tốt không to.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bái nǚ bù hǎo</div>
+            <div class="chinese">
+              <span class="simp">白女不好。</span>
+            </div>
+            <div class="translation">Người phụ nữ trắng không tốt.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">mǎ hěn dà</div>
+            <div class="chinese">
+              <span class="simp">马很大。</span>
+              <span class="trad">馬很大。</span>
+            </div>
+            <div class="translation">Con ngựa rất to.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 1.2</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-key">很</span><span class="fc-op">+</span><span class="fc fc-adjective">HDT</span></div>
+        <div class="formula-vi">Chủ ngữ + <strong>很</strong> + Tính từ</div>
+        <div class="formula-note">很 thường không thể bỏ khi không có PT mức độ nào khác; nếu bỏ 很 câu có hàm ý so sánh hoặc nghe lạ.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">hěn</div>
+          <div class="key-char">很</div>
+          <div class="key-meaning">Mức độ "rất"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ hěn hǎo</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">很</span>好。</span>
+            </div>
+            <div class="translation">Bạn rất tốt/ổn.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">hànyǔ hěn nán</div>
+            <div class="chinese">
+              <span class="simp">汉语<span class="kw">很</span>难。</span>
+              <span class="trad">漢語<span class="kw">很</span>難。</span>
+            </div>
+            <div class="translation">Tiếng Trung rất khó.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bàba hěn máng</div>
+            <div class="chinese">
+              <span class="simp">爸爸<span class="kw">很</span>忙。</span>
+            </div>
+            <div class="translation">Bố rất bận.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 1.3</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-key">太</span><span class="fc-op">+</span><span class="fc fc-adjective">HDT</span><span class="fc-op">+</span><span class="fc fc-particle">了</span></div>
+        <div class="formula-vi">Chủ ngữ + <strong>太</strong> + Tính từ + <strong>了</strong></div>
+        <div class="formula-note">Diễn đạt mức độ vượt quá giới hạn bình thường.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">tài … le</div>
+          <div class="key-char" data-len="3">太…了</div>
+          <div class="key-meaning">Mức độ "quá"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">tài hǎo le</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">太</span>好<span class="kw">了</span>！</span>
+            </div>
+            <div class="translation">Tốt quá!</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">tài dà le</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">太</span>大<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">To quá.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ tài nán le</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">太</span>难<span class="kw">了</span>。</span>
+              <span class="trad">我<span class="kw">太</span>難<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">Tôi khó lắm rồi (tôi khổ quá).</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">tā gēge tài máng le</div>
+            <div class="chinese">
+              <span class="simp">她哥哥<span class="kw">太</span>忙<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">Anh trai cô ấy bận quá.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">hànyǔ bù tài nán</div>
+            <div class="chinese">
+              <span class="simp">汉语不<span class="kw">太</span>难。</span>
+              <span class="trad">漢語不<span class="kw">太</span>難。</span>
+            </div>
+            <div class="translation">Tiếng Trung không quá khó.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 1.4</div>
+        <div class="formula-row"><span class="fc fc-key">最</span><span class="fc-op">+</span><span class="fc fc-neutral">Hình dung từ</span></div>
+        <div class="formula-vi"><strong>最</strong> + Hình dung từ</div>
+        <div class="formula-note">最 (zuì) đặt trước tính từ hoặc động từ để diễn đạt mức độ cao nhất ("nhất").</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">zuì</div>
+          <div class="key-char">最</div>
+          <div class="key-meaning">So sánh nhất</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">zuì gāo</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">最</span>高</span>
+            </div>
+            <div class="translation">cao nhất</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zuì kě'ài</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">最</span>可爱</span>
+              <span class="trad"><span class="kw">最</span>可愛</span>
+            </div>
+            <div class="translation">đáng yêu nhất</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zuì shuài</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">最</span>帅</span>
+            </div>
+            <div class="translation">đẹp trai nhất</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ yéye shì zuì gāo hé zuì shuài de rén</div>
+            <div class="chinese">
+              <span class="simp">我爷爷是<span class="kw">最</span>高和<span class="kw">最</span>帅的人。</span>
+              <span class="trad">我爺爺是<span class="kw">最</span>高和<span class="kw">最</span>帥的人。</span>
+            </div>
+            <div class="translation">Ông nội tôi là người cao nhất và đẹp trai nhất.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">māma shì zuì hǎo de</div>
+            <div class="chinese">
+              <span class="simp">妈妈是<span class="kw">最</span>好的。</span>
+              <span class="trad">媽媽是<span class="kw">最</span>好的。</span>
+            </div>
+            <div class="translation">Mẹ là người tốt nhất.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 2: Trợ từ kết cấu 的</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.1</div>
+        <div class="formula-row"><span class="fc fc-neutral">Bổ nghĩa</span><span class="fc-op">+</span><span class="fc fc-particle">的</span><span class="fc-op">+</span><span class="fc fc-noun">DT</span></div>
+        <div class="formula-vi">Bổ nghĩa + <strong>的</strong> + Danh từ</div>
+        <div class="formula-note">Phần đứng trước 的 là bổ nghĩa (tính từ, cụm từ, đại từ…); phần đứng sau 的 là danh từ chính.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">de</div>
+          <div class="key-char">的</div>
+          <div class="key-meaning">Quy tắc cốt lõi</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">zuì xǐhuān de jìjié</div>
+            <div class="chinese">
+              <span class="simp">**最喜欢<span class="kw">的</span>季节**</span>
+            </div>
+            <div class="translation">mùa yêu thích nhất</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ de shū</div>
+            <div class="chinese">
+              <span class="simp">**我<span class="kw">的</span>书**</span>
+            </div>
+            <div class="translation">sách của tôi</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">piàoliang de lǎoshī</div>
+            <div class="chinese">
+              <span class="simp">**漂亮<span class="kw">的</span>老师**</span>
+            </div>
+            <div class="translation">giáo viên xinh đẹp</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.2</div>
+        <div class="formula-row"><span class="fc fc-neutral">Người sở hữu</span><span class="fc-op">+</span><span class="fc fc-particle">的</span><span class="fc-op">+</span><span class="fc fc-neutral">Vật sở hữu</span></div>
+        <div class="formula-vi">Người sở hữu + <strong>的</strong> + Vật sở hữu</div>
+        <div class="formula-note">Diễn đạt quan hệ sở hữu.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">de</div>
+          <div class="key-char">的</div>
+          <div class="key-meaning">Sở hữu</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ de mǎ</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">的</span>马</span>
+              <span class="trad">我<span class="kw">的</span>馬</span>
+            </div>
+            <div class="translation">con ngựa của tôi</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ de bàba</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">的</span>爸爸</span>
+            </div>
+            <div class="translation">bố của bạn</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ bàba</div>
+            <div class="chinese">
+              <span class="simp">我爸爸</span>
+            </div>
+            <div class="translation">bố tôi (bỏ 的 vì quan hệ thân thiết)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zhè shì wǒ bàba de yínháng</div>
+            <div class="chinese">
+              <span class="simp">这是我爸爸<span class="kw">的</span>银行。</span>
+              <span class="trad">這是我爸爸<span class="kw">的</span>銀行。</span>
+            </div>
+            <div class="translation">Đây là ngân hàng của bố tôi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.3</div>
+        <div class="formula-row"><span class="fc fc-neutral">ĐT hoặc Cụm từ</span><span class="fc-op">+</span><span class="fc fc-particle">的</span><span class="fc-op">+</span><span class="fc fc-noun">DT</span></div>
+        <div class="formula-vi">ĐT hoặc Cụm từ + <strong>的</strong> + Danh từ</div>
+        <div class="formula-note">Dùng 的 để kết nối động từ hoặc cụm từ phức tạp với danh từ phía sau, diễn đạt mục đích, chức năng, hoặc nguồn gốc của sự vật.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">de</div>
+          <div class="key-char">的</div>
+          <div class="key-meaning">Miêu tả mục đích hoặc nguồn gốc</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">chī de dōngxi</div>
+            <div class="chinese">
+              <span class="simp">吃<span class="kw">的</span>东西</span>
+            </div>
+            <div class="translation">Đồ để ăn.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">xué hànyǔ de xuéshēng</div>
+            <div class="chinese">
+              <span class="simp">学汉语<span class="kw">的</span>学生</span>
+            </div>
+            <div class="translation">Học sinh học tiếng Trung.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">qù shànghǎi de fēijī</div>
+            <div class="chinese">
+              <span class="simp">去上海<span class="kw">的</span>飞机</span>
+            </div>
+            <div class="translation">Chuyến bay đi Thượng Hải.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">māma zuò de jiǎozi</div>
+            <div class="chinese">
+              <span class="simp">妈妈做<span class="kw">的</span>饺子</span>
+            </div>
+            <div class="translation">Bánh sủi cảo do mẹ làm.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.4</div>
+        <div class="formula-row"><span class="fc fc-adjective">HDT</span><span class="fc-op">+</span><span class="fc fc-particle">的</span><span class="fc-op">+</span><span class="fc fc-noun">DT</span></div>
+        <div class="formula-vi">Tính từ + <strong>的</strong> + Danh từ</div>
+        <div class="formula-note">Tính từ + 的 + danh từ để miêu tả tính chất.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">de</div>
+          <div class="key-char">的</div>
+          <div class="key-meaning">Quy tắc âm tiết với 的</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">hǎo rén</div>
+            <div class="chinese">
+              <span class="simp">好人</span>
+            </div>
+            <div class="translation">Người tốt.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">xīn shū</div>
+            <div class="chinese">
+              <span class="simp">新书</span>
+            </div>
+            <div class="translation">Sách mới.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nán lǎoshī</div>
+            <div class="chinese">
+              <span class="simp">男老师</span>
+            </div>
+            <div class="translation">Giáo viên nam.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bái tóufa</div>
+            <div class="chinese">
+              <span class="simp">白头发</span>
+            </div>
+            <div class="translation">Tóc bạc.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">piàoliang de nǚ lǎoshī</div>
+            <div class="chinese">
+              <span class="simp">漂亮<span class="kw">的</span>女老师</span>
+            </div>
+            <div class="translation">Cô giáo xinh đẹp.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">cōngmíng de xuéshēng</div>
+            <div class="chinese">
+              <span class="simp">聪明<span class="kw">的</span>学生</span>
+            </div>
+            <div class="translation">Học sinh thông minh.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">gānjìng de sùshè</div>
+            <div class="chinese">
+              <span class="simp">干净<span class="kw">的</span>宿舍</span>
+            </div>
+            <div class="translation">Ký túc xá sạch sẽ.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">hěn xiǎo de fángjiān</div>
+            <div class="chinese">
+              <span class="simp">很小<span class="kw">的</span>房间</span>
+            </div>
+            <div class="translation">Căn phòng rất nhỏ.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">fēicháng hǎo de dìfāng</div>
+            <div class="chinese">
+              <span class="simp">非常好<span class="kw">的</span>地方</span>
+            </div>
+            <div class="translation">Nơi cực kỳ tốt.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">hěn lǎo de shū</div>
+            <div class="chinese">
+              <span class="simp">很老<span class="kw">的</span>书</span>
+            </div>
+            <div class="translation">Cuốn sách rất cũ.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.5</div>
+        <div class="formula-row"><span class="fc fc-neutral">Thành phần bổ nghĩa</span><span class="fc-op">+</span><span class="fc fc-key">DT không có 的</span></div>
+        <div class="formula-vi">Thành phần bổ nghĩa + <strong>DT không có 的</strong></div>
+        <div class="formula-note">Các cụm từ cố định — biểu thị nghề nghiệp, ngôn ngữ, thương hiệu, hoặc xuất xứ — thường lược bỏ 的.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">de</div>
+          <div class="key-char">的</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">hànyǔ lǎoshī</div>
+            <div class="chinese">
+              <span class="simp">汉语老师</span>
+            </div>
+            <div class="translation">Thầy giáo tiếng Trung (không nói 汉语的老师).</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zhōngwén shū</div>
+            <div class="chinese">
+              <span class="simp">中文书</span>
+            </div>
+            <div class="translation">Sách tiếng Trung.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">déguó qìchē</div>
+            <div class="chinese">
+              <span class="simp">德国汽车</span>
+            </div>
+            <div class="translation">Xe ô tô Đức.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">fǎguó xiāngshuǐ</div>
+            <div class="chinese">
+              <span class="simp">法国香水</span>
+            </div>
+            <div class="translation">Nước hoa Pháp.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.6</div>
+        <div class="formula-row"><span class="fc fc-noun">DT</span><span class="fc-op">+</span><span class="fc fc-particle">的</span></div>
+        <div class="formula-vi">Danh từ + <strong>的</strong></div>
+        <div class="formula-note">Dùng 的 để thay thế danh từ đã được nhắc đến trước đó, tránh lặp lại.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">de</div>
+          <div class="key-char">的</div>
+          <div class="key-meaning">Nominal 的</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">zhè běn shū shì wǒ de</div>
+            <div class="chinese">
+              <span class="simp">这本书是我<span class="kw">的</span>。</span>
+              <span class="trad">這本書是我<span class="kw">的</span>。</span>
+            </div>
+            <div class="translation">Quyển sách này là của tôi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">dà de shì wǒ de, xiǎo de shì wǒ péngyou de</div>
+            <div class="chinese">
+              <span class="simp">大<span class="kw">的</span>是我<span class="kw">的</span>，小<span class="kw">的</span>是我朋友<span class="kw">的</span>。</span>
+            </div>
+            <div class="translation">Cái lớn là của tôi, cái nhỏ là của bạn tôi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">shéi de fángjiān</div>
+            <div class="chinese">
+              <span class="simp">谁<span class="kw">的</span>房间？</span>
+              <span class="trad">誰<span class="kw">的</span>房間？</span>
+            </div>
+            <div class="translation">Phòng của ai?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 2.7</div>
+        <div class="formula-row"><span class="fc fc-key">很有名的</span><span class="fc-op">+</span><span class="fc fc-noun">DT</span></div>
+        <div class="formula-vi"><strong>很有名的</strong> + Danh từ</div>
+        <div class="formula-note">Ứng dụng của quy tắc HDT + 的 + DT khi có phó từ mức độ 很.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char" data-len="4">很有名的</div>
+          <div class="key-meaning">Cấu trúc miêu tả "nổi tiếng"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">běijīng shì hěn yǒumíng de chéngshì</div>
+            <div class="chinese">
+              <span class="simp">北京是<span class="kw">很有名的</span>城市。</span>
+            </div>
+            <div class="translation">Bắc Kinh là một thành phố rất nổi tiếng.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">tā shì hěn yǒumíng de lǎoshī</div>
+            <div class="chinese">
+              <span class="simp">他是<span class="kw">很有名的</span>老师。</span>
+              <span class="trad">他是<span class="kw">很有名的</span>老師。</span>
+            </div>
+            <div class="translation">Thầy ấy là một giáo viên rất nổi tiếng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 3: Câu hỏi</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.1</div>
+        <div class="formula-row"><span class="fc fc-neutral">Câu khẳng định</span><span class="fc-op">+</span><span class="fc fc-particle">吗</span></div>
+        <div class="formula-vi">Câu khẳng định + <strong>吗</strong></div>
+        <div class="formula-note">Thêm 吗 vào cuối câu khẳng định để hỏi Yes/No.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">ma</div>
+          <div class="key-char">吗</div>
+          <div class="key-meaning">Câu hỏi Yes/No</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ máng ma</div>
+            <div class="chinese">
+              <span class="simp">你忙<span class="kw">吗</span>？</span>
+            </div>
+            <div class="translation">Bạn có bận không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">hànyǔ nán ma</div>
+            <div class="chinese">
+              <span class="simp">汉语难<span class="kw">吗</span>？</span>
+              <span class="trad">漢語難嗎？</span>
+            </div>
+            <div class="translation">Tiếng Trung khó không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">míngtiān nǐ qù ma</div>
+            <div class="chinese">
+              <span class="simp">明天你去<span class="kw">吗</span>？</span>
+            </div>
+            <div class="translation">Ngày mai bạn có đi không?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.2</div>
+        <div class="formula-row"><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-key">不</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi">Động từ + <strong>不</strong> + Động từ</div>
+        <div class="formula-note">Lặp lại động từ hoặc hình dung từ với 不 ở giữa để hỏi Yes/No.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">bù</div>
+          <div class="key-char">不</div>
+          <div class="key-meaning">Câu hỏi chính phản</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ chī bù chī</div>
+            <div class="chinese">
+              <span class="simp">你吃<span class="kw">不</span>吃？</span>
+            </div>
+            <div class="translation">Bạn ăn không? (= 你吃吗？)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ hē bù hē</div>
+            <div class="chinese">
+              <span class="simp">你喝<span class="kw">不</span>喝？</span>
+            </div>
+            <div class="translation">Bạn uống không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ máng bù máng</div>
+            <div class="chinese">
+              <span class="simp">你忙<span class="kw">不</span>忙？</span>
+            </div>
+            <div class="translation">Bạn có bận không?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.3</div>
+        <div class="formula-row"><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-key">什么</span></div>
+        <div class="formula-vi">Động từ + <strong>什么</strong></div>
+        <div class="formula-note">什么 là đại từ nghi vấn "gì?", đứng ở vị trí của tân ngữ hoặc đứng trước danh từ để hỏi loại.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">shénme</div>
+          <div class="key-char">什么</div>
+          <div class="key-meaning">Hỏi "gì?"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">zhè shì shénme</div>
+            <div class="chinese">
+              <span class="simp">这是<span class="kw">什么</span>？</span>
+              <span class="trad">這是什麼？</span>
+            </div>
+            <div class="translation">Đây là cái gì?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ de gōngzuò shì shénme</div>
+            <div class="chinese">
+              <span class="simp">你的工作是<span class="kw">什么</span>？</span>
+              <span class="trad">你的工作是什麼？</span>
+            </div>
+            <div class="translation">Công việc của bạn là gì?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ jiào shénme míngzi</div>
+            <div class="chinese">
+              <span class="simp">你叫<span class="kw">什么</span>名字？</span>
+              <span class="trad">你叫什麼名字？</span>
+            </div>
+            <div class="translation">Bạn tên là gì?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zhè shì shénme shū</div>
+            <div class="chinese">
+              <span class="simp">这是<span class="kw">什么</span>书？</span>
+              <span class="trad">這是什麼書？</span>
+            </div>
+            <div class="translation">Đây là sách gì?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.4</div>
+        <div class="formula-row"><span class="fc fc-key">哪</span><span class="fc-op">+</span><span class="fc fc-neutral">Lượng từ</span><span class="fc-op">+</span><span class="fc fc-neutral">Danh từ</span></div>
+        <div class="formula-vi"><strong>哪</strong> + Lượng từ + Danh từ</div>
+        <div class="formula-note">Dùng để hỏi "cái nào / người nào / nước nào…"</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">nǎ</div>
+          <div class="key-char">哪</div>
+          <div class="key-meaning">Hỏi "nào?"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ shì nǎ guó rén</div>
+            <div class="chinese">
+              <span class="simp">你是<span class="kw">哪</span>国人？</span>
+              <span class="trad">你是<span class="kw">哪</span>國人？</span>
+            </div>
+            <div class="translation">Bạn là người nước nào?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ chī nǎ gè</div>
+            <div class="chinese">
+              <span class="simp">你吃<span class="kw">哪</span>个？</span>
+              <span class="trad">你吃<span class="kw">哪</span>個？</span>
+            </div>
+            <div class="translation">Bạn ăn cái nào?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.5</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-key">觉得</span><span class="fc-op">+</span><span class="fc fc-key">怎么样</span></div>
+        <div class="formula-vi">Chủ ngữ + <strong>觉得</strong> + <strong>怎么样</strong></div>
+        <div class="formula-note">怎么样 hỏi "thế nào / như thế nào".</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">juéde</div>
+          <div class="key-char">觉得</div>
+          <div class="key-meaning">Hỏi cảm nhận "Thế nào?"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ juéde zěnmeyàng</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">觉得</span>怎么样？</span>
+              <span class="trad">你覺得怎麼樣？</span>
+            </div>
+            <div class="translation">Bạn cảm thấy thế nào?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ xuéxí zěnmeyàng le</div>
+            <div class="chinese">
+              <span class="simp">你学习怎么样了？</span>
+              <span class="trad">你學習怎麼樣了？</span>
+            </div>
+            <div class="translation">Việc học của bạn thế nào rồi?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.6</div>
+        <div class="formula-row"><span class="fc fc-key">怎么</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>怎么</strong> + Động từ</div>
+        <div class="formula-note">怎么 hỏi "làm thế nào / bằng cách nào".</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">zěnme</div>
+          <div class="key-char">怎么</div>
+          <div class="key-meaning">Hỏi cách thức</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">shuǐ zěnme hē</div>
+            <div class="chinese">
+              <span class="simp">水<span class="kw">怎么</span>喝？</span>
+            </div>
+            <div class="translation">Nước uống thế nào?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zěnme xué hǎo hànyǔ</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">怎么</span>学好汉语？</span>
+              <span class="trad">怎麼學好漢語？</span>
+            </div>
+            <div class="translation">Làm sao để học tốt tiếng Trung?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 3.7</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-particle">了</span><span class="fc-op">+</span><span class="fc fc-particle">吗</span></div>
+        <div class="formula-vi">Chủ ngữ + Động từ + <strong>了</strong> + <strong>吗</strong></div>
+        <div class="formula-note">Dùng 了 + 吗 để hỏi hành động đã xảy ra chưa.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">le</div>
+          <div class="key-char">了</div>
+          <div class="key-meaning">Hỏi "Đã... chưa?"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ chīfàn le ma</div>
+            <div class="chinese">
+              <span class="simp">你吃饭<span class="kw">了</span>吗？</span>
+              <span class="trad">你吃飯<span class="kw">了</span>嗎？</span>
+            </div>
+            <div class="translation">Bạn ăn cơm chưa?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ hái méi chīfàn</div>
+            <div class="chinese">
+              <span class="simp">我还没吃饭。</span>
+            </div>
+            <div class="translation">Tôi vẫn chưa ăn cơm.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ jiějie huí guó le ma</div>
+            <div class="chinese">
+              <span class="simp">你姐姐回国<span class="kw">了</span>吗？</span>
+              <span class="trad">你姐姐回國<span class="kw">了</span>嗎？</span>
+            </div>
+            <div class="translation">Chị gái bạn về nước chưa?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ jiějie hái méi huí guó</div>
+            <div class="chinese">
+              <span class="simp">我姐姐还没回国。</span>
+              <span class="trad">我姐姐還沒回國。</span>
+            </div>
+            <div class="translation">Chị gái tôi vẫn chưa về nước.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 4: Phủ định và cấm đoán</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 4.1</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-key">有</span><span class="fc-op">+</span><span class="fc fc-noun">TN</span></div>
+        <div class="formula-vi">Chủ ngữ + <strong>有</strong> + Tân ngữ</div>
+        <div class="formula-note">有 là có, 没有 là không có.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">yǒu</div>
+          <div class="key-char">有</div>
+          <div class="key-meaning">Có/Không có</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ yǒu zhōngguó péngyou ma</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">有</span>中国朋友吗？</span>
+              <span class="trad">你<span class="kw">有</span>中國朋友嗎？</span>
+            </div>
+            <div class="translation">Bạn có bạn Trung Quốc không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ yǒu yī gè zhōngguó péngyou</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">有</span>一个中国朋友。</span>
+              <span class="trad">我<span class="kw">有</span>一個中國朋友。</span>
+            </div>
+            <div class="translation">Tôi có một người bạn Trung Quốc.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ méi yǒu zhōngguó péngyou</div>
+            <div class="chinese">
+              <span class="simp">我没<span class="kw">有</span>中国朋友。</span>
+              <span class="trad">我沒<span class="kw">有</span>中國朋友。</span>
+            </div>
+            <div class="translation">Tôi không có bạn Trung Quốc.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 4.2</div>
+        <div class="formula-row"><span class="fc fc-key">不用</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>不用</strong> + Động từ</div>
+        <div class="formula-note">Diễn đạt sự không cần thiết phải làm gì đó.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">búyòng</div>
+          <div class="key-char">不用</div>
+          <div class="key-meaning">Không cần làm gì</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">búyòng xiè</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">不用</span>谢。</span>
+            </div>
+            <div class="translation">Không cần cảm ơn. (= 不客气)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">búyòng qù</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">不用</span>去。</span>
+            </div>
+            <div class="translation">Không cần đi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 4.3</div>
+        <div class="formula-row"><span class="fc fc-key">别</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>别</strong> + Động từ</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">bié</div>
+          <div class="key-char">别</div>
+          <div class="key-meaning">Đừng / Khác</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">bié zǒu</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">别</span>走。</span>
+              <span class="trad">別走。</span>
+            </div>
+            <div class="translation">Đừng đi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bié shuō le</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">别</span>说了。</span>
+              <span class="trad">別說了。</span>
+            </div>
+            <div class="translation">Đừng nói nữa.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ hái yào mǎi biéde ma</div>
+            <div class="chinese">
+              <span class="simp">你还要买<span class="kw">别</span>的吗？</span>
+              <span class="trad">你還要買別的嗎？</span>
+            </div>
+            <div class="translation">Bạn còn muốn mua cái khác không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ zǒu biéde lù</div>
+            <div class="chinese">
+              <span class="simp">我走<span class="kw">别</span>的路。</span>
+              <span class="trad">我走別的路。</span>
+            </div>
+            <div class="translation">Tôi đi con đường khác.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 5: Cấu trúc động từ</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.1</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-key">是</span><span class="fc-op">+</span><span class="fc fc-noun">TN</span></div>
+        <div class="formula-vi">Chủ ngữ + <strong>是</strong> + Tân ngữ</div>
+        <div class="formula-note">Động từ 是 (là) nối chủ ngữ với tân ngữ để định nghĩa hoặc nhận dạng.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">shì</div>
+          <div class="key-char">是</div>
+          <div class="key-meaning">Câu định nghĩa/nhận dạng</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ shì xuéshēng</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">是</span>学生。</span>
+              <span class="trad">我<span class="kw">是</span>學生。</span>
+            </div>
+            <div class="translation">Tôi là học sinh.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">tā shì wǒ lǎoshī</div>
+            <div class="chinese">
+              <span class="simp">他<span class="kw">是</span>我老师。</span>
+              <span class="trad">他<span class="kw">是</span>我老師。</span>
+            </div>
+            <div class="translation">Anh ấy là thầy giáo của tôi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ shì Yuènán rén</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">是</span>越南人。</span>
+            </div>
+            <div class="translation">Tôi là người Việt Nam.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">tā bù shì zhōngguó rén</div>
+            <div class="chinese">
+              <span class="simp">他不<span class="kw">是</span>中国人。</span>
+              <span class="trad">他不<span class="kw">是</span>中國人。</span>
+            </div>
+            <div class="translation">Anh ấy không phải người Trung Quốc.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.2</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-neutral">ĐT1</span><span class="fc-op">+</span><span class="fc fc-neutral">Địa điểm</span><span class="fc-op">+</span><span class="fc fc-neutral">ĐT2</span></div>
+        <div class="formula-vi">Chủ ngữ + ĐT1 + Địa điểm + ĐT2</div>
+        <div class="formula-note">Hai động từ liên tiếp trong một câu, ĐT1 là hành động di chuyển, ĐT2 là mục đích.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">—</div>
+          <div class="key-meaning">ĐT1 + Địa điểm + ĐT2</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ qù xuéxiào, xué hànyǔ</div>
+            <div class="chinese">
+              <span class="simp">我去学校学汉语。</span>
+              <span class="trad">我去學校學漢語。</span>
+            </div>
+            <div class="translation">Tôi đi trường học tiếng Trung.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">huí jiā jiàn māma</div>
+            <div class="chinese">
+              <span class="simp">回家见妈妈。</span>
+              <span class="trad">回家見媽媽。</span>
+            </div>
+            <div class="translation">Về nhà gặp mẹ.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ qù yínháng qǔ qián</div>
+            <div class="chinese">
+              <span class="simp">我去银行取钱。</span>
+              <span class="trad">我去銀行取錢。</span>
+            </div>
+            <div class="translation">Tôi đi ngân hàng rút tiền.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.3</div>
+        <div class="formula-row"><span class="fc fc-key">我来</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>我来</strong> + Động từ</div>
+        <div class="formula-note">我来 trước động từ mang nghĩa "để tôi (làm việc đó)", thể hiện sự chủ động đảm nhận.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">我来</div>
+          <div class="key-meaning">Để tôi làm gì</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ lái jièshào yí xiàr</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">我来</span>介绍一下儿。</span>
+              <span class="trad">我來介紹一下兒。</span>
+            </div>
+            <div class="translation">Để tôi giới thiệu một chút.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.4</div>
+        <div class="formula-row"><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-key">一下儿</span></div>
+        <div class="formula-vi">Động từ + <strong>一下儿</strong></div>
+        <div class="formula-note">一下儿 sau động từ làm giảm mức độ, nghĩa là làm một lát, thử làm, làm nhẹ nhàng.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">yíxiàr</div>
+          <div class="key-char" data-len="3">一下儿</div>
+          <div class="key-meaning">Làm một chút</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">jièshào yí xiàr</div>
+            <div class="chinese">
+              <span class="simp">介绍<span class="kw">一下儿</span></span>
+              <span class="trad">介紹一下兒</span>
+            </div>
+            <div class="translation">giới thiệu một chút</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">děng wǒ yíxiàr</div>
+            <div class="chinese">
+              <span class="simp">等（我）<span class="kw">一下儿</span>！</span>
+            </div>
+            <div class="translation">Đợi (tôi) một lát!</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ kàn yíxiàr</div>
+            <div class="chinese">
+              <span class="simp">我看<span class="kw">一下儿</span>。</span>
+            </div>
+            <div class="translation">Tôi xem một chút.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.5</div>
+        <div class="formula-row"><span class="fc fc-key">快</span><span class="fc-op">+</span><span class="fc fc-key">点儿</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>快</strong> + <strong>点儿</strong> + Động từ</div>
+        <div class="formula-note">Dùng để thúc giục ai đó làm gì đó nhanh hơn.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">kuài</div>
+          <div class="key-char">快</div>
+          <div class="key-meaning">Hối thúc làm nhanh</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">kuài zǒu</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">快</span>走！</span>
+            </div>
+            <div class="translation">Đi nhanh lên!</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">kuài diǎnr zǒu</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">快</span>点儿走！</span>
+            </div>
+            <div class="translation">Đi nhanh lên nào!</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">kuài diǎnr chī</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">快</span>点儿吃！</span>
+            </div>
+            <div class="translation">Ăn nhanh lên!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.6</div>
+        <div class="formula-row"><span class="fc fc-key">Động từ ly hợp 离合词</span></div>
+        <div class="formula-vi"><strong>Động từ ly hợp 离合词</strong></div>
+        <div class="formula-note">Là dạng động từ 2 âm tiết có thể tách ra để chèn thêm từ khác vào giữa.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">lí hé cí</div>
+          <div class="key-char" data-len="3">离合词</div>
+          <div class="key-meaning">Tách chèn từ khác</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">shàng hànyǔ kè</div>
+            <div class="chinese">
+              <span class="simp">上汉语课</span>
+            </div>
+            <div class="translation">học tiết tiếng Trung</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">jiàn yī miàn</div>
+            <div class="chinese">
+              <span class="simp">见一面</span>
+            </div>
+            <div class="translation">gặp nhau một lần</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒmen shàngwǔ shàng hànyǔ kè</div>
+            <div class="chinese">
+              <span class="simp">我们上午上汉语课。</span>
+              <span class="trad">我們上午上漢語課。</span>
+            </div>
+            <div class="translation">Buổi sáng chúng tôi học tiết tiếng Trung.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">míngtiān shàngwǔ jiǔ diǎnzhōng wǒmen zài nǐjiā jiànmiàn</div>
+            <div class="chinese">
+              <span class="simp">明天上午 9 点钟我们在你家见面。</span>
+              <span class="trad">明天上午 9 點鍾我們在你家見面。</span>
+            </div>
+            <div class="translation">9 giờ sáng mai chúng ta gặp nhau ở nhà bạn.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.7</div>
+        <div class="formula-row"><span class="fc fc-subject">A</span><span class="fc-op">+</span><span class="fc fc-key">跟</span><span class="fc-op">+</span><span class="fc fc-noun">B</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi">A + <strong>跟</strong> + B + Động từ</div>
+        <div class="formula-note">Cả hai diễn đạt "A làm gì cùng với B".</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">gēn</div>
+          <div class="key-char">跟</div>
+          <div class="key-meaning">Với / Cùng nhau làm gì</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ gēn nǐ chī</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">跟</span>你吃。</span>
+            </div>
+            <div class="translation">Tôi ăn với bạn.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǎnshang wǒ cháng gēn wǒ dìdi kàn zhōngguó diànyǐng</div>
+            <div class="chinese">
+              <span class="simp">晚上我常<span class="kw">跟</span>我弟弟看中国电影。</span>
+              <span class="trad">晚上我常<span class="kw">跟</span>我弟弟看中國電影。</span>
+            </div>
+            <div class="translation">Buổi tối tôi thường cùng em trai xem phim Trung Quốc.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ xiǎng gēn nǐ yìqǐ qù zhōngguó liúxué</div>
+            <div class="chinese">
+              <span class="simp">我想<span class="kw">跟</span>你一起去中国留学。</span>
+              <span class="trad">我想<span class="kw">跟</span>你一起去中國留學。</span>
+            </div>
+            <div class="translation">Tôi muốn cùng bạn đi Trung Quốc du học.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">yuènánrén cháng quánjiā yìqǐ chīfàn</div>
+            <div class="chinese">
+              <span class="simp">越南人常全家一起吃饭。</span>
+              <span class="trad">越南人常全家一起吃飯。</span>
+            </div>
+            <div class="translation">Người Việt Nam thường cả nhà cùng nhau ăn cơm.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.8</div>
+        <div class="formula-row"><span class="fc fc-subject">A</span><span class="fc-op">+</span><span class="fc fc-key">给</span><span class="fc-op">+</span><span class="fc fc-noun">B</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-noun">TN</span></div>
+        <div class="formula-vi">A + <strong>给</strong> + B + Động từ + Tân ngữ</div>
+        <div class="formula-note">A thực hiện hành động gì đó cho/đến B.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">gěi</div>
+          <div class="key-char">给</div>
+          <div class="key-meaning">Làm việc gì đó cho ai</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ gěi māma mǎi yì gōngjīn shuǐguǒ</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">给</span>妈妈买一公斤水果。</span>
+              <span class="trad">我給媽媽買一公斤水果。</span>
+            </div>
+            <div class="translation">Tôi mua cho mẹ 1 kg trái cây.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ gěi nǐ qián ba</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">给</span>你钱吧。</span>
+              <span class="trad">我給你錢吧。</span>
+            </div>
+            <div class="translation">Tôi đưa tiền cho bạn nhé.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 5.9</div>
+        <div class="formula-row"><span class="fc fc-key">请</span><span class="fc-op">+</span><span class="fc fc-neutral">ĐT chủ ngữ ngầm là người nghe hoặc CN</span><span class="fc-op">+</span><span class="fc fc-key">请</span><span class="fc-op">+</span><span class="fc fc-noun">TN</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>请</strong> + ĐT chủ ngữ ngầm là người nghe hoặc CN + <strong>请</strong> + Tân ngữ + Động từ</div>
+        <div class="formula-note">请 đặt trước động từ biến câu thành lời mời hoặc yêu cầu lịch sự.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">qǐng</div>
+          <div class="key-char">请</div>
+          <div class="key-meaning">Lời mời lịch sự</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">qǐng jìn</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">请</span>进。</span>
+              <span class="trad">請進。</span>
+            </div>
+            <div class="translation">Xin mời vào.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">qǐng zuò</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">请</span>坐。</span>
+              <span class="trad">請坐。</span>
+            </div>
+            <div class="translation">Xin mời ngồi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">qǐng hē chá</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">请</span>喝茶。</span>
+              <span class="trad">請喝茶。</span>
+            </div>
+            <div class="translation">Xin mời uống trà.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ qǐng nǐ huí jiā jiàn wǒ de bā māma</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">请</span>你回家见我爸妈。</span>
+              <span class="trad">我請你回家見我爸媽。</span>
+            </div>
+            <div class="translation">Tôi mời bạn về nhà gặp bố mẹ tôi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 6: Thời gian và trạng thái tiếp diễn</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 6.1</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-particle">了</span></div>
+        <div class="formula-vi">Chủ ngữ + Động từ + <strong>了</strong></div>
+        <div class="formula-note">了 đặt ngay sau động từ diễn đạt hành động đã hoàn thành hoặc trạng thái vừa thay đổi.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">le</div>
+          <div class="key-char">了</div>
+          <div class="key-meaning">Hành động đã xảy ra / thay đổi trạng thái</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">lǎoshī huí jiā le</div>
+            <div class="chinese">
+              <span class="simp">老师回家<span class="kw">了</span>。</span>
+              <span class="trad">老師回家<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">Thầy giáo về nhà rồi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">māma qù nǎr le</div>
+            <div class="chinese">
+              <span class="simp">妈妈去哪儿<span class="kw">了</span>？</span>
+              <span class="trad">媽媽去哪兒<span class="kw">了</span>？</span>
+            </div>
+            <div class="translation">Mẹ đi đâu rồi?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ jiàn tā le</div>
+            <div class="chinese">
+              <span class="simp">我见他<span class="kw">了</span>。</span>
+              <span class="trad">我見他<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">Tôi đã gặp anh ấy rồi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zuótiān wǒ qù yínháng qǔ qián le</div>
+            <div class="chinese">
+              <span class="simp">昨天我去银行取钱<span class="kw">了</span>。</span>
+              <span class="trad">昨天我去銀行取錢<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">Hôm qua tôi đã đi ngân hàng rút tiền rồi.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bàba māma tuìxiū le</div>
+            <div class="chinese">
+              <span class="simp">爸妈退休<span class="kw">了</span>。</span>
+              <span class="trad">爸媽退休<span class="kw">了</span>。</span>
+            </div>
+            <div class="translation">Bố mẹ về hưu rồi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 6.2</div>
+        <div class="formula-row"><span class="fc fc-verb">ĐT</span><span class="fc-op">+</span><span class="fc fc-key">的时候</span></div>
+        <div class="formula-vi">Động từ + <strong>的时候</strong></div>
+        <div class="formula-note">的时候 (de shíhou) đặt sau động từ hoặc cụm từ để diễn đạt "khi / lúc (đang làm gì)".</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char" data-len="3">的时候</div>
+          <div class="key-meaning">Khi / Lúc</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">chī fàn de shíhou</div>
+            <div class="chinese">
+              <span class="simp">吃饭<span class="kw">的时候</span></span>
+              <span class="trad">吃飯的時候</span>
+            </div>
+            <div class="translation">lúc ăn cơm</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">xiǎo de shíhou</div>
+            <div class="chinese">
+              <span class="simp">小<span class="kw">的时候</span></span>
+              <span class="trad">小的時候</span>
+            </div>
+            <div class="translation">lúc còn nhỏ (cũng nói: 小时候 / 小時候)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">xuéxí hànyǔ de shíhou</div>
+            <div class="chinese">
+              <span class="simp">学习汉语<span class="kw">的时候</span></span>
+              <span class="trad">學習漢語的時候</span>
+            </div>
+            <div class="translation">lúc học tiếng Trung</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zhōumò de shíhou</div>
+            <div class="chinese">
+              <span class="simp">周末<span class="kw">的时候</span></span>
+              <span class="trad">週末的時候</span>
+            </div>
+            <div class="translation">lúc cuối tuần</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 6.3</div>
+        <div class="formula-row"><span class="fc fc-key">还</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>还</strong> + Động từ</div>
+        <div class="formula-note">还 /hái/ diễn tả trạng thái tiếp diễn ("còn, vẫn") hoặc bổ sung ("còn...</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">hái</div>
+          <div class="key-char">还</div>
+          <div class="key-meaning">Còn, vẫn</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">hái yǒu rén ma</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">还</span>有人吗？</span>
+              <span class="trad">還有人嗎？</span>
+            </div>
+            <div class="translation">Còn ai không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ hái yào mǎi biéde ma</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">还</span>要买别的吗？</span>
+              <span class="trad">你還要買別的嗎？</span>
+            </div>
+            <div class="translation">Bạn còn muốn mua gì khác nữa không?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ hái xiǎo</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">还</span>小。</span>
+            </div>
+            <div class="translation">Bạn còn nhỏ.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 6.4</div>
+        <div class="formula-row"><span class="fc fc-key">分钟 vs 分</span></div>
+        <div class="formula-vi"><strong>分钟 vs 分</strong></div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">fēnzhōng</div>
+          <div class="key-char">分钟</div>
+          <div class="key-meaning">Phân biệt khoảng thời gian và mốc thời gian</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǔ fēnzhōng</div>
+            <div class="chinese">
+              <span class="simp">五<span class="kw">分钟</span></span>
+              <span class="trad">五分鐘</span>
+            </div>
+            <div class="translation">5 phút (khoảng thời gian).</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bā diǎn wǔ fēn</div>
+            <div class="chinese">
+              <span class="simp">八点五分</span>
+            </div>
+            <div class="translation">8 giờ 5 phút (mốc thời gian).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 7: Địa điểm và vị trí</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.1</div>
+        <div class="formula-row"><span class="fc fc-neutral">Danh sách phương vị từ cơ bản</span></div>
+        <div class="formula-vi">Danh sách phương vị từ cơ bản</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">—</div>
+          <div class="key-meaning">Bảng tổng hợp</div>
+        </div>
+        <div class="examples-panel">
+          <div class="no-examples">—</div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.2</div>
+        <div class="formula-row"><span class="fc fc-key">在</span><span class="fc-op">+</span><span class="fc fc-neutral">Địa điểm</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>在</strong> + Địa điểm + Động từ</div>
+        <div class="formula-note">Diễn đạt hành động xảy ra tại một địa điểm.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">zài</div>
+          <div class="key-char">在</div>
+          <div class="key-meaning">Ở đâu làm gì</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ zài nǎr xué hànyǔ ne</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">在</span>哪儿学汉语呢？</span>
+              <span class="trad">你<span class="kw">在</span>哪兒學漢語呢？</span>
+            </div>
+            <div class="translation">Bạn học tiếng Trung ở đâu?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ zài nǎ gè xuéxiào xué hànyǔ ne</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">在</span>哪个学校学汉语呢？</span>
+              <span class="trad">你<span class="kw">在</span>哪個學校學漢語呢？</span>
+            </div>
+            <div class="translation">Bạn học tiếng Trung ở trường nào?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.3</div>
+        <div class="formula-row"><span class="fc fc-subject">CN</span><span class="fc-op">+</span><span class="fc fc-key">住</span><span class="fc-op">+</span><span class="fc fc-key">在</span><span class="fc-op">+</span><span class="fc fc-neutral">Địa điểm</span></div>
+        <div class="formula-vi">Chủ ngữ + <strong>住</strong> + <strong>在</strong> + Địa điểm</div>
+        <div class="formula-note">Dùng để diễn tả nơi cư trú thường xuyên hoặc trong thời gian dài.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">zhùzài</div>
+          <div class="key-char">住在</div>
+          <div class="key-meaning">Sống/ở tại nơi nào</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ zhù zài sùshè</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">住在</span>宿舍。</span>
+            </div>
+            <div class="translation">Tôi sống ở ký túc xá.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ zhù zài nǎr</div>
+            <div class="chinese">
+              <span class="simp">你<span class="kw">住在</span>哪儿？</span>
+              <span class="trad">你<span class="kw">住在</span>哪兒？</span>
+            </div>
+            <div class="translation">Bạn sống ở đâu?</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ bú zhù zài sùshè, wǒ zhù zài jiālǐ</div>
+            <div class="chinese">
+              <span class="simp">我不<span class="kw">住在</span>宿舍，我<span class="kw">住在</span>家里。</span>
+              <span class="trad">我不<span class="kw">住在</span>宿舍，我<span class="kw">住在</span>家裡。</span>
+            </div>
+            <div class="translation">Tôi không ở ký túc xá, tôi ở nhà.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.4</div>
+        <div class="formula-row"><span class="fc fc-subject">A</span><span class="fc-op">+</span><span class="fc fc-key">在</span><span class="fc-op">+</span><span class="fc fc-noun">B</span><span class="fc-op">+</span><span class="fc fc-particle">的</span><span class="fc-op">+</span><span class="fc fc-neutral">Phương vị từ</span></div>
+        <div class="formula-vi">A + <strong>在</strong> + B + <strong>的</strong> + Phương vị từ</div>
+        <div class="formula-note">Diễn tả vị trí của A so với B bằng phương vị từ (边: trên/dưới/trái/phải/đông/tây/nam/bắc).</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char" data-len="3">在…的</div>
+          <div class="key-meaning">Vị trí tương đối</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">fànguǎn zài xuéxiào de zuǒbian</div>
+            <div class="chinese">
+              <span class="simp">饭馆<span class="kw">在</span>学校<span class="kw">的</span>左边。</span>
+              <span class="trad">飯館<span class="kw">在</span>學校<span class="kw">的</span>左邊。</span>
+            </div>
+            <div class="translation">Quán cơm ở bên trái trường học.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">shítáng zài xuéxiào de běibian</div>
+            <div class="chinese">
+              <span class="simp">食堂<span class="kw">在</span>学校<span class="kw">的</span>北边。</span>
+              <span class="trad">食堂<span class="kw">在</span>學校<span class="kw">的</span>北邊。</span>
+            </div>
+            <div class="translation">Nhà ăn ở phía bắc trường học.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">túshūguǎn zài jiàoxuélóu dōngbian</div>
+            <div class="chinese">
+              <span class="simp">图书馆<span class="kw">在</span>教学楼东边。</span>
+              <span class="trad">圖書館<span class="kw">在</span>教學樓東邊。</span>
+            </div>
+            <div class="translation">Thư viện ở phía đông tòa nhà dạy học.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.5</div>
+        <div class="formula-row"><span class="fc fc-key">边 biān vs 面 miàn</span></div>
+        <div class="formula-vi"><strong>边 biān vs 面 miàn</strong></div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char" data-len="3">边…面</div>
+          <div class="key-meaning">Phân biệt cách dùng</div>
+        </div>
+        <div class="examples-panel">
+          <div class="no-examples">—</div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.6</div>
+        <div class="formula-row"><span class="fc fc-key">在</span><span class="fc-op">+</span><span class="fc fc-subject">A</span><span class="fc-op">+</span><span class="fc fc-key">和</span><span class="fc-op">+</span><span class="fc fc-noun">B</span><span class="fc-op">+</span><span class="fc fc-key">中间</span></div>
+        <div class="formula-vi"><strong>在</strong> + A + <strong>和</strong> + B + <strong>中间</strong></div>
+        <div class="formula-note">Diễn tả vị trí ở giữa hai đối tượng A và B.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">zài</div>
+          <div class="key-char">在</div>
+          <div class="key-meaning">Ở giữa A và B</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">túshūguǎn zài jiàoxuélóu hé sùshè zhōngjiān</div>
+            <div class="chinese">
+              <span class="simp">图书馆<span class="kw">在</span>教学楼和宿舍中间。</span>
+              <span class="trad">圖書館<span class="kw">在</span>教學樓和宿舍中間。</span>
+            </div>
+            <div class="translation">Thư viện ở giữa tòa nhà dạy học và ký túc xá.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ zuò zài tā hé tā zhōngjiān</div>
+            <div class="chinese">
+              <span class="simp">我坐<span class="kw">在</span>他和她中间。</span>
+              <span class="trad">我坐<span class="kw">在</span>他和她中間。</span>
+            </div>
+            <div class="translation">Tôi ngồi ở giữa anh ấy và cô ấy.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.7</div>
+        <div class="formula-row"><span class="fc fc-noun">DT</span><span class="fc-op">+</span><span class="fc fc-key">上</span></div>
+        <div class="formula-vi">Danh từ + <strong>上</strong></div>
+        <div class="formula-note">Phương vị từ đơn (một chữ) đứng ngay sau danh từ tạo thành cụm chỉ vị trí rút gọn, thường gặp trong văn nói.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">上</div>
+          <div class="key-meaning">Vị trí rút gọn</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">zài chē shàng</div>
+            <div class="chinese">
+              <span class="simp">在车<span class="kw">上</span></span>
+              <span class="trad">在車<span class="kw">上</span></span>
+            </div>
+            <div class="translation">ở trên xe</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">jiā lǐ</div>
+            <div class="chinese">
+              <span class="simp">家里</span>
+              <span class="trad">家裡</span>
+            </div>
+            <div class="translation">trong nhà</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">dì shàng</div>
+            <div class="chinese">
+              <span class="simp">地<span class="kw">上</span></span>
+            </div>
+            <div class="translation">trên mặt đất</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zài lóu xià</div>
+            <div class="chinese">
+              <span class="simp">在楼下</span>
+              <span class="trad">在樓下</span>
+            </div>
+            <div class="translation">ở dưới lầu</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">dì xià</div>
+            <div class="chinese">
+              <span class="simp">地下</span>
+            </div>
+            <div class="translation">dưới mặt đất (ngầm)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">mǎlù shàng</div>
+            <div class="chinese">
+              <span class="simp">马路<span class="kw">上</span></span>
+              <span class="trad">馬路<span class="kw">上</span></span>
+            </div>
+            <div class="translation">trên đường</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.8</div>
+        <div class="formula-row"><span class="fc fc-neutral">Phương vị từ</span><span class="fc-op">+</span><span class="fc fc-noun">DT</span></div>
+        <div class="formula-vi">Phương vị từ + Danh từ</div>
+        <div class="formula-note">Phương vị từ (như 外, 里, 前, 后) đứng trước danh từ đóng vai trò tiền tố bổ nghĩa, tạo thành danh từ ghép mang nghĩa liên quan đến phía đó.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">—</div>
+          <div class="key-meaning">Bổ nghĩa cho DT</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wàiguórén</div>
+            <div class="chinese">
+              <span class="simp">外国人</span>
+              <span class="trad">外國人</span>
+            </div>
+            <div class="translation">người nước ngoài (外 + 国 + 人)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wàiguó gōngsī</div>
+            <div class="chinese">
+              <span class="simp">外国公司</span>
+              <span class="trad">外國公司</span>
+            </div>
+            <div class="translation">công ty nước ngoài</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wàiyǔ</div>
+            <div class="chinese">
+              <span class="simp">外语</span>
+              <span class="trad">外語</span>
+            </div>
+            <div class="translation">ngoại ngữ (外 + 语)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zài guówài gōngzuò</div>
+            <div class="chinese">
+              <span class="simp">在国外工作</span>
+              <span class="trad">在國外工作</span>
+            </div>
+            <div class="translation">làm việc ở nước ngoài</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zài guówài liúxué</div>
+            <div class="chinese">
+              <span class="simp">在国外留学</span>
+              <span class="trad">在國外留學</span>
+            </div>
+            <div class="translation">du học ở nước ngoài</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 7.9</div>
+        <div class="formula-row"><span class="fc fc-key">上</span><span class="fc-op">+</span><span class="fc fc-neutral">DT phương tiện hoặc địa điểm</span></div>
+        <div class="formula-vi"><strong>上</strong> + DT phương tiện hoặc địa điểm</div>
+        <div class="formula-note">上 và 下 đứng trước danh từ chỉ phương tiện hoặc địa điểm, đóng vai trò như động từ chỉ hướng di chuyển: 上 = lên vào; 下 = xuống ra.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char" data-len="3">上…下</div>
+          <div class="key-meaning">Hành động di chuyển</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">shàng chē</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">上</span>车</span>
+              <span class="trad"><span class="kw">上</span>車</span>
+            </div>
+            <div class="translation">lên xe</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">xià chē</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">下</span>车</span>
+              <span class="trad"><span class="kw">下</span>車</span>
+            </div>
+            <div class="translation">xuống xe</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">shàng lóu</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">上</span>楼</span>
+              <span class="trad"><span class="kw">上</span>樓</span>
+            </div>
+            <div class="translation">lên lầu</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">xià lóu</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">下</span>楼</span>
+              <span class="trad"><span class="kw">下</span>樓</span>
+            </div>
+            <div class="translation">xuống lầu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 8: Số từ và lượng từ</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 8.1</div>
+        <div class="formula-row"><span class="fc fc-neutral">Số từ</span><span class="fc-op">+</span><span class="fc fc-neutral">Lượng từ</span><span class="fc-op">+</span><span class="fc fc-neutral">Danh từ</span></div>
+        <div class="formula-vi">Số từ + Lượng từ + Danh từ</div>
+        <div class="formula-note">Khi đếm danh từ, phải có lượng từ giữa số và danh từ.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char">这</div>
+          <div class="key-meaning">Cấu trúc số lượng</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">yí gè rén</div>
+            <div class="chinese">
+              <span class="simp">一个人</span>
+              <span class="trad">一個人</span>
+            </div>
+            <div class="translation">một người</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">sān gè zhōngguó péngyou</div>
+            <div class="chinese">
+              <span class="simp">三个中国朋友</span>
+              <span class="trad">三個中國朋友</span>
+            </div>
+            <div class="translation">ba người bạn Trung Quốc</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">sì kǒu rén</div>
+            <div class="chinese">
+              <span class="simp">四口人</span>
+            </div>
+            <div class="translation">bốn người (trong gia đình)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">yì zhāng zhàopiàn</div>
+            <div class="chinese">
+              <span class="simp">一张照片</span>
+              <span class="trad">一張照片</span>
+            </div>
+            <div class="translation">một tấm ảnh</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">zhè tiáo gǒu</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">这</span>条狗</span>
+              <span class="trad">這條狗</span>
+            </div>
+            <div class="translation">con chó này</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">jǐ jiàn yīfu</div>
+            <div class="chinese">
+              <span class="simp">几件衣服</span>
+              <span class="trad">幾件衣服</span>
+            </div>
+            <div class="translation">mấy bộ quần áo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 8.2</div>
+        <div class="formula-row"><span class="fc fc-key">零下</span><span class="fc-op">+</span><span class="fc fc-neutral">Số từ</span><span class="fc-op">+</span><span class="fc fc-key">度</span></div>
+        <div class="formula-vi"><strong>零下</strong> + Số từ + <strong>度</strong></div>
+        <div class="formula-note">Dùng để diễn đạt nhiệt độ dưới 0 (âm độ).</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">língxià</div>
+          <div class="key-char">零下</div>
+          <div class="key-meaning">Nhiệt độ âm</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">jīntiān hěn lěng, língxià wǔ dù</div>
+            <div class="chinese">
+              <span class="simp">今天很冷，<span class="kw">零下</span>五度。</span>
+            </div>
+            <div class="translation">Hôm nay rất lạnh, âm 5 độ.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">língxià shí dù</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">零下</span>十度</span>
+            </div>
+            <div class="translation">Âm 10 độ.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 9: Cấu trúc bổ sung</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 9.1</div>
+        <div class="formula-row"><span class="fc fc-key">什么</span><span class="fc-op">+</span><span class="fc fc-key">都</span><span class="fc-op">+</span><span class="fc fc-verb">ĐT</span></div>
+        <div class="formula-vi"><strong>什么</strong> + <strong>都</strong> + Động từ</div>
+        <div class="formula-note">Kết hợp đại từ nghi vấn 什么 với phó từ 都 hoặc 也 để diễn đạt "bất kỳ cái gì cũng...".</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">shénme</div>
+          <div class="key-char">什么</div>
+          <div class="key-meaning">Cái gì cũng / đều</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">shénme dōu hǎo</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">什么</span>都好。</span>
+              <span class="trad">什麼都好。</span>
+            </div>
+            <div class="translation">Cái gì cũng tốt.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">shénme dōu kěyǐ</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">什么</span>都可以。</span>
+              <span class="trad">什麼都可以。</span>
+            </div>
+            <div class="translation">Cái gì cũng được.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ shénme dōu kěyǐ chī</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">什么</span>都可以吃。</span>
+              <span class="trad">我什麼都可以吃。</span>
+            </div>
+            <div class="translation">Tôi cái gì cũng ăn được.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 9.2</div>
+        <div class="formula-row"><span class="fc fc-neutral">Câu</span><span class="fc-op">+</span><span class="fc fc-particle">吧</span></div>
+        <div class="formula-vi">Câu + <strong>吧</strong></div>
+        <div class="formula-note">吧 ở cuối câu biến câu thành lời đề nghị, gợi ý nhẹ nhàng hoặc xác nhận điều mình cho là đúng.</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">ba</div>
+          <div class="key-char">吧</div>
+          <div class="key-meaning">Đề nghị hoặc xác nhận nhẹ</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">nǐ qù xuéxiào ba</div>
+            <div class="chinese">
+              <span class="simp">你去学校<span class="kw">吧</span>！</span>
+              <span class="trad">你去學校<span class="kw">吧</span>！</span>
+            </div>
+            <div class="translation">Bạn đi học đi (nhé)!</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ huí jiā ba</div>
+            <div class="chinese">
+              <span class="simp">我回家<span class="kw">吧</span>！</span>
+            </div>
+            <div class="translation">Tôi về nhà nhé! (giản thể = phồn thể)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ qù wèn xiǎo mǎ ba</div>
+            <div class="chinese">
+              <span class="simp">你去问小马<span class="kw">吧</span>。</span>
+              <span class="trad">你去問小馬<span class="kw">吧</span>。</span>
+            </div>
+            <div class="translation">Bạn đi hỏi Tiểu Mã nhé.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">míngtiān nǐ lái wǒ jiā ba</div>
+            <div class="chinese">
+              <span class="simp">明天你来我家<span class="kw">吧</span>。</span>
+              <span class="trad">明天你來我家<span class="kw">吧</span>。</span>
+            </div>
+            <div class="translation">Ngày mai bạn đến nhà tôi nhé.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-section">
+    <div class="group-title">Nhóm 10: Phân biệt từ dễ nhầm</div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 10.1</div>
+        <div class="formula-row"><span class="fc fc-key">知道 vs 会</span></div>
+        <div class="formula-vi"><strong>知道 vs 会</strong></div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">zhīdào</div>
+          <div class="key-char">知道</div>
+          <div class="key-meaning">Hai cách "biết" khác nhau</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ zhīdào tā zài nǎr</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">知道</span>他在哪儿。</span>
+              <span class="trad">我<span class="kw">知道</span>他在哪兒。</span>
+            </div>
+            <div class="translation">Tôi biết anh ấy ở đâu. (biết thông tin)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ zhīdào shítáng zài nǎr</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">知道</span>食堂在哪儿。</span>
+            </div>
+            <div class="translation">Tôi biết nhà ăn ở đâu. (biết thông tin)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ huì shuō zhōngwén</div>
+            <div class="chinese">
+              <span class="simp">我会说中文。</span>
+              <span class="trad">我會說中文。</span>
+            </div>
+            <div class="translation">Tôi biết nói tiếng Trung. (biết kỹ năng)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">nǐ huì zuò zhōngguó cài ma</div>
+            <div class="chinese">
+              <span class="simp">你会做中国菜吗？</span>
+              <span class="trad">你會做中國菜嗎？</span>
+            </div>
+            <div class="translation">Bạn biết nấu món Trung Quốc không? (kỹ năng)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 10.2</div>
+        <div class="formula-row"><span class="fc fc-key">去 vs 走</span></div>
+        <div class="formula-vi"><strong>去 vs 走</strong></div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">qù … zǒu</div>
+          <div class="key-char" data-len="3">去…走</div>
+          <div class="key-meaning">Phân biệt hai cách "đi"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">lǎoshī qù mǎi bāozi le</div>
+            <div class="chinese">
+              <span class="simp">老师<span class="kw">去</span>买包子了！</span>
+              <span class="trad">老師<span class="kw">去</span>買包子了！</span>
+            </div>
+            <div class="translation">Thầy đi mua bánh bao rồi! (có đích đến = 去)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">bié zǒu</div>
+            <div class="chinese">
+              <span class="simp">别<span class="kw">走</span>。</span>
+              <span class="trad">別<span class="kw">走</span>。</span>
+            </div>
+            <div class="translation">Đừng đi. (không cần đích = 走)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">wǒ zǒu biéde lù</div>
+            <div class="chinese">
+              <span class="simp">我<span class="kw">走</span>别的路。</span>
+              <span class="trad">我<span class="kw">走</span>別的路。</span>
+            </div>
+            <div class="translation">Tôi đi con đường khác. (đi bộ = 走)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 10.3</div>
+        <div class="formula-row"><span class="fc fc-key">一下儿 vs 一会儿</span></div>
+        <div class="formula-vi"><strong>一下儿 vs 一会儿</strong></div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-pinyin">yíxiàr</div>
+          <div class="key-char" data-len="3">一下儿</div>
+          <div class="key-meaning">Phân biệt "một chút" và "một lúc"</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">wǒ kàn yíxiàr</div>
+            <div class="chinese">
+              <span class="simp">我看<span class="kw">一下儿</span>。</span>
+            </div>
+            <div class="translation">Tôi xem thử một cái.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">děng wǒ yíhuìr</div>
+            <div class="chinese">
+              <span class="simp">等我一会儿。</span>
+              <span class="trad">等我一會兒。</span>
+            </div>
+            <div class="translation">Đợi tôi một lúc.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-card">
+      <div class="formula-header">
+        <div class="formula-meta">Ngữ pháp 10.4</div>
+        <div class="formula-row"><span class="fc fc-key">两</span><span class="fc-op">+</span><span class="fc fc-neutral">Lượng từ</span><span class="fc-op">+</span><span class="fc fc-neutral">Danh từ</span></div>
+        <div class="formula-vi"><strong>两</strong> + Lượng từ + Danh từ</div>
+      </div>
+      <div class="card-body">
+        <div class="left-panel">
+          <div class="key-char" data-len="3">两…二</div>
+          <div class="key-meaning">Hai cách nói số 2</div>
+        </div>
+        <div class="examples-panel">
+          <div class="example-row">
+            <div class="pinyin">liǎng ge rén</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">两</span>个人。</span>
+            </div>
+            <div class="translation">Hai người. (✓ 两, ✗ 二个人)</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">liǎng wǎn fàn</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">两</span>碗饭。</span>
+              <span class="trad">兩碗飯。</span>
+            </div>
+            <div class="translation">Hai bát cơm.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">liǎng ge xīngqī</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">两</span>个星期。</span>
+            </div>
+            <div class="translation">Hai tuần.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">liǎng nián</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">两</span>天</span>
+              <span class="trad">liǎng tiān</span>
+            </div>
+            <div class="translation">Hai ngày / Hai năm.</div>
+          </div>
+          <div class="example-row">
+            <div class="pinyin">liǎng ge rén = liǎ</div>
+            <div class="chinese">
+              <span class="simp"><span class="kw">两</span>个人 = 俩。</span>
+              <span class="trad">兩個人 = 倆。</span>
+            </div>
+            <div class="translation">Hai người = một cặp.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let arrowCounter = 0;
+
+    function drawArrows() {
+      document.querySelectorAll('.card-body').forEach(body => {
+        body.querySelectorAll('svg.arrows').forEach(s => s.remove());
+
+        const leftPanel = body.querySelector('.left-panel');
+        const rows = body.querySelectorAll('.example-row');
+        if (!rows.length) return;
+
+        const bodyRect = body.getBoundingClientRect();
+        const leftRect = leftPanel.getBoundingClientRect();
+
+        const srcX = leftRect.width;
+        const srcY = (leftRect.top - bodyRect.top) + leftRect.height / 2;
+
+        const markerId = 'arrowhead-' + (arrowCounter++);
+
+        const svgNS = 'http://www.w3.org/2000/svg';
+        const svg = document.createElementNS(svgNS, 'svg');
+        svg.classList.add('arrows');
+        svg.setAttribute('width', body.offsetWidth);
+        svg.setAttribute('height', body.offsetHeight);
+
+        const defs = document.createElementNS(svgNS, 'defs');
+        const marker = document.createElementNS(svgNS, 'marker');
+        marker.setAttribute('id', markerId);
+        marker.setAttribute('markerWidth', '8');
+        marker.setAttribute('markerHeight', '8');
+        marker.setAttribute('refX', '6');
+        marker.setAttribute('refY', '4');
+        marker.setAttribute('orient', 'auto');
+        const tip = document.createElementNS(svgNS, 'polygon');
+        tip.setAttribute('points', '0 0, 8 4, 0 8');
+        tip.setAttribute('fill', '#c8bfb4');
+        marker.appendChild(tip);
+        defs.appendChild(marker);
+        svg.appendChild(defs);
+
+        rows.forEach(row => {
+          const rowRect = row.getBoundingClientRect();
+          const dstX = leftRect.width + 30;
+          const dstY = (rowRect.top - bodyRect.top) + rowRect.height / 2;
+
+          const line = document.createElementNS(svgNS, 'line');
+          line.setAttribute('x1', srcX);
+          line.setAttribute('y1', srcY);
+          line.setAttribute('x2', dstX);
+          line.setAttribute('y2', dstY);
+          line.setAttribute('stroke', '#c8bfb4');
+          line.setAttribute('stroke-width', '1.5');
+          line.setAttribute('marker-end', 'url(#' + markerId + ')');
+          svg.appendChild(line);
+        });
+
+        body.appendChild(svg);
+      });
+    }
+
+    function toggleScript(btn) {
+      document.body.classList.toggle('traditional');
+      const isTraditional = document.body.classList.contains('traditional');
+      btn.textContent = isTraditional ? 'Giản thể ⇄ Phồn thể' : 'Phồn thể ⇄ Giản thể';
+    }
+
+    window.addEventListener('load', drawArrows);
+    window.addEventListener('resize', drawArrows);
+
+  </script>
+
+</body>
+</html>
