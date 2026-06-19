@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.3.1] - 2026-06-19
+
+### Added
+- KB: Bài 12 — 31 từ vựng, 7 pattern ngữ pháp, 33 câu luyện tập
+
+---
+
 ## [2.3.0] - 2026-06-19
 
 ### Added

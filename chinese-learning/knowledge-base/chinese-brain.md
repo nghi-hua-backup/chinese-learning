@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Nhóm 7 — thêm bảng tổng hợp phương vị từ (2026-06-18)
+> **Cập nhật lần cuối:** Bài 12 — Cậu Đang Làm Gì? (2026-06-19)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -37,6 +37,7 @@
   - [Bài 9 — Táo bán như thế nào?](#bài-9-táo-bán-như-thế-nào)
   - [Bài 10 — Nhà bạn có mấy người?](#bài-10-nhà-bạn-có-mấy-người)
   - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bài-11-mùa-đông-ở-bắc-kinh-khá-lạnh)
+  - [Bài 12 — Cậu Đang Làm Gì?](#bài-12-cậu-đang-làm-gì)
 - [3. Số đếm & Thời gian](#3-số-đếm-thời-gian)
   - [3.1 Số đếm cơ bản](#31-số-đếm-cơ-bản)
     - [Số 1–10](#số-110)
@@ -92,11 +93,14 @@
     - [A 跟 B (+一起) + ĐT — Với / Cùng nhau làm gì](#a-跟-b-一起-đt-với-cùng-nhau-làm-gì)
     - [A + 给 + B + ĐT — Làm việc gì đó cho ai](#a-给-b-đt-làm-việc-gì-đó-cho-ai)
     - [请 + ĐT — Lời mời lịch sự](#请-đt-lời-mời-lịch-sự)
+    - [自己 + ĐT — Tự mình làm gì](#自己-đt-tự-mình-làm-gì)
+    - [给谁打电话 — Gọi điện thoại cho ai](#给谁打电话-gọi-điện-thoại-cho-ai)
   - [Nhóm 6: Thời gian và trạng thái tiếp diễn](#nhóm-6-thời-gian-và-trạng-thái-tiếp-diễn)
     - [ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái](#đt-了-hành-động-đã-xảy-ra-thay-đổi-trạng-thái)
     - […的时候 — Khi / Lúc](#的时候-khi-lúc)
     - [还 (hái) + ĐT/HDT — Còn, vẫn](#还-hái-đthdt-còn-vẫn)
     - [分钟 vs 分 — Phân biệt khoảng thời gian và mốc thời gian](#分钟-vs-分-phân-biệt-khoảng-thời-gian-và-mốc-thời-gian)
+    - [正在 + ĐT + 呢 — Đang làm gì (nhấn mạnh)](#正在-đt-呢-đang-làm-gì-nhấn-mạnh)
   - [Nhóm 7: Địa điểm và vị trí](#nhóm-7-địa-điểm-và-vị-trí)
     - [Danh sách phương vị từ cơ bản — Bảng tổng hợp](#danh-sách-phương-vị-từ-cơ-bản-bảng-tổng-hợp)
     - [在 + Địa điểm + ĐT — Ở đâu làm gì](#在-địa-điểm-đt-ở-đâu-làm-gì)
@@ -107,17 +111,21 @@
     - [DT + phương vị từ đơn — Vị trí rút gọn](#dt-phương-vị-từ-đơn-vị-trí-rút-gọn)
     - [Phương vị từ + DT — Bổ nghĩa cho DT](#phương-vị-từ-dt-bổ-nghĩa-cho-dt)
     - [上/下 + DT → ĐT — Hành động di chuyển](#上下-dt-đt-hành-động-di-chuyển)
+    - [从 A 到 B — Từ A đến B](#từ-a-đến-b)
   - [Nhóm 8: Số từ và lượng từ](#nhóm-8-số-từ-và-lượng-từ)
     - [Số từ + Lượng từ + Danh từ — Cấu trúc số lượng](#số-từ-lượng-từ-danh-từ-cấu-trúc-số-lượng)
     - [零下 + [số] + 度 — Nhiệt độ âm](#零下-số-度-nhiệt-độ-âm)
+    - [家 vs 个 — Lượng từ đếm địa điểm](#gia-vs-ge-lượng-từ-đếm-địa-điểm)
   - [Nhóm 9: Cấu trúc bổ sung](#nhóm-9-cấu-trúc-bổ-sung)
     - [什么 + 都/也 + ĐT — Cái gì cũng / đều](#什么-都也-đt-cái-gì-cũng-đều)
     - [Câu + 吧 — Đề nghị hoặc xác nhận nhẹ](#câu-吧-đề-nghị-hoặc-xác-nhận-nhẹ)
+    - [每 + Thời gian + 都 + ĐT — Tần suất toàn diện](#mỗi-thời-gian-đều-đt-tần-suất-toàn-diện)
   - [Nhóm 10: Phân biệt từ dễ nhầm](#nhóm-10-phân-biệt-từ-dễ-nhầm)
     - [知道 vs 会 — Hai cách "biết" khác nhau](#知道-vs-会-hai-cách-biết-khác-nhau)
     - [去 vs 走 — Phân biệt hai cách "đi"](#去-vs-走-phân-biệt-hai-cách-đi)
     - [一下儿 vs 一会儿 — Phân biệt "một chút" và "một lúc"](#一下儿-vs-一会儿-phân-biệt-một-chút-và-một-lúc)
     - [两 vs 二 — Hai cách nói số 2](#两-vs-二-hai-cách-nói-số-2)
+    - [馆 vs 店 — Phân biệt địa điểm](#馆-vs-店-phân-biệt-địa-điểm)
 - [6. Câu thông dụng (Common Phrases)](#6-câu-thông-dụng-common-phrases)
   - [Chào hỏi](#chào-hỏi)
   - [Tạm biệt](#tạm-biệt)
@@ -721,6 +729,44 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+### Bài 12 — Cậu Đang Làm Gì?
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| — | 自己 | /zìjǐ/ | Tự Kỷ | Đại từ | bản thân, chính mình, tự mình |
+| — | 咖啡 | /kāfēi/ | Ca Phi | DT | cà phê |
+| — | 文化 | /wénhuà/ | Văn Hóa | DT | văn hóa |
+| — | 冰沙 | /bīngshā/ | Băng Sa | DT | đồ uống đá xay, sinh tố |
+| — | 果汁 | /guǒzhī/ | Quả Trấp | DT | nước ép hoa quả |
+| 冲 | 衝 | /chōng/ | Xung | ĐT | pha (trà, cà phê), dội, xung |
+| 书店 | 書店 | /shūdiàn/ | Thư Điếm | DT | nhà sách |
+| 对面 | 對面 | /duìmiàn/ | Đối Diện | DT | phía đối diện, bên kia |
+| 喂 | 餵 | /wèi/ | — | Thán từ/ĐT | alo (khi nghe điện thoại) / bón, cho ăn |
+| 打电话 | 打電話 | /dǎ diànhuà/ | Đả Điện Thoại | Cụm ĐT | gọi điện thoại |
+| 干 | 幹 | /gàn/ | Cán | ĐT | làm (khẩu ngữ), đảm nhận |
+| 干活 | 幹活 | /gàn huó/ | Cán Hoạt | Cụm ĐT | làm việc (nói chung) |
+| 干家务 | 幹家務 | /gàn jiāwù/ | Cán Gia Vụ | Cụm ĐT | làm việc nhà |
+| — | 正在 | /zhèngzài/ | Chính Tại | PT | đang (nhấn mạnh hành động đang diễn ra) |
+| — | 唱歌 | /chàng gē/ | Xướng Ca | ĐT ly hợp | hát |
+| 语文 | 語文 | /yǔwén/ | Ngữ Văn | DT | ngữ văn |
+| 听写 | 聽寫 | /tīngxiě/ | Thính Tả | ĐT | nghe viết chính tả |
+| 生词 | 生詞 | /shēngcí/ | Sinh Từ | DT | từ mới |
+| — | 所以 | /suǒyǐ/ | Sở Dĩ | Liên từ | nên, cho nên, vì thế, do đó |
+| — | 酒吧 | /jiǔbā/ | Tửu Ba | DT | quán bar |
+| — | 椰子 | /yēzi/ | Da Tử | DT | quả dừa |
+| 作业 | 作業 | /zuòyè/ | Tác Nghiệp | DT | bài tập về nhà |
+| — | 每天 | /měitiān/ | Mỗi Thiên | DT | mỗi ngày, hằng ngày |
+| 从 | 從 | /cóng/ | Tùng | Giới từ | từ (chỉ điểm xuất phát) |
+| 开始 | 開始 | /kāishǐ/ | Khai Thủy | ĐT | bắt đầu |
+| — | 不但 | /búdàn/ | Bất Đản | Liên từ | không những |
+| — | 而且 | /érqiě/ | Nhi Thả | Liên từ | mà còn, hơn nữa |
+| 节日 | 節日 | /jiérì/ | Tiết Nhật | DT | ngày lễ tết |
+| 国庆节 | 國慶節 | /guóqìng jié/ | Quốc Khánh Tiết | DT | lễ Quốc khánh |
+| 清明节 | 清明節 | /qīngmíng jié/ | Thanh Minh Tiết | DT | tiết Thanh minh |
+| 节 | 節 | /jié/ | Tiết | Lượng từ | tiết học — xem § 4 Lượng từ |
+
+---
+
 ## 3. Số đếm & Thời gian
 
 ### 3.1 Số đếm cơ bản
@@ -920,6 +966,16 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | 只 | 隻 | /zhī/ | Chích | con | động vật nhỏ (chó, mèo, chim...) |
 | 条 | 條 | /tiáo/ | Điều | cái, con | vật dài, hẹp; động vật dài (chó, cá...) |
 | 张 | 張 | /zhāng/ | Trương | tờ, tấm | vật mỏng, dẹt (ảnh, giấy, bàn...) |
+
+### 节 / 節 — Lượng từ tiết học (Bài 12)
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa | Dùng với |
+|------|------|--------|----------|-------|---------|
+| 节 | 節 | /jié/ | Tiết | tiết, buổi | tiết học (课) |
+
+**Ví dụ:**
+- 星期一我们有一节语文课。/ 星期一我們有一節語文課。 /xīngqīyī wǒmen yǒu yì jié yǔwén kè/ — Thứ Hai chúng tôi có một tiết Ngữ văn.
+- 每天我们上两节中文课。/ 每天我們上兩節中文課。 /měitiān wǒmen shàng liǎng jié zhōngwén kè/ — Mỗi ngày chúng tôi học hai tiết tiếng Trung.
 
 ---
 
@@ -1354,6 +1410,31 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 自己 + ĐT — Tự mình làm gì
+
+**Cấu trúc:** CN + 自己 + ĐT
+
+**Giải thích:** 自己 /zìjǐ/ là đại từ phản thân "bản thân, tự mình". Đặt trước động từ chỉ hành động tự mình thực hiện, không cần người khác giúp.
+
+**Ví dụ:**
+- 我常常自己做晚饭。/ 我常常自己做晚飯。 /wǒ chángcháng zìjǐ zuò wǎnfàn/ — Tôi thường tự mình nấu cơm tối.
+- 我在家自己学汉语。/ 我在家自己學漢語。 /wǒ zài jiā zìjǐ xué hànyǔ/ — Tôi tự học tiếng Trung tại nhà.
+- 自己学习 = 自学 / 自己學習 = 自學 /zìjǐ xuéxí = zìxué/ — Tự học.
+
+---
+
+#### 给谁打电话 — Gọi điện thoại cho ai
+
+**Cấu trúc:** CN + 给/給 + Người nhận + 打电话/打電話
+
+**Giải thích:** Cấu trúc gọi điện thoại cho ai đó. 给 đóng vai trò giới từ chỉ người nhận cuộc gọi. 打电话 là động từ ly hợp — có thể tách thành 打…的电话.
+
+**Ví dụ:**
+- 我每天晚上都给男朋友打电话。/ 我每天晚上都給男朋友打電話。 /wǒ měitiān wǎnshàng dōu gěi nánpéngyou dǎ diànhuà/ — Mỗi tối tôi đều gọi điện thoại cho bạn trai.
+- 给妈妈打电话 / 給媽媽打電話 /gěi māma dǎ diànhuà/ — gọi điện thoại cho mẹ.
+
+---
+
 ### Nhóm 6: Thời gian và trạng thái tiếp diễn
 
 #### ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái
@@ -1407,6 +1488,19 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 **Ví dụ:**
 - 五分钟 / 五分鐘 /wǔ fēnzhōng/ — 5 phút (khoảng thời gian).
 - 八点五分 /bā diǎn wǔ fēn/ — 8 giờ 5 phút (mốc thời gian).
+
+---
+
+#### 正在 + ĐT + 呢 — Đang làm gì (nhấn mạnh)
+
+**Cấu trúc:** CN + 正在 + ĐT + (TN) + 呢
+
+**Giải thích:** 正在 /zhèngzài/ nhấn mạnh hành động đang diễn ra ngay lúc nói, mạnh hơn 在 đơn thuần. 呢 ở cuối câu thêm sắc thái "đang tập trung vào việc đó" và làm mềm giọng. 呢 có thể lược bỏ.
+
+**Ví dụ:**
+- 她正在写作业呢。/ 她正在寫作業呢。 /tā zhèngzài xiě zuòyè ne/ — Cô ấy đang (tập trung) làm bài tập.
+- 他正在冲咖啡。/ 他正在衝咖啡。 /tā zhèngzài chōng kāfēi/ — Anh ấy đang pha cà phê.
+- 我妈妈正在买两个椰子。/ 我媽媽正在買兩個椰子。 /wǒ māma zhèngzài mǎi liǎng gè yēzi/ — Mẹ tôi đang mua hai quả dừa.
 
 ---
 
@@ -1557,6 +1651,20 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 从 A 到 B — Từ A đến B
+
+**Cấu trúc:** 从/從 + A + 到 + B (+ ĐT)
+
+**Giải thích:** Diễn đạt "từ... đến...". A và B có thể là địa điểm hoặc thời gian. 到 ở đây là giới từ, không phải động từ "đến nơi".
+
+**Ví dụ:**
+- 我从家到学校走路十分钟。/ 我從家到學校走路十分鐘。 /wǒ cóng jiā dào xuéxiào zǒulù shí fēnzhōng/ — Tôi đi bộ từ nhà đến trường mất 10 phút.
+- 我妹妹从星期一到星期五上课。/ 我妹妹從星期一到星期五上課。 /wǒ mèimei cóng xīngqīyī dào xīngqīwǔ shàngkè/ — Em gái tôi đi học từ thứ Hai đến thứ Sáu.
+- 从今天开始 / 從今天開始 /cóng jīntiān kāishǐ/ — bắt đầu từ hôm nay.
+- 我从去年到现在学习中文。/ 我從去年到現在學習中文。 /wǒ cóng qùnián dào xiànzài xuéxí zhōngwén/ — Tôi học tiếng Trung từ năm ngoái đến nay.
+
+---
+
 ### Nhóm 8: Số từ và lượng từ
 
 #### Số từ + Lượng từ + Danh từ — Cấu trúc số lượng
@@ -1591,6 +1699,20 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 家 vs 个 — Lượng từ đếm địa điểm
+
+**Phân biệt:**
+- **家** /jiā/: dùng cho doanh nghiệp, cơ sở kinh doanh có quy mô — ngân hàng, nhà hàng, nhà sách, bệnh viện, công ty...
+- **个** /gè/: dùng cho đơn vị nhỏ hơn hoặc phổ thông hơn.
+
+**Ví dụ:**
+- 一家银行 /yì jiā yínháng/ — một ngân hàng
+- 一家书店 /yì jiā shūdiàn/ — một nhà sách
+- 一家饭馆 /yì jiā fànguǎn/ — một nhà hàng
+- 一个学校 /yí gè xuéxiào/ — một trường học
+
+---
+
 ### Nhóm 9: Cấu trúc bổ sung
 
 #### 什么 + 都/也 + ĐT — Cái gì cũng / đều
@@ -1619,6 +1741,19 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 我回家吧！ /wǒ huí jiā ba/ — Tôi về nhà nhé! (giản thể = phồn thể)
 - 你去问小马吧。/ 你去問小馬吧。 /nǐ qù wèn xiǎo mǎ ba/ — Bạn đi hỏi Tiểu Mã nhé.
 - 明天你来我家吧。/ 明天你來我家吧。 /míngtiān nǐ lái wǒ jiā ba/ — Ngày mai bạn đến nhà tôi nhé.
+
+---
+
+#### 每 + Thời gian + 都 + ĐT — Tần suất toàn diện
+
+**Cấu trúc:** 每 + Khoảng thời gian + 都 + ĐT (+ TN)
+
+**Giải thích:** 每 /měi/ (mỗi) kết hợp với 都 (đều) nhấn mạnh hành động xảy ra không sót lần nào trong mỗi chu kỳ thời gian.
+
+**Ví dụ:**
+- 我们每天都听写生词。/ 我們每天都聽寫生詞。 /wǒmen měitiān dōu tīngxiě shēngcí/ — Mỗi ngày chúng tôi đều nghe viết từ mới.
+- 我每天晚上都给男朋友打电话。/ 我每天晚上都給男朋友打電話。 /wǒ měitiān wǎnshàng dōu gěi nánpéngyou dǎ diànhuà/ — Mỗi tối tôi đều gọi điện thoại cho bạn trai.
+- 每天我们上两节中文课。/ 每天我們上兩節中文課。 /měitiān wǒmen shàng liǎng jié zhōngwén kè/ — Mỗi ngày chúng tôi học hai tiết tiếng Trung.
 
 ---
 
@@ -1677,6 +1812,22 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 两个星期。 /liǎng ge xīngqī/ — Hai tuần.
 - 两天 / 两年。 /liǎng tiān / liǎng nián/ — Hai ngày / Hai năm.
 - 两个人 = 俩。/ 兩個人 = 倆。 /liǎng ge rén = liǎ/ — Hai người = một cặp.
+
+---
+
+#### 馆 vs 店 — Phân biệt địa điểm
+
+**Phân biệt:**
+- **馆/館** /guǎn/ (Quán): không gian rộng, có chỗ ngồi lâu dài — thư viện, nhà hàng, trà quán, bảo tàng.
+- **店** /diàn/ (Điếm): thường là tiệm nhỏ hơn, mua xong rời đi — cửa hàng, tiệm.
+
+**Ví dụ:**
+- 图书馆 /túshūguǎn/ — thư viện (không gian lớn, có chỗ ngồi đọc)
+- 饭馆 /fànguǎn/ — nhà hàng (có bàn ghế ngồi ăn)
+- 茶馆 /cháguǎn/ — trà quán (có chỗ ngồi thưởng trà)
+- 书店 /shūdiàn/ — nhà sách (mua sách rồi đi)
+
+---
 
 ## 6. Câu thông dụng (Common Phrases)
 

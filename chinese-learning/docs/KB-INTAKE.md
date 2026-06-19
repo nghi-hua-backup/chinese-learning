@@ -352,4 +352,30 @@ Customer observed that 旁边 and the compass/directional/demonstrative 边 word
 
 ### Open questions resolved
 - Q1 (structure): New `####` reference table at start of Nhóm 7 (not expanding existing pattern)
+
+---
+
+## [2026-06-19] — Bài 12: Cậu Đang Làm Gì?
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bai-12.md` — pre-structured lesson file
+
+### Input summary
+Full lesson content for Bài 12 "Cậu Đang Làm Gì?" extracted from the structured reference file. Contains: 42 vocabulary items (31 added after KBP-2 duplicate scan — 做 from Bài 5 and 走路 from Bài 8 skipped); 7 grammar patterns across Nhóm 5–10; 4 common sentences (PHẦN 2); 29 practice sentences (PHẦN 4). Focus grammar: 正在+呢, 从...到..., 每...都..., 自己+ĐT, 馆 vs 店, 家 vs 个, 给谁打电话.
+
+### Agreed scope
+- 31 vocab entries added to `chinese-brain.md` §2 under `### Bài 12 — Cậu Đang Làm Gì?`
+- `节/節` (lượng từ) added to BOTH §2 (with cross-reference note) and §4 Lượng từ
+- 7 grammar patterns added across Nhóm 5–10
+- TOC updated with all new vocab and grammar links
+- 33 practice sentences (29 from PHẦN 4 + 4 from PHẦN 2) added to `chinese-practice-bank.md`
+- CHANGELOG bumped to 2.3.1
+
+### Out of scope (agreed)
+- 做 (Bài 5 duplicate) — skipped per KBP-2
+- 走路 (Bài 8 duplicate) — skipped per KBP-2
+
+### Debator concerns resolved
+- KBP-2 duplicates identified by 繁體 column scan before writing
+- 节/節 dual-placement (§2 + §4) is correct per guide — lượng từ belongs in both sections
 - Q1 (面 column): Words with no 面 variant use `—`

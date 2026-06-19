@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh (2026-06-14)
+> **Cập nhật lần cuối:** Bài 12 — Cậu Đang Làm Gì? (2026-06-19)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
 
@@ -22,6 +22,8 @@
 - [Bài 8 — Cuối tuần cậu thích làm gì?](#bài-8--cuối-tuần-cậu-thích-làm-gì)
 - [Bài 9 — Táo bán như thế nào?](#bài-9--táo-bán-như-thế-nào)
 - [Bài 10 — Nhà bạn có mấy người?](#bài-10--nhà-bạn-có-mấy-người)
+- [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bài-11--mùa-đông-ở-bắc-kinh-khá-lạnh)
+- [Bài 12 — Cậu Đang Làm Gì?](#bài-12--cậu-đang-làm-gì)
 
 ---
 
@@ -617,4 +619,45 @@
 | 春天是我最喜欢的季节。 | 春天是我最喜歡的季節。 | /chūntiān shì wǒ zuì xǐhuān de jìjié/ | Mùa xuân là mùa tôi yêu thích nhất. |
 | 我们去旅行吧！ | 我們去旅行吧！ | /wǒmen qù lǚxíng ba/ | Chúng ta đi du lịch đi! |
 | 我喜欢跟我家去旅行。 | 我喜歡跟我家去旅行。 | /wǒ xǐhuān gēn wǒjiā qù lǚxíng/ | Tôi thích đi du lịch cùng gia đình tôi. |
+
+
+---
+
+### Bài 12 — Cậu Đang Làm Gì?
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| — | 咖啡文化 | /kāfēi wénhuà/ | Văn hóa cà phê. |
+| 他正在冲咖啡。 | 他正在衝咖啡。 | /tā zhèngzài chōng kāfēi/ | Anh ấy đang pha cà phê. |
+| 我们周末去书店吧！ | 我們週末去書店吧！ | /wǒmen zhōumò qù shūdiàn ba/ | Cuối tuần chúng mình đi nhà sách đi! |
+| 他家在我家对面。 | 他家在我家對面。 | /tā jiā zài wǒ jiā duìmiàn/ | Nhà anh ấy ở đối diện nhà tôi. |
+| 对面的女孩看过来！ | 對面的女孩看過來！ | /duìmiàn de nǚhái kàn guòlái/ | Cô gái đối diện hãy nhìn qua đây! |
+| 给妈妈打电话时候 | 給媽媽打電話時候 | /gěi māma dǎ diànhuà shíhòu/ | Lúc gọi điện thoại cho mẹ. |
+| 你在干什么？ | 你在幹什麼？ | /nǐ zài gàn shénme/ | Bạn đang làm cái gì vậy? |
+| 我妈妈很喜欢做饭。 | 我媽媽很喜歡做飯。 | /wǒ māma hěn xǐhuān zuò fàn/ | Mẹ tôi rất thích nấu ăn. |
+| 做买卖 | 做買賣 | /zuò mǎimài/ | Buôn bán. |
+| 做作业 | 做作業 | /zuò zuòyè/ | Làm bài tập. |
+| 做翻译 | 做翻譯 | /zuò fānyì/ | Làm phiên dịch. |
+| — | 做朋友 | /zuò péngyǒu/ | Làm bạn bè. |
+| 星期一我们有一节语文课。 | 星期一我們有一節語文課。 | /xīngqīyī wǒmen yǒu yì jié yǔwén kè/ | Thứ Hai chúng tôi có một tiết Ngữ văn. |
+| 我们每天都听写生词。 | 我們每天都聽寫生詞。 | /wǒmen měitiān dōu tīngxiě shēngcí/ | Mỗi ngày chúng tôi đều nghe viết từ mới. |
+| 我太热了，所以开门了。 | 我太熱了，所以開門了。 | /wǒ tài rè le, suǒyǐ kāi mén le/ | Tôi nóng quá, nên mở cửa rồi. |
+| 我想去中国留学，所以我要学好汉语。 | 我想去中國留學，所以我要學好漢語。 | /wǒ xiǎng qù Zhōngguó liúxué, suǒyǐ wǒ yào xué hǎo hànyǔ/ | Tôi muốn đi du học Trung Quốc, nên tôi phải học tốt tiếng Trung. |
+| — | 周一、周二、周三...周日 | /zhōuyī... zhōurì/ | Thứ Hai, thứ Ba...Chủ nhật. |
+| 我妈妈正在买两个椰子。 | 我媽媽正在買兩個椰子。 | /wǒ māma zhèngzài mǎi liǎng gè yēzi/ | Mẹ tôi đang mua hai quả dừa. |
+| 我弟弟在做作业。 | 我弟弟在做作業。 | /wǒ dìdi zài zuò zuòyè/ | Em trai tôi đang làm bài tập. |
+| 我们每天都要上课。 | 我們每天都要上課。 | /wǒmen měitiān dōu yào shàngkè/ | Chúng tôi ngày nào cũng phải lên lớp. |
+| 我跟国安每天都去图书馆学习汉语。 | 我跟國安每天都去圖書館學習漢語。 | /wǒ gēn Guó'ān měitiān dōu qù túshūguǎn xuéxí hànyǔ/ | Tôi và Quốc An hằng ngày đều đến thư viện học tiếng Trung. |
+| 每天早上你常做什么？ | 每天早上你常做什麼？ | /měitiān zǎoshàng nǐ cháng zuò shénme/ | Mỗi sáng bạn thường làm gì? |
+| 从今天开始我们好好学习汉语吧。 | 從今天開始我們好好學習漢語吧。 | /cóng jīntiān kāishǐ wǒmen hǎohǎo xuéxí hànyǔ ba/ | Từ hôm nay chúng ta hãy học hành chăm chỉ tiếng Trung nhé. |
+| 我妹妹从星期一到星期五上课。 | 我妹妹從星期一到星期五上課。 | /wǒ mèimei cóng xīngqīyī dào xīngqīwǔ shàngkè/ | Em gái tôi đi học từ thứ Hai đến thứ Sáu. |
+| 我从去年到现在学习中文。 | 我從去年到現在學習中文。 | /wǒ cóng qùnián dào xiànzài xuéxí zhōngwén/ | Tôi học tiếng Trung từ năm ngoái đến nay. |
+| 今天天气很好，而且不冷。 | 今天天氣很好，而且不冷。 | /jīntiān tiānqì hěn hǎo, érqiě bù lěng/ | Hôm nay thời tiết rất đẹp, hơn nữa không lạnh. |
+| 他不但帅，而且还很高。 | 他不但帥，而且還很高。 | /tā búdàn shuài, érqiě hái hěn gāo/ | Anh ấy không những đẹp trai mà còn rất cao. |
+| 他很喜欢中国，而且想去中国留学。 | 他很喜歡中國，而且想去中國留學。 | /tā hěn xǐhuān Zhōngguó, érqiě xiǎng qù Zhōngguó liúxué/ | Anh ấy rất thích Trung Quốc, hơn nữa còn muốn đi du học Trung Quốc. |
+| 每天我们上两节中文课。 | 每天我們上兩節中文課。 | /měitiān wǒmen shàng liǎng jié zhōngwén kè/ | Mỗi ngày chúng tôi học hai tiết tiếng Trung. |
+| 我在家自己学汉语。 | 我在家自己學漢語。 | /wǒ zài jiā zìjǐ xué hànyǔ/ | Tôi tự học tiếng Trung tại nhà. |
+| 再来一杯咖啡。 | 再來一杯咖啡。 | /zài lái yì bēi kāfēi/ | Cho (tôi) thêm một ly cà phê nữa. |
+| 干什么 | 幹什麼 | /gàn shénme/ | Làm gì vậy? (khẩu ngữ) |
+| 我很爱自己。 | 我很愛自己。 | /wǒ hěn ài zìjǐ/ | Tôi rất yêu bản thân mình. |
 
