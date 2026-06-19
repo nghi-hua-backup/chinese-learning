@@ -154,6 +154,26 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-5: `node scripts/generate-grammar-html.js` regenerates the file from the current state of `chinese-brain.md`
 - AC-6: The generator script is called automatically at the end of every `/lesson` and `/kb-update` run
 
+**Tech approach (Tech Lead):**
+- **Files created:** `scripts/generate-grammar-html.js` (new), `chinese-learning/grammar-reference.html` (generated output). No changes to `chinese-app/` whatsoever.
+- **Implementation strategy:**
+  1. Script reads `chinese-learning/knowledge-base/chinese-brain.md` with `fs.readFileSync`
+  2. Slice the text from `## 5. Ngữ pháp` to the next `## ` heading
+  3. Split on `### Nhóm` lines → one object per group with name and raw content
+  4. Within each group, split on `#### ` → one object per pattern
+  5. For each pattern, extract: heading (title + subtitle after `—`), `**Cấu trúc:**` line (→ formula components), `**Giải thích:**` first sentence (→ amber note), `**Ví dụ:**` bullet lines (→ examples)
+  6. Example line regex: find `/(pinyin)/` delimiter (lowercase + tone marks), split Chinese before it into simplified / traditional (separated by ` / `), extract Vietnamese after ` — `
+  7. Formula component color mapping: `CN` → purple; `了`/`的` → blue; `HDT`/`HĐT` → gold; `DT` → green; `ĐT` → teal; pure Chinese chars → red; everything else → neutral
+  8. Left-panel key char: extract the Chinese character(s) from the pattern heading (before `—`)
+  9. HTML is a single template string built by the script — no HTML library, no npm dependencies. CSS + JS inlined verbatim from the agreed prototype design.
+  10. SVG arrow drawing JS runs at `window.load` + `window.resize`, exactly as in the prototype.
+- **Integration:** Append `node ../scripts/generate-grammar-html.js` call + `git add chinese-learning/grammar-reference.html` to the final commit step in both the `/lesson` and `/kb-update` skill markdown files (`.claude/commands/`)
+- **Risks / pitfalls:**
+  - Some KB patterns have extra sub-sections (`**Cấu trúc phủ định:**`, blockquotes, tables) — parser must stop collecting examples at the first non-bullet, non-blank line after `**Ví dụ:**`
+  - Some example lines omit the traditional form (when identical to simplified) — parser must fall back to simplified value in that case
+  - Patterns with multi-char key elements (e.g., `太…了`) need the ellipsis preserved in the left panel display
+- **P-constraints:** P1–P10 do not apply (standalone file, not part of the Next.js app). P11 applies — CHANGELOG, REQUIREMENTS, TECHNICAL, VERIFICATION must all be updated.
+
 ---
 
 ## Out of Scope (Unless Explicitly Added by User)

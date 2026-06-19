@@ -92,7 +92,7 @@ ScriptMode      "traditional" | "simplified"
 
 **Rating:** Always `Rating.Good (3)` — the 4-level scale (Again/Hard/Good/Easy) is no longer exposed. `ReviewRating` type has been removed from `types.ts`. `progress-store.reviewCard(cardId)` takes no rating parameter and always calls FSRS with Good (3), guaranteeing a next review interval ≥ 1 day in all card states.
 
-**Binary Right/Wrong session model (PF-2):**
+**Binary Right/Wrong session model (FR-12):**
 - **Right** → `reviewCard(cardId)` called, card removed from session queue, FSRS schedules next review ≥ 1 day.
 - **Wrong** → card moved to end of session queue, FSRS NOT called. Card remains due (due date unchanged) — if session is exited, it re-appears in the Ôn tập lobby.
 - Session ends when queue is empty (all cards resolved as Right).
@@ -221,7 +221,7 @@ Computed entirely from Zustand SRS store at render time — no extra localStorag
 
 ---
 
-## Grammar Practice (FR-10 / PF-2)
+## Grammar Practice (FR-10)
 
 ### Route and components
 - `app/ngu-phap/page.tsx` — server component; calls `getAllGrammar()` and passes `GrammarPattern[]` to client
@@ -271,6 +271,19 @@ New Zustand state persisted to `chinese-srs-progress`:
 - On mount (`useEffect`): if `lesson !== undefined`, call `startSession(lesson, dueIds)`.
 - After each card rating in `handleRate` / `handleResult` callback: if `lesson !== undefined`, call `completeSessionCard(lesson, card.id)`.
 - On normal session completion (`onSessionComplete`): call `clearSession(lesson)` before invoking the callback.
+
+---
+
+## Grammar Reference HTML (PF-2)
+
+Standalone reference file — entirely outside the Next.js app. No P1–P10 constraints apply.
+
+- **Generator:** `scripts/generate-grammar-html.js` — Node.js, zero npm dependencies, run with `node scripts/generate-grammar-html.js` from the repo root
+- **Output:** `chinese-learning/grammar-reference.html` — open locally in any browser
+- **Input:** `chinese-learning/knowledge-base/chinese-brain.md` §5 Ngữ pháp section
+- **Formula color mapping:** `CN` → purple; `了`/`的` → blue; `HDT`/`HĐT` → gold/brown; `DT` → green; `ĐT` → teal; pure Chinese chars → red; anything else → neutral
+- **Auto-sync:** script is called at the end of every `/lesson` and `/kb-update` skill run; the generated HTML is committed in the same git commit as the KB update
+- **SVG arrows:** drawn at runtime via `getBoundingClientRect()` in inline `<script>`; redrawn on `load` + `resize`
 
 ---
 
