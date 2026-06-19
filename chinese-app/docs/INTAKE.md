@@ -516,3 +516,56 @@ The 4-level rating system (Lại/Khó/Tốt/Dễ) creates confusing UX and an "u
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-19] — Grammar Reference HTML
+
+**Status:** Agreement reached
+
+### Problem
+Grammar patterns from the KB are only seen during lesson intake — there is no way to casually re-read and memorize them afterward.
+
+### Agreed scope
+- Standalone `chinese-learning/grammar-reference.html` — not part of the Next.js app, opened directly in a browser
+- Shows all patterns from §5 Ngữ pháp of `chinese-brain.md`, grouped by Nhóm
+- Layout matches the "100 Chinese Grammar Formulas" book style:
+  - Formula header: large colored components (CN/key/HDT etc.) + purple Vietnamese subtitle line + amber italic explanation note
+  - Left panel: small pinyin → large red key character → Vietnamese meaning word only (no explanation text in panel)
+  - Fan SVG arrows drawn by JavaScript from left panel center to each example row
+  - Examples: pinyin above / colored Chinese (36px, key word red, subject blue) / Vietnamese translation below
+- Vietnamese-only — no English anywhere in the file
+- Global Phồn thể ⇄ Giản thể toggle button switches all Chinese text page-wide
+- Auto-sync: `node scripts/generate-grammar-html.js` regenerates the file from `chinese-brain.md` and is called automatically at the end of every `/lesson` and `/kb-update` run, committed in the same git commit as the KB update
+
+### Out of scope (agreed)
+- No quiz or practice interactivity
+- Not integrated into the Next.js app
+- No English text
+
+### Acceptance criteria (draft)
+- AC-1: `chinese-learning/grammar-reference.html` opens locally in any browser and shows all §5 Ngữ pháp patterns
+- AC-2: Patterns are grouped by Nhóm with styled group headers
+- AC-3: Each pattern card has a formula header, left panel, fan SVG arrows, and example rows
+- AC-4: Phồn thể ⇄ Giản thể toggle switches all Chinese text on the page
+- AC-5: `node scripts/generate-grammar-html.js` regenerates the file from the current state of `chinese-brain.md`
+- AC-6: The generator script is called automatically at the end of every `/lesson` and `/kb-update` run
+
+### Technical notes
+- Generator: `scripts/generate-grammar-html.js` — Node.js, no external dependencies
+- Input: `chinese-learning/knowledge-base/chinese-brain.md` §5 Ngữ pháp section
+- Output: `chinese-learning/grammar-reference.html`
+- SVG arrows drawn at runtime via `getBoundingClientRect()` — redrawn on `load` and `resize`
+- Script/traditional toggle: `body.classList.toggle('traditional')` + CSS `.simp`/`.trad` display switching
+
+### Design notes
+- Formula components: purple for CN (主语), red for key grammar element, gold/brown for HDT (tính từ), blue for particles (了), green for noun/place
+- Formula subtitle: color #6d28d9 (purple), 18px, semi-bold
+- Explanation note: color #b45309 (amber), 18px, italic
+- Left panel: pinyin 13px italic / key character 56px red bold / meaning word 13px
+- Example Chinese text: 36px, with colored `<span>` highlights on key words
+- Group title: 20px, purple left border accent
+- Background: warm off-white (#f5f3ef); cards: white with soft shadow
+
+### Open questions
+- (none)
