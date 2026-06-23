@@ -154,6 +154,14 @@ This file is the authoritative record of all features, requirements, and scope d
 - AC-5: Tapping "Tiếp →" advances to the next card (Right → card resolved, FSRS called; Wrong → card re-queued at end — per FR-12 binary right/wrong logic)
 - AC-6: Behavior is identical in both Từ vựng and Ôn tập session flows
 
+**Tech approach (Tech Lead):**
+- Components affected: `components/WritingInput.tsx`, `components/VocabSession.tsx`
+- Implementation strategy:
+  1. `WritingInput.tsx`: add optional `pinyin?: string` prop; in the submitted answer block, always render pinyin + expected Chinese character below the right/wrong feedback banner (regardless of correct/wrong). Note: question card in `VocabSession` already hides pinyin (shows only `meaning` + `hanViet`) — AC-1 requires no change.
+  2. `VocabSession.tsx`: add `lastCorrect` state (boolean, init false — must be declared before the `queue.length === 0 && resolved === 0` early return to satisfy P8). Modify `handleResult`: for `trac-nghiem`, keep existing `setTimeout(1400)` behavior; for `luyen-viet`, set `lastCorrect` and do NOT setTimeout. Add "Tiếp →" button rendered when `mode === "luyen-viet" && answered`; on tap calls `lastCorrect ? markRight() : markWrong()`. Pass `pinyin={card.pinyin}` to `WritingInput`.
+- Risks / pitfalls: P8 — `lastCorrect` hook must be added before the early return at line 50 of `VocabSession.tsx`. WritingInput `attempt` counter re-queue behavior is unchanged.
+- P-constraints: P3 (iPad — "Tiếp →" must be full-width, thumb-reachable), P4 (Vietnamese label), P8 (hooks before return)
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
