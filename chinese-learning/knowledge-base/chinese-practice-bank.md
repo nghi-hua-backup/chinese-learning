@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 12 — Cậu Đang Làm Gì? (2026-06-19)
+> **Cập nhật lần cuối:** Bài 13 — Đi thư viện mượn sách (2026-06-23)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
 
@@ -24,6 +24,7 @@
 - [Bài 10 — Nhà bạn có mấy người?](#bài-10--nhà-bạn-có-mấy-người)
 - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bài-11--mùa-đông-ở-bắc-kinh-khá-lạnh)
 - [Bài 12 — Cậu Đang Làm Gì?](#bài-12--cậu-đang-làm-gì)
+- [Bài 13 — Đi thư viện mượn sách](#bài-13--đi-thư-viện-mượn-sách)
 
 ---
 
@@ -660,4 +661,28 @@
 | 再来一杯咖啡。 | 再來一杯咖啡。 | /zài lái yì bēi kāfēi/ | Cho (tôi) thêm một ly cà phê nữa. |
 | 干什么 | 幹什麼 | /gàn shénme/ | Làm gì vậy? (khẩu ngữ) |
 | 我很爱自己。 | 我很愛自己。 | /wǒ hěn ài zìjǐ/ | Tôi rất yêu bản thân mình. |
+
+---
+
+### Bài 13 — Đi thư viện mượn sách
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 周末你有什么打算？ | 週末你有什麼打算？ | /zhōumò nǐ yǒu shénme dǎsuàn/ | Cuối tuần bạn có dự định gì? |
+| 这个周末你打算做什么？ | 這個週末你打算做什麼？ | /zhè ge zhōumò nǐ dǎsuàn zuò shénme/ | Cuối tuần này bạn định làm gì? |
+| 这个周末我们打算去看电影。 | 這個週末我們打算去看電影。 | /zhè ge zhōumò wǒmen dǎsuàn qù kàn diànyǐng/ | Cuối tuần này chúng tôi định đi xem phim. |
+| 这家商店的衣服质量很好。 | 這家商店的衣服質量很好。 | /zhè jiā shāngdiàn de yīfu zhìliàng hěn hǎo/ | Quần áo của cửa hàng này chất lượng rất tốt. |
+| 你觉得这件衣服怎么样？ | 你覺得這件衣服怎麼樣？ | /nǐ juéde zhè jiàn yīfu zěnmeyàng/ | Bạn thấy bộ quần áo này thế nào? |
+| 还可以。 | 還可以。 | /hái kěyǐ/ | Cũng được/Tạm tạm. |
+| 购物中心东西的质量还可以，但是太贵了。 | 購物中心東西的質量還可以，但是太貴了。 | /gòuwù zhōngxīn dōngxi de zhìliàng hái kěyǐ, dànshì tài guì le/ | Chất lượng đồ ở trung tâm thương mại cũng được, nhưng đắt quá. |
+| 你觉得这里的奶茶好喝吗？ | 你覺得這裡的奶茶好喝嗎？ | /nǐ juéde zhèlǐ de nǎichá hǎohē ma/ | Bạn thấy trà sữa ở đây có ngon không? |
+| 不错啊。 | 不錯啊。 | /búcuò a/ | Ngon lắm/Tốt đấy chứ. |
+| — | 一家商店 | /yì jiā shāngdiàn/ | Một cửa hàng/hiệu buôn. |
+| 这家商店的衣服不太贵。 | 這家商店的衣服不太貴。 | /zhè jiā shāngdiàn de yīfu bú tài guì/ | Quần áo của cửa hàng này không đắt lắm. |
+| 我去商店买点儿东西。 | 我去商店買點兒東西。 | /wǒ qù shāngdiàn mǎi diǎnr dōngxi/ | Tôi đi cửa hàng mua ít đồ. |
+| 上午8点我们商店开门，晚上9点关门。 | 上午8點我們商店開門，晚上9點關門。 | /shàngwǔ bā diǎn wǒmen shāngdiàn kāimén, wǎnshàng jiǔ diǎn guānmén/ | 8 giờ sáng cửa hàng chúng tôi mở cửa, 9 giờ tối đóng cửa. |
+| 他们正做什么呢？ | 他們正做什麼呢？ | /tāmen zhèng zuò shénme ne/ | Họ đang làm gì thế? |
+| 我先问一下老师。 | 我先問一下老師。 | /wǒ xiān wèn yíxià lǎoshī/ | Tôi hỏi thầy giáo một chút đã. |
+| 你先吃吧，我一会儿吃。 | 你先吃吧，我一會兒吃。 | /nǐ xiān chī ba, wǒ yíhuìr chī/ | Bạn ăn trước đi, một lát nữa tôi ăn. |
+| 明天你有空吗？咱们一起出去玩儿。 | 明天你有空嗎？咱們一起出去玩兒。 | /míngtiān nǐ yǒu kòng ma? zánmen yìqǐ chūqù wánr/ | Mai bạn rảnh không? Tụi mình cùng đi chơi đi. |
 

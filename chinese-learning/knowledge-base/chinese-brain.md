@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 12 — Cậu Đang Làm Gì? (2026-06-19)
+> **Cập nhật lần cuối:** Bài 13 — Đi thư viện mượn sách (2026-06-23)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -38,6 +38,7 @@
   - [Bài 10 — Nhà bạn có mấy người?](#bài-10-nhà-bạn-có-mấy-người)
   - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bài-11-mùa-đông-ở-bắc-kinh-khá-lạnh)
   - [Bài 12 — Cậu Đang Làm Gì?](#bài-12-cậu-đang-làm-gì)
+  - [Bài 13 — Đi thư viện mượn sách](#bài-13-đi-thư-viện-mượn-sách)
 - [3. Số đếm & Thời gian](#3-số-đếm-thời-gian)
   - [3.1 Số đếm cơ bản](#31-số-đếm-cơ-bản)
     - [Số 1–10](#số-110)
@@ -95,12 +96,15 @@
     - [请 + ĐT — Lời mời lịch sự](#请-đt-lời-mời-lịch-sự)
     - [自己 + ĐT — Tự mình làm gì](#自己-đt-tự-mình-làm-gì)
     - [给谁打电话 — Gọi điện thoại cho ai](#给谁打电话-gọi-điện-thoại-cho-ai)
+    - [先...然后... — Trình tự hành động](#先然后--trình-tự-hành-động)
+    - [借 — Mượn / Vay](#借--mượn--vay)
   - [Nhóm 6: Thời gian và trạng thái tiếp diễn](#nhóm-6-thời-gian-và-trạng-thái-tiếp-diễn)
     - [ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái](#đt-了-hành-động-đã-xảy-ra-thay-đổi-trạng-thái)
     - […的时候 — Khi / Lúc](#的时候-khi-lúc)
     - [还 (hái) + ĐT/HDT — Còn, vẫn](#还-hái-đthdt-còn-vẫn)
     - [分钟 vs 分 — Phân biệt khoảng thời gian và mốc thời gian](#分钟-vs-分-phân-biệt-khoảng-thời-gian-và-mốc-thời-gian)
     - [正在 + ĐT + 呢 — Đang làm gì (nhấn mạnh)](#正在-đt-呢-đang-làm-gì-nhấn-mạnh)
+    - [正 + ĐT + 呢 — Đang làm gì (dạng rút gọn)](#正-đt-呢-đang-làm-gì-dạng-rút-gọn)
   - [Nhóm 7: Địa điểm và vị trí](#nhóm-7-địa-điểm-và-vị-trí)
     - [Danh sách phương vị từ cơ bản — Bảng tổng hợp](#danh-sách-phương-vị-từ-cơ-bản-bảng-tổng-hợp)
     - [在 + Địa điểm + ĐT — Ở đâu làm gì](#在-địa-điểm-đt-ở-đâu-làm-gì)
@@ -126,6 +130,7 @@
     - [一下儿 vs 一会儿 — Phân biệt "một chút" và "một lúc"](#一下儿-vs-一会儿-phân-biệt-một-chút-và-một-lúc)
     - [两 vs 二 — Hai cách nói số 2](#两-vs-二-hai-cách-nói-số-2)
     - [馆 vs 店 — Phân biệt địa điểm](#馆-vs-店-phân-biệt-địa-điểm)
+    - [我们 vs 咱们 — Phân biệt cách nói "chúng ta"](#我们-vs-咱们-phân-biệt-cách-nói-chúng-ta)
 - [6. Câu thông dụng (Common Phrases)](#6-câu-thông-dụng-common-phrases)
   - [Chào hỏi](#chào-hỏi)
   - [Tạm biệt](#tạm-biệt)
@@ -767,6 +772,33 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+### Bài 13 — Đi thư viện mượn sách
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
+|------|------|--------|----------|---------|---------------------|
+| — | 正 | /zhèng/ | Chính | PT | đang, ở giữa, chính |
+| — | 打算 | /dǎsuàn/ | Đả Toán | ĐT, DT | dự định, định, tính toán, lo liệu |
+| 质量 | 質量 | /zhìliàng/ | Chất Lượng | DT | chất lượng |
+| 还可以 | 還可以 | /hái kěyǐ/ | Hoàn Khả Dĩ | Cụm từ | cũng được, tạm tạm |
+| 购物中心 | 購物中心 | /gòuwù zhōngxīn/ | Cấu Vật Trung Tâm | DT | trung tâm thương mại |
+| 不错 | 不錯 | /búcuò/ | Bất Thác | HDT | không tồi, rất ổn, tốt |
+| 换衣服 | 換衣服 | /huàn yīfu/ | Hoán Y Phục | Cụm ĐT | thay quần áo |
+| — | 商 | /shāng/ | Thương | DT | thương mại, buôn bán |
+| — | 商店 | /shāngdiàn/ | Thương Điếm | DT | cửa hàng, hiệu buôn |
+| — | 酒店 | /jiǔdiàn/ | Tửu Điếm | DT | khách sạn |
+| 东西 | 東西 | /dōngxi/ | Đông Tây | DT | đồ, vật, thứ, đồ đạc |
+| — | 借 | /jiè/ | Tá | ĐT | mượn, vay |
+| — | 先 | /xiān/ | Tiên | PT | trước |
+| 然后 | 然後 | /ránhòu/ | Nhiên Hậu | Liên từ | sau đó, tiếp đó |
+| 咱们 | 咱們 | /zánmen/ | Cha Môn | Đại từ | tụi mình, chúng ta, chúng mình (bao gồm người nghe) |
+| 关 | 關 | /guān/ | Quan | ĐT | tắt, đóng |
+| 关门 | 關門 | /guān mén/ | Quan Môn | Cụm ĐT | đóng cửa, nghỉ bán, ngừng hoạt động |
+| 关空调 | 關空調 | /guān kōngtiáo/ | Quan Không Điều | Cụm ĐT | tắt máy điều hòa |
+| 关灯 | 關燈 | /guān dēng/ | Quan Đăng | Cụm ĐT | tắt đèn |
+| 关电视 | 關電視 | /guān diànshì/ | Quan Điện Thị | Cụm ĐT | tắt TV (truyền hình) |
+
+---
+
 ## 3. Số đếm & Thời gian
 
 ### 3.1 Số đếm cơ bản
@@ -1263,6 +1295,11 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 我有一个中国朋友。/ 我有一個中國朋友。 /wǒ yǒu yī gè zhōngguó péngyou/ — Tôi có một người bạn Trung Quốc.
 - 我没有中国朋友。/ 我沒有中國朋友。 /wǒ méi yǒu zhōngguó péngyou/ — Tôi không có bạn Trung Quốc.
 
+**Dạng chính phản 有没有...?** (Bài 13): Câu hỏi chính phản của 有 là **有没有**, không phải 有不有. Lý do: 没 (méi) là phủ định riêng của 有; dùng 不 với 有 là sai ngữ pháp.
+
+- 你有没有中国朋友？/ 你有沒有中國朋友？ /nǐ yǒu méiyǒu zhōngguó péngyou/ — Bạn có bạn Trung Quốc không?
+- 图书馆有没有这本书？/ 圖書館有沒有這本書？ /túshūguǎn yǒu méiyǒu zhè běn shū/ — Thư viện có cuốn sách này không?
+
 ---
 
 #### 不用 + ĐT — Không cần làm gì
@@ -1311,12 +1348,13 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 **Cấu trúc:** CN + ĐT1 + Địa điểm + ĐT2
 
-**Giải thích:** Hai động từ liên tiếp trong một câu, ĐT1 là hành động di chuyển, ĐT2 là mục đích.
+**Giải thích:** Hai động từ liên tiếp trong một câu, ĐT1 là hành động di chuyển, ĐT2 là mục đích. Địa điểm có thể có hoặc không — khi bỏ địa điểm, ĐT2 đứng ngay sau ĐT1 (Bài 13).
 
 **Ví dụ:**
-- 我去学校学汉语。/ 我去學校學漢語。 /wǒ qù xuéxiào, xué hànyǔ/ — Tôi đi trường học tiếng Trung.
+- 我去学校学汉语。/ 我去學校學漢語。 /wǒ qù xuéxiào xué hànyǔ/ — Tôi đi trường học tiếng Trung.
 - 回家见妈妈。/ 回家見媽媽。 /huí jiā jiàn māma/ — Về nhà gặp mẹ.
 - 我去银行取钱。/ 我去銀行取錢。 /wǒ qù yínháng qǔ qián/ — Tôi đi ngân hàng rút tiền.
+- 我去书店买了一本小说。/ 我去書店買了一本小說。 /wǒ qù shūdiàn mǎile yì běn xiǎoshuō/ — Tôi đi nhà sách mua một cuốn tiểu thuyết.
 
 ---
 
@@ -1435,6 +1473,34 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 先...然后... — Trình tự hành động
+
+**Cấu trúc:** CN + 先 + ĐT1, 然后 + ĐT2
+
+**Giải thích:** Diễn đạt làm ĐT1 trước, sau đó làm ĐT2. 先 /xiān/ đứng trước hành động thứ nhất, 然后 /ránhòu/ mở đầu hành động thứ hai.
+
+**Ví dụ:**
+- 我们先买衣服，然后去银行。/ 我們先買衣服，然後去銀行。 /wǒmen xiān mǎi yīfu, ránhòu qù yínháng/ — Chúng tôi mua quần áo trước, sau đó đi ngân hàng.
+- 我做作业，然后看电影。/ 我做作業，然後看電影。 /wǒ zuò zuòyè, ránhòu kàn diànyǐng/ — Tôi làm bài tập, sau đó xem phim.
+- 我先换衣服，然后去学校。/ 我先換衣服，然後去學校。 /wǒ xiān huàn yīfu, ránhòu qù xuéxiào/ — Tôi thay quần áo trước, sau đó đi đến trường.
+
+---
+
+#### 借 — Mượn / Vay
+
+**Cấu trúc 1 (Mượn từ ai):** A + 跟/向 + B + 借 + DT
+**Cấu trúc 2 (Cho ai mượn):** A + 借给/借給 + B + DT
+
+**Giải thích:** 借 /jiè/ có hai hướng: mượn từ ai (dùng 跟/向) và cho ai mượn (dùng 借给). Khi hỏi lịch sự dùng 可以...吗？
+
+**Ví dụ:**
+- 我跟老师借一本书。/ 我跟老師借一本書。 /wǒ gēn lǎoshī jiè yì běn shū/ — Tôi mượn thầy giáo một cuốn sách.
+- 我可以跟你借 50 块钱吗？/ 我可以跟你借 50 塊錢嗎？ /wǒ kěyǐ gēn nǐ jiè wǔshí kuài qián ma/ — Tôi có thể mượn bạn 50 đồng không?
+- 他向朋友借了一些钱。/ 他向朋友借了一些錢。 /tā xiàng péngyou jièle yìxiē qián/ — Anh ấy đã mượn bạn bè một ít tiền.
+- 她借给我一本杂志。/ 她借給我一本雜誌。 /tā jiè gěi wǒ yì běn zázhì/ — Cô ấy cho tôi mượn một cuốn tạp chí.
+
+---
+
 ### Nhóm 6: Thời gian và trạng thái tiếp diễn
 
 #### ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái
@@ -1501,6 +1567,18 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 她正在写作业呢。/ 她正在寫作業呢。 /tā zhèngzài xiě zuòyè ne/ — Cô ấy đang (tập trung) làm bài tập.
 - 他正在冲咖啡。/ 他正在衝咖啡。 /tā zhèngzài chōng kāfēi/ — Anh ấy đang pha cà phê.
 - 我妈妈正在买两个椰子。/ 我媽媽正在買兩個椰子。 /wǒ māma zhèngzài mǎi liǎng gè yēzi/ — Mẹ tôi đang mua hai quả dừa.
+
+---
+
+#### 正 + ĐT + 呢 — Đang làm gì (dạng rút gọn)
+
+**Cấu trúc:** CN + 正 + ĐT + (TN) + 呢
+
+**Giải thích:** 正 /zhèng/ đứng một mình thay cho 正在 để nhấn mạnh hành động đang diễn ra. Ý nghĩa tương đương 正在 + ĐT + 呢, nhưng dạng 正 đơn dùng phổ biến trong văn nói thân mật.
+
+**Ví dụ:**
+- 他正学习呢。/ 他正學習呢。 /tā zhèng xuéxí ne/ — Anh ấy đang học bài.
+- 他们正做什么呢？/ 他們正做什麼呢？ /tāmen zhèng zuò shénme ne/ — Họ đang làm gì thế?
 
 ---
 
@@ -1829,6 +1907,18 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 我们 vs 咱们 — Phân biệt cách nói "chúng ta"
+
+**Phân biệt:**
+- **我们** /wǒmen/: "chúng tôi / chúng ta" — có thể bao gồm hoặc **không** bao gồm người nghe.
+- **咱们** /zánmen/: "tụi mình / chúng mình" — **bắt buộc** bao gồm cả người nói và người nghe; luôn thân mật.
+
+**Ví dụ:**
+- 我们去看电影。/ 我們去看電影。 /wǒmen qù kàn diànyǐng/ — Chúng tôi đi xem phim. (người nghe có thể không tham gia)
+- 咱们一起出去玩儿。/ 咱們一起出去玩兒。 /zánmen yìqǐ chūqù wánr/ — Tụi mình cùng đi chơi đi. (người nghe chắc chắn được mời)
+
+---
+
 ## 6. Câu thông dụng (Common Phrases)
 
 ### Chào hỏi
@@ -1891,6 +1981,7 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | 欢迎你来越南玩儿！ | 歡迎你來越南玩兒！ | huānyíng nǐ lái Yuènán wánr | Chào mừng bạn đến Việt Nam chơi! |
 | — | 晚安！ | wǎn'ān | Chúc ngủ ngon! |
 | 不用谢。 | 不用謝。 | búyòng xiè | Không cần cảm ơn. |
+| 明天你有空吗？咱们一起出去玩儿。 | 明天你有空嗎？咱們一起出去玩兒。 | míngtiān nǐ yǒu kòng ma? zánmen yìqǐ chūqù wánr | Mai bạn rảnh không? Tụi mình cùng đi chơi đi. |
 
 ### Ăn uống & Đặt món
 
@@ -1900,6 +1991,7 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | — | 太好吃了！ | tài hǎochī le | Ngon quá! |
 | 你吃什么？ | 你吃什麼？ | nǐ chī shénme | Bạn ăn gì? |
 | 我来一碗饭。 | 我來一碗飯。 | wǒ lái yì wǎn fàn | Cho tôi một bát cơm. |
+| 你先吃吧，我一会儿吃。 | 你先吃吧，我一會兒吃。 | nǐ xiān chī ba, wǒ yíhuìr chī | Bạn ăn trước đi, một lát nữa tôi ăn. |
 
 ### Mua bán
 
