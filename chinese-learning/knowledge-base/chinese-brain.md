@@ -36,9 +36,9 @@
   - [Bài 8 — Cuối tuần cậu thích làm gì?](#bài-8-cuối-tuần-cậu-thích-làm-gì)
   - [Bài 9 — Táo bán như thế nào?](#bài-9-táo-bán-như-thế-nào)
   - [Bài 10 — Nhà bạn có mấy người?](#bài-10-nhà-bạn-có-mấy-người)
-  - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bài-11-mùa-đông-ở-bắc-kinh-khá-lạnh)
-  - [Bài 12 — Cậu Đang Làm Gì?](#bài-12-cậu-đang-làm-gì)
-  - [Bài 13 — Đi thư viện mượn sách](#bài-13-đi-thư-viện-mượn-sách)
+  - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bai-11)
+  - [Bài 12 — Cậu Đang Làm Gì?](#bai-12)
+  - [Bài 13 — Đi thư viện mượn sách](#bai-13)
 - [3. Số đếm & Thời gian](#3-số-đếm-thời-gian)
   - [3.1 Số đếm cơ bản](#31-số-đếm-cơ-bản)
     - [Số 1–10](#số-110)
@@ -694,6 +694,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+<a name="bai-11"></a>
 ### Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -735,6 +736,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+<a name="bai-12"></a>
 ### Bài 12 — Cậu Đang Làm Gì?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -773,6 +775,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+<a name="bai-13"></a>
 ### Bài 13 — Đi thư viện mượn sách
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
