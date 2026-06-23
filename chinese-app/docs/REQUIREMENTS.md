@@ -142,6 +142,18 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ## Pending Features (Backlog)
 
+### PF-3: Luyện viết UX — Hide Pinyin in Question + Manual Advance
+**Priority:** High
+**Description:** In Luyện viết (handwriting practice) mode, the question phase currently shows Vietnamese meaning + pinyin + writing pad. After "Kiểm tra", the app auto-advances after 1.5s. This feature changes the mode to be a true writing-from-memory exercise.
+**Amends:** FR-12 (Binary Right/Wrong SRS Rating) — Luyện viết specifics
+**Acceptance criteria:**
+- AC-1: In Luyện viết question phase, only the Vietnamese meaning and writing pad are shown — no pinyin visible
+- AC-2: After tapping "Kiểm tra", Right/Wrong result is shown exactly as today (same visual feedback, unchanged)
+- AC-3: After "Kiểm tra", correct Chinese characters and their pinyin are displayed in the answer area
+- AC-4: A "Tiếp →" button appears after "Kiểm tra" — the card does NOT auto-advance
+- AC-5: Tapping "Tiếp →" advances to the next card (Right → card resolved, FSRS called; Wrong → card re-queued at end — per FR-12 binary right/wrong logic)
+- AC-6: Behavior is identical in both Từ vựng and Ôn tập session flows
+
 ### PF-1: Audio Pronunciation
 **Priority:** Medium
 **Description:** Web Speech API (`speechSynthesis`) to read characters/sentences aloud on demand. A 🔊 button per card; `utterance.lang = "zh-CN"`. No backend or API key required.
