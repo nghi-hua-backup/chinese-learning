@@ -569,3 +569,43 @@ Grammar patterns from the KB are only seen during lesson intake — there is no 
 
 ### Open questions
 - (none)
+
+---
+
+## [2026-06-23] — Amendment: Luyện viết UX — Hide Pinyin in Question + Manual Advance
+
+**Amends:** Section "[2026-06-15] — Binary Right/Wrong SRS Rating" — Luyện viết specifics
+
+**Specific changes:**
+
+1. **Hide pinyin in question phase:** Original agreement did not define what is shown during the question phase. Current implementation shows Vietnamese meaning + pinyin + writing pad. New agreement: only Vietnamese meaning + writing pad are shown — no pinyin during the question phase.
+
+2. **Remove auto-advance after "Kiểm tra":** Current implementation auto-advances to the next card after "Kiểm tra" (after a brief delay). New agreement: auto-advance is removed. A "Tiếp →" button appears after "Kiểm tra"; the user must tap it to proceed.
+
+3. **Show correct Chinese + pinyin in answer area:** After "Kiểm tra", the correct Chinese characters and their pinyin are displayed in the answer area (same position as current answer display), giving the user time to review before tapping "Tiếp →".
+
+**New agreement:**
+- Question phase: Vietnamese meaning + writing pad only (no pinyin)
+- After "Kiểm tra": Right/Wrong feedback shown exactly as today + correct Chinese + pinyin displayed in answer area
+- A "Tiếp →" button replaces the auto-advance; card does not advance until user taps
+- Right/Wrong determination still happens at "Kiểm tra" time (unchanged from Binary Right/Wrong agreement)
+- Applies to both Từ vựng and Ôn tập session flows
+
+**Reason for change:** Practitioner wants to write Chinese characters purely from memory (Vietnamese prompt only), and needs time to review the correct characters and pinyin after checking — without the app rushing to the next card.
+
+### Acceptance criteria
+- AC-1: In Luyện viết question phase, only the Vietnamese meaning and writing pad are shown — no pinyin visible
+- AC-2: After tapping "Kiểm tra", Right/Wrong result is shown exactly as today (same visual feedback, unchanged)
+- AC-3: After "Kiểm tra", correct Chinese characters and their pinyin are displayed in the answer area
+- AC-4: A "Tiếp →" button appears after "Kiểm tra" — the card does NOT auto-advance
+- AC-5: Tapping "Tiếp →" advances to the next card (Right → card resolved, FSRS called; Wrong → card re-queued at end — per existing Binary Right/Wrong agreement)
+- AC-6: Behavior is identical in both Từ vựng and Ôn tập session flows
+
+### Technical notes
+- Remove auto-advance mechanism (setTimeout or equivalent) from WritingSession after "Kiểm tra"
+- Pinyin field hidden from question render; revealed in answer display after "Kiểm tra"
+- "Tiếp →" button: same position as current auto-advance trigger
+- P4 (Vietnamese UI), P8 (hooks before returns), P1 (static export) all apply
+
+### Open questions
+- (none)
