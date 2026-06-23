@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.3.2] - 2026-06-23
+
+### Added
+- KB: Bài 13 — Đi thư viện mượn sách — 20 từ vựng, 6 pattern ngữ pháp (2 mới Nhóm 5, 1 mới Nhóm 6, 1 mới Nhóm 10, 2 mở rộng Nhóm 4 & 5), 17 câu luyện tập, 2 câu thông dụng § 6
+
+---
+
 ## [2.3.1] - 2026-06-19
 
 ### Added
