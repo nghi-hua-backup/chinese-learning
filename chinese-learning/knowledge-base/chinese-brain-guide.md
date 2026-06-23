@@ -103,6 +103,7 @@
 - [ ] Không có dòng trùng lặp với nội dung đã có trong file
 - [ ] Câu ví dụ trong Ngữ pháp có cả 简体, 繁體, pinyin, và nghĩa tiếng Việt
 - [ ] Câu trong Ngân hàng luyện tập có cả 4 cột
+- [ ] **Mỗi heading mới có TOC entry, anchor khớp chính xác** (xem P-KB5)
 
 ---
 
@@ -170,6 +171,33 @@ Heading ngữ pháp và dòng **Cấu trúc:** chỉ dùng **chữ Hán và ti�
 | Phương vị từ | 方位词 |
 
 **Ngoại lệ được chấp nhận:** thuật ngữ kỹ thuật trong ngoặc đơn như "Nominal 的" hoặc "Serial Verb" nếu cần giải thích thêm, và đã được khách hàng chấp nhận.
+
+---
+
+### P-KB5: Mỗi heading mới phải có TOC entry — anchor phải khớp chính xác
+
+Bất cứ khi nào thêm hoặc đổi tên một heading (`##` hoặc `###` hoặc `####`) trong `chinese-brain.md`:
+
+1. **Thêm TOC entry tương ứng** trong `## Mục lục` ở đúng vị trí (theo thứ bậc).
+2. **Tạo anchor đúng theo thuật toán GFM:**
+   - Chữ Hán: giữ nguyên
+   - Ký tự tiếng Việt có dấu: giữ nguyên, viết thường
+   - ASCII: viết thường
+   - Dấu cách → `-`
+   - Xoá tất cả dấu câu: `—`, `(`, `)`, `/`, `+`, `→`, `!`, `?`, `"`, `.`, `…`, `[`, `]`, `:`
+   - Nhiều dấu cách / ký hiệu liên tiếp bị xoá → gộp thành **một** `-`
+3. **Nếu đổi tên heading** → cập nhật cả display text lẫn anchor trong TOC.
+
+**Ví dụ:**
+
+| Heading | Anchor đúng | Lỗi thường gặp |
+|---|---|---|
+| `借 — Mượn / Vay` | `#借-mượn-vay` | `#借--mượn--vay` (double hyphen) |
+| `边 (biān) vs 面 (miàn) — Phân biệt` | `#边-biān-vs-面-miàn-phân-biệt` | `#边-vs-面-phân-biệt` (thiếu pinyin) |
+| `从 A 到 B — Từ A đến B` | `#从-a-到-b-từ-a-đến-b` | `#từ-a-đến-b` (bỏ chữ Hán) |
+| `家 vs 个 — Lượng từ đếm địa điểm` | `#家-vs-个-lượng-từ-đếm-địa-điểm` | `#gia-vs-ge-...` (dùng Hán Việt) |
+
+**Ghi nhớ:** Chữ Hán trong anchor **không bao giờ được dịch** sang pinyin, Hán Việt, hay tiếng Việt.
 
 ---
 
