@@ -31,6 +31,7 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
   const [resolved, setResolved] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [attempt, setAttempt] = useState(0);
+  const [lastCorrect, setLastCorrect] = useState(false);
 
   const totalCards = useRef(queue.length);
   const card = queue[0] as VocabCard | undefined;
@@ -81,10 +82,13 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
 
   function handleResult(correct: boolean) {
     setAnswered(true);
-    const delay = mode === "trac-nghiem" ? 1400 : 1500;
-    setTimeout(() => {
-      if (correct) markRight(); else markWrong();
-    }, delay);
+    if (mode === "trac-nghiem") {
+      setTimeout(() => {
+        if (correct) markRight(); else markWrong();
+      }, 1400);
+    } else {
+      setLastCorrect(correct);
+    }
   }
 
   const progress = totalCards.current > 0 ? (resolved / totalCards.current) * 100 : 0;
@@ -136,8 +140,18 @@ export default function VocabSession({ cards, allCards, mode, scriptMode, review
           key={`${card.id}-${attempt}`}
           expected={getDisplayChar(card, scriptMode)}
           expectedAlt={card.simplified !== card.traditional ? (scriptMode === "traditional" ? card.simplified : card.traditional) : undefined}
+          pinyin={card.pinyin}
           onResult={(correct) => handleResult(correct)}
         />
+      )}
+
+      {mode === "luyen-viet" && answered && (
+        <button
+          onClick={() => { if (lastCorrect) markRight(); else markWrong(); }}
+          className="w-full mt-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl py-4 text-lg font-semibold transition-all active:scale-95"
+        >
+          Tiếp →
+        </button>
       )}
     </div>
   );

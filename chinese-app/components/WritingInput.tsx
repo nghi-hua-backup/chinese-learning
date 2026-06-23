@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 interface Props {
   expected: string;
   expectedAlt?: string;
+  pinyin?: string;
   onResult: (correct: boolean, input: string) => void;
 }
 
@@ -13,7 +14,7 @@ function normalize(text: string): string {
   return text.trim().replace(/[\s\p{P}\p{S}]/gu, "").toLowerCase();
 }
 
-export default function WritingInput({ expected, expectedAlt, onResult }: Props) {
+export default function WritingInput({ expected, expectedAlt, pinyin, onResult }: Props) {
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(false);
@@ -79,10 +80,10 @@ export default function WritingInput({ expected, expectedAlt, onResult }: Props)
           ) : (
             <div>
               <p className="text-red-600 font-semibold mb-2">✗ Sai rồi</p>
-              <p className="text-gray-600 text-sm">Đáp án đúng:</p>
-              <p className="text-4xl mt-1 text-gray-900 font-bold">{expected}</p>
             </div>
           )}
+          {pinyin && <p className="text-gray-500 text-base mt-2">{pinyin}</p>}
+          <p className="text-4xl mt-1 text-gray-900 font-bold">{expected}</p>
         </div>
       )}
     </div>

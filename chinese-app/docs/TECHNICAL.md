@@ -134,9 +134,9 @@ Pattern: server component parses markdown + passes data as props → client comp
 |---|---|---|
 | `NavBar.tsx` | Bottom navigation bar | `active: string` |
 | `Dashboard.tsx` | Home screen: streak, due count, lesson links | `vocabCards`, `progress` |
-| `VocabSession.tsx` | Vocabulary flashcard session — mutable queue, binary Right/Wrong rating, mode switching. Right → FSRS + remove from queue. Wrong → move to end of queue (no FSRS). Session ends when queue is empty. | `cards`, `scriptMode`, `reviewOnly?`, `lesson?`, `onSessionComplete` |
+| `VocabSession.tsx` | Vocabulary flashcard session — mutable queue, binary Right/Wrong rating, mode switching. Right → FSRS + remove from queue. Wrong → move to end of queue (no FSRS). Session ends when queue is empty. In `luyen-viet` mode, `handleResult` sets `lastCorrect` state (no setTimeout); "Tiếp →" button triggers markRight/markWrong on tap. | `cards`, `scriptMode`, `reviewOnly?`, `lesson?`, `onSessionComplete` |
 | `MultipleChoice.tsx` | 4-option MCQ for trắc nghiệm mode | `card`, `allCards`, `scriptMode`, `onRate` |
-| `WritingInput.tsx` | Textarea for handwriting input + feedback | `expected`, `expectedAlt?`, `onSubmit` |
+| `WritingInput.tsx` | Textarea for handwriting input + feedback | `expected`, `expectedAlt?`, `pinyin?`, `onResult` |
 | `SRSRating.tsx` | 4-button rating bar — **unused** since PF-2 (binary Right/Wrong). File retained but not rendered anywhere. | `onRate: (rating: number) => void` |
 | `PhraseSession.tsx` | Phrase/sentence practice session; tracks `answerCorrect` state to display green/red feedback banner after `WritingInput` unmounts | `cards`, `scriptMode` |
 | `DialogueSession.tsx` | Dialogue line-by-line practice | `dialogue`, `scriptMode`, `onComplete` |
@@ -153,6 +153,7 @@ Pattern: server component parses markdown + passes data as props → client comp
 - Submit on Enter (without Shift) or tap "Kiểm tra" button
 - No placeholder text — textarea is intentionally blank so it doesn't interfere with handwriting composition
 - Font size: `text-7xl font-bold` for input, `text-8xl` for answer reveal character
+- Optional `pinyin?: string` prop — when provided, pinyin is shown above the expected character in the answer area (both correct and wrong cases). Question card in `VocabSession` never renders pinyin — only the answer area does (FR-14).
 
 ---
 

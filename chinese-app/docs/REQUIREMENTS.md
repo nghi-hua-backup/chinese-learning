@@ -57,11 +57,20 @@ This file is the authoritative record of all features, requirements, and scope d
 
 ### FR-12: Binary Right/Wrong SRS Rating
 - All practice modes (Trắc nghiệm, Luyện viết) use binary Right/Wrong — no Lại/Khó/Tốt/Dễ buttons anywhere
-- Luyện viết: single "Kiểm tra" button (always enabled); no input → auto-Wrong; input → string comparison → Right/Wrong with 1.5s auto-advance
+- Luyện viết: single "Kiểm tra" button (always enabled); no input → auto-Wrong; input → string comparison → Right/Wrong; user taps "Tiếp →" to advance (see FR-14)
 - Trắc nghiệm: correct answer = auto-Right; wrong answer = auto-Wrong, correct briefly shown, card re-queues at end of session; 1.4s auto-advance
 - Wrong cards re-queue at the END of the remaining session queue (mutable queue model)
 - FSRS called once per card on final Right (Rating.Good = 3 always); not called on Wrong; guarantees ≥ 1 day next review
 - Session ends only when all cards Right; exiting mid-session leaves unresolved cards due in Ôn tập lobby
+
+### FR-14: Luyện viết UX — Hide Pinyin in Question + Manual Advance
+- In the Luyện viết question phase, only Vietnamese meaning and writing pad are shown — no pinyin visible
+- After tapping "Kiểm tra", Right/Wrong result is shown exactly as before (same visual feedback)
+- After "Kiểm tra", correct Chinese characters and their pinyin are displayed in the answer area (both correct and wrong cases)
+- A "Tiếp →" button appears after "Kiểm tra" — the card does NOT auto-advance; user reviews answer at own pace
+- Tapping "Tiếp →" advances to the next card (Right → card resolved, FSRS called; Wrong → card re-queued at end — per FR-12 binary right/wrong logic)
+- Behavior is identical in both Từ vựng and Ôn tập session flows
+- **Amends:** FR-12 — Luyện viết specifics (was: 1.5s auto-advance; now: manual "Tiếp →" button)
 
 ### FR-11: SRS Enhancement — Ôn Tập (Due-Word Review)
 - Home screen shows an orange badge with due-review count on each lesson button where count > 0; badge is absent when count = 0
@@ -141,26 +150,6 @@ This file is the authoritative record of all features, requirements, and scope d
 ---
 
 ## Pending Features (Backlog)
-
-### PF-3: Luyện viết UX — Hide Pinyin in Question + Manual Advance
-**Priority:** High
-**Description:** In Luyện viết (handwriting practice) mode, the question phase currently shows Vietnamese meaning + pinyin + writing pad. After "Kiểm tra", the app auto-advances after 1.5s. This feature changes the mode to be a true writing-from-memory exercise.
-**Amends:** FR-12 (Binary Right/Wrong SRS Rating) — Luyện viết specifics
-**Acceptance criteria:**
-- AC-1: In Luyện viết question phase, only the Vietnamese meaning and writing pad are shown — no pinyin visible
-- AC-2: After tapping "Kiểm tra", Right/Wrong result is shown exactly as today (same visual feedback, unchanged)
-- AC-3: After "Kiểm tra", correct Chinese characters and their pinyin are displayed in the answer area
-- AC-4: A "Tiếp →" button appears after "Kiểm tra" — the card does NOT auto-advance
-- AC-5: Tapping "Tiếp →" advances to the next card (Right → card resolved, FSRS called; Wrong → card re-queued at end — per FR-12 binary right/wrong logic)
-- AC-6: Behavior is identical in both Từ vựng and Ôn tập session flows
-
-**Tech approach (Tech Lead):**
-- Components affected: `components/WritingInput.tsx`, `components/VocabSession.tsx`
-- Implementation strategy:
-  1. `WritingInput.tsx`: add optional `pinyin?: string` prop; in the submitted answer block, always render pinyin + expected Chinese character below the right/wrong feedback banner (regardless of correct/wrong). Note: question card in `VocabSession` already hides pinyin (shows only `meaning` + `hanViet`) — AC-1 requires no change.
-  2. `VocabSession.tsx`: add `lastCorrect` state (boolean, init false — must be declared before the `queue.length === 0 && resolved === 0` early return to satisfy P8). Modify `handleResult`: for `trac-nghiem`, keep existing `setTimeout(1400)` behavior; for `luyen-viet`, set `lastCorrect` and do NOT setTimeout. Add "Tiếp →" button rendered when `mode === "luyen-viet" && answered`; on tap calls `lastCorrect ? markRight() : markWrong()`. Pass `pinyin={card.pinyin}` to `WritingInput`.
-- Risks / pitfalls: P8 — `lastCorrect` hook must be added before the early return at line 50 of `VocabSession.tsx`. WritingInput `attempt` counter re-queue behavior is unchanged.
-- P-constraints: P3 (iPad — "Tiếp →" must be full-width, thumb-reachable), P4 (Vietnamese label), P8 (hooks before return)
 
 ### PF-1: Audio Pronunciation
 **Priority:** Medium

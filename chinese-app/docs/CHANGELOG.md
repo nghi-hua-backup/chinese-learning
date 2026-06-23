@@ -18,6 +18,14 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.4.0] - 2026-06-23
+
+### Added
+- Luyện viết UX: pinyin hidden during question phase; answer area now shows pinyin + correct Chinese character after "Kiểm tra" (both correct and wrong cases)
+- Luyện viết UX: "Tiếp →" button replaces 1.5s auto-advance — user controls when to move to the next card after reviewing the answer
+
+---
+
 ## [2.3.2] - 2026-06-23
 
 ### Added
