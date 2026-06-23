@@ -378,4 +378,51 @@ Full lesson content for Bài 12 "Cậu Đang Làm Gì?" extracted from the struc
 ### Debator concerns resolved
 - KBP-2 duplicates identified by 繁體 column scan before writing
 - 节/節 dual-placement (§2 + §4) is correct per guide — lượng từ belongs in both sections
+
+---
+
+## [2026-06-23] — Bài 13: Đi thư viện mượn sách
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bai-13.md` — pre-structured lesson file
+
+### Input summary
+Full lesson content for Bài 13 "Đi thư viện mượn sách" extracted from the structured reference file. Contains: 21 source vocabulary items (20 new after KBP-2 scan — 换/換 from Bài 9 skipped); 6 grammar pattern actions (3 new patterns, 2 extensions to existing patterns, 1 new standalone); 4 common sentences (PHẦN 2, 2 of which route to § 6); 13 practice sentences (PHẦN 4). Focus grammar: 正+ĐT+呢 (standalone), 先...然后..., 借 structures, 我们 vs 咱们; extensions to Chuỗi động từ and 有/没有 patterns.
+
+### Agreed scope
+
+**chinese-brain.md — Từ vựng (Bài 13):** 20 entries
+- 正, 打算, 质量/質量, 还可以/還可以, 购物中心/購物中心, 不错/不錯, 换衣服/換衣服
+- 商, 商店, 酒店, 东西/東西, 借, 先, 然后/然後, 咱们/咱們
+- 关/關, 关门/關門, 关空调/關空調, 关灯/關燈, 关电视/關電視
+
+**chinese-brain.md — Ngữ pháp (6 actions):**
+1. New pattern (Nhóm 6): 正 + ĐT + 呢 — standalone, separate from existing 正在 + ĐT + 呢
+2. Extend existing Chuỗi động từ (Nhóm 5): add note that location is optional (ĐT1 → ĐT2 for purpose)
+3. Extend existing 有/没有 (Nhóm 4): add 有没有...? affirmative-negative question form, explain why 没 not 不
+4. New pattern (Nhóm 5): 先...然后... — trình tự hành động
+5. New pattern (Nhóm 5): 借 — 跟/向 B 借 DT + 借给 B DT
+6. New pattern (Nhóm 10): 我们 vs 咱们
+
+**chinese-brain.md — § 6 Câu thông dụng (KBP-9 exception):**
+- 你先吃吧，我一会儿吃。 → "Ăn uống & Đặt món"
+- 明天你有空吗？咱们一起出去玩儿。 → "Hỏi thăm / Mời chào"
+
+**chinese-practice-bank.md:** 17 sentences under `### Bài 13` (13 PHẦN 4 + 4 PHẦN 2)
+
+### Out of scope (agreed)
+- 换/換 — KBP-2 duplicate of Bài 9 entry
+- 他们正做什么呢？ and 我先问一下老师。 — practice bank only (not § 6; not social phrases)
+
+### Debator concerns resolved
+- Q1: 先 Hán Việt corrected from source "Tiền" → "Tiên" (source confused 先 /xiān/ with 前 /qián/)
+- Q2: 咱们 Hán Việt "Cha Môn" accepted as-is per customer
+- Q5: 正 + ĐT + 呢 → new standalone pattern (not extension of existing 正在 entry)
+- Q6: Câu liên động → extend existing Chuỗi động từ pattern (location optional note added)
+- Q7: 有没有 → extend existing 有/没有 pattern (add question form)
+- Format corrections (auto): 商店 and 酒店 — column swap (`—` in 简体); 关电视 pinyin `diànhshì→diànshì`
+
+### Open questions resolved
+- Q3: 你先吃吧，我一会儿吃。 → Both § 6 "Ăn uống & Đặt món" AND practice bank
+- Q4: 明天你有空吗？咱们一起出去玩儿。 → Both § 6 "Hỏi thăm / Mời chào" AND practice bank
 - Q1 (面 column): Words with no 面 variant use `—`
