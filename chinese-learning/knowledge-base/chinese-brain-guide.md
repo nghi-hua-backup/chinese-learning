@@ -199,6 +199,29 @@ Bất cứ khi nào thêm hoặc đổi tên một heading (`##` hoặc `###` ho
 
 **Ghi nhớ:** Chữ Hán trong anchor **không bao giờ được dịch** sang pinyin, Hán Việt, hay tiếng Việt.
 
+#### Ngoại lệ bắt buộc: heading `### Bài N — ...` phải dùng anchor HTML tường minh
+
+GitHub có lỗi rendering với heading dạng `### Bài N — Tiêu đề` (em-dash `—` kết hợp ký tự tiếng Việt): anchor tự động không hoạt động dù anchor tính toán là đúng. Điều này đã xảy ra với Bài 11, 12, 13 và đã được xác nhận.
+
+**Quy tắc:** Với mọi heading `### Bài N`, không dùng GFM anchor — thay vào đó:
+
+1. Thêm `<a name="bai-N"></a>` ngay **trước** heading (trên dòng riêng):
+   ```markdown
+   <a name="bai-14"></a>
+   ### Bài 14 — Tên tiêu đề
+   ```
+2. TOC entry dùng anchor ASCII đơn giản `#bai-N`:
+   ```markdown
+   - [Bài 14 — Tên tiêu đề](#bai-14)
+   ```
+
+| Heading | TOC anchor đúng | KHÔNG dùng |
+|---|---|---|
+| `### Bài 14 — Đặt phòng` | `#bai-14` | `#bài-14-đặt-phòng` |
+| `### Bài 15 — Ở bệnh viện` | `#bai-15` | `#bài-15-ở-bệnh-viện` |
+
+Quy tắc này chỉ áp dụng cho `### Bài N` headings. Các heading khác vẫn dùng GFM anchor bình thường.
+
 ---
 
 ### P-KB4: Pattern ngữ pháp mới phải vào đúng nhóm

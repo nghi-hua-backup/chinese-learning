@@ -78,6 +78,7 @@ Thêm nội dung mới vào đúng file và section theo quy tắc trong guide:
 - Không thêm entry đã tồn tại (kiểm tra bằng cột 繁體)
 - Cập nhật dòng `> **Cập nhật lần cuối:**` ở đầu **cả hai** file được chỉnh sửa
 - **TOC sync (P-KB5):** Với mỗi heading mới được thêm vào `chinese-brain.md`, thêm ngay một entry tương ứng vào `## Mục lục` với anchor đúng cú pháp GFM (xem P-KB5 trong guide). Nếu đổi tên heading, cập nhật cả display text lẫn anchor trong TOC.
+- **Bài N anchor (P-KB5 ngoại lệ):** Khi thêm heading `### Bài N — ...`, KHÔNG dùng GFM anchor. Thay vào đó: (1) thêm `<a name="bai-N"></a>` trên dòng riêng ngay trước heading; (2) TOC entry dùng `#bai-N`. Lý do: GitHub có lỗi rendering với em-dash + tiếng Việt trong heading dạng này (confirmed Bài 11–13).
 
 ### Bước 5 — Báo cáo kết quả
 

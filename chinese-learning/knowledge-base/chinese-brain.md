@@ -26,16 +26,16 @@
   - [1.12 Quy tắc đặt dấu thanh điệu](#112-quy-tắc-đặt-dấu-thanh-điệu)
   - [1.13 Quy tắc đọc dãy số](#113-quy-tắc-đọc-dãy-số)
 - [2. Từ vựng (Vocabulary)](#2-từ-vựng-vocabulary)
-  - [Bài 1 — Xin chào!](#bài-1-xin-chào)
-  - [Bài 2 — Cảm ơn cậu!](#bài-2-cảm-ơn-cậu)
-  - [Bài 3 — Bạn đi đâu?](#bài-3-bạn-đi-đâu)
-  - [Bài 4 — Tôi là người Việt Nam.](#bài-4-tôi-là-người-việt-nam)
-  - [Bài 5 — Cậu tên gì?](#bài-5-cậu-tên-gì)
-  - [Bài 6 — Cậu thích ăn cái gì?](#bài-6-cậu-thích-ăn-cái-gì)
-  - [Bài 7 — Thư viện ở đâu?](#bài-7-thư-viện-ở-đâu)
-  - [Bài 8 — Cuối tuần cậu thích làm gì?](#bài-8-cuối-tuần-cậu-thích-làm-gì)
-  - [Bài 9 — Táo bán như thế nào?](#bài-9-táo-bán-như-thế-nào)
-  - [Bài 10 — Nhà bạn có mấy người?](#bài-10-nhà-bạn-có-mấy-người)
+  - [Bài 1 — Xin chào!](#bai-1)
+  - [Bài 2 — Cảm ơn cậu!](#bai-2)
+  - [Bài 3 — Bạn đi đâu?](#bai-3)
+  - [Bài 4 — Tôi là người Việt Nam.](#bai-4)
+  - [Bài 5 — Cậu tên gì?](#bai-5)
+  - [Bài 6 — Cậu thích ăn cái gì?](#bai-6)
+  - [Bài 7 — Thư viện ở đâu?](#bai-7)
+  - [Bài 8 — Cuối tuần cậu thích làm gì?](#bai-8)
+  - [Bài 9 — Táo bán như thế nào?](#bai-9)
+  - [Bài 10 — Nhà bạn có mấy người?](#bai-10)
   - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bai-11)
   - [Bài 12 — Cậu Đang Làm Gì?](#bai-12)
   - [Bài 13 — Đi thư viện mượn sách](#bai-13)
@@ -339,6 +339,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 > Quy tắc cột 简体: Nếu giản thể và phồn thể **giống nhau**, để `—` ở cột 简体.
 
+<a name="bai-1"></a>
 ### Bài 1 — Xin chào!
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -360,6 +361,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 您 | nín | — | Đại từ nhân xưng | ông, bà, ngài (kính trọng) |
 | 们 | 們 | men | — | Trợ từ | (hậu tố số nhiều: 你们 = các bạn) |
 
+<a name="bai-2"></a>
 ### Bài 2 — Cảm ơn cậu!
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -384,6 +386,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 谢谢 | 謝謝 | xièxie | Tạ Tạ | ĐT | cảm ơn |
 | 不客气 | 不客氣 | bù kèqi | Bất Khách Khí | — | không có gì, đừng khách sáo |
 
+<a name="bai-3"></a>
 ### Bài 3 — Bạn đi đâu?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -407,6 +410,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 那儿 | 那兒 | nàr | — | Đại từ nhân xưng | chỗ kia, chỗ đó (over there) |
 | 哪儿 | 哪兒 | nǎr | — | Đại từ nghi vấn | đâu, chỗ nào? (where?) |
 
+<a name="bai-4"></a>
 ### Bài 4 — Tôi là người Việt Nam.
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -433,6 +437,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 对不起 | 對不起 | duìbuqǐ | Đối Bất Khởi | — | xin lỗi |
 | 没关系 | 沒關係 | méi guānxi | — | — | không sao đâu |
 
+<a name="bai-5"></a>
 ### Bài 5 — Cậu tên gì?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -476,6 +481,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 退休 | tuìxiū | Thoái Hưu | ĐT | về hưu, nghỉ hưu |
 | 职员 | 職員 | zhíyuán | Chức Viên | DT | nhân viên |
 
+<a name="bai-6"></a>
 ### Bài 6 — Cậu thích ăn cái gì?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -505,6 +511,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 杂志 | 雜誌 | zázhì | Tạp Chí | DT | tạp chí |
 | — | 要 | yào | Yếu | ĐT năng nguyện | muốn, cần, phải |
 
+<a name="bai-7"></a>
 ### Bài 7 — Thư viện ở đâu?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -560,6 +567,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 孩子 | /háizi/ | Hài Tử | DT | con cái (trẻ em nói chung) |
 | 地铁 | 地鐵 | /dìtiě/ | Địa Thiết | DT | tàu điện ngầm |
 
+<a name="bai-8"></a>
 ### Bài 8 — Cuối tuần cậu thích làm gì?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -600,6 +608,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 留学 | 留學 | /liúxué/ | Lưu Học | ĐT | du học |
 | 见面 | 見面 | /jiànmiàn/ | Kiến Diện | ĐT ly hợp | gặp mặt |
 
+<a name="bai-9"></a>
 ### Bài 9 — Táo bán như thế nào?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
@@ -655,6 +664,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 
 ---
 
+<a name="bai-10"></a>
 ### Bài 10 — Nhà bạn có mấy người?
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa (Tiếng Việt) |
