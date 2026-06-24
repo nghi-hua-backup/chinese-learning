@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để sinh hội thoại và câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 13 — Đi thư viện mượn sách (2026-06-23)
+> **Cập nhật lần cuối:** Bài 14 — Tôi thích cái màu nhạt. (2026-06-24)
 > **Quy tắc cột 简体:** Nếu câu giản thể và phồn thể giống nhau hoàn toàn, để `—` ở cột 简体.
 
 
@@ -685,4 +685,41 @@
 | 我先问一下老师。 | 我先問一下老師。 | /wǒ xiān wèn yíxià lǎoshī/ | Tôi hỏi thầy giáo một chút đã. |
 | 你先吃吧，我一会儿吃。 | 你先吃吧，我一會兒吃。 | /nǐ xiān chī ba, wǒ yíhuìr chī/ | Bạn ăn trước đi, một lát nữa tôi ăn. |
 | 明天你有空吗？咱们一起出去玩儿。 | 明天你有空嗎？咱們一起出去玩兒。 | /míngtiān nǐ yǒu kòng ma? zánmen yìqǐ chūqù wánr/ | Mai bạn rảnh không? Tụi mình cùng đi chơi đi. |
+
+### Bài 14 — Tôi thích cái màu nhạt.
+
+| 简体 | 繁體 | Pinyin | Nghĩa (Tiếng Việt) |
+|------|------|--------|--------------------|
+| 你忘这件事吧。 | 你忘這件事吧。 | /nǐ wàng zhè jiàn shì ba/ | Bạn quên chuyện này đi. |
+| 你最喜欢什么颜色？ | 你最喜歡什麼顏色？ | /nǐ zuì xǐhuān shénme yánsè/ | Bạn thích nhất màu gì? |
+| 没事 | 沒事 | /méi shì/ | Không sao đâu. |
+| 没关系 | 沒關係 | /méi guānxi/ | Không sao đâu / Không có gì. |
+| 有点儿东西 | 有點兒東西 | /yǒudiǎnr dōngxi/ | (Tiếng lóng) Ghê lắm đó / Không phải dạng vừa. |
+| 我喜欢这个杯子，它是黄颜色的。 | 我喜歡這個杯子，它是黃顏色的。 | /wǒ xǐhuān zhège bēizi, tā shì huáng sè de/ | Tôi thích cái cốc này, nó màu vàng. |
+| 地上太脏了，别坐。 | 地上太髒了，別坐。 | /dìshàng tài zāng le, bié zuò/ | Trên đất bẩn quá, đừng ngồi. |
+| 这件衣服有点脏，我先洗一下。 | 這件衣服有點髒，我先洗一下。 | /zhè jiàn yīfu yǒudiǎn zāng, wǒ xiān xǐ yíxià/ | Bộ quần áo này hơi bẩn, tôi giặt qua một chút đã. |
+| 你的手脏了，去洗一下吧。 | 你的手髒了，去洗一下吧。 | /nǐ de shǒu zāng le, qù xǐ yíxià ba/ | Tay bạn bẩn rồi, đi rửa một chút đi. |
+| 她是一个很爱干净的人。 | 她是一個很愛乾淨的人。 | /tā shì yígè hěn ài gānjìng de rén/ | Cô ấy là một người rất yêu sạch sẽ. |
+| 我的房间很干净的。 | 我的房間很乾淨的。 | /wǒ de fángjiān hěn gānjìng de/ | Phòng của tôi rất sạch sẽ. |
+| 别忘写作业。 | 別忘寫作業。 | /bié wàng xiě zuòyè/ | Đừng quên làm bài tập. |
+| 我的手机丢了。 | 我的手機丟了。 | /wǒ de shǒujī diū le/ | Điện thoại của tôi bị mất rồi. |
+| 今天我来付钱吧。 | 今天我來付錢吧。 | /jīntiān wǒ lái fùqián ba/ | Hôm nay để tôi trả tiền cho. |
+| 我觉得汉字很难，但是发音比较容易。 | 我覺得漢字很難，但是發音比較容易。 | /wǒ juéde hànzì hěn nán, dànshì fāyīn bǐjiào róngyì/ | Tôi thấy chữ Hán rất khó, nhưng phát âm khá dễ. |
+| 我怕胖，所以晚上不吃米饭。 | 我怕胖，所以晚上不吃米飯。 | /wǒ pà pàng, suǒyǐ wǎnshàng bù chī mǐfàn/ | Tôi sợ béo, nên buổi tối không ăn cơm. |
+| 他小时候挺胖的，很可爱。 | 他小時候挺胖的，很可愛。 | /tā xiǎo shíhòu tǐng pàng de, hěn kě'ài/ | Hồi nhỏ cậu ấy khá béo, rất đáng yêu. |
+| 天空是蓝色的。 | 天空是藍色的。 | /tiānkōng shì lánsè de/ | Bầu trời màu xanh da trời. |
+| 我喜欢看蓝色的大海。 | 我喜歡看藍色的大海。 | /wǒ xǐhuān kàn lánsè de dàhǎi/ | Tôi thích ngắm biển xanh. |
+| 我最喜欢绿色。 | 我最喜歡綠色。 | /wǒ zuì xǐhuān lǜsè/ | Tôi thích nhất màu xanh lá cây. |
+| 那只小黄毛狗很可爱。 | 那隻小黃毛狗很可愛。 | /nà zhī xiǎo huáng máo gǒu hěn kě'ài/ | Con chó lông vàng nhỏ đó rất đáng yêu. |
+| 那杯咖啡是棕色的。 | 那杯咖啡是棕色的。 | /nà bēi kāfēi shì zōngsè de/ | Ly cà phê đó màu nâu. |
+| 这件衣服的颜色有点深了。 | 這件衣服的顏色有點深了。 | /zhè jiàn yīfu de yánsè yǒudiǎn shēn le/ | Màu của bộ quần áo này hơi đậm rồi. |
+| 这是深红色。 | 這是深紅色。 | /zhè shì shēn hóngsè/ | Đây là màu đỏ đậm. |
+| 别去那边，水不浅。 | 別去那邊，水不淺。 | /bié qù nàbiān, shuǐ bù qiǎn/ | Đừng đi ra đằng kia, nước không nông đâu (nước sâu). |
+| 我买了一件漂亮的衣服。 | 我買了一件漂亮的衣服。 | /wǒ mǎile yí jiàn piàoliang de yīfu/ | Tôi đã mua một bộ quần áo đẹp. |
+| 明天我有一件事要办。 | 明天我有一件事要辦。 | /míngtiān wǒ yǒu yí jiàn shì yào bàn/ | Ngày mai tôi có một việc phải làm. |
+| 这件(个)礼物不太贵。 | 這件(個)禮物不太貴。 | /zhè jiàn lǐwù bú tài guì/ | Món quà này không đắt lắm. |
+| 这件白色的毛衣好好看的。 | 這件白色的毛衣好好看的。 | /zhè jiàn báisè de máoyī hǎohǎo kàn de/ | Chiếc áo len trắng này rất là đẹp. |
+| 这家店的衣服挺贵的。 | 這家店的衣服挺貴的。 | /zhè jiā diàn de yīfu tǐng guì de/ | Quần áo của tiệm này khá đắt. |
+| 这个电影很好看。 | 這個電影很好看。 | /zhè ge diànyǐng hěn hǎokàn/ | Bộ phim này rất hay. |
+| 这个题很容易，我可以自己做。 | 這個題很容易，我可以自己做。 | /zhè ge tí hěn róngyì, wǒ kěyǐ zìjǐ zuò/ | Đề bài này rất dễ, tôi có thể tự mình làm. |
 

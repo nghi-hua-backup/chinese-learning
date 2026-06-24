@@ -426,3 +426,48 @@ Full lesson content for Bài 13 "Đi thư viện mượn sách" extracted from t
 - Q3: 你先吃吧，我一会儿吃。 → Both § 6 "Ăn uống & Đặt món" AND practice bank
 - Q4: 明天你有空吗？咱们一起出去玩儿。 → Both § 6 "Hỏi thăm / Mời chào" AND practice bank
 - Q1 (面 column): Words with no 面 variant use `—`
+
+## [2026-06-24] — Bài 14: Tôi thích cái màu nhạt.
+
+**Status:** Agreement reached
+**Source:** `chinese-learning/references/Bai-14.md` — pre-structured lesson file
+
+### Input summary
+Full lesson content for Bài 14 "Tôi thích cái màu nhạt." extracted from the structured reference file. Contains: 27 vocabulary items spanning appearance/cleanliness, colors, payment methods, clothing, and degree adverbs; 1 lượng từ (件); 4 câu thông dụng; 2 grammar patterns for Nhóm 1; and 25 practice sentences across 4 topic groups.
+
+### Agreed scope
+
+**chinese-brain.md — Từ vựng (Bài 14):** 26 entries
+- 它, 脏/髒, 洗, 干净/乾淨, 忘, 丢/丟, 付钱/付錢, 现金/現金, 微信, 支付宝/支付寶
+- 胖, 蓝/藍, 绿/綠, 黄/黃, 棕色, 粉色, 紫色, 深, 浅/淺
+- 礼物/禮物, 毛衣, 挺, 好看, 容易, 事情, 非常
+- (Format corrections applied: 15 entries had `—` in 繁體 column → corrected to `—` in 简体 column per KB guide)
+
+**chinese-brain.md — Lượng từ § 4 (KBP-11 append):** 1 entry extended
+- 件 — extended with second usage "vụ | sự việc (事情)" per Bài 14 source
+
+**chinese-brain.md — Ngữ pháp (Nhóm 1):** 2 new patterns
+- 挺 + HDT + 的 — Mức độ "khá"
+- Thang mức độ phó từ: 有点儿, 挺, 很, 太, 非常
+
+**chinese-brain.md — § 6 Câu thông dụng:**
+- 没事 → added to "Cảm ơn & Xin lỗi" sub-group
+- 有点儿东西 → added to "Câu xã giao khác" sub-group
+
+**chinese-practice-bank.md — Bài 14:** 32 sentences
+- PHẦN 3 câu thông dụng: 5 sentences
+- PHẦN 5 luyện tập: 27 sentences across 4 topic groups
+
+### Out of scope (agreed)
+- 颜色/顏色 — KBP-2 duplicate (already in Bài 10 vocab, line 703)
+- 件 as NEW lượng từ entry — KBP-2: already in § 4; extended via KBP-11 instead
+- 没关系 in § 6 — KBP-2 duplicate (already at § 6 Cảm ơn & Xin lỗi)
+
+### Debator concerns resolved
+- 件 (KBP-11): Customer confirmed → extend § 4 entry to add "vụ | sự việc (事情)" as second usage
+- 有点儿东西 routing: Customer confirmed → § 6 "Câu xã giao khác" + practice bank
+- Format corrections (auto): 15 entries with `—` in wrong column → corrected to KB guide standard
+
+### Open questions resolved
+- Q1 (件 KBP-11): Extend existing § 4 entry ✓
+- Q2 (有点儿东西): § 6 Câu xã giao khác + practice bank ✓

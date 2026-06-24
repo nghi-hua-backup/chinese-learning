@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 13 — Đi thư viện mượn sách (2026-06-23)
+> **Cập nhật lần cuối:** Bài 14 — Tôi thích cái màu nhạt. (2026-06-24)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -39,6 +39,7 @@
   - [Bài 11 — Mùa Đông Ở Bắc Kinh Khá Lạnh](#bai-11)
   - [Bài 12 — Cậu Đang Làm Gì?](#bai-12)
   - [Bài 13 — Đi thư viện mượn sách](#bai-13)
+  - [Bài 14 — Tôi thích cái màu nhạt.](#bai-14)
 - [3. Số đếm & Thời gian](#3-số-đếm-thời-gian)
   - [3.1 Số đếm cơ bản](#31-số-đếm-cơ-bản)
     - [Số 1–10](#số-110)
@@ -65,6 +66,8 @@
     - [很 + HDT — Mức độ "rất"](#很-hdt-mức-độ-rất)
     - [太 + HDT + 了 — Mức độ "quá"](#太-hdt-了-mức-độ-quá)
     - [最 + HDT/ĐT — So sánh nhất](#最-hdtđt-so-sánh-nhất)
+    - [挺 + HDT + 的 — Mức độ "khá"](#挺-hdt-的-mức-độ-khá)
+    - [Thang mức độ phó từ: 有点儿, 挺, 很, 太, 非常](#thang-mức-độ-phó-từ-有点儿-挺-很-太-非常)
   - [Nhóm 2: Trợ từ kết cấu 的](#nhóm-2-trợ-từ-kết-cấu-的)
     - [[Bổ nghĩa] + 的 + DT — Quy tắc cốt lõi](#bổ-nghĩa-的-dt-quy-tắc-cốt-lõi)
     - [DT/Đại từ + 的 + DT — Sở hữu](#dtđại-từ-的-dt-sở-hữu)
@@ -811,6 +814,38 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | 关灯 | 關燈 | /guān dēng/ | Quan Đăng | Cụm ĐT | tắt đèn |
 | 关电视 | 關電視 | /guān diànshì/ | Quan Điện Thị | Cụm ĐT | tắt TV (truyền hình) |
 
+<a name="bai-14"></a>
+### Bài 14 — Tôi thích cái màu nhạt.
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa |
+|------|------|--------|----------|---------|-------|
+| — | 它 | /tā/ | Tha | Đại từ | nó (chỉ đồ vật, sự việc, động vật) |
+| 脏 | 髒 | /zāng/ | Tạng | HDT | bẩn, dơ |
+| — | 洗 | /xǐ/ | Tẩy | ĐT | rửa, giặt |
+| 干净 | 乾淨 | /gānjìng/ | Can Tịnh | HDT | sạch sẽ |
+| — | 忘 | /wàng/ | Vong | ĐT | quên |
+| 丢 | 丟 | /diū/ | Đâu | ĐT | mất, vứt đi |
+| 付钱 | 付錢 | /fùqián/ | Phó Tiền | ĐT | trả tiền |
+| 现金 | 現金 | /xiànjīn/ | Hiện Kim | DT | tiền mặt |
+| — | 微信 | /wēixìn/ | — | DT | WeChat |
+| 支付宝 | 支付寶 | /zhīfùbǎo/ | — | DT | Alipay |
+| — | 胖 | /pàng/ | Bàn | HDT | béo, mập, mũm mĩm |
+| 蓝 | 藍 | /lán/ | Lam | HDT | xanh lam, xanh da trời |
+| 绿 | 綠 | /lǜ/ | Lục | HDT | xanh lá cây |
+| 黄 | 黃 | /huáng/ | Hoàng | HDT | màu vàng |
+| — | 棕色 | /zōngsè/ | Tông Sắc | DT | màu nâu |
+| — | 粉色 | /fěnsè/ | Phấn Sắc | DT | màu hồng |
+| — | 紫色 | /zǐsè/ | Tử Sắc | DT | màu tím |
+| — | 深 | /shēn/ | Thâm | HDT | sâu, đậm (màu sắc) |
+| 浅 | 淺 | /qiǎn/ | Thiển | HDT | nông, cạn, nhạt (màu sắc) |
+| 礼物 | 禮物 | /lǐwù/ | Lễ Vật | DT | quà, quà cáp |
+| — | 毛衣 | /máoyī/ | Mao Y | DT | áo len |
+| — | 挺 | /tǐng/ | Đỉnh | PT | rất, khá |
+| — | 好看 | /hǎokàn/ | Hảo Khán | HDT | đẹp, dễ nhìn, hay |
+| — | 容易 | /róngyì/ | Dung Dị | HDT | dễ dàng |
+| — | 事情 | /shìqing/ | Sự Tình | DT | việc, chuyện |
+| — | 非常 | /fēicháng/ | Phi Thường | PT | rất, cực kỳ |
+
 ---
 
 ## 3. Số đếm & Thời gian
@@ -1008,7 +1043,7 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 | 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa | Dùng với |
 |------|------|--------|----------|-------|---------|
-| — | 件 | /jiàn/ | Kiện | bộ, chiếc | quần áo (衣服) |
+| — | 件 | /jiàn/ | Kiện | bộ, chiếc; vụ | quần áo (衣服); sự việc (事情) |
 | 只 | 隻 | /zhī/ | Chích | con | động vật nhỏ (chó, mèo, chim...) |
 | 条 | 條 | /tiáo/ | Điều | cái, con | vật dài, hẹp; động vật dài (chó, cá...) |
 | 张 | 張 | /zhāng/ | Trương | tờ, tấm | vật mỏng, dẹt (ảnh, giấy, bàn...) |
@@ -1084,6 +1119,38 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 最帅 / 最帅 /zuì shuài/ — đẹp trai nhất
 - 我爷爷是最高和最帅的人。/ 我爺爺是最高和最帥的人。 /wǒ yéye shì zuì gāo hé zuì shuài de rén/ — Ông nội tôi là người cao nhất và đẹp trai nhất.
 - 妈妈是最好的。/ 媽媽是最好的。 /māma shì zuì hǎo de/ — Mẹ là người tốt nhất.
+
+---
+
+#### 挺 + HDT + 的 — Mức độ "khá"
+
+**Cấu trúc:** 挺 + HDT + 的
+
+**Ý nghĩa:** Diễn đạt mức độ "khá, rất" — nhẹ hơn 很 và mang sắc thái thân mật, tự nhiên hơn trong hội thoại. 的 ở cuối câu không thể bỏ trong cấu trúc này.
+
+**Ví dụ:**
+- 那个女孩挺好看的。 / 那個女孩挺好看的。 /nàge nǚhái tǐng hǎokàn de/ — Cô bé đó khá là xinh.
+- 他小时候挺胖的，很可爱。 / 他小時候挺胖的，很可愛。 /tā xiǎo shíhòu tǐng pàng de, hěn kě'ài/ — Hồi nhỏ cậu ấy khá béo, rất đáng yêu.
+- 这家店的衣服挺贵的。 / 這家店的衣服挺貴的。 /zhè jiā diàn de yīfu tǐng guì de/ — Quần áo của tiệm này khá đắt.
+
+---
+
+#### Thang mức độ phó từ: 有点儿, 挺, 很, 太, 非常
+
+| Phó từ | Pinyin | Mức độ | Ghi chú |
+|--------|--------|--------|---------|
+| 有点儿 | yǒudiǎnr | thấp nhất | Thường thiên về tiêu cực hoặc sắc thái không hài lòng nhẹ |
+| 挺 | tǐng | khá | Thân mật, tự nhiên; dùng với 的 ở cuối câu |
+| 很 | hěn | rất | Trung lập, phổ biến nhất |
+| 太 | tài | quá | Vượt quá giới hạn bình thường; dùng với 了 ở cuối |
+| 非常 | fēicháng | cực kỳ | Mức độ cao nhất; trang trọng hơn 太 |
+
+**Ví dụ so sánh:**
+- 这件衣服有点贵。/ 這件衣服有點貴。 — Bộ quần áo này hơi đắt (sắc thái không hài lòng nhẹ).
+- 这件衣服挺贵的。/ 這件衣服挺貴的。 — Bộ quần áo này khá đắt.
+- 这件衣服很贵。/ 這件衣服很貴。 — Bộ quần áo này rất đắt.
+- 这件衣服太贵了。/ 這件衣服太貴了。 — Bộ quần áo này đắt quá!
+- 这件衣服非常贵。/ 這件衣服非常貴。 — Bộ quần áo này cực kỳ đắt.
 
 ---
 
@@ -1962,6 +2029,7 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | 不客气！ | 不客氣！ | bù kèqi | Không có gì |
 | 对不起！ | 對不起！ | duìbuqǐ | Xin lỗi |
 | 没关系！ | 沒關係！ | méi guānxi | Không sao đâu |
+| 没事 | 沒事 | méi shì | Không sao đâu / Chẳng có chuyện gì |
 
 ### Câu xã giao khác
 
@@ -1986,6 +2054,7 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | 当然可以！ | 當然可以！ | dāngrán kěyǐ | Đương nhiên là được! |
 | 没问题 | 沒問題 | méi wèntí | Không thành vấn đề |
 | 你放心，没问题的！ | 你放心，沒問題的！ | nǐ fàngxīn, méi wèntí de | Bạn yên tâm, không vấn đề gì đâu! |
+| 有点儿东西 | 有點兒東西 | yǒudiǎnr dōngxi | (Tiếng lóng) Ghê lắm đó / Không phải dạng vừa. Dùng khen ngầm tài năng hoặc năng lực vượt trội. |
 
 ### Hỏi thăm / Mời chào
 
