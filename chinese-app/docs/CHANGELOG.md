@@ -18,6 +18,13 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.4.1] - 2026-06-24
+
+### Added
+- KB: Bài 14 — Tôi thích cái màu nhạt. — 26 từ vựng, 1 lượng từ mở rộng KBP-11 (件), 2 pattern ngữ pháp (挺 + HDT + 的; Thang mức độ phó từ), 32 câu luyện tập (5 PHẦN 3 + 27 PHẦN 5), 2 câu xã giao § 6 (没事, 有点儿东西)
+
+---
+
 ## [2.4.0] - 2026-06-23
 
 ### Added
