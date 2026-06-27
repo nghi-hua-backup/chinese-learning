@@ -471,3 +471,66 @@ Full lesson content for Bài 14 "Tôi thích cái màu nhạt." extracted from t
 ### Open questions resolved
 - Q1 (件 KBP-11): Extend existing § 4 entry ✓
 - Q2 (有点儿东西): § 6 Câu xã giao khác + practice bank ✓
+
+---
+
+## [2026-06-27] — Bài 15: Sinh nhật của bạn tôi
+
+**Status:** Agreement reached
+**Source:** chinese-learning/references/Bai-15.md
+
+### Input summary
+Bài 15 reference file containing 33 vocab items (including 1 KBP-2 duplicate and 1 KBP-11 case), 2 lượng từ (份, 束), 5 câu thông dụng, 5 grammar patterns, and practice sentences across 3 topic groups. Source had 1 character error (注意 → 主意), 1 pinyin error (气球), and multiple column-swap format errors (auto-corrected per established precedent).
+
+### Agreed scope
+
+**chinese-brain.md — Từ vựng (Bài 15):** 31 new entries
+- 甜, 酸, 苦, 辣, 长寿面/長壽麵, 特别/特別, 比如, 日
+- 岁/歲 (Lượng từ), 主意 (corrected from 注意), 气球/氣球 (pinyin corrected → /qìqiú/)
+- 那么/那麼, 这么/這麼, 准备/準備, 派对/派對, 送, 生日
+- 巧克力, 蛋糕, 前, 后/後, 以前, 以后/以後
+- 当/當, 一直, 晚饭/晚飯, 早饭/早飯, 午饭/午飯, 贺卡/賀卡, 花, 说/說
+
+**chinese-brain.md — Lượng từ § 4 (new entries):** 2 entries
+- 份 /fèn/ — phần | dùng cho quà tặng (一份礼物)
+- 束 /shù/ — bó | dùng cho hoa (一束花)
+
+**chinese-brain.md — § 4 (KBP-11 append):** 1 entry extended
+- 号/號: append "ngày (KN), kích cỡ" → full meaning: số, ngày (KN), kích cỡ
+
+**chinese-brain.md — Ngữ pháp:** 5 new patterns
+- Nhóm 1: 特别 as HDT and PT (特别是...)
+- Nhóm 3: 还是 A/B selection question
+- Nhóm 5: 当 + nghề nghiệp/thân phận
+- Nhóm 6: 以前/以后 cấu trúc thời gian
+- Nhóm 10: 那么 vs 这么 phân biệt
+
+**chinese-brain.md — § 6 Câu thông dụng:** 5 phrases (all PHẦN 3 items)
+- 特别喜欢做什么..., 你的生日是几月几号？, 送礼物, 你一直走。, 你说什么？
+
+**chinese-practice-bank.md — Bài 15:** ~29 sentences
+- PHẦN 3: 5 câu thông dụng
+- PHẦN 5: 15 sentences (Miêu tả & Đời sống) + 11 sentences (Chuẩn bị tiệc & Tặng quà) + 2 sentences + 1 note (Phương hướng)
+
+**Format corrections (auto-applied per precedent):**
+- 辣: | 辣 | — | → | — | 辣 | (same in both scripts)
+- 巧克力, 蛋糕, 以前, 一直: 简体→繁體 column swap
+- 当: | — | 当 | → | 当 | 當 | (当≠當)
+- 后: | — | 后 | → | 后 | 後 | (后≠後)
+- 说: | — | 说 | → | 说 | 說 | (说≠說)
+
+### Out of scope (agreed)
+- 礼物/禮物 — KBP-2 duplicate (already in Bài 14 vocab)
+- 号/號 as new Bài 15 entry — KBP-11 case; extended existing Bài 6 entry instead
+
+### Debator concerns resolved
+- 注意 (source error): confirmed as typo → corrected to 主意 /zhǔyì/ (Chủ Ý | ý kiến, kế hoạch)
+- 气球 pinyin: corrected /qiqíu/ → /qìqiú/ per standard pinyin
+- 号/號 (KBP-11): customer confirmed append of "ngày (KN), kích cỡ" to existing Bài 6 entry
+- § 6 routing: customer confirmed all 5 PHẦN 3 phrases go to § 6 + practice bank
+
+### Open questions resolved
+- Q1 (注意 → 主意): Write 主意 /zhǔyì/ ✓
+- Q2 (气球 pinyin): Corrected to /qìqiú/ ✓
+- Q3 (号 KBP-11): Append "ngày (KN), kích cỡ" ✓
+- Q4 (§ 6 routing): All 5 PHẦN 3 phrases → § 6 + practice bank ✓
