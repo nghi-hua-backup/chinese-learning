@@ -4,7 +4,7 @@
 > Được cập nhật sau mỗi bài học mới qua skill `/update-chinese-brain`.
 > Dùng để tra cứu và sinh câu luyện tập theo yêu cầu.
 >
-> **Cập nhật lần cuối:** Bài 14 — Tôi thích cái màu nhạt. (2026-06-24)
+> **Cập nhật lần cuối:** Bài 15 — Sinh nhật của bạn tôi (2026-06-27)
 > **Quy tắc cập nhật:** Xem `chinese-brain-guide.md`
 
 ---
@@ -40,6 +40,7 @@
   - [Bài 12 — Cậu Đang Làm Gì?](#bai-12)
   - [Bài 13 — Đi thư viện mượn sách](#bai-13)
   - [Bài 14 — Tôi thích cái màu nhạt.](#bai-14)
+  - [Bài 15 — Sinh nhật của bạn tôi](#bai-15)
 - [3. Số đếm & Thời gian](#3-số-đếm-thời-gian)
   - [3.1 Số đếm cơ bản](#31-số-đếm-cơ-bản)
     - [Số 1–10](#số-110)
@@ -60,6 +61,7 @@
   - [斤 / 公斤 — Lượng từ đo trọng lượng](#斤-公斤-lượng-từ-đo-trọng-lượng)
   - [件 / 只 / 条 / 张 — Lượng từ Bài 10](#件-只-条-张-lượng-từ-bài-10)
   - [节 / 節 — Lượng từ tiết học (Bài 12)](#节-節-lượng-từ-tiết-học-bài-12)
+  - [份 / 束 — Lượng từ Bài 15](#份-束-lượng-từ-bài-15)
 - [5. Ngữ pháp (Grammar)](#5-ngữ-pháp-grammar)
   - [Nhóm 1: Mô tả và mức độ](#nhóm-1-mô-tả-và-mức-độ)
     - [CN + PT + HDT — Câu miêu tả cơ bản](#cn-pt-hdt-câu-miêu-tả-cơ-bản)
@@ -68,6 +70,7 @@
     - [最 + HDT/ĐT — So sánh nhất](#最-hdtđt-so-sánh-nhất)
     - [挺 + HDT + 的 — Mức độ "khá"](#挺-hdt-的-mức-độ-khá)
     - [Thang mức độ phó từ: 有点儿, 挺, 很, 太, 非常](#thang-mức-độ-phó-từ-有点儿-挺-很-太-非常)
+    - [特别 — Làm hình dung từ và phó từ](#特别-làm-hình-dung-từ-và-phó-từ)
   - [Nhóm 2: Trợ từ kết cấu 的](#nhóm-2-trợ-từ-kết-cấu-的)
     - [[Bổ nghĩa] + 的 + DT — Quy tắc cốt lõi](#bổ-nghĩa-的-dt-quy-tắc-cốt-lõi)
     - [DT/Đại từ + 的 + DT — Sở hữu](#dtđại-từ-的-dt-sở-hữu)
@@ -84,6 +87,7 @@
     - [CN + 觉得 + 怎么样？ — Hỏi cảm nhận "Thế nào?"](#cn-觉得-怎么样-hỏi-cảm-nhận-thế-nào)
     - [怎么 + ĐT — Hỏi cách thức](#怎么-đt-hỏi-cách-thức)
     - [CN + ĐT + 了 + 吗？ / 还没 + ĐT — Hỏi "Đã... chưa?"](#cn-đt-了-吗-还没-đt-hỏi-đã-chưa)
+    - [A 还是 B — Câu hỏi lựa chọn](#a-还是-b-câu-hỏi-lựa-chọn)
   - [Nhóm 4: Phủ định và cấm đoán](#nhóm-4-phủ-định-và-cấm-đoán)
     - [有/没有 — Có/Không có](#有没有-cókhông-có)
     - [不用 + ĐT — Không cần làm gì](#不用-đt-không-cần-làm-gì)
@@ -102,6 +106,7 @@
     - [给谁打电话 — Gọi điện thoại cho ai](#给谁打电话-gọi-điện-thoại-cho-ai)
     - [先...然后... — Trình tự hành động](#先然后-trình-tự-hành-động)
     - [借 — Mượn / Vay](#借-mượn-vay)
+    - [当 + nghề nghiệp — Làm nghề gì](#当-nghề-nghiệp-làm-nghề-gì)
   - [Nhóm 6: Thời gian và trạng thái tiếp diễn](#nhóm-6-thời-gian-và-trạng-thái-tiếp-diễn)
     - [ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái](#đt-了-hành-động-đã-xảy-ra-thay-đổi-trạng-thái)
     - […的时候 — Khi / Lúc](#的时候-khi-lúc)
@@ -109,6 +114,7 @@
     - [分钟 vs 分 — Phân biệt khoảng thời gian và mốc thời gian](#分钟-vs-分-phân-biệt-khoảng-thời-gian-và-mốc-thời-gian)
     - [正在 + ĐT + 呢 — Đang làm gì (nhấn mạnh)](#正在-đt-呢-đang-làm-gì-nhấn-mạnh)
     - [正 + ĐT + 呢 — Đang làm gì (dạng rút gọn)](#正-đt-呢-đang-làm-gì-dạng-rút-gọn)
+    - [以前 / 以后 — Trước khi / Sau khi](#以前-以后-trước-khi-sau-khi)
   - [Nhóm 7: Địa điểm và vị trí](#nhóm-7-địa-điểm-và-vị-trí)
     - [Danh sách phương vị từ cơ bản — Bảng tổng hợp](#danh-sách-phương-vị-từ-cơ-bản-bảng-tổng-hợp)
     - [在 + Địa điểm + ĐT — Ở đâu làm gì](#在-địa-điểm-đt-ở-đâu-làm-gì)
@@ -135,12 +141,14 @@
     - [两 vs 二 — Hai cách nói số 2](#两-vs-二-hai-cách-nói-số-2)
     - [馆 vs 店 — Phân biệt địa điểm](#馆-vs-店-phân-biệt-địa-điểm)
     - [我们 vs 咱们 — Phân biệt cách nói "chúng ta"](#我们-vs-咱们-phân-biệt-cách-nói-chúng-ta)
+    - [那么 vs 这么 — Gần và xa người nói](#那么-vs-这么-gần-và-xa-người-nói)
 - [6. Câu thông dụng (Common Phrases)](#6-câu-thông-dụng-common-phrases)
   - [Chào hỏi](#chào-hỏi)
   - [Tạm biệt](#tạm-biệt)
   - [Cảm ơn & Xin lỗi](#cảm-ơn-xin-lỗi)
   - [Câu xã giao khác](#câu-xã-giao-khác)
   - [Hỏi thăm / Mời chào](#hỏi-thăm-mời-chào)
+  - [Sinh nhật & Tặng quà](#sinh-nhật-tặng-quà)
   - [Ăn uống & Đặt món](#ăn-uống-đặt-món)
   - [Mua bán](#mua-bán)
   - [Câu lệnh & Biểu đạt ngắn](#câu-lệnh-biểu-đạt-ngắn)
@@ -588,7 +596,7 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 呢 | /ne/ | — | Trợ từ | ... thì sao?, ... nhỉ? (ngữ khí cuối câu) |
 | 电话 | 電話 | /diànhuà/ | Điện Thoại | DT | điện thoại bàn |
 | 手机 | 手機 | /shǒujī/ | Thủ Ký | DT | điện thoại di động |
-| 号 | 號 | /hào/ | Hiệu | DT | số |
+| 号 | 號 | /hào/ | Hiệu | DT | số, ngày (KN), kích cỡ |
 | 号码 | 號碼 | /hàomǎ/ | Hiệu Mã | DT | dãy số, số (điện thoại) |
 | — | 快 | /kuài/ | Khoái | HDT/PT | mau, nhanh |
 | — | 路 | /lù/ | Lộ | DT | đường, tuyến (xe buýt) |
@@ -846,6 +854,43 @@ Khi đọc **dãy số** (số điện thoại, số phòng, số tầng, mã s�
 | — | 事情 | /shìqing/ | Sự Tình | DT | việc, chuyện |
 | — | 非常 | /fēicháng/ | Phi Thường | PT | rất, cực kỳ |
 
+<a name="bai-15"></a>
+### Bài 15 — Sinh nhật của bạn tôi
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Từ loại | Nghĩa |
+|------|------|--------|----------|---------|-------|
+| — | 甜 | /tián/ | Điềm | HDT | ngọt |
+| — | 酸 | /suān/ | Toan | HDT | chua |
+| — | 苦 | /kǔ/ | Khổ | HDT | đắng |
+| — | 辣 | /là/ | Lạt | HDT | cay |
+| 长寿面 | 長壽麵 | /chángshòumiàn/ | Trường Thọ Miến | DT | mì trường thọ |
+| 特别 | 特別 | /tèbié/ | Đặc Biệt | HDT/PT | đặc biệt, rất |
+| — | 比如 | /bǐrú/ | Tỷ Như | ĐT | ví dụ như |
+| — | 日 | /rì/ | Nhật | DT | ngày (văn viết) |
+| 岁 | 歲 | /suì/ | Tuế | Lượng từ | tuổi |
+| — | 主意 | /zhǔyì/ | Chủ Ý | DT | ý kiến, kế hoạch |
+| 气球 | 氣球 | /qìqiú/ | Khí Cầu | DT | bóng bay |
+| 那么 | 那麼 | /nàme/ | Na Ma | PT | như vậy, thế thì |
+| 这么 | 這麼 | /zhème/ | Giá Ma | PT | như thế này |
+| 准备 | 準備 | /zhǔnbèi/ | Chuẩn Bị | ĐT | chuẩn bị |
+| 派对 | 派對 | /pàiduì/ | Phái Đối | DT | bữa tiệc, party |
+| — | 送 | /sòng/ | Tống | ĐT | tặng, biếu, đưa tiền |
+| — | 生日 | /shēngrì/ | Sinh Nhật | DT | sinh nhật |
+| — | 巧克力 | /qiǎokèlì/ | — | DT | socola |
+| — | 蛋糕 | /dàngāo/ | Đản Cao | DT | bánh kem, bánh bông lan |
+| — | 前 | /qián/ | Tiền | PVT | trước, phía trước |
+| 后 | 後 | /hòu/ | Hậu | PVT | sau, phía sau |
+| — | 以前 | /yǐqián/ | Dĩ Tiền | DT | trước đây, trước khi |
+| 以后 | 以後 | /yǐhòu/ | Dĩ Hậu | DT | sau này, sau khi |
+| 当 | 當 | /dāng/ | Đương | ĐT | làm (nghề nghiệp) |
+| — | 一直 | /yìzhí/ | Nhất Trực | PT | luôn luôn, suốt, cứ |
+| 晚饭 | 晚飯 | /wǎnfàn/ | Vãn Phạn | DT | bữa cơm tối |
+| 早饭 | 早飯 | /zǎofàn/ | Tảo Phạn | DT | bữa sáng |
+| 午饭 | 午飯 | /wǔfàn/ | Ngọ Phạn | DT | bữa trưa |
+| 贺卡 | 賀卡 | /hèkǎ/ | Hạ Thiếp | DT | thiệp chúc mừng |
+| — | 花 | /huā/ | Hoa | DT | hoa |
+| 说 | 說 | /shuō/ | Thuyết | ĐT | nói |
+
 ---
 
 ## 3. Số đếm & Thời gian
@@ -1058,6 +1103,13 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 星期一我们有一节语文课。/ 星期一我們有一節語文課。 /xīngqīyī wǒmen yǒu yì jié yǔwén kè/ — Thứ Hai chúng tôi có một tiết Ngữ văn.
 - 每天我们上两节中文课。/ 每天我們上兩節中文課。 /měitiān wǒmen shàng liǎng jié zhōngwén kè/ — Mỗi ngày chúng tôi học hai tiết tiếng Trung.
 
+### 份 / 束 — Lượng từ Bài 15
+
+| 简体 | 繁體 | Pinyin | Hán Việt | Nghĩa | Dùng với |
+|------|------|--------|----------|-------|---------|
+| — | 份 | /fèn/ | Phần | phần, phần quà | quà tặng (礼物), đồ ăn theo phần |
+| — | 束 | /shù/ | Thúc | bó | hoa (花) — 一束花 |
+
 ---
 
 ## 5. Ngữ pháp (Grammar)
@@ -1151,6 +1203,21 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 这件衣服很贵。/ 這件衣服很貴。 — Bộ quần áo này rất đắt.
 - 这件衣服太贵了。/ 這件衣服太貴了。 — Bộ quần áo này đắt quá!
 - 这件衣服非常贵。/ 這件衣服非常貴。 — Bộ quần áo này cực kỳ đắt.
+
+---
+
+#### 特别 — Làm hình dung từ và phó từ
+
+**Cấu trúc 1 — Làm Hình dung từ:** CN + 是 + 很特别 + 的 + DT
+**Cấu trúc 2 — Làm Phó từ:** ..., 特别是 + DT/Cụm từ
+
+**Giải thích:**
+- Khi dùng như HDT: 特别/特別 miêu tả tính chất "đặc biệt, khác thường" của người/vật.
+- Khi dùng như PT: 特别是/特別是 /tèbié shì/ đóng vai trò "đặc biệt là, nhất là" — nhấn mạnh thành phần đứng sau.
+
+**Ví dụ:**
+- 他是很特别的人。/ 他是很特別的人。 /tā shì hěn tèbié de rén/ — Anh ấy là người rất đặc biệt.
+- 我喜欢去中国旅行，特别是北京。/ 我喜歡去中國旅行，特別是北京。 /wǒ xǐhuān qù Zhōngguó lǚxíng, tèbié shì Běijīng/ — Tôi thích đi du lịch Trung Quốc, đặc biệt là Bắc Kinh.
 
 ---
 
@@ -1360,6 +1427,18 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 - 我还没吃饭。 /wǒ hái méi chīfàn/ — Tôi vẫn chưa ăn cơm.
 - 你姐姐回国了吗？/ 你姐姐回國了嗎？ /nǐ jiějie huí guó le ma/ — Chị gái bạn về nước chưa?
 - 我姐姐还没回国。/ 我姐姐還沒回國。 /wǒ jiějie hái méi huí guó/ — Chị gái tôi vẫn chưa về nước.
+
+---
+
+#### A 还是 B — Câu hỏi lựa chọn
+
+**Cấu trúc:** A + 还是/還是 + B？
+
+**Giải thích:** Dùng 还是 /háishi/ trong câu hỏi để đề xuất hai lựa chọn "A hay là B?". Khác với 或者 /huòzhě/ (hoặc là) dùng trong câu trần thuật, 还是 chỉ dùng trong câu hỏi. Khi trả lời bằng 还是 + N + 吧, có nghĩa "hay là (vẫn là)..." — thể hiện lựa chọn hoặc gợi ý.
+
+**Ví dụ:**
+- 你吃苹果还是西瓜？/ 你吃蘋果還是西瓜？ /nǐ chī píngguǒ háishi xīguā/ — Bạn ăn táo hay là dưa hấu?
+- 还是西瓜吧。/ 還是西瓜吧。 /háishi xīguā ba/ — Hay là (vẫn là) dưa hấu đi.
 
 ---
 
@@ -1582,6 +1661,18 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 当 + nghề nghiệp — Làm nghề gì
+
+**Cấu trúc:** 当/當 + Danh từ nghề nghiệp/thân phận
+
+**Giải thích:** 当/當 /dāng/ (đương) đứng trước danh từ nghề nghiệp hoặc vai trò xã hội để diễn đạt "làm, trở thành". Khác với 做 /zuò/ (làm công việc cụ thể), 当 nhấn mạnh vai trò, danh phận, chức vị.
+
+**Ví dụ:**
+- 我以后要当老师。/ 我以後要當老師。 /wǒ yǐhòu yào dāng lǎoshī/ — Sau này tôi muốn làm giáo viên.
+- 她想当医生。/ 她想當醫生。 /tā xiǎng dāng yīshēng/ — Cô ấy muốn làm bác sĩ.
+
+---
+
 ### Nhóm 6: Thời gian và trạng thái tiếp diễn
 
 #### ĐT + 了 — Hành động đã xảy ra / thay đổi trạng thái
@@ -1660,6 +1751,22 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 **Ví dụ:**
 - 他正学习呢。/ 他正學習呢。 /tā zhèng xuéxí ne/ — Anh ấy đang học bài.
 - 他们正做什么呢？/ 他們正做什麼呢？ /tāmen zhèng zuò shénme ne/ — Họ đang làm gì thế?
+
+---
+
+#### 以前 / 以后 — Trước khi / Sau khi
+
+**Cấu trúc:**
+- Hành động/Sự kiện + **以前** /yǐqián/: "Trước khi [sự kiện] xảy ra"
+- Hành động/Sự kiện + **以后/以後** /yǐhòu/: "Sau khi [sự kiện] xảy ra"
+- **以前** / **以后/以後** đứng đầu câu: chỉ "trước đây / sau này" (tổng quát)
+
+**Giải thích:** 以前 (dĩ tiền) và 以后/以後 (dĩ hậu) đặt sau cụm từ chỉ hành động/sự kiện để diễn đạt mối quan hệ thời gian. Khi đứng đầu câu độc lập, chỉ thời điểm trong quá khứ hoặc tương lai.
+
+**Ví dụ:**
+- 来中国以前，他学习三年汉语。/ 來中國以前，他學習三年漢語。 /lái Zhōngguó yǐqián, tā xuéxí sān nián hànyǔ/ — Trước khi đến Trung Quốc, anh ấy đã học tiếng Trung 3 năm.
+- 以前我不喜欢喝茶，现在每天都喝。/ 以前我不喜歡喝茶，現在每天都喝。 /yǐqián wǒ bù xǐhuān hē chá, xiànzài měitiān dōu hē/ — Trước đây tôi không thích uống trà, giờ ngày nào cũng uống.
+- 以后我想去北京工作。/ 以後我想去北京工作。 /yǐhòu wǒ xiǎng qù Běijīng gōngzuò/ — Sau này tôi muốn đi Bắc Kinh làm việc.
 
 ---
 
@@ -2000,6 +2107,18 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 
 ---
 
+#### 那么 vs 这么 — Gần và xa người nói
+
+**Phân biệt:**
+- **这么** /zhème/ (Giá Ma): chỉ sự vật **gần người nói** — mức độ/cách thức đang xảy ra ngay trước mắt, hiện tại hoặc vừa nhắc tới.
+- **那么** /nàme/ (Na Ma): chỉ sự vật **xa người nói** — mức độ/cách thức đã qua, giả định, hoặc nghe qua từ người khác.
+
+**Ví dụ:**
+- 今天这么热，我们开空调吧。/ 今天這麼熱，我們開空調吧。 /jīntiān zhème rè, wǒmen kāi kōngtiáo ba/ — Hôm nay nóng như thế này, chúng mình bật điều hòa đi. (đang xảy ra ngay trước mắt)
+- 昨天那么热，他都没开空调。/ 昨天那麼熱，他都沒開空調。 /zuótiān nàme rè, tā dōu méi kāi kōngtiáo/ — Hôm qua nóng như vậy mà anh ấy cũng không bật điều hòa. (sự kiện đã qua)
+
+---
+
 ## 6. Câu thông dụng (Common Phrases)
 
 ### Chào hỏi
@@ -2065,6 +2184,16 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | — | 晚安！ | wǎn'ān | Chúc ngủ ngon! |
 | 不用谢。 | 不用謝。 | búyòng xiè | Không cần cảm ơn. |
 | 明天你有空吗？咱们一起出去玩儿。 | 明天你有空嗎？咱們一起出去玩兒。 | míngtiān nǐ yǒu kòng ma? zánmen yìqǐ chūqù wánr | Mai bạn rảnh không? Tụi mình cùng đi chơi đi. |
+
+### Sinh nhật & Tặng quà
+
+| 简体 | 繁體 | Pinyin | Nghĩa |
+|------|------|--------|-------|
+| 特别喜欢做什么... | 特別喜歡做什麼... | /tèbié xǐhuān zuò shénme/ | Rất/đặc biệt thích làm gì... |
+| 你的生日是几月几号？ | 你的生日是幾月幾號？ | /nǐ de shēngrì shì jǐ yuè jǐ hào/ | Sinh nhật của bạn là ngày mấy tháng mấy? |
+| 送礼物 | 送禮物 | /sòng lǐwù/ | Tặng quà |
+| 你一直走。 | — | /nǐ yìzhí zǒu/ | Bạn cứ đi thẳng. |
+| 你说什么？ | 你說什麼？ | /nǐ shuō shénme/ | Bạn nói cái gì? |
 
 ### Ăn uống & Đặt món
 
