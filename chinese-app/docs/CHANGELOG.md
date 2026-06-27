@@ -18,6 +18,10 @@ Format: **`MAJOR.MINOR.PATCH`**
 
 ---
 
+## [2.4.2] - 2026-06-27
+### Changed
+- KB: Bài 15 — Sinh nhật của bạn tôi — 31 vocab entries, 2 lượng từ (份/束), 5 grammar patterns, 33 practice sentences, 1 KBP-11 append (号/號), 1 § 6 sub-group (Sinh nhật & Tặng quà)
+
 ## [2.4.1] - 2026-06-24
 
 ### Added

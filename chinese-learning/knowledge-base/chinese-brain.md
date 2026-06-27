@@ -2192,7 +2192,7 @@ Dùng 上 (trước/kỳ trước) và 下 (sau/kỳ sau) kết hợp với lư�
 | 特别喜欢做什么... | 特別喜歡做什麼... | /tèbié xǐhuān zuò shénme/ | Rất/đặc biệt thích làm gì... |
 | 你的生日是几月几号？ | 你的生日是幾月幾號？ | /nǐ de shēngrì shì jǐ yuè jǐ hào/ | Sinh nhật của bạn là ngày mấy tháng mấy? |
 | 送礼物 | 送禮物 | /sòng lǐwù/ | Tặng quà |
-| 你一直走。 | — | /nǐ yìzhí zǒu/ | Bạn cứ đi thẳng. |
+| — | 你一直走。 | /nǐ yìzhí zǒu/ | Bạn cứ đi thẳng. |
 | 你说什么？ | 你說什麼？ | /nǐ shuō shénme/ | Bạn nói cái gì? |
 
 ### Ăn uống & Đặt món
